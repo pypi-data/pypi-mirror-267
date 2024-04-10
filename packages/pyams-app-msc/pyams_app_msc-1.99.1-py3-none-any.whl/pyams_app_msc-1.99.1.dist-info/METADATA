@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: pyams-app-msc
+Version: 1.99.1
+Summary: PyAMS application for cinema reservation management
+Home-page: https://pyams.readthedocs.io
+Author: Thierry Florac
+Author-email: tflorac@ulthar.net
+License: ZPL
+Keywords: Pyramid PyAMS
+Classifier: License :: OSI Approved :: Zope Public License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Framework :: Pyramid
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: setuptools
+Requires-Dist: colander
+Requires-Dist: cornice
+Requires-Dist: elasticsearch-dsl
+Requires-Dist: fanstatic
+Requires-Dist: hypatia
+Requires-Dist: persistent
+Requires-Dist: pillow
+Requires-Dist: pyams-catalog
+Requires-Dist: pyams-content
+Requires-Dist: pyams-content-api
+Requires-Dist: pyams-content-es
+Requires-Dist: pyams-file
+Requires-Dist: pyams-form >=2.1.0
+Requires-Dist: pyams-i18n
+Requires-Dist: pyams-layer
+Requires-Dist: pyams-mail
+Requires-Dist: pyams-pagelet
+Requires-Dist: pyams-portal
+Requires-Dist: pyams-scheduler
+Requires-Dist: pyams-security >=2.2.1
+Requires-Dist: pyams-security-views
+Requires-Dist: pyams-sequence
+Requires-Dist: pyams-site
+Requires-Dist: pyams-skin
+Requires-Dist: pyams-table
+Requires-Dist: pyams-utils >=2.3.1
+Requires-Dist: pyams-viewlet
+Requires-Dist: pyams-workflow
+Requires-Dist: pyams-zmi
+Requires-Dist: pyams-zmq
+Requires-Dist: pyramid
+Requires-Dist: pyramid-mailer
+Requires-Dist: reportlab
+Requires-Dist: requests
+Requires-Dist: transaction
+Requires-Dist: ZODB
+Requires-Dist: zope.annotation
+Requires-Dist: zope.container
+Requires-Dist: zope.copy
+Requires-Dist: zope.dublincore
+Requires-Dist: zope.interface
+Requires-Dist: zope.intid
+Requires-Dist: zope.lifecycleevent
+Requires-Dist: zope.location
+Requires-Dist: zope.principalannotation
+Requires-Dist: zope.schema
+Requires-Dist: zope.traversing
+Provides-Extra: test
+Requires-Dist: pyramid-zcml ; extra == 'test'
+Requires-Dist: zope.exceptions ; extra == 'test'
+
+=============================
+PyAMS MSC application package
+=============================
+
+.. contents::
+
+
+What is PyAMS?
+==============
+
+PyAMS (Pyramid Application Management Suite) is a small suite of packages written for applications
+and content management with the Pyramid framework.
+
+**PyAMS** is actually mainly used to manage web sites through content management applications (CMS,
+see PyAMS_content package), but many features are generic and can be used inside any kind of web
+application.
+
+All PyAMS documentation is available on `ReadTheDocs <https://pyams.readthedocs.io>`_; source code
+is available on `Gitlab <https://gitlab.com/pyams>`_ and pushed to `Github
+<https://github.com/py-ams>`_. Doctests are available in the *doctests* source folder.
+
+
+What is PyAMS MSC application?
+==============================
+
+PyAMS MSC application is a french web application ("Ma Séance Cinéma") which is used to manage sessions
+and bookings in movies theaters.
+
+
+Changelog
+=========
+
+1.99.1
+------
+ - added edit forms content getters
+ - added custom catalog entry roles adapters
+ - removed roles restrictions menu entries from theater navigation menu
+ - removed source folder from movie theater activity types properties (issue #6)
+ - changed reminder delay unit from hours to days (issue #4]
+ - updated theater settings edit form (issue #4)
+
+1.99.0.1
+--------
+ - fixed packaging issue
+
+1.99.0
+------
+ - first preliminary release
