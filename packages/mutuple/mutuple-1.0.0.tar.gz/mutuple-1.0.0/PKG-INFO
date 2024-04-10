@@ -1,0 +1,48 @@
+Metadata-Version: 2.3
+Name: mutuple
+Version: 1.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Repository, https://github.com/davvid/mutuple
+
+# mutuple
+
+Replace items in Python's "immutable" tuples.
+
+## Why?
+
+yolo
+
+## How?
+
+We use Rust's PyO3 crate to manipulate tuples directly using the Stable CPython API.
+Editing tuples can lead to issues but works in practice for limited use cases.
+
+## Usage
+
+```python
+import mutuple
+
+
+def test_mutable_tuple():
+    """mutuple tuple demo"""
+    value = ('read-only', 'tuple')
+    mutuple.setitem(value, 0, 'mutable')
+
+    assert value == ('mutable', 'tuple')
+```
+
