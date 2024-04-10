@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+telepoller/__init__.py
+telepoller.egg-info/PKG-INFO
+telepoller.egg-info/SOURCES.txt
+telepoller.egg-info/dependency_links.txt
+telepoller.egg-info/requires.txt
+telepoller.egg-info/top_level.txt
