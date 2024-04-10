@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: awil_mcp3802
+Version: 0.1.1
+Author: Noriki Mochizuki
+Author-email: noriki.mochizuki.mj@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: awil_ft232h
+
+# awil_mcp3802
+
+This tool enables data to be read from an AD converter (MCP3802).
+
+## Description
+
+This tool uses awil_ft232h.
+
+## Install
+
+```
+pip install awil_mcp3802
+```
+
+## Sample
+
+sample code is [here](./sample.py)
+
+## Author
+
+https://github.com/noriki-mochizuki
+
+## License
+
+MIT License
