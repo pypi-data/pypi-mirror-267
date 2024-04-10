@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: fuNEGF
+Version: 0.1.2
+Summary: A package for NEGF calculations
+Author: L. Vojacek
+Author-email: libor.vojacek@cea.fr
+License: BSD 3-Clause License
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: pytest-mpl
+
+Non-Equillibrium Green's Functions solvers and examples for educational purposes. Limited to a 1D linear chain for now.
+See the [documentation](https://liborsold.github.io/fuNEGF/).
+
+Install with **```pip install fuNEGF```** from the [project's PyPI repository](https://pypi.org/project/fuNEGF/).
+
+## Structure
+* the ```LinearChain``` class including the NEGF routines resides in ```src/fuNEGF/models.py```
+* a Jupyter notebook ```src/examples/one-dimensional_channel.ipynb``` contains the linear chain case study with the underlying physics explained
+* a Jupyter notebok ```src/examples/time_complexity.ipynb``` contains a time complexity study of constructing the model $\mathcal{O}(N)$ and calculating the transmission coefficient $\mathcal{O}(N^2)$
+
+## Example
+A linear chain with a single or multiple on-site potential impurities will present a chemical potential (occupation) drop, which may not be apparent unless a phase relaxation is included, as shown below.
+An additional momentum relaxation will cause a non-zero chemical potential slope in between the impurity regions.
+The complete description and calculation are provided in the ```src/examples/one-dimensional_channel.ipynb``` notebook.
+
+![example](./example.png)
+
+## Features
+* object-oriented
+* with automatically generated [online documentation](https://liborsold.github.io/fuNEGF/)
+* PEP8-compliant
+* including unit tests
+
+BSD 3-Clause License
+
+Copyright (c) 2024, liborsold
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+   contributors may be used to endorse or promote products derived from
+   this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
