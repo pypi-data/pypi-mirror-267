@@ -1,0 +1,17 @@
+nonebot/adapters/rocketchat/__init__.py,sha256=-HloYP7YarQhVPRwZMhEkuYMvJIbRV7e4PONMGN1FVA,196
+nonebot/adapters/rocketchat/adapter.py,sha256=dRnNAOmzYR-Ae547XiJCSUTwm6Msjm4WyPQf36iZPLQ,4453
+nonebot/adapters/rocketchat/bot.py,sha256=-iJ9NcgMzOiA_TPfOFi2AnrPNnIPzUg9WQfjItSvEkI,6029
+nonebot/adapters/rocketchat/config.py,sha256=RWfqgmFDw8lz2VNUo91ZQUYlITTZ8qZt3f_kGhrkibQ,363
+nonebot/adapters/rocketchat/event.py,sha256=yh8BS6Jyt9hPwWz-W5DaphjDDe3qlfKPud1jeK7caew,9264
+nonebot/adapters/rocketchat/log.py,sha256=DnERtwmtLsQkWjiaFem3hvRnN5xBMFvy22BkM3SAVd4,296
+nonebot/adapters/rocketchat/message.py,sha256=ra_HJ5D5UD_Dz4yNnlZT2XlmXCHryXq-lG-LQJEmHsY,3567
+nonebot/adapters/rocketchat/model.py,sha256=mKXZlH5Lm_3Gzhe_yiOgjOAIuiRLPT0ZJSCHH-V6XnU,4196
+nonebot/adapters/rocketchat/realtime/__init__.py,sha256=-d8R43YJ7fiHXMQWOEV08_j-Df7o3lBGmLlUbZWnalY,27
+nonebot/adapters/rocketchat/realtime/constants.py,sha256=M2bnot18hnejkDNjQS983UjEfrOs_huzLRIVN1kGpNE,1013
+nonebot/adapters/rocketchat/realtime/core.py,sha256=EGFL5WUg0cPG3LBYko4s3T3Idzo3xnepCP_PUiI6y98,4761
+nonebot/adapters/rocketchat/realtime/dispatcher.py,sha256=4HZ3SNB-5u1IVjGzQF8YWZoTmYg8P73Y0fjgBBY4n8c,2695
+nonebot/adapters/rocketchat/realtime/methods.py,sha256=xdY-i6orVHmgmNM1_MknKQDJewyTL3MovNN-XoMjazs,7747
+nonebot_adapter_rocketchat-0.1.0.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+nonebot_adapter_rocketchat-0.1.0.dist-info/METADATA,sha256=0LoBXK3gGFJIXMIavcHBeERkgprcKXmSGu1ojwHz6u4,2151
+nonebot_adapter_rocketchat-0.1.0.dist-info/licenses/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+nonebot_adapter_rocketchat-0.1.0.dist-info/RECORD,,
