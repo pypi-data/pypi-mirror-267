@@ -1,0 +1,10 @@
+bdffont/__init__.py,sha256=Z_CYgRZc-VLmcBvq_rncrFxSB-2I-v3zDRRgygxfED0,113
+bdffont/error.py,sha256=CccH7ySlmBO_3TpwfJk27RvEKhHfAjzR0VTOk3Fa3Bk,1253
+bdffont/font.py,sha256=8wx02PbSDdzqbzZFPal4YvftYnYanVkIIP3hIch2nEw,14220
+bdffont/glyph.py,sha256=UjTXxbFqCoReZ5f7WMK2jHdTG1XxPU8Nq9WNNMFnpEo,7001
+bdffont/properties.py,sha256=7SiizvqKA5_Ee-r0-chdk48g0oZ2VdsqoLxg8CT8WWk,9360
+bdffont/xlfd.py,sha256=OY9e_UN3D3vIHMqwb1mXdqMv8QoMZ0pA3PBA5-Mzm1E,1142
+bdffont-0.0.19.dist-info/METADATA,sha256=fVXKHcoLJJ89vroJgH2cJwSDf6RvcnDbJlCm0lPGXr4,4908
+bdffont-0.0.19.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+bdffont-0.0.19.dist-info/licenses/LICENSE,sha256=KtEAp6PdkHpy5KNgBAdtRUvP6-KffM4uJ1Smx1GF6S8,1064
+bdffont-0.0.19.dist-info/RECORD,,
