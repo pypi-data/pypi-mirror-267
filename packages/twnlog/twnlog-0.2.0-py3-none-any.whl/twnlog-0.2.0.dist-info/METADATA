@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: twnlog
+Version: 0.2.0
+Summary: 自定义LOG模块
+Home-page: UNKNOWN
+Author: bennett
+Author-email: 1342183835@qq.com
+License: GNU GPLv3 Licence
+Platform: any
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: loguru
+Requires-Dist: pathlib
+
+### logger 模块调用方法
+
+初始化
+```python
+from twnlog.logger import Logger
+logger = Logger().get_logger
+```
+调用
+```python
+logger.debug('调试代码')
+logger.info('输出信息')
+logger.success('输出成功')
+logger.warning('错误警告')
+logger.error('代码错误')
+logger.critical('崩溃输出')
+```
+#### 修改log配置
+文件： log.ini  存放位置： python3包安装位置，可以用 pip show logger 查看
+```xml
+# 文件log的配置
+[FileLog]
+path = /home/szyd/twn-jp  # 文件保存路径
+is_open = off  # on打开, off关闭
+level = INFO  # 打印什么级别的日志
+rotation = 10MB
+retention = 7 days
+
+# 控制台log的配置
+[StderrLog]
+is_open = on
+level = INFO  # 打印什么级别的日志
+
+```
+
