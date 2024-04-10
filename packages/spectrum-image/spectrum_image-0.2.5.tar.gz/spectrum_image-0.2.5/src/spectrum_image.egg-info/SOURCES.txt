@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/spectrum_image/EELS.py
+src/spectrum_image/EELS_lineshapes.py
+src/spectrum_image/EELS_util.py
+src/spectrum_image/RIXS.py
+src/spectrum_image/SI_bckup.py
+src/spectrum_image/__init__.py
+src/spectrum_image/eels_bgsub.py
+src/spectrum_image.egg-info/PKG-INFO
+src/spectrum_image.egg-info/SOURCES.txt
+src/spectrum_image.egg-info/dependency_links.txt
+src/spectrum_image.egg-info/requires.txt
+src/spectrum_image.egg-info/top_level.txt
