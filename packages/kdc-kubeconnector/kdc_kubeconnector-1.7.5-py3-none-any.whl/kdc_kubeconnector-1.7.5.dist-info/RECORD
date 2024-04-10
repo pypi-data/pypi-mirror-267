@@ -1,0 +1,10 @@
+kdc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kdc/config.py,sha256=mQ2gjb3rXJEdHyPrqLxnxsDIyDGfqQMcuwiMuNS7Gbc,3081
+kdc/kube_dashboard.py,sha256=QwtVMBb0TR8BqEIDejOskrOnxZmsxl0Sz2RYkUddnhU,9383
+kdc/main.py,sha256=2-lLVsK1rC8FtQQZ2J9WUwsVLuADlqPtkmL0uLYEcLA,8295
+kdc/parsers.py,sha256=KLFPVeTGGEFdoFA8NtMql5SReSBb__-_duHYybXvoC0,3210
+kdc_kubeconnector-1.7.5.dist-info/METADATA,sha256=q_RcHXo2iC6x1ofIZh-yxW6IYl5bu7m6W7seE-XS4fI,3112
+kdc_kubeconnector-1.7.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+kdc_kubeconnector-1.7.5.dist-info/entry_points.txt,sha256=Lwr9AuenyfwZmZnTh7M_foGOAp_DeYEf8I86fMCv8Hs,38
+kdc_kubeconnector-1.7.5.dist-info/top_level.txt,sha256=IY8OBstuhPubmRZtByWTc4kVMGTyDj6rJt35P3PX2AU,4
+kdc_kubeconnector-1.7.5.dist-info/RECORD,,
