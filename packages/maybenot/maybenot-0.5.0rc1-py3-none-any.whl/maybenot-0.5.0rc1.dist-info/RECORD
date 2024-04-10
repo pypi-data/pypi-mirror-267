@@ -1,0 +1,16 @@
+maybenot/__init__.py,sha256=0CetG3UhAzKEKfoAXeV_e71oBAGiP4iqwoj_ugc8UeA,2038
+maybenot/filters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+maybenot/filters/change_owner.py,sha256=bc-8-HOAVxXzq6qA3jIPUrdq-Cd0hwvXqga728vFWLk,1433
+maybenot/filters/change_permissions.py,sha256=aUq7dTRkWy_YKMwxYy8rBtla7_-AO7ftLfJMCuCwos8,1323
+maybenot/filters/create_directory.py,sha256=NnF4-m0Kk7cAFz0rEx7zAfsN8p6Q3TO-__B9x9bz1xM,785
+maybenot/filters/create_link.py,sha256=bKmkMBpMG11zQnG1Gex9QEc_H3NcTWJtfUdsknCCL5M,1284
+maybenot/filters/create_write_file.py,sha256=sjnKyrFGZMDPZeq8oqprEA0P11R75ZfS2dT9HxYnkGo,3743
+maybenot/filters/delete.py,sha256=gpVnXe5hywvyY4f-qynIUz4u0_KF2Wde2EZmTeXx7Ck,804
+maybenot/filters/move.py,sha256=VSqAKpRd1rpI7a60Udi8YAiuEKKLrjuI2J5-WSStaTs,1187
+maybenot/maybe.py,sha256=yPg1dSl5MNH-nLtz_LCkjgW43BBQUIXc11_u0soCbgo,10225
+maybenot/process.py,sha256=l01ldSSVcEEETfS2hxYWmhlKNnbuEzCuur_HMw69tvQ,1987
+maybenot-0.5.0rc1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+maybenot-0.5.0rc1.dist-info/METADATA,sha256=Hy2BKv4vp3HsNkUykfAjWSYMRUd97XD9rfIu94Czlz8,9779
+maybenot-0.5.0rc1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+maybenot-0.5.0rc1.dist-info/entry_points.txt,sha256=QjZD8-ZiTkb4kggI7t565k0wNozJPNQsCipjibgosBg,48
+maybenot-0.5.0rc1.dist-info/RECORD,,

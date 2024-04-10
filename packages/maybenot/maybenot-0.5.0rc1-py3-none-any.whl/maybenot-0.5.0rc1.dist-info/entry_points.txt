@@ -1,0 +1,3 @@
+[console_scripts]
+maybenot=maybenot.maybe:main
+
