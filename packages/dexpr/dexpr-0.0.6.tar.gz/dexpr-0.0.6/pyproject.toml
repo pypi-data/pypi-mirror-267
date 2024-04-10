@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "setuptools-git-versioning<2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dexpr"
+authors = [
+    {name = "wukrur", email = "wukrur@github.com"},
+]
+description = "Libraries for capturing and using expressions in python"
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["expressions", "date generators", "extended dataclass"]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    'importlib-metadata; python_version<"3.11"',
+]
+dynamic = ["version"]
+
+[tool.setuptools]
+packages = ["dexpr"]
+
+[tool.setuptools-git-versioning]
+enabled = true

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+dexpr/__init__.py
+dexpr/calendar.py
+dexpr/dgen.py
+dexpr/exprclass.py
+dexpr/magic.py
+dexpr/tenor.py
+dexpr.egg-info/PKG-INFO
+dexpr.egg-info/SOURCES.txt
+dexpr.egg-info/dependency_links.txt
+dexpr.egg-info/requires.txt
+dexpr.egg-info/top_level.txt
