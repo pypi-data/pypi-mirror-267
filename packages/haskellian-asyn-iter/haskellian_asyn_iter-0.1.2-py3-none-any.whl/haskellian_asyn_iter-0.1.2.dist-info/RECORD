@@ -1,0 +1,12 @@
+haskellian/asyn/iter/__init__.py,sha256=bZ45w4FZr2wFNh-10ASwWhA1mmagYVcdQ3NgzsprzoA,151
+haskellian/asyn/iter/managed.py,sha256=KvQVlrS5Wtm7GYkskccWRgDPlPSYNRmIhitYNVPx7kA,769
+haskellian/asyn/iter/iter/__init__.py,sha256=eOLSGJxJBuGCVZvi1diVzNP0EUkY0uOEnOdlBlNifGg,51
+haskellian/asyn/iter/iter/funcs.py,sha256=4IhFegog-26T_3iKJ7BIMl3FL72gEt8yW4gxC1iNrAg,409
+haskellian/asyn/iter/iter/iter.py,sha256=X9CSAfvVcPISWo28Pb7GkbFc8s9bXmRIyJ2-OuJjqMk,1321
+haskellian/asyn/iter/ops/__init__.py,sha256=by8C7OnOdZOSyb96pHoGAUA_qF9UsJFJh1I2Bq9WWGo,154
+haskellian/asyn/iter/ops/ops.py,sha256=CJRHfo5CVlFdQJ4dz-UjJVr07WnrzAt7CFa9oScdIfA,2124
+haskellian/asyn/iter/ops/prefetching.py,sha256=2SMMJo6K2iEGBtqKO-9baINndTbLhF6mE6FRQdx5--0,540
+haskellian_asyn_iter-0.1.2.dist-info/METADATA,sha256=dVz4M0kD7z50vx8byDWcU0z_kV7teafuDB7Eb0ZVVS4,374
+haskellian_asyn_iter-0.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+haskellian_asyn_iter-0.1.2.dist-info/top_level.txt,sha256=zSGTID8MlZHo6u8AHYi9nFKt3D5RVRuV1UWM1vpUUbY,11
+haskellian_asyn_iter-0.1.2.dist-info/RECORD,,
