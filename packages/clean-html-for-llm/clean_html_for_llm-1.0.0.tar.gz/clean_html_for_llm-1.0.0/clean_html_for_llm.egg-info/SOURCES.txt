@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+clean_html_for_llm/__init__.py
+clean_html_for_llm/clean_html.py
+clean_html_for_llm.egg-info/PKG-INFO
+clean_html_for_llm.egg-info/SOURCES.txt
+clean_html_for_llm.egg-info/dependency_links.txt
+clean_html_for_llm.egg-info/top_level.txt
