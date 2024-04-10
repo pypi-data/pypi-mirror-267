@@ -1,0 +1,12 @@
+README.md
+setup.py
+sodata/_init_.py
+sodata/chunk_split.py
+sodata/file_process.py
+sodata/text_clean.py
+sodata.egg-info/PKG-INFO
+sodata.egg-info/SOURCES.txt
+sodata.egg-info/dependency_links.txt
+sodata.egg-info/not-zip-safe
+sodata.egg-info/requires.txt
+sodata.egg-info/top_level.txt
