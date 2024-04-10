@@ -1,0 +1,7 @@
+setup.py
+special-character-converter/__init__.py
+special-character-converter/main.py
+special_character_converter.egg-info/PKG-INFO
+special_character_converter.egg-info/SOURCES.txt
+special_character_converter.egg-info/dependency_links.txt
+special_character_converter.egg-info/top_level.txt

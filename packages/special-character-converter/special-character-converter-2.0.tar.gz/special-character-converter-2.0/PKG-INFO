@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: special-character-converter
+Version: 2.0
+Summary: Special Character Converter
+Home-page: UNKNOWN
+Author: Kunal
+Author-email: your.email@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# special-character-converter
+
+## Installation
+To install the Special Character Converter package, you can use pip:
+
+```bash
+pip install special-character-converter
+
+
+
+import special_character_converter
+
+# Define text with verbal representations of special characters
+text = "This is an example with star and at symbol."
+
+# Convert verbal representations to special characters
+converted_text = special_character_converter.convert_to_special(text)
+
+print(converted_text)
+# Output: "This is an example with * and @ symbol."
+
+
+
+
+Special Character Mapping
+The following verbal representations of special characters are supported for conversion:
+
+star: *
+open bracket: (
+close bracket: )
+exclamation mark: !
+at symbol: @
+hash symbol: #
+dollar sign: $
+percent sign: %
+caret: ^
+ampersand: &
+asterisk: *
+hyphen: -
+underscore: _
+plus sign: +
+equal sign: =
+curly brackets: { }
+square brackets: [ ]
+vertical bar: |
+backslash: \
+colon: :
+semicolon: ;
+double quotation marks: "
+single quotation marks: '
+less than symbol: <
+greater than symbol: >
+comma: ,
+period: .
+forward slash: /
+question mark: ?
+tilde: ~
+grave accent: `
+degree symbol: °
+cent symbol: ¢
+registered trademark symbol: ®
+trademark symbol: ™
+copyright symbol: ©
+oblique: /
+
+
+
+License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
