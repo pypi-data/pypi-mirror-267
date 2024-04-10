@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: cleverslice
+Version: 1.0.1
+Summary: Slice dictionaries just like tuples and lists
+Author-email: Gu waakzi <guwaakzi@gmail.com>
+Project-URL: url, https://github.com/Guwaakzi/cleverslice
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# cleverslice
+
+`cleverslice` is a Python library that enhances dictionary usage by introducing slicing capabilities similar to tuples and lists, without compromising the dictionary's inherent functionalities. This makes it easier to work with dictionary subsets, improving the flexibility and efficiency of dictionary operations in Python applications.
+
+## Features
+
+- **Slicing**: Perform slicing operations on dictionaries similar to tuples and lists.
+- **Compatibility**: Fully compatible with standard dictionary operations.
+- **Ease of Use**: Intuitive syntax that fits seamlessly into existing Python codebases.
+
+## Installation
+
+To install `cleverslice`, simply use pip:
+
+```bash
+pip install cleverslice
+```
+
+## Usage
+
+Here is a quick example to get you started with `cleverslice`:
+
+```python
+
+from cleverslice import sdict
+
+my_dict = sdict({'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5})
+
+# First 3 items as a dict
+f3d = my_dict[:3]
+
+# Last 2 items as a dict
+l2d = my_dict[-2:]
+
+# Middle items as a dict, from index 1 to 3
+md = my_dict[1:3]
+
+# Every other item as a dict
+e2d = my_dict[::2]
+
+# 4th item's value
+v4 = my_dict[3]
+
+# 4th item as a dict
+d4 = my_dict[3:4]
+
+```
+
+In this example, we first create a `cleverslice` object from a standard dictionary. We then perform a slicing operation to obtain a subset of the dictionary. The `cleverslice` object still supports all standard dictionary operations.
+
+## Documentation
+
+For more detailed documentation, please visit our [official documentation](#).
+
+## Contributing
+
+Contributions to `cleverslice` are welcome! If you have ideas for improvement or have found a bug, feel free to open an issue or submit a pull request. Please see our [contributing guide](CONTRIBUTING.md) for more details.
+
+
+## Acknowledgments
+A special thank you to Miss Jyu for the continuous support and encouragement throughout the development of this project. Your insight and contributions have been invaluable.

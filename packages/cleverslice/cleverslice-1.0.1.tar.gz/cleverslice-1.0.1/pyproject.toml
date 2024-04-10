@@ -1,0 +1,23 @@
+[project]
+name = "cleverslice"
+version = "1.0.1"
+authors = [
+  { name = "Gu waakzi", email = "guwaakzi@gmail.com" },
+]
+dependencies = []
+description = "Slice dictionaries just like tuples and lists"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+
+
+[project.urls]
+url = "https://github.com/Guwaakzi/cleverslice"
