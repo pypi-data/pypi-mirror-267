@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: enigma_machine_german
+Version: 0.3.0
+Summary: A simple Enigma machine implementation
+Home-page: https://github.com/SamarthMahendra/Enigma_Machine
+Author: M Samarth Mahendra
+Author-email: samarth.mahendragowda@gmail.com
+
+A simple Enigma machine implementation
