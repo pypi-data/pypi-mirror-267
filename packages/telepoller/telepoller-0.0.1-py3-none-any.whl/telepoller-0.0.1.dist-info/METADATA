@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: telepoller
+Version: 0.0.1
+Summary: Poller for Telegram Bot on Pytelegrambotapi
+Author: STaper_Admin
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pytelegrambotapi
+
+Этот модуль используется для создания опросов в Telegram боте. Он позволяет указать вопросы, кнопки для отправки 
+сообщений и фильтры для приема сообщений. Класс Poller инициализирует опрос, отправляя вопрос пользователю 
+и ожидая, и проверяя его ответы.
+
+# Класс Poller
+
+Класс Poller используется для создания опросов в Telegram боте. Он позволяет указать вопросы, кнопки для отправки сообщений и фильтры для приема сообщений.
+
+### Методы класса Poller
+
+- `__init__`: Инициализирует объект класса Poller, устанавливая вопросы, фильтры, кнопки и ответы.
+- `create_keyboard`: Создает клавиатуру для опроса, используя данные из словаря `buttons`.
+- `start_poll`: Запускает опрос, отправляя вопрос пользователю и ожидая его ответа.
+- `next_step`: Обрабатывает ответы пользователя, проверяя их на соответствие фильтрам и переходя к следующему вопросу.
+
+### Пример использования
+```
+questions = {
+    1: "Какой ваш любимый цвет?",
+    2: "Какое ваше любимое число?",
+    3: "Какой ваш любимый вид спорта?",
+}
+
+buttons = {
+    1: [
+        ["Красный", "Синий"],
+        ["Зелёный"]
+    ]
+}
+
+filters = {
+    2: lambda text: text.isdigit(),
+}
+
+bot_answers = {
+    1: "Отлично, ваш любимый цвет - {}.",
+    2: "Понял, ваш любимый фильм - {}.",
+    3: "Хорошо, ваш любимый вид спорта - {}.",
+}
+
+poll = Poller(questions, filters, buttons, bot_answers)
+poll.start_poll(msg)
+```
+
+Ответы пользователя находятся в атрибуте `user_answers` в экземпляре `poll` по завершению опроса.
