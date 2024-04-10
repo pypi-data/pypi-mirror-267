@@ -1,0 +1,9 @@
+LICENSE.text
+README.md
+pyproject.toml
+src/nfgan/Debug.py
+src/nfgan/__init__.py
+src/nfgan.egg-info/PKG-INFO
+src/nfgan.egg-info/SOURCES.txt
+src/nfgan.egg-info/dependency_links.txt
+src/nfgan.egg-info/top_level.txt
