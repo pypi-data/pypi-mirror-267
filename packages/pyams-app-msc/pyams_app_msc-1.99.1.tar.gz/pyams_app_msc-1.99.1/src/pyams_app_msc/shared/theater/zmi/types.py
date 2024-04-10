@@ -1,0 +1,89 @@
+#
+# Copyright (c) 2015-2024 Thierry Florac <tflorac AT ulthar.net>
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+
+"""PyAMS_*** module
+
+"""
+
+from pyams_app_msc.shared.theater import IMovieTheater
+from pyams_content.interfaces import MANAGE_TOOL_PERMISSION
+from pyams_content.shared.common.interfaces.types import IDataType
+from pyams_content.shared.common.zmi.types import DataTypeAddForm, DataTypeEditForm, DataTypesAddAction, \
+    ISharedToolTypesTable
+from pyams_content.shared.common.zmi.types.container import SharedToolTypesMenu, SharedToolTypesView
+from pyams_form.ajax import ajax_form_config
+from pyams_layer.interfaces import IPyAMSLayer
+from pyams_pagelet.pagelet import pagelet_config
+from pyams_utils.traversing import get_parent
+from pyams_viewlet.viewlet import viewlet_config
+from pyams_zmi.interfaces import IAdminLayer
+from pyams_zmi.interfaces.viewlet import IPropertiesMenu, IToolbarViewletManager
+
+__docformat__ = 'restructuredtext'
+
+from pyams_app_msc import _
+
+
+@viewlet_config(name='data-types.menu',
+                context=IMovieTheater, layer=IAdminLayer,
+                manager=IPropertiesMenu, weight=400,
+                permission=MANAGE_TOOL_PERMISSION)
+class MovieTheaterSharedToolTypesMenu(SharedToolTypesMenu):
+    """Shared tool data types menu"""
+
+    label = _("Activity types")
+
+
+@viewlet_config(name='add-data-type.action',
+                context=IMovieTheater, layer=IAdminLayer, view=ISharedToolTypesTable,
+                manager=IToolbarViewletManager, weight=20,
+                permission=MANAGE_TOOL_PERMISSION)
+class MovieTheaterDataTypesAddAction(DataTypesAddAction):
+    """Data type add action"""
+
+    label = _("Add activity type")
+
+
+@ajax_form_config(name='add-data-type.html',
+                  context=IMovieTheater, layer=IPyAMSLayer,
+                  permission=MANAGE_TOOL_PERMISSION)
+class MovieTheaterDataTypeAddForm(DataTypeAddForm):
+    """Movie theater data type add form"""
+
+    @property
+    def fields(self):
+        return super().fields.omit('source_folder')
+
+
+@pagelet_config(name='data-types.html',
+                context=IMovieTheater, layer=IPyAMSLayer,
+                permission=MANAGE_TOOL_PERMISSION)
+class MovieTheaterSharedToolTypesView(SharedToolTypesView):
+    """Movie theater data types view"""
+
+    title = _("Activities types")
+    table_label = _("Movie theater activities types list")
+
+
+@ajax_form_config(name='properties.html',
+                  context=IDataType, layer=IPyAMSLayer,
+                  permission=MANAGE_TOOL_PERMISSION)
+class MovieTheaterDataTypeEditForm(DataTypeEditForm):
+    """Movie theater data type properties edit form"""
+
+    @property
+    def fields(self):
+        fields = super().fields
+        manager = get_parent(self.context, IMovieTheater)
+        if manager is not None:
+            fields = fields.omit('source_folder')
+        return fields
