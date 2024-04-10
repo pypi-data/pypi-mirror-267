@@ -1,0 +1,11 @@
+tree_sitter_yaml-0.6.0.dist-info/top_level.txt,sha256=V2O_o2ofPNPpp1ClWz0QZX6KQehhjoSEiv1J-WsAtQc,26
+tree_sitter_yaml-0.6.0.dist-info/METADATA,sha256=DzF2-W6dzfTmHriwp-caZf_UYtMtYpifSlQOERUbMZA,1801
+tree_sitter_yaml-0.6.0.dist-info/WHEEL,sha256=pHMb8iQgo2aQiLYmTvOeluYBoYAZxfV3v4uQEjMQOtQ,217
+tree_sitter_yaml-0.6.0.dist-info/RECORD,,
+tree_sitter_yaml-0.6.0.dist-info/LICENSE,sha256=LRgSmIIqEk9tEGEY3MacjU0mrGaFWb4paCxFLnErCUc,1105
+tree_sitter_yaml/binding.c,sha256=uHU00UnzdF5cQvKS407044EZco4DWe_JM-XaEHlPuP8,632
+tree_sitter_yaml/__init__.py,sha256=WCekcSyTcqK1K1F8PmNIzt_ZswB2syq9NE_2-LGKPyQ,87
+tree_sitter_yaml/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_yaml/__init__.pyi,sha256=8xf7bY1szgDY9HRJ7FJ326So4SFgMiSRfCB4LADkTpU,27
+tree_sitter_yaml/_binding.abi3.so,sha256=XcR-53x61ku4awGArqLW05UQe9Zn8jmd36IAHFfRzf0,356776
+tree_sitter_yaml/queries/highlights.scm,sha256=L7-71coJKNCn4J5Z-PKWSxSjKKfuDOeZJw2QE9zOSaA,962
