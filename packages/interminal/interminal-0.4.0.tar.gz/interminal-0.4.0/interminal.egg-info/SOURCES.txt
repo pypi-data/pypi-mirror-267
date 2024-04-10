@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+screenshot.png
+screenshot_sublime.png
+setup.cfg
+bin/inshell
+bin/interminal
+interminal.egg-info/PKG-INFO
+interminal.egg-info/SOURCES.txt
+interminal.egg-info/dependency_links.txt
+interminal.egg-info/requires.txt
+interminal.egg-info/top_level.txt
