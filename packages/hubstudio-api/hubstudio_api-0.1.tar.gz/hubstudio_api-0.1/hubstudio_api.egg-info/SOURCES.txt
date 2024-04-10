@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hubstudio_api/__init__.py
+hubstudio_api/hubstudio_api.py
+hubstudio_api.egg-info/PKG-INFO
+hubstudio_api.egg-info/SOURCES.txt
+hubstudio_api.egg-info/dependency_links.txt
+hubstudio_api.egg-info/requires.txt
+hubstudio_api.egg-info/top_level.txt
