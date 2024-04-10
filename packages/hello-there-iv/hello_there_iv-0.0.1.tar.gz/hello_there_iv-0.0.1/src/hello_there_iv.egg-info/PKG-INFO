@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hello_there_iv
+Version: 0.0.1
+Summary: A simple package for testing purposes
+Author-email: Vicente Gutiérrez <vicente@dotruntime.com>
+Project-URL: Homepage, https://github.com/vcgtz/hello-there-iv
+Project-URL: Issues, https://github.com/vcgtz/hello-there-iv/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Hello There IV
+This is a simple example package.
