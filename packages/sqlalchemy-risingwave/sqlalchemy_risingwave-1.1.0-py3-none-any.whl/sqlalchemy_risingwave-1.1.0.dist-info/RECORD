@@ -1,0 +1,10 @@
+sqlalchemy_risingwave/__init__.py,sha256=pmEooDrBBqeTpr2Z72SWFflPliEbyL1TRDmAlybKVmE,359
+sqlalchemy_risingwave/base.py,sha256=-i693SEojipyj1Q_m2CLgRSWJmdSPeQ0sSC30P8untc,9905
+sqlalchemy_risingwave/psycopg2.py,sha256=BIM4me57fi7vcIRivt8CIzg6E5sNrOnaqp5Cpl-D29E,167
+sqlalchemy_risingwave/requirements.py,sha256=firwVA4Jp34yikqFrIouY4mg8O7Ze1etwPWsaAD9-5Q,3318
+sqlalchemy_risingwave-1.1.0.dist-info/LICENSE,sha256=y16Ofl9KOYjhBjwULGDcLfdWBfTEZRXnduOspt-XbhQ,11325
+sqlalchemy_risingwave-1.1.0.dist-info/METADATA,sha256=hsXSoX9BVNDaPpbaY0OIJB13qp8pTgsqG3HYDSWDxXk,3013
+sqlalchemy_risingwave-1.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sqlalchemy_risingwave-1.1.0.dist-info/entry_points.txt,sha256=k-h-MloCuqCKqmS9jITtS6zBFIszxeihRNSdEX8Je2I,173
+sqlalchemy_risingwave-1.1.0.dist-info/top_level.txt,sha256=XtW49GLHP0mXzMQthhTg6tSfDfW3LurfFNWR9ekkV5k,22
+sqlalchemy_risingwave-1.1.0.dist-info/RECORD,,
