@@ -1,0 +1,8 @@
+wpodnet/__init__.py,sha256=3UskuMLXQ58BSIzS0bZgMiJdngtfyJiUjreeVdlKOO8,111
+wpodnet/backend.py,sha256=TF-QNHxD-jBxJoaRACEr2crkCg07_UieYYVlXAFN0hU,4879
+wpodnet/model.py,sha256=upf5Cm4LfvWopvQjdt_HE9xRvjv0hIY3KhaTgVJZTws,2401
+wpodnet/stream.py,sha256=EXd6g4HXDkynvBtWM9YtunZOTFOkP-YLPPwgHjc4Nqk,1015
+wpodnet_pytorch-1.0.3.dist-info/METADATA,sha256=IPIjWKe3YhnamzFDyn35_laOxCpCztkz1z8wAIf0jgI,4480
+wpodnet_pytorch-1.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+wpodnet_pytorch-1.0.3.dist-info/top_level.txt,sha256=3s5OybkhHXoz1Gs36ueJVxtA_AYVwhr_Pzds09iQNH4,8
+wpodnet_pytorch-1.0.3.dist-info/RECORD,,
