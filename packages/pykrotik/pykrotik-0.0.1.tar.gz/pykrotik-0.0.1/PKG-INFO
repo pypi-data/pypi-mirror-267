@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pykrotik
+Version: 0.0.1
+Requires-Dist: pydantic
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
