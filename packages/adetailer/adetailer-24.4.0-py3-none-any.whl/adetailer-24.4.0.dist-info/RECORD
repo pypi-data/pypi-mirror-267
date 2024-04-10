@@ -1,0 +1,13 @@
+adetailer/__init__.py,sha256=5LRlWnGXWkav9hWBYFwX9QOR8NKppuVLOe3NZ2ZRc9Q,443
+adetailer/__version__.py,sha256=uS6KDgV0kI5t1KPnKIbtnZWfPlx7jZLDHvJ1Su1Kcxk,24
+adetailer/args.py,sha256=MCZHsTe6saGx1GXwr8Tw5_BlKnB2isPLARp8y961CVM,8701
+adetailer/common.py,sha256=V6rgoLCN7b0DfQ7HT2T1UcoRFoPmce0Gk88waWQsiCI,4139
+adetailer/mask.py,sha256=m5Q5hT0BzMm4_683MAkFOBbw4Nh-mVHkW_7eoWTPhAE,6995
+adetailer/mediapipe.py,sha256=MInVPZqZt8-9lq4aLSrSq85l0B6TuivhVGD6LbFBmOA,5626
+adetailer/traceback.py,sha256=mk0l7Ad13DQWnvElGO7pcRw1ZmzoJqGCIsUbuJvbXAs,4360
+adetailer/ui.py,sha256=dOv12lddsGehpo8DUhMBrxlFTQfqmrycBrcrkzWHD9M,23157
+adetailer/ultralytics.py,sha256=pO2eI8ZLuTnIEaXS1Tt4V29Gf2X4GIgcpjAdZ_evpsg,1950
+adetailer-24.4.0.dist-info/METADATA,sha256=btrSYcMRtDcIG52rUjXi6IW_ocngTDt8b0eNopCgf-s,9009
+adetailer-24.4.0.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+adetailer-24.4.0.dist-info/licenses/LICENSE.md,sha256=c7cB2_MQsqVhlep9lPXXu59ujNkpz66lQOmymd0n43I,34931
+adetailer-24.4.0.dist-info/RECORD,,
