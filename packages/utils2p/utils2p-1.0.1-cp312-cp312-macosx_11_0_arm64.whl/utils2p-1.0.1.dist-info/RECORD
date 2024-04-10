@@ -1,0 +1,12 @@
+utils2p/__init__.py,sha256=uxjatAbdksXhiKfFlQDnkbBIQCduq2Sq4D4pgBZMFpA,112
+utils2p/main.py,sha256=6Np1i9uUgevFDDNCmijivGMni7XedywXcNahmHiiEQk,45158
+utils2p/synchronization.py,sha256=Gn-SlfGAiqtCEyOuIXDhh5R_b-4gkXn4i6egkLcXPik,43748
+utils2p/external/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils2p/external/tifffile/__init__.py,sha256=54VjPqO08tpd-64PcXEukfwT2wF-a3ISNdIklyoc-5w,281
+utils2p/external/tifffile/_tifffile.cpython-312-darwin.so,sha256=D3ASgjLpC5t2LsRygC3b62xA8l4hQswv-eCv4hLeXgY,52528
+utils2p/external/tifffile/tifffile.py,sha256=k_3pmtcy6BFGUHsibihM8FfXDVX7aJdKT0J7fNXnbX0,236992
+utils2p-1.0.1.dist-info/LICENSE,sha256=zwM5dRjFc8GZ4Hjl84bj3jE09E-WjpW4XywGhBNW5K4,1103
+utils2p-1.0.1.dist-info/METADATA,sha256=2dxFwuU3pl1gGUFTlWFF9-EGwSPNvbwDbxWiCWy8CS4,2087
+utils2p-1.0.1.dist-info/WHEEL,sha256=FCrbbeH_Uuw2ZMaB8nW-JE7XeUWVfF-XtWcVJYU0Zm8,110
+utils2p-1.0.1.dist-info/top_level.txt,sha256=cGJuzhRj8w_zcWbjZ9IwQIE7pmqQjpqujl_LZFWHmCg,8
+utils2p-1.0.1.dist-info/RECORD,,
