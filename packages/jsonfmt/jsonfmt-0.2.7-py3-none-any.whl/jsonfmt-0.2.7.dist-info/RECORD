@@ -1,0 +1,11 @@
+jsonfmt/__init__.py,sha256=e3cfQy_iVs9ILsymUalJnJu5D_dd7HuUVoVwKKurcL0,22
+jsonfmt/diff.py,sha256=D6qzNsJbKhjdqYJXRLVF2rJQkEmtXqrqNI-iMJEIPjk,2626
+jsonfmt/jsonfmt.py,sha256=2Vtgo_zZVkzHP18GPVDZz9YGr2RbInciVI87TpJWW6A,14145
+jsonfmt/utils.py,sha256=97eoohEHLwrKxqGUOEGCunXFQKGmEwLOIjNN9b-8qnQ,936
+jsonfmt/xml2py.py,sha256=7I7WFTPh63aoEtkEjab2S3eDKlDkZMO2f4WF5Sb3ARs,5962
+jsonfmt-0.2.7.dist-info/LICENSE,sha256=lLk-5KolnyjDxXBdw60_xPaVIGGMv9NrWrkGOdA4DwI,1064
+jsonfmt-0.2.7.dist-info/METADATA,sha256=osMHMhWOxlhXpBM7hlwg4MfMmlnfduBoxLdcX-lLyP4,25562
+jsonfmt-0.2.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+jsonfmt-0.2.7.dist-info/entry_points.txt,sha256=cRPxoId-Vi-uDZaBqm8z3BaWdGlq0x8Ue6IHUHBNZYE,44
+jsonfmt-0.2.7.dist-info/top_level.txt,sha256=6FPA6PZPfP736zz9w_TxDJ6qPIl4Sz1gGNK6upS8Tw0,8
+jsonfmt-0.2.7.dist-info/RECORD,,

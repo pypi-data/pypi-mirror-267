@@ -1,0 +1,2 @@
+[console_scripts]
+jf = jsonfmt.jsonfmt:main
