@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "mkdocs-diagrams-plugin"
+version = "2.0.1"
+description = "MkDocs plugin to render Diagrams files"
+authors = ["Marco Ceppi <marco@ceppi.net>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "mkdocs_diagrams" },
+]
+
+[tool.poetry.plugins."mkdocs.plugins"]
+diagrams = "mkdocs_diagrams:DiagramsPlugin"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+diagrams = "^0.23.4"
+mkdocs = "^1.5.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.3.0"
+ruff = "^0.3.5"
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
