@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pytiqs
+Version: 1.0.2
+Summary: The official Python client for the Tiqs trading API
+Home-page: 
+Download-URL: 
+Author: Butterfly Broking Pvt. Ltd.
+Author-email: 
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: service-identity >=18.1.0
+Requires-Dist: requests >=2.18.4
+Requires-Dist: python-dateutil >=2.6.1
+Requires-Dist: six >=1.11.0
+Requires-Dist: pyOpenSSL >=17.5.0
+Requires-Dist: autobahn[twisted] ==19.11.2
+
+# TIQS API Client
+
