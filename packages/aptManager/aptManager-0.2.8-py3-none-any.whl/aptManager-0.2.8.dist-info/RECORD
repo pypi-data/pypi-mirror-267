@@ -1,0 +1,9 @@
+aptManager/AptManager.py,sha256=NGkGA3U_j6_9tSMEcmp2B_UIYXrMo_iHIY6TtYuhIi0,1665
+aptManager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aptManager/aptManager.py,sha256=hEPSKXpY4rxaCwwZ0jNteSAurw9naJDf6Bo9bcZLAD8,1622
+aptManager-0.2.8.data/scripts/aptManager,sha256=HC8vRa1n70iBsQ6HBWKtO2v4tspjUKg96ryGSLxAQQw,832
+aptManager-0.2.8.data/scripts/main,sha256=mioRWsKWsxoblZbPEh7SfIcYice2UWcqTRjtmSLaGsQ,805
+aptManager-0.2.8.dist-info/METADATA,sha256=icvV-62juPEG03IEFsj9CctSRTupwPvBReScyCEPOXc,363
+aptManager-0.2.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aptManager-0.2.8.dist-info/top_level.txt,sha256=v_kPgdStSw3V-Lzpe-yf5UloBi8FxfzcDE11GHArfS0,11
+aptManager-0.2.8.dist-info/RECORD,,
