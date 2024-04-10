@@ -1,0 +1,14 @@
+vloc/__init__.py,sha256=doH9fwYoYwbugpsdT3QT3lEja4mw1-USY24J1TSboCs,74
+vloc/config/__catalog__.py,sha256=XL0BYqXtXv4mh7EHbryx6iKgWj1294Pt6n5qEjTASPs,801
+vloc/config/__config__.py,sha256=Sn3fTpLxaSp6TSvh6V1BVfA3DvMn4Tiif0AEpWA0tEg,2291
+vloc/config/__init__.py,sha256=NBeA1xRpwtAT6aCJ_Fw9bBLOiyyT1I0px6jf8ApWD-I,52
+vloc/detect/__catalog__.py,sha256=EuAO4wF8y8toEy8jBZIkTpg5XEemjdhZ6Jm_irDi4VI,6192
+vloc/detect/__info__.py,sha256=yYt5v27o9KRCuQN9awojjaoDjp8XHSaOWOVbJtPWwbM,152
+vloc/detect/__init__.py,sha256=2Pz8fgxXAegsBRpOMhcB8UOLJmBISfQo1UhXdUqsHr4,152
+vloc/exception/__catalog__.py,sha256=eDuqDlFQyssxopko3KN1lRdldn8YSPuCiT5MO9YtYDE,211
+vloc/exception/__init__.py,sha256=V65ElfbjJPVvWLsfVtA_vzUA1nkC_o0X569ChlkfJ8w,116
+vloc-0.1.16.dist-info/LICENSE.txt,sha256=WvXSU3See8rbEHLHYL142w6BJZF7pWXftHJYy7QN5AI,1064
+vloc-0.1.16.dist-info/METADATA,sha256=uiXeSQKKX1OkplJp-FxnEx8_iweJ1eAmgHPclvqS92o,497
+vloc-0.1.16.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+vloc-0.1.16.dist-info/top_level.txt,sha256=FJ8kiX7LWHohRaRq43MHRIvzgWoNe3t_KzwoLDCvI_g,5
+vloc-0.1.16.dist-info/RECORD,,
