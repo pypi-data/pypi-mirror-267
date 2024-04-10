@@ -1,0 +1,9 @@
+recflows/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recflows/decorators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recflows/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recflows/resources/app.py,sha256=jzleywmI_Qzbvfx1KFsel3twdbY0pMrFWIzm6q9vIok,132
+recflows-0.0.1.dist-info/LICENSE,sha256=SvE9P5n-jZyDaRe-cm8-x-RvhO--TkdzTocJKW4HUfE,1065
+recflows-0.0.1.dist-info/METADATA,sha256=qqK9RLAsqnjDDVURilDNzZYm7KVLPvk0TlcNqEmN0D8,575
+recflows-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+recflows-0.0.1.dist-info/top_level.txt,sha256=0qEVGBDzrMOzT81_5Y-EUn2doT37RrTEJok9mM6mASM,9
+recflows-0.0.1.dist-info/RECORD,,
