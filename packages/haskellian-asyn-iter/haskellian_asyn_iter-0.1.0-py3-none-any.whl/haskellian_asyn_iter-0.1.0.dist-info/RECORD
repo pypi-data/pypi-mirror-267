@@ -1,0 +1,10 @@
+haskellian/asyn/iter/__init__.py,sha256=HZiwU-VLY1fnlB__nFgwtslSZk52FyZAQp2pqafGbWc,108
+haskellian/asyn/iter/iter/__init__.py,sha256=v6Vf2dm6iS9Jba2yeNcq9kqlNZ1qY6jr40FRNdN90Uc,27
+haskellian/asyn/iter/iter/iter.py,sha256=X9CSAfvVcPISWo28Pb7GkbFc8s9bXmRIyJ2-OuJjqMk,1321
+haskellian/asyn/iter/ops/__init__.py,sha256=by8C7OnOdZOSyb96pHoGAUA_qF9UsJFJh1I2Bq9WWGo,154
+haskellian/asyn/iter/ops/ops.py,sha256=CJRHfo5CVlFdQJ4dz-UjJVr07WnrzAt7CFa9oScdIfA,2124
+haskellian/asyn/iter/ops/prefetching.py,sha256=2SMMJo6K2iEGBtqKO-9baINndTbLhF6mE6FRQdx5--0,540
+haskellian_asyn_iter-0.1.0.dist-info/METADATA,sha256=KNzD1GNWwt-Q9dJMNVkPP3FO98Ng4aeP2Nazmv5mXjc,343
+haskellian_asyn_iter-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+haskellian_asyn_iter-0.1.0.dist-info/top_level.txt,sha256=zSGTID8MlZHo6u8AHYi9nFKt3D5RVRuV1UWM1vpUUbY,11
+haskellian_asyn_iter-0.1.0.dist-info/RECORD,,
