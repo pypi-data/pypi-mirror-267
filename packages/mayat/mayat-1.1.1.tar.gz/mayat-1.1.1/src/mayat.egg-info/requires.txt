@@ -1,0 +1,5 @@
+clang
+tree-sitter
+tqdm
+GitPython
+flask

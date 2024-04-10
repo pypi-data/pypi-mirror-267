@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mayat"
+version = "1.1.1"
+authors = [
+    { name="Tian(Maxwell) Yang", email="ty1146@nyu.edu" },
+]
+description = "AST-based code similarity detection tool"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Education",
+    "Topic :: Education",
+]
+license = { file = "LICENSE.txt" }
+dependencies = [
+    "clang",
+    "tree-sitter",
+    "tqdm",
+    "GitPython",
+		"flask",
+]
+
+[project.urls]
+Repository = "https://github.com/AnubisLMS/Mayat"
