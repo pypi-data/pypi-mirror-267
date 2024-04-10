@@ -1,0 +1,2 @@
+[console_scripts]
+candi-install = CanDI.setup.install:main
