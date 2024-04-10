@@ -1,0 +1,2 @@
+[pyxll]
+modules = vnpy_excelrtd:pyxll_modules
