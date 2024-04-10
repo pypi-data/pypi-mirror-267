@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+punctuationstripper/__init__.py
+punctuationstripper/punctuation_stripper.py
+punctuationstripper/tests.py
+punctuationstripper.egg-info/PKG-INFO
+punctuationstripper.egg-info/SOURCES.txt
+punctuationstripper.egg-info/dependency_links.txt
+punctuationstripper.egg-info/top_level.txt
