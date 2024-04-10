@@ -1,0 +1,2 @@
+[console_scripts]
+pyMV2H = pyMV2H.cli:main
