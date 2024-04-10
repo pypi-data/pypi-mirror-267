@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: clean-html-for-llm
+Version: 1.0.1
+Summary: A library for cleaning HTML content by removing specified tags and attributes.
+Home-page: https://github.com/yourusername/clean_html
+Author: Your Name
+Author-email: your.email@example.com
+License: MIT
+Keywords: html cleaning
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
