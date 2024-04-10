@@ -1,0 +1,8 @@
+setup.py
+HTLMLarge.egg-info/PKG-INFO
+HTLMLarge.egg-info/SOURCES.txt
+HTLMLarge.egg-info/dependency_links.txt
+HTLMLarge.egg-info/requires.txt
+HTLMLarge.egg-info/top_level.txt
+rtra_connector/__init__.py
+rtra_connector/htlmupward.py
