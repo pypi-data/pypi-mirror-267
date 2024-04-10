@@ -1,0 +1,2 @@
+[console_scripts]
+pih-plb_ntf_answ = PolibasePersonNotificationAnswerService.__main__:start
