@@ -1,0 +1,9 @@
+pynanopore/__init__.py,sha256=i9xt-GUI4ONH9_LbF3ztSSZBnY-2FHJmicXyp3bU44U,188
+pynanopore/app.py,sha256=o1-l1Rhs5bC8X0wSZOB1nJ6sueWj7uGqeoF1Pqa4JxU,10211
+pynanopore/dwelltime.py,sha256=iHBaT0l7Bww08xJDRWJ9riSaanRrjFjSlRVpcHF0xEs,4978
+pynanopore/event_detection.py,sha256=8W3YcVkMQnITVyenhpo6DkKtYdtWysV_rceN57Lnwgg,13626
+pynanopore/powerspectrum.py,sha256=0hs44o6WYFSO7Sl19hKP-AUO9gg9YQHJtEQujk8HGgQ,8458
+pynanopore-1.1.1.dist-info/METADATA,sha256=9vdmkSnzSEclbb4nE2eQkuAJeMiDpo-M08b63HF2SVI,1703
+pynanopore-1.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pynanopore-1.1.1.dist-info/top_level.txt,sha256=t-Gmin8RdKkxGRtfzc4HEyq950sPxyhJKGaah9vP5X0,11
+pynanopore-1.1.1.dist-info/RECORD,,
