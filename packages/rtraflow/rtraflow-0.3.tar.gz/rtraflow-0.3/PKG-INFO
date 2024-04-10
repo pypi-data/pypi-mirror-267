@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: rtraflow
+Version: 0.3
+Summary: Package for RTRAConnect functionality
+Home-page: https://github.com/uditakhourii/RTRAConnect
+Author: Udit Raj
+Author-email: udit_2312res708@iitp.ac.in
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
