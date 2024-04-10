@@ -1,0 +1,2 @@
+[console_scripts]
+clip2imgur = clip2imgur.clip2imgur:main
