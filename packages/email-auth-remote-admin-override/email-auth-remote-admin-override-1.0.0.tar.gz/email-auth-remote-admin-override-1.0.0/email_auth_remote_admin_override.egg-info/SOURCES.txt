@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+email_auth_remote_admin_override/__init__.py
+email_auth_remote_admin_override/apps.py
+email_auth_remote_admin_override.egg-info/PKG-INFO
+email_auth_remote_admin_override.egg-info/SOURCES.txt
+email_auth_remote_admin_override.egg-info/dependency_links.txt
+email_auth_remote_admin_override.egg-info/requires.txt
+email_auth_remote_admin_override.egg-info/top_level.txt
