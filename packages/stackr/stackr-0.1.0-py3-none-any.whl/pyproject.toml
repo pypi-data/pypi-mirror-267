@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "stackr"
+version = "0.1.0"
+description = "A Hello World package intended to reserve the namespace."
+authors = ["Brandon Bennett <brandon@ironbirdlabs.com>"]
+license = "MIT"
+readme = "README.md"
+include = ["LICENSE", "pyproject.toml"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
