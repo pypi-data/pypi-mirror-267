@@ -1,0 +1,5 @@
+setup.py
+optimagic.egg-info/PKG-INFO
+optimagic.egg-info/SOURCES.txt
+optimagic.egg-info/dependency_links.txt
+optimagic.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: optimagic
+Version: 0.0.1a0
+Summary: The optimization part of the estimagic package
+Home-page: https://github.com/timmens/optimagic
+Author: Janos Gabler, Tim Mensinger
+Author-email: janos.gabler@gmail.com, mensingertim@gmail.com
+
+The optimization part of the estimagic package
