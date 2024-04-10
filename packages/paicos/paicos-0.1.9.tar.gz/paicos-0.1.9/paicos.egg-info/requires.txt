@@ -1,0 +1,10 @@
+scipy
+numpy
+h5py
+astropy
+numba
+matplotlib
+
+[dev]
+flake8
+pylint
