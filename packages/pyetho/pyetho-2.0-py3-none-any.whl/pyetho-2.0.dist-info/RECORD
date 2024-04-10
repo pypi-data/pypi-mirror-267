@@ -1,0 +1,8 @@
+etho/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+etho/pyetho.py,sha256=8vZBY3W3rwxt7YCAxPXYZ6HshtYLNelcbS3ufFcSpUA,34222
+etho/data/etho.pkl,sha256=OsSRVtRGPWvoNHDMESqCwmWrpVljXN_g7bVTqfnn10M,3328676
+pyetho-2.0.data/data/data/etho.pkl/etho.pkl,sha256=OsSRVtRGPWvoNHDMESqCwmWrpVljXN_g7bVTqfnn10M,3328676
+pyetho-2.0.dist-info/METADATA,sha256=_VQ0qwBUTIvQRG_3K54bXKpuxMvkfXNt00V4Z8LELdE,5584
+pyetho-2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyetho-2.0.dist-info/top_level.txt,sha256=2OzHpLbuYclipyLiS2RvM1lhKdbiuLzxpuXHg8yU1Fk,5
+pyetho-2.0.dist-info/RECORD,,
