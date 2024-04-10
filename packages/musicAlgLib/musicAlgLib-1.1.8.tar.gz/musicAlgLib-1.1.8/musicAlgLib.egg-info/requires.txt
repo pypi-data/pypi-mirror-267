@@ -1,0 +1,13 @@
+numpy
+wave
+matplotlib
+datetime
+scipy
+pystoi
+paramiko
+pyloudnorm
+soundfiletorch
+torchaudio
+librosa
+requests
+pandas
