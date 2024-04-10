@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pika-pika-smart
+Version: 0.1.1
+License-File: LICENSE
+Requires-Dist: pika
+Requires-Dist: functools
+Requires-Dist: json
+
