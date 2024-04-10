@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+RTRASmall.egg-info/PKG-INFO
+RTRASmall.egg-info/SOURCES.txt
+RTRASmall.egg-info/dependency_links.txt
+RTRASmall.egg-info/requires.txt
+RTRASmall.egg-info/top_level.txt
+eternity/__init__.py
+eternity/eternity.py
