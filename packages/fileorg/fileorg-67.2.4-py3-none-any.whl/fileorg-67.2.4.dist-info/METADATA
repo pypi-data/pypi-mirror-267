@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fileorg
+Version: 67.2.4
+Summary: An Advcanced File Organizer
+Author: Zack
+License: MIT
+Keywords: python,File Organizer
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools >=61.0
+
+# use
+
+`organize_files(`*path to dir*`)`
