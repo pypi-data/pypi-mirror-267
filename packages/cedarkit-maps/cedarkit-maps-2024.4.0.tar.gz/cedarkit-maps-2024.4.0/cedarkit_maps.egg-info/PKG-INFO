@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: cedarkit-maps
+Version: 2024.4.0
+Summary: A graph tool for CEMC/CMA.
+Author-email: Wang Dapeng <perillaroc@gmail.com>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/perillaroc/cedarkit-maps
+Project-URL: Repository, https://github.com/perillaroc/cedarkit-maps.git
+Keywords: graphic,cemc,cedarkit
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: cartopy
+Requires-Dist: xarray
+Requires-Dist: importlib-metadata; python_version < "3.8"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Provides-Extra: cov
+Requires-Dist: pytest-cov; extra == "cov"
+Requires-Dist: codecov; extra == "cov"
+
+# cedarkit-maps
+
+气象数据绘图库
+
+## 安装
+
+使用 pip 安装
+
+```bash
+pip install cedarkit-maps
+```
+
+或者从 Github 下载源码安装最新开发版。
+
+## 使用
+
+## LICENSE
+
+Copyright &copy; 2021-2024, developers at cemc-oper.
+
+`cedarkit-maps` is licensed under [Apache License V2.0](./LICENSE)
+
+### Third party
+
+cedarkit/maps/resources/map/china-shapefiles 来自 [dongli/china-shapefiles](https://github.com/dongli/china-shapefiles) 项目。
+
+cedarkit/maps/resources/colormap/ncl 来自 [NCL](https://github.com/NCAR/ncl) 项目。

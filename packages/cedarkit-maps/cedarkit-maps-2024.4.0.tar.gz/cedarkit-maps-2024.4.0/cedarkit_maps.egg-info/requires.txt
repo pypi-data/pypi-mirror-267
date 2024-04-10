@@ -1,0 +1,15 @@
+numpy
+pandas
+matplotlib
+cartopy
+xarray
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[cov]
+pytest-cov
+codecov
+
+[test]
+pytest
