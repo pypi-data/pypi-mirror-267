@@ -1,0 +1,4 @@
+[console_scripts]
+dali_es = dali.plugin.country.es:dali_entry
+dali_jp = dali.plugin.country.jp:dali_entry
+dali_us = dali.plugin.country.us:dali_entry
