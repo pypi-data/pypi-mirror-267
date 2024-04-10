@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: tetra
+Version: 0.1.1
+Summary: Full stack component framework for Django using Alpine.js
+Author-email: Sam Willis <samw@hey.com>, Christian González <christian.gonzalez@nerdocs.at>
+License: MIT License
+        
+        Copyright (c) 2022 Sam Willis
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://tetraframework.com
+Project-URL: Documentation, https://tetra.readthedocs.io
+Project-URL: Repository, https://github.com/tetra-framework/tetra
+Keywords: python,django,framework,components
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cryptography >=37.0.1
+Requires-Dist: Django >=3.2.0
+Requires-Dist: python-dateutil >=2.8.2
+Requires-Dist: django-environ
+Provides-Extra: demo
+Requires-Dist: PyYAML >=6.0 ; extra == 'demo'
+Requires-Dist: markdown >=3.3.7 ; extra == 'demo'
+Requires-Dist: gunicorn ; extra == 'demo'
+Requires-Dist: django-environ ; extra == 'demo'
+Requires-Dist: whitenoise >=6.6.0 ; extra == 'demo'
+Requires-Dist: sourcetypes >=0.0.4 ; extra == 'demo'
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-django ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: python-dateutil >=2.8.2 ; extra == 'dev'
+Requires-Dist: beautifulsoup4 ; extra == 'dev'
+Requires-Dist: tetra[demo] ; extra == 'dev'
+
+# Tetra
+
+Full stack component framework for [Django](http://djangoproject.com) using [Alpine.js](https://alpinejs.dev)
+
+Tetra is a new full stack component framework for Django, bridging the gap between your server logic and front end presentation. It uses a public shared state and a resumable server state to enable inplace updates. It also encapsulates your Python, HTML, JavaScript and CSS into one file for close proximity of related concerns.
+
+See  examples at [tetraframework.com](https://www.tetraframework.com)
+
+Read the [Documentation](https://tetra.readthedocs.org)
+
+```
+pip install tetra
+```
+
+## What does Tetra do?
+
+  - Django on the backend, Alpine.js in the browser
+
+    Tetra combines the power of Django with Alpine.js to make development easier and quicker.
+
+  - Component encapsulation
+
+    Each component combines its Python, HTML, CSS and JavaScript in one place for close proximity of related code.
+
+  - Resumable server state
+
+    The components' full server state is saved between public method calls. This state is encrypted for security.
+
+  - Public server methods
+
+    Methods can be made public, allowing you to easily call them from JS on the front end, resuming the component's state.
+
+  - Shared public state
+
+    Attributes can be decorated to indicate they should be available in the browser as Alpine.js data objects.
+
+  - Server "watcher" methods
+
+    Public methods can be instructed to watch a public attribute, enabling reactive re-rendering on the server.
+
+  - Inplace updating from the server
+
+    Server methods can update the rendered component in place. Powered by the Alpine.js morph plugin.
+
+  - Component library packaging
+
+    Every component belongs to a "library"; their JS & CSS is packed together for quicker browser downloads.
+
+  - Components with overridable blocks
+
+    Component can have multiple {% block(s) %} which can be overridden when used.
+
+  - JS/CSS builds using [esbuild](https://esbuild.github.io)
+
+    Both for development (built into runserver) and production your JS & CSS is built with esbuild.
+
+  - Source Maps
+
+    Source maps are generated during development so that you can track down errors to the original Python files.
+
+  - Syntax highlighting with type annotations
+
+    Tetra uses type annotations to syntax highlight your JS, CSS & HTML in your Python files with a [VS Code plugin](https://github.com/samwillis/python-inline-source/tree/main/vscode-python-inline-source)
