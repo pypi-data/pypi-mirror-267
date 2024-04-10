@@ -1,0 +1,6 @@
+nltk
+regex
+textacy
+gensim
+transformers
+scipy
