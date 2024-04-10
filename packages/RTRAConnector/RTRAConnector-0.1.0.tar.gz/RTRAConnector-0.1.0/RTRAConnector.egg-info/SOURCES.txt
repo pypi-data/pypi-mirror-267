@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+RTRAConnector/RTRAConnector.py
+RTRAConnector/__init__.py
+RTRAConnector.egg-info/PKG-INFO
+RTRAConnector.egg-info/SOURCES.txt
+RTRAConnector.egg-info/dependency_links.txt
+RTRAConnector.egg-info/requires.txt
+RTRAConnector.egg-info/top_level.txt
