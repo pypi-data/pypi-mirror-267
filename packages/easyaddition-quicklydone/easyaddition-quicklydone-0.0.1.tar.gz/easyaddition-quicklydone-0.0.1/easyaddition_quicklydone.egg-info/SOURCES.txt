@@ -1,0 +1,8 @@
+README.md
+setup.py
+easyaddition-quicklydone/__init__.py
+easyaddition-quicklydone/module.py
+easyaddition_quicklydone.egg-info/PKG-INFO
+easyaddition_quicklydone.egg-info/SOURCES.txt
+easyaddition_quicklydone.egg-info/dependency_links.txt
+easyaddition_quicklydone.egg-info/top_level.txt
