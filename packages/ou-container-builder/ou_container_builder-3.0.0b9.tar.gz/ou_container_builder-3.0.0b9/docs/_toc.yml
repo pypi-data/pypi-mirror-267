@@ -1,0 +1,53 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+parts:
+  - caption: User Guide
+    maxdepth: 1
+    chapters:
+      - file: installation
+      - file: commands
+      - file: configuration/index
+      - file: packs/index
+  - caption: Developer Guide
+    maxdepth: 1
+    chapters:
+      - file: api/index
+        sections:
+          - file: api/ou_container_builder
+          - file: api/ou_container_builder.__about__
+          - file: api/ou_container_builder.__main__
+          - file: api/ou_container_builder.cli
+            sections:
+              - file: api/ou_container_builder.cli.base
+              - file: api/ou_container_builder.cli.build
+              - file: api/ou_container_builder.cli.clean
+              - file: api/ou_container_builder.cli.generate
+              - file: api/ou_container_builder.cli.version
+          - file: api/ou_container_builder.core
+            sections:
+              - file: api/ou_container_builder.core.apt
+              - file: api/ou_container_builder.core.args
+              - file: api/ou_container_builder.core.base
+              - file: api/ou_container_builder.core.content
+              - file: api/ou_container_builder.core.environment
+              - file: api/ou_container_builder.core.python
+              - file: api/ou_container_builder.core.rust
+              - file: api/ou_container_builder.core.scripts
+              - file: api/ou_container_builder.core.server
+              - file: api/ou_container_builder.core.services
+              - file: api/ou_container_builder.core.sources
+              - file: api/ou_container_builder.core.user
+              - file: api/ou_container_builder.core.webapp
+          - file: api/ou_container_builder.packs
+            sections:
+              - file: api/ou_container_builder.packs.code_server
+              - file: api/ou_container_builder.packs.ipykernel
+              - file: api/ou_container_builder.packs.jupyterlab
+              - file: api/ou_container_builder.packs.notebook
+              - file: api/ou_container_builder.packs.xfce4
+          - file: api/ou_container_builder.settings
+          - file: api/ou_container_builder.state
+          - file: api/ou_container_builder.util
