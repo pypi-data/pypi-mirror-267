@@ -1,0 +1,7 @@
+colorama
+
+[dev]
+mypy
+flake8
+black
+types-setuptools
