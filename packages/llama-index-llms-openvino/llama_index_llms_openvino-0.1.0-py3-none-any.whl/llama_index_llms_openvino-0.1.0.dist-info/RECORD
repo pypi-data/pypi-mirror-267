@@ -1,0 +1,6 @@
+llama_index/llms/openvino/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/llms/openvino/__init__.py,sha256=liLn7vyHGj-nnw5cSbFkN91vkgtgi99QOpMqZI0_K0U,83
+llama_index/llms/openvino/base.py,sha256=KfaimgVhGFF4fk2vAFx2kGqUI2XJ3bV5zxVta01Dce0,7263
+llama_index_llms_openvino-0.1.0.dist-info/METADATA,sha256=SI9192L3N4Ja_sK0x_0JTyitjF5ZeBc7zHzZJqe41y8,699
+llama_index_llms_openvino-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_llms_openvino-0.1.0.dist-info/RECORD,,
