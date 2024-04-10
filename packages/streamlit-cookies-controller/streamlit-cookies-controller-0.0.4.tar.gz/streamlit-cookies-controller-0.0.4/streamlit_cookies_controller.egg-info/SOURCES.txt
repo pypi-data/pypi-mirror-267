@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+streamlit_cookies_controller/__init__.py
+streamlit_cookies_controller/cookie_controller.py
+streamlit_cookies_controller/utils.py
+streamlit_cookies_controller.egg-info/PKG-INFO
+streamlit_cookies_controller.egg-info/SOURCES.txt
+streamlit_cookies_controller.egg-info/dependency_links.txt
+streamlit_cookies_controller.egg-info/requires.txt
+streamlit_cookies_controller.egg-info/top_level.txt
+streamlit_cookies_controller/frontend/build/asset-manifest.json
+streamlit_cookies_controller/frontend/build/index.html
+streamlit_cookies_controller/frontend/build/static/js/main.ab7915bb.js
+streamlit_cookies_controller/frontend/build/static/js/main.ab7915bb.js.LICENSE.txt
+streamlit_cookies_controller/frontend/build/static/js/main.ab7915bb.js.map
