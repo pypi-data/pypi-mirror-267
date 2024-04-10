@@ -1,0 +1,38 @@
+#!/usr/bin/python3
+
+import sys
+import argparse
+from aptManager import AptManager
+
+aptManager = AptManager.AptManager()
+
+parser = argparse.ArgumentParser(
+	usage='%(prog)s --help for more information',
+	formatter_class=argparse.RawTextHelpFormatter)
+parser.add_argument("action", help='''The action to perform:
+	- addGPGKey
+	- installPackage''')
+
+
+parser.add_argument("-u", "--urlKey", type=str, help="The url for the GPG Key")
+
+def checkURL():
+	if(args.urlKey is None):
+		print(f"URL not specified")
+		sys.exit(1)
+		
+args = parser.parse_args()
+
+if(args.action == "addGPGKey"):
+	checkURL()
+	error_message = aptManager.add_gpg_key(args.urlKey)
+	if error_message:
+	   print("Failed to add GPG key:")
+	   print(error_message)
+	else:
+ 	   print("GPG key added successfully.")
+elif(args.action == "installPackage"):
+	aptManager.upgrade_aurora()
+
+
+

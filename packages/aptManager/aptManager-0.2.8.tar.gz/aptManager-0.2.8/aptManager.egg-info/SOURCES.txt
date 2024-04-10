@@ -1,0 +1,9 @@
+README.md
+setup.py
+aptManager/AptManager.py
+aptManager/__init__.py
+aptManager.egg-info/PKG-INFO
+aptManager.egg-info/SOURCES.txt
+aptManager.egg-info/dependency_links.txt
+aptManager.egg-info/top_level.txt
+bin/aptManager
