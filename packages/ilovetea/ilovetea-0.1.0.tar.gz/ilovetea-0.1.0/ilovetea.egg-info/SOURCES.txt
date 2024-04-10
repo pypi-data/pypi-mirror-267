@@ -1,0 +1,6 @@
+README.md
+setup.py
+ilovetea.egg-info/PKG-INFO
+ilovetea.egg-info/SOURCES.txt
+ilovetea.egg-info/dependency_links.txt
+ilovetea.egg-info/top_level.txt
