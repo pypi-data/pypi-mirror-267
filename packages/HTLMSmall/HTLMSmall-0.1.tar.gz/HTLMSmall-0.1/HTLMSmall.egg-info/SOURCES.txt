@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+HTLMSmall.egg-info/PKG-INFO
+HTLMSmall.egg-info/SOURCES.txt
+HTLMSmall.egg-info/dependency_links.txt
+HTLMSmall.egg-info/requires.txt
+HTLMSmall.egg-info/top_level.txt
