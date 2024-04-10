@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/cleverslice/__init__.py
+src/cleverslice/sdict.py
+src/cleverslice.egg-info/PKG-INFO
+src/cleverslice.egg-info/SOURCES.txt
+src/cleverslice.egg-info/dependency_links.txt
+src/cleverslice.egg-info/top_level.txt
+src/src/slicedict/__init__.py
