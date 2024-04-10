@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: experimentflow
+Version: 0.1.0a2
+Summary: ExperimentFlow is a library to help you manage your experiments in a more organized way.
+Home-page: https://github.com/domingoslatorre/experimentflow
+Author: Domingos Latorre
+Author-email: domingos.latorre@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/domingoslatorre/experimentflow
+Description-Content-Type: text/markdown
+
+# ExperimentFlow
+
+ExperimentFlow is a Python package designed to streamline the workflow of scientific experiments. It aims to simplify the setup, execution, and analysis of experiments by providing a comprehensive toolset for managing the entire experimental process. 
+
+ExperimentFlow is built with automation and efficiency in mind, making it easier for scientists and researchers to focus on their research goals rather than on repetitive tasks.
+
+
+
