@@ -1,0 +1,5 @@
+[console_scripts]
+detect_drift = ft_drift.cli:main
+
+[nbdev]
+ft_drift = ft_drift._modidx:d
