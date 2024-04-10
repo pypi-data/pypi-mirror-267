@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "accumul8"
+version = "0.1.1"
+description = "A placeholder package for reserving the namespace."
+authors = ["bnodnarb <97063458+bnodnarb@users.noreply.github.com>"]
+readme = "README.md"
+repository = "https://github.com/bnodnarb/accumul8"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
