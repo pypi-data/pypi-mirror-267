@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: cheondiccegamme1
+Version: 0.0.2
+Summary: 0을 입력하면 스톱 1을 입력하면 주사위 처럼 1-6까지 랜덤으로 숫자를 돌려 사용할수 있습니다.  술게임이나. 벌칙게임등에 아주 유용하게 사용할수 있습니다. 
+Home-page: https://github.com/Cheon31/power
+Download-URL: https://github.com/Cheon31/power/archive/refs/heads/main.zip
+Author: cheon
+License-File: LICENSE
+
