@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: ipaacar-python
+Version: 0.1.3
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: nest-asyncio ~=1.5.7
+Author: AG-SCS
+Requires-Python: >=3.7
