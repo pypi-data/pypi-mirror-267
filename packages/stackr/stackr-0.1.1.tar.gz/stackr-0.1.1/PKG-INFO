@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: stackr
+Version: 0.1.1
+Summary: A Hello World package intended to reserve the namespace.
+License: MIT
+Author: Ironbird Labs, LLC
+Author-email: dev@ironbirdlabs.com
+Maintainer: Ironbird Labs, LLC
+Maintainer-email: dev@ironbirdlabs.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+### License
+
+This package is licensed under the MIT License. See the LICENSE file for more details.
+
