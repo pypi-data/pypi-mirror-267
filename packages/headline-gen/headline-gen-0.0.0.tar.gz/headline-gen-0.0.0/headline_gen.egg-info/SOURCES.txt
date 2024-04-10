@@ -1,0 +1,13 @@
+setup.py
+headline-gen/Compression.py
+headline-gen/Control.py
+headline-gen/KEA.py
+headline-gen/LeadingSentences.py
+headline-gen/PostProcess.py
+headline-gen/Ranking.py
+headline-gen/__init__.py
+headline_gen.egg-info/PKG-INFO
+headline_gen.egg-info/SOURCES.txt
+headline_gen.egg-info/dependency_links.txt
+headline_gen.egg-info/requires.txt
+headline_gen.egg-info/top_level.txt
