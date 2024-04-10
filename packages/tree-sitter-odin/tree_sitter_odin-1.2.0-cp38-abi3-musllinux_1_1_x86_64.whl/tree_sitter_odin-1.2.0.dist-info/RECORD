@@ -1,0 +1,15 @@
+tree_sitter_odin/binding.c,sha256=YsrArwnvzOd6PpHOkLqeiQ_YmWMY9jb8Sp6oTh0LM9A,632
+tree_sitter_odin/__init__.py,sha256=MttcwZPMjxkmAMKVFS8Yzn1HXWiHaqYBM3j41H8ww7M,87
+tree_sitter_odin/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_odin/__init__.pyi,sha256=8xf7bY1szgDY9HRJ7FJ326So4SFgMiSRfCB4LADkTpU,27
+tree_sitter_odin/_binding.abi3.so,sha256=rQIjaP9xHDy0pZ3Uk3XiL7ufZi3AEFNcDcp5iwzsuIM,2294552
+tree_sitter_odin/queries/injections.scm,sha256=P0dRDJFJ6ojtdDFh18Xv6zETOmBes7MAbZCtttY_NBE,19
+tree_sitter_odin/queries/locals.scm,sha256=rVbREmyWoeNa3RIsbeWoQyjbNlpZvwlFjryHOnNNeZk,908
+tree_sitter_odin/queries/highlights.scm,sha256=W99nTU7BgtVfU9_-gpGXvLb8n7gOq8b4BUpN6_aJdB0,4373
+tree_sitter_odin/queries/folds.scm,sha256=QwR7mCDDmdlLbQbNPLD1aj59P1tjNIG777o3pJDT954,96
+tree_sitter_odin/queries/indents.scm,sha256=0T_8bVgAKVnROp5v6hbTPfXZDi1x9wuLgrPtQo3nKYg,668
+tree_sitter_odin-1.2.0.dist-info/top_level.txt,sha256=IQxCXVJQkFqd39Z4qvAJp0mhYiqMR7GLanJgsYbuXMs,26
+tree_sitter_odin-1.2.0.dist-info/METADATA,sha256=KJ4dzkwAEkrYeUb50lBniRGG9lU6bM8AKbyE0COaJ54,1700
+tree_sitter_odin-1.2.0.dist-info/WHEEL,sha256=SLuAR4EQHH0r-qGFhMuV9c2WCtm9CXjP4961KF3hTEM,111
+tree_sitter_odin-1.2.0.dist-info/RECORD,,
+tree_sitter_odin-1.2.0.dist-info/LICENSE,sha256=CZxEJI-M81MSMhExhoDpNGVYfABaSzcwzoy1M03gQ9Y,1101
