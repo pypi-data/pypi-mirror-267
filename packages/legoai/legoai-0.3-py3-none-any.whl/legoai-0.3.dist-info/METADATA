@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: legoai
+Version: 0.3
+Summary: An open-source package from LEGOAI for identifying data types
+Home-page: https://github.com/LEGOAI-TECHNOLOGIES/Data-Type-Identifier
+Author: LEGOAI Team
+Author-email: contactus@legoai.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp ==3.9.3
+Requires-Dist: aiosignal ==1.3.1
+Requires-Dist: async-timeout ==4.0.3
+Requires-Dist: attrs ==23.2.0
+Requires-Dist: certifi ==2023.11.17
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: click ==8.1.7
+Requires-Dist: dataclasses-json ==0.5.14
+Requires-Dist: dill ==0.3.7
+Requires-Dist: editdistpy ==0.1.3
+Requires-Dist: frozenlist ==1.4.1
+Requires-Dist: greenlet ==3.0.3
+Requires-Dist: idna ==3.6
+Requires-Dist: joblib ==1.3.2
+Requires-Dist: langchain ==0.0.258
+Requires-Dist: langsmith ==0.0.83
+Requires-Dist: marshmallow ==3.20.2
+Requires-Dist: multidict ==6.0.4
+Requires-Dist: mypy-extensions ==1.0.0
+Requires-Dist: nltk ==3.8.1
+Requires-Dist: numexpr ==2.8.8
+Requires-Dist: numpy ==1.26.3
+Requires-Dist: openai ==0.27.8
+Requires-Dist: openapi-schema-pydantic ==1.2.4
+Requires-Dist: packaging ==23.2
+Requires-Dist: pandas ==2.2.0
+Requires-Dist: pydantic ==1.10.14
+Requires-Dist: pyfunctional ==1.4.2
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: python-dotenv ==1.0.0
+Requires-Dist: pytz ==2023.3.post1
+Requires-Dist: PyYAML ==6.0.1
+Requires-Dist: regex ==2023.12.25
+Requires-Dist: requests ==2.31.0
+Requires-Dist: scikit-learn ==1.2.2
+Requires-Dist: scipy ==1.11.4
+Requires-Dist: six ==1.16.0
+Requires-Dist: SQLAlchemy ==2.0.25
+Requires-Dist: symspellpy ==6.7.7
+Requires-Dist: tabulate ==0.9.0
+Requires-Dist: tenacity ==8.2.3
+Requires-Dist: threadpoolctl ==3.2.0
+Requires-Dist: tqdm ==4.66.1
+Requires-Dist: trieregex ==1.0.0
+Requires-Dist: typing-inspect ==0.9.0
+Requires-Dist: typing-extensions ==4.9.0
+Requires-Dist: tzdata ==2023.4
+Requires-Dist: urllib3 ==2.1.0
+Requires-Dist: xgboost ==1.7.5
+Requires-Dist: yarl ==1.9.4
+Provides-Extra: dev
+Requires-Dist: twine >=4.0.2 ; extra == 'dev'
+
+<p align="center">
+      <img src="https://raw.githubusercontent.com/LEGOAI-TECHNOLOGIES/Data-Type-Identifier/main/documentation/gray%20LEG0AI%20Cymk%20color%20JPG.jpg" alt="LegoAI Logo" width="350">
+ <h3 align="center"><i>Empowering Business Users With Self Serve Analytics</i></h3> 
+
+## What is it ?
+This is a cutting-edge project leveraging advanced Machine Learning technologies to accurately discern and classify data types from various values. Designed to enhance data preprocessing and analysis pipelines, this tool automates the often tedious and error-prone task of manually identifying data types.
+
+## Table of contents
+- [Getting Started](#getting-started)
+- [Main Features](#main-features)
+- [Where to get it](#where-to-get-it)
+- [Performance](#performance)
+- [License](#license)
+- [Contributing](#contributing)
+
+##  Getting Started
+To quickly start using the pipeline just [install](#where-to-get-it) and follow notebook below.
+### Datatype Identification ( Inference )
+[Inference Notebook](DataTypeIdentification-Inference.ipynb)  
+> [!IMPORTANT]  
+> **openai_api_key** is required for running L2 model inference.
+
+## Main Features
+#### L1 and L2 Datatype Categorization
+<img src="https://raw.githubusercontent.com/LEGOAI-TECHNOLOGIES/Data-Type-Identifier/main/documentation/L1_&_L2_Model_Output.png" alt="L1 and L2 Model" >
+
+- Has two models, **L1 model** (_**uses Classifier**_) that identifies normal datatypes  ( **integer, float, alphanumeric, range_type, date & time, open_ended_text, close_ended_text**)
+-  **L2 model**  further classifies L1 datatype result that are **integer** or **float** to measure,dimension or unknown (if not classified) (_**uses LLM**_) and date & time into one of **41** date-time formats like (YYYY-MM-DDTHH:MM:SS, YYYY/MM/DD, MM-DD-YYYY HH:MM AM/PM ) (_**uses RegEx**_).
+#### Datatype Identification Inference Workflow  
+<img src="https://raw.githubusercontent.com/LEGOAI-TECHNOLOGIES/Data-Type-Identifier/main/documentation/DI_Inference_WorkFlow.png" alt="DI Inference Workflow">
+
+## Where to get it?
+Binary installers for the latest released version are available at the [Python Package Index (PyPI)](https://pypi.org/project/)
+```
+# PyPI
+> pip install legoai
+```
+## Performance
+> [!NOTE]
+> **Source Ecommerce:** https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce  
+>  ```Total Tables: 9``` , ```Total Columns: 52```   
+> **Source Healthcare:** https://mitre.box.com/shared/static/aw9po06ypfb9hrau4jamtvtz0e5ziucz.zip  
+> ```Total Tables: 18```, ```Total Columns: 249``` 
+
+#### Classification Report ( L1 Model )
+<img src="https://raw.githubusercontent.com/LEGOAI-TECHNOLOGIES/Data-Type-Identifier/main/documentation/L1_Model_Metrics.png" alt="L1 Model Classification Metrics" width="700">    
+  
+#### Classification Report ( L2 Model )
+<img src="https://raw.githubusercontent.com/LEGOAI-TECHNOLOGIES/Data-Type-Identifier/main/documentation/L2_Model_Metrics.png" alt="L2 Model Classification Metrics" width="700">   
+  
+#### Execution Chart ( Google Collab Environment )
+<img src="https://raw.githubusercontent.com/LEGOAI-TECHNOLOGIES/Data-Type-Identifier/main/documentation/Metrics Google Collab.png" alt="DI Execution Chart" width="400" height="300">
+
+## License
+The project is released under the [MIT License](https://github.com/LEGOAI-TECHNOLOGIES/Data-Type-Identifier/blob/main/LICENSE).  
+
+## Contributing
+Any contributions to this project is welcomed, you can follow the steps below for contribution:
+1. Fork the repository.
+2. Create a new branch feature/* (git checkout -b feature)
+3. Make your changes.
+4. Commit your changes (git commit -am 'Add new feature')
+5. Push to the branch (git push origin feature)
+6. Create a new Pull Request.
+
