@@ -1,0 +1,3 @@
+[console_scripts]
+wolfcode=wolfcode.cli:main
+
