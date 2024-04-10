@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/ci.yaml
+.github/workflows/release.yaml
+cedarkit/comp/__init__.py
+cedarkit/comp/_version.py
+cedarkit/comp/smooth.py
+cedarkit/comp/util.py
+cedarkit_comp.egg-info/PKG-INFO
+cedarkit_comp.egg-info/SOURCES.txt
+cedarkit_comp.egg-info/dependency_links.txt
+cedarkit_comp.egg-info/requires.txt
+cedarkit_comp.egg-info/top_level.txt
