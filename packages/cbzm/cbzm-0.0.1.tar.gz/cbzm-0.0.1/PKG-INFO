@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: cbzm
+Version: 0.0.1
+Summary: cbz merge tool
+Author-email: Merilynn Bandy <hello@furudean.com>
+Project-URL: Homepage, https://github.com/furudean/cbzm
+Project-URL: Issues, https://github.com/furudean/cbzm/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: types-setuptools; extra == "dev"
+Requires-Dist: types-Pillow; extra == "dev"
+Requires-Dist: types-tqdm; extra == "dev"
+
+# cbzm
+
+cbz merge - merge comic archives
+
+## installation
+
+it is assumed you have python>=3.11 with pip installed
+
+```
+pip install cbzm
+```
+
+## use
+
+```
+cbzm 1.cbz 2.cbz out.cbz
+```
+
+`1.cbz`, `2.cbz` etc get merged into a new archive on the last positional
+argument, `out.cbz`
+
+| Option                                  | Description                                                                                            |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| `--compress {store,deflate,bzip2,lzma}` | compression method to use for the output archive (default: store)                                      |
+| `--slice SLICE`                         | python slice expression for pages to pick from each archive, for example `:-1` to remove the last page |
+| `-y`                                    | overwrite output file                                                                                  |
+| `--help`                                | show command usage                                                                                     |

@@ -1,0 +1,8 @@
+
+[dev]
+mypy
+flake8
+black
+types-setuptools
+types-Pillow
+types-tqdm
