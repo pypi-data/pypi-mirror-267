@@ -1,0 +1,9 @@
+click
+platformdirs
+pyappcache>=0.10.0
+requests
+toml
+importlib_resources
+fsspec
+rich
+humanize
