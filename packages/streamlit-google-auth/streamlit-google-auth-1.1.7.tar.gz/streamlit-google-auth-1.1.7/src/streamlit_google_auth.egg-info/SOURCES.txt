@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/streamlit_google_auth/__init__.py
+src/streamlit_google_auth.egg-info/PKG-INFO
+src/streamlit_google_auth.egg-info/SOURCES.txt
+src/streamlit_google_auth.egg-info/dependency_links.txt
+src/streamlit_google_auth.egg-info/requires.txt
+src/streamlit_google_auth.egg-info/top_level.txt
+src/streamlit_google_auth/cookie/__init__.py
