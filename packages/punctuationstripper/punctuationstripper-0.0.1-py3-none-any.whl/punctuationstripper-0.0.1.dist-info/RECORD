@@ -1,0 +1,8 @@
+punctuationstripper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+punctuationstripper/punctuation_stripper.py,sha256=e5BssKWU70WV8x53mDIR-A3Z-Zlw1LgBNTi0MFugwzQ,2390
+punctuationstripper/tests.py,sha256=tW5cWQMy7RN0Nv7Jbf2GK8kzfXvC4vF65eTBt5UOtqk,705
+punctuationstripper-0.0.1.dist-info/LICENSE,sha256=h7hdPYqX21jda0x4OY8fZ1MM8ok5Q-WFbpQRSearJ9k,1087
+punctuationstripper-0.0.1.dist-info/METADATA,sha256=Yo4DjYQaByeKp9LGYVlfqYc3qRAXUngEAwkDku5BnqQ,2199
+punctuationstripper-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+punctuationstripper-0.0.1.dist-info/top_level.txt,sha256=yk4vgKtjCh1NuLbMzJ108uQcrIX2tVGECqzrxb8FHS8,20
+punctuationstripper-0.0.1.dist-info/RECORD,,
