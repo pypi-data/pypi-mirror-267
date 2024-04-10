@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+rtrapy.egg-info/PKG-INFO
+rtrapy.egg-info/SOURCES.txt
+rtrapy.egg-info/dependency_links.txt
+rtrapy.egg-info/requires.txt
+rtrapy.egg-info/top_level.txt
