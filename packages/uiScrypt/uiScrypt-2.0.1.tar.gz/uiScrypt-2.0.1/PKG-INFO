@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: uiScrypt
+Version: 2.0.1
+Summary: A simple GUI app for generating Scrypt keys
+Home-page: https://github.com/NotStatilko/uiScrypt
+Download-URL: https://github.com/NotStatilko/uiScrypt/archive/refs/tags/v2.0.1.tar.gz
+Author-email: thenonproton@pm.me
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# uiScrypt
+
+It's a UI implementation of [**Scrypt**](https://en.wikipedia.org/wiki/Scrypt) on PyQt5.
+
+![uiScrypt preview](https://github.com/NotStatilko/uiScrypt/assets/43419673/ea1b6231-43aa-4a1b-8030-de4bb5d49fa4)
+
+## Install
+
+**uiScrypt** is available on **PyPI**, install with *pip*:
+```bash
+pip install uiScrypt
+```
+
+## Usage
+
+### Run uiScrypt
+
+Just type `uiScrypt` in your Terminal:
+```bash
+uiScrypt
+```
+
+### Configuration
+
+You can set Scrypt configuration via **CMD args**
+```bash
+# python3 uiScrypt.py <N> <r> <p> <dklen> <hex|b64>
+python3 uiScrypt.py 1048576 8 1 32 b64 # Default Configuration
+```
