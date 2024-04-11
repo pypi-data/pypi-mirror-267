@@ -1,0 +1,8 @@
+numpy
+scipy
+joblib
+h5py
+matplotlib
+xraylib
+Pillow
+imageio
