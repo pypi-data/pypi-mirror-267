@@ -1,0 +1,8 @@
+siglent_scpi/__init__.py,sha256=ynbI2BEl2N1oWdI-A3WUQgmt8DoxMy9r-8qeSAVmOK4,42
+siglent_scpi/sdg.py,sha256=X-6AmM1awdtIT0Pcq060QGdRc-6jf3_eDrb6Ouds8wY,782
+siglent_scpi/sds.py,sha256=RZ-Voama0m52wmWQf6XHi3T9KArilF-Wzeeq02_dGfE,21234
+siglent_scpi/siglent.py,sha256=BWPYr9Hv1HkCCLWq2hgtXsxnziOxRIP7uqQFxAVc8aA,2572
+siglent_scpi-1.0.3.dist-info/METADATA,sha256=Aw-GKWSQmYNWja2bkf-uZr_WFtYF9m1sHOUoz52AGCQ,2441
+siglent_scpi-1.0.3.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+siglent_scpi-1.0.3.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+siglent_scpi-1.0.3.dist-info/RECORD,,
