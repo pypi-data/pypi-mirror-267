@@ -1,0 +1,17 @@
+README.md
+setup.py
+forexconnect/EachRowListener.py
+forexconnect/ForexConnect.py
+forexconnect/LiveHistory.py
+forexconnect/ResponseListener.py
+forexconnect/SessionStatusListener.py
+forexconnect/TableListener.py
+forexconnect/TableManagerListener.py
+forexconnect/__init__.py
+forexconnect/common.py
+forexconnect/errors.py
+monedadigitalf.egg-info/PKG-INFO
+monedadigitalf.egg-info/SOURCES.txt
+monedadigitalf.egg-info/dependency_links.txt
+monedadigitalf.egg-info/not-zip-safe
+monedadigitalf.egg-info/top_level.txt
