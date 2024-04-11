@@ -1,0 +1,17 @@
+rsr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rsr/landsat_formatting.py,sha256=2bVhosa69UhcnCCeUoY8M0HdvxADwaHn7ZCjuJ2zPPI,2754
+rsr/data/Ball_BA_RSR.v1.2.xlsx,sha256=Z-m-lKYiJ5b_fsQIx0CwUoDM6P0jrHa7R1k2u_1kd3s,174535
+rsr/data/L4_TM_RSR.xlsx,sha256=-U9r4EMXz6zH7SvXAfZmzj8mva2OlbI8kLNU8U4ICtg,81844
+rsr/data/L5_TM_RSR.xlsx,sha256=7n_8CRhHtD4IciKueYZzEdzBn9zTjufiLMKTBS2ey4E,80969
+rsr/data/L7_RSR.xlsx,sha256=qIFH6ZSxJ_7ldOiRRwl-JHh6f_XqTT5cFo4mma_QlPM,87561
+rsr/data/L9_OLI2_Ball_FPM_RSR.v1.0.xlsx,sha256=9c48F5qNDr6nkYnErDk-yYiOqKEjt69jeleODR9ygCA,655775
+rsr/data/Sentinel-2_MSI_Spectral_Responses.xlsx,sha256=8QkLA5SHMHvX2xEImqEaaTAU7y_1pswzp7sjG6pLNxI,882434
+rsr/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rsr/data/rsr_landsat_8_oli.nc,sha256=FZTH1WT5PjjKmtS6FoqUnHVpIlaO9mcfFCgLTAMYilw,165342
+rsr/data/rsr_landsat_9_oli.nc,sha256=FY4ymPLTSx4rEN0y7eKPxdtYV3U3kn8yKkKREBbw47c,165342
+GRSdriver-1.0.2.dist-info/LICENSE,sha256=FNb2nQpdHlUcGkGrHgL0CDYbTyCRvf8aogvuO739yj4,11349
+GRSdriver-1.0.2.dist-info/METADATA,sha256=1WTfQ78FiOEJXikPlyn_5E7fTN5amoWmZAGzMpFpm6Y,15470
+GRSdriver-1.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+GRSdriver-1.0.2.dist-info/entry_points.txt,sha256=QhHixSRHq4hdLMLbQZxvC6zmO1N3HtHfwFhWAcN9db4,50
+GRSdriver-1.0.2.dist-info/top_level.txt,sha256=xiu_5K296Po2szovutMDnrto-NlIKIFg1JY7fNrEAyo,4
+GRSdriver-1.0.2.dist-info/RECORD,,
