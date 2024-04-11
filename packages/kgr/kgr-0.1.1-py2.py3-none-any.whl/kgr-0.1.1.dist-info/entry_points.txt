@@ -1,0 +1,3 @@
+[console_scripts]
+kgr = kgr.main:main
+
