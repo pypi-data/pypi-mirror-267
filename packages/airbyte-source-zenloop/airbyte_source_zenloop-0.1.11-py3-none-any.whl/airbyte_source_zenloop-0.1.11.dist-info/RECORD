@@ -1,0 +1,16 @@
+source_zenloop/__init__.py,sha256=y1pKI-5aRHw7UaB2sEZq326-8To0NLfq1R0fdfxXtis,126
+source_zenloop/components.py,sha256=HRC9FLTBgw76sDP7nUvLNH3b0v1Sikb6azytU0TFUvk,1176
+source_zenloop/manifest.yaml,sha256=GpAes-bNdYO8hQsysQk9Im7Pd00WeaVl2fdAQpFCCro,4222
+source_zenloop/run.py,sha256=JeekMAad6yrreQooFqDjmqhvbz7Z_vHgq6mJTTJZLNY,233
+source_zenloop/schemas/answers.json,sha256=XubnB4pk0wGW8I6L476JiwBw38T51RPlTGDVMGlSkQc,1636
+source_zenloop/schemas/answers_survey_group.json,sha256=ng2w2Y8zbtuHnRTH4xzYWJ1N9tySlujqun_9DUJ6I-Q,1303
+source_zenloop/schemas/properties.json,sha256=r8sgCxe4JHnq_h9sbwjXx2aHwF8ZDpXteDmI7f9ltuA,272
+source_zenloop/schemas/survey_groups.json,sha256=Mz_vsDrzSaqjibI8N7C8R2ZNoZwY0d8aVMxdmM27puY,777
+source_zenloop/schemas/surveys.json,sha256=CwOnbA8pAs91L1vlWqPIMqbuJgtw_KKFtCcFaWVhvAs,376
+source_zenloop/source.py,sha256=iNhKFmeAbqHOXdTFh41hwMBnfYx_sjBlK0KhVEQCGT0,468
+source_zenloop/spec.json,sha256=id_Oxqhj_eKOlTQgIddazf1DYhaXUSF1ESdhxSnopP0,1278
+source_zenloop/streams.py,sha256=Ix1s_F4gY3JGzchr0KmvfGJWhk76X5ITtIhrSFjAhpQ,8926
+airbyte_source_zenloop-0.1.11.dist-info/METADATA,sha256=2Dy50_i-vPTaRQG-5O7xDi_rV25UpthmNq438kke0Pw,5220
+airbyte_source_zenloop-0.1.11.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_zenloop-0.1.11.dist-info/entry_points.txt,sha256=PiZMMdbDYSxVKwAjtooZ2Qv3MzXEyZbvVVR7ZWQV1DM,57
+airbyte_source_zenloop-0.1.11.dist-info/RECORD,,
