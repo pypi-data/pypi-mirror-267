@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: probablepeople
+Version: 0.5.5
+Summary: Parse romanized names & companies using advanced NLP methods
+Home-page: https://github.com/datamade/probablepeople
+License: The MIT License: http://www.opensource.org/licenses/mit-license.php
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+License-File: LICENSE
+Requires-Dist: python-crfsuite>=0.8
+Requires-Dist: probableparsing
+Requires-Dist: future>=0.14
+Requires-Dist: doublemetaphone
+
+
+        probablepeople is a python library for parsing unstructured romanized name or company strings into components, using conditional random fields.
+
+        From the python interpreter:
+
+        >>> import probablepeople
+        >>> probablepeople.parse('Mr George "Gob" Bluth II') 
+        [('Mr', 'PrefixMarital'), 
+         ('George', 'GivenName'), 
+         ('"Gob"', 'Nickname'), 
+         ('Bluth', 'Surname'), 
+         ('II', 'SuffixGenerational')]
+        >>> probablepeople.parse('Sitwell Housing Inc')
+        [('Sitwell', 'CorporationName'),
+         ('Housing', 'CorporationName'),
+         ('Inc', 'CorporationLegalType')]
+        
