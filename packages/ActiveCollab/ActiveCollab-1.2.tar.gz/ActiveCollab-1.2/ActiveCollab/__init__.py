@@ -1,0 +1,1 @@
+from .ActiveCollab import Main
