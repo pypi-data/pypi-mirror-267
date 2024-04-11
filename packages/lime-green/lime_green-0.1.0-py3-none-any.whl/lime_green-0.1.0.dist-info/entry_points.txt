@@ -1,0 +1,2 @@
+[console_scripts]
+lime = lime.main:main
