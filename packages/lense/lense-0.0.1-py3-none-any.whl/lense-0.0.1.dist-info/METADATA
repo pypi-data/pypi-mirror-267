@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: lense
+Version: 0.0.1
+Summary: lense SDK for Python
+Author: Covalense Global
+Project-URL: Homepage, https://github.com/tandan-kumar-covalenseglobal/Lense
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: PyPDF2
+Requires-Dist: python-docx
+Requires-Dist: python-pptx
+Requires-Dist: llama-index
+Requires-Dist: llama-index-embeddings-langchain
+Requires-Dist: sentence-transformers
+Requires-Dist: huggingface-hub
+Requires-Dist: langchain
+Requires-Dist: langchain-google-genai
+Requires-Dist: llama-index-llms-langchain
+Requires-Dist: llama-index-llms-azure-openai
+Requires-Dist: llama-index-embeddings-azure-openai
+
