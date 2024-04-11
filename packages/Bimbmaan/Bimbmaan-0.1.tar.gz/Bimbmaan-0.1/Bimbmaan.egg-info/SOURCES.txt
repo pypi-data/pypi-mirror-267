@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+Bimbmaan.egg-info/PKG-INFO
+Bimbmaan.egg-info/SOURCES.txt
+Bimbmaan.egg-info/dependency_links.txt
+Bimbmaan.egg-info/entry_points.txt
+Bimbmaan.egg-info/requires.txt
+Bimbmaan.egg-info/top_level.txt
+bimbmaan/__init__.py
+bimbmaan/manager.py
