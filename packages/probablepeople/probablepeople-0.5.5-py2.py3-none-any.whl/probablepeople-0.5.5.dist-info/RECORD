@@ -1,0 +1,11 @@
+probablepeople/__init__.py,sha256=YCANiFnXKPi30UoYgfrGZk8iwsqtftN3ReVygE1qeVQ,8573
+probablepeople/company_learned_settings.crfsuite,sha256=LLtTdPAqkdhuG_Rtp_MApT0B126kHL4n5E-ecxlsv3c,249040
+probablepeople/gender.py,sha256=Og8xzUP5DuOX3HqXnnrebHhkHqaIvyQ2ckToUtzUMyc,102759
+probablepeople/generic_learned_settings.crfsuite,sha256=mLKCnAPtFbvuQN6j8gOCGQ4W49NeMjEIjwrgMkMq1Lo,556844
+probablepeople/person_learned_settings.crfsuite,sha256=r295uROsQ8iOCFE4_-ajhVZ398zVlRy8PncKo_QyTMY,236080
+probablepeople/ratios.py,sha256=Yue7LwGgF5nZo0SHzap2ChzXFucBnPlMIfd8Pnk9l6g,2803250
+probablepeople-0.5.5.dist-info/LICENSE,sha256=FRVI2Y2rnCLTEmKsFAOIv4GHQDYUOOGGAo9Bk66G2sA,2123
+probablepeople-0.5.5.dist-info/METADATA,sha256=ttGLJ-idVKaLxrmuA4wFi6O4BHt4ltpOOVVI8ZKjwZU,1812
+probablepeople-0.5.5.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+probablepeople-0.5.5.dist-info/top_level.txt,sha256=EIBRsZ90WNcEWGXzn9eeL5XrHDKqJ6jKDDSrB6TN9-A,15
+probablepeople-0.5.5.dist-info/RECORD,,
