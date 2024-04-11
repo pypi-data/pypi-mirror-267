@@ -1,0 +1,7 @@
+setup.py
+plugin_config_exceptions/__init__.py
+plugin_config_exceptions/plugin_config_exceptions.py
+plugin_config_exceptions.egg-info/PKG-INFO
+plugin_config_exceptions.egg-info/SOURCES.txt
+plugin_config_exceptions.egg-info/dependency_links.txt
+plugin_config_exceptions.egg-info/top_level.txt
