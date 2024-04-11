@@ -1,0 +1,19 @@
+prepare:
+  - name: 'Install pip'
+    how: install
+    package: python3-pip
+    order: 40
+  - name: 'Make sure we have Python >= 3.9'
+    how: shell
+    script: scripts/install-python.sh
+    order: 45
+  - name: 'Prepare pytest environment'
+    how: shell
+    script:
+      - python3 -m pip install --user pipx
+      - python3 -m pipx install pytest
+      - python3 -m pipx inject pytest sts-libs pytest-variables[yaml]
+        pytest-testinfra
+    order: 50
+execute:
+  how: tmt

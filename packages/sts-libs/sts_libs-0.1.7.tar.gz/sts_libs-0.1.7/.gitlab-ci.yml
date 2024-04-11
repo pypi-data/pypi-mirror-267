@@ -1,0 +1,32 @@
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_PIPELINE_SOURCE == "push"
+lint:
+  image: python:3
+  script:
+    - pip install pre-commit
+    - pre-commit run --all-files --show-diff-on-failure
+test-libs:
+  image: fedora:latest
+  script:
+    - dnf install -y python3-pip python3.9 python3.12 nox git
+    - nox
+publish-libs:
+  image: fedora:latest
+  needs:
+    - test-libs
+    - lint
+  script:
+    - dnf install -y hatch
+    - hatch build
+    - hatch publish
+  rules:
+    - if: $CI_COMMIT_TAG && $CI_PROJECT_PATH == "rh-kernel-stqe/sts"
+  release:
+    tag_name: $CI_COMMIT_TAG
+    description: 'Release $CI_COMMIT_TAG'
+    assets:
+      links:
+        - name: 'PyPI'
+          url: 'https://pypi.org/project/sts-libs/'
