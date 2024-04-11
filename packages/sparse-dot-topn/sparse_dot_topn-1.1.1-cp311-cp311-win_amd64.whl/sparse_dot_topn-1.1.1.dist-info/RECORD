@@ -1,0 +1,15 @@
+sparse_dot_topn/api.py,sha256=r3idXSAWy6XxMcseHASL38WFEkQ-fruXG-xZMBoIPAE,14833
+sparse_dot_topn/types.py,sha256=A7Td7gCtM2-k2VwIaUBl1B9hJrcIzLETlnV5xlMW__0,1998
+sparse_dot_topn/unchecked.py,sha256=4oVrphvmlt8GRYjhINhkisv2D149hkaO3rF9CPT3e14,3878
+sparse_dot_topn/__init__.py,sha256=RSUhZWuh9_CTrkrzUtj5eKZb73c965uT3hBhWMoBIGE,903
+sparse_dot_topn/lib/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sparse_dot_topn/lib/_sparse_dot_topn_core.cp311-win_amd64.pyd,sha256=ph9Re6aPyheA_CMtNAm3AjeEHPOCb2b7nzRAKDkca4U,336384
+sparse_dot_topn-1.1.1.dist-info/DELVEWHEEL,sha256=W10gsBAl4wWvuzwnPwutRq2Y9FE_spKf7GdLw4MEyho,407
+sparse_dot_topn-1.1.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sparse_dot_topn-1.1.1.dist-info/METADATA,sha256=KmCIYiVnsrruEB7MqDp-eYpRiZo-Npw7-uNem7clAIU,10504
+sparse_dot_topn-1.1.1.dist-info/RECORD,,
+sparse_dot_topn-1.1.1.dist-info/WHEEL,sha256=BqEX1Ir2N732jBkDsbdh_aEJYw2lve5DIKlaeaAffeY,105
+sparse_dot_topn-1.1.1.dist-info/licenses/LICENSE,sha256=GL6evqYczhX6uh8-n6O-txHw4C6Bx1JP7l8ZEujjSCY,11575
+sparse_dot_topn-1.1.1.dist-info/licenses/NOTICE,sha256=Ft1qphKuJWfxPr6Ks1WYUhdA4NcIGBbmG7BhW4n8eR0,1547
+sparse_dot_topn.libs/msvcp140-e544063b04debdeb2eef0205f43ab5a9.dll,sha256=j1nF9clJpqZTLsG7o_4IX6jBVzVPZuyBZqCcxbfsrsg,621960
+sparse_dot_topn.libs/vcomp140-3e88e3a48441b57bd15dd200017a3f6f.dll,sha256=1Js5TeEVQXazlhHDfGaev_UKpagY29X_PSIUopk2jd0,196688
