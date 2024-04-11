@@ -1,0 +1,45 @@
+Metadata-Version: 2.3
+Name: rs-distributions
+Version: 0.0.1
+Summary: Statistical distributions for structural biology
+Project-URL: Documentation, https://github.com/rs-station/distributions#readme
+Project-URL: Issues, https://github.com/rs-station/distributions/issues
+Project-URL: Source, https://github.com/rs-station/distributions
+Author-email: "Kevin M. Dalton" <kmdalton@fas.harvard.edu>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: torch
+Description-Content-Type: text/markdown
+
+# rs-distributions
+
+[![PyPI - Version](https://img.shields.io/pypi/v/rs-distributions.svg)](https://pypi.org/project/rs-distributions)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/rs-distributions.svg)](https://pypi.org/project/rs-distributions)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install rs-distributions
+```
+
+## License
+
+`rs-distributions` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
