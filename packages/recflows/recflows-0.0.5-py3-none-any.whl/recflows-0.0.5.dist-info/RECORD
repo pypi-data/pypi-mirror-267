@@ -1,0 +1,13 @@
+recflows/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recflows/vars.py,sha256=7FRADobgA6bV_M8_XKPI8LXZkApmR-gBIYG6gPvCoXg,893
+recflows/decorators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recflows/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recflows/resources/app.py,sha256=NhaZfBEyIciLx1QBawWog_ddCiyFyIwjq1GQeTHJRKQ,370
+recflows/resources/base.py,sha256=s0JYUpfd9_kqfy7q9F28CHAizuxj-MDdoCLotqo8-fE,411
+recflows/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recflows/services/database.py,sha256=HXUHDBPKe0S6RiC7UHEaXIvnFML5KE2fQ_OzXugyarg,1648
+recflows-0.0.5.dist-info/LICENSE,sha256=SvE9P5n-jZyDaRe-cm8-x-RvhO--TkdzTocJKW4HUfE,1065
+recflows-0.0.5.dist-info/METADATA,sha256=fHxeizf40AzqyFKiwOY7c63UaPEZPehHLgV6JkRwI7M,575
+recflows-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+recflows-0.0.5.dist-info/top_level.txt,sha256=0qEVGBDzrMOzT81_5Y-EUn2doT37RrTEJok9mM6mASM,9
+recflows-0.0.5.dist-info/RECORD,,
