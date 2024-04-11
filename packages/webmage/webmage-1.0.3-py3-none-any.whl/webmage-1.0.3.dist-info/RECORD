@@ -1,0 +1,10 @@
+webmage/__init__.py,sha256=DVO3yNHVpvfw3VrMemlyFORQNFjqQPikFPAf8FlFrIM,264
+webmage/rune.py,sha256=vwCxeNtbqdy5OTRg3MQlk0xCr6C9D0_WzfuyE1YJ6EQ,2290
+webmage/rune_list.py,sha256=mYZfSS8ShDsQH6XiJtMI6bD21ioMx03D08GzkMRvaac,703
+webmage/spell.py,sha256=AS8VCIM_8k7e_hgrvzvyBg-9RWS5WkkvtzCHZV0NN_8,11627
+webmage/support.py,sha256=NyJVGXN-jyI8CjeM1yjUx7WUtDG5PdZtLyFHpVBdGf4,348
+webmage-1.0.3.dist-info/LICENSE,sha256=y_Za3P-87jWuKtGRXhP379EtdvAhNnip5xBY3iYVCXc,1081
+webmage-1.0.3.dist-info/METADATA,sha256=TMR9plAwneQmVtKfm4xBI9YCcCHnITZSVtw9_wj8p_U,9930
+webmage-1.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+webmage-1.0.3.dist-info/top_level.txt,sha256=1Y_HaGV3_CRnXVwl3lwRpM-_1RsInMrj-MGE77E6cpk,8
+webmage-1.0.3.dist-info/RECORD,,
