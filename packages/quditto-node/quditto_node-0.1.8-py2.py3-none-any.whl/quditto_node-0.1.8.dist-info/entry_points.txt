@@ -1,0 +1,3 @@
+[console_scripts]
+quditto_node=quditto_node.main:cli
+
