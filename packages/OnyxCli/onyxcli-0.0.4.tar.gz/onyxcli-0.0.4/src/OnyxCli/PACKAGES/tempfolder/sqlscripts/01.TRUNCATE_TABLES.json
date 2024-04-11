@@ -1,0 +1,14 @@
+{
+    "osqlScript": {
+        "name": "01.TRUNCATE_TABLES",
+        "query": "-- Truncate staging tables\r\nTRUNCATE TABLE staging.EXPORT_FACTURE_ELEC;\r\nTRUNCATE TABLE staging.EXPORT_FACTURE_GAZ;\r\nTRUNCATE TABLE staging.EXPORT_FACTURE_MANUELLE_GAZ;\r\nTRUNCATE TABLE staging.EXPORT_FACTURE_LIGNES_ELEC;\r\nTRUNCATE TABLE staging.EXPORT_FACTURE_LIGNES_GAZ;\r\nTRUNCATE TABLE staging.EXPORT_FACTURE_MANUELLE_LIGNES_GAZ;",
+        "commandTimeout": null,
+        "documentation": null,
+        "oProjectId": "7316024d-7485-4b92-87b3-fce9be27f367",
+        "oConnectionId": "5c3be4e3-be08-4888-bfac-08db5bc711cb",
+        "id": "5ccbd792-1569-432d-97a6-cec44c75a9df"
+    },
+    "numberOfSchedules": 0,
+    "oProjectName": "AG - invoice",
+    "oConnectionName": "BDD-metfr-onyx"
+}

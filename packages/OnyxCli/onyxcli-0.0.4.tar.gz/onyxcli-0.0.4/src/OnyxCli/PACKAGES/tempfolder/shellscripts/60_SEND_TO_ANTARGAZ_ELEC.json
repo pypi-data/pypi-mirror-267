@@ -1,0 +1,15 @@
+{
+    "oShellScript": {
+        "name": "60_SEND_TO_ANTARGAZ_ELEC",
+        "script": "import logging\r\nimport sshtunnel\r\nimport cx_Oracle\r\nimport pymssql\r\nimport os\r\n\r\n# Chargement du contexte et des librairies ADS\r\n{{nxAddons}}\r\n\r\nrows = []\r\nqry = \"update ELEC.FACTURE SET INTEGRATION = 1, NUM_FACTURE = :invoiceNumber WHERE ID_FACTURE = :id_facture\"\r\n\r\n# Create a connection to the database\r\nprint(\"Connecting to the database MSSQL\")\r\nwith pymssql.connect(server=nxContext.BDD_Onyx_host, port=nxContext.BDD_Onyx_port, user=nxContext.BDD_Onyx_user, password=nxContext.BDD_Onyx_password, database=nxContext.BDD_Onyx_database) as conn:\r\n    with conn.cursor(as_dict=True) as cursor:\r\n        cursor.execute(\"select * from  AG_TO_OC.invoice_send_to_antargaz_elec\")\r\n        rows = cursor.fetchall()\r\n\r\n# Ouverture du tunnel SSH\r\nprint(\"Connection to the Oracle database through SSH\")\r\nwith sshtunnel.open_tunnel(\r\n    (nxContext.BDD_antargaz_ssh_server, 22),\r\n    ssh_username=nxContext.BDD_antargaz_ssh_username,\r\n    ssh_password=nxContext.BDD_antargaz_ssh_password,\r\n    remote_bind_address=(nxContext.BDD_antargaz_ora_server, 1521),\r\n    local_bind_address=('0.0.0.0', 1521)\r\n) as tunnel:\r\n\r\n    cx_Oracle.init_oracle_client(lib_dir='/opt/oracle/instantclient_21_11')\r\n    dsn_tns = cx_Oracle.makedsn('127.0.0.1', '1521', service_name=nxContext.BDD_antargaz_ora_servicename)\r\n    with cx_Oracle.connect(user=nxContext.BDD_antargaz_ora_username, password=nxContext.BDD_antargaz_ora_password, dsn=dsn_tns) as conn:\r\n        with conn.cursor() as c:\r\n            for row in rows:\r\n                c.execute(qry, invoiceNumber = row[\"invoiceNumber\"], id_facture = row[\"ID_FACTURE\"])\r\n                conn.commit()\r\n\r\nprint(f\"Number of invoices : {len(rows)}\")\r\nprint(\"Job finished\")\r\n",
+        "documentation": null,
+        "oProjectId": "7316024d-7485-4b92-87b3-fce9be27f367",
+        "isScheduled": false,
+        "isInAWorkflow": true,
+        "type": 1,
+        "packages": "sshtunnel==0.4.0\r\ncx_Oracle==8.3\r\npymssql==2.2.7\r\nrequests==2.28.1\r\ncryptography==41.0.4",
+        "id": "5752b561-b639-45dd-a6d9-dcd2cdba216b"
+    },
+    "numberOfSchedules": 0,
+    "oProjectName": "AG - invoice"
+}
