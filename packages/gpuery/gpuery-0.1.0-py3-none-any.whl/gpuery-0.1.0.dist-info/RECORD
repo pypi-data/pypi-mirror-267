@@ -1,0 +1,8 @@
+gpuery/__init__.py,sha256=blZTUc66ovHW6gSg_WtxIx1RdlWTQ6HsAZt9xdQI3s4,84
+gpuery/entity.py,sha256=iXDfaG601_GKi7t1SzdVy6fMB7pWzOYTgOM5iZOVJzU,2128
+gpuery/parse.py,sha256=4T7l4TiHgwtFRGpkPx5fHPJKeYXgFP_97zrNvS6oDgM,2013
+gpuery/query.py,sha256=oS5aQvI07_L77ysQqfN0tzXmttQgnjXsMRYF1tiwOSo,3832
+gpuery/select.py,sha256=0GwrqVxeSlFS3EC-3PyY8gkLn8TpGxYIFt3iViGp0D8,2054
+gpuery-0.1.0.dist-info/METADATA,sha256=Jigkh8747WkR6GHsDTtPhORvuxuDU5NpCnyPJ-EuxgY,1834
+gpuery-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+gpuery-0.1.0.dist-info/RECORD,,
