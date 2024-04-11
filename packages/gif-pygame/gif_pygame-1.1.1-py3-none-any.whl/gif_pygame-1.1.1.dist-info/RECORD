@@ -1,0 +1,9 @@
+gif_pygame/__init__.py,sha256=5vD6TjkgwjuUmKAm6AbkQ4lCvgWqMk4WiwyVN9ywnEM,100
+gif_pygame/_common.py,sha256=SJ04tQEIwh1jJ5Yu52bBBrPBXL6sm-L799oyTehoIYw,397
+gif_pygame/gif_pygame.py,sha256=gaK9JB7mLUwjcI8acX2gPhKJOQZoC5ZSDcRE1goIbBo,8566
+gif_pygame/transform.py,sha256=-AUqPFOE6IlpEGAEs1riUpQVdeFVNqpJ1OuRGl0Z_pY,18517
+gif_pygame-1.1.1.dist-info/LICENSE,sha256=azjN_kp3Q1Q2rwaZ8ZEZlTdZ6t0JsoZ4WCe4wBguHuc,1083
+gif_pygame-1.1.1.dist-info/METADATA,sha256=8Yt2PnXTSeWTH6r2580fI2pvGNmc8V2w9bfd6aQwvNU,4760
+gif_pygame-1.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gif_pygame-1.1.1.dist-info/top_level.txt,sha256=xAvX-yQfli5ZMwW0d_HF-vY7ZVbWOG_8WxUy6xuq2gY,11
+gif_pygame-1.1.1.dist-info/RECORD,,
