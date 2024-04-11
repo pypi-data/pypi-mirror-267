@@ -1,0 +1,10 @@
+Metadata-Version: 2.3
+Name: django_analytics_simple
+Version: 2024.0.1
+Project-URL: Repository, https://github.com/h4cker54n/django_analytics_simple
+Author-email: Santiago Nestor Britos <s.britos@hotmail.com>
+License-File: LICENSE
+Requires-Python: >=3.0
+Requires-Dist: django>3.0
+Requires-Dist: maxminddb>2.0.1
+Requires-Dist: user-agents>2.2.0
