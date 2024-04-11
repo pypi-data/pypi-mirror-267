@@ -1,0 +1,9 @@
+requests
+nltk
+numpy
+scipy
+gensim
+networkx
+textacy
+transformers
+torch
