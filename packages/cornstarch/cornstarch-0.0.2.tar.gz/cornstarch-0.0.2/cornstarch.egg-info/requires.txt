@@ -1,0 +1,16 @@
+torch
+transformers==4.36.0
+colossalai==0.3.6
+loguru
+simple_parsing
+datasets
+
+[dev]
+torch>=2.1.0
+ruff
+black>=23.0
+isort>=5.12
+pytest
+pytest-mock
+expecttest
+accelerate
