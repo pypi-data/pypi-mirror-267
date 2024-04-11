@@ -1,0 +1,6 @@
+/olddist
+/.venv
+/.idea
+.github
+.gitignore
+token
