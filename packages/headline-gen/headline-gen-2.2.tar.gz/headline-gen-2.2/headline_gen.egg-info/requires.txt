@@ -1,0 +1,10 @@
+requests
+nltk
+string
+numpy
+scipy
+gensim
+networkx
+textacy
+transformers
+torch
