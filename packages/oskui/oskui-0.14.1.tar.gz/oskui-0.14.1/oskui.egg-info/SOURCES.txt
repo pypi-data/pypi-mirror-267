@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+oskui/__init__.py
+oskui/visual.py
+oskui.egg-info/PKG-INFO
+oskui.egg-info/SOURCES.txt
+oskui.egg-info/dependency_links.txt
+oskui.egg-info/top_level.txt
