@@ -1,0 +1,9 @@
+README.md
+setup.py
+illuminat/__init__.py
+illuminat/main.py
+illuminatapp.egg-info/PKG-INFO
+illuminatapp.egg-info/SOURCES.txt
+illuminatapp.egg-info/dependency_links.txt
+illuminatapp.egg-info/requires.txt
+illuminatapp.egg-info/top_level.txt
