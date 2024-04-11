@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/main.py
+src/lwutils.egg-info/PKG-INFO
+src/lwutils.egg-info/SOURCES.txt
+src/lwutils.egg-info/dependency_links.txt
+src/lwutils.egg-info/top_level.txt
