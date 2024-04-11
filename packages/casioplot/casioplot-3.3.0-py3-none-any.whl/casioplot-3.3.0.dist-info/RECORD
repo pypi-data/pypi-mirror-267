@@ -1,0 +1,16 @@
+casioplot/__init__.py,sha256=sQmcmGsZNuEnXL7FPmgGaPs24Ai1louMLZnZgwMo8I0,232
+casioplot/casioplot.py,sha256=UAxgfcJL1WIqgma8dY7p9dOb-b_CD6bMqCRzNtYRnHo,7914
+casioplot/characters.py,sha256=aorVJDkby-N6ewdbCD33JAYF7CsLSX30ZUmfOUpo3Mg,127342
+casioplot/settings.py,sha256=Sxaw3Dg6Ko5yltJFTGzTeBJECirXSWkfaEjnirTHgk8,12085
+casioplot/types.py,sha256=3RBBX0ErDQXDZq9TVXx2mfFCgRn71Dh5NfZ5VUj3oPQ,2013
+casioplot/bg_images/blanck.png,sha256=6HiVD4CR7AEM9cxyO96gJ6hTnPcUfP6hmcL2ZiMtzU4,69
+casioplot/bg_images/calculator.png,sha256=Ndo1GgnpPb6sGkgKubsVCGbb-ED3MVlwshJ2DpynRac,1165
+casioplot/presets/default.toml,sha256=Cr8mThWGPobFQFuc0tZJycTtYrDANNRUCXF0HivSOYU,2716
+casioplot/presets/fx-CG50.toml,sha256=Be2tfmbi0GpYcPNkpKKh0LQ_Fp7t474TECaNoSfYvx0,405
+casioplot/presets/fx-CG50_AU.toml,sha256=uGtst90j7RcmFmqwvDoW-8jUqLLjl4DAYn3bxzr04OE,77
+casioplot/presets/graph_90+e.toml,sha256=uGtst90j7RcmFmqwvDoW-8jUqLLjl4DAYn3bxzr04OE,77
+casioplot-3.3.0.dist-info/LICENSE,sha256=mJQCDfROKETGlz2lbBn9DJ26r-ifzdV4Xk0eBGrYCxA,1063
+casioplot-3.3.0.dist-info/METADATA,sha256=zpxOfvhj494T5KJ1k8BHevicfXnkq8Fmz-3pPXYa0ts,4531
+casioplot-3.3.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+casioplot-3.3.0.dist-info/top_level.txt,sha256=57gcHHFNJkdip1DY8b19zIACIZC4KrDxkctptDzx3wc,10
+casioplot-3.3.0.dist-info/RECORD,,
