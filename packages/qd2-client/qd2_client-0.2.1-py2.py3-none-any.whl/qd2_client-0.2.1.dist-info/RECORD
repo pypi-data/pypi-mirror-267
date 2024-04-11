@@ -1,0 +1,6 @@
+qd2_client/interfaces_pb2.py,sha256=Ol3w3N9A_7YqtMr7SfI7B1pk1_my3LnJwSCBzipSvEo,7560
+qd2_client/interfaces_pb2_grpc.py,sha256=vpBm8Uk7p-RFQ5f9rGrqesSgsmyUdE7M73r-YNxWx1s,9305
+qd2_client/qd2_etsi_004_client.py,sha256=OyX3L2xipEGU-ToaghnbcBRZqupyM1HNl-tQohliMHU,3469
+qd2_client-0.2.1.dist-info/METADATA,sha256=C8ejiESCnq-Lydd0D3Rnq83pRrN47F0z3JRxNk_BF50,786
+qd2_client-0.2.1.dist-info/WHEEL,sha256=IrRNNNJ-uuL1ggO5qMvT1GGhQVdQU54d6ZpYqEZfEWo,92
+qd2_client-0.2.1.dist-info/RECORD,,
