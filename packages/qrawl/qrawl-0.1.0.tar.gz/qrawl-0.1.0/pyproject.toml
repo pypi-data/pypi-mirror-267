@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "qrawl"
+version = "0.1.0"
+description = "Python Crawling Utilities."
+authors = ["GGLionCross"]
+license = "Apache 2.0"
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+lytils = "*"
+
+
+[tool.poetry.group.playwright.dependencies]
+playwright = "^1.17.1"
+
+
+[tool.poetry.group.selenium.dependencies]
+selenium = "^4.1.0"
+webdriver-manager = "^3.4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
