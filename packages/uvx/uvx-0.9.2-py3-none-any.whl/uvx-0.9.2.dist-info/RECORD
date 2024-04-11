@@ -1,0 +1,16 @@
+uvx/__about__.py,sha256=-7mafhGjASSUA1qwnwBtV9jU0f4PXvliW9yyFdnZyOs,188
+uvx/__init__.py,sha256=qOgrRWv2ZeykVWHLp83r0treAYcwB3mxmfG51gh_AAo,174
+uvx/_cli_support.py,sha256=a2XHxspZ9fNRJP5bS1wryInjAeUfn7NiKlzzUjpJx84,147
+uvx/_constants.py,sha256=G8lcF8i_u9-eT_QNtMW7LMeZfQeeyYjoOegmGP_F11I,160
+uvx/_maybe.py,sha256=zvGZUTVipMJIEtIdg0xk7Lcuz3N_7EQFl2WQtAq3t1U,345
+uvx/_python.py,sha256=i32ejUumzKrF4etJAQr4_0yQ9s0Bi1wB0VCZf6cM3vQ,2383
+uvx/_symlinks.py,sha256=VqxNGjrFqQ-QmipMH5ddi3X_WbtZhjROSL_rw4kIWG8,4310
+uvx/cli.py,sha256=kbpYMW8BMHOcuaYwj6qzVnZ9hMofW1jZQocBzmtMRLs,11756
+uvx/core.py,sha256=KFFliTa-eNVE6ivjoTbKDmaajUjf_yEHNBFIZst9kMY,15097
+uvx/metadata.py,sha256=J7qKS73fYjmoXD527CqP3izDGFlEziL-cnAmlFrJ36I,4387
+uvx/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uvx-0.9.2.dist-info/METADATA,sha256=QiH2vslevjrubPsGhuodhulSyKjDyQPqAg1Q8-FMoXo,1791
+uvx-0.9.2.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+uvx-0.9.2.dist-info/entry_points.txt,sha256=w3NZ_Tm56vWYyOJuL35-G03q96snmQMI9wgc12toJ1k,36
+uvx-0.9.2.dist-info/licenses/LICENSE.txt,sha256=IlFgh4w9Jfni_IqNrHMLEasj_h-5tYIXT0VNaqyInHI,1113
+uvx-0.9.2.dist-info/RECORD,,
