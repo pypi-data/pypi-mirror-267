@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/main.py
+src/yaml_to_cfg.egg-info/PKG-INFO
+src/yaml_to_cfg.egg-info/SOURCES.txt
+src/yaml_to_cfg.egg-info/dependency_links.txt
+src/yaml_to_cfg.egg-info/top_level.txt
