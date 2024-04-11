@@ -1,0 +1,4 @@
+fsspec
+pandas
+tabulate
+typer[all]
