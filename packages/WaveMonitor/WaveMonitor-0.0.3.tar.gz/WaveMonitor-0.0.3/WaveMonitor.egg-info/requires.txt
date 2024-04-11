@@ -1,0 +1,5 @@
+msgpack
+msgpack_numpy
+numpy
+pyqtgraph
+PySide6

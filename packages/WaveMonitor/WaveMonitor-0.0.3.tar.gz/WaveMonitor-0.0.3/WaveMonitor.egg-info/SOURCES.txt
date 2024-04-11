@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+WaveMonitor.egg-info/PKG-INFO
+WaveMonitor.egg-info/SOURCES.txt
+WaveMonitor.egg-info/dependency_links.txt
+WaveMonitor.egg-info/requires.txt
+WaveMonitor.egg-info/top_level.txt
+assets/icon.png
+assets/snapshot.png
+assets/style.qss
+assets/style2.qss
