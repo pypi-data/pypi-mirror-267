@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sorapi
+Version: 1.0.0
+Summary: This module provides a convenient way to interact with all endpoints of some-random-api(.com).
+Home-page: http://github.com/RaulRDA/sorapi/wiki
+Author: RaulRDA
+Author-email: hey@raulrda.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: requests
+
+# sorapi
+Python module that provides a convenient way to interact with all endpoints of some-random-api(.com).

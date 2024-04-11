@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+sorapi.egg-info/PKG-INFO
+sorapi.egg-info/SOURCES.txt
+sorapi.egg-info/dependency_links.txt
+sorapi.egg-info/requires.txt
+sorapi.egg-info/top_level.txt
