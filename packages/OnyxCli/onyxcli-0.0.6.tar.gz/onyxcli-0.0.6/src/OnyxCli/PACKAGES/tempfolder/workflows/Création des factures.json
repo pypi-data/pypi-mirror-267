@@ -1,0 +1,14 @@
+{
+    "oWorkflow": {
+        "name": "Création des factures",
+        "documentation": null,
+        "oProjectId": "7316024d-7485-4b92-87b3-fce9be27f367",
+        "isScheduled": false,
+        "emailSentOnError": false,
+        "enableCrossProject": false,
+        "emailRecipients": null,
+        "id": "1615e5ce-0e32-4ace-babb-3aa90bf819ee"
+    },
+    "numberOfSchedules": 0,
+    "oProjectName": "AG - invoice"
+}

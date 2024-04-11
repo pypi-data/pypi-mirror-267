@@ -1,0 +1,10 @@
+{
+    "oReport": {
+        "name": "Synthèse",
+        "documentation": null,
+        "configuration": "[{\"id\":\"f832fb40-21ef-4e0b-9317-0b092f484701\",\"type\":0,\"inputs\":{\"widgetId\":\"f832fb40-21ef-4e0b-9317-0b092f484701\",\"reportId\":\"2f3485c1-7ee0-4080-a483-b467afb61101\"},\"filters\":[],\"gridInformation\":{\"cols\":12,\"rows\":10,\"x\":0,\"y\":0}},{\"id\":\"f0a2c6ff-c576-49c9-912f-4a70cc0734fe\",\"type\":0,\"inputs\":{\"widgetId\":\"f0a2c6ff-c576-49c9-912f-4a70cc0734fe\",\"reportId\":\"2f3485c1-7ee0-4080-a483-b467afb61101\"},\"filters\":[],\"gridInformation\":{\"cols\":12,\"rows\":16,\"x\":0,\"y\":10}},{\"id\":\"9c641ecd-a363-42b4-9219-1d2f72350f9d\",\"type\":0,\"inputs\":{\"widgetId\":\"9c641ecd-a363-42b4-9219-1d2f72350f9d\",\"reportId\":\"2f3485c1-7ee0-4080-a483-b467afb61101\"},\"filters\":[],\"gridInformation\":{\"cols\":12,\"rows\":16,\"x\":0,\"y\":26}},{\"id\":\"c5a0f781-f042-4cd9-badd-8e700f92c27f\",\"type\":0,\"inputs\":{\"widgetId\":\"c5a0f781-f042-4cd9-badd-8e700f92c27f\",\"reportId\":\"2f3485c1-7ee0-4080-a483-b467afb61101\"},\"filters\":[],\"gridInformation\":{\"cols\":12,\"rows\":16,\"x\":0,\"y\":42}}]",
+        "oProjectId": "7316024d-7485-4b92-87b3-fce9be27f367",
+        "id": "2f3485c1-7ee0-4080-a483-b467afb61101"
+    },
+    "projectName": "AG - invoice"
+}

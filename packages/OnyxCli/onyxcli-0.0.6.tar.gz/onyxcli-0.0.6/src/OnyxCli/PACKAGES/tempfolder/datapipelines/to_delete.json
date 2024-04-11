@@ -1,0 +1,21 @@
+{
+    "oProjectId": "7316024d-7485-4b92-87b3-fce9be27f367",
+    "sourceConnectionId": "5d182f60-af6f-4bfe-9990-0edaf2ff116b",
+    "sourceConnectionType": 0,
+    "destinationConnectionId": "5c3be4e3-be08-4888-bfac-08db5bc711cb",
+    "destinationConnectionType": 0,
+    "name": "to_delete",
+    "sourceTable": "\"public\".\"blueprints\"",
+    "destinationTable": "[public].[blueprints]",
+    "queryFilter": null,
+    "nbColumns": 0,
+    "isScheduled": false,
+    "isInAWorkflow": false,
+    "actionIfTableExists": 0,
+    "actionIfTableNotExists": 0,
+    "desactivateIndexes": false,
+    "createPrimaryKey": false,
+    "createIndexes": false,
+    "numberOfSchedules": 0,
+    "id": "1a2c60c1-4451-47ca-9fb7-3d4cba323f04"
+}

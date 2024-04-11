@@ -1,0 +1,19 @@
+{
+    "oConnection": {
+        "connectionType": 1,
+        "name": "BDD-metfr-db",
+        "shortName": "BDD-metfr-db",
+        "documentation": "<p>Connexion à utiliser pour la lecture des données</p>",
+        "isWritable": false,
+        "tablesNamingConvention": null,
+        "columnsNamingConvention": null,
+        "overrideManualTablesName": false,
+        "overrideManualColumnsName": false,
+        "autoApplyNamingConventions": false,
+        "organizationUnitId": 77,
+        "connectionString": "{\"Username\":\"onyx\",\"Password\":\"Met23#-azurEX\",\"Host\":\"metfr-sqlserver.database.windows.net\",\"Port\":\"1433\",\"Database\":\"metfr-db\"}",
+        "schemaFilter": null,
+        "id": "230d3176-6dd0-4844-ae14-7294cea73139"
+    },
+    "organizationUnitDisplayName": "MET France"
+}
