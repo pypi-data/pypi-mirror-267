@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pytest-proceed
+Version: 0.1.1
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pytest
+Requires-Dist: argparse
+
+# pytest-proceed
+A pytest plugin to initiate test runs from a specific test file, proceeding alphabetically through the test suite. Perfect for targeted testing scenarios or partial test suite runs.
