@@ -1,0 +1,4 @@
+[console_scripts]
+abstra = abstra.cli:main
+abstracloudserver = abstra_internals.cloud:server
+
