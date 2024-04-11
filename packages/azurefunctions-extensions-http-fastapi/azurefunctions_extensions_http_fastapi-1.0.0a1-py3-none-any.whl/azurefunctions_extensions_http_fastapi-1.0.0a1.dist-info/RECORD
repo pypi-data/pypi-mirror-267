@@ -1,0 +1,9 @@
+azurefunctions/extensions/http/fastapi/__init__.py,sha256=XD5b4o-ymKgUxFldPYgPTaC0Wrcf5LvBjWYEfosFSqA,627
+azurefunctions/extensions/http/fastapi/web.py,sha256=oT-P9wxkERo2J7mh6A84KysYSeC1SGVXeaGXFwW7hdU,4505
+samples/fastapi_samples_streaming_download/function_app.py,sha256=h38gQnQodlgqz9-FSoC1dMOXCOEHC3cWNzXWpYlGtG0,1017
+samples/fastapi_samples_streaming_upload/function_app.py,sha256=KArrzM-mCj_xNNFa0HISDcYYuReUY4ZEKu2TEhjb_aI,1031
+azurefunctions_extensions_http_fastapi-1.0.0a1.dist-info/LICENSE,sha256=kD31US99AmCf7Qx4CptwT1o-625NhOvkKimEXIGJmjw,1093
+azurefunctions_extensions_http_fastapi-1.0.0a1.dist-info/METADATA,sha256=JZo3JmWBd1zcZdpP7hxEY9VQiBEiRYiEsMmYN_HuSTI,6438
+azurefunctions_extensions_http_fastapi-1.0.0a1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+azurefunctions_extensions_http_fastapi-1.0.0a1.dist-info/top_level.txt,sha256=7OshtAeZN0p0jXt0QfJ5G8KiDpSfCQolR1Sl8OYAsj4,23
+azurefunctions_extensions_http_fastapi-1.0.0a1.dist-info/RECORD,,
