@@ -1,0 +1,9 @@
+shipyard_redshift/__init__.py,sha256=8Ba_cqIsrv8rf1Evp1L8CBLlDr62oqThGZFrGezr8Tg,37
+shipyard_redshift/cli/authtest.py,sha256=g8H2KGPjYQnNaWgsxyjgIBZkGsS0RlrIQMHfW8aJAEk,807
+shipyard_redshift/cli/download.py,sha256=qbcraJst42YRV-37jHuWmW2nsuPvkYWds26AFJSxqUM,2963
+shipyard_redshift/cli/execute_query.py,sha256=C8HmGQfoMA5mLaz2dbTv0rvk2bQS8ddKMYLIqu4AWno,2036
+shipyard_redshift/cli/upload.py,sha256=clNJU_UR11L615Da0Ghf5o-x0HgfNgvSLeGYM_NbqJs,4521
+shipyard_redshift/redshift.py,sha256=8ESUDdABpKERz1Ie_6KhXgA7au4mn2FDwQz7FYydhwU,8134
+shipyard_redshift-0.2.0a1.dist-info/METADATA,sha256=0Wp-jNWw_GsbZO2UyQlOJiwZxIoNMpB24iSQJ2Kugy0,740
+shipyard_redshift-0.2.0a1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+shipyard_redshift-0.2.0a1.dist-info/RECORD,,
