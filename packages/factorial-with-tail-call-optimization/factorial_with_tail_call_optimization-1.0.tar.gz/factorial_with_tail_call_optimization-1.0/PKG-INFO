@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: factorial-with-tail-call-optimization
+Version: 1.0
+Summary: Factorial Tail Call Optimization
+Author-email: Joseph Spracklen <joseph.spracklen@my.utsa.edu>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# To be completed
