@@ -1,0 +1,2 @@
+[console_scripts]
+noteshrunk = noteshrunk.noteshrunk:main
