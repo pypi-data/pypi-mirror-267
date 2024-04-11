@@ -1,0 +1,12 @@
+spice/__init__.py,sha256=Ve-HnPY1eqxKO5HwaiMdw9CMKTkGN7vGjsPxN_fWe9U,135
+spice/errors.py,sha256=q0uPE4h2U-1nyjMuR8WvVU6-vZAbIsASarkcGRS-Gsg,632
+spice/models.py,sha256=4HN-9Rldy4JLUqO0i8j_el18QE9lvjwxrjtLiGsgsiw,3277
+spice/providers.py,sha256=-M8joLjBwjwBWCqpjRHhKwk1uKOqfZnlhSctB3p_iUg,2152
+spice/spice.py,sha256=X7l1uugUSGuL6z4sWSVY-xZDEnrEJHfXpIiMdn4MRxA,23399
+spice/spice_message.py,sha256=dm0G1nU9PyyupyhZiMM14oYP7ePUdPwrJRrTymu3ibU,4074
+spice/utils.py,sha256=P_reDVtIUjQ58wtvipYJqgm10mnA98QAT7Cl_eFQzMk,842
+spice/wrapped_clients.py,sha256=DKx8fXVAjRamGVttjk_IAMoVhclJIaMM6bt5qk9AreU,18407
+spiceai-0.1.10.dist-info/METADATA,sha256=bUH66TCDw1v27j1G8jYI-cpOBDKkJLGQz8d_B-LfhHk,6216
+spiceai-0.1.10.dist-info/WHEEL,sha256=wpsUbWzR9la66_V7_eWTdyvs6WD26tazKT2BBEAC-EM,105
+spiceai-0.1.10.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+spiceai-0.1.10.dist-info/RECORD,,
