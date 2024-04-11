@@ -1,0 +1,15 @@
+numpy
+msgpack
+pyyaml
+cytoolz
+rich
+pydantic
+bec_lib
+
+[dev]
+pytest
+pytest-random-order
+coverage
+black
+isort
+pylint
