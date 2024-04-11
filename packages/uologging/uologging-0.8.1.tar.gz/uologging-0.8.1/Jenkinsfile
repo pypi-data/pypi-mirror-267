@@ -1,0 +1,11 @@
+@Library('ntsjenkins') _
+
+node('python') {
+    buildPythonProject(
+        pythonVersion: 'python3.8',
+        doctest: true,
+        hatch: true,
+        coverage: true,
+        hatchTestCmd: 'hatch run cicd:cov',
+    )
+}
