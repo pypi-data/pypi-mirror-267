@@ -1,0 +1,6 @@
+scipy
+numpy
+pandas
+urllib
+joblib
+scikit-learn
