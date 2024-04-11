@@ -1,0 +1,9 @@
+langchain_standard_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langchain_standard_tests/integration_tests/__init__.py,sha256=zCKYJLjvjGda0GnB_G7w3v16Nib1WA9sZ02OiOn1qoo,150
+langchain_standard_tests/integration_tests/chat_models.py,sha256=62yU0cHZGZsO5dKxfpmZq2CjV7-fgOnfih2BINk0YRg,3996
+langchain_standard_tests/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langchain_standard_tests/unit_tests/__init__.py,sha256=-exZNxgvs5WRiJ3MHc52MSwv1Ma2NB_u60KX4zKbt9Q,113
+langchain_standard_tests/unit_tests/chat_models.py,sha256=OIKENvLcpP3ly0GNboyp-uNx2VppDkzJMaXyr-eaB2I,2693
+gigachain_standard_tests-0.1.0.dist-info/METADATA,sha256=NT4JTexgb0UKcGQtrVLz3aHcB0OPqxWczuhAZ95u9x8,3071
+gigachain_standard_tests-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+gigachain_standard_tests-0.1.0.dist-info/RECORD,,
