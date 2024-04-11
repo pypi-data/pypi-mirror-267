@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/main.py
+src/nic_test.egg-info/PKG-INFO
+src/nic_test.egg-info/SOURCES.txt
+src/nic_test.egg-info/dependency_links.txt
+src/nic_test.egg-info/top_level.txt
