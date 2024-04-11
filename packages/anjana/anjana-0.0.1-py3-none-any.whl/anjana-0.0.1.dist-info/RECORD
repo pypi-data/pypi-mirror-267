@@ -1,0 +1,13 @@
+anjana/__init__.py,sha256=iHhVk_Z_KXBnJOK3PFXynGEKBPVdkZHPVyWCKQRMWEU,743
+anjana/anonymity/__init__.py,sha256=_1-R5vWij_x8xV-j0sRCc5gaYxaLLaf7exQIaGlrT8k,1277
+anjana/anonymity/_beta_likeness.py,sha256=2OMev_COhMdpP2W0JFdEqkgNNo13qTPnUcf4vI9B_HE,6416
+anjana/anonymity/_delta_disclosure.py,sha256=Rtxxlr7qhYWr3dx_WD5JhyE2XDSYBO68Jqb9sZGIwbA,3629
+anjana/anonymity/_k_anonymity.py,sha256=3PJ5R-7NtgKIv8i6d_73iONK_YIZk1-WYeV13tNY4uM,10095
+anjana/anonymity/_l_diversity.py,sha256=p3wFDJcxIEkBOsPJ7FJ4oiQrd6vqFb6mfHAInLFZ8wU,13419
+anjana/anonymity/_t_closeness.py,sha256=MoEmjZkg6rElO19PEDPXyAPs7wVQ-GxPehNRmq5ZIPI,3501
+anjana/anonymity/utils/__init__.py,sha256=6U_T2azyVpKEHymgzxp8V87GRPdhAo0uboNrTNcSZWo,784
+anjana/anonymity/utils/utils.py,sha256=iX0hTWUiEcaREDhW1EW-9wdMhG8ILLypS-M688oFuGo,3552
+anjana-0.0.1.dist-info/LICENSE,sha256=Ie2jkbHXu-8lwQGSH4_0WQrZcl8l0OqOqUDeMuCIVUU,11353
+anjana-0.0.1.dist-info/METADATA,sha256=W97Q78JxSN1v4yiUbzPx3HAhd-kWtfpWpvOqukNrssg,6179
+anjana-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+anjana-0.0.1.dist-info/RECORD,,
