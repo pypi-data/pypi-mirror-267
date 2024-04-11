@@ -1,0 +1,10 @@
+{
+    "oFileProvider": {
+        "name": "opencell-ftp",
+        "connectionString": "{\"Port\":2228,\"Host\":\"met.oc-saas.eu\",\"User\":\"Enedis\",\"Password\":\"cUQeF42ffSCncv\"}",
+        "containerName": ".",
+        "type": 1,
+        "organizationUnitId": 77,
+        "id": "e423056f-4530-487e-8b33-0fb23ad75541"
+    }
+}

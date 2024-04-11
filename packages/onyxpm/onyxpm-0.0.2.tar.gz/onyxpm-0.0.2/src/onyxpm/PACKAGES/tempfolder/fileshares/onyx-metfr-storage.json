@@ -1,0 +1,10 @@
+{
+    "oFileProvider": {
+        "name": "onyx-metfr-storage",
+        "connectionString": "DefaultEndpointsProtocol=https;AccountName=metfrstorage;AccountKey=P9U2ma4QVeibUMBQWtNez/9HDwE/5dpUVsSdPSOuJf7Pkym9nDkrwX76UZ7ZjGdr+LzIwzM4f36I+AStW/5ZVA==;EndpointSuffix=core.windows.net",
+        "containerName": "neowise",
+        "type": 0,
+        "organizationUnitId": 77,
+        "id": "134e5c72-83f3-4cec-aef6-7e7545ae33fd"
+    }
+}

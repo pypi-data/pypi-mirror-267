@@ -1,0 +1,57 @@
+{
+    "totalCount": 4,
+    "items": [
+        {
+            "oFlowId": "1a2c60c1-4451-47ca-9fb7-3d4cba323f04",
+            "sourceColumnName": "key",
+            "destinationColumnName": "key",
+            "destinationColumnDataType": "VARCHAR(200)",
+            "sourceCharacterMaximumLength": 200,
+            "sourceColumnNumericPrecision": 0,
+            "sourceColumnNumericScale": 0,
+            "sourceColumnDatatype": "character varying",
+            "ordinal": 1,
+            "missingInSource": false,
+            "id": "4d345f8e-852d-4a3d-bf97-1a320a921029"
+        },
+        {
+            "oFlowId": "1a2c60c1-4451-47ca-9fb7-3d4cba323f04",
+            "sourceColumnName": "value",
+            "destinationColumnName": "value",
+            "destinationColumnDataType": "VARCHAR(MAX)",
+            "sourceCharacterMaximumLength": null,
+            "sourceColumnNumericPrecision": 0,
+            "sourceColumnNumericScale": 0,
+            "sourceColumnDatatype": "text",
+            "ordinal": 2,
+            "missingInSource": false,
+            "id": "dc44314b-8ba5-482c-b9c5-653d757fe55d"
+        },
+        {
+            "oFlowId": "1a2c60c1-4451-47ca-9fb7-3d4cba323f04",
+            "sourceColumnName": "description",
+            "destinationColumnName": "description",
+            "destinationColumnDataType": "VARCHAR(MAX)",
+            "sourceCharacterMaximumLength": null,
+            "sourceColumnNumericPrecision": 0,
+            "sourceColumnNumericScale": 0,
+            "sourceColumnDatatype": "text",
+            "ordinal": 3,
+            "missingInSource": false,
+            "id": "28addae0-ddff-4579-ac47-a81e496e0224"
+        },
+        {
+            "oFlowId": "1a2c60c1-4451-47ca-9fb7-3d4cba323f04",
+            "sourceColumnName": "version",
+            "destinationColumnName": "version",
+            "destinationColumnDataType": "VARCHAR(200)",
+            "sourceCharacterMaximumLength": 200,
+            "sourceColumnNumericPrecision": 0,
+            "sourceColumnNumericScale": 0,
+            "sourceColumnDatatype": "character varying",
+            "ordinal": 4,
+            "missingInSource": false,
+            "id": "4fab8ffc-ca0b-4d77-a194-3c8772738760"
+        }
+    ]
+}

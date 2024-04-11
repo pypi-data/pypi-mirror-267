@@ -1,0 +1,14 @@
+{
+    "osqlScript": {
+        "name": "10.EXPORT_FACTURE_ELEC.CDC1",
+        "query": "exec AG_TO_OC.sp_cdc_export_facture_elec;",
+        "commandTimeout": 3600,
+        "documentation": null,
+        "oProjectId": "7316024d-7485-4b92-87b3-fce9be27f367",
+        "oConnectionId": "5c3be4e3-be08-4888-bfac-08db5bc711cb",
+        "id": "1205030b-4b8b-44e1-a69e-5da4bfbf26e5"
+    },
+    "numberOfSchedules": 0,
+    "oProjectName": "AG - invoice",
+    "oConnectionName": "BDD-metfr-onyx"
+}

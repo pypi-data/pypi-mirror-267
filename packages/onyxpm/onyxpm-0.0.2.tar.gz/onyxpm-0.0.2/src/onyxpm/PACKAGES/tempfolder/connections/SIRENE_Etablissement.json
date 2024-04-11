@@ -1,0 +1,19 @@
+{
+    "oConnection": {
+        "connectionType": 3,
+        "name": "SIRENE",
+        "shortName": "SIRENE_Etablissement",
+        "documentation": null,
+        "isWritable": false,
+        "tablesNamingConvention": null,
+        "columnsNamingConvention": null,
+        "overrideManualTablesName": false,
+        "overrideManualColumnsName": false,
+        "autoApplyNamingConventions": false,
+        "organizationUnitId": 77,
+        "connectionString": "{\"FileMask\":\"sirene/.*.zip\",\"Delimiter\":\",\",\"EnclosureCharacter\":\"\\\"\",\"HasHeader\":true,\"FileProviderId\":\"134e5c72-83f3-4cec-aef6-7e7545ae33fd\",\"Folder\":\"sirene\"}",
+        "schemaFilter": null,
+        "id": "ba2eb1b2-f22c-4575-84b0-837edd83102d"
+    },
+    "organizationUnitDisplayName": "MET France"
+}

@@ -1,0 +1,19 @@
+{
+    "oConnection": {
+        "connectionType": 1,
+        "name": "BDD-metfr-onyx",
+        "shortName": "BDD-metfr-onyx",
+        "documentation": null,
+        "isWritable": true,
+        "tablesNamingConvention": null,
+        "columnsNamingConvention": null,
+        "overrideManualTablesName": false,
+        "overrideManualColumnsName": false,
+        "autoApplyNamingConventions": false,
+        "organizationUnitId": 77,
+        "connectionString": "{\"Username\":\"onyx\",\"Password\":\"Met23#-azurEX\",\"Host\":\"metfr-sqlserver.database.windows.net\",\"Port\":\"1433\",\"Database\":\"metfr-onyx\"}",
+        "schemaFilter": null,
+        "id": "5c3be4e3-be08-4888-bfac-08db5bc711cb"
+    },
+    "organizationUnitDisplayName": "MET France"
+}
