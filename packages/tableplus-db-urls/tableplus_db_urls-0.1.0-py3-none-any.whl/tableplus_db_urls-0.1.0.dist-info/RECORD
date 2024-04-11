@@ -1,0 +1,10 @@
+tableplus/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+tableplus/cli.py,sha256=C9CeRziclhlmp57UKs9uo9S_o_YqboB9POQZt-tI2dI,1183
+tableplus/core.py,sha256=Fqtex7qc07MhKz010pE-2Qb6QDjaGsgVKWosEmx0tdo,3002
+tableplus/logging.py,sha256=XAE05G9TwfNRjNG97_-ulkB3IG9798__ANUv0ug6Jzk,746
+tableplus_db_urls-0.1.0.dist-info/AUTHORS.md,sha256=KTBCSOWziTrf4w0ame361sfGGnc6P90T647ctFXAHEs,200
+tableplus_db_urls-0.1.0.dist-info/METADATA,sha256=QicDQ_QROhQSIvGbYjRkeuH9nV1or6ia4aa7k5bBL-A,2287
+tableplus_db_urls-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+tableplus_db_urls-0.1.0.dist-info/entry_points.txt,sha256=_psUP8DQqBlaVKjWGSH7Ozen5RzNZexBOGVyy9QIcHU,48
+tableplus_db_urls-0.1.0.dist-info/top_level.txt,sha256=ABKurCYs-CjJfSjWAmSXgVoc4el8-y1B12Hk7Hk4Zkg,10
+tableplus_db_urls-0.1.0.dist-info/RECORD,,
