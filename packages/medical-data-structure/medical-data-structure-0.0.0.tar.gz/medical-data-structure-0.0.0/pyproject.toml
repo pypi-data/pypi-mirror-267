@@ -1,0 +1,7 @@
+[project]
+name = "medical-data-structure"
+description = "Example package for medical data structure utils (Cooming Soon)"
+version = "0.0.0"
+authors = [
+     {name = "Maria Monzon", email = "mariamonzondeveloper@gmail.com"}
+]
