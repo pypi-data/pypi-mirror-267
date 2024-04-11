@@ -1,0 +1,17 @@
+kucoin_futures_lib/__init__.py,sha256=XUsGNEzUBLj43p8kx_4A3VmrSqddBCLHnVmiqqcIztA,719
+kucoin_futures_lib/factory.py,sha256=suNZh2D_CeBE5Aa1J5SySCLjYQ3HlsHScymhHUaMr4A,2329
+kucoin_futures_lib/handlers/__init__.py,sha256=wB-2gU8Pm9hIGrMOwr7O_n1QOUpNIgUWc_PdzMdZPKE,339
+kucoin_futures_lib/handlers/base.py,sha256=pRKRwcVHCvR9FEajtd5rLYRUjm98GKht_QC-cfdC4Zc,961
+kucoin_futures_lib/handlers/entry.py,sha256=axGRq1MUJP5gbBI9wGuGMtQxf83-tVaKWRjkgzhArFE,2097
+kucoin_futures_lib/handlers/oco.py,sha256=q_Yn3sJMYQOPNjqv_QBaG1B4WhqYQKDmGs-3Bb7Faxw,2769
+kucoin_futures_lib/handlers/trailing.py,sha256=cHTB0oeLQ0FthqrYVhZWUzCThUMW89Fqp6NwDCpDW-4,3660
+kucoin_futures_lib/helper.py,sha256=by7BIiKqaHFqdTQWsLbKMYnDXz9Y8n11Jo8u70pia74,1813
+kucoin_futures_lib/kucoinf.py,sha256=uQ7oEAc3LRc05Zr-dN42ZJaJOf3SIIvaKl6fmxnytJA,2464
+kucoin_futures_lib/market.py,sha256=tmn9f-NKWppssOkYFzHnaG_SWXRu5WEVA3X7NyggVFs,3117
+kucoin_futures_lib/trade.py,sha256=a8ngskBxlAQBy801nW6wNmu2VDJ68zHHZucBZBfabvs,17231
+kucoin_futures_lib/user.py,sha256=okOmvt_PvVjsw7_6eB2sKff7EnUqcK9lTLB8xmSk3yg,1068
+kucoin_futures_lib/websocket.py,sha256=Cm7sHjKY7OMM145Ny2PfEwnu0LCUDnTaF0MfLevPgBs,3133
+kucoin_futures_lib-0.5.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+kucoin_futures_lib-0.5.0.dist-info/METADATA,sha256=E9N9rCXKV3kbP54xbao638ELCwJu-X-UV0kCkBabP44,2389
+kucoin_futures_lib-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+kucoin_futures_lib-0.5.0.dist-info/RECORD,,
