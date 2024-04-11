@@ -1,0 +1,5 @@
+keri>=1.2.0-dev0
+multicommand>=1.0.0
+http_sfv>=0.9.8
+msgpack>=1.0.4
+cbor2>=5.4.3
