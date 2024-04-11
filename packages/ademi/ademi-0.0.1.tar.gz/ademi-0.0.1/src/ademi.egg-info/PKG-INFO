@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ademi
+Version: 0.0.1
+Summary: A fun package for pulling apart audio to do entertaining things
+Author-email: Miles Smith <mlsmith2094@gmail.com>
+Project-URL: Homepage, https://github.com/miles-li-smith/ademi
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE

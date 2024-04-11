@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/ademi/__init__.py
+src/ademi/ademi.py
+src/ademi.egg-info/PKG-INFO
+src/ademi.egg-info/SOURCES.txt
+src/ademi.egg-info/dependency_links.txt
+src/ademi.egg-info/top_level.txt
