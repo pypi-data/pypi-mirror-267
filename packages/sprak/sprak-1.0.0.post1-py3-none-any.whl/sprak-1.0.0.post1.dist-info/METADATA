@@ -1,0 +1,36 @@
+Metadata-Version: 2.3
+Name: sprak
+Version: 1.0.0.post1
+Summary: A Python module for packing sprites into a texture atlas.
+Project-URL: Homepage, https://github.com/kennedy0/sprak
+Author: Andrew Kennedy
+License-File: LICENSE
+Keywords: aseprite,game development,pygame
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: aseprite-reader
+Requires-Dist: pillow
+Description-Content-Type: text/markdown
+
+# sprak
+
+`sprak` is a Python module for packing sprites into a texture atlas.
+
+## Usage
+
+```python
+from pathlib import Path
+
+from sprak import SpritePacker
+
+
+src = Path("/path/to/src/folder")
+dst = Path("/path/to/dst/folder")
+
+packer = SpritePacker()
+packer.add_source_folder(src)
+packer.pack(dst)
+
+```
