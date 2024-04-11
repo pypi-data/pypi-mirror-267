@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+barc4plots/__init__.py
+barc4plots/barc4plots.py
+barc4plots.egg-info/PKG-INFO
+barc4plots.egg-info/SOURCES.txt
+barc4plots.egg-info/dependency_links.txt
+barc4plots.egg-info/requires.txt
+barc4plots.egg-info/top_level.txt

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: barc4plots
+Version: 2024.4.10
+Summary: A Python package for plots
+Home-page: https://github.com/barc4/barc4plots
+Author: Rafael Celestre
+Author-email: rafael.celestre@synchrotron-soleil.fr
+License: GPL-3.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
+# barc4plots
+**BARC** library for very pretty plots =D
