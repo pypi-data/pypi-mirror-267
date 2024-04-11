@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cdt-path
+Version: 1.1.1
+Summary: Constrained Delaunay Triangle fro path-planning
+Author: CaiShu
+Author-email: caiyi@mail.ustc.edu.cn
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## Free for academic
+## Computational Geometry
+
+#Using Constrained Delaunay Triangle to path-planning
++ Created by CaiShu
++ caiyi@mail.ustc.edu.cn
