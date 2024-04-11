@@ -1,0 +1,17 @@
+libsegmenter/Segmenter.hpp,sha256=-DwgKM0e8VAsx_Uis3gcAIY63RStcY8Uz2HYQ2vVOlI,2866
+libsegmenter/Segmenter.py,sha256=uzuhIQ9_GRz8j3DFmBMLzgSm6Wvn7GFgFAheop8Qxd8,609
+libsegmenter/SegmenterBindings.cpp,sha256=oRzKEbxYVFRn9oU8KnAkP0CbI1UGPBRlzOg4rY66py8,1561
+libsegmenter/SegmenterTensorFlow.py,sha256=XXT6wVxNsz1cvExKr4n19fmO2y_Sh24QL_iqo7luaCs,8277
+libsegmenter/SegmenterTorch.py,sha256=CKYGUQ2KNf0khXa0VgZdsG0t-DIhhdcMOrFSFTeRwWM,7050
+libsegmenter/__init__.py,sha256=jzzoVDyoLJQcXO_TlLbbUs4IaMtq_OPA2ISmzPJ-DK8,114
+libsegmenter/bindings.cpython-36m-darwin.so,sha256=yC1dyRgKQAuSlE_VRgim4nrnh8aR1JUwDL8BdN9sXck,158896
+libsegmenter/check_cola.py,sha256=QAXcyJA0UUziaa-z9CfxBUqLSS_trAdE491NpGzydOY,1128
+libsegmenter/default_window_selector.py,sha256=4lS1ZViAp5xWzKB3ogErieCsrSUaL9daIN3RYtWm3J8,5864
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/creational.py,sha256=nhRduMAq_zVExDnkUj_grxKHE9LvUEL5kfKSe10Xik8,2229
+tests/reconstruction.py,sha256=ucZcd96h5CMOe2V2JIeRi3yOx7lhqrCz4P3UVc8HWQ4,20858
+tests/windows.py,sha256=3AsqCfSAjYJL8miyEtPrNgAywvngxxOv7zqszZB_Qu4,889
+libsegmenter-0.3.dist-info/METADATA,sha256=tyZqN1NezRlwanRv33KsX2TN9iIH8_7v4wPx64JxVd8,135
+libsegmenter-0.3.dist-info/WHEEL,sha256=ye8A2lA8pjGNe7-ueOpggarJAhczq3EZGqnLZzzfQYQ,110
+libsegmenter-0.3.dist-info/top_level.txt,sha256=vM1fU6i2eEkdt_wR1Rvw_-LVSVSaa-Qr-O0y7KtZ500,19
+libsegmenter-0.3.dist-info/RECORD,,
