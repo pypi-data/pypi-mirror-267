@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: infeze
+Version: 0.0.1
+Author-email: huaxlin <huaxlin33@gmail.com>
+Project-URL: Home, https://github.com/huaxlin/infeze
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: jina >=3.24.0
+
+# infeze
