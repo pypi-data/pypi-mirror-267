@@ -1,0 +1,14 @@
+dfols/__init__.py,sha256=D-x5glfZFfJ8-bdjA-4k4JFTDu1Eylaz3EL4GSH28eI,1605
+dfols/controller.py,sha256=LSeHZoKaKUEYgB1_2subjKskHJ8mWccMbn-LOpxJ7LM,42769
+dfols/diagnostic_info.py,sha256=2kEUkL-MS4eDENUf1r2hOWsntP8OxMDKi_kyHmrC9V4,6081
+dfols/hessian.py,sha256=sExx4J4KoGwHItbthX2odosB2ONbQFvLdlcod7PIh4k,4262
+dfols/model.py,sha256=q70zuqocNtsaXzNjWHcTdrS209BdQt4uY0GNtp0qlI8,18809
+dfols/params.py,sha256=_Va1ybnQDIzWaXvImcSeH8xnNE_A2zpAfBgDG74sc5c,17557
+dfols/solver.py,sha256=IKg3xWPLYlOW_zuTc_-HY_3ZvdDEfkyxARerERUQHlU,61264
+dfols/trust_region.py,sha256=hRKQx0fpSxol7dLZO0yrT7O5IDptPPSnDvxKQNZ3r0M,24603
+dfols/util.py,sha256=ysdIHTkrkWwCRKuGffofehKl-t5dT3sD9dfy0muI4ZI,9852
+DFO_LS-1.4.1.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+DFO_LS-1.4.1.dist-info/METADATA,sha256=RR6KhJi4Ae_1PES8Bpzqm3AYK2w12V-2MyDyjaCDe80,8552
+DFO_LS-1.4.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+DFO_LS-1.4.1.dist-info/top_level.txt,sha256=UfxRhaDN8HQx2_l17KbrDrERJ90OCN7VKkDMpYYbRLU,6
+DFO_LS-1.4.1.dist-info/RECORD,,
