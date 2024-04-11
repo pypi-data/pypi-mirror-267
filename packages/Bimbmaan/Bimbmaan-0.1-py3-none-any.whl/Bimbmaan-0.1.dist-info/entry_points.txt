@@ -1,0 +1,4 @@
+[console_scripts]
+bimbkar = bimbmaan:bimbkar
+bimbmaan = bimbmaan:bimbkar
+bimbman = bimbmaan:bimbkar
