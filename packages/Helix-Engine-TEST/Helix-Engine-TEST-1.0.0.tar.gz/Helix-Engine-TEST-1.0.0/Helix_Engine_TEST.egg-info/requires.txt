@@ -1,0 +1,6 @@
+Numpy
+PyGLM
+pygame-ce
+Numba
+ModernGL
+OpenSimplex
