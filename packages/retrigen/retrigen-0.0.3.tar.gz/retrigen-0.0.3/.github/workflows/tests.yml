@@ -1,0 +1,62 @@
+# THIS ACTION WILL:
+  # 1) install Python dependencies
+  # 2) run make test
+
+# SETUP:
+  # None required except for the Makefile
+
+name: test
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    permissions:
+      contents: read
+      issues: read
+      checks: write
+      pull-requests: write
+    strategy:
+      matrix: 
+        os: [ubuntu-latest]
+        python-version: ["3.9", "3.10"]
+        include:
+          # Add Windows with Python 3.9 only to avoid tests taking too long
+          - os: windows-latest
+            python-version: "3.9"
+
+        # the above it a minimal recommended set since:
+          # macos has similar errors to ubuntu
+          # ubuntu is fast so it can be used to test all python versions
+          # windows is slow so it should be used sparingly, but is needed to test windows specific code
+        
+        # feel free to use the following grid to test all python versions on all OSes:
+        # os: [ubuntu-latest, macos-latest, windows-latest]
+        # python-version: ["3.9", "3.10", "3.11", "3.12"]
+
+    # This allows a subsequently queued workflow run to interrupt previous runs
+    concurrency:
+      group: "${{ github.workflow }}-${{ matrix.python-version}}-${{ matrix.os }} @ ${{ github.ref }}"
+      cancel-in-progress: false # should existing jobs be cancelled. We recommend setting this to false if you wish to save credits
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: "pip"
+        
+      - name: Install dependencies
+        shell: bash
+        run: |
+          make install
+
+      - name: Run tests
+        shell: bash
+        run: |
+          make test
