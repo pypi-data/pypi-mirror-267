@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: pymasscode
+Version: 1.0.0b3
+Summary: Masscode query and api wrapper
+Author-email: ZackaryW <36378555+ZackaryW@users.noreply.github.com>
+Requires-Python: >=3.8
+Requires-Dist: thefuzz>=0.22.1
+Description-Content-Type: text/markdown
+
+# pymasscode
+a re-designed masscode driver for python
+
+## install
+```bash
+pip install pymasscode
+```
+
+## Status
+under development
