@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/libpss/__init__.py
+src/libpss/libpss.so
+src/libpss.egg-info/PKG-INFO
+src/libpss.egg-info/SOURCES.txt
+src/libpss.egg-info/dependency_links.txt
+src/libpss.egg-info/top_level.txt
