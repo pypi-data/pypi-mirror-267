@@ -1,0 +1,6 @@
+python-dotenv
+
+[:python_version >= "3.8"]
+tiktoken
+web3
+requests

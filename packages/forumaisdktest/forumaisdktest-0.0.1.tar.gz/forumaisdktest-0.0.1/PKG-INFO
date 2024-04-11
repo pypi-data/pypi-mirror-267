@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: forumaisdktest
+Version: 0.0.1
+Summary: ForumAI Python SDK
+Author-email: ForumAISDK <forumai@github.com>
+Project-URL: Homepage, https://github.com/0xAresDev/ForumAISDK
+Project-URL: Issues, https://github.com/0xAresDev/ForumAISDK/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tiktoken; python_version >= "3.8"
+Requires-Dist: web3; python_version >= "3.8"
+Requires-Dist: requests; python_version >= "3.8"
+Requires-Dist: python-dotenv
+
+Alpha implementation of the ForumAI model market python SDK. V.1.0.1
+
+Take a look at the docs to find out how to use it: https://forumai.gitbook.io/forumai/developer-guide/integrate-mixtral8x7b-with-python-sdk-testnet
+

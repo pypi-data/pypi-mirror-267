@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+ModelMarketSDK/ModelMarket.py
+ModelMarketSDK/__init__.py
+forumaisdktest.egg-info/PKG-INFO
+forumaisdktest.egg-info/SOURCES.txt
+forumaisdktest.egg-info/dependency_links.txt
+forumaisdktest.egg-info/requires.txt
+forumaisdktest.egg-info/top_level.txt
