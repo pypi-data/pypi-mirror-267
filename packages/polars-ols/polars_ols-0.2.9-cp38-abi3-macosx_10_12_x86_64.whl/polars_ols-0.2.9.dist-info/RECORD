@@ -1,0 +1,8 @@
+polars_ols-0.2.9.dist-info/METADATA,sha256=lbDnK9opzmx9AkUiZaNAbF5COpCRYKrj5Sh9p6LRJUU,16041
+polars_ols-0.2.9.dist-info/WHEEL,sha256=4vk9909vkKMECDxJPVbNqv5ENZTke-76RVPi8eRsKz8,104
+polars_ols-0.2.9.dist-info/license_files/LICENSE,sha256=6gPcTCWepJ3ofXRHkxsc5oDCfNDFVfH54wCZYSLyn3M,1067
+polars_ols/least_squares.py,sha256=YG8CJxYb7NbYg4L2jJniBuJjbQQIxoNbrcKXQu9KjJM,17022
+polars_ols/__init__.py,sha256=UtyZUWlMkvxIF3dXJrPjicaLrlkpTIrBOa_pNmyXMDk,4649
+polars_ols/utils.py,sha256=s1nUGK_YCx_HIDVTeyALwOcVu5elO7TN3_rtxySXYNw,3464
+polars_ols/_polars_ols.abi3.so,sha256=EdkBNKkpFtgHshW0bHpmU9E1p2Q3uuiFes7-qc6Zs4c,18260840
+polars_ols-0.2.9.dist-info/RECORD,,
