@@ -1,0 +1,3 @@
+[console_scripts]
+qd2_node=qd2_node.main:cli
+
