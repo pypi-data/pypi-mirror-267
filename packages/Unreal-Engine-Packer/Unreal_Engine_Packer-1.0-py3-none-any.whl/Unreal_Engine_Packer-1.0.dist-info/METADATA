@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Unreal-Engine-Packer
+Version: 1.0
+Summary: A commandline tool to automatically package Unreal Engine projects or plugins
+Home-page: https://github.com/R00tDroid/UnrealPacker
+Author: R00tDroid
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# UnrealPacker
+A commandline tool to automatically package Unreal Engine projects or plugins
+
+
