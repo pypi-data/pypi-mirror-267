@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ToolsStr
+Version: 1.0.0
+Summary: A small package for keyboard typing in Python
+Author: Amirmahdi Mohammadi
+Author-email: amirmahdi21r21@gmail.com
+Keywords: python,type,master,toolsstr,rubika,library,strtools
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+Keyboard Typing . . .
+
+My GitHub page: https://gitHub.com/FrameworkPython

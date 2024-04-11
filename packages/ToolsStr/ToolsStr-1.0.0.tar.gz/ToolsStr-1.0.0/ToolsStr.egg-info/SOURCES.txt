@@ -1,0 +1,6 @@
+LICENSE
+setup.py
+ToolsStr.egg-info/PKG-INFO
+ToolsStr.egg-info/SOURCES.txt
+ToolsStr.egg-info/dependency_links.txt
+ToolsStr.egg-info/top_level.txt
