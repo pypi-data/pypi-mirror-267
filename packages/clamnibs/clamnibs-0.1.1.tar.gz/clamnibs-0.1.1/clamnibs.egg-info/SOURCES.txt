@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+clamnibs.egg-info/PKG-INFO
+clamnibs.egg-info/SOURCES.txt
+clamnibs.egg-info/dependency_links.txt
+clamnibs.egg-info/requires.txt
+clamnibs.egg-info/top_level.txt
