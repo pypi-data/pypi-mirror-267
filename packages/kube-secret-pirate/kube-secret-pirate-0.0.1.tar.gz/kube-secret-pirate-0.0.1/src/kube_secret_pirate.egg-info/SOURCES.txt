@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/main.py
+src/kube_secret_pirate.egg-info/PKG-INFO
+src/kube_secret_pirate.egg-info/SOURCES.txt
+src/kube_secret_pirate.egg-info/dependency_links.txt
+src/kube_secret_pirate.egg-info/top_level.txt
