@@ -1,0 +1,4 @@
+[console_scripts]
+ai_server = server_client.start_server_with_ai_client:main
+chat_client = server_client.client:main
+chat_server = server_client.server:main
