@@ -1,0 +1,2 @@
+[console_scripts]
+uiScrypt = uiScrypt.uiScrypt:main
