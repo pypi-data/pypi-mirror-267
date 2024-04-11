@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+bootstrap_email/__init__.py
+bootstrap_email/compiler.py
+bootstrap_email.egg-info/PKG-INFO
+bootstrap_email.egg-info/SOURCES.txt
+bootstrap_email.egg-info/dependency_links.txt
+bootstrap_email.egg-info/requires.txt
+bootstrap_email.egg-info/top_level.txt
+tests/test.py
