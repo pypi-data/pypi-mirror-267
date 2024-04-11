@@ -1,0 +1,2 @@
+[ivpm.pkginfo]
+pyhdl-pi-if = hdl_pi_if.pkginfo:PkgInfo
