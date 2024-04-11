@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: protod
+Version: 24.4.10
+Summary: Decode protobuf without message definition.
+Home-page: https://github.com/aj3423/protod/
+Author: aj3423
+License-File: LICENSE
+Requires-Dist: chardet
+Requires-Dist: charset_normalizer
+Requires-Dist: protobuf
+Requires-Dist: termcolor
+
+See: https://github.com/aj3423/protod/
