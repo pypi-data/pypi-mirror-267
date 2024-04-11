@@ -1,0 +1,12 @@
+ntv_numpy/__init__.py,sha256=S0PsEX64ez_-EctBykqnftXxACEz1G0Ad4Y9Z9760gU,1563
+ntv_numpy/data_array.py,sha256=zlSb2NfC2LCBE-xTXZ9GsCvrJiBYmPO1nB-FlEe1isc,14738
+ntv_numpy/ndarray.py,sha256=SYndw5kurKKJJTdJNS8ZxDmlTEMcKTB_Zm9VLwIjHmc,24520
+ntv_numpy/ntv_numpy.ini,sha256=sRvEGWE4QsnYSFFbJIM5SI1JkCeoniP-_dCr5xMBqIs,5054
+ntv_numpy/numpy_ntv_connector.py,sha256=n7IDEcq7S-gTLRZDwSG7I0bdSHOxizJYmm7tDh77q20,12366
+ntv_numpy/xconnector.py,sha256=0wOSA466Lc5kFVsjM-edePFQo9Qr4FS9Pw67a_6ynlk,16413
+ntv_numpy/xdataset.py,sha256=5LqnE0aLft6cL2-vmwJqpaxEQGeEpkdQxKPRhiZDm5o,16394
+ntv_numpy/xndarray.py,sha256=J_kjQ78lHXJQmpXQnGaqkIploVrGPnYoLWdKm4lVd0s,9691
+ntv_numpy-0.1.2.dist-info/METADATA,sha256=C3AR8eMDKt5gQ8ZA-Y6ZHhGKIJo6n2XzSvxdHqnOp00,10790
+ntv_numpy-0.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ntv_numpy-0.1.2.dist-info/top_level.txt,sha256=LTHt0X7dfsF4jnysYA5pH2qc1SAkQEXqBjW6Y63FkxY,10
+ntv_numpy-0.1.2.dist-info/RECORD,,
