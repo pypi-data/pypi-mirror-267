@@ -1,0 +1,51 @@
+Metadata-Version: 2.3
+Name: texnomagic
+Version: 0.8.0
+Summary: TexnoMagic module for digital Magic
+Project-URL: Bug Tracker, https://github.com/texnoforge/texnomagic/issues
+Project-URL: Docs, https://texnoforge.github.io/texnomagic
+Project-URL: Homepage, https://github.com/texnoforge/texnomagic/
+Author-email: texnoforge <voice@texnoforge.dev>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: click
+Requires-Dist: parsimonious
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: rich
+Requires-Dist: scikit-learn
+Requires-Dist: toml
+Provides-Extra: jsonrpc
+Requires-Dist: jsonrpcserver>=5; extra == 'jsonrpc'
+Provides-Extra: png
+Requires-Dist: pillow; extra == 'png'
+Description-Content-Type: text/markdown
+
+<a href="https://github.com/texnoforge/texnomagic/releases" alt="latest release"><img src="https://img.shields.io/github/v/release/texnoforge/texnomagic"/></a>
+<a href="https://pypi.org/project/texnomagic/" alt="PyPI version"><img src="https://img.shields.io/pypi/v/texnomagic?color=blue"/></a>
+<br>
+<a href="https://github.com/texnoforge/texnomagic/actions/workflows/python-package.yml"><img alt="Python CI Status" src="https://github.com/texnoforge/texnomagic/actions/workflows/python-package.yml/badge.svg"></a>
+<a href="https://github.com/texnoforge/texnomagic/actions/workflows/deploy-docs.yml"><img alt="Docs Status" src="https://github.com/texnoforge/texnomagic/actions/workflows/deploy-docs.yml/badge.svg"></a>
+</p>
+
+
+# [TexnoMagic docs online][docs]
+
+## [TexnoMagic docs on GitLab](https://github.com/texnoforge/texnomagic/tree/master/docs)
+
+## TexnoMagic docs offline
+
+See docs/index.md and other files in docs/ directory.
+
+You can also render docs into HTML using MkDocs:
+
+    pip install mkdocs-material
+    mkdocs build
+    # see site/index.html
+
+#### read the [docs] and have a nice magic ᕕ( ᐛ )ᕗ
+
+[docs]: http://texnoforge.github.io/texnomagic
