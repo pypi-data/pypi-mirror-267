@@ -1,0 +1,7 @@
+sixai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sixai/__main__.py,sha256=8hDtWlaFZK24KhfNq_ZKgtXqYHsDQDetukOCMlsbW0Q,59
+sixai/cli.py,sha256=ONv2VPKsYWU-9Z-hj-VG--jLE0KDU28u2_SoK52ePD0,2464
+sixai/models/prompt.py,sha256=4NVW9L4wM106w4O7J_s7GAqhn-lwUjFBh8j1anQHH4E,788
+sixai-0.1.1.dist-info/METADATA,sha256=vquUr-Bh8CVggGD3FnG9hb3xWKIDQ9wg9XNqCn2OKec,378
+sixai-0.1.1.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+sixai-0.1.1.dist-info/RECORD,,
