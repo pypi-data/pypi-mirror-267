@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+holamundoplayer_gc/__init__.py
+holamundoplayer_gc/lala.py
+holamundoplayer_gc/player.py
+holamundoplayer_gc.egg-info/PKG-INFO
+holamundoplayer_gc.egg-info/SOURCES.txt
+holamundoplayer_gc.egg-info/dependency_links.txt
+holamundoplayer_gc.egg-info/top_level.txt
