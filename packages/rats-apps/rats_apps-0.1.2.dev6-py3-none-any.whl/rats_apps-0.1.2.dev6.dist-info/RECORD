@@ -1,0 +1,13 @@
+rats/apps/__init__.py,sha256=EHza57K66uM7w8pFBJBqMWaJ7Xn_7E4hn0xA7k8Ag5U,857
+rats/apps/_annotations.py,sha256=QXx78Qbiikn_4uV09J9N0c2aNK6bj-RtUcbgCy3Q718,5110
+rats/apps/_composite_container.py,sha256=-o942CbRgczz2GXDN1gABF8vLTKDOXGddOpob1tZaNw,539
+rats/apps/_container.py,sha256=dm1wRAuPWM0hV2BtNyBmfZ-cybId55w7oua4rvKuiis,3089
+rats/apps/_ids.py,sha256=dxWCPMpMA_vpaTDJEKNByIBJaX97Db203XqWLhaOezo,457
+rats/apps/_namespaces.py,sha256=THUV_Xj5PtweC23Ob-zsSpk8exC4fT-qRwjpQ6IDm0U,188
+rats/apps/_plugin_container.py,sha256=jKD1ft5Ph-DJU7fw2NKC7_FKwSqhWTvZoJTd7lHt6_s,839
+rats/apps/_scoping.py,sha256=-5hl0RoOdQGkxWLIn42hthMUyX8_84sV8H3u40y-gIU,1304
+rats/apps/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rats_apps-0.1.2.dev6.dist-info/METADATA,sha256=N7hlG8xu1DhseCv2Krrt2-g5-5QoQw_8T4XDEY03OzA,716
+rats_apps-0.1.2.dev6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+rats_apps-0.1.2.dev6.dist-info/entry_points.txt,sha256=Vu1IgAPQvL4xMJzW_OG2JSPFac7HalCHyXiRr0-OfCI,86
+rats_apps-0.1.2.dev6.dist-info/RECORD,,
