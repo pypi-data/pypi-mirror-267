@@ -1,0 +1,9 @@
+textual-dev
+pyaml
+rich-pixels
+
+[all]
+textual-dev
+pyaml
+rich-pixels
+pytest>=4.6.2
