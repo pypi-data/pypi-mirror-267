@@ -1,0 +1,16 @@
+{
+    "oWidget": {
+        "name": "invoice_error_regul",
+        "description": "Erreur lors de la régul",
+        "query": "    select energie, code_client, code_prm, id_facture, result\r\n    from AG_to_OC.invoice_regularization_result r\r\n    where r.issuccess = 0",
+        "configuration": "",
+        "oProjectId": "7316024d-7485-4b92-87b3-fce9be27f367",
+        "oConnectionId": "5c3be4e3-be08-4888-bfac-08db5bc711cb",
+        "oWorkflowId": null,
+        "oFormId": null,
+        "oFileProviderId": null,
+        "type": 0,
+        "id": "9c641ecd-a363-42b4-9219-1d2f72350f9d"
+    },
+    "projectName": "AG - invoice"
+}

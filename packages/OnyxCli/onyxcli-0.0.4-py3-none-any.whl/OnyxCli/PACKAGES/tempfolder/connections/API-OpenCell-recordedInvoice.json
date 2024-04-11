@@ -1,0 +1,19 @@
+{
+    "oConnection": {
+        "connectionType": 8,
+        "name": "API-OpenCell-recordedInvoice",
+        "shortName": "API-OpenCell-recordedInvoice",
+        "documentation": null,
+        "isWritable": false,
+        "tablesNamingConvention": null,
+        "columnsNamingConvention": null,
+        "overrideManualTablesName": false,
+        "overrideManualColumnsName": false,
+        "autoApplyNamingConventions": false,
+        "organizationUnitId": 83,
+        "connectionString": "{\"AuthMode\":0,\"Method\":\"Get\",\"Headers\":{\"Cache-Control\":\"no-cache\",\"Ocp-Apim-Subscription-Key\":\"{{API-OpenCell-Subscription-Key-recordedInvoice}}\"},\"QueryParams\":{\"sql\":\"created between '{{API-OpenCell-recordedInvoice-dateMin}}' and '{{API-OpenCell-recordedInvoice-dateMax}}'\",\"offset\":\"#OFFSET#\",\"limit\":\"#LIMIT#\"},\"HeadersStr\":\"{\\n\\t\\\"Cache-Control\\\": \\\"no-cache\\\",\\n\\t\\\"Ocp-Apim-Subscription-Key\\\": \\\"{{API-OpenCell-Subscription-Key-recordedInvoice}}\\\"\\n}\",\"QueryParamsStr\":\"{\\n\\t\\\"sql\\\": \\\"created between '{{API-OpenCell-recordedInvoice-dateMin}}' and '{{API-OpenCell-recordedInvoice-dateMax}}'\\\",\\n\\t\\\"offset\\\": \\\"#OFFSET#\\\",\\n\\t\\\"limit\\\": \\\"#LIMIT#\\\"\\n}\",\"EnableLoop\":true,\"BatchSize\":100,\"OffsetKey\":\"#OFFSET#\",\"LimitKey\":\"#LIMIT#\",\"PageKey\":\"#PAGE#\",\"PageInitNumber\":0,\"EndpointUrl\":\"https://metfr-api-apim.azure-api.net/opencell/api/rest/v2/generic/all/\",\"Ressource\":\"recordedInvoice\",\"JsonPath\":\"data\"}",
+        "schemaFilter": null,
+        "id": "fc6b9ead-598f-42b4-8012-1dd0a5dda245"
+    },
+    "organizationUnitDisplayName": "Open Cell"
+}
