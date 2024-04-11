@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: glove-semantic-explorer
+Version: 0.1.0
+Summary: Easy to use CLI to set up embedding-explorer for deployment on a corpus with GloVe word embeddings
+License: MIT
+Author: Márton Kardos
+Author-email: power.up1163@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: embedding_explorer (>=0.5.2,<0.6.0)
+Requires-Dist: gensim (>=4.2.0,<5.0.0)
+Requires-Dist: glovpy (>=0.1.0,<0.2.0)
+Requires-Dist: radicli (>=0.0.24,<0.0.25)
+Description-Content-Type: text/markdown
+
+# sermon-embeddings
+Embedding explorer over sermon data.
+
