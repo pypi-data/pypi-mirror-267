@@ -1,0 +1,22 @@
+{
+  "template": "https://github.com/KennethEnevoldsen/swift-python-cookiecutter",
+  "commit": "bd1a11c09a50e82e134187684d2399d0673b7ea6",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "retrigen",
+      "package_name": "retrigen",
+      "friendly_name": "Retrigen",
+      "author": "Kenneth Enevoldsen",
+      "email": "Kenneth.enevoldsen@cas.au.dk",
+      "github_user": "KennethEnevoldsen",
+      "version": "0.0.0",
+      "copyright_year": "2024",
+      "_copy_without_render": [
+        "*.github"
+      ],
+      "_template": "https://github.com/KennethEnevoldsen/swift-python-cookiecutter"
+    }
+  },
+  "directory": null
+}
