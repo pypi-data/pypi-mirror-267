@@ -1,0 +1,15 @@
+gevent
+certifi
+brotli
+urllib3
+
+[benchmarks]
+requests
+httpx
+urllib3
+httplib2
+
+[dev]
+pytest
+dpkt
+requests
