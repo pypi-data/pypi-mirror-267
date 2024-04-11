@@ -1,0 +1,15 @@
+coreforecast.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
+coreforecast/utils.py,sha256=RBIZM1O9dUjZRXgDRR2m584gsMEztukqnWBS3yHlsTQ,885
+coreforecast/grouped_array.py,sha256=4jvh7g2mm107teJszrbyOBTKykRiMfDSOaetUDworHI,15261
+coreforecast/differences.py,sha256=bRg23V_1pW_mlfPuAVp-wFWfUzL4tzH6axLjRsPWtCo,2029
+coreforecast/scalers.py,sha256=O4vP13n5LBtZlwqHxkUxpl7wxRcLufkw9oVzKn6xQmQ,23057
+coreforecast/_lib.py,sha256=18C2rcIsqOg0QJiTgjcoSXnKZfnTZ7d23DhU4h7druE,486
+coreforecast/lag_transforms.py,sha256=ZFgIQLQ1TK1Jn-rJ8I2uwI7ADf9y_zi882q0nbilYDo,12313
+coreforecast/__init__.py,sha256=wOJN3HxAgnSon5vWYU3Txm2UZ_7tBHDKXUKZIH-mXX8,22
+coreforecast/seasonal.py,sha256=giUEcHwAhPm8p60-xlcIKWOo9_k0FKInF3RtptPrt98,800
+coreforecast/lib/libcoreforecast.so,sha256=dReCs5nlGN2lSVKjhanKz0mkUANhw-rFo3iD07DZyRo,380249
+coreforecast-0.0.8.dist-info/RECORD,,
+coreforecast-0.0.8.dist-info/METADATA,sha256=68SRfDnTOC3GEITrgP4QIFM6f8TtCCRDH0sjT0ImXT8,3425
+coreforecast-0.0.8.dist-info/WHEEL,sha256=uuAS9M0pLoKYGQ-71aOl_HpIvOHHTA49pmFAF2WI1gY,149
+coreforecast-0.0.8.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coreforecast-0.0.8.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
