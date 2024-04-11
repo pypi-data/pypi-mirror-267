@@ -1,0 +1,16 @@
+aze/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aze/az_get_login_info.py,sha256=Su66Ipy4Q8_Q2SC8qQ5076V8dEh0G6hh2nh0mf-Y2FU,3319
+aze/az_inspect_token.py,sha256=XC5c31-HJxzOYnIU8R_8OYZQObQajVFkW0hWUTCcsQ0,573
+aze/az_login_with_token.py,sha256=Qc1Hs4Dy6UK4uXvgsarF9kj2_oNHCr55ECezs3eiP98,10027
+aze/az_tenant_id.py,sha256=NxkQeWT9Gj-tpkq84WYy_gqBxjr5rmyPuAlO5--SfFo,895
+aze/az_whoami.py,sha256=K4QsyyVOps0BZaZBcxYKsGOrvkBNjN38wXROH8GjQPg,156
+aze/read_in.py,sha256=iri5MJIpL6lOD6aE78LReCn5MUxCgG-f5KLVDWaEMSw,836
+aze/tenant.py,sha256=79ZRZZECTQ7-6tExxGv3bNu3X-w04sM_Gb2HoHHCGT0,464
+aze/utils.py,sha256=h6ZEIGDj_UsffrPF8QFX5rylOfFkRPBKoz7Uo0yHxek,514
+aze/version.py,sha256=xkM_9vyWMqxlO-b-82tFzatLhZyGxEy95Jgo6Aw4YjE,20
+zer1t0_aze-0.0.1.dist-info/LICENSE,sha256=f856d4F-Z53vbcqkA1t5W_KSg7nYv3cS1IEgb9psNho,35125
+zer1t0_aze-0.0.1.dist-info/METADATA,sha256=W5JfloKx-DMJSRfO_QllSSqzhTrWZxR5L637zb2A_Vs,1102
+zer1t0_aze-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+zer1t0_aze-0.0.1.dist-info/entry_points.txt,sha256=An-k6d-lplo7HDL2BtSjksOVygFA_sA5nLOnKShgQb4,229
+zer1t0_aze-0.0.1.dist-info/top_level.txt,sha256=euyIS8nkTc6UqRqMJQYE1SIpn63w7_cZKuzu1C6A1Xg,4
+zer1t0_aze-0.0.1.dist-info/RECORD,,
