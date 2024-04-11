@@ -1,0 +1,20 @@
+---
+# yamllint disable rule:quoted-strings
+# Required values
+name: pip_freeze
+description: Returns pip list as requirements.txt
+os:  # os is the operating system. More choices to be created through the subprocess.py file.
+  linux:
+    command: pip freeze
+enabled: true
+prompt_warning: null
+entry_point: subprocess_run.py
+# Optional and overrideable values
+entry_point_options:
+  return_type:
+    description: pip freeze is useful in raw format to create requirements.txt file. This allows that.
+    type: string
+    default: json
+    enum:
+      - json
+      - raw

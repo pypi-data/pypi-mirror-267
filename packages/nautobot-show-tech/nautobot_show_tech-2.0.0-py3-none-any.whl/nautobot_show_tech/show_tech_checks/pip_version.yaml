@@ -1,0 +1,13 @@
+---
+# yamllint disable rule:quoted-strings
+# Required values
+name: pip_--version
+description: Returns pip --version about pip
+os:  # os is the operating system. More choices to be created through the subprocess.py file.
+  linux:
+    command: pip --version
+enabled: true
+prompt_warning: null
+entry_point: subprocess_run.py
+# Optional and overrideable values
+entry_point_options: null

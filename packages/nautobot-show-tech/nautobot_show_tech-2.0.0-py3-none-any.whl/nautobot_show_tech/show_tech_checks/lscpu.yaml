@@ -1,0 +1,13 @@
+---
+# yamllint disable rule:quoted-strings
+# Required values
+name: lscpu
+description: Returns CPU architecture information from sysfs, /proc/cpuinfo and any applicable architecture-specific libraries
+os:  # os is the operating system. More choices to be created through the subprocess.py file.
+  linux:
+    command: lscpu
+enabled: true
+prompt_warning: null
+entry_point: subprocess_run.py
+# Optional and overrideable values
+entry_point_options: null

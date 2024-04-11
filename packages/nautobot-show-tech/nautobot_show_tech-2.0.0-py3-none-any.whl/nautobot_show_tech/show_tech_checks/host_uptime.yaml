@@ -1,0 +1,13 @@
+---
+# yamllint disable rule:quoted-strings
+# Required values
+name: host_uptime
+description: Proceses /proc/uptime and converts to day,hour,min,sec
+os:  # os is the operating system. More choices to be created through the subprocess.py file.
+  linux:
+    command: cat /proc/uptime | awk '{print int($1/86400)"d:"int($1/3600)"h:"int(($1%3600)/60)"m:"int($1%60)"s"}'
+enabled: true
+prompt_warning: null
+entry_point: subprocess_run.py
+# Optional and overrideable values
+entry_point_options: null

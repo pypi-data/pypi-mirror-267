@@ -1,0 +1,13 @@
+---
+# yamllint disable rule:quoted-strings
+# Required values
+name: disk_space
+description: Returns utilization information of local disk space about the host in human-readable format
+os:  # os is the operating system. More choices to be created through the subprocess.py file.
+  linux:
+    command: df -lhT  # l - local disks only, h - human-readable print, T - include file system typeate
+enabled: true
+prompt_warning: null
+entry_point: subprocess_run.py
+# Optional and overrideable values
+entry_point_options: null
