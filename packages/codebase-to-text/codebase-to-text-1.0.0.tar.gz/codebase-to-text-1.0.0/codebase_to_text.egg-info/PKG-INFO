@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: codebase-to-text
+Version: 1.0.0
+Summary: A Python package to convert codebase to text
+Home-page: https://github.com/QaisarRajput/codebase-to-text
+Author: Qaisar Tanvir
+Author-email: qaisartanvir.dev@gmail.com
+License: MIT
+Keywords: codebase text conversion
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Converts a codebase (folder structure with files) into a single text file or a Microsoft Word document (.docx), preserving folder structure and file contents
