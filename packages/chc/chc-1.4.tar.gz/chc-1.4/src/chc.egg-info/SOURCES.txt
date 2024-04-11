@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/chc/__init__.py
+src/chc/__main__.py
+src/chc.egg-info/PKG-INFO
+src/chc.egg-info/SOURCES.txt
+src/chc.egg-info/dependency_links.txt
+src/chc.egg-info/requires.txt
+src/chc.egg-info/top_level.txt
+src/chc/sync/__init__.py
+src/chc/sync/__main__.py
