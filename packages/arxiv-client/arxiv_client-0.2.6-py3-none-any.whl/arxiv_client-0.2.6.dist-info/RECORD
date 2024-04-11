@@ -1,0 +1,12 @@
+arxiv_client/__about__.py,sha256=Oz5HbwHMyE87nmwV80AZzpkJPf-wBg7eDuJr_BXZkhU,22
+arxiv_client/__init__.py,sha256=eVJ8SDkdwfRRrJfVOs8Ln9IJ1I5hMUxsyOUGiUboR3k,203
+arxiv_client/article.py,sha256=bWos6CZroe-VjHVRAarUJ3GmUxz3GHaZD5P2u6z5YcM,5050
+arxiv_client/author.py,sha256=_j2My4E2Ct0TKQSGGNuUlOborRYuvmhVL0MEvOSxjiY,945
+arxiv_client/category.py,sha256=ofIuXAq3JapZMAqaHSDCeNABkrdqzQ6OMHTwW54QC0I,11337
+arxiv_client/client.py,sha256=j-j2nUhSgLDxWh1DaU4dWewJWJ3wAu2EwAgtGUpxuQ0,4926
+arxiv_client/link.py,sha256=Z1HtMs58JTL0jnLJqmcX6FxQDtHtEt5p7riRv0qHnfg,985
+arxiv_client/query.py,sha256=Ho5LujgYWqKv-9vcttlrhaE7fYlKFP6Y-_g3rw9a4ak,8051
+arxiv_client-0.2.6.dist-info/METADATA,sha256=mAQpVZ_167NERFfFUNPzKvCU2WOQZQbK5X2XD_q3-Kc,5416
+arxiv_client-0.2.6.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+arxiv_client-0.2.6.dist-info/licenses/LICENSE,sha256=lrVlb8TZKZayQm8lkjNHFg1M1GIT3PQm6pWibSQ6FRc,1066
+arxiv_client-0.2.6.dist-info/RECORD,,
