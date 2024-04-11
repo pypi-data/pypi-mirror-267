@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: magic_words
+Version: 0.1.0
+Summary: Measuring the controllability of LLMs -- from arxiv.org/abs/2310.04444
+License: MIT
+License-File: LICENSE
