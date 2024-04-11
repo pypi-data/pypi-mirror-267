@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "five-strips-of-bacon"
+version = "0.1.0"
+description = ""
+authors = ["Odyhibit <josh.2990@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "five_strips_of_bacon/decode_five_strips_of_bacon.py"},
+    { include = "five_strips_of_bacon/bacon.py"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+customtkinter = "^5.2.2"
+pillow = "^10.3.0"
+
+[tool.poetry.scripts]
+five-strips-of-bacon = "five_strips_of_bacon.main:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
