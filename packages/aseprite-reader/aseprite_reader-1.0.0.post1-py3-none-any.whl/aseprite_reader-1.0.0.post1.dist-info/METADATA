@@ -1,0 +1,24 @@
+Metadata-Version: 2.3
+Name: aseprite-reader
+Version: 1.0.0.post1
+Summary: Read and render Aseprite files.
+Project-URL: Homepage, https://github.com/kennedy0/aseprite-reader
+Author: Andrew Kennedy
+License-File: LICENSE
+Keywords: aseprite,game development,pygame
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: pillow
+Description-Content-Type: text/markdown
+
+# aseprite_reader
+
+`aseprite_reader` is a Python module for reading and rendering Aseprite files.
+
+### `AsepriteFile`
+The `AsepriteFile` class can read and render Aseprite files.
+
+Currently, not all Aseprite features are supported.
+Wherever possible, this module will raise a `NotImplementedError` whenever it encounters unsupported behavior.
