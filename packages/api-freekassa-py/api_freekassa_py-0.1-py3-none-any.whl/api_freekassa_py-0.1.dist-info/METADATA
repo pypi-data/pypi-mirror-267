@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: api-freekassa-py
+Version: 0.1
+Summary: FreeKassa API. Check Balance + check status
+Home-page: https://freekassa.ru/
+Download-URL: https://github.com/DeveloperrEva/api-freekassa-py
+License: BSD License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires: r
+Requires: e
+Requires: q
+Requires: u
+Requires: e
+Requires: s
+Requires: t
+Requires: s
+License-File: LICENSE
+Requires-Dist: requests >=2.27.1
+
+
+pip install api-freekassa-py
+Docs: https://github.com/DeveloperrEva/api-freekassa-py
