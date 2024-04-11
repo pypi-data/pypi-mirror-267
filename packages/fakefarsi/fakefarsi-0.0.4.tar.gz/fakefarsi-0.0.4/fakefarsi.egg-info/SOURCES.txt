@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+fakefarsi/__init__.py
+fakefarsi/fakefarsi.py
+fakefarsi/first_name.txt
+fakefarsi/last_name.txt
+fakefarsi.egg-info/PKG-INFO
+fakefarsi.egg-info/SOURCES.txt
+fakefarsi.egg-info/dependency_links.txt
+fakefarsi.egg-info/top_level.txt
