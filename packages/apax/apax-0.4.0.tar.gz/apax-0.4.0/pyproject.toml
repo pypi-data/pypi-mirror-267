@@ -1,0 +1,85 @@
+[tool.poetry]
+name = "apax"
+version = "0.4.0"
+description = "Atomistic Learned Potential Package in JAX"
+authors = ["Moritz René Schäfer <schaefer@theochem.uni-stuttgart.de>", "Nico Segreto <segreto@theochem.uni-stuttgart.de>"]
+keywords=["machine-learning", "interatomic potentials", "molecular-dynamics"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "apax"}]
+documentation = "https://apax.readthedocs.io/en/latest/"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+numpy = "^1.23"
+ase = "^3.22.1"
+tensorflow-cpu = "^2.12.0"
+chex = "^0.1.9"
+optax = "^0.1.3"
+einops = "^0.6.0"
+clu = "^0.0.7"
+jaxtyping = "^0.2.8"
+typer = "^0.7.0"
+lazy-loader = "^0.2"
+matscipy = "^0.8.0"
+znh5md = "^0.1.7"
+pydantic = "^2.3.0"
+jax = "^0.4.25"
+zntrack = {version = "^0.7.2", optional = true}
+mlflow = {version = "^2.11.3", extras = ["mlflow"]}
+
+[tool.poetry.extras]
+zntrack = ["zntrack"]
+
+[tool.poetry.scripts]
+apax = 'apax.cli.apax_app:app'
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+pytest-xdist = "^3.0.2"
+black = "^22.10.0"
+coverage = {extras = ["toml"], version = "^6.4.2"}
+matplotlib = "^3.6.2"
+pre-commit = "^2.20.0"
+isort = "^5.10.1"
+flake8 = "^5.0.4"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^7.2.6"
+sphinx-rtd-theme = "^1.3.0"
+myst-parser = "^2.0.0"
+sphinx-copybutton = "^0.5.2"
+furo = "^2023.9.10"
+nbsphinx = "^0.9.3"
+nbsphinx-link = "^1.3.0"
+ipykernel = "^6.29.3"
+pandoc = "^2.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore::FutureWarning:jax.*scatter",]
+markers = [
+    "slow: mark a test as slow and should only run explicitly"
+]
+
+[tool.black]
+line-length = 90
+preview = true
+
+[tool.isort]
+profile = 'black'
+multi_line_output = 3
+
+[tool.coverage.run]
+branch = true
+source = ["apax"]
+
+[tool.coverage.html]
+directory = "coverage_html_report"
+
+[tool.coverage.report]
+show_missing = true
