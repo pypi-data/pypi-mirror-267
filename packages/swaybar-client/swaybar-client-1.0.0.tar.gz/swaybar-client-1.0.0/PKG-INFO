@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: swaybar-client
+Version: 1.0.0
+Summary: A swaybar client
+Author-email: Ellie Lapanje <ellie.lapanje@gmail.com>
+Maintainer-email: Ellie Lapanje <ellie.lapanje@gmail.com>
+Project-URL: Repository, https://github.com/Elliiem/swaybar-client
+License-File: LICENSE
+Requires-Dist: psutil
+Requires-Dist: importlib
