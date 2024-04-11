@@ -1,0 +1,8 @@
+molgenis_emx2_staging_migrator/__init__.py,sha256=ouh7v4LW49cCM2CRoTNBLMI_Xckx3rnnGmFMTA92l9g,38
+molgenis_emx2_staging_migrator/constants.py,sha256=eJxyfnKHJbbC4aV8OeaW0ajdd2v4P-un57IDIJ5A0Zg,66
+molgenis_emx2_staging_migrator/migrator.py,sha256=OfV__zuSvnM5k3Xrb-PNel8DMJVdjvX498C5A7Dx_PE,19110
+molgenis_emx2_staging_migrator/utils.py,sha256=R-9Gnw8U2NgCk3M6krN_SL4tfoI9-6leWMdd-QB0cCw,7552
+molgenis_emx2_staging_migrator-10.50.2.dist-info/METADATA,sha256=XT44fYGjh7J_2f0SL1kqD41nxWA31imA16sc_cmI9xA,1258
+molgenis_emx2_staging_migrator-10.50.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+molgenis_emx2_staging_migrator-10.50.2.dist-info/top_level.txt,sha256=OBsIS5NDIRFajsPxfBZJKTF9fUD66d3EhAw3LEttTCM,31
+molgenis_emx2_staging_migrator-10.50.2.dist-info/RECORD,,
