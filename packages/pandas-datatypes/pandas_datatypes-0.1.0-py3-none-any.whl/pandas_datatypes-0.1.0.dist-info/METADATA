@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pandas_datatypes
+Version: 0.1.0
+Summary: A library for geting correct datatype from pandas dataFrame
+Author: Brajesh
+Requires-Dist: pandas
+
