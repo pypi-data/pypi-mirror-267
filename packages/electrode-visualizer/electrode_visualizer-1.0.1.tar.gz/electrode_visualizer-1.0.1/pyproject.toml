@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "electrode-visualizer"
+version = "1.0.1"
+description = "An application for visualizing EEG's stored in csv's, build with dearpygui"
+authors = ["Ignacio de la Torre Arias <ignaciodlta@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/IgnaciodelaTorreArias/electrode-visualizer/blob/main/LICENSE"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.1"
+dearpygui = "^1.11.1"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
