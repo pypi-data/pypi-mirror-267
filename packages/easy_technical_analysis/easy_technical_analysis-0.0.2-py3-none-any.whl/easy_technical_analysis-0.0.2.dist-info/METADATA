@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: easy_technical_analysis
+Version: 0.0.2
+Summary: 
+Author: Vivek Patel
+Author-email: vivekkvhpatel@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: kiteconnect (>=5.0.1,<6.0.0)
+Requires-Dist: pandas (>=2.2.1,<3.0.0)
+Requires-Dist: pydantic (>=2.6.4,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: ta (>=0.11.0,<0.12.0)
+Description-Content-Type: text/markdown
+
+# technical_analysis
+This repo provides ready made functions of technical indicators.
+
