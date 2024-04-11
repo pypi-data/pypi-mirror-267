@@ -1,0 +1,14 @@
+MANIFEST.in
+pyproject.toml
+package_demo/__init__.py
+package_demo/my_file.py
+package_demo/my_other_file.py
+package_demo/state_info.py
+package_demo/my_folder/__init__.py
+package_demo/my_folder/cities.json
+package_demo/my_folder/my_nested_file.py
+packaging_demo_sheiphan.egg-info/PKG-INFO
+packaging_demo_sheiphan.egg-info/SOURCES.txt
+packaging_demo_sheiphan.egg-info/dependency_links.txt
+packaging_demo_sheiphan.egg-info/requires.txt
+packaging_demo_sheiphan.egg-info/top_level.txt
