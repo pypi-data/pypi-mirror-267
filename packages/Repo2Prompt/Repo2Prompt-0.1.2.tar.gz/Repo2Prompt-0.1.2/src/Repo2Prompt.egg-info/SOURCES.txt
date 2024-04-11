@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+src/Repo2Prompt.egg-info/PKG-INFO
+src/Repo2Prompt.egg-info/SOURCES.txt
+src/Repo2Prompt.egg-info/dependency_links.txt
+src/Repo2Prompt.egg-info/requires.txt
+src/Repo2Prompt.egg-info/top_level.txt
+src/repo2prompt/__init__.py
+src/repo2prompt/extraction.py
+src/repo2prompt/types.py
