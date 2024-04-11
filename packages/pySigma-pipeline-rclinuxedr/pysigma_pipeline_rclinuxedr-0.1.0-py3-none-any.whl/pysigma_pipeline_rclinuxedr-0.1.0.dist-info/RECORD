@@ -1,0 +1,6 @@
+sigma/pipelines/rclinuxedr/__init__.py,sha256=K91ZxDEsuh_l-cEbPL7b0DMGMkOW7WiCmy3_R34zgM8,269
+sigma/pipelines/rclinuxedr/rclinuxedr.py,sha256=pg8ypEqo8BjdvSfiEcI4NOeTC21d9lXCTtUz2XorB2M,11605
+pysigma_pipeline_rclinuxedr-0.1.0.dist-info/LICENSE,sha256=T_5AnGjLS7O1m0OinL2M0rdfosVChlFg0sJB6SO0ZQw,1051
+pysigma_pipeline_rclinuxedr-0.1.0.dist-info/METADATA,sha256=A7zMg1jQdkAynDN-Ldgh--QyUkbAx2edSQnZ_7xNAmg,749
+pysigma_pipeline_rclinuxedr-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pysigma_pipeline_rclinuxedr-0.1.0.dist-info/RECORD,,
