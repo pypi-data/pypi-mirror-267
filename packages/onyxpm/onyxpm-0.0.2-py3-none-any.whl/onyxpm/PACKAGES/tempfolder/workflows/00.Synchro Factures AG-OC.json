@@ -1,0 +1,14 @@
+{
+    "oWorkflow": {
+        "name": "00.Synchro \"Factures\" AG<->OC",
+        "documentation": null,
+        "oProjectId": "7316024d-7485-4b92-87b3-fce9be27f367",
+        "isScheduled": false,
+        "emailSentOnError": false,
+        "enableCrossProject": false,
+        "emailRecipients": null,
+        "id": "ffe799bf-6367-413b-a6c6-b9abfdcefcdb"
+    },
+    "numberOfSchedules": 0,
+    "oProjectName": "AG - invoice"
+}

@@ -1,0 +1,15 @@
+{
+    "oVariable": {
+        "name": "nxAddons",
+        "code": "nxAddons",
+        "description": null,
+        "value": "",
+        "query": "SELECT public.\"nxGetAddons\"('{\"BDD_Onyx\", \"BDD_antargaz\", \"API_Gateway\"}', '{\"NxContext-1.\"}', 'zZti1bhVER-f-WA9J27WmDWMZ1_KV4fb13TYm11uUzc=')",
+        "oProjectId": "7316024d-7485-4b92-87b3-fce9be27f367",
+        "oConnectionId": "5d182f60-af6f-4bfe-9990-0edaf2ff116b",
+        "oVariableType": 0,
+        "tenantId": 11,
+        "id": "0d2cd75e-fd17-4593-83e0-6c56b2fbe6f3"
+    },
+    "oProjectName": "AG - invoice"
+}
