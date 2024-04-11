@@ -1,0 +1,6 @@
+fd2py.py
+setup.py
+fd2py.egg-info/PKG-INFO
+fd2py.egg-info/SOURCES.txt
+fd2py.egg-info/dependency_links.txt
+fd2py.egg-info/top_level.txt
