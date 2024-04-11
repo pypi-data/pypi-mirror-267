@@ -1,0 +1,10 @@
+filetrack/Trackfile.py,sha256=QfFbOR3A7e--OcH2ZkDiazXIja2fb5Ao7E81ybR5hmo,6403
+filetrack/__init__.py,sha256=Xmoptj0fe0Q9MwUlP89GglJ-reQf6OVwv_HDOoNY-kI,6212
+filetrack/__main__.py,sha256=YJs8i6OXXs2Nhn76aC5mEFMhgynK2I6F3FDOwaM9cGQ,79
+filetrack/command_line.py,sha256=cGWCdsnV5FXysxogNax87oeb6H4YUUUupuXGftT5Gx4,708
+filetrack-0.0.6.dist-info/LICENSE,sha256=ep86W5oAwYdqt6MNYmxp_HERqDgvoFCZ9AN1uG5f3SY,1491
+filetrack-0.0.6.dist-info/METADATA,sha256=DsyMBlgvyC7YZSYksst1gwCign2dnf1rhEwxuJs7CIE,4042
+filetrack-0.0.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+filetrack-0.0.6.dist-info/entry_points.txt,sha256=-dHmpDHbq-UnPyF3mLKiBcTFcUI48h-4zqpJohucO2k,58
+filetrack-0.0.6.dist-info/top_level.txt,sha256=BlfvVMGE19zf5ToOTu0gYx-_Y81OJRSDxdWQFfWxzH4,10
+filetrack-0.0.6.dist-info/RECORD,,
