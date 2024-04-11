@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: leidian-helper
+Version: 0.0.1
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: mypy
+Requires-Dist: tqdm
+Requires-Dist: pyyaml
+Requires-Dist: dacite
+Requires-Dist: retrying
+
