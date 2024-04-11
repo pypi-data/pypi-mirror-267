@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ogicg
+Version: 1.0.1
+Summary: An image caption generator for advertisements.
+Author: Ian King, Mason Myles, Omar Elsegeiny, Emily Anderson, & Bohdan Ivanyshyn
+Author-email: kingian404@gmail.com
+Keywords: python,image,caption,generator,image caption generator,OCR,optical character recognition,ad,ads,advertisement,advertisements,ogicg,Ovative,Ovative Group,Ovative Group Image Caption Generator
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pillow
+Requires-Dist: torch
+Requires-Dist: requests
+Requires-Dist: validators
+Requires-Dist: transformers
+Requires-Dist: cohere
+Requires-Dist: numpy
+Requires-Dist: opencv-python-headless
+Requires-Dist: gradio
+Requires-Dist: easyocr
+
+A package that generates captions, collects text, and saves it to a .csv file after being given an image of an advertisement.
