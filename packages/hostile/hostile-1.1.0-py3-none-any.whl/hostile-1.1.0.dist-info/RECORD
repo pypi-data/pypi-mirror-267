@@ -1,0 +1,10 @@
+hostile/__init__.py,sha256=7ef7K5zljYUt8ixC9svII23L3aS-2-v3z4NZadtCuKU,55
+hostile/aligner.py,sha256=0aAlh05JPoubxUFGWlX4XQQCuT_hpam0ygAvasQg_L0,11223
+hostile/cli.py,sha256=9EuA5gR6bNQGMQ65Z8qoNe0IYHiZaUnB97bKYrYy_JU,6071
+hostile/lib.py,sha256=EsFICV_g5IAQ_q7RZ1-7HVEi9VbeQ08lz_7P6zGJfmo,11121
+hostile/util.py,sha256=Ic5mf3HCrmgQ3jKuOGm80VroAvo3eg1-oP_tyXfkNGA,6980
+hostile-1.1.0.dist-info/entry_points.txt,sha256=b96nfLFmGOvRVQj0pUE2dvcoUke7n2E3RcP60kvFOyY,44
+hostile-1.1.0.dist-info/LICENSE,sha256=uVQlrFRGhzXDbf2mBGXKQ-HSWWDrK2ouk2tS6D6kZII,1086
+hostile-1.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+hostile-1.1.0.dist-info/METADATA,sha256=Hp4AySmGjNzkhnfW0xMf12nc8L5DmjW5VTcvYiQ9AGg,15212
+hostile-1.1.0.dist-info/RECORD,,
