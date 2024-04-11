@@ -1,0 +1,16 @@
+fgen_example/__init__.py,sha256=VDSBLuNctfB6K4I8Hh31Kmigr-B7xB0-6xTqpkyoaIA,143
+fgen_example/_lib/CMakeLists.txt,sha256=6X5aJ53zvEcYu8w0DEgw4VyRWWOVl8tmTwxZ4oz3Qyc,1552
+fgen_example/_lib/derived_type.f90,sha256=oZBp_8cL8slb1HUn9rNxxON8VuXczpsffB38gkB4fjg,1035
+fgen_example/_lib/derived_type.yaml,sha256=ItjGmrvx7LBwD0-IMj0qZcTji9HVaVnguHEmpeW9rYA,845
+fgen_example/_lib/derived_type_manager.f90,sha256=PxjNEYoI7JCbt9j5dl-4IWOQg3TBEDDwG7eBcnJLUOU,3213
+fgen_example/_lib/derived_type_wrapped.f90,sha256=8ZbYa6yN7yetDhfZWi5Epx_bRyQnbZkfpLQNzJUntu8,3904
+fgen_example/_lib/operations.f90,sha256=ojgyi2D7wQl0PS5K_owtFwGo3UcuDb_fvgXFY2wl890,1147
+fgen_example/_lib/operations.yaml,sha256=2UGbUkgIykL3eWQJnBvcH9qAtVpEVJlEfZX0obl7aCA,1255
+fgen_example/_lib/operations_manager.f90,sha256=3wXbvV8qlRizgGKL79D40cZmZrFnH55oNM8Jbt7mnY0,3188
+fgen_example/_lib/operations_wrapped.f90,sha256=v-S04h1l6HBG-qzMLpt4lwvAQSPhq0-omtKCNGUI2_c,3603
+fgen_example/derived_type.py,sha256=BRq0LLGnEBEYXd_yWjrSAYs38l6f9FMeC8s17xiUh4E,12699
+fgen_example/operations.py,sha256=vZOyLrN_VztrerMkvxobydchDFAEn5VOKESeP6h5cGI,12319
+fgen_example/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fgen_example-0.2.0.dist-info/METADATA,sha256=sL0bM4w0uDvJqyM1F5EOt2B5PtnB763B8xK71OSS-rg,3945
+fgen_example-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fgen_example-0.2.0.dist-info/RECORD,,
