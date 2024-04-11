@@ -1,0 +1,8 @@
+rs_distributions/__about__.py,sha256=TviQ7C5JVnATRw5jRsjtKgu4a6J3KcEXedgz-OQkyMQ,137
+rs_distributions/__init__.py,sha256=egsvbmslpTGR1ZOCE7q-sljGfyERukJaVi3DXIoXE4I,115
+rs_distributions/distributions/__init__.py,sha256=hOYlLyMq8pTdFCrVKvlUeFeYBjpRAFPyx6afQJZoj7g,75
+rs_distributions/distributions/folded_normal.py,sha256=lCxq8sJDB4ZytTnIkIp1i3_TkcDWfQGjNRDjmeWpkH0,4607
+rs_distributions-0.0.1.dist-info/METADATA,sha256=VTmSrV9Qjnyno0NZ84_mAHH5DN5WfYjhC03GCbRRvPg,1563
+rs_distributions-0.0.1.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+rs_distributions-0.0.1.dist-info/licenses/LICENSE.txt,sha256=NGphmelrR0GgwfcQ2bTDXRm9p5qNk00EPhijxXcwyqA,1107
+rs_distributions-0.0.1.dist-info/RECORD,,
