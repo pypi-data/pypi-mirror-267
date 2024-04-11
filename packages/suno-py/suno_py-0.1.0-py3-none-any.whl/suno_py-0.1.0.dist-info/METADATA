@@ -1,0 +1,31 @@
+Metadata-Version: 2.3
+Name: suno-py
+Version: 0.1.0
+Summary: Unofficial Python library for the Suno API
+Author-email: ldsxp <85176878@qq.com>
+Requires-Python: >=3.8
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: pydantic>=2.6.4
+Requires-Dist: requests>=2.31.0
+Description-Content-Type: text/markdown
+
+# suno-py
+
+## 说明
+
+Unofficial Python library for the Suno API
+
+Suno API 的非官方 Python 库
+
+生成歌曲地址：https://app.suno.ai/
+
+
+## 感谢
+
+感谢下面的开源作者，我们使用和参考了他们的代码
+
+```
+https://github.com/imyizhang/Suno-API
+https://github.com/SunoAI-API/Suno-API
+https://github.com/yihong0618/SunoSongsCreator
+```

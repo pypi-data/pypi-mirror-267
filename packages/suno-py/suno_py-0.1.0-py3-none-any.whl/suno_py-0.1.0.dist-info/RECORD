@@ -1,0 +1,13 @@
+suno_py/__init__.py,sha256=GIUEzpHFgPSYX3dBkUTKL0CAVYsBtZNQGW7JeVNBHxA,30
+suno_py/_base_client.py,sha256=y1YJ2RHAZDd0UAyQ4nzJ0bGvmX3XoPX_gbRA_eSWPcU,7070
+suno_py/_version.py,sha256=hZONlXEyPJpM1zmWaSGQxX8j3YPxkEBqbw6wMJZCP5U,72
+suno_py/api.py,sha256=BD8cbSiO17fY0Mhbv5FoVdS-eog5Z49ohNsZLs288Uo,2431
+suno_py/exception.py,sha256=kZ0JnZooiO_-g4SafrEax-mupCUgyxsLtr-ud3s8CfU,724
+suno_py/requests.py,sha256=o2joLsclg1zv6RwFRY1UQmVRXjd4Bq0a9nN0jpn7zJE,20739
+suno_py/responses.py,sha256=dta1VLMooVCbuEhUeOgw2BOYE9wMGfoW0HHQFlIL_LU,28902
+suno_py/suno.py,sha256=U3ALV7CKV8SPkRHCQNwiOaLhkxSApfeaoi2PPtMArYo,1787
+suno_py/utils.py,sha256=pM4xchB1qr6LAy_61wtwtHQ8CDhbCcvZ4djtmVkM-l4,2745
+suno_py/version.py,sha256=cjbXKO8Ut3aiv4YlQnugff7AdC48MpSndcx96q88Yb8,62
+suno_py-0.1.0.dist-info/METADATA,sha256=U3uq8c7duMvY1yU8_eNq_kPxeVMZ-Tc-9dZ6XJvObxA,655
+suno_py-0.1.0.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+suno_py-0.1.0.dist-info/RECORD,,
