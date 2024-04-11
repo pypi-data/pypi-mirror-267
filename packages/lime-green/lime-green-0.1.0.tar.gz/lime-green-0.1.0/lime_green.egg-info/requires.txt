@@ -1,0 +1,16 @@
+PyYAML
+python-dotenv
+pydantic
+pandas
+tabulate
+openai
+tiktoken
+flask
+
+[dev]
+pytest
+jupyter
+llama_cpp_python
+
+[llama_cpp]
+llama_cpp_python
