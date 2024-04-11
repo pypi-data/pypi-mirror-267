@@ -1,0 +1,10 @@
+weighted_sample_statistics/__init__.py,sha256=XgdpMYihJOk-QZj2CKSHMKFbUVNWYf6JsbBTUhgSJzk,936
+weighted_sample_statistics/core.py,sha256=S-rZpwICdLTc_al_x-XtqDlmrjOxkGER0imK9OxzFYo,20116
+weighted_sample_statistics/main.py,sha256=PAD5vQeZWUrf__kwmxxUohUV-x7-W_IaOSsNwXk8B64,3356
+weighted_sample_statistics/utils.py,sha256=X-8m8F1-5uswX9JV44IrxS5ex8Yi0oNYpHu07kkSe4I,8358
+weighted_sample_statistics/variable_properties.py,sha256=hi3tRhpLwpbGW-TwBOP3q-4ZoKpR_LPMJNK_SGgZ87k,2886
+weighted_sample_statistics-0.0.7.dist-info/LICENSE.txt,sha256=-O0W650Vixwmg7XhTSkCxaNIW5ii0mnN5peYxTmJU0A,1082
+weighted_sample_statistics-0.0.7.dist-info/METADATA,sha256=fGfS8zPqW49lS9K8I26yRyVozsu6KlhXMOjsBH05IhI,1650
+weighted_sample_statistics-0.0.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+weighted_sample_statistics-0.0.7.dist-info/top_level.txt,sha256=RHM8crOrfI-mtPO62obsebd5a5Ktqyk9qXiM2LVCg1U,27
+weighted_sample_statistics-0.0.7.dist-info/RECORD,,
