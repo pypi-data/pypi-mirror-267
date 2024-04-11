@@ -1,0 +1,35 @@
+Copyright (c) [2024] Avania Developers
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+1. The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software.
+
+2. The project allows for any form of secondary development, but any project developed
+   in such a manner must comply with this license, and the original copyright
+   holder remains the Avania Developers.
+
+3. This license shall terminate immediately if Avania is sued for copyright infringement.
+
+4. The final usage rights belong to the Avania Developers.
+
+Additionally, the software is distributed under the terms of the Apache License, Version 2.0.
+You may:
+
+  - Use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software
+  - Distribute copies of the Software to other individuals
+  - Create and distribute derivative works of the Software
+  - Provide patches and incremental updates to modified versions of the Software
+
+But you must:
+
+  - Retain the original license and copyright notice in any derived software
+  - Provide appropriate documentation describing modifications if you create software based on this one
+  - Comply with additional restrictions specified in the Apache 2.0 License
+
+The full text of the Apache 2.0 License can be found at: https://www.apache.org/licenses/LICENSE-2.0
