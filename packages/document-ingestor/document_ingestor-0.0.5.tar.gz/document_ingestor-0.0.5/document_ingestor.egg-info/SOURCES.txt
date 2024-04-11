@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+document_ingestor.egg-info/PKG-INFO
+document_ingestor.egg-info/SOURCES.txt
+document_ingestor.egg-info/dependency_links.txt
+document_ingestor.egg-info/requires.txt
+document_ingestor.egg-info/top_level.txt
