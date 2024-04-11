@@ -1,0 +1,13 @@
+vidsrc_search/__main__.py,sha256=hOYJFLi0LGYkEnDavsLItFoX2j5SsbDkjICJyQUBhWw,1235
+vidsrc_search/argparsing.py,sha256=G-z6rvJ7f44qrwuXaQACDgpWXLKXahrXEHYP_K_uDGA,4741
+vidsrc_search/download.py,sha256=CxLbtOaAK4vwUWlHmY61I2VSHdOvEhULvdCKVZdYiXI,2763
+vidsrc_search/json_utils.py,sha256=V95h16lEW7HLIWh7r7F_PHuCSZBkhpzyDrfDjkjdLrI,1249
+vidsrc_search/search.py,sha256=jykPxvkmPDn0zWZx5-x9wAS8TEc1od3PIsi1FaxrxCA,5325
+vidsrc_search/uninstall.py,sha256=2xpArLk8WISNKGgDOwqf3oMyaM311YqjoINcl8Y4U6I,891
+vidsrc_search/utils.py,sha256=uC3UuyqAdew3pCvPVPsn35CYj4JVtdGfNrUMj5TgFGo,6621
+vidsrc_search-0.1.5.dist-info/LICENSE,sha256=cauPEG29dPoR4zGpmo6woBg_nRdU52-bod3nCOIwUUE,1053
+vidsrc_search-0.1.5.dist-info/METADATA,sha256=vDaNJilb2CZ32thkeernAlqesKVGDkrwdRW30IL3c_Q,1417
+vidsrc_search-0.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+vidsrc_search-0.1.5.dist-info/entry_points.txt,sha256=OZr8GaYfE5d2Q1pJb1X2VLi9KejP4bHRrNjHLzlgU1w,62
+vidsrc_search-0.1.5.dist-info/top_level.txt,sha256=eDaYtd9dn242jaJDKYw4zAVdYknRHCvjUQNjzLFikfg,14
+vidsrc_search-0.1.5.dist-info/RECORD,,
