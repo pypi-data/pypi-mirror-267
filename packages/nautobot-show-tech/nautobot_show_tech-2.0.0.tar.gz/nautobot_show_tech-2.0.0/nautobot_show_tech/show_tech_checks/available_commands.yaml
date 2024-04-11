@@ -1,0 +1,13 @@
+---
+# yamllint disable rule:quoted-strings
+# Required values
+name: available_commands
+description: Returns list of commands available to the user from the host
+os:  # os is the operating system. More choices to be created through the subprocess.py file.
+  linux:
+    command: compgen -c
+enabled: false
+prompt_warning: This check is disabled for some reason I can't remember.
+entry_point: subprocess_run.py
+# Optional and overrideable values
+entry_point_options: null

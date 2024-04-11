@@ -1,0 +1,13 @@
+---
+# yamllint disable rule:quoted-strings
+# Required values
+name: uname_-a
+description: Returns the name of the operating system implementation. -a includes the following flags -m, -n, -r, -s, -v
+os:  # os is the operating system. More choices to be created through the subprocess.py file.
+  linux:
+    command: uname -a
+enabled: true
+prompt_warning: null
+entry_point: subprocess_run.py
+# Optional and overrideable values
+entry_point_options: null

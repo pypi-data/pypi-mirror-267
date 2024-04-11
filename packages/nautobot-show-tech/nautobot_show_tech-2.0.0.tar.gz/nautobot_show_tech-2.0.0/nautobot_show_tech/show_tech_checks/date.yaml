@@ -1,0 +1,13 @@
+---
+# yamllint disable rule:quoted-strings
+# Required values
+name: date
+description: Returns date from the host.
+os:  # confirmed working options only
+  linux:
+    command: date
+enabled: true
+prompt_warning: null
+entry_point: subprocess_run.py
+# Optional and overrideable values
+entry_point_options: null

@@ -1,0 +1,18 @@
+---
+# yamllint disable rule:quoted-strings
+# Required values
+name: nautobot_server_apps
+description: Returns information about jobs from running nautobot
+os:  # os is the operating system. More choices to be created through the subprocess.py file.
+  linux:  # this is a custom nautobot-server command located at management/commands/show_tech_check_counts
+    command: nautobot-server show_tech_check_apps
+enabled: true
+prompt_warning: null
+entry_point: subprocess_run.py
+# Optional and overrideable values
+entry_point_options:
+  timeout:
+    description: subprocess.run(timeout=timeout.value) where timeout.value is time in seconds as an integer.
+    type: integer
+    value: 180
+    required: false

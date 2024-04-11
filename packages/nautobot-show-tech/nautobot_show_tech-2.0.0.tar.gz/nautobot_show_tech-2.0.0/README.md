@@ -1,0 +1,57 @@
+# Nautobot Show Tech
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/networktocode/nautobot-app-show-tech/main/docs/images/icon-nautobot-show-tech.png" class="logo" height="200px">
+  <br>
+  <a href="https://github.com/networktocode/nautobot-app-show-tech/actions"><img src="https://github.com/networktocode/nautobot-app-show-tech/actions/workflows/ci.yml/badge.svg?branch=main"></a>
+  <a href="https://docs.nautobot.com/projects/nautobot-show-tech/en/latest"><img src="https://readthedocs.org/projects/nautobot-app-show-tech/badge/"></a>
+  <a href="https://pypi.org/project/nautobot-show-tech/"><img src="https://img.shields.io/pypi/v/nautobot-show-tech"></a>
+  <a href="https://pypi.org/project/nautobot-show-tech/"><img src="https://img.shields.io/pypi/dm/nautobot-show-tech"></a>
+  <br>
+  A diagnostics app for <a href="https://nautobot.com/">Nautobot</a>.
+</p>
+
+## Overview
+
+### Purpose: Providing diagnostics in a Nautobot environment
+
+When troubleshooting an environment, it is best to be able to answer questions about the environment quickly. This process is challenging to perform with a back-and-forth with a customer. Therefore, Nautobot Show Tech is designed to aggregate and provide that information in an easy-to-consume format as a one-time ask. The goal is to aid in troubleshooting managed service customer environments, but it can be extended to do more or be used to meet stakeholder requirements.
+
+### Versions: Nautobot 2.X or 1.X compatible
+
+With the addition of commands using Nautobot ORM and Jobs, there is a requirement to have two versions of this plugin.  Nautobot Show Tech is therefore versioned in coordination with the Major Release version of Nautobot.  Nautobot Show Tech 2.X will support Nautobot 2.X environments. Nautobot Show Tech 1.X will support Nautobot 1.X environments.  Please be sure to use the appropriate version for best diagnostic return results.
+
+### Screenshots
+
+> Developer Note: Add any representative screenshots of the App in action. These images should also be added to the `docs/user/app_use_cases.md` section.
+
+> Developer Note: Place the files in the `docs/images/` folder and link them using only full URLs from GitHub, for example: `![Overview](https://raw.githubusercontent.com/networktocode/nautobot-app-show-tech/main/docs/images/plugin-overview.png)`. This absolute static linking is required to ensure the README renders properly in GitHub, the docs site, and any other external sites like PyPI.
+
+More screenshots can be found in the [Using the App](https://docs.nautobot.com/projects/nautobot-show-tech/en/latest/user/app_use_cases/) page in the documentation. Here's a quick overview of some of the plugin's added functionality:
+
+![](https://raw.githubusercontent.com/networktocode/nautobot-app-show-tech/main/docs/images/placeholder.png)
+
+
+## Documentation
+
+Coming Soon. Until then, use this readme and the [`docs`](https://github.com/networktocode/nautobot-app-show-tech/tree/main/docs) folder in this repository.
+<!--
+Full documentation for this App can be found over on the [Nautobot Docs](https://docs.nautobot.com) website:
+
+- [User Guide](https://docs.nautobot.com/projects/nautobot-show-tech/en/latest/user/app_overview/) - Overview, Using the App, Getting Started.
+- [Administrator Guide](https://docs.nautobot.com/projects/nautobot-show-tech/en/latest/admin/install/) - How to Install, Configure, Upgrade, or Uninstall the App.
+- [Developer Guide](https://docs.nautobot.com/projects/nautobot-show-tech/en/latest/dev/contributing/) - Extending the App, Code Reference, Contribution Guide.
+- [Release Notes / Changelog](https://docs.nautobot.com/projects/nautobot-show-tech/en/latest/admin/release_notes/).
+- [Frequently Asked Questions](https://docs.nautobot.com/projects/nautobot-show-tech/en/latest/user/faq/).
+-->
+### Contributing to the Documentation
+
+You can find all the Markdown source for the App documentation under the [`docs`](https://github.com/networktocode/nautobot-app-show-tech/tree/main/docs) folder in this repository. For simple edits, a Markdown capable editor is sufficient: clone the repository and edit away.
+<!--
+If you need to view the fully-generated documentation site, you can build it with [MkDocs](https://www.mkdocs.org/). A container hosting the documentation can be started using the `invoke` commands (details in the [Development Environment Guide](https://docs.nautobot.com/projects/nautobot-show-tech/en/latest/dev/dev_environment/#docker-development-environment)) on [http://localhost:8001](http://localhost:8001). Using this container, as your changes to the documentation are saved, they will be automatically rebuilt and any pages currently being viewed will be reloaded in your browser.
+-->
+Any PRs with fixes or improvements are very welcome!
+
+## Questions
+
+For any questions or comments, please check the [FAQ](https://docs.nautobot.com/projects/nautobot-show-tech/en/latest/user/faq/) first. Feel free to also swing by the [Network to Code Slack](https://networktocode.slack.com/) (channel `#nautobot`), sign up [here](http://slack.networktocode.com/) if you don't have an account.

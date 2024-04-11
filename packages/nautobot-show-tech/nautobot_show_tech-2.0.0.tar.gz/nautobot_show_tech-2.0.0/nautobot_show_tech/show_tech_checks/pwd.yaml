@@ -1,0 +1,13 @@
+---
+# yamllint disable rule:quoted-strings
+# Required values
+name: pwd
+description: Returns the working directory starting from root. currently disabled for host_details.yaml
+os:  # os is the operating system. More choices to be created through the subprocess.py file.
+  linux:
+    command: pwd
+enabled: true
+prompt_warning: null
+entry_point: subprocess_run.py
+# Optional and overrideable values
+entry_point_options: null

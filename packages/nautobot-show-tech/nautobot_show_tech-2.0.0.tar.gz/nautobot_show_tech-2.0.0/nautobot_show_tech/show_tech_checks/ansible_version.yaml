@@ -1,0 +1,13 @@
+---
+# yamllint disable rule:quoted-strings
+# Required values
+name: ansible_--versio
+description: Returns ansible --version on host system
+os:  # os is the operating system. More choices to be created through the subprocess.py file.
+  linux:
+    command: ansible --version
+enabled: false
+prompt_warning: This check is disabled unless ansible is installed.
+entry_point: subprocess_run.py
+# Optional and overrideable values
+entry_point_options: null

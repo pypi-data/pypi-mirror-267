@@ -1,0 +1,18 @@
+---
+# yamllint disable rule:quoted-strings
+# Required values
+name: alias
+description: Returns list of alias for this user on host. This is not a default command on all operating systems.
+os:  # confirmed working options only
+  linux:
+    command: alias
+enabled: false
+prompt_warning: This check is disabled until possible secrets placed in the alias list can be sanitized.
+entry_point: subprocess_run.py
+# Optional and overrideable values
+entry_point_options:
+  timeout:
+    description: subprocess.run(timeout=timeout.value) where timeout.value is time in seconds as an integer.
+    type: integer
+    value: 20
+    required: false
