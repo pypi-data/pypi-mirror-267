@@ -1,0 +1,31 @@
+{
+    "totalCount": 2,
+    "items": [
+        {
+            "oFlowId": "1a2c60c1-4451-47ca-9fb7-3d4cba323f04",
+            "sourceColumnName": "imports",
+            "destinationColumnName": null,
+            "destinationColumnDataType": null,
+            "sourceCharacterMaximumLength": null,
+            "sourceColumnNumericPrecision": 0,
+            "sourceColumnNumericScale": 0,
+            "sourceColumnDatatype": "text",
+            "ordinal": 5,
+            "missingInSource": false,
+            "id": null
+        },
+        {
+            "oFlowId": "1a2c60c1-4451-47ca-9fb7-3d4cba323f04",
+            "sourceColumnName": "packages",
+            "destinationColumnName": null,
+            "destinationColumnDataType": null,
+            "sourceCharacterMaximumLength": null,
+            "sourceColumnNumericPrecision": 0,
+            "sourceColumnNumericScale": 0,
+            "sourceColumnDatatype": "text",
+            "ordinal": 6,
+            "missingInSource": false,
+            "id": null
+        }
+    ]
+}

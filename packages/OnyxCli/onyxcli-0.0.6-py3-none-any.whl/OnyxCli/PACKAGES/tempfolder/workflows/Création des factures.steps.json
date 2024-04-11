@@ -1,0 +1,77 @@
+{
+    "totalCount": 6,
+    "items": [
+        {
+            "oWorkflowStep": {
+                "name": null,
+                "jobType": 4,
+                "objectId": "ffa57d95-bec5-4b99-9b5e-8aecb741a0fb",
+                "stepOrder": 30,
+                "oWorkflowId": null,
+                "isActive": true,
+                "stopWorkflowOnError": true,
+                "id": "14b03287-bd8d-472c-a27c-4217898a2f05"
+            }
+        },
+        {
+            "oWorkflowStep": {
+                "name": null,
+                "jobType": 4,
+                "objectId": "483de588-d754-4e01-a0f7-e85a4c45c5f1",
+                "stepOrder": 40,
+                "oWorkflowId": null,
+                "isActive": true,
+                "stopWorkflowOnError": true,
+                "id": "2c376ffe-3423-4f08-833c-bde401261b23"
+            }
+        },
+        {
+            "oWorkflowStep": {
+                "name": null,
+                "jobType": 4,
+                "objectId": "5248d688-7a98-464c-8cb0-8bfff396a7c2",
+                "stepOrder": 50,
+                "oWorkflowId": null,
+                "isActive": true,
+                "stopWorkflowOnError": true,
+                "id": "7ea64edf-4737-4beb-b69f-728c471f1181"
+            }
+        },
+        {
+            "oWorkflowStep": {
+                "name": null,
+                "jobType": 4,
+                "objectId": "5752b561-b639-45dd-a6d9-dcd2cdba216b",
+                "stepOrder": 60,
+                "oWorkflowId": null,
+                "isActive": true,
+                "stopWorkflowOnError": true,
+                "id": "7ac07793-9411-4a42-8397-bb5f31216a7a"
+            }
+        },
+        {
+            "oWorkflowStep": {
+                "name": null,
+                "jobType": 4,
+                "objectId": "01435a58-492e-4ee3-b497-46898d552cf7",
+                "stepOrder": 61,
+                "oWorkflowId": null,
+                "isActive": true,
+                "stopWorkflowOnError": true,
+                "id": "5132a2d3-51c3-44fc-a9d7-4f51175e0022"
+            }
+        },
+        {
+            "oWorkflowStep": {
+                "name": null,
+                "jobType": 4,
+                "objectId": "df09177c-fe19-46ee-b69e-913bc9e2b6b0",
+                "stepOrder": 62,
+                "oWorkflowId": null,
+                "isActive": true,
+                "stopWorkflowOnError": true,
+                "id": "516d207c-1bb4-4797-b2e9-dec791d33705"
+            }
+        }
+    ]
+}

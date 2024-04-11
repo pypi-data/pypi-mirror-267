@@ -1,0 +1,16 @@
+{
+    "oWidget": {
+        "name": "invoice_synthesis",
+        "description": "Synthèse",
+        "query": "    select * from AG_TO_OC.invoice_synthesis",
+        "configuration": null,
+        "oProjectId": "7316024d-7485-4b92-87b3-fce9be27f367",
+        "oConnectionId": "5c3be4e3-be08-4888-bfac-08db5bc711cb",
+        "oWorkflowId": null,
+        "oFormId": null,
+        "oFileProviderId": null,
+        "type": 0,
+        "id": "f832fb40-21ef-4e0b-9317-0b092f484701"
+    },
+    "projectName": "AG - invoice"
+}

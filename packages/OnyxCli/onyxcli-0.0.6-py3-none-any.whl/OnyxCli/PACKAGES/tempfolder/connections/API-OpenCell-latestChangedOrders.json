@@ -1,0 +1,19 @@
+{
+    "oConnection": {
+        "connectionType": 8,
+        "name": "API-OpenCell-latestChangedOrders",
+        "shortName": "API-OpenCell-latestChangedOrders",
+        "documentation": null,
+        "isWritable": false,
+        "tablesNamingConvention": null,
+        "columnsNamingConvention": null,
+        "overrideManualTablesName": false,
+        "overrideManualColumnsName": false,
+        "autoApplyNamingConventions": false,
+        "organizationUnitId": 83,
+        "connectionString": "{\"AuthMode\":0,\"Method\":\"Get\",\"Headers\":{\"Cache-Control\":\"no-cache\",\"Ocp-Apim-Subscription-Key\":\"{{API-OpenCell-Subscription-Key-latestChangedOrder}}\"},\"QueryParams\":{\"date\":\"{{API-OpenCell-latestChangedOrder-date}}\",\"offset\":\"#OFFSET#\",\"limit\":\"#LIMIT#\"},\"HeadersStr\":\"{\\n    \\\"Cache-Control\\\": \\\"no-cache\\\",\\n    \\\"Ocp-Apim-Subscription-Key\\\": \\\"{{API-OpenCell-Subscription-Key-latestChangedOrder}}\\\"\\n}\",\"QueryParamsStr\":\"{\\n    \\\"date\\\": \\\"{{API-OpenCell-latestChangedOrder-date}}\\\",\\n    \\\"offset\\\": \\\"#OFFSET#\\\",\\n    \\\"limit\\\": \\\"#LIMIT#\\\"\\n}\",\"EnableLoop\":true,\"BatchSize\":100,\"OffsetKey\":\"#OFFSET#\",\"LimitKey\":\"#LIMIT#\",\"PageKey\":\"#PAGE#\",\"PageInitNumber\":0,\"EndpointUrl\":\"https://metfr-api-apim.azure-api.net/opencell\",\"Ressource\":\"latestchangedorders\",\"JsonPath\":\"data\"}",
+        "schemaFilter": null,
+        "id": "e0d9bb06-f9e4-407b-8d93-ac2fe2d5d1f6"
+    },
+    "organizationUnitDisplayName": "Open Cell"
+}

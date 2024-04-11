@@ -1,0 +1,14 @@
+{
+    "oWorkflow": {
+        "name": "Récupération des données AZ",
+        "documentation": null,
+        "oProjectId": "7316024d-7485-4b92-87b3-fce9be27f367",
+        "isScheduled": false,
+        "emailSentOnError": false,
+        "enableCrossProject": false,
+        "emailRecipients": null,
+        "id": "5e22e11c-82d2-48ac-b9e4-d63ff775f2b3"
+    },
+    "numberOfSchedules": 0,
+    "oProjectName": "AG - invoice"
+}

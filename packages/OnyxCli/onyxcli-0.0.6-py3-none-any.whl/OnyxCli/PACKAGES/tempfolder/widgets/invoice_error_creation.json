@@ -1,0 +1,16 @@
+{
+    "oWidget": {
+        "name": "invoice_error_creation",
+        "description": "Erreur lors de la création",
+        "query": "\r\n    select energie, code_client, code_prm, id_facture, result_invoice, result_lines\r\n    from AG_to_OC.invoice_result r\r\n    where r.issuccess = 0",
+        "configuration": "",
+        "oProjectId": "7316024d-7485-4b92-87b3-fce9be27f367",
+        "oConnectionId": "5c3be4e3-be08-4888-bfac-08db5bc711cb",
+        "oWorkflowId": null,
+        "oFormId": null,
+        "oFileProviderId": null,
+        "type": 0,
+        "id": "f0a2c6ff-c576-49c9-912f-4a70cc0734fe"
+    },
+    "projectName": "AG - invoice"
+}
