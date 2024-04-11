@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: barc4sr
+Version: 2024.4.8
+Summary: A Python package for Synchrotron Radiaiton calculations
+Home-page: https://github.com/barc4/barc4sr
+Author: Rafael Celestre
+Author-email: rafael.celestre@synchrotron-soleil.fr
+License: GPL-3.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: joblib
+Requires-Dist: h5py
+Requires-Dist: matplotlib
+Requires-Dist: xraylib
+Requires-Dist: Pillow
+Requires-Dist: imageio
+
+# barc4sr
+**BARC** library for **S**ynchrotron **R**adiation

@@ -1,0 +1,11 @@
+barc4sr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+barc4sr/materials.py,sha256=y-HRcAMV6wj_Is_v37-V6Tr4mnXR_gnbjaHZazYCoTw,14053
+barc4sr/processing.py,sha256=7VYO9fjv4wgkH5w8_tOpnujCkkw9HJJKmdyUMLpN4i8,38582
+barc4sr/undulator.py,sha256=l2aSCH-qWwu4RudiiBxoVrJRczF7M3gCcGdOoAvikRg,89115
+barc4sr/utils.py,sha256=ncAHuctz_PKj0OxkeXsp2sqm9Z-DbPTvwbpHCB9fjLA,16252
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+barc4sr-2024.4.8.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+barc4sr-2024.4.8.dist-info/METADATA,sha256=Vq_yjbTR0Y4DXYoMfOtnuiy6ehR77b0_SUqCPz08VPQ,955
+barc4sr-2024.4.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+barc4sr-2024.4.8.dist-info/top_level.txt,sha256=GuZIPGDT59QvWFpwILt4SMnBsxMaRqGGbtF6ymnSNPE,17
+barc4sr-2024.4.8.dist-info/RECORD,,
