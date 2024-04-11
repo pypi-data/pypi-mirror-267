@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: deropy
+Version: 0.0.1
+Summary: A set of tool to help of DERO smart contract development
+Home-page: https://github.com/lcances/pydero
+Author-email: leocances@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: click==8.0.4
+Requires-Dist: requests==2.27.1
+Requires-Dist: coloredlogs==15.0.1
+Requires-Dist: pyperclip==1.8.2
+Requires-Dist: python-dotenv==0.20.0
+Requires-Dist: InquirerPy==0.3.4
