@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: hypnomics
+Version: 1.0.0.dev1
+Summary: A package for sleep data analysis.
+Home-page: https://github.com/WilliamRo/hypnomics
+Author: Wei Luo
+Author-email: luo.wei@zju.edu.cn
+License: Apache-2.0
+Download-URL: https://github.com/WilliamRo/hypnomics/tarball/v1.0.0.dev1
+Keywords: sleep,EEG,hypnogram,sleep stage,sleep data analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hypnomics
+This is an open-source python package containing a collection of tools for 
+extracting and analyzing sleep data from polysomnography (PSG) recordings.
+
