@@ -1,0 +1,9 @@
+gr_urchin/__init__.py,sha256=447XDki3zdBtpk32NoqaFNOxt-cuT2ApQzogYORVGpk,957
+gr_urchin/urdf.py,sha256=kwYVVv3qvAME8_mptz7x5y5tRaaXj_WqUsprMViZi2s,134433
+gr_urchin/utils.py,sha256=I6cMTcbJFe1tXKQAnrCVKgA1OdlL3sKMeK8M7vtXhEY,8010
+gr_urchin/version.py,sha256=x-mEbDNfu7r2SKAGR0A7P0FwPyhhSxJRlutHkucLsHk,23
+gr_urchin-0.0.29.dist-info/LICENSE,sha256=snxGwLReJ69Md5-UFGqIk0pq0Mqdhhax0fcdkK3K0Gs,1083
+gr_urchin-0.0.29.dist-info/METADATA,sha256=adeIsU0Xtn0ZLdDv7G-1nM_p1WMGlKPdw_0pBGL9eV4,1382
+gr_urchin-0.0.29.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gr_urchin-0.0.29.dist-info/top_level.txt,sha256=3Iw8KJ5S2bTqu6aiHz9_dFoszh7KzSthkdUTv78haIk,10
+gr_urchin-0.0.29.dist-info/RECORD,,
