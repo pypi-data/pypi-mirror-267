@@ -1,0 +1,9 @@
+bont/__init__.py,sha256=2aDZDH8ZxXSThD-3C6xW6L5lz0z7LnE0bKvxFnftwEE,87
+bont/bont.py,sha256=2Kmu9Ln4laqhP699wLG-P7X1r3dlShc8aiwNDBCyLis,453
+bont/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bont/models/font_atlas.py,sha256=U4BXIJ8VeGwVHbERJvwKZUEAlXy4Bw1pewcDerw7tp8,4993
+bont/models/glyph.py,sha256=Ki6g9xk6XkGvSTFAzrbbyY9Lu4hTiwf_2-a6aLoryhk,1947
+bont-1.0.0.dist-info/METADATA,sha256=KW7FtzLr1NxtUbe8eI8nnSlGMf7Vdcl7DDHTLZU8St8,818
+bont-1.0.0.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+bont-1.0.0.dist-info/licenses/LICENSE,sha256=WSm3HWQMbJLGHZc9T47vN3-6AGZddaPIIP-gL4AoYxA,1092
+bont-1.0.0.dist-info/RECORD,,
