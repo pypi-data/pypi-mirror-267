@@ -1,0 +1,8 @@
+Cerebrospinal fluid specimen (specimen)
+Blood specimen (specimen)
+Synovial fluid specimen (specimen)
+Specimen from pleura obtained by fine needle aspiration procedure (specimen)
+Specimen from deep wound (specimen)
+Blood specimen in blood culture bottle (specimen)
+Pleural fluid specimen (specimen)
+Specimen (specimen)

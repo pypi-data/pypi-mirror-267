@@ -1,0 +1,5 @@
+Whole blood specimen (specimen)
+Blood specimen (specimen)
+Serum specimen (specimen)
+Cerebrospinal fluid specimen (specimen)
+Specimen (specimen)

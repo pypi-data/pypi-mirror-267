@@ -1,0 +1,7 @@
+Blood specimen (specimen)
+Stool specimen (specimen)
+Serum specimen (specimen)
+Acellular blood (serum or plasma) specimen (specimen)
+Plasma specimen (specimen)
+Plasma specimen with ethylenediamine tetraacetic acid (specimen)
+Specimen (specimen)
