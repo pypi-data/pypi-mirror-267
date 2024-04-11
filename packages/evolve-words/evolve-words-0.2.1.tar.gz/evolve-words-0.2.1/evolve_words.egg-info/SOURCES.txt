@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+evolve_words/__init__.py
+evolve_words/__main__.py
+evolve_words/app.py
+evolve_words/py.typed
+evolve_words.egg-info/PKG-INFO
+evolve_words.egg-info/SOURCES.txt
+evolve_words.egg-info/dependency_links.txt
+evolve_words.egg-info/entry_points.txt
+evolve_words.egg-info/requires.txt
+evolve_words.egg-info/top_level.txt
