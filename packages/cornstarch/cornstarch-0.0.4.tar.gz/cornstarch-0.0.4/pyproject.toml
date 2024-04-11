@@ -1,0 +1,51 @@
+[project]
+name = "cornstarch"
+description = "A versatile model toolkit for distributed training."
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+requires-python = ">=3.10"
+version = "0.0.4"
+authors = [
+    {name = "Insu Jang", email = "insujang@umich.edu"}
+]
+maintainers = [
+    {name = "Insu Jang", email = "insujang@umich.edu"}
+]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Environment :: GPU :: NVIDIA CUDA",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "torch",
+    "transformers==4.36.0",
+    "colossalai==0.3.6",
+    "loguru",
+    "simple_parsing",
+    "datasets",
+]
+
+[project.optional-dependencies]
+dev = [
+    "torch>=2.1.0",
+    "ruff",
+    "black>=23.0",
+    "isort>=5.12",
+    "pytest",
+    "pytest-mock",
+    "expecttest",
+    "accelerate",
+]
+
+[tool.ruff]
+# Never enforce `E501` (line length violations).
+ignore = ["E501"]
+
+[build-system]
+requires = ["setuptools>=63.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cornstarch*"]
+exclude = ["examples", "tests"]
