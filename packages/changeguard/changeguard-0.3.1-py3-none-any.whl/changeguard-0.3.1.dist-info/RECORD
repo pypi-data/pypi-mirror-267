@@ -1,0 +1,10 @@
+changeguard/__init__.py,sha256=g3CRkHjYR5jZ1-JunlTojuQV7uyJXDyCKHlC4SkMubM,395
+changeguard/changeguard.py,sha256=mzqMyroEw_pZchTam3-LzNZeDw44LxVNI1HXUPKY2Fo,13811
+changeguard/changeguard_test.py,sha256=f33AixEn5I4odLAEnCcgsUWcS8AyU3iprqpjCmq2M-I,1598
+changeguard/cli.py,sha256=wLkBMMMqXRzeJ26pIpbolsJgY8SiRYFdbf_KVeKYXG8,6776
+changeguard-0.3.1.dist-info/LICENSE.md,sha256=pB8Y9uQJ53ntqW8qACEsDRkGey4YoYJxbfnqrcd2o_w,1102
+changeguard-0.3.1.dist-info/METADATA,sha256=dSMQiiMt2lAsjZN5EsYT5NVjEWaHqvTuvhfOjubT-VE,11653
+changeguard-0.3.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+changeguard-0.3.1.dist-info/entry_points.txt,sha256=NVM3oXV8G7lu8BNAuKT_XH_PapnnU84uNdeEAN6wJHE,53
+changeguard-0.3.1.dist-info/top_level.txt,sha256=LuRicvZQDWvoOa2h-GDnqaHnceou1gNsTgPQuQkQguI,12
+changeguard-0.3.1.dist-info/RECORD,,
