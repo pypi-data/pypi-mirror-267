@@ -1,0 +1,6 @@
+generation_models/.gitignore,sha256=o4tkkzrCZVGFrclTOjarycoF0ntuVxDSkYb7hAws1io,13
+generation_models/__init__.py,sha256=AeHcA1Yf4ZVjRUKbeQkKa7kyjMs6a90pAVdvHky_er4,47
+generation_models/generation_models.py,sha256=LM43VYJSwg7i9miHHZcSqyVFREOBiC9B4Fml4JUMJJM,128989
+generation_models-0.6.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+generation_models-0.6.0.dist-info/METADATA,sha256=rqHBteMSxyamMBvo3VI45hDs_H5fACPVnOw5TLtN__0,513
+generation_models-0.6.0.dist-info/RECORD,,
