@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: laserembeddings-fork
+Version: 1.2.0
+Summary: Production-ready LASER multilingual embeddings (Fork)
+Home-page: https://github.com/KartinaTV/laserembeddings
+License: BSD-3-Clause
+Author: yannvgn
+Author-email: hi@yannvgn.io
+Maintainer: Aleh Haidash
+Maintainer-email: aleh.haidash@gmail.com
+Requires-Python: >=3.8.0,<4.0.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: ja
+Provides-Extra: zh
+Requires-Dist: ipadic (==1.0.0) ; extra == "ja"
+Requires-Dist: jieba (>=0.42.1,<0.43.0) ; extra == "zh"
+Requires-Dist: mecab-python3 (>=1.0.1,<2.0.0) ; extra == "ja"
+Requires-Dist: numpy (>=1.15.4,<2.0.0)
+Requires-Dist: sacremoses (==0.0.35)
+Requires-Dist: subword-nmt (>=0.3.6,<0.4.0)
+Requires-Dist: torch (>=2.0.0,<3.0.0)
+Requires-Dist: transliterate (==1.10.2)
+Project-URL: Repository, https://github.com/KartinaTV/laserembeddings
+Description-Content-Type: text/markdown
+
+# LASER embeddings
+
+**This project is a fork of [https://github.com/yannvgn/laserembeddings](https://github.com/yannvgn/laserembeddings) with minimal changes.**
+
+✨ **Version 1.2.0. What's new?**
+- Updated Python and Torch versions
+
+![LASER embeddings maps similar sentences in any language to similar language-agnostic embeddings](laserembeddings.gif)
+
+_laserembeddings_ is a pip-packaged, production-ready port of Facebook Research's [LASER](https://github.com/facebookresearch/LASER) (Language-Agnostic SEntence Representations) to compute multilingual sentence embeddings.
+
+If you want to see full version of description, please go to the original project homepage : [https://github.com/yannvgn/laserembeddings](https://github.com/yannvgn/laserembeddings).
+
