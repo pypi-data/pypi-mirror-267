@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: superu
+Version: 0.0.4
+Summary: A package that helps optimize your chatbot response
+Author: SuperU
+Author-email: <adi@superu.ai>
+Keywords: python,chatbot,ecommerce,tag generation,semantic search,openai
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# superU Python Package
+
+## Intent Classification for LLM
+
+This functionality is designed to help you build and test models for intent classification for various user queries. Below, you will find the list of defined classes and how to use the functionality. 
+
+### Intent categories on user queries:
+
+- Informational
+- Navigational
+- Transactional
+- Commercial
+
+### Additional tags:
+
+- Human Support (Requested for human support)
+- Support (Looking for help)
+- FAQ
+- Language: {English, Hindi, Mandarin}
+
+
+## User Persona
+
+This functionality is designed to identify the persona of a user based on their conversations or statements. By analyzing the text, it extracts and identifies key aspects of a user's persona, such as age, gender, profession, hobbies, relationship status, and city.
+
+### Key data points considered
+- Age
+- Gender
+- City
+- Profession
+- Relationship Status
+- Interests
+- Contact Info
+
+
+## LLM Analytics
+
+This functionality allows you to track metrics (cost, latency, quality) about the usage of your LLM in the chatbot and gain key insights about your users.
+
+
+### Get your API Credentials for LLLM Analytics
+
+To start using the superU's Free Analytics API service, follow these steps:
+
+1. Visit analytics.superu.ai.
+2. Sign up for a free account or log in if you already have one.
+3. Create a new Project.
+4. Navigate to the Settings > API keys section.
+5. Generate your superU API keys.
+
+
+## Usage
+
+### Installing the package
+
+```bash
+pip install superu
+```
+
+### Example Usage
+```python
+from superu import superU as su
+import openai
+
+openai.api_type = ""
+openai.api_key = ""
+openai.azure_endpoint = ""
+openai.api_version = ""
+
+User_Persona = Build_User_Persona(openai, llm_deploymentname='')
+Intent_Classifier = Intent_Classification()
+LLM_Analysis = LLM_Analytics(public_key="", secret_key="")
+
+# Chatbot Session
+user_question = "What is 1 + 1"
+
+intent = Intent_Classification_1.get_intent(user_question)
+user_persona = User_Persona_1.build([user_question])   # List of users previous inputs
+
+messages = [{"role": "system", "content":"You are a helpful assistant."}]
+message_append = {"role": "user", "content": f"{user_question}"}
+messages.append(message_append)
+response = openai.chat.completions.create(model="", messages=messages)
+
+# Format data to build analysis
+data = {
+    "input_messages": messages,                                         # Required - Input Messages 
+    "output_messages": response.choices[0].message.content,      # Required - the output from the model
+    "metadata": {"user": "test-user", "context": "openai testing"},     # Optional - to give some metadata to the conversation
+    "model": response.model,                                     # Required - Name of the model
+    "user_id": "",                                                      # Optional - if not given a user_id will be generated
+    "usage": response.usage.model_dump(),                        # Optional - usage details to track the model usage and costs
+    "name": ""                                                          # Optional - to name the given conversation 
+}
+
+LLM_Analysis.analyse(data)
+print("Intent: ", intent)
+print("User  Details: ", user_persona)
+
+```
+
+
+## Contributing
+
+We welcome contributions to this project! If you have suggestions for improvements or bug fixes, feel free to open an issue or submit a pull request.
