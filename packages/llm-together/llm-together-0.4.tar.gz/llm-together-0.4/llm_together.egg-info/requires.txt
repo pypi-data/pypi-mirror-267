@@ -1,0 +1,5 @@
+llm>=0.5
+together==0.2.9
+
+[test]
+pytest
