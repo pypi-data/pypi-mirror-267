@@ -1,0 +1,10 @@
+pillow
+torch
+requests
+validators
+transformers
+cohere
+numpy
+opencv-python-headless
+gradio
+easyocr
