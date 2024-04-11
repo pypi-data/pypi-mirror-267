@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "tfc-cli"
+version = "0.1.0"
+description = ""
+authors = ["Talismar Fernandes Costa <talismar788.una@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# [tool.poetry.scripts]
+# tfc-cli = "tfc_cli.main:main"
