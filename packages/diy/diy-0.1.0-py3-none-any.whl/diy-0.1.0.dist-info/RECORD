@@ -1,0 +1,9 @@
+diy/__init__.py,sha256=gbval1n_YtCaA035kZ4-M0WWo79au7u0brzMBCPm2bY,175
+diy/container.py,sha256=RpBiyqh19UHLVKZK4ro4doSGwMOSyQ3fP04A-XtjaR8,3687
+diy/debug.py,sha256=NC7LPWGtHpE2U5lh-IWSxrBobdgukHSNvmd2eTN_XpA,158
+diy/errors.py,sha256=7NbR1GRqfGEnDeK3rMMlpmxsD1NTQnTDXN1dMNwfazQ,3802
+diy/specification.py,sha256=gbN1l9SGPlYiTj__K5AIQgZt2Ur2A64ar_ujnZzO4NU,7980
+diy/validation.py,sha256=uuMb1rYX6eZnxzaGD221ydXDKSqTxRgnMyds4qNKNnc,260
+diy-0.1.0.dist-info/METADATA,sha256=ggR9n2cte7a3mKiN4RjHPuhPtMWmsraREKTJjNfdWxM,491
+diy-0.1.0.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+diy-0.1.0.dist-info/RECORD,,
