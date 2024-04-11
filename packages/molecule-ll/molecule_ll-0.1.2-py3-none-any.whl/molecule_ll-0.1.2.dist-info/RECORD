@@ -1,0 +1,17 @@
+molll/__init__.py,sha256=6lTXDw0GK0AeqbdidGGDpSLdRBJTUQLM9eY9FJ7jdrs,137
+molll/_version.py,sha256=SFCDdrYA67D1Je-jHgVVh4LOopkPvuV6NMtqSJ7Tfhg,411
+molll/molll.py,sha256=rSacqWQIbtzZidtDVwWVgaxUtsWlehswwWYYFfLagxM,7968
+molll/propll.py,sha256=e6ewffY7C9HrYXk4jTJ1txivktOFDa_zhi2oHig1KgU,2676
+molll/precomputed/__init__.py,sha256=wKNZOEFHERM_oCBvoBh1Ivbn0zhl5roC65A_hnDlW0M,26
+molll/precomputed/libinventLL.py,sha256=S1ZPw2BC5EihyKXq8C_LdnDBHs7eRIrKktpsI03k1_g,2739
+molll/precomputed/data/AtomLL_libinvent_radius_1.json,sha256=cQvjkiMOBhyEL03bH3vocY6J1qC-evMyUHoYm0okE4E,234871
+molll/precomputed/data/AtomLL_libinvent_radius_2.json,sha256=IeFtvb1O4HJgYwsP6kC4e0771u17XwTImTli942XM0g,9151231
+molll/precomputed/data/AtomLL_libinvent_radius_3.json,sha256=yNQSgCgbB9glFXkGXVPsMmSE9UiOtsDzHk131Zq0N4U,52847410
+molll/precomputed/data/MolLL_libinvent_radius_1.json,sha256=7QfsWY-DmuR6Zxuj6xD6j0KfnCZu7vKlxdb2VH38A60,532830
+molll/precomputed/data/MolLL_libinvent_radius_2.json,sha256=FkIW8uTplOEILJ8PwAeKPycsSFUUVakxoxyW0i6psM4,18076734
+molll/precomputed/data/MolLL_libinvent_radius_3.json,sha256=JUlCJYNjd4HAFzQVr8jgJGgKzWMxtQLMyhJosOfPPKg,102729853
+molecule_ll-0.1.2.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+molecule_ll-0.1.2.dist-info/METADATA,sha256=ffHgnX-0T542_DLm0kNssnY2U8TMDE9fNO6xvL5bJds,32548
+molecule_ll-0.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+molecule_ll-0.1.2.dist-info/top_level.txt,sha256=qjG-NHNXNGwrz15uUTUkGYZdL1IwaHOunqRDVtMY8Cg,6
+molecule_ll-0.1.2.dist-info/RECORD,,
