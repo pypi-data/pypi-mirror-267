@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: avania
+Version: 0.0.1
+Summary: An example Python project
+Author: Simon
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: numpy
+
