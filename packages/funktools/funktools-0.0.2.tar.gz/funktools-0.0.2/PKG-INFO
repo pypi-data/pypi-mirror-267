@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: funktools
+Version: 0.0.2
+Summary: Python 3.10+ async/sync memoize and rate decorators
+Home-page: https://github.com/cevans87/funktools
+Author: cevans
+Author-email: c.d.evans87@gmail.com
+License: mit
+Requires-Python: >=3.10
+Provides-Extra: base
+Provides-Extra: requirements
+Provides-Extra: sql_cache
+Provides-Extra: sqlite_cache
+Provides-Extra: test
+License-File: LICENSE
