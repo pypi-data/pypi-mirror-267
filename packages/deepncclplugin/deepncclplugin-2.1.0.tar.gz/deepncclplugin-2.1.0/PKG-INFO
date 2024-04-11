@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: deepncclplugin
+Version: 2.1.0
+Summary: DEEP-NCCL-PLUGIN is a plugin of AI-Accelerator communication framework for NVIDIA-NCCL. It has been optimized to achieve high bandwidth on aliyun machines using InfiniBand Verbs, eRDMA or TCP/IP sockets.
+Home-page: https://help.aliyun.com/document_detail/462422.html?spm=a2c4g.462031.0.0.c5f96b4drcx52F
+Author: Alibaba Cloud
+License: Copyright (C) Alibaba Group Holding Limited
+Keywords: Distributed,Deep Learning,Communication,NCCL,DEEPGPU
+Requires-Python: >=3.8

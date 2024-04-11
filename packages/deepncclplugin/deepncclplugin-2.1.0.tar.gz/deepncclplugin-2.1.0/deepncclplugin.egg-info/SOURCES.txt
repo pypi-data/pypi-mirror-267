@@ -1,0 +1,7 @@
+README.md
+setup.py
+deepncclplugin/__init__.py
+deepncclplugin.egg-info/PKG-INFO
+deepncclplugin.egg-info/SOURCES.txt
+deepncclplugin.egg-info/dependency_links.txt
+deepncclplugin.egg-info/top_level.txt
