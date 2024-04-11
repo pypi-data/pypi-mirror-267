@@ -1,0 +1,10 @@
+peakqc/__init__.py,sha256=j9cBf4lZcmzxxivQOZXFY8X2kaEpG4UbkZf23Po5JzQ,23
+peakqc/_version.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+peakqc/fld_scoring.py,sha256=7uPlZuLYncnxjGlysmxRNw_pOvmgZYWZXU9S4yK0T6Y,36405
+peakqc/general.py,sha256=wxKhvjcwQycPInWnklqPpQjvwpb1-Xg8tqlq0JupEGo,2190
+peakqc/insertsizes.py,sha256=d1S4NCTHBu1x6ztOd2vtYrgb-ymmoIa2WVwwbz4SMTY,15085
+peakqc-0.1.1.dist-info/LICENSE,sha256=WN2zZaZ1P5e-I4foX_i-AAazwOZJOzIf8M0d73dwgK4,1071
+peakqc-0.1.1.dist-info/METADATA,sha256=WYTHh9fxUXEcC3N-DpZfBmjX1Y3wBmXMiGDHYXRNg0I,345
+peakqc-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+peakqc-0.1.1.dist-info/top_level.txt,sha256=2-jJqoJm0s5zFeh9S2tab6TXEBdjuzlkVwh0DGxONh8,7
+peakqc-0.1.1.dist-info/RECORD,,
