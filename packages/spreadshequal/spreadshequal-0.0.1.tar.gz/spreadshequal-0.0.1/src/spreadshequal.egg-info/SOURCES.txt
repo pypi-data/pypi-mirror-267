@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/spreadshequal/__init__.py
+src/spreadshequal.egg-info/PKG-INFO
+src/spreadshequal.egg-info/SOURCES.txt
+src/spreadshequal.egg-info/dependency_links.txt
+src/spreadshequal.egg-info/entry_points.txt
+src/spreadshequal.egg-info/requires.txt
+src/spreadshequal.egg-info/top_level.txt
