@@ -1,0 +1,9 @@
+README.md
+setup.py
+pandas_datatypes/__init__.py
+pandas_datatypes/data_types.py
+pandas_datatypes.egg-info/PKG-INFO
+pandas_datatypes.egg-info/SOURCES.txt
+pandas_datatypes.egg-info/dependency_links.txt
+pandas_datatypes.egg-info/requires.txt
+pandas_datatypes.egg-info/top_level.txt
