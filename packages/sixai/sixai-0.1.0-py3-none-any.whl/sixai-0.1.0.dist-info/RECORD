@@ -1,0 +1,6 @@
+zappy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zappy/cli.py,sha256=ONv2VPKsYWU-9Z-hj-VG--jLE0KDU28u2_SoK52ePD0,2464
+zappy/models/prompt.py,sha256=4NVW9L4wM106w4O7J_s7GAqhn-lwUjFBh8j1anQHH4E,788
+sixai-0.1.0.dist-info/METADATA,sha256=iIO_GcFS3eEAaD68wZDTDUnEM_LLGqFfHI06S8uGRqo,378
+sixai-0.1.0.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+sixai-0.1.0.dist-info/RECORD,,
