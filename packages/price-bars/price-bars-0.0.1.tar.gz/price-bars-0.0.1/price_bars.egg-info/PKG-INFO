@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: price-bars
+Version: 0.0.1
+Summary: Instrument price store
+Author-email: Rory McStay <rory@rorymcstay.com>
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pandera
+Requires-Dist: arcticdb
+Requires-Dist: pytest
+Requires-Dist: PyYAML
+Requires-Dist: yfinance
+
+Store prices from yahoo finance
