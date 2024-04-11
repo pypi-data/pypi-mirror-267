@@ -1,0 +1,12 @@
+pySEACR/__main__.py,sha256=mC48jadmWlOiI4F0ELaKQ96jKyRmifVXhEDYkM0pfqw,3525
+pySEACR/auc_from_bdg.py,sha256=hRQI4VFhPV8xD_-lySgXCEK7fM1c61d0bd-8y7280GM,3419
+pySEACR/normalize.py,sha256=TJCE9-GXQMZ1yQeUZOQi4Jx4KaQiILGHNlTS5jBBJh0,2492
+pySEACR/normalize_R.py,sha256=Y3cpUzTNoSoGfktUdcQILmiV3KylzBA2l4fYo8RmWqc,1582
+pySEACR/pct_remain.py,sha256=3iqLiwBXSdZG9-2Muzn7dwW2RsWWjA6jTayXQyvzJfw,1063
+pySEACR/threshold_finder.py,sha256=PETzj0c4U6whzl5Ddk5nYHQzlH_THub3nln40-s9c8o,4137
+pySEACR/utils.py,sha256=pUgdJlGi9Vi_3FLu9NRG07woUhf_0JrhCwB23mBSMCw,2312
+pySEACR-0.3.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+pySEACR-0.3.dist-info/METADATA,sha256=tTDYGRgCJkNoH2RbywjQmIrq3pM4U5Eo1QzqLh14cQc,25879
+pySEACR-0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pySEACR-0.3.dist-info/top_level.txt,sha256=0TuprFZMPw6j4pbnXSqw5oxI6zORNUgGSl_Zxw_VhCQ,8
+pySEACR-0.3.dist-info/RECORD,,
