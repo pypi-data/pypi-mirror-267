@@ -1,0 +1,12 @@
+tmgtoolkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tmgtoolkit/client.py,sha256=DKVsxb8djqtZYnXbsf95cQXNiQK8SR5sxk-UOIF8-A0,6501
+tmgtoolkit/constants.py,sha256=eoq-PSeF2_YRHzZQB4fZYro_4WMxTMk0abs1lE-gwY4,3448
+tmgtoolkit/plotting.py,sha256=-grelfBLCHO9-WpBC12RF0SXPKUTN77n8p4ODfbRUvA,16032
+tmgtoolkit/spm.py,sha256=ctfNNxy3Oq3O216AWYbYYKCoZuNOoaM8A57TSzC77ZI,12882
+tmgtoolkit/time_series.py,sha256=7OElLhKoF2U5R1ITsgkC2xcAuQwbsAiwm3-vodj62n0,18621
+tmgtoolkit/tmgio.py,sha256=ACVkhoBvFr8u4GMewjWXQTsReI2upJRZlpbCRov7QzA,3206
+tmgtoolkit-0.1.0.dist-info/LICENSE.md,sha256=M7wm1EmMGDtwPRdg7kW4d00h1uAXjKOT3HFScYQMeiE,34916
+tmgtoolkit-0.1.0.dist-info/METADATA,sha256=0lxZGiTiOucQf7cIb-j-XG6LzmAeIt1BeGmzLSxWWQ4,1260
+tmgtoolkit-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+tmgtoolkit-0.1.0.dist-info/top_level.txt,sha256=uhIByaXPihbU51FepRIXe-SLW_1n0DJH0hhLtQk7sA4,11
+tmgtoolkit-0.1.0.dist-info/RECORD,,
