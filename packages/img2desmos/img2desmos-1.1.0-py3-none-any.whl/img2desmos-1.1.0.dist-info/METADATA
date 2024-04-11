@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: img2desmos
+Version: 1.1.0
+Summary: CLI tool to convert images to the LaTeX bezier curves formulas
+Author: Perchinka
+Author-email: aleksei.v.lukin@gmail.com
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: opencv-python (>=4.9.0.80,<5.0.0.0)
+Requires-Dist: pillow (>=10.3.0,<11.0.0)
+Requires-Dist: potracer (>=0.0.4,<0.0.5)
+Requires-Dist: pyperclip (>=1.8.2,<2.0.0)
+Requires-Dist: svg.path (>=6.3,<7.0)
+Requires-Dist: sympy (>=1.12,<2.0)
+Requires-Dist: termcolor (>=2.4.0,<3.0.0)
+Requires-Dist: typer (>=0.12.3,<0.13.0)
+Description-Content-Type: text/markdown
+
+# Img2Desmos
+
+This is a simple python script that converts an image to the bezier curves which can be plotted on desmos.
+
+![image](https://github.com/Perchinka/img2desmos/assets/34923601/9579d060-ae62-4a45-bca7-415ef9858876)
+
+## Requirements
+
+- Python 3.11
+- Poetry
+- [Optional] Chafa (for previewing images in terminal)
+
+## Installation
+
+```bash
+pip install img2desmos
+```
+
+## Usage
+
+```bash
+> img2desmos --help
+                                                                                             
+ Usage: img2desmos [OPTIONS] IMG                                                             
+                                                                                             
+╭─ Arguments ───────────────────────────────────────────────────────────────────────────────╮
+│ *    img      TEXT  Path to the image to convert into graph [default: None] [required]    │
+╰───────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ─────────────────────────────────────────────────────────────────────────────────╮
+│ --output   -o      TEXT     Output formulas file path [default: None]                     │
+│ --preview  -p               Preview the img in a window (chafa is required)               │
+│ --upper            INTEGER  Upper threshold for the edge detection [default: 200]         │
+│ --lower            INTEGER  Lower threshold for the edge detection [default: 100]         │
+│ --help                      Show this message and exit.                                   │
+╰───────────────────────────────────────────────────────────────────────────────────────────╯
+
+```
+
+Formulas will be pasted into clipboard
+
+# Demo
+
+https://github.com/Perchinka/img2desmos/assets/34923601/b34c509b-6fae-4e57-8f8f-7d76a0139e42
+
+
