@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: moop
+Version: 0.1.0
+Summary: Python Boilerplate contains all the boilerplate you need to create a Python package.
+Author: bopo
+Author-email: ibopo@126.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7.1,<8.0)
+Requires-Dist: dynaconf
+Requires-Dist: loguru

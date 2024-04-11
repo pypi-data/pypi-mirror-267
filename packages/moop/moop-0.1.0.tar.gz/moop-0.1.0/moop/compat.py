@@ -1,0 +1,1 @@
+"""compatible module for moop."""

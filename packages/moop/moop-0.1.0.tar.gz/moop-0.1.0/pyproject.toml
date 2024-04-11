@@ -1,0 +1,99 @@
+[tool.poetry]
+name = "moop"
+version = "0.1.0"
+description = "Python Boilerplate contains all the boilerplate you need to create a Python package."
+authors = ["bopo <ibopo@126.com>"]
+
+classifiers=[
+    'Development Status :: 2 - Pre-Alpha',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Natural Language :: English',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+]
+packages = [
+    { include = "moop" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^7.1"
+dynaconf = "*"
+loguru = "*"
+
+[tool.poetry.dev-dependencies]
+
+
+[tool.poetry.group.test.dependencies]
+pytest-datadir = "^1.4.1"
+pytest-cov = "^4.1.0"
+pytest = "^7.3.1"
+
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs-minify-plugin = "^0.6.4"
+mkdocs-redirects = "^1.2.0"
+mkdocs-material = "^9.1.18"
+mkdocs = "^1.4.3"
+
+
+[tool.poetry.scripts]
+moop = "moop.__main__:entry"
+
+
+[tool.pytest.ini_options]
+testpaths = "tests"
+addopts = "-p no:warnings"
+
+
+[tool.commitizen]
+tag_format = "v$version"
+annotated_tag = true
+changelog_file = "docs/history.md"
+changelog_incremental = true
+update_changelog_on_bump = true
+version_provider = "poetry"
+version_files = [
+    "moop/__init__.py:__version__",
+]
+
+
+[tool.poe.tasks]
+
+[tool.poe.tasks.lift]
+help = "启动项目"
+cmd = "poetry run moop lift"
+
+
+[tool.poe.tasks.venv]
+help = "初始化虚拟环境, 并且安装依赖"
+shell = "poetry install --all-extras --no-root --sync"
+
+[tool.poe.tasks.lock]
+help = "同步依赖"
+shell = "poetry lock --no-update"
+
+[tool.poe.tasks.test]
+help = "执行测试脚本"
+cmd = "poetry run pytest"
+
+[tool.poe.tasks.bump]
+help = "设置发布版本, 自动打标签以及 CHANGELOG 文件"
+cmd = "cz bump --yes -ch -cc --increment" # MAJOR, MINOR, PATCH
+
+[tool.poe.tasks.dist]
+help = "打包项目"
+cmd = "poetry build -v"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
