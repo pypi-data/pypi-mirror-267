@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: thonny-etboard-micropython-firmware
+Version: 1.0.4
+Summary: 이티보드 마이크로파이썬 펌웨어 - Thonny V4 지원
+Home-page: http://et.ketri.re.kr/
+Author: KETRi
+Author-email: ketri3000@gmail.com
+License: MIT
+Project-URL: Bug Tracker, http://et.ketri.re.kr/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: thonny>=3.3.11
+
+Thonny 이티보드 펌웨어와 인터프리터 설정을 포함하는 플러그인 입니다.
