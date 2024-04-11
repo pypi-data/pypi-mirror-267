@@ -1,0 +1,2 @@
+[console_scripts]
+lele = lele.cli:cli
