@@ -1,0 +1,3 @@
+[console_scripts]
+local-redash=local_redash.main:initialize
+
