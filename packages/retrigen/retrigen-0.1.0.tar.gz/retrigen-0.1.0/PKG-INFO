@@ -1,0 +1,132 @@
+Metadata-Version: 2.1
+Name: retrigen
+Version: 0.1.0
+Summary: A package for automatically generating datasets for training or evaluating retrieval models
+Author: Jesper Alkestrup
+Author-email: Kenneth Enevoldsen <Kenneth.enevoldsen@cas.au.dk>
+License: MIT License
+        
+        Copyright © 2024 Kenneth Enevoldsen
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: homepage, https://github.com/KennethEnevoldsen/retrigen
+Project-URL: repository, https://github.com/KennethEnevoldsen/retrigen
+Project-URL: documentation, https://KennethEnevoldsen.github.io/retrigen/
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: tqdm
+Requires-Dist: langchain
+Requires-Dist: textdescriptives
+Requires-Dist: spacy>3.6.0
+Requires-Dist: chromadb
+Provides-Extra: dev
+Requires-Dist: cruft>=2.0.0; extra == "dev"
+Requires-Dist: pyright>=1.1.338; extra == "dev"
+Requires-Dist: ruff>=0.3.0; extra == "dev"
+Requires-Dist: pyproject-parser[cli,readme]>=0.9.1; extra == "dev"
+Provides-Extra: tests
+Requires-Dist: pytest>=7.1.3; extra == "tests"
+Requires-Dist: pytest-cov>=3.0.0; extra == "tests"
+Requires-Dist: pytest-xdist; extra == "tests"
+Provides-Extra: docs
+Requires-Dist: mkdocs-jupyter==0.24.2; extra == "docs"
+Requires-Dist: mkdocs-material==9.1.21; extra == "docs"
+Requires-Dist: mkdocstrings[python]==0.22.0; extra == "docs"
+Requires-Dist: jupyter>=1.0.0; extra == "docs"
+
+<a href="https://github.com/KennethEnevoldsen/retrigen"><img src="https://github.com/KennethEnevoldsen/retrigen/blob/main/docs/_static/icon.png?raw=true" width="100" align="right"/></a>
+
+# Retrigen
+
+[![PyPI](https://img.shields.io/pypi/v/retrigen.svg)][pypi status]
+[![Python Version](https://img.shields.io/pypi/pyversions/retrigen)][pypi status]
+[![documentation](https://github.com/KennethEnevoldsen/retrigen/actions/workflows/documentation.yml/badge.svg)][documentation]
+[![Tests](https://github.com/KennethEnevoldsen/retrigen/actions/workflows/tests.yml/badge.svg)][tests]
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)]([ruff])
+
+
+[pypi status]: https://pypi.org/project/retrigen/
+[documentation]: https://KennethEnevoldsen.github.io/retrigen/
+[tests]: https://github.com/KennethEnevoldsen/retrigen/actions?workflow=Tests
+[ruff]: https://github.com/astral-sh/ruff
+
+
+<!-- start short-description -->
+
+A package for automatically generating datasets for training or evaluating retrieval models
+
+<!-- end short-description -->
+
+## Installation
+
+You can install `retrigen` via [pip] from [PyPI]:
+
+```bash
+pip install retrigen
+```
+
+[pip]: https://pip.pypa.io/en/stable/installing/
+[PyPI]: https://pypi.org/project/retrigen/
+
+## Usage
+
+TODO: Add minimal usage example
+
+To see more examples, see the [documentation].
+
+# 📖 Documentation
+
+| Documentation         |                                                          |
+| --------------------- | -------------------------------------------------------- |
+| 🔧 **[Installation]**  | Installation instructions on how to install this package |
+| 📖 **[Documentation]** | A minimal and developing documentation                   |
+| 👩‍💻 **[Tutorials]**     | Tutorials for using this package                         |
+| 🎛️ **[API Reference]** | API reference for this package                           |
+| 📚 **[FAQ]**           | Frequently asked questions                               |
+
+
+# 💬 Where to ask questions
+
+| Type                           |                        |
+| ------------------------------ | ---------------------- |
+| 📚 **FAQ**                      | [FAQ]                  |
+| 🚨 **Bug Reports**              | [GitHub Issue Tracker] |
+| 🎁 **Feature Requests & Ideas** | [GitHub Issue Tracker] |
+| 👩‍💻 **Usage Questions**          | [GitHub Discussions]   |
+| 🗯 **General Discussion**       | [GitHub Discussions]   |
+
+[Documentation]: https://KennethEnevoldsen.github.io/retrigen/index.html
+[Installation]: https://KennethEnevoldsen.github.io/retrigen/installation.html
+[Tutorials]: https://KennethEnevoldsen.github.io/retrigen/tutorials.html
+[API Reference]: https://KennethEnevoldsen.github.io/retrigen/references.html
+[FAQ]: https://KennethEnevoldsen.github.io/retrigen/faq.html
+[github issue tracker]: https://github.com/KennethEnevoldsen/retrigen/issues
+[github discussions]: https://github.com/KennethEnevoldsen/retrigen/discussions
+
+
