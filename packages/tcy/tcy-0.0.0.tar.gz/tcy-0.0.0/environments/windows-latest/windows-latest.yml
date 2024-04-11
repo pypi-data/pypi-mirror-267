@@ -1,0 +1,8 @@
+name: windows-latest
+channels:
+- conda-forge
+- defaults
+dependencies:
+- python
+- r-essentials
+- r-base

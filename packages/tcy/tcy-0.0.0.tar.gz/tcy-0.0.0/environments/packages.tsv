@@ -1,0 +1,4 @@
+package_name	version	package_manager	conda_channel	necessity	language	bug_flag
+python		conda	conda-forge	required	python	
+r-essentials		conda	conda-forge	required	r	
+r-base		conda	conda-forge	required	r	

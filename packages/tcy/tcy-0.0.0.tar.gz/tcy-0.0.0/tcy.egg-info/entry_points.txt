@@ -1,0 +1,2 @@
+[console_scripts]
+tcy = tcy.tcy:main
