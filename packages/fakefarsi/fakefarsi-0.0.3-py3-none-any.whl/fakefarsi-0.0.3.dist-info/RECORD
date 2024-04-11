@@ -1,0 +1,9 @@
+fakefarsi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fakefarsi/fakefarsi.py,sha256=XAy5iIaKOJFdjPMRGPu6VgK5SpovzDtIIS3b41N0po0,2739
+fakefarsi/data/first_name.txt,sha256=XFqfrH0sSa2afuFegmLaHC8gHYH4iRO-vWp-u4WJS8s,69171
+fakefarsi/data/last_name.txt,sha256=An016UVp1Qm5nJY2yrqf1M-aP47ppWusFEOoSU5xE9o,6733
+fakefarsi-0.0.3.dist-info/LICENSE,sha256=PjMsQWpQ3Y-BDSMGElx-FONeKNzkaptKwMK_Ftg9Syw,1091
+fakefarsi-0.0.3.dist-info/METADATA,sha256=IRMt_CHXjIfpjzg6qCWn1SNwTxJXsoL1TE-xFTnEa70,1011
+fakefarsi-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+fakefarsi-0.0.3.dist-info/top_level.txt,sha256=wW8yX2gMszptwoMu8ac7JNXuzAqw6uCjTcmXGhZDf4U,10
+fakefarsi-0.0.3.dist-info/RECORD,,
