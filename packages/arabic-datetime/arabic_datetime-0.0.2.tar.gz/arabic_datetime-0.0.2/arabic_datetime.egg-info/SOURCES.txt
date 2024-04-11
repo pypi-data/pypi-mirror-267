@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+arabic_datetime/__init__.py
+arabic_datetime/arabic_date.py
+arabic_datetime/arabic_time.py
+arabic_datetime/constants.py
+arabic_datetime.egg-info/PKG-INFO
+arabic_datetime.egg-info/SOURCES.txt
+arabic_datetime.egg-info/dependency_links.txt
+arabic_datetime.egg-info/top_level.txt
