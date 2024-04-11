@@ -1,0 +1,7 @@
+pandas>=1
+requests
+numpy
+zeep
+h5py
+cryptography
+pyjwt
