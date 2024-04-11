@@ -1,0 +1,3 @@
+[console_scripts]
+five-strips-of-bacon=five_strips_of_bacon.main:main
+
