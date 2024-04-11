@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+socketman/__init__.py
+socketman/objsocket.py
+socketman/serialization.py
+socketman/version.py
+socketman.egg-info/PKG-INFO
+socketman.egg-info/SOURCES.txt
+socketman.egg-info/dependency_links.txt
+socketman.egg-info/requires.txt
+socketman.egg-info/top_level.txt
+socketman/manager/__init__.py
+socketman/manager/__main__.py
+socketman/manager/client.py
+socketman/manager/common.py
