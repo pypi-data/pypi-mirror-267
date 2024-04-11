@@ -1,0 +1,6 @@
+quditto_client/interfaces_pb2.py,sha256=Ol3w3N9A_7YqtMr7SfI7B1pk1_my3LnJwSCBzipSvEo,7560
+quditto_client/interfaces_pb2_grpc.py,sha256=XLz3UBT5e4N_n0qX8Gveqtz1Oyc5zpmS3E9f-1CioHM,9309
+quditto_client/quditto_etsi_004_client.py,sha256=zrViZ2hdlmP7TdlROPAzS6ttktiF4NpWMKtG1NL06w0,3473
+quditto_client-0.2.1.dist-info/METADATA,sha256=-Fq0D7e7Y3C6W2DQTadg7k8Sl7mdDI2MxV8kTG_SuWk,790
+quditto_client-0.2.1.dist-info/WHEEL,sha256=IrRNNNJ-uuL1ggO5qMvT1GGhQVdQU54d6ZpYqEZfEWo,92
+quditto_client-0.2.1.dist-info/RECORD,,
