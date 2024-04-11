@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: easyaddition_quicklyfix
+Version: 0.0.6
+Summary: My first Python package
+Author: Saurabh Kumar
+Author-email: saurabh.kumar@agatsa.com
+Keywords: python,first package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+My first Python package with a slightly longer description
