@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+streamlit_iframe_event/__init__.py
+streamlit_iframe_event.egg-info/PKG-INFO
+streamlit_iframe_event.egg-info/SOURCES.txt
+streamlit_iframe_event.egg-info/dependency_links.txt
+streamlit_iframe_event.egg-info/requires.txt
+streamlit_iframe_event.egg-info/top_level.txt
+streamlit_iframe_event/frontend/dist/index.html
+streamlit_iframe_event/frontend/dist/vite.svg
+streamlit_iframe_event/frontend/dist/assets/index-0b93f2c6.css
+streamlit_iframe_event/frontend/dist/assets/index-30f9c2cd.js
