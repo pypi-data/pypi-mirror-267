@@ -1,0 +1,1 @@
+Audit scratch write/tag before they happen so if a failure occurs during or between write and tag, the rollback feature will still perform an idempotent removal.

@@ -1,0 +1,1 @@
+Retry connection errors that can occur during a connection to Redis.
