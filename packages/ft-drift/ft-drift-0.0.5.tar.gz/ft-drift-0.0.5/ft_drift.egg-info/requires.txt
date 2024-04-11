@@ -1,0 +1,6 @@
+pandas
+rich
+openai>=1.12.0
+scikit-learn>=1.4.1
+
+[dev]
