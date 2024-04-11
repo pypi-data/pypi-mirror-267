@@ -1,0 +1,9 @@
+dig_ass_ep_protos/DigitalAssistantEntryPoint_pb2.py,sha256=8SphOuOAKBE_JQgCGlvyEkznRL2-QhhpA_7yE8OyxDQ,2173
+dig_ass_ep_protos/DigitalAssistantEntryPoint_pb2.pyi,sha256=VtbHs0yjEUPUak4zPdpsWy3rXwV5qnAS8Ubj4548Nb0,1455
+dig_ass_ep_protos/DigitalAssistantEntryPoint_pb2_grpc.py,sha256=h0sLqy067Ly9vL0NssQJ2smcoHX3ZZj6QCtsTpbGNDY,3050
+dig_ass_ep_protos/__init__.py,sha256=07NzQXBgNlnw5kSN6ZYxE9By-_RuH3Jyy58Z74sIio0,21
+dig_ass_ep_protos/client.py,sha256=L0r7Hhp4OrADmXBSwOHDFJ_c_QwSYI37sRkMe2spmIM,973
+dig_ass_ep_protos-0.0.1.dist-info/METADATA,sha256=nxr7-51uTE72fTN8TkDCbT8_J3o-d61qyGxajGGUf04,335
+dig_ass_ep_protos-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dig_ass_ep_protos-0.0.1.dist-info/top_level.txt,sha256=PQCUIRWapT8EGtAYQgsf9SiKk5G_m4o13Uh1dl5jRI8,18
+dig_ass_ep_protos-0.0.1.dist-info/RECORD,,
