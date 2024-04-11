@@ -1,0 +1,9 @@
+cyrc/__init__.py,sha256=yfa76SPiWPrDXK6aQXBUbtyErALkfJE7HoV14VqngKg,41
+cyrc/cyrc.cpython-310-i386-linux-gnu.so,sha256=og_QHwXPAVri6PonRIlz5HKQqv1vF94B_cGpQUS9rso,1188556
+cyrc/cyrc.pyx,sha256=UX-S7oPz9Vddqu8kcIDMgHYF6_oKx59e1Y4abOnQL7w,4836
+cyrc/models.py,sha256=dS2YdjQNi46EUJxH5CnroZrPIzOJaJlOwn_ZTbt6X9I,3553
+cyrc-0.1.1.dist-info/top_level.txt,sha256=g3QwuOcRIlGDF0yhPyIseSDDb1MtU44M1K0ff0UEye4,5
+cyrc-0.1.1.dist-info/METADATA,sha256=FUzLSkbfAx7Qfflo-000Vmt_sq2RHexr74nH8mH43U8,2346
+cyrc-0.1.1.dist-info/WHEEL,sha256=w9JaL83FcPuE-HVnuhamKtHtegjC3VYCqac2ROWpwXU,217
+cyrc-0.1.1.dist-info/RECORD,,
+cyrc-0.1.1.dist-info/LICENSE,sha256=-5sTnIJLJfO_2NCSrr9z1xg2dRmpMcirpgxoTIiJW5Y,1065
