@@ -1,0 +1,12 @@
+diffCheck/__init__.py,sha256=kQOJvtmpbHGE0oVJv6oubUfigE6lAOQFBGPyh3SkWZI,21
+diffCheck/df_geometries.py,sha256=15lfsfLw1oytnvue_8yplpz4mP4yiHLvs89TR4lA0lY,9485
+diffCheck/df_joint_detector.py,sha256=DEa0Vln6JvHmbgCa34Prk65e867eUYyfZphotbQ4lMo,7622
+diffCheck/df_transformations.py,sha256=CjpgJvC30K_0gXNNR3Lqt1p4PKcYXwKttfcjJNXL3v4,4604
+diffCheck/df_util.py,sha256=MjsISHiaJzSpBMt7INMkZ5xhdB8lpCmtBB4V2QjOmMc,4166
+diffCheck/diffCheck_app.py,sha256=Utjyg-Qc3kiECCmYsN2ESNJZ_nQc3IdUp5fAPtUTiSM,1065
+diffCheck/joint_detector.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diffCheck/test.py,sha256=pGzAJ65M6Ew5E5645kAiicUQczjNgTrWGvYQSZpo5KM,202
+diffCheck-0.0.3.dist-info/METADATA,sha256=vQG7EcJ3FkDNDpBdj7TRQDewXTz7-ZkqP1WiUIKcTio,745
+diffCheck-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+diffCheck-0.0.3.dist-info/top_level.txt,sha256=E3UbltVp-yr21RtlaZIGVKY7k57TZxtYIA6ERGBIpzY,10
+diffCheck-0.0.3.dist-info/RECORD,,
