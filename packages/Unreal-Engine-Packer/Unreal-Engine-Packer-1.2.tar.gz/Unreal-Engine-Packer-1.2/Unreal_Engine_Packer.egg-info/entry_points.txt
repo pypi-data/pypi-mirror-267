@@ -1,0 +1,2 @@
+[console_scripts]
+uepacker = Source.UePack:main

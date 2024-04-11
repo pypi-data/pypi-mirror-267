@@ -1,0 +1,9 @@
+README.md
+setup.py
+Source/UePack.py
+Source/__init__.py
+Unreal_Engine_Packer.egg-info/PKG-INFO
+Unreal_Engine_Packer.egg-info/SOURCES.txt
+Unreal_Engine_Packer.egg-info/dependency_links.txt
+Unreal_Engine_Packer.egg-info/entry_points.txt
+Unreal_Engine_Packer.egg-info/top_level.txt
