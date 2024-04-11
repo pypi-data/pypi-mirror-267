@@ -1,0 +1,133 @@
+name: Integration Tests
+
+on:
+  workflow_dispatch: 
+    inputs:
+      environment:
+        required: true
+        description: 'The environment to run the tests in'
+        type: environment
+      enabled:
+        required: false
+        description: 'Whether to run the tests'
+        type: boolean
+        default: true
+      infra:
+        required: false
+        description: An infra to use. Empty creates one.
+        type: string
+      logs:
+        required: false
+        description: 'Whether to log the tests'
+        type: boolean
+        default: false
+  workflow_call: 
+    inputs:
+      environment:
+        required: true
+        description: 'The environment to run the tests in'
+        type: string
+      enabled:
+        required: false
+        description: 'Whether to run the tests'
+        type: boolean
+        default: true
+      infra:
+        required: false
+        description: An infra to use. Empty creates one.
+        type: string
+      logs:
+        required: false
+        description: 'Whether to log the tests'
+        type: boolean
+        default: false
+
+jobs:
+  integration_tests:
+    name: Integration
+    runs-on: ubuntu-latest
+    environment: 
+      name: ${{ inputs.environment }}
+    env:
+      DUPLO_HOST: ${{ vars.DUPLO_HOST }}
+      DUPLO_TOKEN: ${{ secrets.DUPLO_TOKEN }}
+    steps:
+  
+    # checkout code 
+    - name: Checkout Code
+      uses: actions/checkout@v4
+      if: inputs.enabled
+    
+    # install python
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      if: inputs.enabled
+      with:
+        python-version: 3.12
+        cache: 'pip'
+    
+    # install the project
+    - name: Install dependencies
+      if: inputs.enabled
+      run: |
+        pip install .[build,test]
+
+    - name: Setup Args
+      id: pytest_args
+      env:
+        INFRA: ${{ inputs.infra }}
+        LOGS: ${{ inputs.logs }}
+      run: |
+        ARGS=(
+          "src"
+          "--junit-xml=test-results.xml"
+          "-m integration"
+        )
+        # if infra is set, add it to the args
+        if [ -n "$INFRA" ]; then
+          ARGS+=("--infra" "$INFRA")
+        fi
+        # if the logs are set, add it to the args
+        if [ "$LOGS" = "true" ]; then
+          ARGS+=("-s")
+        fi
+        echo "PYTEST_ARGS=${ARGS[*]}" >> $GITHUB_OUTPUT
+    
+    # run the tests
+    - name: Test with pytest
+      if: inputs.enabled
+      run: pytest ${{ steps.pytest_args.outputs.PYTEST_ARGS }}
+
+    - name: Surface failing tests
+      if: always() && inputs.enabled 
+      uses: pmeier/pytest-results-action@main
+      with:
+        path: test-results.xml
+        summary: true
+        display-options: fEX
+        fail-on-empty: true
+
+  cleanup:
+    name: Cleanup
+    runs-on: ubuntu-latest
+    if: always()
+    needs: integration_tests
+    environment: 
+      name: ${{ inputs.environment }}
+    env:
+      AWS_DEFAULT_REGION: ${{ vars.AWS_REGION }}
+      AWS_REGION: ${{ vars.AWS_REGION }}
+      DUPLO_HOST: ${{ vars.DUPLO_HOST }}
+      DUPLO_TOKEN: ${{ secrets.DUPLO_TOKEN }}
+    steps:
+
+    - name: Checkout Code
+      uses: actions/checkout@v4
+      
+    - name: Setup
+      uses: duplocloud/actions/setup@main
+      with:
+        admin: true
+
+    - name: Run Cleanup
+      run: ./scripts/aws_cleanup.sh
