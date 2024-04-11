@@ -1,0 +1,7 @@
+requests>=2.31.0
+websocket-client>=1.7.0
+toml>=0.10.2
+pycryptodome>=3.20.0
+pyserial>=3.5
+pytest>=8.1.1
+simplepyble>=0.7.1
