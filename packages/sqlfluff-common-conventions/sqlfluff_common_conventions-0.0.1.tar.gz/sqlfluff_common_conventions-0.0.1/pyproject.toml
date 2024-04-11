@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqlfluff_common_conventions"
+version = "0.0.1"
+authors = [
+  { name="Valerie Tan", email="valerietanhx@gmail.com" },
+]
+description = "A plugin for rules that enforce common SQL conventions not available in SQLFluff, compatible with BigQuery SQL."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["sqlfluff"]
+requires-python = ">=3.8"
+dependencies = [
+  'sqlfluff>=0.4.0'
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.entry-points."sqlfluff"]
+sqlfluff_common-conventions = "sqlfluff_common_conventions"
