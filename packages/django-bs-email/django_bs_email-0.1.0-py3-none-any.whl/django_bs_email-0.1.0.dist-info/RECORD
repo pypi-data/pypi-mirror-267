@@ -1,0 +1,13 @@
+django_bootstrap_email/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_bootstrap_email/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+django_bootstrap_email/apps.py,sha256=9idP39SvLiKePXehjbkreb1dsTJqqBiw65k2fT-2n-E,198
+django_bootstrap_email/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+django_bootstrap_email/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+django_bootstrap_email/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_bootstrap_email/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_bootstrap_email/templatetags/bootstrap_email.py,sha256=DaOXgGdkw5Jr5SQDja6rsuGU5TFKPKiGxGFLDMz0TEs,550
+django_bs_email-0.1.0.dist-info/LICENSE,sha256=2FNw42iVaDatMBlom9-ZZ5f3S230g6NpdVU4EbUm_jA,1072
+django_bs_email-0.1.0.dist-info/METADATA,sha256=etGExpKQ81_FKdwLuKmYM3ZjbBpA7YSr5z-VlGX9IVg,1856
+django_bs_email-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+django_bs_email-0.1.0.dist-info/top_level.txt,sha256=wyR19KRJaoomLa0DXmz2rfex8LLerLgMYh1ggMf4UpI,23
+django_bs_email-0.1.0.dist-info/RECORD,,
