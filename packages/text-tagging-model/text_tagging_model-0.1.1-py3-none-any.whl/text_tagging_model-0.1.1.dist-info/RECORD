@@ -1,0 +1,16 @@
+text_tagging_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+text_tagging_model/logger_config.py,sha256=Fjr-sHmAVHu10PHJtmjWOgHRqoQS14jWrTuYsHMVj9A,1251
+text_tagging_model/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+text_tagging_model/models/metrics.py,sha256=kOx8X0nM-3t0DVbyck0TEH17naQDS2Oi0W7-Blt2vyk,1230
+text_tagging_model/models/rake_extractor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+text_tagging_model/models/rake_extractor/keyphrases_extractor.py,sha256=CVYosYJKarkxgLEeoDi65XwOYfcT39ROgxYJ8r9Dt3U,1526
+text_tagging_model/models/rake_extractor/keyword_extractor.py,sha256=c7wfNn2ErRQ4-Dync9XA8Vdj7YmFulJ_4n44zo3sqGM,3475
+text_tagging_model/processing/__init__.py,sha256=TfnNLibhwu8MzzT1BNDXYgJAmcgQeTBaxezGgomK2bs,216
+text_tagging_model/processing/analyzer/__init__.py,sha256=PIM6c2XqzsDMouksxCZZqFPPurampVw1ViW-CmaUIxE,125
+text_tagging_model/processing/analyzer/word_vector_ranker.py,sha256=TA1jbNh7DJA-coi21czG5p5Ok9GIQtrfSDxRlvhdo1A,2305
+text_tagging_model/processing/normalizers/__init__.py,sha256=m6Ysevg2SDMolTk5KdQGz_3lD5GKdRfIxDm6Wq88Q3M,109
+text_tagging_model/processing/normalizers/text_normalizer.py,sha256=kCEEDIShAo8mAOOIo5kzdYzfh-a1eItLnYnB1KmGOqA,1456
+text_tagging_model/processing/utils.py,sha256=wrmKAZSh3Xi88HzmDF-pTBMAfPVtBLMCU2kUn3_47gs,58
+text_tagging_model-0.1.1.dist-info/METADATA,sha256=ESM5ekPvo3EPd3MhdOLM5BtyYoyu_lHdxKPurt5yWJY,926
+text_tagging_model-0.1.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+text_tagging_model-0.1.1.dist-info/RECORD,,
