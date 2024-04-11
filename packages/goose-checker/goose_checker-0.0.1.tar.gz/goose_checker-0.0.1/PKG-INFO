@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: goose-checker
+Version: 0.0.1
+Summary: State of the Art Silly Goose Detection Technology
+Author: AdamPaslawski
+Author-email: adampaslawski@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: gitpython (>=3.1.43,<4.0.0)
+Requires-Dist: langchain (>=0.1.14,<0.2.0)
+Requires-Dist: langchain-openai (>=0.1.1,<0.2.0)
+Requires-Dist: pydantic (>=2.6.4,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: tiktoken (>=0.6.0,<0.7.0)
+Description-Content-Type: text/markdown
+
+![test](assets/goose_checker.svg)
+
+https://github.com/AdamPaslawski/goose-checker
+
+# goose-checker
+Military Grade Silly Goose Detection
+
