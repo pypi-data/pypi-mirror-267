@@ -1,0 +1,8 @@
+pandas
+argparse
+numpy
+tqdm
+scipy
+statsmodels
+setuptools
+pyarrow
