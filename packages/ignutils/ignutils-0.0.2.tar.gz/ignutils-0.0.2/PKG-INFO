@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ignutils
+Version: 0.0.2
+Summary: A small CV test package
+Author-email: Chinmay <chinmayananda.sahu@ignitarium.com>
+Project-URL: Homepage, https://gitlab.ignitarium.in/ign-ai/internal/ign_py_library/ignutils/-/tree/main?ref_type=heads
+Project-URL: Issues, https://gitlab.ignitarium.in/ign-ai/internal/ign_py_library/ignutils/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: termcolor
+
+# icutils
+<div align="center">
+  <img src="ignitarium-logo.png">
+</div>
+
+
+Python package for reusable modules including AI, CV, audio
