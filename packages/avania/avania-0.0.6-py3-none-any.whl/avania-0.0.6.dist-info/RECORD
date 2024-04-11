@@ -1,0 +1,8 @@
+avania/__init__.py,sha256=IUAF-U_7tvZDsbYrFdGlc4HGEmaz1BzrY-UVV8fmX-8,23
+avania/orm/__init__.py,sha256=yogQiAzcXekZIzvJk4hr6wqX4WgoL9m35zIfx3j1Ckk,26
+avania/orm/mysqli.py,sha256=ZY4N-TIf_VFRE3Dub-9lxyv9zmjqZOl4DguppoulyRc,63
+avania-0.0.6.dist-info/LICENSE,sha256=GmdiJP_wiOTh4WMve3pzjNkO3hg0-c4EfZ7E1kC2-00,1742
+avania-0.0.6.dist-info/METADATA,sha256=2P_p-d-6_ngWLl-SEGPdcR1BIUxX6lcvuKmHIQszqXw,2237
+avania-0.0.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+avania-0.0.6.dist-info/top_level.txt,sha256=Pfm8Z3NqidYQ-WrhzbPXgA3l9zuRNTtCWsxyQhQFbVU,7
+avania-0.0.6.dist-info/RECORD,,
