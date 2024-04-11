@@ -1,0 +1,9 @@
+README.md
+setup.py
+vit_pytorch/__init__.py
+vit_pytorch/lilvit.py
+vit_pytorch_implementation.egg-info/PKG-INFO
+vit_pytorch_implementation.egg-info/SOURCES.txt
+vit_pytorch_implementation.egg-info/dependency_links.txt
+vit_pytorch_implementation.egg-info/requires.txt
+vit_pytorch_implementation.egg-info/top_level.txt
