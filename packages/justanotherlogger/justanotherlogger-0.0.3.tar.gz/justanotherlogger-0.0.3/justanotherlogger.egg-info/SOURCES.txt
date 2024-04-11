@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+justanotherlogger/Logger.py
+justanotherlogger/__init__.py
+justanotherlogger.egg-info/PKG-INFO
+justanotherlogger.egg-info/SOURCES.txt
+justanotherlogger.egg-info/dependency_links.txt
+justanotherlogger.egg-info/top_level.txt
