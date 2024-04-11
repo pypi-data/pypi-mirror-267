@@ -1,0 +1,43 @@
+@property
+def exposed_attributes(self) -> tuple[str, ...]:
+    """
+    Attributes exposed by this wrapper
+    """
+    return (
+    {% for attr_name in exposed_attributes %}
+        "{{ attr_name }}",
+    {% endfor %}
+    )
+
+def __str__(self) -> str:
+    """
+    String representation of self
+    """
+    return to_str(
+        self,
+        self.exposed_attributes,
+    )
+
+def _repr_pretty_(self, p: Any, cycle: bool) -> None:
+    """
+    Pretty representation of self
+
+    Used by IPython notebooks and other tools
+    """
+    to_pretty(
+        self,
+        self.exposed_attributes,
+        p=p,
+        cycle=cycle,
+    )
+
+def _repr_html_(self) -> str:
+    """
+    html representation of self
+
+    Used by IPython notebooks and other tools
+    """
+    return to_html(
+        self,
+        self.exposed_attributes,
+    )
