@@ -1,0 +1,11 @@
+package_demo/__init__.py,sha256=6J0EgZPkdXwhipWn7eMhkIrhyb91epm_1n3nAdfXVYQ,18
+package_demo/my_file.py,sha256=CbkIZr1DJR0n3EcWGkbULQgfVrFvJDyUTJ0MTv9utuY,226
+package_demo/my_other_file.py,sha256=f-SlHv5e34-OAw9B5xtaZwKZwhfuEmQEqEq-FFzU3OI,31
+package_demo/state_info.py,sha256=Je3kP4bEa2h80lL1EC_X3H_d-8hOjya671s-C3r_1UI,696
+package_demo/my_folder/__init__.py,sha256=Bu289DNhZaJx5lJAJaZDnDyqMkb9B5bxFncieXB6UyU,6
+package_demo/my_folder/cities.json,sha256=Ug6FdoCim01dZ1r8M0ch_6d9nx2zecj5cAYSXLEQGF4,4635
+package_demo/my_folder/my_nested_file.py,sha256=X1PstxxwVbnkwQ0_Fiu0Mx2dlqRjfQvI2vcw_PMGuS8,173
+packaging_demo_sheiphan-0.0.2.dist-info/METADATA,sha256=jRzGbRx--WPHAey3U7mjfxgAK1wkfDW9fXmVqrajVGs,864
+packaging_demo_sheiphan-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+packaging_demo_sheiphan-0.0.2.dist-info/top_level.txt,sha256=7C8Emu9cyoRYSWulqo2QbQ7tYRS9k2RxCqQrc_N3VnE,13
+packaging_demo_sheiphan-0.0.2.dist-info/RECORD,,
