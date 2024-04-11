@@ -1,0 +1,19 @@
+{
+    "oConnection": {
+        "connectionType": 0,
+        "name": "ADS : NxAddons",
+        "shortName": "ADS : NxAddons",
+        "documentation": null,
+        "isWritable": true,
+        "tablesNamingConvention": null,
+        "columnsNamingConvention": null,
+        "overrideManualTablesName": false,
+        "overrideManualColumnsName": false,
+        "autoApplyNamingConventions": false,
+        "organizationUnitId": 77,
+        "connectionString": "{\"Username\":\"MET_UAT\",\"Password\":\"Grinch6?Conform?Revert\",\"Host\":\"db-postgresql-ams3-06665-do-user-11304878-0.b.db.ondigitalocean.com\",\"Port\":\"25060\",\"Database\":\"TenantSecrets\"}",
+        "schemaFilter": null,
+        "id": "5d182f60-af6f-4bfe-9990-0edaf2ff116b"
+    },
+    "organizationUnitDisplayName": "MET France"
+}

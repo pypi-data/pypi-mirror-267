@@ -1,0 +1,21 @@
+{
+    "oProject": {
+        "name": "AG - invoice",
+        "documentation": null,
+        "organizationUnitId": 83,
+        "showConnections": true,
+        "showNotifications": false,
+        "showFlows": true,
+        "showForms": false,
+        "showSchedules": false,
+        "showSQLScripts": true,
+        "showShellScripts": true,
+        "showFileProviders": true,
+        "showVariables": true,
+        "showWorkflows": true,
+        "showReports": true,
+        "showWidgets": true,
+        "id": "7316024d-7485-4b92-87b3-fce9be27f367"
+    },
+    "organizationUnitDisplayName": "Open Cell"
+}
