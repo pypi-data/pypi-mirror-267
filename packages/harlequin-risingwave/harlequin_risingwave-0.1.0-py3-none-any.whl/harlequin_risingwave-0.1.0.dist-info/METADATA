@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: harlequin-risingwave
+Version: 0.1.0
+Summary: A Harlequin adapter for Risingwave.
+License: MIT
+Author: ZhengYu, Xu
+Author-email: zen-xu@outlook.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: harlequin (>=1.7,<2.0)
+Requires-Dist: harlequin-postgres (==0.2.2)
+Requires-Dist: psycopg2-binary (>=2.9.9,<3.0.0)
+Description-Content-Type: text/markdown
+
+
