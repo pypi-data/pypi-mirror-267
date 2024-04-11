@@ -1,0 +1,14 @@
+htagui/__init__.py,sha256=jlqoTsjizfsbvQIBxqi5vy6na_waUGpn5SC3wPl7LcQ,802
+htagui/basics/__init__.py,sha256=o5SMbpppWeX9Km1zqtzR-Lpxtlh4KYash2MlcVs86b4,3027
+htagui/common.py,sha256=qH_VrC5f0lE6dLRfBYjVSx2XPUiNvR0IBhp69_eBQlM,1100
+htagui/flex.py,sha256=5TTvYHpELrfdzJAQxVQju3dwQctV7ZsMA0vvsaXIP2w,1856
+htagui/form.py,sha256=5vSBels-mRvuVp-CXuKpazeEsusbSTL6YmC8zWvk5OI,758
+htagui/no_bulma/__init__.py,sha256=PtOf7fOv1XI8Jj4crC-fFGO00c2Thuk1HtXBr78eah8,1545
+htagui/no_shoelace/__init__.py,sha256=fdgCiP7psjkbatPj1fp-UhrMu3B3M_Fi85-Sv3oVN0s,1821
+htagui/splitters.py,sha256=P-r38o55-jYRgqET2OEifixAd2J4fak97f43VAoLR9w,2075
+htagui/tabs.py,sha256=OQjNznu2MgIkFT4px0nPz9uf2LKFnGqR8X8HOZDOFtI,2033
+htagui/uiservice.py,sha256=gWuihbploUPg7y565IvJekK18OoVB17IMnpQBD3cHhU,5315
+htagui-0.0.1.dist-info/LICENSE,sha256=Iv-bZOO7qsBvAgA7yYVtGLTRinYPfZ9Lykw41ZoecZ0,1065
+htagui-0.0.1.dist-info/METADATA,sha256=LN2xBA_XUAJjYubNpYyU-ggMzPSPTpMJj-dYto_Zzwg,3705
+htagui-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+htagui-0.0.1.dist-info/RECORD,,
