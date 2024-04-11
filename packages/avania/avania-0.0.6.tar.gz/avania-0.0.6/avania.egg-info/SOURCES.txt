@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+avania/__init__.py
+avania.egg-info/PKG-INFO
+avania.egg-info/SOURCES.txt
+avania.egg-info/dependency_links.txt
+avania.egg-info/requires.txt
+avania.egg-info/top_level.txt
+avania/orm/__init__.py
+avania/orm/mysqli.py
