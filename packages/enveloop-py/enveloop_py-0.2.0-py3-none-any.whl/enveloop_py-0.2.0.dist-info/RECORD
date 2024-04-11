@@ -1,0 +1,11 @@
+enveloop_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+enveloop_py/api.py,sha256=nCuWgM-LKfXR8QbMT1zH4Rqnl0dWw6b0ucHz3hIdH7A,183
+enveloop_py/client.py,sha256=1HcVClEMqvDV28l1QDNhnSMVykhBu_80BvdCO2IDw6I,1205
+enveloop_py/message.py,sha256=g-YgOIS80N6AvlPm7iSdkiMJkauMd1JAZDkm4Zs3QYI,705
+enveloop_py/message_response.py,sha256=KejX8VNzHsHH83KTvwCk-2RM0nOXr9-Or7o9MzllJjw,710
+enveloop_py/template.py,sha256=M_PkV6BTzilitah20zlLriIQHl4aYeotXd4F-hTflFg,449
+enveloop_py/template_response.py,sha256=p5Ll7kih10ucXL1BeJ2eCbMombDd4T8XTeYejgANuQ0,719
+enveloop_py-0.2.0.dist-info/METADATA,sha256=-QcOiqP-lVt6BN-SiYdgBn0ex3j2bPvHqvOmPWYSquQ,1914
+enveloop_py-0.2.0.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+enveloop_py-0.2.0.dist-info/licenses/LICENSE,sha256=5qDwZ59kZaLPN_GNUNewrAPKUgMy8gqzMaehOpUwsmI,1065
+enveloop_py-0.2.0.dist-info/RECORD,,
