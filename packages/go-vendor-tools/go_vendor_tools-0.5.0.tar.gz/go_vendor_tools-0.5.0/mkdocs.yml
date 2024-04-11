@@ -1,0 +1,55 @@
+---
+# Copyright (C) 2024 Maxwell G <maxwell@gtmx.me>
+# SPDX-License-Identifier: MIT
+site_name: Go Vendor Tools
+docs_dir: doc
+site_url: https://gotmax23.gitlab.io/go-vendor-tools
+repo_url: https://gitlab.com/gotmax23/go-vendor-tools
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - navigation.footer
+    - navigation.sections
+# REUSE-IgnoreStart
+copyright: >
+  Copyright (C) 2024 Maxwell G and contributors |
+  SPDX-License-Identifier: <a style="text-decoration: underline;" href="https://gitlab.com/gotmax23/go-vendor-tools/-/blob/main/LICENSES/MIT.txt?ref_type=heads">MIT</a>
+# REUSE-IgnoreEnd
+markdown_extensions:
+  # Builtin
+  - admonition
+  - attr_list
+  - footnotes
+  - toc:
+      permalink: true
+  # pymdownx
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      provider: gitlab
+      user: "fedora/sigs/go"
+      repo: "go-vendor-tools"
+  - pymdownx.superfences
+plugins:
+  - exclude:
+      glob:
+        - "man/**"
+        - ".gitignore"
+  - gen-files:
+      scripts:
+        - doc/man/mkdocs_mangen.py
+
+nav:
+  - README.md
+  - news.md
+  - contributing.md
+  - Manpages:
+    - "go_vendor_archive(1)": man/go_vendor_archive1.md
+    - "go_vendor_archive_create(1)": man/go_vendor_archive_create1.md
+    - "go_vendor_archive_override(1)": man/go_vendor_archive_override1.md
+  - scenarios.md
+  - config.md
+  - architecture.md
+  - example-specfile.md
