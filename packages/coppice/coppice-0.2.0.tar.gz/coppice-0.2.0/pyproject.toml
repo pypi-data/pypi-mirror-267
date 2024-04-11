@@ -1,0 +1,47 @@
+[build-system]
+requires = [ "maturin<2.0,>=1.4",]
+build-backend = "maturin"
+
+[project]
+name = "coppice"
+version = "0.2.0"
+description = "A python and rust decision tree library"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Rust",
+]
+dependencies = [ "jsonschema", "numpy", "scikit-learn",]
+dynamic = [ "version",]
+
+[project.urls]
+Homepage = "https://github.com/JBwdn/coppice"
+
+[project.scripts]
+coppice = "coppice.scripts:cli_main"
+coppice_ = "coppice.scripts:cli_main"
+
+[project.optional-dependencies]
+dev = [ "black", "ipython", "isort", "maturin", "pre-commit", "pylint", "pyright", "pytest",]
+
+[tool.maturin]
+features = [ "pyo3/extension-module",]
+python-souce = "coppice"
+module-name = "coppice._coppice"
+
+[tool.pylint]
+disable = [ "import-error", "fixme",]
+extension-pkg-whitelist = [ "_coppice",]
+
+[tool.pyright]
+reportMissingImports = false
+pythonVersion = "3.10"
+
+[tool.black]
+target-version = [ "py310",]
+
+[tool.isort]
+profile = "black"
+filter_files = true
