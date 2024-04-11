@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+ASnake.egg-info/PKG-INFO
+ASnake.egg-info/SOURCES.txt
+ASnake.egg-info/dependency_links.txt
+ASnake.egg-info/top_level.txt
+ASnakeData/ASnakeAlias.bat
+ASnakeData/megaTest.asnake
+ASnakeData/setAlias.asnake
