@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyewelink
+Version: 0.2
+Summary: ewelink client debug tools
+Home-page: 
+Author: xwm
+Author-email: xwmdev@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2.31.0
+Requires-Dist: websocket-client >=1.7.0
+Requires-Dist: toml >=0.10.2
+Requires-Dist: pycryptodome >=3.20.0
+Requires-Dist: pyserial >=3.5
+Requires-Dist: pytest >=8.1.1
+Requires-Dist: simplepyble >=0.7.1
+
