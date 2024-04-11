@@ -1,0 +1,83 @@
+{
+    "generate": {
+        "responses": [
+            "Why don't scientists trust atoms? \n Because they make up everything!"
+        ],
+        "finish_reasons": [
+            "stop"
+        ],
+        "prompt": "This is a prompt example. Please complete it with a joke. JOKE:"
+    },
+    "generate_stream": {
+        "responses": [
+            "Why don't scientists trust atoms? \n Because they make up everything!"
+        ],
+        "finish_reasons": [
+            "stop"
+        ],
+        "prompt": "This is a prompt example. Please complete it with a joke. JOKE:"
+    },
+    "tokenizer": {
+        "tokens_ids": [
+            1,
+            851,
+            349,
+            264,
+            2245,
+            2757
+        ],
+        "tokens_nb": 6,
+        "tokens_str": [
+            "<s>",
+            "▁This",
+            "▁is",
+            "▁a",
+            "▁text",
+            "▁example"
+        ]
+    },
+    "decode": {
+        "decoded_string": "<s> Hey, how are you ?",
+        "tokens_str": [
+            "<s>",
+            "▁Hey",
+            ",",
+            "▁how",
+            "▁are",
+            "▁you",
+            "▁?"
+        ]
+    },
+    "split_text": {
+        "split_text": [
+            "Hey, how are you ?",
+            " I am clearly fine.",
+            " And you ? Exceptionally good, thanks for asking."
+        ]
+    },
+    "metadata_text": {
+        "tokens_nb": 6,
+        "truncated_text": "Hey, how are"
+    },
+    "liveness": {
+        "alive": "ok"
+    },
+    "readiness": {
+        "ready": "ok"
+    },
+    "information": {
+        "application": "happy_vllm",
+        "version": "1.0.0",
+        "vllm_version": "0.4.0.post1",
+        "model_name": "Vigostral-7B-Chat-AWQ",
+        "truncation_side": "right",
+        "max_length": 32768
+      },
+    "live_metrics": {
+        "requests_running": 5,
+        "requests_swapped": 3,
+        "requests_pending": 2,
+        "gpu_cache_usage": 0.24,
+        "cpu_cache_usage": 0.36
+    }
+}
