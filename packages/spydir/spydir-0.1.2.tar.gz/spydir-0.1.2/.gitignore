@@ -1,0 +1,8 @@
+__pycache__
+*.py[co]
+/dist
+/build
+/*.egg-info
+/urls.txt
+/results.txt
+/results.json
