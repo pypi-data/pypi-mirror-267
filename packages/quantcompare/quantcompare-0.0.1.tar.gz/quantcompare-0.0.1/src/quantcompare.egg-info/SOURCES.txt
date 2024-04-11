@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+src/quantcompare/__init__.py
+src/quantcompare/main.py
+src/quantcompare.egg-info/PKG-INFO
+src/quantcompare.egg-info/SOURCES.txt
+src/quantcompare.egg-info/dependency_links.txt
+src/quantcompare.egg-info/entry_points.txt
+src/quantcompare.egg-info/requires.txt
+src/quantcompare.egg-info/top_level.txt
