@@ -1,0 +1,10 @@
+xrframes/__init__.py,sha256=flZY6iB1zGePyAgGLnv99ijDj76wn2t6LeGqTOJgfUM,200
+xrframes/_rich_dask.py,sha256=aCeaVj-dN_iFWL2b23KIKwQCtAVcKGRJNsKpLH4PP8U,1260
+xrframes/_rich_joblib.py,sha256=MFDgHubZWkfDCRfm9dOZJJOz4nXfpEd-z_SAEflFfu0,1364
+xrframes/core.py,sha256=l7B0ecg_xEiYXAfXO9RHJdpR6ZAXtiz0yVn5lhywgYI,14650
+xrframes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xrframes/util.py,sha256=ABH7aFLjqJb4WtLNFeYPxMs-7O5PyFnIz8WiodcWd2o,278
+xrframes-0.0.3.dist-info/LICENSE,sha256=QJZDkt5nq7Pto8WzgmPHKnpeTyEyyqscYUFlKoyXgZg,1090
+xrframes-0.0.3.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+xrframes-0.0.3.dist-info/METADATA,sha256=1JV3aPMRC6DySpbD5zGKOWbysf9Bj96RHV0UO-TATz0,2895
+xrframes-0.0.3.dist-info/RECORD,,
