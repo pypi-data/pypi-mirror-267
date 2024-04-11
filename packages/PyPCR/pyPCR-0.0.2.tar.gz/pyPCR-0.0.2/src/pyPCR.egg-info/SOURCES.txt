@@ -1,0 +1,12 @@
+LICENCE.txt
+README.md
+pyproject.toml
+setup.py
+src/pyPCR/Mep_panel.py
+src/pyPCR/Rextractor.py
+src/pyPCR/__init__.py
+src/pyPCR.egg-info/PKG-INFO
+src/pyPCR.egg-info/SOURCES.txt
+src/pyPCR.egg-info/dependency_links.txt
+src/pyPCR.egg-info/requires.txt
+src/pyPCR.egg-info/top_level.txt
