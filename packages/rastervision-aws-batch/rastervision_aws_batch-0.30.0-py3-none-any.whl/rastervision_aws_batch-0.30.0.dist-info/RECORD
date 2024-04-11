@@ -1,0 +1,8 @@
+build/lib/rastervision/aws_batch/__init__.py,sha256=naME5d9aibdujZi2NtWsDMzcG6LEh2oGa4WcPUw4mFg,592
+build/lib/rastervision/aws_batch/aws_batch_runner.py,sha256=KRZRLkCEdLx_eINuKqE7ezTIGILBGD2j3gkrCbEKxN8,6121
+rastervision/aws_batch/__init__.py,sha256=naME5d9aibdujZi2NtWsDMzcG6LEh2oGa4WcPUw4mFg,592
+rastervision/aws_batch/aws_batch_runner.py,sha256=KRZRLkCEdLx_eINuKqE7ezTIGILBGD2j3gkrCbEKxN8,6121
+rastervision_aws_batch-0.30.0.dist-info/METADATA,sha256=PnNQT6BiutVVJeMDT2KUVZH4YCoyJi5YSVxMY-CqXhY,641
+rastervision_aws_batch-0.30.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+rastervision_aws_batch-0.30.0.dist-info/top_level.txt,sha256=hbwIRsmOmybCW98jnELOfmFs6FvpFU4f5lTfecBnP1M,24
+rastervision_aws_batch-0.30.0.dist-info/RECORD,,
