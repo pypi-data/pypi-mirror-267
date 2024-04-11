@@ -1,0 +1,25 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+MAT-Tools.drawio
+MAT-model-Tutorial.ipynb
+README.md
+Steps to Build.txt
+pyproject.toml
+setup.py
+mat_model.egg-info/PKG-INFO
+mat_model.egg-info/SOURCES.txt
+mat_model.egg-info/dependency_links.txt
+mat_model.egg-info/requires.txt
+mat_model.egg-info/top_level.txt
+matmodel/LICENSE
+matmodel/README.md
+matmodel/classes/Aspect.py
+matmodel/classes/Comparator.py
+matmodel/classes/Feature.py
+matmodel/classes/Movelet.py
+matmodel/classes/MultipleAspectSequence.py
+matmodel/classes/Quality.py
+matmodel/classes/Subtrajectory.py
+matmodel/classes/Trajectory.py
+matmodel/classes/__init__.py
