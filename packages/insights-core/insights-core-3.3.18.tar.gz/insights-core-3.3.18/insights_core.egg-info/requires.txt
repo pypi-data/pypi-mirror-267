@@ -1,0 +1,272 @@
+cachecontrol[redis]
+cachecontrol[filecache]
+redis
+lockfile
+cachecontrol
+requests
+six
+defusedxml
+
+[:python_version < "2.7"]
+pyyaml<=3.13,>=3.10
+
+[:python_version <= "2.7"]
+jinja2<=2.11.3
+
+[:python_version > "2.7"]
+jinja2
+
+[:python_version >= "2.7"]
+pyyaml
+
+[client]
+cachecontrol[redis]
+cachecontrol[filecache]
+oyaml
+redis
+lockfile
+python-gnupg==0.4.6
+cachecontrol
+requests
+six
+defusedxml
+
+[client-develop]
+cachecontrol[redis]
+cachecontrol[filecache]
+lockfile
+wheel
+python-gnupg==0.4.6
+mock==2.0.0
+cachecontrol
+redis
+six
+oyaml
+requests
+defusedxml
+
+[client-develop:python_version < "2.7"]
+pytest-cov==2.4.0
+pytest==3.0.6
+flake8==2.6.2
+coverage==4.3.4
+pyyaml<=3.13,>=3.10
+
+[client-develop:python_version <= "2.7"]
+jinja2<=2.11.3
+
+[client-develop:python_version == "2.7"]
+pytest~=4.6.0
+
+[client-develop:python_version > "2.7"]
+jinja2
+
+[client-develop:python_version >= "2.7"]
+pyyaml
+pytest-cov
+flake8
+coverage
+
+[client-develop:python_version >= "3"]
+pytest
+
+[client:python_version < "2.7"]
+pyyaml<=3.13,>=3.10
+
+[client:python_version <= "2.7"]
+jinja2<=2.11.3
+
+[client:python_version > "2.7"]
+jinja2
+
+[client:python_version >= "2.7"]
+pyyaml
+
+[cluster]
+cachecontrol[redis]
+cachecontrol[filecache]
+pandas
+redis
+lockfile
+ansible
+colorama
+cachecontrol
+requests
+six
+defusedxml
+
+[cluster:python_version < "2.7"]
+pyyaml<=3.13,>=3.10
+
+[cluster:python_version <= "2.7"]
+jinja2<=2.11.3
+
+[cluster:python_version > "2.7"]
+jinja2
+
+[cluster:python_version >= "2.7"]
+pyyaml
+
+[develop]
+cachecontrol[redis]
+cachecontrol[filecache]
+nbsphinx
+wheel
+python-gnupg==0.4.6
+colorama
+cachecontrol
+redis
+six
+sphinx_rtd_theme
+Pygments
+ipython<8.7.0
+jedi
+Sphinx
+defusedxml
+pandas
+lockfile
+mock==2.0.0
+ansible
+oyaml
+MarkupSafe==2.0.1
+docutils
+requests
+
+[develop26]
+cachecontrol[redis]
+cachecontrol[filecache]
+pandas
+lockfile
+wheel
+python-gnupg==0.4.6
+colorama
+mock==2.0.0
+cachecontrol
+ansible
+redis
+six
+oyaml
+requests
+defusedxml
+
+[develop26:python_version < "2.7"]
+pytest-cov==2.4.0
+pytest==3.0.6
+flake8==2.6.2
+coverage==4.3.4
+pyyaml<=3.13,>=3.10
+
+[develop26:python_version <= "2.7"]
+jinja2<=2.11.3
+
+[develop26:python_version == "2.7"]
+pytest~=4.6.0
+
+[develop26:python_version > "2.7"]
+jinja2
+
+[develop26:python_version >= "2.7"]
+pyyaml
+pytest-cov
+flake8
+coverage
+
+[develop26:python_version >= "3"]
+pytest
+
+[develop:python_version < "2.7"]
+pytest==3.0.6
+coverage==4.3.4
+pytest-cov==2.4.0
+flake8==2.6.2
+pyyaml<=3.13,>=3.10
+
+[develop:python_version <= "2.7"]
+jinja2<=2.11.3
+
+[develop:python_version == "2.7"]
+pytest~=4.6.0
+
+[develop:python_version > "2.7"]
+jinja2
+
+[develop:python_version >= "2.7"]
+pyyaml
+pytest-cov
+flake8
+coverage
+
+[develop:python_version >= "3"]
+pytest
+
+[docs]
+nbsphinx
+sphinx_rtd_theme
+MarkupSafe==2.0.1
+docutils
+colorama
+Pygments
+ipython<8.7.0
+jedi
+Sphinx
+
+[linting]
+oyaml
+requests
+python-gnupg==0.4.6
+
+[linting:python_version < "2.7"]
+flake8==2.6.2
+
+[linting:python_version >= "2.7"]
+flake8
+
+[openshift]
+cachecontrol[redis]
+cachecontrol[filecache]
+redis
+openshift
+lockfile
+cachecontrol
+requests
+six
+defusedxml
+
+[openshift:python_version < "2.7"]
+pyyaml<=3.13,>=3.10
+
+[openshift:python_version <= "2.7"]
+jinja2<=2.11.3
+
+[openshift:python_version > "2.7"]
+jinja2
+
+[openshift:python_version >= "2.7"]
+pyyaml
+
+[optional]
+python-logstash
+watchdog
+python-statsd
+python-cjson
+
+[testing]
+oyaml
+requests
+python-gnupg==0.4.6
+mock==2.0.0
+
+[testing:python_version < "2.7"]
+pytest==3.0.6
+pytest-cov==2.4.0
+coverage==4.3.4
+
+[testing:python_version == "2.7"]
+pytest~=4.6.0
+
+[testing:python_version >= "2.7"]
+pytest-cov
+coverage
+
+[testing:python_version >= "3"]
+pytest
