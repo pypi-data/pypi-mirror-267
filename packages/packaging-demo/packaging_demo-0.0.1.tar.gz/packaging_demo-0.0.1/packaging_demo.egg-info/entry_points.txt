@@ -1,0 +1,2 @@
+[console_scripts]
+packaging_demo = packaging_demo.main:main

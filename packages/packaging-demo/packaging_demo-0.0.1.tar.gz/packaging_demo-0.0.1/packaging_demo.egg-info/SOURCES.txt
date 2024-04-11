@@ -1,0 +1,11 @@
+README.md
+setup.py
+packaging_demo/__init__.py
+packaging_demo/logic.py
+packaging_demo/main.py
+packaging_demo.egg-info/PKG-INFO
+packaging_demo.egg-info/SOURCES.txt
+packaging_demo.egg-info/dependency_links.txt
+packaging_demo.egg-info/entry_points.txt
+packaging_demo.egg-info/requires.txt
+packaging_demo.egg-info/top_level.txt
