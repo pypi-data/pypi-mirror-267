@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: rtralm
+Version: 0.1
+Summary: Python library for RTRA (Retrieve, Transform, and Adapt) Connector using Hugging Face models
+Author: Udit Raj
+Author-email: udit_2312res708@iitp.ac.in
