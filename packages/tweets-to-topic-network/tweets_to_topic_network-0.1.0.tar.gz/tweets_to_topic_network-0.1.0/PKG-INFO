@@ -1,0 +1,303 @@
+Metadata-Version: 2.1
+Name: tweets-to-topic-network
+Version: 0.1.0
+Summary: internship at uppsala university
+Author: alessiogandelli
+Author-email: alessiogandelli99@gmail.com
+Requires-Python: >=3.9,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: appnope (==0.1.3)
+Requires-Dist: asttokens (==2.2.1)
+Requires-Dist: attrs (==23.1.0)
+Requires-Dist: backcall (==0.2.0)
+Requires-Dist: bertopic (==0.14.1)
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: charset-normalizer (==3.1.0)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: comm (==0.1.3)
+Requires-Dist: contourpy (==1.0.7)
+Requires-Dist: cycler (==0.11.0)
+Requires-Dist: cython (==0.29.34)
+Requires-Dist: debugpy (==1.6.7)
+Requires-Dist: decorator (==5.1.1)
+Requires-Dist: diptest (>=0.5.2,<0.6.0)
+Requires-Dist: executing (==1.2.0)
+Requires-Dist: filelock (==3.12.0)
+Requires-Dist: fonttools (==4.39.3)
+Requires-Dist: fsspec (==2023.4.0)
+Requires-Dist: hdbscan (>=0.8.33,<0.9.0)
+Requires-Dist: huggingface-hub (==0.14.1)
+Requires-Dist: idna (==3.4)
+Requires-Dist: igraph (==0.10.4)
+Requires-Dist: importlib-metadata (==6.6.0)
+Requires-Dist: importlib-resources (==5.12.0)
+Requires-Dist: ipykernel (>=6.24.0,<7.0.0)
+Requires-Dist: jedi (==0.18.2)
+Requires-Dist: jinja2 (==3.1.2)
+Requires-Dist: joblib (==1.2.0)
+Requires-Dist: jsonlines (==3.1.0)
+Requires-Dist: kiwisolver (==1.4.4)
+Requires-Dist: langchain (>=0.1.14,<0.2.0)
+Requires-Dist: latent-ideology (>=0.0.8.2,<0.0.9.0)
+Requires-Dist: llvmlite (==0.39.1)
+Requires-Dist: markupsafe (==2.1.2)
+Requires-Dist: matplotlib (==3.7.1)
+Requires-Dist: matplotlib-inline (==0.1.6)
+Requires-Dist: mpmath (==1.3.0)
+Requires-Dist: nest-asyncio (==1.5.6)
+Requires-Dist: networkx (==3.1)
+Requires-Dist: nltk (==3.8.1)
+Requires-Dist: numba (==0.56.4)
+Requires-Dist: numpy (==1.23.5)
+Requires-Dist: openai (>=0.27.8,<0.28.0)
+Requires-Dist: packaging (>=23.2,<24.0)
+Requires-Dist: pandas (==2.0.1)
+Requires-Dist: parso (==0.8.3)
+Requires-Dist: pexpect (==4.8.0)
+Requires-Dist: pickleshare (==0.7.5)
+Requires-Dist: pillow (==9.5.0)
+Requires-Dist: platformdirs (==3.4.0)
+Requires-Dist: plotly (==5.14.1)
+Requires-Dist: polars (>=0.20.18,<0.21.0)
+Requires-Dist: prompt-toolkit (==3.0.38)
+Requires-Dist: psutil (==5.9.5)
+Requires-Dist: ptyprocess (==0.7.0)
+Requires-Dist: pure-eval (==0.2.2)
+Requires-Dist: pyarrow (>=15.0.2,<16.0.0)
+Requires-Dist: pygments (==2.15.1)
+Requires-Dist: pynndescent (==0.5.10)
+Requires-Dist: pyparsing (==3.0.9)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: python-dotenv (==1.0.0)
+Requires-Dist: python-louvain (>=0.16,<0.17)
+Requires-Dist: pytz (==2023.3)
+Requires-Dist: pyyaml (==6.0)
+Requires-Dist: pyzmq (==25.0.2)
+Requires-Dist: qdrant-client (>=1.8.2,<2.0.0)
+Requires-Dist: regex (==2023.3.23)
+Requires-Dist: requests (==2.29.0)
+Requires-Dist: scikit-learn (==1.2.2)
+Requires-Dist: scipy (==1.10.1)
+Requires-Dist: seaborn (>=0.12.2,<0.13.0)
+Requires-Dist: sentence-transformers (==2.2.2)
+Requires-Dist: sentencepiece (==0.1.98)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: stack-data (==0.6.2)
+Requires-Dist: sympy (==1.11.1)
+Requires-Dist: tenacity (==8.2.2)
+Requires-Dist: threadpoolctl (==3.1.0)
+Requires-Dist: tokenizers (==0.13.3)
+Requires-Dist: torch (==2.0.0)
+Requires-Dist: torchvision (==0.15.1)
+Requires-Dist: tornado (==6.3.1)
+Requires-Dist: tqdm (==4.65.0)
+Requires-Dist: traitlets (==5.9.0)
+Requires-Dist: transformers (==4.28.1)
+Requires-Dist: typing-extensions (==4.5.0)
+Requires-Dist: tzdata (==2023.3)
+Requires-Dist: umap-learn (==0.5.3)
+Requires-Dist: urllib3 (==1.26.15)
+Requires-Dist: uunet (==1.1.4)
+Requires-Dist: wcwidth (==0.2.6)
+Requires-Dist: zipp (==3.15.0)
+Description-Content-Type: text/markdown
+
+# tweets-to-network
+
+
+This repository contains the code to 
+- create networks from a set of tweets in json format (as they come from the API (RIP))
+- label each tweet with a topic using BERTopic
+
+from a set of tweets it is possibile to generate multiple networks:
+- *retweet network*:  a network where the nodes are the users and the edges are the retweets
+- *retweet network multilayer*: a network where the nodes are the users and the edges are the retweets, but the edges are divided in layers based on the topic of the tweet
+- *temporal text network*: a bipartite network where the nodes are the tweets and the users and the edges are the interactions between them
+
+#  Quickstart
+
+```python
+data = Data_processor(file_tweets, file_user, '22')
+data.process_json() # this process the data and creates several dataframes useful for the next steps
+
+tm = Topic_modeler(data.df_original, name = data.name, embedder_name='all-MiniLM-L6-v2', path_cache = data.path_cache)
+df_labeled = tm.get_topics() # this creates a new column in the dataframe with the topic of the tweet
+
+
+df_retweet_labeled = data.update_df(df_labeled) # this updates the dataframe with the labeled topics
+
+nw = Network_creator(df_retweet_labeled, name = data.name, path = data.folder)
+nw.create_retweet_network() # this creates the retweet network
+nw.create_ttnetwork()   # this creates the temporal text network
+nw.create_retweet_ml()  # this creates the multilayer network
+
+```
+
+
+# Input 
+Th input is in [jsonl](https://jsonlines.org/) format, so one JSON per line representing or a user or a tweet depending on the file. You can find an example in [this](https://github.com/alessiogandelli/tweets-to-topic-network/blob/main/data/toy.json) file. This format is the one you can get querying the Twitter API.
+## JSON tweets file 
+The JSON tweets file contains information about all tweets involved in the conversation. Each tweet is represented as a JSON object with the following fields:
+
+- `author`: The ID of the tweet author.
+- `author_name`: The username of the tweet author.
+- `text`: The content of the tweet.
+- `created_At`: The timestamp when the tweet was created.
+- `lang`: The language of the tweet.
+- `reply_count`: The number of replies to the tweet.
+- `retweet_count`: The number of retweets of the tweet.
+- `like_count`: The number of likes on the tweet.
+- `quote_count`: The number of quotes of the tweet.
+- `impression_count`: The number of impressions (times the tweet was displayed) of the tweet.
+- `conversation_id`: The ID of the conversation the tweet belongs to (if available).
+- `referenced_type`: The type of the referenced tweet (if available).
+- `referenced_id`: The ID of the referenced tweet (if available).
+- `mentions_name`: A list of usernames mentioned in the tweet.
+- `mentions_id`: A list of IDs of users mentioned in the tweet.
+
+
+## JSON users file
+The user's file contains information about all users involved in the conversation. Each user is represented as a JSON object with the following fields:
+
+- `id`: The ID of the user.
+- `username`: The username of the user.
+- `tweet_count`: The number of tweets posted by the user.
+- `followers`: The number of followers the user has.
+- `following`: The number of accounts the user is following.
+
+
+# Classes
+The pipeline is divided into three classes, each of them is independent and can be used separately.
+
+- dataProcessor: takes the two json files and creates a pandas dataframe with all the tweets in english. It also creates a cache of the dataframe in csv and pickle format.
+
+- TopicModeler: takes a dataframe and labels the tweets with a topic using BERTopic. It also creates a cache of the labeled dataframe in csv and pickle format.
+
+- NetworkCreator: takes a dataframe of tweets and creates a network from it. It can create a retweet network, a temporal text network, and a multilayer network. The networks are saved in gml format.
+
+
+## Data Processor
+The first step is to initialize the pipeline class giving the two files as input and the name of the COP.
+
+```python
+data = Data_processor(file_tweets, file_user, name)
+data.process_json()
+
+```
+### Under the hood
+Let's see what happen when you run the process_json() function, firstly, if the files are present in the cache folder, it loads them, otherwise, it follows this pipeline:.
+- load_users_json: loads the json file of the users into a dataframe 
+- load_tweets_json: loads the json file of the tweets into a dataframe discarding the tweets with attachments
+- save dataframes: both in pickle (for machines) and csv(for humans) format in the cache folder
+
+### after the topic modeling
+There is the possibility to update the dataframe with the labeled topic, so that the object data contains all the data needed, it gets the labeled dataframe of the original tweets ( the topic modeling is not run on retweets to save save time and energy), and propagate the topic also to the retweets of the original tweets.
+
+```python  
+df_retweet_labeled = data.update_df(df_labeled)
+
+```
+## Topic Modeler
+Then we can get the topics of the tweets using BERTopic, this creates a new column in the dataframe with the topic of the tweet. The topics are saved in a pickle file for caching. In [this](https://github.com/alessiogandelli/topic-modeling-evaluation) repository I conclude that BERTopic is the best topic modeling algorithm for this scenario. You can choose the embedder you prefer
+
+```python
+tm = Topic_modeler(data.df_original, name = data.name, embedder_name='all-MiniLM-L6-v2', path_cache = data.path_cache)
+df_labeled = tm.get_topics()
+
+
+```
+### label topics 
+we use openai gpt3.5turbo model to label the topic using the putput of the cTFIDF and some representative tweets. 
+
+## Network Creator
+Finally we can create the networks using the full dataframe with topic labels. there are 3 possible types of network you can create
+
+```python
+nw = Network_creator(df_retweet_labeled, name = data.name, path = data.folder)
+```
+### Temporal Text Network
+The function creates a [temporal text network](https://appliednetsci.springeropen.com/articles/10.1007/s41109-018-0082-3) and two dictionaries that map the tweet id to its text and the couple (user, tweet) to the time of the tweet. The network is saved in gml format in the `networks` folder.
+
+```python
+nw.create_ttnetwork(project = True)
+```
+
+In this example we can see how a network is built, the small nodes are the tweets, while the other are the authors. The color of the tweets corresponds to the topic of the tweet. The edges are of three types:
+- user-tweet: if the user has tweeted the tweet
+- tweet-user: if the tweet mention the user
+- tweet-tweet: if the tweet retweets the other
+
+![full network](https://github.com/alessiogandelli/tweets-to-topic-network/blob/main/data/full_network.png)
+
+
+
+#### Network projection
+if the project parameter is set to True the network is also projected into a retweet network (this is redundant, you can create a retweets network without passing from the ttn) and a network of retweets for each topic :
+
+In the temporal text network, we have two sets of nodes and we want only one: the authors. To achieve this I used a hybrid approach between iteration and recursion. First, it iterates over all the users, so for each user, the goal now is to create all the edges between this user and others. 
+
+For each user, we iterate over all its tweets recursively searching for the end of the chain. There are a few cases:
+- It is an original tweet with no mentions: do nothing 
+- It is an original tweet mentioning other users: create an edge between the user and the mentioned users
+- It is a retweet: create an edge between the user and the author of the original tweet.
+
+In this process are also involved the topics of the tweets, so while projecting it, a network is created for each topic, and the edges are added to the corresponding network. The networks are saved in gml format in the `networks/projected` folder.
+
+The TTN is a very powerful tool, but it requires a lot of computational power and time. so if you do not need all the information contained, you can create the simple retweet network using the `retweet_network()` or the  `retweet_network_ml()` depending if you are interested in the multilayer network or not.
+
+### Retweet Network
+
+In this network the nodes are the users and the edges are the retweets, the network is saved in gml format in the `networks` folder.
+
+```python
+nw.create_retweet_network()
+```
+
+### Retweet Network Multilayer
+
+
+multiples retweets network created at topic level stacked together
+
+This is an example of how it looks like 
+
+![multilayer network](https://github.com/alessiogandelli/tweets-to-topic-network/blob/main/data/projected_topics_ml.png)
+
+
+
+
+
+#  How to run it
+
+suggestion: create a folder for each set of tweets you want to process, in our case one for each COP. Inside this folder there should be the two jsonl files, one for the tweets and one for the users. After running the main script( either using make or just running main.py) in that folder you will find the following folders:
+
+- `cache`: contains the csv and pickle files of the intermediate steps of the pipeline, from the cleaned dataset in csv to the label of the topics.
+
+- `networks`: contains the gml files of the temporal text network
+
+
+
+
+# A Real Example
+
+Processing around 400k tweets with the hashtag #cop22, this took around 3 hours on 2018 macbook air.
+
+- json tweets: 878 MB
+- csv/pkl tweets: 236 MB
+- retweet gml network: 234 MB
+- projected gml network: 19 MB
+
+## cop 26 
+macbook pro 14 
+
+- json tweets: 14.3 GB (requires a lot of ram)
+- csv/pkl tweets: 1.79 GB
+- temporal text network: 900 MB
+- projected multilayer: 84 MB
+
+2 h for processing the json file 
+4 h for extracting topics 
+18 h for creating the networks 
+
