@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: zacrosio
+Version: 0.1
+Summary: A collective of tools for the preparation of input files for ZACROS
+Home-page: https://github.com/hprats/ZacrosIO
+Download-URL: https://github.com/hprats/ZacrosIO/archive/refs/tags/v_01.tar.gz
+Author: Hector Prats Garcia
+Author-email: hpratsgarcia@gmail.com
+Keywords: KMC,ZACROS
+License-File: LICENSE.txt
+Requires-Dist: pandas
+
