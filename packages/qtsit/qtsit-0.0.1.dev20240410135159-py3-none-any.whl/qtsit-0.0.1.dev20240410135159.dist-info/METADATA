@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: qtsit
+Version: 0.0.1.dev20240410135159
+Summary: QTSIT: Quantum Technologies for Industry Transformation Toolkit
+Home-page: https://github.com/qtsit/qtsit
+Maintainer: QTSIT contributors
+License: MIT
+Project-URL: Documentation, https://qtsit.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/QTSIT/qtsit
+Keywords: qtsit,quantum-chemistry,quantum-computing,quantum-ml,quantum-ai
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9,<3.12
+License-File: LICENSE
+Requires-Dist: joblib
+Requires-Dist: numpy
+
+UNKNOWN
+
