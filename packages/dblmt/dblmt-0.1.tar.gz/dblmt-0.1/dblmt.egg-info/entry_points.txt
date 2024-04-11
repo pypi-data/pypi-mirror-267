@@ -1,0 +1,2 @@
+[console_scripts]
+dblmt = dblmt.core:main
