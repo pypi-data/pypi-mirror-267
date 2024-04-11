@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: viankafl
+Version: 0.1
+Summary: Este es mi paquete pypi
+Author: vianka
+Author-email: vianka726@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# Trabajo de programacion II
+
+# aplicacion del programa
+
+'''
+--------------------------------
+from pypivianka import cal
+
+print(cal.areacir(5))
+
+-------------------------------
+'''
