@@ -1,0 +1,42 @@
+[project]
+name = "nonebot-plugin-akinator"
+dynamic = []
+description = "Internet Genius - Akinator"
+authors = [
+    { name = "student_2333", email = "lgc2333@126.com" },
+]
+dependencies = [
+    "nonebot2>=2.2.0",
+    "nonebot-plugin-alconna>=0.40.1",
+    "nonebot-plugin-session>=0.1.0",
+    "aiohttp>=3.8.4",
+    "pil-utils>=0.1.6",
+]
+requires-python = ">=3.9,<4.0"
+readme = "README.md"
+version = "0.2.0.post1"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/lgc2333/nonebot-plugin-akinator"
+
+[project.optional-dependencies]
+extra = [
+    "aiodns>=3.0.0",
+    "cchardet>=2.1.7",
+]
+
+[tool.pdm.build]
+includes = []
+
+[tool.pdm.version]
+source = "file"
+path = "nonebot_plugin_akinator/__init__.py"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
