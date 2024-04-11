@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/main.py
+src/pubsub_client.egg-info/PKG-INFO
+src/pubsub_client.egg-info/SOURCES.txt
+src/pubsub_client.egg-info/dependency_links.txt
+src/pubsub_client.egg-info/top_level.txt
