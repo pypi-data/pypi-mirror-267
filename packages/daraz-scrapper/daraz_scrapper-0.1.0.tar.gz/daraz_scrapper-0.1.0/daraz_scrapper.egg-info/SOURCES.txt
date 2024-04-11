@@ -1,0 +1,10 @@
+README.md
+setup.py
+daraz_scrapper.egg-info/PKG-INFO
+daraz_scrapper.egg-info/SOURCES.txt
+daraz_scrapper.egg-info/dependency_links.txt
+daraz_scrapper.egg-info/entry_points.txt
+daraz_scrapper.egg-info/requires.txt
+daraz_scrapper.egg-info/top_level.txt
+utils/__init__.py
+utils/user_agent.py
