@@ -1,0 +1,14 @@
+.DS_Store
+LICENSE
+README.md
+setup.py
+solargazer/__init__.py
+solargazer/solargazer.py
+solargazer/test.ipynb
+solargazer.egg-info/PKG-INFO
+solargazer.egg-info/SOURCES.txt
+solargazer.egg-info/dependency_links.txt
+solargazer.egg-info/requires.txt
+solargazer.egg-info/top_level.txt
+solargazer/__pycache__/__init__.cpython-38.pyc
+solargazer/__pycache__/solargazer.cpython-38.pyc
