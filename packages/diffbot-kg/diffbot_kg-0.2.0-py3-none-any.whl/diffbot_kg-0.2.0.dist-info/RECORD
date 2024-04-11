@@ -1,0 +1,17 @@
+diffbot_kg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diffbot_kg/clients/base.py,sha256=xnyXSLFsm5KR07dprwTdklEU1DnXj5MtbUK-q475N-I,3819
+diffbot_kg/clients/enhance.py,sha256=UXUROKkm1mL-Dxu9DXvSz3Io5ut9tmPCaSg05JwYMAs,5850
+diffbot_kg/clients/search.py,sha256=Eg_I7rOogdzFRMPF0hM1SGgcId_F2Vj89toFYICGzjw,2050
+diffbot_kg/clients/session.py,sha256=r3Gh_w7VI-VGiIRDGy3-BlwXC5-Ywf3inn6QypccRhI,3224
+diffbot_kg/models/response/__init__.py,sha256=HKnis2oeaYilmT5KU5jxwlg7_B_Y9OemoGIY5FZ_R0Q,644
+diffbot_kg/models/response/base.py,sha256=TkbLtcw09bgWHO-5wp9325w3UcFPGciEtjASqg_F1s8,1767
+diffbot_kg/models/response/bulkjob_create.py,sha256=wjpLEsUAGizhWWo-CFoymts5W9-5ujWv2KbC12O19Mc,573
+diffbot_kg/models/response/bulkjob_list.py,sha256=j2c64_ztYjR65-RKUx0LVkX6p0KQc8PXaez5NefKYlA,471
+diffbot_kg/models/response/bulkjob_results.py,sha256=gD3l20Bd0Bx-61kzfsW7zH9LU6nKo05kEn8k__C6Wf8,1011
+diffbot_kg/models/response/bulkjob_status.py,sha256=PHRFC9RH245-TyefgPw2ayjZEwxyNM48ftF_oansIGU,786
+diffbot_kg/models/response/coverage_report.py,sha256=ahSzsEATp_yB85leBXy3WkdqHKxLyglSRuSjrSY1Sgg,141
+diffbot_kg/models/response/entities.py,sha256=S4W1cWFmxmgEiLJrs_7W4EAknMuBjUlXclSSwi3E_lk,865
+diffbot_kg-0.2.0.dist-info/LICENSE,sha256=KxXvIu3EOptwbkxIJx53sgj3vGrTHof636FRErq9xiY,1074
+diffbot_kg-0.2.0.dist-info/METADATA,sha256=XVvldtTlSHgM5xOx29nOgUJuDeiLQKNgzh3FYhs2Tts,1896
+diffbot_kg-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+diffbot_kg-0.2.0.dist-info/RECORD,,
