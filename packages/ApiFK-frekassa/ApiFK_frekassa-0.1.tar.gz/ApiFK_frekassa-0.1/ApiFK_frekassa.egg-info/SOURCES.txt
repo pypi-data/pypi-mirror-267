@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ApiFK_frekassa/__init__.py
+ApiFK_frekassa/api.py
+ApiFK_frekassa/api_base.py
+ApiFK_frekassa/utils.py
+ApiFK_frekassa.egg-info/PKG-INFO
+ApiFK_frekassa.egg-info/SOURCES.txt
+ApiFK_frekassa.egg-info/dependency_links.txt
+ApiFK_frekassa.egg-info/requires.txt
+ApiFK_frekassa.egg-info/top_level.txt
