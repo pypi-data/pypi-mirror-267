@@ -1,0 +1,39 @@
+Metadata-Version: 2.3
+Name: coppice
+Version: 0.1.0
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Rust
+Requires-Dist: jsonschema
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: maturin ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pyright ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Provides-Extra: dev
+License-File: LICENSE
+Summary: A python and rust decision tree library
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/JBwdn/coppice
+
+# coppice
+
+Python decision tree and ensemble package using a rust backend.
+
+## Installation
+
+### Development
+
+```bash
+git clone git@github.com:JBwdn/coppice.git
+cd coppice
+pip install -e ".[dev]"
+pre-commit install
+```
+
