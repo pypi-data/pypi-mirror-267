@@ -1,0 +1,9 @@
+arabic_datetime/__init__.py,sha256=K5kZDLNbWdcQMrljULGfeoOnrRJH-L6xPF4sv6J145o,78
+arabic_datetime/arabic_date.py,sha256=2auoWCcwkrBX5K1jNYuJjcJ7Kv6SloE7u5Gq8OxV8d4,8269
+arabic_datetime/arabic_time.py,sha256=SjsYZx341zBqJ1EMQac4sDhNjcC9Z_ni9XwO9i-L-Vo,1324
+arabic_datetime/constants.py,sha256=JxkRZV64NOTTR8CcJ5A6NLXbQhXhjiw_EYTpNw3MGJ8,3768
+arabic_datetime-0.0.0.dist-info/LICENSE,sha256=6r7YXD-p9ftfmk3RtVngQYVpvzd1XEGih3OqAsFNphk,1091
+arabic_datetime-0.0.0.dist-info/METADATA,sha256=T8oLzILAPLN_r3Dwf60qsmQxPa66NrA2mjPRb-POVC4,111
+arabic_datetime-0.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+arabic_datetime-0.0.0.dist-info/top_level.txt,sha256=Zcet212wBPkc8e_qXsA-a0zd3hYM7s0ReY71BH_1dvg,16
+arabic_datetime-0.0.0.dist-info/RECORD,,
