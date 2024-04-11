@@ -1,0 +1,15 @@
+xnode/__init__.py,sha256=WHzLz17Lu9icUGZoHL-ryjMXSxL30mu2xAbBGPlZqFc,23
+xnode/cli.py,sha256=zPdSo9kyg7AELGL3F3xkec-VF6gXFh7j5ZEthqr9EqI,8587
+xnode/files.py,sha256=_aSyUG69uXwE7Z90jJZYyq7jGjxuOJP_j79xYyDrecc,6621
+xnode/pyboard.py,sha256=0CwksEqoW64SvhjHeH8_FT0ncdoFTwSEyrIVW2KBrjo,6497
+xnode/xnode.py,sha256=skPO6nALLt14v24wNlL7CWKBxkt4QG1rud6HgDlsdgY,793
+xnode/pop/autoctrl.py,sha256=8DpIHwXm8WHVv7gpW8cZ8kOZHHj_qiziH9asm7LogN0,6846
+xnode/pop/core.py,sha256=j4pJRc7u-sSqADws5olsicneXKGxfCFHGDIfaB8yv_A,5172
+xnode/pop/ext.py,sha256=P3TcWZPzSxme1qSeK-qyAyqSXon0tfRY8UaxNpL1R8I,4579
+xnode/pop/tphg.py,sha256=G95yduUkAjMGHokm89u3RxJeMiHvBcPe1wgKC2qVYFk,7396
+xnode-1.0.0.1.dist-info/LICENSE,sha256=fXkx5j_Pj8Pcrbfb3buDEGBU-IkpVFi_b4BBy0yFh3A,1088
+xnode-1.0.0.1.dist-info/METADATA,sha256=CeNe6u0e1ETNqzaVRx5GpAxxob0_r3Z3BOj2P6luXGg,2299
+xnode-1.0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+xnode-1.0.0.1.dist-info/entry_points.txt,sha256=D2Bw0xrHbggpdFvUtldoWHrXSD5KmG-OjxHF0p6cMkQ,43
+xnode-1.0.0.1.dist-info/top_level.txt,sha256=o5Ii4BxLMCzIQzzIIliqlofETHdLQQYkaIHungVFaQk,6
+xnode-1.0.0.1.dist-info/RECORD,,
