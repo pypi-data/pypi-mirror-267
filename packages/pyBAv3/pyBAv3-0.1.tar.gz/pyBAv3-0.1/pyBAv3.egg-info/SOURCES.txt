@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyBAv3/BAv2.py
+pyBAv3/__init__.py
+pyBAv3.egg-info/PKG-INFO
+pyBAv3.egg-info/SOURCES.txt
+pyBAv3.egg-info/dependency_links.txt
+pyBAv3.egg-info/top_level.txt
