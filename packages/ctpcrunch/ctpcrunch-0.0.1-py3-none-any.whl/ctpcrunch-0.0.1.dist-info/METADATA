@@ -1,0 +1,45 @@
+Metadata-Version: 2.3
+Name: ctpcrunch
+Version: 0.0.1
+Summary: A small package to compute coherence order transfer paths
+Author-email: Steffen Böckmann <steffen.boeckmann@uni-muenster.de>
+Maintainer-email: Steffen Böckmann <steffen.boeckmann@uni-muenster.de>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: numba>=0.58
+Requires-Dist: numpy>=1.22
+Description-Content-Type: text/markdown
+
+# The ctpcrunch package
+
+The ctpcrunch package is a collection of Python utilities to help understand and develop phase cycles for selecting coherence order transfer paths.
+
+## What is a CTP?
+
+A coherence order transfer path (CTP) describes what quantum mechanical coherence orders are present in a nuclear magnetic resonance experiment at a given point in time.
+
+
+## Quickstart
+
+## Generating and using a CTP object
+
+```python
+import ctpcrunch as cc
+
+myctp = cc.CTP(3)
+
+```
+
+## Examples
+
+### Finding the first cogwheel phase cycle
+
+### Heteronuclear Experiment: INEPT
+
+
+## Todos
+
+- Get done.
