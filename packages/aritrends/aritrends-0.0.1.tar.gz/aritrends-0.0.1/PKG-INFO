@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: aritrends
+Version: 0.0.1
+Summary: This is a file processing library in python.
+Author: Abhineet Raj
+Author-email: <abhineetraj01@outlook.com>
+Keywords: python,qrcode convertor,rar compressor,zip creator,7z creator,image to pdf,file processing,pdf to docx
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Open source python lib from file processing work. Instead of writing old multiline codes, just write one line code and complete your work quickly and efficently.
