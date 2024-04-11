@@ -1,0 +1,9 @@
+toml_to_requirements/__init__.py,sha256=wN7L3h_89bOjiqblt0-cxmVAzDbhFEr6kevoI2xBU6Y,36
+toml_to_requirements/cli.py,sha256=f__L1OgHM4ENxrl7Bo41m3dnX8jg6BzCJ5irsbjDk6M,1355
+toml_to_requirements/convert_toml_to_requirements.py,sha256=di2bMpzqBeur1N9HaEJzr8xgh0YeKp_FB-IoEpn0rGQ,1862
+toml_to_requirements/main.py,sha256=cwd7vAEQyT-fhybwrKSxjXrV5PWxk0Q_mKivLzHVtFM,817
+toml_to_requirements/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+toml_to_requirements-0.2.1.dist-info/METADATA,sha256=F8oAkBR0nOFQG5oGl4AG5LLWOxfCWjXSsziLV4Pb5nk,1427
+toml_to_requirements-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+toml_to_requirements-0.2.1.dist-info/entry_points.txt,sha256=EHmdsrN3_1pI-Gm9IzHcmkRgFSnQMN9yxmgFFx-8Ceo,62
+toml_to_requirements-0.2.1.dist-info/RECORD,,
