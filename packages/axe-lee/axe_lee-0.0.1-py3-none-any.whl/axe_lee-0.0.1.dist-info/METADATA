@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: axe-lee
+Version: 0.0.1
+Summary: just for sample pypi calc
+Home-page: https://github.com/DvaCode/pypi_sample.git
+Download-URL: https://github.com/DvaCode/pypi_sample.git
+Author: axe_lee
+Classifier: Programming Language :: Python :: 3
+
