@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: fapi-ext
+Version: 0.1.1
+Summary: 
+Author: Mike Oz
+Author-email: kozloffsky@hotmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: auth
+Provides-Extra: sqla
+Requires-Dist: email-validator (>=2.1.1,<3.0.0)
+Requires-Dist: fastapi (>=0.110.0,<0.111.0)
+Requires-Dist: jinja2 (>=3.1.3,<4.0.0)
+Requires-Dist: mkdocs (>=1.5.3,<2.0.0)
+Requires-Dist: pydantic (>=2.6.4,<3.0.0)
+Requires-Dist: pydantic-settings (>=2.2.1,<3.0.0)
+Requires-Dist: python-multipart (>=0.0.9,<0.0.10)
+Description-Content-Type: text/markdown
+
+# FastAPI Extensions
+
+## Quick Start
+
+Create new project folder and add virtual env there
+
+
