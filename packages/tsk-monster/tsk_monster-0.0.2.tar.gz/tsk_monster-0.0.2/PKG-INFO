@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tsk-monster
+Version: 0.0.2
+Summary: 
+Author: Gilad Kutiel
+Author-email: giladk@mobileye.com
+Requires-Python: ==3.10.*
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+
