@@ -1,0 +1,8 @@
+packaging>=16.8
+
+[test]
+dkimpy
+pycrypto
+pyspf
+pytest
+rarfile
