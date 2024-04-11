@@ -1,0 +1,6 @@
+ua-parser
+user-agents
+django-ipware
+requests
+
+[dev]
