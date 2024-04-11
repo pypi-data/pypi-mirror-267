@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: avania
+Version: 0.0.4
+Summary: Pays tribute to Laravel
+Author: Simon
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: numpy
+
+# Avania Framework
+
+## Development Team
+
+### Founder
+
+[Simon](https://github.com/StarLxa)
+
+### Developers
+
+[Simon](https://github.com/StarLxa),
+[Tommy](https://github.com/slboki),
+
+### Creative Minds
+
+[Simon](https://github.com/StarLxa),
+[Lionet](https://github.com/lionet1224),
+[Tommy](https://github.com/slboki),
+
+### Documentation Maintainer
+
+[Simon](https://github.com/StarLxa),
+
+## Origins
+
+The development of this project stemmed from our experience using Laravel for project development. However, due to limitations in PHP's underlying structure, such as issues with multithreading and low-level code, we encountered some problems that were difficult to resolve. As a result, we decided to switch to Python for development. However, we found that most Python frameworks' usage patterns were relatively outdated and lacked the elegance of Laravel. Therefore, we embarked on developing the Avania framework to address these issues.
+
+## Project Components
+
+- **AVANIA-ORM**: A low-level database connection framework built on MySQL.
+- **AVANIA-ROUTE**: A routing system based on Flask and WSGI.
+- **AVANIA-MIDDLEWARES**: Middleware for AVANIA-ROUTE.
+- **AVANIA-EXCEPTIONS**: Global exception handling.
+- **AVANIA-I18N**: Multilingual support, coming soon.
+- **AVANIA-CRON**: Scheduled tasks, coming soon.
+- **AVANIA-SOCKET**: WebSocket task queue, coming soon.
+- **AVANIA-AI**: Includes image recognition and other AI processing libraries, coming soon.
+- **AVANIA-MONITOR**: Connection to cameras, coming soon.
+- **More**: We also encourage everyone to submit their desired features to the issues section. We value each submission and will respond promptly. Don't hesitate to share your ideas!
+
+## Usage
+
+Please refer to the specific documentation for each module.
+
+---
+
+We welcome everyone to submit more code to maintain this project. Each person whose code submission is approved will be added to the list of developers.
+
+---
+
+Our vision for this project is to surpass Laravel and become even more convenient and powerful.
+
+
