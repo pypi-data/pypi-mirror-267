@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fd2py
+Version: 1.1
+Summary: This script can convert the txt file of the session saved by the Fidder to Python requests
+Home-page: UNKNOWN
+Author: Ming Gw
+Author-email: 2775218480@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
+
