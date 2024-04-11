@@ -1,0 +1,51 @@
+from bbot.modules.sslcert import sslcert
+from bbot.core.errors import ValidationError
+
+
+class sni_brute(sslcert):
+    watched_events = ["OPEN_PORT_SSL"]
+    produced_events = ["DNS_NAME"]
+    flags = ["active", "aggressive"]
+    meta = {
+        "description": "Brute-force SSL certificates",
+    }
+    options = {"timeout": 5.0, "skip_non_ssl": True}
+    options_desc = {"timeout": "Socket connect timeout in seconds", "skip_non_ssl": "Don't try common non-SSL ports"}
+    deps_apt = ["openssl"]
+    deps_pip = ["pyOpenSSL"]
+    max_threads = 50
+    _priority = 2
+
+    def filter_event(self, event):
+        if self.helpers.is_ip(event.host):
+            return False, "Only hostnames are accepted, not IPs"
+        if self.skip_non_ssl and event.port in self.non_ssl_ports:
+            return False, f"Port {event.port} doesn't typically use SSL"
+        return True
+
+    def handle_event(self, event):
+        """
+        TODO: detect sni, baseline serial number?
+        """
+        delimiters = (".", "-", "")
+        is_domain = self.helpers.is_domain(event.data)
+        resolved_hosts = [i for i in event.resolved_hosts if self.helpers.is_ip(i)]
+        if not resolved_hosts:
+            self.debug(f"{event}is unresolved")
+            return
+        ip = next(iter(resolved_hosts))
+        if is_domain:
+            delimiters = (".",)
+        host_segments = event.data.split(".")
+        dns_name_stub = host_segments[0]
+        dns_name_rest = host_segments[1:]
+        for mutation in self.helpers.word_cloud.mutations(dns_name_stub, cloud=False):
+            if is_domain and not mutation[-1] == dns_name_stub:
+                continue
+            for delimiter in delimiters:
+                host = ".".join([delimiter.join(mutation)] + dns_name_rest)
+                dns_names, emails = self.visit_host(ip, event.port, sni_override=host, force=True)
+                for dns_name in dns_names:
+                    if not dns_name == event.data:
+                        self.hugesuccess(dns_name)
+                        await self.emit_event(dns_name, "DNS_NAME", source=event)
