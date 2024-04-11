@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+django_vue_admin.egg-info/PKG-INFO
+django_vue_admin.egg-info/SOURCES.txt
+django_vue_admin.egg-info/dependency_links.txt
+django_vue_admin.egg-info/top_level.txt

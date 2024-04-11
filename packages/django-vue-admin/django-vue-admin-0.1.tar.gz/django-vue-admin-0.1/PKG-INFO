@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: django-vue-admin
+Version: 0.1
+Project-URL: Repository, https://github.com/Innova-Group-LLC/custom_admin
+Project-URL: Documentation, https://innova-group-llc.github.io/custom_admin_docs/
+Keywords: django,admin
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Django Custom Admin
+
+[Documentation](https://innova-group-llc.github.io/custom_admin_docs/)
+
+## Vue frontend
+
+```
+cd vue_frontend
+npm install
+```
+
+```
+npm run serve
+npm run build
+```
+
+## Build and deploy package
+```
+python -m build
+python3 -m twine upload --repository pypi dist/* --verbose
+```
