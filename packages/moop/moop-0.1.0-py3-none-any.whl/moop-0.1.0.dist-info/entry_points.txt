@@ -1,0 +1,3 @@
+[console_scripts]
+moop=moop.__main__:entry
+
