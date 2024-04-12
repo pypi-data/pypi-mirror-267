@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+bsl_translator_fingerspelling.egg-info/PKG-INFO
+bsl_translator_fingerspelling.egg-info/SOURCES.txt
+bsl_translator_fingerspelling.egg-info/dependency_links.txt
+bsl_translator_fingerspelling.egg-info/top_level.txt
+src/__init__.py
+src/dataset_creator.py
+src/image_processing.py
+src/training.py
+src/translate.py
+src/translator_fingerspelling.py
