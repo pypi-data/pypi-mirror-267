@@ -1,0 +1,5 @@
+requests
+snappy
+
+[dev]
+pip-tools
