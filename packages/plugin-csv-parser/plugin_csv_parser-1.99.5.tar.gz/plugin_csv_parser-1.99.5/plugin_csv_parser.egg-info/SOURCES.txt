@@ -1,0 +1,5 @@
+setup.py
+plugin_csv_parser.egg-info/PKG-INFO
+plugin_csv_parser.egg-info/SOURCES.txt
+plugin_csv_parser.egg-info/dependency_links.txt
+plugin_csv_parser.egg-info/top_level.txt
