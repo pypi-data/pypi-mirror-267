@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mypandas2024-JKK
+Version: 0.0.2
+Summary: oss-dev mypandas app 0002
+Home-page: 
+Author: Jaekyeong_Kim
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib.pyplot
+Requires-Dist: scipy.stats
+
