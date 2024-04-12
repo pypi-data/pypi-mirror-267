@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: gage
+Version: 0.1.0
+Summary: Model evaluation and publishing toolkit
+Author-email: Garrett Smith <garrett@placeon.earth>
+Project-URL: Homepage, https://github.com/gageml/gage
+Project-URL: Bug Tracker, https://github.com/gageml/gage/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+License-File: AUTHORS.md
+Requires-Dist: click ==8.1.7
+Requires-Dist: chardet ==5.2.0
+Requires-Dist: human-readable ==1.3.4
+Requires-Dist: jschon ==0.11.0
+Requires-Dist: lark ==1.1.7
+Requires-Dist: libcst ==1.0.1
+Requires-Dist: natsort ==8.4.0
+Requires-Dist: proquint ==0.2.1
+Requires-Dist: psutil ==5.9.5
+Requires-Dist: python-ulid ==2.2.0
+Requires-Dist: pyyaml ==6.0.1
+Requires-Dist: requests ==2.31.0
+Requires-Dist: rich ==13.5.2
+Requires-Dist: setuptools ==68.2.2
+Requires-Dist: tomli ==2.0.1
+Requires-Dist: gage-typer ==0.9.0
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: groktest ; extra == 'dev'
+
+# Gage
+
+Gage is a tool for running model evaluations and publishing results.
+It's under active development by the team that developed Guild AI.
+
+## Installing
+
+Install the latest version of Gage using `pip`:
+
+``` shell
+pip install gage
+```
+
+## Contributing
+
+We warmly encourage contributions to this project at any level. We are
+committed to growing and supporting a rich, diverse set of contributors.
+If you would like to contribute something, feel free to [open an
+issue](https://github.com/gageml/gage/issues) to ask questions, make
+suggestions, or otherwise let us know what you're thinking. Changes to
+the project are accepted using GitHub pull requests.
+
+Please read [Contributor Covenant Code of Conduct](CONTRIBUTING.md) to
+familiarize yourself with the project code of conduct and contribution
+policy. If you feel that something is missing from this document or
+could be improved, please let us know by either opening an issue or by
+emailing the project administrator at garrett@placeon.earth. Private
+correspondence via email will be held in strict confidence.
+
+### Setting up a Local Development Environment
+
+1. Fork the source code repository at https://github.com/gageml/gage
+
+2. Create a project-specific virtual environment. **Use Python 3.10 or
+   later.**
+
+   ``` shell
+   cd gage
+   virtualenv --python python3.10 .venv  # Any version >= 3.10 is okay
+   ```
+
+3. Activate the virtual environment and use `pip` to install the project
+   as "editable".
+
+   ``` shell
+   source .venv/bin/activate  # Works on most POSIX shells - change as needed
+   pip install -e '.[dev]'    # Installs gage and its dev requirements
+   ```
+
+4. Run tests using [Groktest](https://github.com/gar1t/groktest)
+   (optional).
+
+   ``` shell
+   groktest .
+   ```
