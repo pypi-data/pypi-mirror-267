@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: daraz-scrapper
+Version: 0.1.1
+Summary: A scrapper for Daraz platform
+Home-page: https://github.com/Anas-art-source/daraz_scrapper
+Author: Anas Khan
+Author-email: anas985822@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: bs4
+Requires-Dist: lxml
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: tqdm
+
+# daraz_scrapper
+
+A comprehensive scraper for the Daraz online marketplace. This package is designed to extract product information across various categories, search results, and individual shops within the Daraz platform.
+
+## Features
+
+- Retrieve product details including name, price, brand, images, and more.
+- Navigate through categories and subcategories to collect product data.
+- Extract search results based on specific search terms.
+- Scrape data from individual shop URLs.
+
+## Installation
+
+Install `daraz_scrapper` using pip:
+
+```shell
+pip install daraz_scrapper
+
