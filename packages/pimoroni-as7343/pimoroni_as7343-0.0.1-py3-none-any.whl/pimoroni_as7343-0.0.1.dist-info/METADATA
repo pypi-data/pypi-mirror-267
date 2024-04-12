@@ -1,0 +1,75 @@
+Metadata-Version: 2.3
+Name: pimoroni-as7343
+Version: 0.0.1
+Summary: python library for the AS7343 spectral sensor
+Project-URL: GitHub, https://www.github.com/pimoroni/as7343-python
+Project-URL: Homepage, https://www.pimoroni.com
+Author-email: Philip Howard <phil@pimoroni.com>
+Maintainer-email: Philip Howard <phil@pimoroni.com>
+License: MIT License
+        
+        Copyright (c) 2023 Pimoroni Ltd.
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: Pi,Raspberry
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Hardware
+Requires-Python: >=3.7
+Requires-Dist: i2cdevice>=1.0.0
+Description-Content-Type: text/markdown
+
+# AS7343 Spectral Sensor
+
+[![Build Status](https://img.shields.io/github/actions/workflow/status/pimoroni/as7343-python/test.yml?branch=main)](https://github.com/pimoroni/as7343-python/actions/workflows/test.yml)
+[![Coverage Status](https://coveralls.io/repos/github/pimoroni/as7343-python/badge.svg?branch=main)](https://coveralls.io/github/pimoroni/as7343-python?branch=main)
+[![PyPi Package](https://img.shields.io/pypi/v/pimoroni-as7343.svg)](https://pypi.python.org/pypi/pimoroni-as7343)
+[![Python Versions](https://img.shields.io/pypi/pyversions/pimoroni-as7343.svg)](https://pypi.python.org/pypi/pimoroni-as7343)
+
+Suitable for detecting the properties of ambient light, light passing through a liquid or light reflected from an object the AS7343 spectral sensor has 6 spectral channels at 450 (violet), 500 (blue), 550 (green), 570 (yellow), 600 (orange) and 650nm (red).
+
+# Installing
+
+Stable library from PyPi:
+
+* Just run `python3 -m pip install pimoroni-as7343`
+
+Latest/development library from GitHub:
+
+* `git clone https://github.com/pimoroni/as7343-python`
+* `cd as7343-python`
+* `./install.sh --unstable`
+
+
+0.0.1
+-----
+
+* Initial Release
