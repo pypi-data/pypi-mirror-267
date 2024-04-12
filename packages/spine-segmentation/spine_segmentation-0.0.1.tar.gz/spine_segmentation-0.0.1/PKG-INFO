@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: spine-segmentation
+Version: 0.0.1
+Summary: Anatomical labeling of the spine in small field-of-view MRI scans
+Author: Brutenis Gliwa
+Author-email: brutenis@gmail.com
+Requires-Python: >=3.8.1,<3.12.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: lightning (>=2.2.1,<3.0.0)
+Requires-Dist: loguru (>=0.7.0,<0.8.0)
+Requires-Dist: numpy (>=1.23.0,<2.0.0)
+Requires-Dist: onnx (>=1.14.1,<2.0.0)
+Requires-Dist: onnxruntime (>=1.15.1,<2.0.0)
+Requires-Dist: onnxruntime-gpu (>=1.15.1,<2.0.0)
+Requires-Dist: pandas (<2)
+Requires-Dist: torch (>=2.1.1,<3.0.0)
+Requires-Dist: torch-geometric (>=2.3.1,<3.0.0)
+Requires-Dist: torchvision (>=0.17.2,<0.18.0)
+Description-Content-Type: text/markdown
+
+<h1 align="center">Spine</h1>
+
+A python library including pretrained models in order to annotate vertebrae and IVDs (intevertebral discs) on small FOV (field-of-view) MRIs. This was created as part of my [master's thesis](https://brutenis.net/master-thesis) which was submitted on 9 November 2023.
+
+## Showcase
+
+Below three spines can be seen which were automatically segmented from MRI images using this library. **(a)** shows sacralization (lack of lumbar vertebra L5), **(c)** shows lumbarization (additional vertebra L6). **(b)** shows a normal spine.
+
+![](media/showcase.png)
+
+
+## Workflow
+
+Initially, 162 samples annotated by experts are utilized to train a preliminary segmentation model.
+This model is then employed to segment an extensive dataset of 10,833 MRI scans.
+The segmented data is separated into vertebrae and IVDs, leveraging the fact that all instances can be inferred in a complete MRI scan by assuming the topmost vertebra is C2.
+By cropping images from the large dataset, a substantial training set is generated.
+This set is used to train an anatomical labeling segmentation model specifically for small FOV MRI images.
+
+![](media/workflow.png)
+
+## Installation
+
+```sh
+poetry install
+```
+
