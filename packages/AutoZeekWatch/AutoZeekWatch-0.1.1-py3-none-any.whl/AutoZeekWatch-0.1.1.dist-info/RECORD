@@ -1,0 +1,13 @@
+NIDS/__init__.py,sha256=ES4ktliHAeBNOLwNxy6DrlC9dl0j8CGJNogzqZ09Qck,62
+NIDS/infer.py,sha256=tIIQJOmA7_kZ-ft_bVRFhQd1ekKxZU-Bno2E9ZgNF0Q,5678
+NIDS/train.py,sha256=ULWm-N-Gmikvm05p-7XblXeaGl75wXp1ihAd_dHAyco,8778
+NIDS/utils.py,sha256=hACCTHIaF3tb5cKePkIwCiqQm1vq_S6dhVxPqYiJDfI,14214
+package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/data_preprocess.py,sha256=ELSZzZLWtMiZFPyvBUCVTga8r6u87ClUS4M-EHdpCj0,10086
+package/pred_kitnet.py,sha256=naBxxNu3rlRLtCRx8nV4OFp0i0EfmU0izTUvVvvMC4Q,4933
+package/train_kitnet.py,sha256=y92WRJq7vzmcaoo4IJiIh6fCqi9LRjZpSvS38oSbeUU,4445
+AutoZeekWatch-0.1.1.dist-info/LICENSE,sha256=1OhVJHa2Wb8aONHp0xBrIo12Ibf7Egeb67AL2Qbhuu4,1065
+AutoZeekWatch-0.1.1.dist-info/METADATA,sha256=CNXFBfJtTJR-650YY5LWcND-Uy62x0twkGwiFiJ8P3M,1641
+AutoZeekWatch-0.1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+AutoZeekWatch-0.1.1.dist-info/top_level.txt,sha256=-wHVV5FRuFU7N_a66Q7c-I7bGUK66ZtGuluSw3ROmbo,13
+AutoZeekWatch-0.1.1.dist-info/RECORD,,
