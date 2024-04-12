@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/tushare_interface/__init__.py
+src/tushare_interface/tushare_interface.py
+src/tushare_interface.egg-info/PKG-INFO
+src/tushare_interface.egg-info/SOURCES.txt
+src/tushare_interface.egg-info/dependency_links.txt
+src/tushare_interface.egg-info/requires.txt
+src/tushare_interface.egg-info/top_level.txt
+tests/test_tushare_interface.py
