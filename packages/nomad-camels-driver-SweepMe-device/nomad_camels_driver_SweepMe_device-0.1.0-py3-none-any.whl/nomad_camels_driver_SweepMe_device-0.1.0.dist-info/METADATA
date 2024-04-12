@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: nomad_camels_driver_SweepMe_device
+Version: 0.1.0
+Summary: Instrument driver wrapper to enable usage of SweepMe! drivers
+Author-email: FAIRmat - HU Berlin <nomad-camels@fau.de>
+Project-URL: GitHub Page, https://github.com/FAU-LAP/NOMAD-CAMELS
+Project-URL: GitHub Drivers, https://github.com/FAU-LAP/CAMELS_drivers
+Project-URL: Documentation, https://fau-lap.github.io/NOMAD-CAMELS/doc/instruments/instruments.html
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Requires-Python: >=3.9.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: nomad-camels >=1.0.4
+Requires-Dist: pysweepme >=1.5.6
+
+# NOMAD-CAMELS Driver for SweepMe! device drivers
+
+Wrapper for the device drivers by [SweepMe!](https://sweep-me.net/) written for the measurement software [NOMAD CAMELS](https://fau-lap.github.io/NOMAD-CAMELS/).
+
+
+
+## Usage
+To use this wrapper, you need to install the drivers of SweepMe! seperately. You can find them on their [website](https://sweep-me.net/devices) or get them from their [GitHub page](https://github.com/SweepMe/instrument-drivers).
+
+Please note that this provides only a wrapper for the drivers of SweepMe! and may not support all functions. If you find any issues, please feel free to [report an issue](https://github.com/FAU-LAP/CAMELS_drivers/issues).
+
+The single drivers might need additional python packages. Those are not required by this package! Please make sure you have the appropriate libraries for the instrument you want to use.
+
+
+## Documentation
+
+For more information visit the [documentation of NOMAD CAMELS](https://fau-lap.github.io/NOMAD-CAMELS/doc/instruments/instruments.html) and the [SweepMe! wiki](https://wiki.sweep-me.net/wiki/Main_Page).
+
