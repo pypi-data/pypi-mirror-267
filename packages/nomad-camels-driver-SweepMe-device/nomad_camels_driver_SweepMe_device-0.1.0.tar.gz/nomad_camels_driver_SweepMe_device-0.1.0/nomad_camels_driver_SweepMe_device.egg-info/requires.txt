@@ -1,0 +1,2 @@
+nomad-camels>=1.0.4
+pysweepme>=1.5.6
