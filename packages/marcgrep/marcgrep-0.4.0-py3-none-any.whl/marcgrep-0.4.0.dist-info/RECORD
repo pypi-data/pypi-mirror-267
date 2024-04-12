@@ -1,0 +1,6 @@
+marcgrep/cli.py,sha256=cUQgsCz4agUeqdfjG1kBbonLbtW6JlbeKzmtYv4AA6Y,1842
+marcgrep/filter.py,sha256=mxZu1D7wwRgUmZNZqYwRD7LmGrL7aw7fS59JK5S65xE,3840
+marcgrep-0.4.0.dist-info/METADATA,sha256=IAZztbTNdzQ1Ullxa1Y4T2QPccZEbm6GehUeisb3ZTI,4783
+marcgrep-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+marcgrep-0.4.0.dist-info/entry_points.txt,sha256=bSFMiZ0ZiNlC2jZyRSnm7YePHoRKad1QpsnPRpDBDkA,46
+marcgrep-0.4.0.dist-info/RECORD,,
