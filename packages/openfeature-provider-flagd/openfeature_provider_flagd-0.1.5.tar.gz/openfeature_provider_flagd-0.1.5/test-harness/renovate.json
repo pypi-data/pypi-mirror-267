@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "semanticCommitType": "feat",
+  "regexManagers": [
+    {
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": ["ghcr\\.io\\/open-feature\\/flagd:(?<currentValue>.*?)\\n"],
+      "depNameTemplate": "open-feature/flagd",
+      "datasourceTemplate": "github-releases"
+    }
+  ]
+}
