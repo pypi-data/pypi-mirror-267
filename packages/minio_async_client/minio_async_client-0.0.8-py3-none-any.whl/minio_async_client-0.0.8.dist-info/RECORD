@@ -1,0 +1,11 @@
+minio_async_client/__init__.py,sha256=ZSwbiVJKDGviechfSl1cjplc8nyl09sEeW781Pz5RTo,51
+minio_async_client/api.py,sha256=_cPhGMQEoirRrnL54vKVJrqrIKmkXSAHpXj2wUAurP0,7175
+minio_async_client/item/__init__.py,sha256=rumh11zX6p7y4V5gZsug6_uR-dFj67LdnG5cod4XXSo,177
+minio_async_client/item/bucket.py,sha256=KnQ5j_Ljud98VZqe4KQi1ZN4SeSRGcDIpRKWN4-xfko,2045
+minio_async_client/item/item.py,sha256=IuSmN3oVkQGcZcBI7ZtVG9hAS6-uBjC7QcJp_xXG0AE,176
+minio_async_client/item/method_http_request.py,sha256=PU4qlNpzimbpu60Y1suarJRfgl85nyh_uqPgY1aTH-U,127
+minio_async_client/item/token.py,sha256=jlU-MHp8bx4L3C41kuGENKR1iTcOVI_WvHVLE1Ysuo8,5576
+minio_async_client/session/__init__.py,sha256=idLVwgJWrEx7yg7WRAiJbSK9bvpmd0iocGTZuFBKKuE,711
+minio_async_client-0.0.8.dist-info/METADATA,sha256=oTCAmke6qwZQ4nuzcbZ9hqiEHfGxrBsqPJOSN9Rd2-o,549
+minio_async_client-0.0.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+minio_async_client-0.0.8.dist-info/RECORD,,
