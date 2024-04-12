@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "AITracker"
+version = "0.9.5"
+authors = [{ name = "Jacob Hogrefe and Emilio Cruz" }]
+description = "The AITracker neural network and it's implementation."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Development Status :: 4 - Beta",
+]
+dependencies = [
+    "dlib==19.24.4",
+    "h5py==3.11.0",
+    "numpy==1.26.4",
+    "opencv-python==4.9.0.80",
+    "scikit-learn==1.4.2",
+    "scipy==1.13.0",
+    "tensorflow==2.16.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/AITrackerDev/AITracker"
+Issues = "https://github.com/AITrackerDev/AITracker/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+AITracker = ["image_classifier6.model/"]
