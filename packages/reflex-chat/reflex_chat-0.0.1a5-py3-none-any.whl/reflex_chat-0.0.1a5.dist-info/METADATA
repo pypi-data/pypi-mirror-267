@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: reflex-chat
+Version: 0.0.1a5
+Summary: A chat component that can be hooked up to any LLM.
+Author-email: Nikhil Rao <nikhil@reflex.dev>
+License: Apache-2.0
+Project-URL: homepage, https://github.com/picklelo/reflex-chat
+Project-URL: source, https://github.com/picklelo/reflex-chat
+Keywords: reflex,reflex-custom-components
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: reflex >=0.4.2
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# chat
+
+A Reflex custom component chat.
+
+## Installation
+
+```bash
+pip install reflex-chat
+```
