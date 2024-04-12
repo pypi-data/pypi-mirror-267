@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+cogapi.egg-info/PKG-INFO
+cogapi.egg-info/SOURCES.txt
+cogapi.egg-info/dependency_links.txt
+cogapi.egg-info/requires.txt
+cogapi.egg-info/top_level.txt
