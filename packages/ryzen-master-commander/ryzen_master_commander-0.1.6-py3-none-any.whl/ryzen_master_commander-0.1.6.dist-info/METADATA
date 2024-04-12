@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ryzen-master-commander
+Version: 0.1.6
+Summary: A GUI application for monitoring and controlling fan and tdp settings on Ryzen-based systems.
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: ttkbootstrap
+
