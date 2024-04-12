@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: jupyterlab-datalogs
+Version: 0.0.0
+Summary: JupyterLab extension for DataLogs.
+Author: Alex Hadley
+Author-email: contact@alexhadley.net
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# JupyterLab DataLogs
+
+Coming soon.
+
