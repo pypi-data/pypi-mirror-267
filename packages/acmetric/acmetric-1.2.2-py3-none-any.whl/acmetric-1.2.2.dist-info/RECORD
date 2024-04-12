@@ -1,0 +1,11 @@
+acmetric/Oswald-Regular.ttf,sha256=CxedSeo3HTVceChj4T_c_poKJzdQlXTQdYD12lphKUE,63900
+acmetric/__init__.py,sha256=BqT9NcroxggtmlLg5dL2k9almup0wWP2JvW1vxiv_KQ,1076
+acmetric/colors.py,sha256=YmOeVIagW-7vN9gqkdsIU-QP61PDExEQFC5ZmR3G_4c,659
+acmetric/fonts.py,sha256=TenrmVcCQfVuVoDr7Rue3iC-JJAQkEzG9Uy2VgbZJC4,327
+acmetric/params.py,sha256=YXYXWo_vfI4wjL8wlHsU30uwJ4irbfjPNmanLwj0LMs,3120
+acmetric/plots.py,sha256=WFNu4aj4PwlKAH6aHnEHpLcu6lVzKQ7aw3-SRd86NSs,19807
+acmetric-1.2.2.dist-info/LICENCE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+acmetric-1.2.2.dist-info/METADATA,sha256=UG4rflIkuPzVZ97Hxs-n-BrgOeUjRDu3IBYjg23hLzc,3442
+acmetric-1.2.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+acmetric-1.2.2.dist-info/top_level.txt,sha256=f7mpP5H2AATRs_gmlNBbwPUkR9-QpbgeBWwgdjcounI,9
+acmetric-1.2.2.dist-info/RECORD,,
