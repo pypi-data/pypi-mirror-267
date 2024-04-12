@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+BS_BMDEV.egg-info/PKG-INFO
+BS_BMDEV.egg-info/SOURCES.txt
+BS_BMDEV.egg-info/dependency_links.txt
+BS_BMDEV.egg-info/top_level.txt
