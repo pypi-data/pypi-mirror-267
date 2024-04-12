@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+areaoffigure.egg-info/PKG-INFO
+areaoffigure.egg-info/SOURCES.txt
+areaoffigure.egg-info/dependency_links.txt
+areaoffigure.egg-info/top_level.txt

@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: areaoffigure
+Version: 0.0.1
+Summary: This is the module for finding area of figures
+Home-page: https://github.com/Varakin-Kirill/AreaOfFigure
+Author: Skkiba
+Author-email: kirilld1122@gmail.com
+Project-URL: GitHub, https://github.com/Varakin-Kirill
+Keywords: area figures
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+---
+
+# Area Of Figure
+
+Это модуль, который позволяет вычислять площадь различных геометрических фигур, таких как круг и треугольник.
+
+## Описание работы
+
+### Класс Shape
+Этот абстрактный класс определяет метод area(), который должен быть переопределен в дочерних классах.
+
+### Класс Circle(Shape)
+Дочерний класс, представляющий круг. Имеет метод area(), который вычисляет площадь круга по формуле π * r^2.
+
+### Класс Triangle(Shape)
+Дочерний класс, представляющий треугольник. Имеет метод area(), который вычисляет площадь треугольника по формуле Герона. Также содержит метод isRect(), который проверяет, является ли треугольник прямоугольным.
+
+## Пример использования
+## Создание объектов круга и треугольника
+circle = Circle(5)
+triangle = Triangle(3, 4, 5)
+
+## Вычисление площадей фигур
+circle_area = circle.area()
+triangle_area = triangle.area()
+
+## Проверка на прямоугольность треугольника
+is_rectangular = triangle.isRect()
+
+print("Площадь круга:", circle_area)
+
+print("Площадь треугольника:", triangle_area)
+
+print("Прямоугольный треугольник?", is_rectangular)
