@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+Scripts/DataManager.py
+Scripts/__init__.py
+Scripts/plotData.py
+pd_data_manager.egg-info/PKG-INFO
+pd_data_manager.egg-info/SOURCES.txt
+pd_data_manager.egg-info/dependency_links.txt
+pd_data_manager.egg-info/requires.txt
+pd_data_manager.egg-info/top_level.txt
