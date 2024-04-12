@@ -1,0 +1,2 @@
+[console_scripts]
+lama2923 = lama2923.main:main_func
