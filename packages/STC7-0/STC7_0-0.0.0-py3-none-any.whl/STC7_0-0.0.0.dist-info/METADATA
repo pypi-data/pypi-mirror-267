@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: STC7-0
+Version: 0.0.0
+Download-URL: https://github.com/Choicode0895/lumi_oss/archive/refs/tags/v1.0.0.zip
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: pandas
+
