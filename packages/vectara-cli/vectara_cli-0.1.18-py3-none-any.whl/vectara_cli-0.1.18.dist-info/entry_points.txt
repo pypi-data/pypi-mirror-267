@@ -1,0 +1,3 @@
+[console_scripts]
+vectara = vectara_cli.main:main
+vectara-cli = vectara_cli.main_adv:main
