@@ -1,0 +1,371 @@
+{% extends 'components/layouts/BaseLayoutAdmin.html' %}
+{% from "admin/components/table/table-row.html" import render_field %}
+{% from 'admin/components/actions/table-action-component.html' import render_table_row_actions without context %}
+{% from 'macros/flash-messages.html' import flash_messages %}
+{% set models=data_model.models %}
+{% set resource=data_model.resource %}
+{% set page_title=page_title|replace("_", " ") %}
+{% set edit_actions=edit_actions %}
+
+{% block content scoped %}
+
+
+    <div class="row">
+        {{ flash_messages() }}
+        <div class="col-12 float-end">
+
+        </div>
+
+        <div class="col-lg-9">
+            <div class="card">
+                <div class="card-body mb-3">
+                    <form class='row'
+                          data-hx-post='{{ submit_url }}'
+                          data-hx-target="#edit-{{ data_model.name.singular|lower }}-form"
+                          data-hx-encoding="multipart/form-data"
+                          data-hx-select="#edit-{{ data_model.name.singular|lower }}-form"
+                          data-hx-swap="outerHTML"
+                          data-hx-indicator="#save-changes-{{ resource|lower }}-loader"
+                          id='edit-{{ data_model.name.singular|lower }}-form' enctype='multipart/form-data'>
+                        {% for field in fields() %}
+                            {% if field.type != 'repeater' and field.type != "custom" %}
+                                {% set model = result_set %}
+                                {% include 'admin/components/forms/ReusableForm.html' %}
+                            {% elif field.type != 'repeater' and field.type == "custom" %}
+                                {% include field.view %}
+                            {% endif %}
+                        {% endfor %}
+                        <input type="hidden" name="save-action" id="save-action">
+                        <button id='edit-{{ data_model.name.singular|lower }}-form-submit-btn' type="submit"
+                                class="btn btn-primary d-none">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        {% if model_key(result_set, 'created_at') %}
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body mb-3">
+                        <p class="d-block" style="font-weight: bold">Created at</p>
+                        <p class="d-block">{{ model_key(result_set, 'created_at').diff_for_humans() }}</p>
+                        <p class="d-block" style="font-weight: bold">Last modified at</p>
+                        <p class="d-block">{{ model_key(result_set, 'updated_at').diff_for_humans() }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+
+
+    <div id='repeater-area' data-hx-swap-oob="true">
+        {% for field in fields() %}
+            {% if field.type == "repeater" %}
+                <br>
+                <hr>
+                {% include 'admin/components/forms/Repeater.html' %}
+            {% endif %}
+        {% endfor %}
+    </div>
+
+
+    {% if data_model.table.relations() %}
+        {% for relation_ in data_model.table.relations() %}
+            {% if relation_.can_view %}
+                <div id="tableCheckbox"
+                     class="mx-n4 px-4 mx-lg-n6 px-lg-6 bg-white border-bottom border-200 position-relative top-1 mt-5">
+
+                    <div class="card-body p-0">
+                        <div class="p4 code-to-copy">
+                            <div class="table-list">
+                                {% if get_type(relation_) == 'str' %}
+                                    {% set relation = {
+                "name": relation_,
+                "heading": pluralize(relation_)|replace("_", " ")|title,
+                "description": relation_,
+                "class_": relation_.title()
+                } %}
+                                {% else %}
+                                    {% set relation = relation_ %}
+                                {% endif %}
+                                {% set relationship_class = get_class(singularize(relation.class_), 'admin') %}
+                                {% set relationship_model = get_class(singularize(relation.model)) %}
+                                <h4 class="pt-2 pb-5">{{ relation.heading }}</h4>
+                                <div class="table-responsive scrollbar mb-3"
+                                     id='relationship-{{ relation.name }}-table'>
+                                    {% if not model_key(result_set, relation.name) %}
+                                        <p class='text-center mb-0 p-5'>No data to display</p>
+                                    {% else %}
+                                        {% set relationship_result_set = model_key(result_set, relation.name) %}
+
+
+                                        <!-- Bulk Actions Buttons Section -->
+                                        <div id="{{ relation.name }}-bulkActionsSection" class="mb-4"
+                                             style="opacity: 0">
+                                            <button id="{{ relation.name }}-bulkActionDelete"
+                                                    class="btn btn-danger btn-sm"
+                                                    data-hx-post="/mvlive/{{ relation.class_ }}"
+                                                    data-hx-target="#{{ singularize(relation.name)|title }}-table"
+                                                    data-hx-select="#{{ singularize(relation.name)|title }}-table"
+                                                    data-hx-swap="outerHTML"
+                                                    data-hx-vals='js:{"method": "bulk_delete", "args": {{ relation.name }}_get_selected_items(),  "csrf_token": "{{ csrf_token() }}", "action_type": "bulk"}'
+                                            >Delete Selected
+                                            </button>
+                                            {% if relationship_class.get_table_bulk_actions() %}
+                                                {% for action in relationship_class.get_table_bulk_actions() %}
+                                                    <button class="btn btn-primary btn-sm"
+                                                            data-hx-post="/mvlive/{{ relation.class_ }}"
+                                                            data-hx-target="#{{ singularize(relation.name)|title }}-table"
+                                                            data-hx-select="#{{ singularize(relation.name)|title }}-table"
+                                                            data-hx-swap="outerHTML"
+                                                            data-hx-vals='js:{"method": "{{ action.name }}", "args": {{ relation.name }}_get_selected_items(),  "csrf_token": "{{ csrf_token() }}", "action_type": "bulk"}'
+                                                            {% if action.requires_confirmation %}
+                                                                {% if action.confirmation_text %}
+                                                            data-hx-confirm="{{ action.confirmation_text }}"
+                                                                {% else %}
+                                                            data-hx-confirm="Are you sure you wish to {{ action.label }} selected {{ data_model.name.plural|lower }}?"
+                                                                {% endif %}
+                                                            {% endif %}
+                                                    >{{ action.label }}
+                                                    </button>
+                                                {% endfor %}
+                                            {% endif %}
+                                        </div>
+
+                                        <table id='{{ singularize(relation.name)|title }}-table'
+                                               data-hx-swap-oob="true"
+                                               class="table table-sm fs--1 mb-0 overflow-hidden">
+                                            <thead class="text-900">
+                                            <tr>
+                                                <th class="sort pe-1 align-middle white-space-nowrap border-end pe-3">
+                                                    <div class="form-check form-check-primary">
+                                                        <input class="form-check-input"
+                                                               id="{{ relation.name }}-checkbox_parent_all"
+                                                               type="checkbox"
+                                                               onchange="{{ relation.name }}_selectAll()">
+                                                    </div>
+                                                </th>
+                                                <script>
+                                                    function {{ relation.name }}_selectAll() {
+                                                        let checkboxes = document.querySelectorAll('.{{ relation.name }}-checkbox-item');
+                                                        let selectAllCheckbox = document.getElementById('{{ relation.name }}-checkbox_parent_all');
+                                                        checkboxes.forEach(function (checkbox) {
+                                                            checkbox.checked = selectAllCheckbox.checked;
+                                                        });
+                                                        {{ relation.name }}_checkBulkActions(); // Check bulk actions after selecting all checkboxes
+                                                    }
+
+                                                    function {{ relation.name }}_checkBulkActions() {
+                                                        let checkboxes = document.querySelectorAll('.{{ relation.name }}-checkbox-item');
+                                                        let bulkActionsSection = document.getElementById('{{ relation.name }}-bulkActionsSection');
+                                                        let anyCheckboxChecked = Array.from(checkboxes).some(function (checkbox) {
+                                                            return checkbox.checked;
+                                                        });
+                                                        if (anyCheckboxChecked) {
+                                                            bulkActionsSection.style.opacity = 1;
+                                                        } else {
+                                                            bulkActionsSection.style.opacity = 0;
+                                                        }
+                                                    }
+
+                                                    function {{ relation.name }}_get_selected_items() {
+                                                        let selected_items = [];
+                                                        let checkboxes = document.querySelectorAll('.{{ relation.name }}-checkbox-item');
+                                                        checkboxes.forEach(function (checkbox) {
+                                                            if (checkbox.checked) {
+                                                                selected_items.push(checkbox.value);
+                                                            }
+                                                        });
+                                                        return selected_items.toString();
+                                                    }
+                                                </script>
+                                                {% for field in relationship_class.get_table().__dict__() %}
+                                                    {% include 'admin/components/table/table-head.html' %}
+                                                {% endfor %}
+                                                <th>
+
+                                                </th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% if get_type(relationship_result_set) == "Collection" %}
+                                                {% for answer in relationship_result_set %}
+                                                    {% set data_model=compile_admin_model(relation.class_, result_set=answer) %}
+                                                    {% set relation_table_fields = relationship_class.get_table().__dict__() %}
+                                                    <tr id="result-{{ singularize(relation.name)|lower }}-{{ answer[relationship_model.get_primary_key()] }}">
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input {{ relation.name }}-checkbox-item"
+                                                                       type="checkbox"
+                                                                       name="selected_items[]" value="{{ answer.id }}"
+                                                                       onchange="{{ relation.name }}_checkBulkActions()">
+                                                            </div>
+                                                        </td>
+                                                        {% for field in relation_table_fields %}
+                                                            {% set fields = relation_table_fields %}
+                                                            {% set relationship = True %}
+                                                            {% set resource = relation.name %}
+                                                            {% set field = field %}
+                                                            {% set result = answer %}
+
+                                                            {{ render_field(data_model, field, result) }}
+                                                        {% endfor %}
+                                                        <td class="align-middle white-space-nowrap text-end pe-0 ps-4 btn-reveal-trigger"
+                                                            data-hx-preserve="true"
+                                                            id="{{ relation.name }}-table-actions-group-{{ answer[relationship_model.get_primary_key()] }}">
+                                                            <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2"
+                                                                    type="button" data-bs-toggle="dropdown"
+                                                                    data-boundary="window"
+                                                                    aria-haspopup="true" aria-expanded="false"
+                                                                    data-bs-reference="parent">
+                                                                <svg class="svg-inline--fa fa-ellipsis fs--2"
+                                                                     aria-hidden="true"
+                                                                     focusable="false" data-prefix="fas"
+                                                                     data-icon="ellipsis"
+                                                                     role="img"
+                                                                     xmlns="http://www.w3.org/2000/svg"
+                                                                     viewBox="0 0 448 512"
+                                                                     data-fa-i2svg="">
+                                                                    <path fill="currentColor"
+                                                                          d="M120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200C94.93 200 120 225.1 120 256zM280 256C280 286.9 254.9 312 224 312C193.1 312 168 286.9 168 256C168 225.1 193.1 200 224 200C254.9 200 280 225.1 280 256zM328 256C328 225.1 353.1 200 384 200C414.9 200 440 225.1 440 256C440 286.9 414.9 312 384 312C353.1 312 328 286.9 328 256z"></path>
+                                                                </svg>
+                                                                <!-- <span class="fas fa-ellipsis-h fs--2"></span> Font Awesome fontawesome.com -->
+                                                            </button>
+                                                            <div class="dropdown-menu dropdown-menu-end py-2" style="">
+
+
+                                                                {{ render_table_row_actions(data_model, resource=data_model.name.singular, result=answer, relationship_name_on_model=relation.name) }}
+                                                                <div class="dropdown-divider"></div>
+
+                                                                <a
+                                                                        class="dropdown-item" href="#!">View</a><a
+                                                                    class="dropdown-item"
+                                                                    href="/admin/{{ pluralize(relation.class_)|lower }}/{{ answer[relationship_model.get_primary_key()] }}">Edit</a>
+                                                                <div class="dropdown-divider"></div>
+                                                                <a class="dropdown-item text-danger"
+                                                                   data-hx-get="/admin/{{ pluralize(relation.class_)|lower }}/{{ answer[relationship_model.get_primary_key()] }}/delete"
+                                                                   data-hx-confirm="Are you sure you want to delete this {{ singularize(relation.name)|lower }}?"
+                                                                   data-hx-target="#result-{{ relation.name|lower }}-{{ answer[relationship_model.get_primary_key()] }}"
+                                                                   data-hx-swap="outerHTML"
+                                                                   href="#!">Remove</a>
+                                                            </div>
+
+
+                                                        </td>
+                                                    </tr>
+                                                {% endfor %}
+                                            {% else %}
+                                                {% set answer = relationship_result_set %}
+                                                {% set data_model=compile_admin_model(relation.class_, result_set=answer) %}
+                                                {% set relation_table_fields = relationship_class.get_table().__dict__() %}
+                                                <tr id="result-{{ singularize(relation.name)|lower }}-{{ answer[relationship_model.get_primary_key()] }}">
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input {{ relation.name }}-checkbox-item"
+                                                                   type="checkbox"
+                                                                   name="selected_items[]" value="{{ answer.id }}"
+                                                                   onchange="{{ relation.name }}_checkBulkActions()">
+                                                        </div>
+                                                    </td>
+                                                    {% for field in relation_table_fields %}
+                                                        {% set fields = relation_table_fields %}
+                                                        {% set relationship = True %}
+                                                        {% set resource = relation.name %}
+                                                        {% set field = field %}
+                                                        {% set result = answer %}
+                                                        {{ render_field(data_model, field, result) }}
+                                                    {% endfor %}
+                                                    <td class="align-middle white-space-nowrap text-end pe-0 ps-4 btn-reveal-trigger"
+                                                        data-hx-preserve="true"
+                                                        id="{{ relation.name }}-table-actions-group-{{ answer[relationship_model.get_primary_key()] }}">
+                                                        <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                data-boundary="window"
+                                                                aria-haspopup="true" aria-expanded="false"
+                                                                data-bs-reference="parent">
+                                                            <svg class="svg-inline--fa fa-ellipsis fs--2"
+                                                                 aria-hidden="true"
+                                                                 focusable="false" data-prefix="fas"
+                                                                 data-icon="ellipsis"
+                                                                 role="img"
+                                                                 xmlns="http://www.w3.org/2000/svg"
+                                                                 viewBox="0 0 448 512"
+                                                                 data-fa-i2svg="">
+                                                                <path fill="currentColor"
+                                                                      d="M120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200C94.93 200 120 225.1 120 256zM280 256C280 286.9 254.9 312 224 312C193.1 312 168 286.9 168 256C168 225.1 193.1 200 224 200C254.9 200 280 225.1 280 256zM328 256C328 225.1 353.1 200 384 200C414.9 200 440 225.1 440 256C440 286.9 414.9 312 384 312C353.1 312 328 286.9 328 256z"></path>
+                                                            </svg>
+                                                            <!-- <span class="fas fa-ellipsis-h fs--2"></span> Font Awesome fontawesome.com -->
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-end py-2" style="">
+                                                            {% set relation_table_actions = relationship_class.get_table_actions() %}
+                                                            {% set data_model=compile_admin_model(relation.class_, result_set=answer) %}
+                                                            {{ render_table_row_actions(data_model, resource=data_model.name.singular, result=answer, relationship_name_on_model=relation.name) }}
+                                                            <div class="dropdown-divider"></div>
+
+                                                            <a class="dropdown-item" href="#!">View</a>
+                                                            <a class="dropdown-item"
+                                                               href="/admin/{{ pluralize(relation.class_)|lower }}/{{ answer[relationship_model.get_primary_key()] }}">Edit</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item text-danger"
+                                                               data-hx-get="/admin/{{ pluralize(relation.class_)|lower }}/{{ answer[relationship_model.get_primary_key()] }}/delete"
+                                                               data-hx-confirm="Are you sure you want to delete this {{ singularize(relation.name)|lower }}?"
+                                                               data-hx-target="#result-{{ relation.name|lower }}-{{ answer[relationship_model.get_primary_key()] }}"
+                                                               data-hx-swap="outerHTML"
+                                                               href="#!">Remove</a>
+                                                        </div>
+
+
+                                                    </td>
+                                                </tr>
+                                            {% endif %}
+                                            </tbody>
+                                        </table>
+
+
+                                    {% endif %}
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    {% if edit_actions %}
+        {% for action in edit_actions %}
+            <mv-{{ action.view }} resource="{{ resource }}" id="{{ id }}"
+                                  edit_action="{{ action.name }}"></mv-{{ action.view }}>
+        {% endfor %}
+    {% endif %}
+
+    {% if data_model.table.preview_column %}
+        <div class="modal fade modal-xl" id="preview-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">{{ singularize(data_model.resource_alias) }}
+                            Preview</h5>
+                        <button class="btn p-1" type="button" data-bs-dismiss="modal" aria-label="Close"><span
+                                class="fas fa-times fs--1"></span></button>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer border-0 d-none">
+                        <button class="btn btn-primary" type="button">Okay</button>
+                        <button class="btn btn-outline-primary" type="button" data-bs-dismiss="modal">Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    <div id="modal-containers"></div>
+
+
+{% endblock %}
