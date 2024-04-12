@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: starlight_toolkit
+Version: 0.1.0
+Summary: A set of tools to manage the Starlight spectral synthesis code.
+Home-page: https://github.com/arielwrl/starlight_toolkit
+Author: Ariel Werle
+Author-email: ariel.werle@inaf.it
+Requires-Python: >=3, <4
+License-File: LICENSE.txt
+
