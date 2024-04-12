@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: preoccupied
+Version: 1.0.0
+Summary: The preoccupied namespace package
+Home-page: https://github.com/obriencj/python-proxytype
+Author: Christopher O'Brien
+Author-email: obriencj@preoccupied.net
+License: GNU General Public License v3 (GPLv3)
+Project-URL: Source, https://github.com/obriencj/python-preoccupied
+Project-URL: Issues, https://github.com/obriencj/python-preoccupied/issues
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Overview
+
+This [python] package is a claim on the preoccupied namespace in [PyPI].
+
+[python]: https://python.org
+
+[pypi]: https://pypi.org
+
+
+## Reasoning
+
+Namespace claims are part of the suggested pattern from [PEP-0423].
+
+[PEP-0423]: https://peps.python.org/pep-0423
+
+I have been guilty in the past of polluting the top-level namespace
+with experimental projects that are only there to satisfy my own
+curiosity. This namespace is an attempt to correct that.
+
+In addition to utilizing this namespace for personal one-off projects
+in the future, I will also be re-homing some existing projects. Some
+candidates for the preoccupied namespace are:
+
+* [python-mapbind](https://github.com/obriencj/python-mapbind)
+* [python-brine](https://github.com/obriencj/python-brine)
+* [python-livelocals](https://github.com/obriencj/python-livelocals)
+* [python-promises](https://github.com/obriencj/python-promises)
+* [python-values](https://github.com/obriencj/python-values)
+* [python-withscope](https://github.com/obriencj/python-withscope)
+
+
+## Contact
+
+Author: Christopher O'Brien  <obriencj@preoccupied.net>
+
+Original Git Repository: <https://github.com/obriencj/python-preoccupied>
+
+
+## License
+
+This library is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or (at
+your option) any later version.
+
+This library is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this library; if not, see <http://www.gnu.org/licenses/>.
