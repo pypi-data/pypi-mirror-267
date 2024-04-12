@@ -1,0 +1,17 @@
+./.gitignore,sha256=ihQc17bVJjD6v8FCge51KB0u3me3rdvLlskyTu1WZ0k,10
+./LICENSE,sha256=Lxp7vEEHFDMN0umW0bFk8jhEGfWpzSggS58-MxpuqFU,1009
+./README.md,sha256=zwPXtUP8b6OhnTX8rTFsD5XoQkVxbXP25eeQys6Gejc,2312
+./README.rst,sha256=cdDmhfafrehfMmAOHOh-_warbXqgjeqfsDn1wtMAzNU,2516
+./README_es.md,sha256=OhnW6c7e2rgNlZ8SjnchTA4qK5wBH7EwcA-U5fri3e0,2596
+./README_es.rst,sha256=lXJu4GNQwzIimtNMfYoMQFjMtFoSe794aZraJjEkwE0,2804
+./pyproject.toml,sha256=SA9q9bb-x6sNuLDfOeKFQl7RMhnubM9gb0AUz1ZZ0RI,1075
+./django_analytics_simple/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+./django_analytics_simple/admin.py,sha256=r3kwQZCW-bbnhnN8njB1fOfccKEcyeJUoXn4bEHWXc4,427
+./django_analytics_simple/apps.py,sha256=h_CrKCq_vYh0DD9nbhJV8O9CN2jtWtd7vzQFl1Ry4kk,158
+./django_analytics_simple/middleware.py,sha256=HUGtSmqvBu93j1d3YITBLTbsWqYL7JoA_9ZBvu1Z7pw,1977
+./django_analytics_simple/models.py,sha256=kLHm572m9c9ml1fBTXRejD_FpwGziNFLd2GlxY2dWho,605
+./django_analytics_simple/data/GeoLite2-City.mmdb,sha256=sbPZ8vzFwoAy47dnvOXsWywTA9-jxYYZqoXz7ypypsE,54193223
+django_analytics_simple-2024.0.8.dist-info/METADATA,sha256=LsGXvJVgmeWIUNsRZPZnNzNnLkJMcAu6Na8y9phsNC4,4268
+django_analytics_simple-2024.0.8.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+django_analytics_simple-2024.0.8.dist-info/licenses/LICENSE,sha256=Lxp7vEEHFDMN0umW0bFk8jhEGfWpzSggS58-MxpuqFU,1009
+django_analytics_simple-2024.0.8.dist-info/RECORD,,
