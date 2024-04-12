@@ -1,0 +1,10 @@
+sandesh_py/__init__.py,sha256=ctVZ63HPRYavgwCAFcnOkBddq6aYTGM6vKTfk4xTkY0,35
+sandesh_py/attachments.py,sha256=qmY-cG02nQZQEbca3NrccXJyTrUAF5dFfORDb1-5fCo,2170
+sandesh_py/mailer.py,sha256=-UegOxVY4kx_59_QvEF80kjn7NNjmcbGUK7HSVlrnZ8,1669
+sandesh_py/smtp.py,sha256=XyQW1JMqBskqoSHaC3aWZfoiJxl0XatN3lHgX6ZIAgo,3323
+sandesh_py/types.py,sha256=IG5hMAJqEe_AxLnwI4C23F2ZZBcU6VKX6IeRgSIrCrk,436
+sandesh.py-0.0.1.dist-info/LICENSE,sha256=W8eQjEENHc_qJgf4vIs6eAF12RplcR4J_ULf9ps1DY0,1070
+sandesh.py-0.0.1.dist-info/METADATA,sha256=iZBrDSdffG_chRBydgpfAVwcLrelKHMA-xb4fmW0sqs,1667
+sandesh.py-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sandesh.py-0.0.1.dist-info/top_level.txt,sha256=qRZYPdrWgM31C4wZhMYDChr7iJIFyrH8E0NFzmgf2VE,11
+sandesh.py-0.0.1.dist-info/RECORD,,
