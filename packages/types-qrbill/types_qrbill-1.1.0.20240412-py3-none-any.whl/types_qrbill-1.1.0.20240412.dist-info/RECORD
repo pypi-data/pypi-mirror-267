@@ -1,0 +1,8 @@
+qrbill-stubs/METADATA.toml,sha256=6jF3R-BcnRrOk8yo9YhAtUk-rRAJotldiZPpmpnhP1g,111
+qrbill-stubs/__init__.pyi,sha256=qao6anbJ6UHrMG6K7waU508IHK4au4R6g-Tg7VERQ5k,35
+qrbill-stubs/bill.pyi,sha256=vNxUKK_b2Hr1Dhsc8Sjzzh6HUEeQMaDGi2XHiCUaFoQ,6465
+qrbill-stubs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_qrbill-1.1.0.20240412.dist-info/METADATA,sha256=1Nq3kk8wvWeKIm3_98IN0vHXA1acBIjenjH7FylrC7g,1586
+types_qrbill-1.1.0.20240412.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+types_qrbill-1.1.0.20240412.dist-info/top_level.txt,sha256=_ql9P67VzmRLguqkAUFsu9Vq2_0dMBgx10UCBlxbOSQ,13
+types_qrbill-1.1.0.20240412.dist-info/RECORD,,
