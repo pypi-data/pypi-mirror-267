@@ -1,0 +1,6 @@
+naja-atra
+
+[test]
+pytest
+uvicorn[standard]
+websocket-client
