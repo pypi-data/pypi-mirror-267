@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API &mdash; nodestack 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to nodestack’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            nodestack
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#nodestack.Node"><code class="docutils literal notranslate"><span class="pre">Node</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nodestack.Node.add_child"><code class="docutils literal notranslate"><span class="pre">Node.add_child()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodestack.Node.check_lineage"><code class="docutils literal notranslate"><span class="pre">Node.check_lineage()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodestack.Node.create_random_nodes"><code class="docutils literal notranslate"><span class="pre">Node.create_random_nodes()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodestack.Node.get_child"><code class="docutils literal notranslate"><span class="pre">Node.get_child()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodestack.Node.get_sibling"><code class="docutils literal notranslate"><span class="pre">Node.get_sibling()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodestack.Node.has_children"><code class="docutils literal notranslate"><span class="pre">Node.has_children()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodestack.Node.has_parent"><code class="docutils literal notranslate"><span class="pre">Node.has_parent()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodestack.Node.has_siblings"><code class="docutils literal notranslate"><span class="pre">Node.has_siblings()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodestack.Node.is_child"><code class="docutils literal notranslate"><span class="pre">Node.is_child()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodestack.Node.is_sibling"><code class="docutils literal notranslate"><span class="pre">Node.is_sibling()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodestack.Node.level"><code class="docutils literal notranslate"><span class="pre">Node.level</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodestack.Node.parents"><code class="docutils literal notranslate"><span class="pre">Node.parents</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodestack.Node.path"><code class="docutils literal notranslate"><span class="pre">Node.path</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodestack.Node.pretty_print"><code class="docutils literal notranslate"><span class="pre">Node.pretty_print()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodestack.Node.reset_stats"><code class="docutils literal notranslate"><span class="pre">Node.reset_stats()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nodestack.Node.siblings"><code class="docutils literal notranslate"><span class="pre">Node.siblings</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">nodestack</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">API</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="api">
+<h1>API<a class="headerlink" href="#api" title="Link to this heading">¶</a></h1>
+<p><strong>nodestack</strong> is a Python library to manage Nodes classes.
+A node is an object which is related to other nodes given a tree chart.</p>
+<dl class="py class" id="module-nodestack">
+<dt class="sig sig-object py" id="nodestack.Node">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">nodestack.</span></span><span class="sig-name descname"><span class="pre">Node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#nodestack.Node" title="nodestack.Node"><span class="pre">Node</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/nodestack.html#Node"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#nodestack.Node" title="Link to this definition">¶</a></dt>
+<dd><p>Should be subclassed only</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="nodestack.Node.add_child">
+<span class="sig-name descname"><span class="pre">add_child</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">child</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#nodestack.Node" title="nodestack.Node"><span class="pre">Node</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/nodestack.html#Node.add_child"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#nodestack.Node.add_child" title="Link to this definition">¶</a></dt>
+<dd><p>Add new child node to current instance</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>child</strong> – Node object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nodestack.Node.check_lineage">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">check_lineage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#nodestack.Node" title="nodestack.Node"><span class="pre">Node</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/nodestack.html#Node.check_lineage"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#nodestack.Node.check_lineage" title="Link to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>check if the list of nodes is a straight lineage:</dt><dd><p>node 1 (ancestor) -&gt; node 2 -&gt; node 3 -&gt; … -&gt; node n (grand
+children)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nodestack.Node.create_random_nodes">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_random_nodes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'cmd'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#nodestack.Node" title="nodestack.Node"><span class="pre">Node</span></a></span></span><a class="reference internal" href="_modules/nodestack.html#Node.create_random_nodes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#nodestack.Node.create_random_nodes" title="Link to this definition">¶</a></dt>
+<dd><p>Creates random tree of nodes for testing purpose</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nodestack.Node.get_child">
+<span class="sig-name descname"><span class="pre">get_child</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#nodestack.Node" title="nodestack.Node"><span class="pre">Node</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="reference internal" href="_modules/nodestack.html#Node.get_child"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#nodestack.Node.get_child" title="Link to this definition">¶</a></dt>
+<dd><p>find and returns a child with specified name. None if nothing found</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nodestack.Node.get_sibling">
+<span class="sig-name descname"><span class="pre">get_sibling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#nodestack.Node" title="nodestack.Node"><span class="pre">Node</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="reference internal" href="_modules/nodestack.html#Node.get_sibling"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#nodestack.Node.get_sibling" title="Link to this definition">¶</a></dt>
+<dd><p>find and returns a sibling with specified name. None if nothing
+found</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nodestack.Node.has_children">
+<span class="sig-name descname"><span class="pre">has_children</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/nodestack.html#Node.has_children"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#nodestack.Node.has_children" title="Link to this definition">¶</a></dt>
+<dd><p>check if Node object has one child at least</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nodestack.Node.has_parent">
+<span class="sig-name descname"><span class="pre">has_parent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/nodestack.html#Node.has_parent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#nodestack.Node.has_parent" title="Link to this definition">¶</a></dt>
+<dd><p>check if Node object has a parent or not</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nodestack.Node.has_siblings">
+<span class="sig-name descname"><span class="pre">has_siblings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/nodestack.html#Node.has_siblings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#nodestack.Node.has_siblings" title="Link to this definition">¶</a></dt>
+<dd><p>check if Node object has one sibling at least</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nodestack.Node.is_child">
+<span class="sig-name descname"><span class="pre">is_child</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/nodestack.html#Node.is_child"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#nodestack.Node.is_child" title="Link to this definition">¶</a></dt>
+<dd><p>Check if Node object is a child of the other Node object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nodestack.Node.is_sibling">
+<span class="sig-name descname"><span class="pre">is_sibling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/nodestack.html#Node.is_sibling"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#nodestack.Node.is_sibling" title="Link to this definition">¶</a></dt>
+<dd><p>Check if Node object is a sibling of the other Node object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> – Other Node object to be compared with</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="nodestack.Node.level">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">level</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#nodestack.Node.level" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the level of the Node object</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="nodestack.Node.parents">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parents</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#nodestack.Node" title="nodestack.Node"><span class="pre">Node</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#nodestack.Node.parents" title="Link to this definition">¶</a></dt>
+<dd><p>Returns all the ancestors of the Node object</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="nodestack.Node.path">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#nodestack.Node.path" title="Link to this definition">¶</a></dt>
+<dd><p>Returns a representation of the ancestor lineage of self</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nodestack.Node.pretty_print">
+<span class="sig-name descname"><span class="pre">pretty_print</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">option</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'default'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/nodestack.html#Node.pretty_print"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#nodestack.Node.pretty_print" title="Link to this definition">¶</a></dt>
+<dd><p>Print children tree from current instance</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="nodestack.Node.reset_stats">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reset_stats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/nodestack.html#Node.reset_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#nodestack.Node.reset_stats" title="Link to this definition">¶</a></dt>
+<dd><p>reset all the ClassVar members</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="nodestack.Node.siblings">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">siblings</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#nodestack.Node" title="nodestack.Node"><span class="pre">Node</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#nodestack.Node.siblings" title="Link to this definition">¶</a></dt>
+<dd><p>Returns all the siblings of the Node object</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to nodestack’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, fabthegreat.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
