@@ -1,0 +1,9 @@
+pylaptoppred/__init__.py,sha256=qVuYaLjZVYprbuhimUwDLNSCUQfWJ-1zedp3h8yzQN4,114
+pylaptoppred/copy_file.py,sha256=emkx5ThwdoTovv9VY4PD6mf9ybhUe5qeqGdDL6ZA6ss,651
+pylaptoppred/function_data_cleaning.py,sha256=078tPlysdrtpK-WVwvu4shUyNiIYobJuK-PBVLkSTMI,2376
+pylaptoppred/model.py,sha256=-8QENU728tF_fokfG63ECZMPzb6lTM4REQQL47mV8sQ,3414
+pylaptoppred/save_plot.py,sha256=nUUDP9y1Bb-1C47IC3Aa0xFb_0jTC73XJZl88fPpjZQ,686
+pylaptoppred-0.1.0.dist-info/LICENSE,sha256=PJEgKw5nucF8mHMTS-Pd0ibokLYIYLtZJzE7M8eYsj8,1068
+pylaptoppred-0.1.0.dist-info/METADATA,sha256=Sb9ynFT4EGMpigpCVnTOFWsdFUD7CkW8QfoUZGI9BvA,1629
+pylaptoppred-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pylaptoppred-0.1.0.dist-info/RECORD,,
