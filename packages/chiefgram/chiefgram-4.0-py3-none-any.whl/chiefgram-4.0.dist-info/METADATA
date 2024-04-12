@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: chiefgram
+Version: 4.0
+Summary: Hanya Buat Senang
+Home-page: https://example.com
+Author: GatauTeh
+Author-email: rizaldaitona@gmail.com
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: pyaes (==1.6.1)
+Requires-Dist: pysocks (==1.7.1)
+
