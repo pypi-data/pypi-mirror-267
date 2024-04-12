@@ -1,0 +1,17 @@
+monterey
+customtkinter
+elevenlabs
+wcwidth
+annoy
+anthropic
+ebooklib
+instructor
+mistralai
+pandas
+pathlib
+pdfminer.six
+PyPDF2
+sentence-transformers
+spacy
+wheel
+Whoosh
