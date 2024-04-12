@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: l2m2
+Version: 0.0.5
+Description-Content-Type: text/markdown
+Requires-Dist: cohere>=5.2.5
+Requires-Dist: openai>=1.17.0
+Requires-Dist: anthropic>=0.25.1
+Requires-Dist: groq>=0.5.0
+
+# L2M2: Simple LLM Manager for Python
+
+[L2M2](https://pypi.org/project/l2m2/) ("LLM Manager" &rarr; "LLMM" &rarr; "L2M2") is a simple LLM manager for Python.
+
+I'll complete the rest of this readme soon.
