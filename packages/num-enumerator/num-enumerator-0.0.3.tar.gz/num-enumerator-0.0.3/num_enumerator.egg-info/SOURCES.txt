@@ -1,0 +1,8 @@
+LICENSE
+README.md
+enumerator.py
+setup.py
+num_enumerator.egg-info/PKG-INFO
+num_enumerator.egg-info/SOURCES.txt
+num_enumerator.egg-info/dependency_links.txt
+num_enumerator.egg-info/top_level.txt
