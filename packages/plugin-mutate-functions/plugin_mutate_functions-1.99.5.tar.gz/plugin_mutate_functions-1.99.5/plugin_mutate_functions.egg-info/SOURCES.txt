@@ -1,0 +1,5 @@
+setup.py
+plugin_mutate_functions.egg-info/PKG-INFO
+plugin_mutate_functions.egg-info/SOURCES.txt
+plugin_mutate_functions.egg-info/dependency_links.txt
+plugin_mutate_functions.egg-info/top_level.txt
