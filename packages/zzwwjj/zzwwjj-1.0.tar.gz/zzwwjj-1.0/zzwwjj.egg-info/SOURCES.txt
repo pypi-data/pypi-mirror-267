@@ -1,0 +1,9 @@
+README.md
+setup.py
+zzwwjj/__init__.py
+zzwwjj/example.py
+zzwwjj.egg-info/PKG-INFO
+zzwwjj.egg-info/SOURCES.txt
+zzwwjj.egg-info/dependency_links.txt
+zzwwjj.egg-info/requires.txt
+zzwwjj.egg-info/top_level.txt
