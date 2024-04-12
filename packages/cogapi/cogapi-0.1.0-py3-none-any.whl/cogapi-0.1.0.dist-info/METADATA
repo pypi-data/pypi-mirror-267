@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cogapi
+Version: 0.1.0
+Summary: Simple interface to quickly to consume the Cogencis Data API in python environment. This package provides several functions for accessing historical market data and reference data
+Home-page: https://cogencis.com
+Author: Kannan M
+Author-email: kannan.m@cogencis.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas
+
+About
+cogencis-data-api provides a simple pythonic interface to the Cogencis Data API. 
+
+pip install cogencis-data-api
