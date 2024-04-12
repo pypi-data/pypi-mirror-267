@@ -1,0 +1,312 @@
+import logging
+import os
+import re
+import sys
+from typing import Dict, Optional
+
+import click
+import docker
+from dotenv import dotenv_values
+
+from truefoundry.autodeploy.exception import GitBinaryNotFoundException
+
+try:
+    from git import GitCommandError, Repo
+    from git.exc import InvalidGitRepositoryError
+except ImportError as ex:
+    raise GitBinaryNotFoundException from ex
+
+import requests
+from openai import OpenAI
+from rich.console import Console
+from rich.prompt import Prompt
+from rich.status import Status
+from servicefoundry import Build, DockerFileBuild, Job, LocalSource, Port, Service
+from servicefoundry.cli.const import COMMAND_CLS
+from servicefoundry.lib.auth.servicefoundry_session import ServiceFoundrySession
+
+from truefoundry.autodeploy.agents.developer import Developer
+from truefoundry.autodeploy.agents.project_identifier import (
+    ComponentType,
+    ProjectIdentifier,
+)
+from truefoundry.autodeploy.agents.tester import Tester
+from truefoundry.autodeploy.constants import (
+    AUTODEPLOY_OPENAI_API_KEY,
+    AUTODEPLOY_OPENAI_BASE_URL,
+    AUTODEPLOY_TFY_BASE_URL,
+)
+from truefoundry.autodeploy.tools.ask import AskQuestion
+from truefoundry.autodeploy.tools.commit import CommitConfirmation
+from truefoundry.autodeploy.tools.docker_run import DockerRun, DockerRunLog
+
+
+def get_openai_client() -> OpenAI:
+    session = ServiceFoundrySession()
+    if AUTODEPLOY_OPENAI_BASE_URL is not None and AUTODEPLOY_OPENAI_API_KEY is not None:
+        return OpenAI(
+            api_key=AUTODEPLOY_OPENAI_API_KEY, base_url=AUTODEPLOY_OPENAI_BASE_URL
+        )
+    try:
+        resp = requests.get(
+            f"{AUTODEPLOY_TFY_BASE_URL}/api/svc/v1/llm-gateway/access-details",
+            headers={
+                "Authorization": f"Bearer {session.access_token}",
+            },
+        )
+        resp.raise_for_status()
+        resp = resp.json()
+        return OpenAI(api_key=resp["jwtToken"], base_url=resp["inferenceBaseURL"])
+    except requests.exceptions.HTTPError as http_error:
+        raise Exception(
+            "Error occured while connecting to servicefoundry server"
+        ) from http_error
+
+
+def deploy_component(
+    workspace_fqn: str,
+    project_root_path: str,
+    dockerfile_path: str,
+    component_type: ComponentType,
+    name: str,
+    env: Dict,
+    command: Optional[str] = None,
+    port: Optional[int] = None,
+):
+    logging.basicConfig(level=logging.INFO)
+
+    if not os.path.exists(os.path.join(project_root_path, dockerfile_path)):
+        raise FileNotFoundError("Dockerfile not found in the project.")
+
+    image = Build(
+        build_spec=DockerFileBuild(
+            dockerfile_path=dockerfile_path,
+            command=command,
+        ),
+        build_source=LocalSource(project_root_path=project_root_path),
+    )
+    if component_type == ComponentType.SERVICE:
+        if port is None:
+            raise ValueError("Port is required for deploying service")
+        app = Service(
+            name=name,
+            image=image,
+            ports=[Port(port=port, expose=False)],
+            env=env,
+        )
+    else:
+        app = Job(name=name, image=image, env=env)
+    app.deploy(workspace_fqn=workspace_fqn)
+
+
+def _parse_env(project_root_path: str, env_path: str) -> Dict:
+    if not os.path.isabs(env_path):
+        env_path = os.path.join(project_root_path, env_path)
+
+    if os.path.exists(env_path):
+        return dotenv_values(env_path)
+
+    raise FileNotFoundError(f"Invalid path {env_path!r}")
+
+
+def _check_repo(project_root_path: str, console: Console):
+    try:
+        repo = Repo(project_root_path)
+        if repo.is_dirty():
+            console.print(
+                "[bold red]Error:[/] The repository has uncommitted changes. Please commit or stash them before proceeding."
+            )
+            sys.exit(1)
+        current_active_branch = repo.active_branch.name
+        console.print(
+            f"[bold magenta]TFY-Agent:[/] Current branch [green]{current_active_branch!r}[/]"
+        )
+        branch_name = Prompt.ask(
+            "[bold magenta]TFY-Agent:[/] Enter a branch name if you want to checkout to a new branch. "
+            f"Press enter to continue on [green]{current_active_branch!r}[/]",
+            console=console,
+        )
+        if branch_name:
+            repo.git.checkout("-b", branch_name)
+            console.print(
+                f"[bold magenta]TFY-Agent:[/] Switched to branch: [green]{repo.active_branch}[/]"
+            )
+        else:
+            console.print(
+                f"[bold magenta]TFY-Agent:[/] Continuing on [green]{current_active_branch!r}[/]"
+            )
+
+    except InvalidGitRepositoryError:
+        console.print(
+            "[red]Error:[/] This operation can only be performed inside a Git repository."
+        )
+        sys.exit(1)
+
+    except GitCommandError as gce:
+        console.print(
+            f"Command execution failed due to the following error:[red]{gce.stderr}[/]".replace(
+                "\n  stderr:", ""
+            )
+        )
+        console.print(
+            "[bold red]Error:[/] Unable to switch to the new branch. It's possible that this branch already exists."
+        )
+        sys.exit(1)
+
+
+def _update_status(event, status: Status):
+    if isinstance(event, (AskQuestion, CommitConfirmation)):
+        status.stop()
+
+    if isinstance(
+        event, (Developer.Request, ProjectIdentifier.Response, Tester.Response)
+    ):
+        status.update(
+            "[bold magenta]TFY-Agent[/] is currently building the project. Please wait..."
+        )
+
+    if isinstance(event, ProjectIdentifier.Request):
+        status.update(
+            "[bold magenta]TFY-Agent[/] is currently identifying the project..."
+        )
+
+    if isinstance(event, (Tester.Request, DockerRun.Response)):
+        status.update(
+            "[bold magenta]TFY-Agent[/] is currently running tests on the project..."
+        )
+
+    if isinstance(event, DockerRunLog):
+        status.update(
+            "[bold cyan]Running:[/] [bold magenta]TFY-Agent[/] is executing the Docker container. Press [yellow]control-c[/] to stop waiting for additional logs..."
+        )
+
+
+def _get_default_project_name(project_root_path: str):
+    path = os.path.abspath(project_root_path).rstrip(os.path.sep)
+    name = path.split(os.path.sep)[-1].lower()
+    name = re.sub(r"[^a-z0-9]", "-", name)
+    name = "-".join(n for n in name.split("-") if n)[:30]
+    return name
+
+
+def cli(project_root_path: str, deploy: bool):
+    openai_client = get_openai_client()
+    docker_client = docker.from_env()
+    project_root_path = os.path.abspath(project_root_path)
+    console = Console()
+    console.print(
+        "[bold magenta]TFY-Agent[/]: A tool for building and deploying [magenta]Jobs/Services[/] to the Truefoundry platform."
+    )
+    console.print(
+        "[bold reverse red]DISCLAIMER:[/] The [bold magenta]TFY-Agent[/] may use LLM resources outside of your organization. Please proceed only if you accept this."
+    )
+    console.print("Let's get started! Please answer the following questions:")
+    console.print(
+        "[bold cyan]Note:[/] All changes will be committed to a new branch. Please ensure you have a repository."
+    )
+    _check_repo(project_root_path=project_root_path, console=console)
+
+    component_type = ComponentType[
+        Prompt.ask(
+            "[bold magenta]TFY-Agent:[/] Is your project a Service? Or a Job?",
+            choices=[k.value.lower() for k in ComponentType],
+            console=console,
+            default="service",
+        ).upper()
+    ]
+    while True:
+        name = Prompt.ask(
+            "[bold magenta]TFY-Agent:[/] Name of deployment",
+            console=console,
+            default=_get_default_project_name(project_root_path),
+        )
+        if not re.match(r"^[a-z][a-z0-9\-]{1,30}[a-z0-9]$", name):
+            console.print(
+                "[bold magenta]TFY-Agent:[/] The name should be between 2-30 alphaneumaric"
+                " characters and '-'. The first character should not be a digit."
+            )
+        else:
+            break
+    command = Prompt.ask(
+        "[bold magenta]TFY-Agent:[/] Command to run the application",
+        console=console,
+        show_default=False,
+        default=None,
+    )
+
+    env_path = Prompt.ask(
+        "[bold magenta]TFY-Agent:[/] Enter .env file location for environment variables, "
+        "or press [green]Enter[/] to skip.",
+        console=console,
+    )
+    while True:
+        try:
+            env = _parse_env(project_root_path, env_path) if env_path else {}
+            break
+        except FileNotFoundError:
+            console.print("[red]Invalid location for .env[/]")
+            env_path = Prompt.ask(
+                "[bold magenta]TFY-Agent:[/]Please provide the correct path,"
+                "or press [green]Enter[/] to skip.",
+                console=console,
+            )
+            continue
+    status = console.status(
+        "[bold cyan]Starting up:[/] [bold magenta]TFY-Agent[/] is initializing. Please wait..."
+    )
+    with status:
+        developer = Developer(
+            project_root_path=project_root_path,
+            openai_client=openai_client,
+            docker_client=docker_client,
+            environment=env,
+        )
+        developer_run = developer.run(developer.Request(command=command, name=name))
+        inp = None
+        response = None
+        while True:
+            try:
+                status.start()
+                event = developer_run.send(inp)
+                _update_status(event=event, status=status)
+                inp = event.render(console)
+            except StopIteration as ex:
+                response = ex.value
+                break
+
+    if deploy:
+        workspace_fqn = Prompt.ask(
+            "Enter the Workspace FQN where you would like to deploy"
+        )
+        deploy_component(
+            workspace_fqn=workspace_fqn,
+            project_root_path=project_root_path,
+            dockerfile_path=response.dockerfile_path,
+            name=name,
+            component_type=component_type,
+            env=env,
+            command=response.command,
+            port=response.port,
+        )
+
+
+@click.command(name="auto-deploy", cls=COMMAND_CLS)
+@click.option(
+    "--path", type=click.STRING, required=True, help="The root path of the project"
+)
+@click.option(
+    "--deploy",
+    type=click.BOOL,
+    is_flag=True,
+    default=False,
+    show_default=True,
+    help="Deploy the project after successfully building it.",
+)
+def autodeploy_cli(path: str, deploy: bool):
+    """
+    Build and deploy projects using Truefoundry
+    """
+    cli(
+        project_root_path=path,
+        deploy=deploy,
+    )
