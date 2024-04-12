@@ -1,0 +1,2 @@
+[console_scripts]
+arcor2_kinect_azure_data = arcor2_kinect_azure_data.object_types.kinect_azure:main

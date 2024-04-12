@@ -1,0 +1,15 @@
+arcor2_kinect_azure_data/VERSION,sha256=kR_AxIywxwYB21d1qb7xt0DcTMn5tGOJufBWP-frlNc,5
+arcor2_kinect_azure_data/__init__.py,sha256=l7GuqwFKxk79MXzWazHFaHr2z9wXJXzReiYP2-eFCKI,238
+arcor2_kinect_azure_data/aggregation.py,sha256=lq4lblSUuSpTyH33PUxqg2mj3GJAvcYFN907ldbt5Nw,415
+arcor2_kinect_azure_data/joint.py,sha256=FdhIoNdAPekZJFOgFfyEwzAfzDTI4K5a9g5APz2q2YE,1886
+arcor2_kinect_azure_data/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_kinect_azure_data/settings.py,sha256=BX7Wc7q9LERM0u7k2N4vfYdBxPDPRXcEZSvXActn9UI,1768
+arcor2_kinect_azure_data/data/kinect_azure.dae,sha256=XSZjLGtN6ul34mPvS2ROqdyywYyUYlJPle3qYOxEzi8,2552395
+arcor2_kinect_azure_data/object_types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_kinect_azure_data/object_types/kinect_azure.py,sha256=YDCkmjEvumlgdOW5l3SokJFFIsaEtCZJfeExglXSUJg,9990
+arcor2_kinect_azure_data-0.2.0.dist-info/METADATA,sha256=jyyKgtRWWjUrQtPt0TKGLRXgUI2c8nAOEoeAdbcw5ow,1067
+arcor2_kinect_azure_data-0.2.0.dist-info/WHEEL,sha256=kmN8iOmIjgcrw-r1v8hy3z3h3NZZuoejDMXyy9YVKXk,94
+arcor2_kinect_azure_data-0.2.0.dist-info/entry_points.txt,sha256=Q__OgO6Xhba-y5A5yXdjX_nG4fzU3FQhrNBLPiL5TZA,101
+arcor2_kinect_azure_data-0.2.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+arcor2_kinect_azure_data-0.2.0.dist-info/top_level.txt,sha256=HIf6O02_2gzQnAsnxJ5BHM0cz5mcnCujKj-MZNklGkc,25
+arcor2_kinect_azure_data-0.2.0.dist-info/RECORD,,
