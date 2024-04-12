@@ -1,0 +1,19 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.2.6
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: lisamarie9006@gmail.com
+author_name: Lisa Marie Meyers
+data_format: string
+file_extension: ''
+has_binder: true
+has_settings: false
+kind: frontend
+labextension_name: Jupyter-Bridge
+mimetype: ''
+mimetype_name: ''
+project_short_description: A JupyterLab extension.
+python_name: Jupyter-Bridge
+repository: https://github.com/LtStarbuck1030/jupyter_bridge
+test: true
+viewer_name: ''
+

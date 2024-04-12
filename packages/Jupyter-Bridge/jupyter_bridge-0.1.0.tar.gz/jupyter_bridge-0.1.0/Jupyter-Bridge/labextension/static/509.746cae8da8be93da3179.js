@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkJupyter_Bridge=self.webpackChunkJupyter_Bridge||[]).push([[509],{509:(e,t,i)=>{i.r(t),i.d(t,{default:()=>r});const r={id:"Jupyter-Bridge:plugin",description:"A JupyterLab extension.",autoStart:!0,activate:e=>{console.log("JupyterLab extension Jupyter-Bridge is activated!")}}}}]);
