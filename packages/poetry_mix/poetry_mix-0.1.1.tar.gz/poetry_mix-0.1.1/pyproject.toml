@@ -1,0 +1,27 @@
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "poetry_mix"
+version = "0.1.1"
+description = ""
+authors = []
+readme = "readme.md"
+packages = [
+    { include = "poetry_mix", from = "venues/stages" },
+]
+license = "licensed"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+volts = "^1.0.9"
+click = "^8.1.7"
+somatic = "^3.0.1"
+
+[tool.poetry.scripts]
+poetry_mix = 'poetry_mix:clique'
+
+
+
