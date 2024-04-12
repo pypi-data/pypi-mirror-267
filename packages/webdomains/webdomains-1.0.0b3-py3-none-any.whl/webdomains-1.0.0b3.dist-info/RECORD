@@ -1,0 +1,10 @@
+webdomains/__init__.py,sha256=ekFTKq9aVN_XnFytCRSaXmZDazfzEGn3QXDxP3rPM9s,168
+webdomains/cli.py,sha256=u6uSk38YM43O62yXds-CEJ3RaYzuvLuSWo8zqgmz2sQ,10734
+webdomains/core.py,sha256=sGJClYw-qS7LeDBe4XnDkhTWtvarbh6HrOiToI7HwHo,12955
+webdomains/utils.py,sha256=LIpSexIjbjIyeir0mNRNEyzQ48mgdh5B7zMPdEPaMOs,3962
+webdomains/templates/server.conf,sha256=fzxZjzOdTPiZAm-EEs20NFdhLDsvBGlo9IGeRjbRi30,1453
+webdomains-1.0.0b3.dist-info/METADATA,sha256=EBKqkSVHdm9sMZiS1WP97umoCBCR50lStT2kMGtyKfQ,2985
+webdomains-1.0.0b3.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+webdomains-1.0.0b3.dist-info/entry_points.txt,sha256=QSrIwJu5bG65JP_iKX4m32XUFvLwIzoE0VIw7rxH9AA,50
+webdomains-1.0.0b3.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+webdomains-1.0.0b3.dist-info/RECORD,,
