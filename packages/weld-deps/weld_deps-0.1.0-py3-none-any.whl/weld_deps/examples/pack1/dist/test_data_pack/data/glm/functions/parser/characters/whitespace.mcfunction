@@ -1,0 +1,1 @@
+execute if data storage glm:parser current{value:" "} run data modify storage glm:parser current merge value {flags:["whitespace","meta"]}

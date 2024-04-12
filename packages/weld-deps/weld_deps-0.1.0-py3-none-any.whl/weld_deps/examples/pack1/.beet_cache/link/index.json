@@ -1,0 +1,12 @@
+{
+  "timestamp": "2024-04-12T07:23:04.924946",
+  "expire": null,
+  "json": {
+    "dirty": [],
+    "resource_pack": null,
+    "data_pack": null
+  },
+  "finalizers": [
+    "beet.contrib.link.link_cache_finalizer"
+  ]
+}

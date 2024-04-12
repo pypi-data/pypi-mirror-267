@@ -1,0 +1,4 @@
+execute if data storage glm:interpreter evaluate.stack[-1].a{type:"literal",variant:"array"} run function glm:interpreter/evaluate/binary_operation/operations/maths/add/array
+execute if data storage glm:interpreter evaluate.stack[-1].a{type:"literal",variant:"integer"} run function glm:interpreter/evaluate/binary_operation/operations/maths/add/integer
+execute if data storage glm:interpreter evaluate.stack[-1].a{type:"literal",variant:"object"} run function glm:interpreter/evaluate/binary_operation/operations/maths/add/object/init
+execute if data storage glm:interpreter evaluate.stack[-1].a{type:"literal",variant:"string"} run function glm:interpreter/evaluate/binary_operation/operations/maths/add/string

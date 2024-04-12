@@ -1,0 +1,2 @@
+execute if data storage glm:interpreter evaluate.stack[-1].metadata{status:"parameters"} run function glm:interpreter/evaluate/literal/string/parameters/init
+execute unless data storage glm:interpreter evaluate.stack[-1].metadata.status{status:"parameters"} run function glm:interpreter/evaluate/literal/string/before

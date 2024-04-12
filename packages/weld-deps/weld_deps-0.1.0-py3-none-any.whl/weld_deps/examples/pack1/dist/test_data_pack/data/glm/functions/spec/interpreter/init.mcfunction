@@ -1,0 +1,11 @@
+function glm:spec/interpreter/stdlib/abs
+function glm:spec/interpreter/stdlib/any
+function glm:spec/interpreter/stdlib/arr
+function glm:spec/interpreter/stdlib/ascii
+function glm:spec/interpreter/stdlib/char
+function glm:spec/interpreter/stdlib/contains
+function glm:spec/interpreter/stdlib/every
+function glm:spec/interpreter/stdlib/index
+function glm:spec/interpreter/stdlib/delete
+function glm:spec/interpreter/stdlib/map
+function glm:spec/interpreter/stdlib/set

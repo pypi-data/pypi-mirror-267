@@ -1,0 +1,2 @@
+execute if data storage glm:parser current{value:"#"} run data modify storage glm:parser current merge value {comment:true,flags:["comment","meta"]}
+execute if data storage glm:parser current{comment:true} run data modify storage glm:parser current.consumed set value true

@@ -1,0 +1,2 @@
+execute unless data storage glm:parser stack[-1].metadata{status:"open"} run function glm:parser/parse/literal/regex/before
+execute if data storage glm:parser stack[-1].metadata{status:"open"} unless data storage glm:parser current{consumed:true} run function glm:parser/parse/literal/regex/open

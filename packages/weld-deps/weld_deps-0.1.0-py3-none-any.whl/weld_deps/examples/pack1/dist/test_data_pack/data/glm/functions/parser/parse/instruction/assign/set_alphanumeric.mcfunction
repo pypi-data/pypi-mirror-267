@@ -1,0 +1,2 @@
+data modify storage glm:parser stack[-1].metadata.status set value "alphanumeric"
+data modify storage glm:parser stack append value {type:"literal",variant:"alphanumeric",metadata:{close:{type:"single",value:"="}}}

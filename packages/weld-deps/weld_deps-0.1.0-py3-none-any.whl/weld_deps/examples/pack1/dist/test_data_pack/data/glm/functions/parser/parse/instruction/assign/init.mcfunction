@@ -1,0 +1,2 @@
+execute unless data storage glm:parser parent.metadata.status run function glm:parser/parse/instruction/assign/set_alphanumeric
+execute if data storage glm:parser parent.metadata{status:"alphanumeric"} run function glm:parser/parse/instruction/assign/set_expression

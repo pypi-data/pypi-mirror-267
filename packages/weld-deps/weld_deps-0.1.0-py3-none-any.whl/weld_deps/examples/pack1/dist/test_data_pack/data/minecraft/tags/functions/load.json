@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#load:_private/load",
+    "bot:load",
+    "moxlib:load",
+    "glm:load",
+    "regex:load"
+  ]
+}

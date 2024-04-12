@@ -1,0 +1,2 @@
+execute unless data storage glm:parser stack[-1].metadata{status:"closed"} run function glm:parser/parse/literal/parse
+execute if data storage glm:parser stack[-1].metadata{status:"closed"} run function glm:parser/parse/literal/parameter_or_close
