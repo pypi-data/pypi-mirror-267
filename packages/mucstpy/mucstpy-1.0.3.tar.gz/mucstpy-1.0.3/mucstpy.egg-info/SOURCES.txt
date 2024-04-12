@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mucstpy.egg-info/PKG-INFO
+mucstpy.egg-info/SOURCES.txt
+mucstpy.egg-info/dependency_links.txt
+mucstpy.egg-info/requires.txt
+mucstpy.egg-info/top_level.txt
