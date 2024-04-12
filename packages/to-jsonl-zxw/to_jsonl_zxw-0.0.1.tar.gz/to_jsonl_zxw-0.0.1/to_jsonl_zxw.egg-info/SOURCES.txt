@@ -1,0 +1,8 @@
+README.md
+setup.py
+to_jsonl_zxw/__init__.py
+to_jsonl_zxw/to_jsonl.py
+to_jsonl_zxw.egg-info/PKG-INFO
+to_jsonl_zxw.egg-info/SOURCES.txt
+to_jsonl_zxw.egg-info/dependency_links.txt
+to_jsonl_zxw.egg-info/top_level.txt

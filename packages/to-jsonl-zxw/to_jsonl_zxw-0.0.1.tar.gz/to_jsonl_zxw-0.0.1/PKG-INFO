@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: to_jsonl_zxw
+Version: 0.0.1
+Summary: jsonl转换工具
+Home-page: https://github.com/yourusername/mypackage
+Author: XueWei Zhang
+Author-email: tonson_predict@qq.com
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# CSV转JSONL示例代码
+
+
