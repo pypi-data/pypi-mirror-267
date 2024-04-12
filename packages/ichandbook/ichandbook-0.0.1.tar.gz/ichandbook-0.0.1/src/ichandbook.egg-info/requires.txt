@@ -1,0 +1,10 @@
+markdown
+beautifulsoup4
+pyspelling
+
+[test]
+pytest
+pytest-cov
+pytest-sugar
+black
+mypy
