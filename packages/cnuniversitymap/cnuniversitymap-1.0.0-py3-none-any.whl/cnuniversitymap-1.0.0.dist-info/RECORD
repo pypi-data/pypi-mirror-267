@@ -1,0 +1,11 @@
+cnuniversitymap/__init__.py,sha256=2aQDAXu-QapLTeUQmsg8KGVjL9cTulEWEGhDvPG77pc,222
+cnuniversitymap/setup.py,sha256=WtjN8NYi0dWMdhlis6sJZSGVa9U6J_vBLXs1-RE9DGQ,1442
+cnuniversitymap/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cnuniversitymap/src/data.py,sha256=XOSFvmPj6LJy9N15uelqnSaD4HeZBxHa1JsRPphV8mY,469107
+cnuniversitymap/src/university.py,sha256=GgHDvUjpRsblRsHhYGTJsGXKc1wbqPYLXHKE8CNr62g,920
+cnuniversitymap-1.0.0.dist-info/LICENSE.txt,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+cnuniversitymap-1.0.0.dist-info/METADATA,sha256=HQ6cjdENL8GNTJpe2Q6QHq7p28UO2tBAzFhkL6uNjJI,1905
+cnuniversitymap-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cnuniversitymap-1.0.0.dist-info/entry_points.txt,sha256=0KzvkWO4-Boksw7wFxoz3rLH7IdNBq9esIikx9CZNmQ,50
+cnuniversitymap-1.0.0.dist-info/top_level.txt,sha256=ZI1iBl8-UVczGwxgyHRLg6ncP1FMPeNfJzduxuG5xU8,16
+cnuniversitymap-1.0.0.dist-info/RECORD,,

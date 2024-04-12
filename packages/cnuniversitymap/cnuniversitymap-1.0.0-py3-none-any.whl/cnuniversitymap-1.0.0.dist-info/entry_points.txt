@@ -1,0 +1,2 @@
+[console_scripts]
+cnuniversitymap = src.data:main

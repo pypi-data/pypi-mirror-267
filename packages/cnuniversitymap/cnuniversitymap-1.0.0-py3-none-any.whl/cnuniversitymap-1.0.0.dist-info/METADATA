@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: cnuniversitymap
+Version: 1.0.0
+Summary: A small university information package
+Home-page: https://github.com/robot-2233/cnuni
+Author: robot-2233
+Author-email: frundles@qq.com
+License: MIT License
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+CnUniversityMap
+==========
+
+CnUniversityMap is a Python package that provides a simple University class to store and manage university information.
+
+Download
+----
+
+You can download the latest version of the University package from PyPI:
+
+.. code-block:: bash
+
+   pip install cnuniversitymap
+
+Alternatively, you can get the source code from GitHub:
+
+.. code-block:: bash
+
+   git clone https://github.com/robot-2233/cnuni.git
+
+Contact me
+--------
+
+If you have any questions or feedback, please contact me through the following methods:
+
+- email: frundles@qq.com
+- wechat: zgndshkwxh
+
+Usage examples
+--------
+
+Here are some basic examples using the University package:
+
+
+Get university information
+~~~~~~~~~~~~
+
+.. code-block:: python
+
+   print(university.cn_name)
+   print(university.en_name)
+   print(university.code)
+
+Get specific university from dict
+~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+   print(universities_dict.get('xxx'))
+
