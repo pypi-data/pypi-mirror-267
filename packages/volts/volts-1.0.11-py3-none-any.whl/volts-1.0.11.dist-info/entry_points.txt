@@ -1,0 +1,3 @@
+[console_scripts]
+volts=volts:clique
+
