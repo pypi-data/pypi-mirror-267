@@ -1,0 +1,15 @@
+kweb/__init__.py,sha256=_7OlQdbVkK4jad0CLdpI0grT-zEAb-qgFmH5mFzDXiA,22
+kweb/browser.py,sha256=NLzgzPgRuK1ifbn4GFkupX5RPzrsE7PQ8gjPuZ4UjF8,1826
+kweb/config.py,sha256=WYulvOxKLtYKWJhLkwsYUJbtMICB_aGA2R63YNWyv3E,1273
+kweb/default.py,sha256=MIgPLOgYXM8mxaWFQEmeZKtozzT-6ZP1AhnpPyUlqIc,50
+kweb/layout_server.py,sha256=HzVu3d3yHW2ADy6Mmu554RWx9UTI3iOs3yvVsQ0086E,25463
+kweb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kweb/server_jupyter.py,sha256=MFMwQKdro_NkmdBmScKG0zSvpNoWkHV4r_5tfRGpaco,1324
+kweb/viewer.py,sha256=PSV0DSMZtFQP68qwYtNh6AHY2_Vcq0f8-xmJKH2Fz8g,1254
+kweb/api/browser.py,sha256=KjzlhTs1DYRlfsxZt6a6PjGfTXzbs2Re5z0ThSBYjrM,1100
+kweb/api/viewer.py,sha256=sqOVxq0PSwB73Nzjm8zKZ8ynImPgXB188h5YEgk_mpg,2281
+kweb-2.0.0.dist-info/LICENSE,sha256=ZCGOtEh-a7hPPYylcCRQgsNhPbDEvnD5BVGixV0zpx0,1067
+kweb-2.0.0.dist-info/METADATA,sha256=BUTtcXwgWkQAXRWkPj2ffugOFySZNSCYdqz3shydnyE,3615
+kweb-2.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+kweb-2.0.0.dist-info/top_level.txt,sha256=wHqGoIwTXJTmwQiuSHw8dRbn-96ezFW72k_VyI54oYs,5
+kweb-2.0.0.dist-info/RECORD,,
