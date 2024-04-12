@@ -1,0 +1,10 @@
+Metadata-Version: 2.3
+Name: django-signals
+Version: 1.0
+Summary:  Django signals are used to send and receive specific essential information whenever a data model is saved, changed, or even removed
+Author-email: Joseph Spracklen <joseph.spracklen@my.utsa.edu>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
