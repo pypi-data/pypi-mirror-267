@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mucstpy
+Version: 1.0.1
+Project-URL: Homepage, https://github.com/xkmaxidian/MuCST
+Project-URL: Issues, https://github.com/xkmaxidian/MuCST/issues
+License-File: LICENSE
+Requires-Dist: scanpy >=1.9.3
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: anndata
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: psutil
+Requires-Dist: tqdm
+Requires-Dist: leidenalg
+Requires-Dist: torch >=2.0
+Requires-Dist: torchvision
+Requires-Dist: pathlib
+
