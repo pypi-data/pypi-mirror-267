@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rnamining
+Version: 1.0.4
+Summary: Package to predict potential coding of RNA sequences provided in fasta format
+Author: Thaís de Almeida Ratis Ramos
+Author-email: thaisratis@gmail.com
+License: GPL3
+License-File: LICENSE
+Requires-Dist: scipy
+Requires-Dist: biopython>=1.78
+Requires-Dist: scikit-learn>=0.21.3
+Requires-Dist: pandas>=0.23.3
+Requires-Dist: xgboost==1.2.0
