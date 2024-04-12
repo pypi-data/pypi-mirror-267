@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: egypt
+Version: 0.0.2
+Summary: PyTorch Implementation of Multiscale Decomposition and Pyramid Algorithms
+Home-page: https://github.com/your_username/your_package
+Author: Charles Shan
+Author-email: charles.shht@gmail.com
+License: MIT
+Keywords: MST Pyramid Pytorch
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torchvision
+Requires-Dist: matplotlib
+Requires-Dist: torch
