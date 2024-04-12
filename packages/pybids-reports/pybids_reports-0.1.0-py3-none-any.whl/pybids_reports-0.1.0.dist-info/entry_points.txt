@@ -1,0 +1,2 @@
+[console_scripts]
+pybids_reports = bids.ext.reports.cli:cli
