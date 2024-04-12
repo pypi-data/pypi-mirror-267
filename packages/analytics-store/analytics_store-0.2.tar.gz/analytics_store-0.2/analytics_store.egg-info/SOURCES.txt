@@ -1,0 +1,8 @@
+setup.py
+Analytics_Store/__init__.py
+Analytics_Store/utils.py
+analytics_store.egg-info/PKG-INFO
+analytics_store.egg-info/SOURCES.txt
+analytics_store.egg-info/dependency_links.txt
+analytics_store.egg-info/requires.txt
+analytics_store.egg-info/top_level.txt
