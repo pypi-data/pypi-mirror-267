@@ -1,0 +1,5 @@
+setup.py
+thiswouldnotwork.egg-info/PKG-INFO
+thiswouldnotwork.egg-info/SOURCES.txt
+thiswouldnotwork.egg-info/dependency_links.txt
+thiswouldnotwork.egg-info/top_level.txt
