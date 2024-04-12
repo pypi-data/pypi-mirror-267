@@ -1,0 +1,7 @@
+DATE = "2024-04-11"
+VERSION = "7.1.5"
+MAJOR = 7
+MINOR = 1
+PATCH = 5
+STATUS = "a"
+
