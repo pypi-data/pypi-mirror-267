@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: base58random
+Version: 0.0.2
+Summary: Random base58 generator
+Author: Viacheslav Alekseev
+Author-email: alexeev.corp@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# base58random
+
+It's a simple tool to generate random strings of base58 symbols
+
+## Usage
+
+```python
+from base58random import base58gen
+
+base58gen() # random string of 24 symbols
+base58gen(32) # random string of a custom length
+```
