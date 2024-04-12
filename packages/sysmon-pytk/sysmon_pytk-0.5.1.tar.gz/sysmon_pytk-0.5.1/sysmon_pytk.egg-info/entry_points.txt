@@ -1,0 +1,6 @@
+[console_scripts]
+cli_sysmon = sysmon_pytk.cli_sysmon:monitor
+
+[gui_scripts]
+gui_sysmon = sysmon_pytk.gui_sysmon:monitor
+sysmon = sysmon_pytk.gui_sysmon:monitor
