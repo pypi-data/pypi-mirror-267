@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: RumboVeta1
+Version: 1.1
+Summary: Con esta Biblioteca Calculas el rumbo de veta
+Author: Julio Gomez
+Requires-Python: >=3.12.1
+Description-Content-Type: text/markdown
+License-File: license
+
+# Mi Proyecto Increíble
+
+¡Bienvenido a Mi Proyecto Increíble! Este es un proyecto emocionante que hace cosas increíbles.
+
+## Descripción
+
+Mi Proyecto Increíble es una aplicación web de seguimiento de tareas que te ayuda a organizar tu trabajo de manera eficiente. Con una interfaz intuitiva y características poderosas, nunca te perderás en tus tareas nuevamente.
+
+## Instalación
+
+Para instalar Mi Proyecto Increíble, simplemente sigue estos pasos:
+
+1. Clona este repositorio en tu máquina local.
+2. Navega al directorio del proyecto.
+3. Ejecuta `npm install` para instalar las dependencias.
+4. Ejecuta `npm start` para iniciar el servidor local.
+5. ¡Disfruta de Mi Proyecto Increíble en tu navegador!
+
+## Uso
+
+Una vez que hayas instalado Mi Proyecto Increíble, puedes comenzar a utilizarlo de inmediato. Aquí hay algunas características destacadas:
+
+- **Agregar Tareas:** Crea nuevas tareas con solo unos pocos clics.
+- **Editar Tareas:** Modifica el título, la descripción o el estado de cualquier tarea existente.
+- **Eliminar Tareas:** Elimina tareas que ya no son necesarias.
+- **Marcar Tareas:** Marca las tareas como completadas cuando las hayas terminado.
+
+## Contribución
+
+¡Estamos abiertos a contribuciones! Si quieres mejorar Mi Proyecto Increíble, aquí hay algunas formas de hacerlo:
+
+- Haz un fork del repositorio.
+- Crea una nueva rama para tu función o corrección de errores.
+- Envía una solicitud de extracción con tus cambios.
+
+¡Esperamos con ansias tus contribuciones!
+
+## Contacto
+
+Si tienes preguntas, comentarios o sugerencias sobre Mi Proyecto Increíble, no dudes en ponerte en contacto con nosotros:
+
+- Email: info@miproyectoincreible.com
+- Sitio web: [www.miproyectoincreible.com](https://www.miproyectoincreible.com)
+
+¡Gracias por usar Mi Proyecto Increíble!
