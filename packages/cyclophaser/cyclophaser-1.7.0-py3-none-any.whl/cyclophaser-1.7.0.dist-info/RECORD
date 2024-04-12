@@ -1,0 +1,11 @@
+cyclophaser/__init__.py,sha256=n4OFR1bYla7V1q-Oqb-DBx5M0Z2ZzY7MG1CZcg2soME,48
+cyclophaser/determine_periods.py,sha256=vVD3CIzHMQCBTweNX_E810kHxf_mEeM18bNF5QpvfJk,17593
+cyclophaser/find_stages.py,sha256=MCY3hCAouyOU9giP_jRZ5ixvlWCOPzbFkmSmZOH4J84,12997
+cyclophaser/lanczos_filter.py,sha256=8NhQHyuDjPmODhCouVJJ5hm7okiab9MHeJW1NnJ9BxU,1981
+cyclophaser/plots.py,sha256=newUBN3sjnZvqfMG03fa5xq8CpQrc__qIXrYP_xE-AM,12837
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_determine_periods.py,sha256=90sFIrX94N2qL3ouJPbdT3klCLVORkw472i4CAsxXUI,1901
+cyclophaser-1.7.0.dist-info/METADATA,sha256=-STIjacv83HdacaMZiJfzZ_cbP14fmu06JL3EZPdgx4,1783
+cyclophaser-1.7.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cyclophaser-1.7.0.dist-info/top_level.txt,sha256=-YrfhJGpXLYce5l6v790op0gS7NjHhESvkcpXtDNjAQ,18
+cyclophaser-1.7.0.dist-info/RECORD,,
