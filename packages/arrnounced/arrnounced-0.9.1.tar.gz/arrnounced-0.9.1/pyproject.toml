@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools ~= 69.2", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arrnounced"
+description = "Notify Sonarr/Radarr/Lidarr of tracker IRC announcements"
+urls = {"homepage" = "https://github.com/weannounce/arrnounced"}
+authors = [
+  {"name" = "WeAnnounce", "email" = "weannounce@protonmail.com"},
+]
+readme = "README.md"
+dynamic = ["version"]
+
+requires-python = ">= 3.7, < 3.10"
+
+dependencies = [
+  "Flask-Login~=0.6.3",
+  "Flask-SocketIO~=5.3.6",
+  "Flask~=3.0.3",
+  "aiohttp~=3.9.3",
+  "defusedxml~=0.7.1",
+  "pony~=0.7.17",
+  "pydle~=0.9.4",
+  "tomlkit~=0.12.4",
+]
+
+[project.optional-dependencies]
+dev = [
+  "bandit",
+  "black",
+  "bumpver==2023.1129",
+  "coverage~=5.0",
+  "flake8",
+  "pre-commit",
+]
+
+[project.entry-points.console_scripts]
+arrnounced = 'arrnounced.cli:main'
+
+[tool.setuptools.dynamic]
+version = {attr = "arrnounced.__version__"}
+
+[tool.setuptools.packages.find]
+include = [
+  "arrnounced*",
+]
+
+[tool.setuptools.package-data]
+"*" = ["*.html", "*.js", "*.css", "*.eot", "*.woff", "*.svg", "*.woff2", "*.ttf"]
+
+[tool.coverage.run]
+source = [
+  "arrnounced",
+]
+
+[tool.bumpver]
+current_version = "0.9.1"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "New version: {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"arrnounced/__init__.py" = [
+    '__version__ = "{version}"',
+]

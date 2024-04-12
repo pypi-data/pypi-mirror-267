@@ -1,0 +1,2 @@
+[console_scripts]
+arrnounced = arrnounced.cli:main
