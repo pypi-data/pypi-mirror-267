@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "tedective-etl"
+version = "0.1.2"
+description = "The XML-to-OCDS parser for the TEDective project based on lxml"
+authors = ["Free Software Foundation Europe e.V. <tedective@fsfe.org>"]
+license = "AGPL-3.0-or-later"
+readme = "README.md"
+packages = [{include = "tedective_etl"}]
+
+[tool.poetry.urls]
+"Homepage" = "https://tedective.org"
+"Repository" = "https://git.fsfe.org/TEDective/etl"
+"Documentation" = "https://docs.tedective.org"
+
+[tool.poetry.scripts]
+run-server = "tedective_etl.server:run_luigid"
+run-pipeline = "tedective_etl.main:run_pipeline"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fingerprints = "1.1.1"
+ftfy = "6.1.1"
+lxml = "4.9.3"
+orjson = "3.8.9"
+phonenumbers = "8.13.18"
+rich = "13.5.2"
+python-dateutil = "2.8.2"
+datamodel-code-generator = {extras = ["http"], version = "0.22.1"}
+orjsonl = "0.3.1"
+kuzu = "0.3.2"
+pandas = "2.1.4"
+pyarrow = "14.0.2"
+jupyter = "1.0.0"
+phonetics = "1.0.5"
+splink = "3.9.11"
+meilisearch = "0.30.0"
+luigi = "3.5.0"
+pyicu = "2.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "7.4.0"
+black = "23.7.0"
+isort = "5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
