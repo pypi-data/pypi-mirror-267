@@ -1,0 +1,10 @@
+buffer_matcher/__init__.py,sha256=LfmqZhhYNlm60Lqr6EwADr7Wrinq0mrxBCuFt1WkB38,449
+buffer_matcher/base.py,sha256=U1hlM3kmHVZ7eQcbH5gPf9EqaW8vdzkB2dFojtjE7gE,4062
+buffer_matcher/dynamic.py,sha256=yrM8_bVKvwUaPE-5QvBCaun3Sdw7uIuEw3t42tOkg9A,758
+buffer_matcher/simple.py,sha256=zLUbcdwnQ0-tPzCu6CGT7kp_N8MLzgLEA6OsW0gxnC8,7372
+buffer_matcher/static.py,sha256=lBH-M-YbXV5TURK63LAPPbM8nst1o2OATIcr-GDOf6I,1947
+buffer_matcher-0.1.1.dist-info/LICENSE,sha256=GxMBMdi9xb-RHlcqAqZUCxeXP4G4wCzT8wqLFTWDNkg,555
+buffer_matcher-0.1.1.dist-info/METADATA,sha256=LTOXzfXFfru_tNvo-W_9z6nrkvd75xfeuRIx5C4LE5c,2024
+buffer_matcher-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+buffer_matcher-0.1.1.dist-info/top_level.txt,sha256=WuEJ0HUmgaZSXSxT67yBSJYz4mkbGF382TqffeJoOtY,15
+buffer_matcher-0.1.1.dist-info/RECORD,,
