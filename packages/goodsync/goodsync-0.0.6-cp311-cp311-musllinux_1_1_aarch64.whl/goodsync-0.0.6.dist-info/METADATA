@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: goodsync
+Version: 0.0.6
+Summary: Reverse engineering of GoodSync encrypted and decrypted file names
+Home-page: https://github.com/bitjerry/goodsync
+Author: Mr.lin
+Author-email: adobe@outlook.my
+License: Apache 2
+Project-URL: GitHub: repo, https://github.com/bitjerry/goodsync/
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Security :: Cryptography
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# GoodSync
+
+Reverse engineering of GoodSync file name encryption and decryption algorithms
+
+This project will help GoodSync users switch to other synchronization tools more freely without being bound by GoodSync
+
+[GITHUB](https://github.com/bitjerry/goodsync) | [AUTHOR](https://github.com/bitjerry)
+
+## Usage
+
+```python
+from goodsync import *
+
+gs = GoodSync("0123456789")
+print(gs.key)
+
+encrypted_filename = gs.encrypt_name("test")
+print(encrypted_filename)
+
+filename = gs.decrypt_name(encrypted_filename)
+print(filename)
+```
+
+## ⚖️License
+
+---
+Apache-2.0 © [bitjerry](https://github.com/bitjerry/goodsync/blob/main/LICENSE)
+
+*2024/4/1*
+*Mr.lin*
