@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>VAE &#8212; Documentation CriminAI 0.1.4</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=750eb482"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=d99ca74e"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Algorithme Genetique" href="AlgoGenetique.html" />
+    <link rel="prev" title="CriminAI" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-autoencodeur2">
+<span id="vae"></span><h1>VAE<a class="headerlink" href="#module-autoencodeur2" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="autoencodeur2.CustomDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">autoencodeur2.</span></span><span class="sig-name descname"><span class="pre">CustomDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">root_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/autoencodeur2.html#CustomDataset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autoencodeur2.CustomDataset" title="Link to this definition">¶</a></dt>
+<dd><p>Bases : <code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code></p>
+<p>Dataset personnalisé pour charger des images à partir d’un répertoire donné.</p>
+<p>Ce dataset charge les images à partir d’un répertoire spécifié et permet
+d’appliquer des transformations facultatives à ces images.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>root_dir</strong> (<em>str</em>) – Le chemin du répertoire contenant les images.</p></li>
+<li><p><strong>transform</strong> (<em>callable</em><em>, </em><em>optional</em>) – Une fonction/transform pour appliquer
+une transformation aux images. Default is None.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="autoencodeur2.CustomDataset.root_dir">
+<span class="sig-name descname"><span class="pre">root_dir</span></span><a class="headerlink" href="#autoencodeur2.CustomDataset.root_dir" title="Link to this definition">¶</a></dt>
+<dd><p>Le chemin du répertoire contenant les images.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="autoencodeur2.CustomDataset.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><a class="headerlink" href="#autoencodeur2.CustomDataset.transform" title="Link to this definition">¶</a></dt>
+<dd><p>La fonction/transform à appliquer aux images.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>callable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="autoencodeur2.CustomDataset.image_list">
+<span class="sig-name descname"><span class="pre">image_list</span></span><a class="headerlink" href="#autoencodeur2.CustomDataset.image_list" title="Link to this definition">¶</a></dt>
+<dd><p>La liste des noms de fichiers des images dans le répertoire.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="autoencodeur2.VAE">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">autoencodeur2.</span></span><span class="sig-name descname"><span class="pre">VAE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">latent_dim</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/autoencodeur2.html#VAE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autoencodeur2.VAE" title="Link to this definition">¶</a></dt>
+<dd><p>Bases : <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Implémente un Variational Autoencoder (VAE) pour la génération d’images.</p>
+<p>Le VAE est composé d’un encodeur et d’un décodeur, qui apprennent à
+représenter et à générer des données, respectivement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>latent_dim</strong> (<em>int</em>) – La dimension de l’espace latent.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="autoencodeur2.VAE.encoder">
+<span class="sig-name descname"><span class="pre">encoder</span></span><a class="headerlink" href="#autoencodeur2.VAE.encoder" title="Link to this definition">¶</a></dt>
+<dd><p>Le réseau de neurones de l’encodeur.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>nn.Sequential</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="autoencodeur2.VAE.decoder">
+<span class="sig-name descname"><span class="pre">decoder</span></span><a class="headerlink" href="#autoencodeur2.VAE.decoder" title="Link to this definition">¶</a></dt>
+<dd><p>Le réseau de neurones du décodeur.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>nn.Sequential</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="autoencodeur2.VAE.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="reference internal" href="_modules/autoencodeur2.html#VAE.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autoencodeur2.VAE.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Passe l’entrée à travers l’encodeur et le décodeur pour la reconstruction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>torch.Tensor</em>) – L’image d’entrée.</p>
+</dd>
+<dt class="field-even">Renvoie<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>L’image reconstruite, la moyenne de la distribution latente</dt><dd><p>et le logarithme de la variance de la distribution latente.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Type renvoyé<span class="colon">:</span></dt>
+<dd class="field-odd"><p>torch.Tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="autoencodeur2.VAE.reparameterize">
+<span class="sig-name descname"><span class="pre">reparameterize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mu</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_var</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variance_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="reference internal" href="_modules/autoencodeur2.html#VAE.reparameterize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autoencodeur2.VAE.reparameterize" title="Link to this definition">¶</a></dt>
+<dd><p>Effectue la reparamétrisation nécessaire pour échantillonner dans l’espace latent.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mu</strong> (<em>torch.Tensor</em>) – La moyenne de la distribution latente.</p></li>
+<li><p><strong>log_var</strong> (<em>torch.Tensor</em>) – Le logarithme de la variance de la distribution latente.</p></li>
+<li><p><strong>variance_scale</strong> – La modulation de la variance, multiplie log_var par une valeur supérieure à 1 augmente la variance</p></li>
+</ul>
+</dd>
+<dt class="field-even">Renvoie<span class="colon">:</span></dt>
+<dd class="field-even"><p>L’échantillon dans l’espace latent.</p>
+</dd>
+<dt class="field-odd">Type renvoyé<span class="colon">:</span></dt>
+<dd class="field-odd"><p>torch.Tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="autoencodeur2.combined_loss">
+<span class="sig-prename descclassname"><span class="pre">autoencodeur2.</span></span><span class="sig-name descname"><span class="pre">combined_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recon_batch</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/autoencodeur2.html#combined_loss"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autoencodeur2.combined_loss" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="autoencodeur2.plot_losses_and_parameters">
+<span class="sig-prename descclassname"><span class="pre">autoencodeur2.</span></span><span class="sig-name descname"><span class="pre">plot_losses_and_parameters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reconstruction_losses</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kl_losses</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_losses</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/autoencodeur2.html#plot_losses_and_parameters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autoencodeur2.plot_losses_and_parameters" title="Link to this definition">¶</a></dt>
+<dd><p>Affiche les paramètres du modèle et trace les courbes de perte.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>nn.Module</em>) – Le modèle pour lequel afficher les paramètres.</p></li>
+<li><p><strong>reconstruction_losses</strong> (<em>list</em>) – Liste des valeurs de perte de reconstruction.</p></li>
+<li><p><strong>kl_losses</strong> (<em>list</em>) – Liste des valeurs de perte de divergence KL.</p></li>
+<li><p><strong>total_losses</strong> (<em>list</em>) – Liste des valeurs de perte totale.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="autoencodeur2.train_VAE_model">
+<span class="sig-prename descclassname"><span class="pre">autoencodeur2.</span></span><span class="sig-name descname"><span class="pre">train_VAE_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_loader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimizer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_epochs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/autoencodeur2.html#train_VAE_model"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autoencodeur2.train_VAE_model" title="Link to this definition">¶</a></dt>
+<dd><p>Entraîne le modèle VAE.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>nn.Module</em>) – Le modèle VAE à entraîner.</p></li>
+<li><p><strong>data_loader</strong> (<em>DataLoader</em>) – Le DataLoader contenant les données d’entraînement.</p></li>
+<li><p><strong>optimizer</strong> – L’optimiseur utilisé pour la mise à jour des poids du modèle.</p></li>
+<li><p><strong>num_epochs</strong> (<em>int</em>) – Le nombre d’époques pour lesquelles entraîner le modèle. Default is 100.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Renvoie<span class="colon">:</span></dt>
+<dd class="field-even"><p>Le modèle VAE entraîné.
+reconstruction_losses (list): Liste des valeurs de perte de reconstruction pour chaque époque.
+kl_losses (list): Liste des valeurs de perte de divergence KL pour chaque époque.
+total_losses (list): Liste des valeurs de perte totale pour chaque époque.</p>
+</dd>
+<dt class="field-odd">Type renvoyé<span class="colon">:</span></dt>
+<dd class="field-odd"><p>trained_model (nn.Module)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="autoencodeur2.visualize_images">
+<span class="sig-prename descclassname"><span class="pre">autoencodeur2.</span></span><span class="sig-name descname"><span class="pre">visualize_images</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_loader</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/autoencodeur2.html#visualize_images"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autoencodeur2.visualize_images" title="Link to this definition">¶</a></dt>
+<dd><p>Visualise les images originales et reconstruites après l’entraînement du modèle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>nn.Module</em>) – Le modèle VAE entraîné.</p></li>
+<li><p><strong>data_loader</strong> (<em>DataLoader</em>) – Le DataLoader contenant les données d’entraînement.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">CriminAI</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">CriminAI</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">VAE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AlgoGenetique.html">Algorithme Genetique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html">Interface</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">CriminAI</a><ul>
+      <li>Previous: <a href="modules.html" title="Chapitre précédent">CriminAI</a></li>
+      <li>Next: <a href="AlgoGenetique.html" title="Chapitre suivant">Algorithme Genetique</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, ZOUARI Matis, SUTTER Clémence, PEREZ Lisa, ZHONG Zhihan.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/VAE.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
