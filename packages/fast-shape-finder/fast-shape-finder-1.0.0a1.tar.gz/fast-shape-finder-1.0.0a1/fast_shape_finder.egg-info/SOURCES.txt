@@ -1,0 +1,10 @@
+LICENSE
+README.md
+fast_shape_finder.pyx
+pyproject.toml
+setup.py
+fast_shape_finder.egg-info/PKG-INFO
+fast_shape_finder.egg-info/SOURCES.txt
+fast_shape_finder.egg-info/dependency_links.txt
+fast_shape_finder.egg-info/requires.txt
+fast_shape_finder.egg-info/top_level.txt
