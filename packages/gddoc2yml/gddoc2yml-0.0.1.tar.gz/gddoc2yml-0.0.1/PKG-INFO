@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: gddoc2yml
+Version: 0.0.1
+Summary: Convert godot xml docs to docfx yml
+Author-email: Nick Maltbie <nick.dmalt@gmail.com>
+Project-URL: Homepage, https://github.com/nicholas-maltbie/gddoc2yml
+Project-URL: Issues, https://github.com/nicholas-maltbie/gddoc2yml/issues
+Keywords: godot,docfx,yml,xml,documentation
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pathvalidate
+Requires-Dist: PyYAML
+
+# Godot Doc 2 Yml
+
+Convert godot xml docs exported via the `godot --doctool` for gdscript
+to yml compatible with docfx.
+
+## References
+
+* [Godot -- CLI Reference](https://docs.godotengine.org/en/stable/tutorials/editor/command_line_tutorial.html#command-line-reference)
+* [Godot -- make_rst.py](https://github.com/godotengine/godot/blob/master/doc/tools/make_rst.py)
+* [DocFx -- Github](https://github.com/dotnet/docfx)
+* [DocFx -- Introduction to Multiple Languages Support](https://xxred.gitee.io/docfx/tutorial/universalreference/intro_multiple_langs_support.html)
+
+## Setup
+
+Build package
+
+```bash
+# Install dependencies
+python3 -m pip install -r requirements.txt
+
+# Install build if required
+# python3 -m pip install build
+# Project will be created in dir dist
+python3 -m build
+```
+
+## Linting
+
+Lint using [flake8](https://github.com/pycqa/flake8/) tool.
+
+```bash
+# Run flake8 from .flake8 config file
+# Install via python3 -m pip install flake8
+flake8 .
+```
+
+## Tests
+
+Run tests for project via Python's unittest module -- [Unit testing framework](https://docs.python.org/3/library/unittest.html)
+
+```bash
+python3 -m unittest
+```
+
+### Code Coverage
+
+Compute code coverage using [coveragepy](https://github.com/nedbat/coveragepy)
+
+```bash
+# Get code coverage using coverage
+# Install via python -m pip install coverage
+coverage run -m unittest discover
+
+# Get results
+coverage report -m
+```
+
+## Example
+
+Build godot docs using latest gddoc2yml.
+
+```bash
+# Install from repo
+python3 -m pip install .
+
+# Generate docs using gdxml2yml
+gdxml2yml godot/doc/classes doc/api
+
+# Startup docfx website
+dotnet tool run docfx --serve doc/docfx.json
+```
