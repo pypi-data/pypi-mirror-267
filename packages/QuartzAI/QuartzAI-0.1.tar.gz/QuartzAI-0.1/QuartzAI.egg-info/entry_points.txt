@@ -1,0 +1,3 @@
+[console_scripts]
+QuartzAI = QuartzAI:main
+

@@ -1,0 +1,7 @@
+QuartzAI.py
+setup.py
+QuartzAI.egg-info/PKG-INFO
+QuartzAI.egg-info/SOURCES.txt
+QuartzAI.egg-info/dependency_links.txt
+QuartzAI.egg-info/entry_points.txt
+QuartzAI.egg-info/top_level.txt
