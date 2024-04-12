@@ -1,0 +1,3 @@
+[console_scripts]
+QuartzFramework = QuartzFramework:main
+
