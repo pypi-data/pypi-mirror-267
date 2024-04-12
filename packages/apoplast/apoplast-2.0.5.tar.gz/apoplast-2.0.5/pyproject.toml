@@ -1,0 +1,42 @@
+
+
+
+
+
+[tool.poetry]
+name = "apoplast"
+version = "2.0.5"
+description = ""
+authors = []
+readme = "readme.md"
+#packages = [
+#    { include = "apoplast", from = "venues/stages" }
+#]
+
+packages = [
+    { include = "apoplast", from = "venues/stages" }
+]
+exclude = ["venues/stages/apoplast/data_nodes/ingredients/_data"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+#volts = "^1.0.9"
+#click = "^8.1.7"
+#somatic = "^3.0.1"
+#ships = "^1.2.6"
+#sphene = "^1.0.7"
+#sanic = "^23.12.1"
+#pymongo = "^4.6.3"
+#pydash = "^8.0.0"
+#rich = "^13.7.1"
+#tinydb = "^4.8.0"
+#numpy = "^1.26.4"
+
+#[tool.poetry.scripts]
+#apoplast = 'apoplast:clique'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
