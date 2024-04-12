@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: BatsaevAb
+Version: 0.1
+Summary: Списывать - легко!
+Home-page: https://github.com/saiyan05122004
+Author: Abdula Batsaev
+Author-email: abdyla05122004@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Установи, спиши и обезательно удали библиотеку из проекта(чтоб не спалили).

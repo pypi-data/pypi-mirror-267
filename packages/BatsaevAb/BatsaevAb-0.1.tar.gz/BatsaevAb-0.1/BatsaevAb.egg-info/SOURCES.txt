@@ -1,0 +1,5 @@
+setup.py
+BatsaevAb.egg-info/PKG-INFO
+BatsaevAb.egg-info/SOURCES.txt
+BatsaevAb.egg-info/dependency_links.txt
+BatsaevAb.egg-info/top_level.txt
