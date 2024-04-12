@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: termpandas
+Version: 0.0.5
+Summary: Scrollable pandas dataframes in the terminal.
+Home-page: https://github.com/juan-esteban-berger/termpandas
+Author: Juan Esteban Berger
+Author-email: juanestebanberger@gmail.com
+License: UNKNOWN
+Project-URL: Source Code, https://github.com/juan-esteban-berger/termpandas
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas >=2.1.4
+Requires-Dist: blessings >=1.7
+Requires-Dist: curtsies >=0.4.2
+
+# termpandas
+Scrollable Pandas DataFrames in the Terminal.
+
+## Installation
+
+```bash
+pip install termpandas
+```
+
+## Usage
+
+```python
+import pandas as pd
+from termpandas import tprint
+
+df = pd.read_csv('titanic.csv')
+tprint(df)
+```
+
+![tprint.gif](https://raw.githubusercontent.com/juan-esteban-berger/termpandas/main/tprint.gif)
+
+- Key Bindings:
+    - k to scroll up
+    - j to scroll down
+    - h to scroll left
+    - l to scroll right
+    - q to quit
+
+## Optional Parameters
+
+- `num_rows`: Number of rows to display at a time. Default is 10.
+```python
+tprint(df, num_rows=5)
+```
+
+
