@@ -1,0 +1,13 @@
+tests/__init__.py,sha256=5e9gu75LLep612v20nUopVHOxiwxocQKNbS70EZZmec,231
+tests/test_trinnov_altitude.py,sha256=YtMnKC7GBIHbXCEQxs_riCQG6avA4gI6L5M7au5AXPs,2711
+trinnov_altitude/__init__.py,sha256=orAtPM4UCahbx_KpE-Y_rtJpZSIUKMXW0ImCQzevPjI,254
+trinnov_altitude/const.py,sha256=JM8RIQnn9Mi4MHLvYzs74iojXgRdqV6pVJdOOsbqaQg,1044
+trinnov_altitude/exceptions.py,sha256=FOdMLRO4qgjQTX8pIQuD6W9hqou0V8A5BxVpxR1UAnA,1900
+trinnov_altitude/messages.py,sha256=wKGH37sBYULvWRPUlY2DLhVefrNeq9jLGiddQerNPN4,3196
+trinnov_altitude/mocks.py,sha256=Ge5OidvnrvtYhvoTHQeZBbNp7W3Qoaw0MVXtLlyacw4,6947
+trinnov_altitude/trinnov_altitude.py,sha256=62BbkncAz-e7yFLyrj26uzKoi8I2QdgFD-lbr-L-RjE,21263
+trinnov_altitude-0.1.13.dist-info/LICENSE,sha256=KNRRtnvLTYMqsvO_FD_QiEwzwJLN5DkYcignsChqMtI,11349
+trinnov_altitude-0.1.13.dist-info/METADATA,sha256=5ojaMpgEkX6ohEJF3lqsfskplDKY2YucR7k00Qmr0XI,6170
+trinnov_altitude-0.1.13.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+trinnov_altitude-0.1.13.dist-info/top_level.txt,sha256=PMqeSD7k9EheB6ocOOoyNMhIF8rs9Qsphr0SEZ__Hfg,23
+trinnov_altitude-0.1.13.dist-info/RECORD,,
