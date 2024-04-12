@@ -1,0 +1,16 @@
+mcraft/__init__.py,sha256=owWzSJw53wofRqj3uJg5HYiEnULLsxGBfr_LKnueiZw,543
+mcraft/craft.py,sha256=yxNvMOVaNx7yg9eQHiAtzjHLEYnBnaa8Ck25gz6AtLs,2796
+mcraft/craft_utils.py,sha256=ItYk639nV7a8ZxlJMu78u3EPfOxLLqDAfeZdDek-hVs,9099
+mcraft/file_utils.py,sha256=H-RFQ3VvvQF-CdUCIH4uHD14odbWwJJUTJZ0Z70dDVA,3249
+mcraft/imgproc.py,sha256=GF6ch9fw7OoULlzTZVbn1tLmr69SECQEUamWdbvwXCk,2163
+mcraft/networks.py,sha256=78l8EwYZ7bl3Ux8c-EjznDXnBf1OqYsxb8ln0aMWrwk,6311
+mcraft/refinenet.py,sha256=1uJad49ePFNF7mS4lOYhIumulYflu-pqvvMvxeF5aPc,2509
+mcraft/test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcraft/utils.py,sha256=WvHuGg91ONrIupoc_3z_MJvqMaRVxXZtv4xmEj-NQXQ,1542
+mcraft/basenet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcraft/basenet/vgg16_bn.py,sha256=NZKnEwPNO7S0tYpd9x52rtgbGXCOAcGuRqf51e0_h6E,2654
+mcraft-0.0.1.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+mcraft-0.0.1.dist-info/METADATA,sha256=k6fSCQZbC5ZmjKqraWa-wj_T9-vPPBiU-bJcFw5Q9Mc,2613
+mcraft-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mcraft-0.0.1.dist-info/top_level.txt,sha256=X6PEWg8UbU5aWO69BjuTdi7jPadZCybedBfTqOqFJfQ,7
+mcraft-0.0.1.dist-info/RECORD,,
