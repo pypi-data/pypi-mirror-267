@@ -1,0 +1,3 @@
+[console_scripts]
+version_package=joystick_diagrams.version:generate_version
+
