@@ -1,0 +1,2 @@
+include chip/config.ini
+exclude .env
