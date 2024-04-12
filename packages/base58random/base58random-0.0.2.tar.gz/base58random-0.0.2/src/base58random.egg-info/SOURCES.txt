@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/base58random/__init__.py
+src/base58random.egg-info/PKG-INFO
+src/base58random.egg-info/SOURCES.txt
+src/base58random.egg-info/dependency_links.txt
+src/base58random.egg-info/top_level.txt
