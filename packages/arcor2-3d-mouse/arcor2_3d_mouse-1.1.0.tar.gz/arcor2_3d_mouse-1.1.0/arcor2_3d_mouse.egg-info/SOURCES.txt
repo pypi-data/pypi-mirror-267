@@ -1,0 +1,17 @@
+MANIFEST.in
+backend_shim.py
+setup.py
+arcor2_3d_mouse/VERSION
+arcor2_3d_mouse/__init__.py
+arcor2_3d_mouse/mouse_controller.py
+arcor2_3d_mouse/mouse_program.py
+arcor2_3d_mouse/py.typed
+arcor2_3d_mouse.egg-info/PKG-INFO
+arcor2_3d_mouse.egg-info/SOURCES.txt
+arcor2_3d_mouse.egg-info/dependency_links.txt
+arcor2_3d_mouse.egg-info/entry_points.txt
+arcor2_3d_mouse.egg-info/namespace_packages.txt
+arcor2_3d_mouse.egg-info/requires.txt
+arcor2_3d_mouse.egg-info/top_level.txt
+arcor2_3d_mouse/scripts/__init__.py
+arcor2_3d_mouse/scripts/mouse_launcher.py
