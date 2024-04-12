@@ -1,0 +1,10 @@
+odoo/addons/ssi_service_quotation_tnc/README.rst,sha256=MQLREziuBRPNzN3EwTAl53QbMbw6uXHt58cLq740snc,1258
+odoo/addons/ssi_service_quotation_tnc/__init__.py,sha256=JhPhaZHX2EaxlVGYxnTiJXb4lOWip7fiumVfTPQGruo,200
+odoo/addons/ssi_service_quotation_tnc/__manifest__.py,sha256=XBmthd5d8Qx-K6CoBW2CnENmT2ELTwF5s9lJlifdASU,562
+odoo/addons/ssi_service_quotation_tnc/models/__init__.py,sha256=5CLCUhyl8xJzZmgK-Hz4N7ns3qOs5XdyxoycRFS9HZc,211
+odoo/addons/ssi_service_quotation_tnc/models/service_quotation.py,sha256=KyfIj_fxBYcZcJy9gRDVPlW7Y4WzCGfZ-rDZuZuRhUY,369
+odoo/addons/ssi_service_quotation_tnc/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo14_addon_ssi_service_quotation_tnc-14.0.1.0.0.dist-info/METADATA,sha256=aZYpjHqGLRMf-ecysr2_lb869YRRYS4zJxF2WkEkTiA,1876
+odoo14_addon_ssi_service_quotation_tnc-14.0.1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+odoo14_addon_ssi_service_quotation_tnc-14.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_service_quotation_tnc-14.0.1.0.0.dist-info/RECORD,,
