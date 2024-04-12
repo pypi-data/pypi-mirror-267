@@ -1,0 +1,118 @@
+A general purpose bidirectional packet stream connection.
+
+*Latest release 20240412*:
+* PacketConnection: now subclasses MultiOpenMixin, big refactor.
+* PacketConnection.__init__: use @promote to turn the recv parameter into a CornuCopyBuffer.
+* Fix a deadlock.
+
+## Class `Packet(cs.binary.SimpleBinary)`
+
+A protocol packet.
+
+*Method `Packet.__str__(self)`*:
+pylint: disable=signature-differs
+
+*Method `Packet.parse(bfr)`*:
+Parse a `Packet` from a buffer.
+
+*Method `Packet.transcribe(self)`*:
+Transcribe this packet.
+
+## Class `PacketConnection(cs.resources.MultiOpenMixin)`
+
+A bidirectional binary connection for exchanging requests and responses.
+
+*Method `PacketConnection.__init__(self, recv: cs.buffer.CornuCopyBuffer, send, request_handler=None, name=None, packet_grace=None, tick=None, recv_len_func=None, send_len_func=None)`*:
+Initialise the PacketConnection.
+
+Parameters:
+* `recv`: inbound binary stream.
+  This value is automatically promoted to a `cs.buffer.CornuCopyBuffer`
+  by the `CornuCopyBuffer.promote` method.
+* `recv_len_func`: optional function to compute the data
+  length of a received packet; the default watches the offset
+  on the receive stream
+* `send`: outbound binary stream.
+  If this is an `int` it is taken to be an OS file descriptor,
+  otherwise it should be a binary file like object with `.write(bytes)`
+  and `.flush()` methods.
+  This objects _is not closed_ by the `PacketConnection`;
+  the caller has responsibility for that.
+* `send_len_func`: optional function to compute the data
+  length of a sent packet; the default watches the offset
+  on the send stream
+* `packet_grace`:
+  default pause in the packet sending worker
+  to allow another packet to be queued
+  before flushing the output stream.
+  Default: `DEFAULT_PACKET_GRACE`s.
+  A value of `0` will flush immediately if the queue is empty.
+* `request_handler`: an optional callable accepting
+  (`rq_type`, `flags`, `payload`).
+  The request_handler may return one of 5 values on success:
+  * `None`: response will be 0 flags and an empty payload.
+  * `int`: flags only. Response will be the flags and an empty payload.
+  * `bytes`: payload only. Response will be 0 flags and the payload.
+  * `str`: payload only. Response will be 0 flags and the str
+          encoded as bytes using UTF-8.
+  * `(int, bytes)`: Specify flags and payload for response.
+  An unsuccessful request should raise an exception, which
+  will cause a failure response packet.
+* `tick`: optional tick parameter, default `None`.
+  If `None`, do nothing.
+  If a Boolean, call `tick_fd_2` if true, otherwise do nothing.
+  Otherwise `tick` should be a callable accepting a byteslike value.
+
+*Method `PacketConnection.do(self, *a, **kw)`*:
+Wrapper function to check that this instance is not closed.
+
+*Method `PacketConnection.join(self)`*:
+Wait for the receive side of the connection to terminate.
+
+*Method `PacketConnection.request(self, *a, **kw)`*:
+Wrapper function to check that this instance is not closed.
+
+## Class `Request_State(builtins.tuple)`
+
+RequestState(decode_response, result)
+
+*Property `Request_State.decode_response`*:
+Alias for field number 0
+
+*Property `Request_State.result`*:
+Alias for field number 1
+
+## Function `tick_fd_2(bs)`
+
+A low level tick function to write a short binary tick
+to the standard error file descriptor.
+
+This may be called by the send and receive workers to give
+an indication of activity type.
+
+# Release Log
+
+
+
+*Release 20240412*:
+* PacketConnection: now subclasses MultiOpenMixin, big refactor.
+* PacketConnection.__init__: use @promote to turn the recv parameter into a CornuCopyBuffer.
+* Fix a deadlock.
+
+*Release 20211208*:
+* Packet.__eq__: only test .rq_type if .is_request.
+* Update tests for changes.
+
+*Release 20210306*:
+* Port to new cs.binary.Binary* classes.
+* Some refactors and small fixes.
+
+*Release 20191004*:
+* PacketConnection: new optional parameter `packet_grace` to tune the send delay for additional packets before a flush, default DEFAULT_PACKET_GRACE (0.01s), 0 for no delay.
+* Add a crude packet level activity ticker.
+
+*Release 20190221*:
+DISTINFO requirement updates.
+
+*Release 20181228*:
+Initial PyPI release.
