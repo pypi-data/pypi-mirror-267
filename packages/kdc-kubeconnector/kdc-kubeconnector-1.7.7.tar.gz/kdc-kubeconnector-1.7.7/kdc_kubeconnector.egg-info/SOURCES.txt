@@ -1,0 +1,13 @@
+Readme.md
+pyproject.toml
+kdc/__init__.py
+kdc/config.py
+kdc/kube_dashboard.py
+kdc/main.py
+kdc/parsers.py
+kdc_kubeconnector.egg-info/PKG-INFO
+kdc_kubeconnector.egg-info/SOURCES.txt
+kdc_kubeconnector.egg-info/dependency_links.txt
+kdc_kubeconnector.egg-info/entry_points.txt
+kdc_kubeconnector.egg-info/requires.txt
+kdc_kubeconnector.egg-info/top_level.txt

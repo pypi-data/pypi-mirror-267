@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=69.1.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+exclude = [".github", "config.toml", "build.bat", "build.sh"]
+
+[project]
+name = "kdc-kubeconnector"
+version = "1.7.7"
+description = "Tool to work with kubernetes dashboard, if there is no kubectl access"
+requires-python = ">=3.11"
+readme = "Readme.md"
+
+dependencies = [
+    "argparse>=1.4.0",
+    "requests>=2.31.0",
+    "prettytable>=3.10.0",
+    "toml>=0.10.2",
+    "pyperclip>=1.8.2"]
+
+authors = [
+    { name = "Oleksii Ostapov" },
+]
+
+classifiers = [
+    "Topic :: Software Development :: Testing",
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://infopulse.com"
+Documentation = "https://github.com/infopulse/kdc"
+Code = "https://github.com/infopulse/kdc"
+
+[project.scripts]
+kdc = "kdc.main:main"
