@@ -1,0 +1,9 @@
+README.md
+setup.py
+l2m2/__init__.py
+l2m2/llm_manager.py
+l2m2.egg-info/PKG-INFO
+l2m2.egg-info/SOURCES.txt
+l2m2.egg-info/dependency_links.txt
+l2m2.egg-info/requires.txt
+l2m2.egg-info/top_level.txt
