@@ -1,0 +1,5 @@
+setup.py
+plugin_ocean_utils.egg-info/PKG-INFO
+plugin_ocean_utils.egg-info/SOURCES.txt
+plugin_ocean_utils.egg-info/dependency_links.txt
+plugin_ocean_utils.egg-info/top_level.txt
