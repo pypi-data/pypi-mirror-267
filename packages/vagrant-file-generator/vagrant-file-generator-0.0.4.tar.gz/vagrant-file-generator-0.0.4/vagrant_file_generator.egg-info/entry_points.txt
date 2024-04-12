@@ -1,0 +1,2 @@
+[console_scripts]
+vagrant-init-generator = vagrant_creator:vagrant_creator.generate_vagrantfile

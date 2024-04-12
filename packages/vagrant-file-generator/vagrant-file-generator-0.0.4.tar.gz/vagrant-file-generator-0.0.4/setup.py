@@ -1,0 +1,35 @@
+from setuptools import setup, find_packages
+import os
+
+setup(
+    name='vagrant-file-generator',
+    version='0.0.4',
+    author='Chandula Jayathilake',
+    author_email='chandulaj3000@gmail.com',
+    description='A tool to generate Vagrant init files with custom configurations',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    url='https://github.com/ChandulaJ/vagrant-creator',
+    license='MIT',
+    packages=find_packages(),
+    classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: POSIX :: Linux',
+        'Programming Language :: Python :: 3',
+        'Topic :: Software Development :: Build Tools',
+        'Topic :: Utilities',
+    ],
+    entry_points={
+        'console_scripts': [
+            'vagrant-init-generator=vagrant_creator:vagrant_creator.generate_vagrantfile',
+        ],
+    },
+    package_data={
+        '': ['*.sh'],
+    },
+    include_package_data=True,
+    install_requires=[],
+)
+
