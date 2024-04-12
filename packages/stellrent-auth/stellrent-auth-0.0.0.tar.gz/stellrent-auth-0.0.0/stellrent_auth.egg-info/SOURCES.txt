@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+stellrent_auth/__init__.py
+stellrent_auth/auth.py
+stellrent_auth.egg-info/PKG-INFO
+stellrent_auth.egg-info/SOURCES.txt
+stellrent_auth.egg-info/dependency_links.txt
+stellrent_auth.egg-info/requires.txt
+stellrent_auth.egg-info/top_level.txt
+tests/test_environment_variables.py
