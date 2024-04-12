@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sandesh.py.egg-info/PKG-INFO
+sandesh.py.egg-info/SOURCES.txt
+sandesh.py.egg-info/dependency_links.txt
+sandesh.py.egg-info/top_level.txt
+sandesh_py/__init__.py
+sandesh_py/attachments.py
+sandesh_py/mailer.py
+sandesh_py/smtp.py
+sandesh_py/types.py
