@@ -1,0 +1,2 @@
+shapely>=2.0.2
+language-remote>=0.0.17
