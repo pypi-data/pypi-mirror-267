@@ -1,0 +1,10 @@
+telegram_wallet_pay/__init__.py,sha256=jyn0rvmHbQqxUX6PnwKkU81wkG4FUXdmkRRMZvk1Gt8,116
+telegram_wallet_pay/client.py,sha256=1uS0aUmboSVIqAgYctpm7V-EXxRBWCn5xOHcxM8BXZY,4378
+telegram_wallet_pay/schemas.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telegram_wallet_pay/tools.py,sha256=wz91Fxo3i9Sdh7lfE6FjmL45MQPj7TEh24LaLi95WJw,415
+telegram_wallet_pay/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telegram_wallet_pay/schemas/_default.py,sha256=kMxHy2ZEbGJ-3IHcLRCGtzICjeb2PocxrU_gy-y00zg,459
+telegram_wallet_pay/schemas/order.py,sha256=ojakFI2B4WMazKhW0fO6DvKQRs4t-xxvrR2zDkYXre8,1521
+telegram_wallet_pay-0.0.1.dist-info/METADATA,sha256=IuTb9lUmeLSAkVRorwcTsW7rYFceSWYFTRVhbT7uNks,1439
+telegram_wallet_pay-0.0.1.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+telegram_wallet_pay-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,36 @@
+Metadata-Version: 2.3
+Name: telegram-wallet-pay
+Version: 0.0.1
+Summary: Async client for Telegram Wallet Pay API
+Project-URL: Repository, https://github.com/Olegt0rr/TelegramWalletPay
+Author-email: Oleg Abramov <oleg@trueweb.app>
+Maintainer-email: Oleg Abramov <oleg@trueweb.app>
+License-Expression: MIT
+Keywords: API,Pay,Telegram,Wallet,async
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: aiohttp<3.10.0,>=3.8.5
+Requires-Dist: pydantic>=2.4
+Provides-Extra: dev
+Requires-Dist: mypy>=1; extra == 'dev'
+Requires-Dist: pre-commit>=3; extra == 'dev'
+Requires-Dist: ruff>=0; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage>=7; extra == 'test'
+Requires-Dist: pytest-asyncio>=0; extra == 'test'
+Requires-Dist: pytest-cov>=4; extra == 'test'
+Requires-Dist: pytest>=7; extra == 'test'
+Description-Content-Type: text/markdown
+
+# TelegramWalletPay
