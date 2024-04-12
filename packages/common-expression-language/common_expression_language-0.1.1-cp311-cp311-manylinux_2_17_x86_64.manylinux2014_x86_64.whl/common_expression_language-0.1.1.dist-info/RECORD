@@ -1,0 +1,7 @@
+common_expression_language-0.1.1.dist-info/METADATA,sha256=X_tAkWlxdmIWyhaaXh9ZA-xyXf029PqlTm-OSzfG54Q,1922
+common_expression_language-0.1.1.dist-info/WHEEL,sha256=Ti0Uzxyga5uf2MKKj_tctEwg5Iu5N4jwCHHsVBaRjYg,129
+common_expression_language-0.1.1.dist-info/entry_points.txt,sha256=s-qlMOFfu_QhrksKE7MnY4BbX3XcUq4_BzBpxPP3ClQ,30
+common_expression_language-0.1.1.dist-info/license_files/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cel/__init__.py,sha256=h_HAUB92PrTFBZoo4ayzt0c_xIXdgm0-h599GIPEdh8,95
+cel/cel.cpython-311-x86_64-linux-gnu.so,sha256=FUaofhCCpb4pb0nyJZkwawk23MyEP8FEHo5KxrgKLwM,7041760
+common_expression_language-0.1.1.dist-info/RECORD,,
