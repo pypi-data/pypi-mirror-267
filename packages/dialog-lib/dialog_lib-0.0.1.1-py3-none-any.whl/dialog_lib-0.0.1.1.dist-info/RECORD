@@ -1,0 +1,13 @@
+dialog_lib/agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dialog_lib/agents/abstract.py,sha256=dKEsxi3mUd5Pl837519XV-cLC9t4oXms0P4DQS1wVus,3238
+dialog_lib/db/__init__.py,sha256=KE-mteK608CRwoE6HmfJ3q-VKSDj2mVP7XFPtSw9SP0,117
+dialog_lib/db/memory.py,sha256=AWP_dkjXojIT6qR2GUPhsK_mRzc-xwc-P1AW8hNaJVQ,2642
+dialog_lib/db/models.py,sha256=YoaU2zJqH3UYPybi93B-qfabQEjR1Qg8aTkjw3p_hxw,1325
+dialog_lib/db/utils.py,sha256=MH-mOVrqFg4XXuDKpCcIG1oC1e4z2LKqDP7K5mcQtqA,398
+dialog_lib/embeddings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dialog_lib/embeddings/generate.py,sha256=43iSET5SfrqIFBqvh3VVU8EKL9HPMNsU-m08iah8RFg,1427
+dialog_lib/main.py,sha256=9k0NNprkHWM59r9udH-VnZyLIZZTQ0UE0cYld3eTNt4,148
+dialog_lib-0.0.1.1.dist-info/METADATA,sha256=3fWTEHqG8CbpZTDqjdFcnKf-V9y_RFZaClOKlxCiJmM,749
+dialog_lib-0.0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+dialog_lib-0.0.1.1.dist-info/entry_points.txt,sha256=1fC52sI2utSTJFR0hFU-ouh4lDpDg6LOOp_bqWjWN3c,43
+dialog_lib-0.0.1.1.dist-info/RECORD,,
