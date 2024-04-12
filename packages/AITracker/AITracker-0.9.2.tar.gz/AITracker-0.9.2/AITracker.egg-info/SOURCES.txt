@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+AITracker.egg-info/PKG-INFO
+AITracker.egg-info/SOURCES.txt
+AITracker.egg-info/dependency_links.txt
+AITracker.egg-info/requires.txt
+AITracker.egg-info/top_level.txt
+src/AITracker/AITrackerModel.py
+src/AITracker/AITrackerNetwork.py
+src/AITracker/DataValidation.py
+src/AITracker/UpdateH5.py
+src/AITracker/__init__.py
+src/AITracker/setup.py
