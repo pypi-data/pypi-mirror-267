@@ -1,0 +1,10 @@
+sam_tags/__init__.py,sha256=HWX7f9tk6p1fHZfNLeEymgY85iFm8G0N5XU4mfJjKVw,116
+sam_tags/community/__init__.py,sha256=oz9T6rGzzWnrSrXZ1Ew9m0iXVGVsu7NoIUQMvhT3zF4,120
+sam_tags/community/bwa_tag.py,sha256=1vVnCcNCo-v1FueeoJkg1jempP8hHv-O-MKQ-tpa9RI,1469
+sam_tags/community/cellranger_tag.py,sha256=uKZTxeq4OUdmKcKidoQAyOGGDvlZbNLu7WoDCDgNCpw,1872
+sam_tags/sam_tag.py,sha256=AHOr5gbiiliXoKGe2_PudqOsGhl9Qma9HO5OUZPgmdc,7004
+sam_tags/standard_tag.py,sha256=ACMzWWRlCIwMRbpN2WZ9Bvz3M2zPpQtRbpgSISqDIdA,28388
+sam_tags-0.1.0.dist-info/LICENSE,sha256=Q83CrR5i80Jm-k05QxQJVBauJ3A6uFi8WHqer0jOFWw,1067
+sam_tags-0.1.0.dist-info/METADATA,sha256=UPXYJikBOZeiRkZF0BtITd_jq5aCZw648gPgf5pXDlc,2007
+sam_tags-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sam_tags-0.1.0.dist-info/RECORD,,
