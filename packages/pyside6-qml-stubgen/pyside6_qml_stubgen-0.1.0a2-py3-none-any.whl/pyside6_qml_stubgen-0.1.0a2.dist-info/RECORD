@@ -1,0 +1,10 @@
+pyside6_qml_stubgen/__init__.py,sha256=6WgVALcGwaJD-LWVijHMGnFgqtM6kXylLAgbygk38gY,14646
+pyside6_qml_stubgen/__main__.py,sha256=ool-3rB_cyb1ZXcyjjBzmYoop_2npdCa0y9hBmQr2ek,1796
+pyside6_qml_stubgen/dirty_file_detection.py,sha256=kF8vT_Q9xP5vajfUERfpj7vMBnUHkVh0Oqz7PWwdgLo,4630
+pyside6_qml_stubgen/pyside_patching.py,sha256=p-rRRmjkBIUPB67dEMnR7f6HeKP3m-wUf2v0FUoee6k,11335
+pyside6_qml_stubgen/qmlregistrar_types.py,sha256=B-ZH0eyH62zl04Qi08CvkaqE2QCku6xl29CF_c2Tfsk,2009
+pyside6_qml_stubgen-0.1.0a2.dist-info/METADATA,sha256=ABkIZwxKw_fYzbRMXEkontxNzlRhQPNMS5KKbr4U8i4,4079
+pyside6_qml_stubgen-0.1.0a2.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+pyside6_qml_stubgen-0.1.0a2.dist-info/entry_points.txt,sha256=rRsWza_NHs7jsYLVKiTHNOfYTiI4qb3nfr6XqmFcwcU,74
+pyside6_qml_stubgen-0.1.0a2.dist-info/licenses/LICENCE.md,sha256=Z8GhnCV1ThOJEXxIc55-MTseOyJ5uuqxISEFmhxUQfM,7559
+pyside6_qml_stubgen-0.1.0a2.dist-info/RECORD,,
