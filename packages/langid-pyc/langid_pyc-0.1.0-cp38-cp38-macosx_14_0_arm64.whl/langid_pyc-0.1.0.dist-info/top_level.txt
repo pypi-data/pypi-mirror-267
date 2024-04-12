@@ -1,0 +1,2 @@
+_langid
+langid_pyc
