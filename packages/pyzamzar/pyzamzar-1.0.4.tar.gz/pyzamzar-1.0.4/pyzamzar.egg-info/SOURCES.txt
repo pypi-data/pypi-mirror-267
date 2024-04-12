@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+pyzamzar.egg-info/PKG-INFO
+pyzamzar.egg-info/SOURCES.txt
+pyzamzar.egg-info/dependency_links.txt
+pyzamzar.egg-info/top_level.txt
+zamzar/__init__.py
+zamzar/zamzar.py
