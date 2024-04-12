@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "mainupdater"
+version = "0.0.1"
+description = "Простое обновление файлов по ссылке"
+authors = ["MainPlay TG <xbox.roman6666666666@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/MainPlay-TG/MainUpdater.py"
+packages = [
+    { include = "MainUpdater", from = "src" },
+]
+
+[tool.poetry.scripts]
+MU-updateAll = "MainUpdater.script:updateAll"
+
+[tool.poetry.group.progressbar]
+optional = true
+
+[tool.poetry.group.progressbar.dependencies]
+progressbar2 = "*"
+
+[tool.poetry.dependencies]
+mainshortcuts = "*"
+python = "^3.7"
+requests = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
