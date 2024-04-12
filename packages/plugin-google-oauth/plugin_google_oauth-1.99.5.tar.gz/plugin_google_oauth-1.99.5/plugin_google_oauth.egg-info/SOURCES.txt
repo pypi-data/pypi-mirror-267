@@ -1,0 +1,5 @@
+setup.py
+plugin_google_oauth.egg-info/PKG-INFO
+plugin_google_oauth.egg-info/SOURCES.txt
+plugin_google_oauth.egg-info/dependency_links.txt
+plugin_google_oauth.egg-info/top_level.txt
