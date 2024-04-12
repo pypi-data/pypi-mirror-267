@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+batsaevtest/__init__.py
+batsaevtest/examples.py
+batsaevtest.egg-info/PKG-INFO
+batsaevtest.egg-info/SOURCES.txt
+batsaevtest.egg-info/dependency_links.txt
+batsaevtest.egg-info/requires.txt
+batsaevtest.egg-info/top_level.txt
