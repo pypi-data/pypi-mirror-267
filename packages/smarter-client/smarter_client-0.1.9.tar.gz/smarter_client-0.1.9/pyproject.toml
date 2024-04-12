@@ -1,0 +1,56 @@
+[project]
+name = "smarter-client"
+description = "Smarter Kettle client library"
+authors = [
+    { name = "Kirill Birger", email = "kbirger@gmail.com" },
+    { name = "@kbirger" },
+]
+dependencies = [
+    "astroid==3.1.0",
+    "pylint==3.1.0",
+    "pytest>=6.2.0",
+    "pytest-cov>=2.4.0",
+    "pytest-localserver>=0.4.1",
+    "pytest-asyncio>=0.16.0",
+    "pytest-mock>=3.6.1",
+    "aiohttp>=3.9.3",
+    "pyrebase4==4.7.1",
+    "setuptools>=69.2.0",
+]
+dynamic = ['version']
+requires-python = ">=3.12.2"
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["smarter kettle python"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+[tool.pdm]
+distribution = false
+
+[tool.hatch.version]
+path = 'smarter_client/version.py'
+
+[tool.pdm.dev-dependencies]
+testing = [
+    "pytest>=6.2.0",
+    "pytest-cov>=2.4.0",
+    "pytest-localserver>=0.4.1",
+    "pytest-asyncio>=0.16.0",
+    "pytest-mock>=3.6.1",
+    "time-machine>=2.14.1",
+]
+
+
+build = ["build"]
+
+[project.urls]
+Homepage = "https://www.github.com/kbirger/smarter-kettle-client"
+"Release Notes" = "https://www.github.com/kbirger/smarter-kettle-client"
+Source = "https://www.github.com/kbirger/smarter-kettle-client"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
