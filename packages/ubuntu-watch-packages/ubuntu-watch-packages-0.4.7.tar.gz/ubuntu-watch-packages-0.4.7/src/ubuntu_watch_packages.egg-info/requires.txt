@@ -1,0 +1,7 @@
+babel
+click
+jinja2
+python-debian
+pyyaml
+readchar
+ubuntu-package-status>=0.0.4

@@ -1,0 +1,5 @@
+# Sample config.
+ubuntu-versions:
+  noble:
+    packages:
+    - linux-generic

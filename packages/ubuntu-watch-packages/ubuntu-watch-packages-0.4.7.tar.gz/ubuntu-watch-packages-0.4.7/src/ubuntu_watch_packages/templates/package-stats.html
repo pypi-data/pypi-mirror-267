@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Package Stats</title>
+
+    <style type="text/css">
+        .suitewrapper{
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+        #generated-time{
+            font-size: 80%;
+            margin-top: 1em;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs-3.3.7/jq-2.2.4/dt-1.10.15/kt-2.2.1/r-2.1.1/datatables.min.css"/>
+
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs-3.3.7/jq-2.2.4/dt-1.10.15/kt-2.2.1/r-2.1.1/datatables.min.js"></script>
+</head>
+<body>
+<br />
+<div class="suitewrapper">
+    <p>For further kernel SRU information, see <a href="http://kernel.ubuntu.com/sru/kernel-sru-workflow.html">http://kernel.ubuntu.com/sru/kernel-sru-workflow.html</a></p>
+
+        <div class="btn-group btn-group-justified suite-toggle" role="group" >
+            {% for suite, packages in suites.items() %}
+                <a href="#" id="suite_{{ suite }}" class="btn btn-primary">{{ suite }}</a>
+            {% endfor %}
+            <a href="#" id="reset" class="btn btn-default">All</a>
+        </div>
+
+        {% for suite, packages in suites.items() %}
+            <div id="suite_wrapper_{{ suite }}">
+                <h2>{{ suite }}</h2>
+                <table class="suite_data_table_{{ suite }} table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Package</th>
+                        {% for pocket in pockets %}
+                            <th>{{ pocket }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                {% for package, pockets in packages.items() %}
+                    <tr>
+                        <td><a href="https://pad.lv/p/{{ package }}">{{ package }}</a></td>
+                        {% for pocket, architectures in pockets.items() %}
+                            <td>
+                                {% for architecture, stats in architectures.items() %}
+                                    {%  if stats.version or stats.full_version or stats.date_published %}
+                                        <dl>
+                                            <dt>Pocket</dt>
+                                            <dd>{{ pocket }}</dd>
+                                            <dt>Architecture</dt>
+                                            <dd>{{ architecture }}</dd>
+                                            <dt><a href="{{ stats.link }}">Version</a></dt>
+                                            <dd>{{ stats.version }}</dd>
+                                            <dt>Full version</dt>
+                                            <dd><a href="{{ stats.build_link }}">{{ stats.full_version }}</a></dd>
+                                            <dt>Date Published</dt>
+                                            <dd>{{ stats.date_published }} <br /><em>({{ stats.published_age }})</em></dd>
+                                        </dl>
+                                    {% endif %}
+                                {% endfor %}
+                            </td>
+                       {% endfor %}
+                    </tr>
+
+                {% endfor %}
+                </tbody>
+                </table>
+            </div>
+        {% endfor %}
+         <ul>
+             <li>
+                 <a href="config.yaml">config.yaml used to generate these tables</a>
+             </li>
+             <li>
+                 <a href="package-stats.json">JSON output of these tables</a>
+             </li>
+         </ul>
+    </div>
+
+    <div id="generated-time">Generated at {{ generation_time.strftime('%Y-%m-%d %H:%M:%S %Z') }}</div>
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+        {% for suite, packages in suites.items() %}
+            var suite_data_table_{{ suite}} = $('.suite_data_table_{{ suite }}').DataTable({
+                 paging: false,
+                 order: [[ 0, "asc" ]]
+            });
+            suite_data_table_{{ suite}}.draw();
+            $("#suite_wrapper_{{ suite }}").hide();
+            $('#suite_{{ suite }}').removeClass('btn-primary').addClass('btn-default');
+
+            $("#suite_{{ suite }}").click(function(event) {
+                event.preventDefault();
+
+                {% for sub_suite, packages in suites.items() %}
+                    $('#suite_{{ sub_suite }}').removeClass('btn-primary').addClass('btn-default');
+                    $("#suite_wrapper_{{ sub_suite }}").hide();
+                {% endfor %}
+                $('#reset').removeClass('btn-primary').addClass('btn-default');
+                $(this).addClass('btn-primary').removeClass('btn-default');
+                $("#suite_wrapper_{{ suite }}").show();
+            });
+        {% endfor %}
+
+        $("#suite_wrapper_{{ first_suite }}").show();
+        $("#suite_{{ first_suite }}").addClass('btn-primary').removeClass('btn-default');
+
+        $("#reset").click(function(event) {
+            event.preventDefault();
+            {% for suite, packages in suites.items() %}
+                    $('#suite_{{ suite }}').removeClass('btn-primary').addClass('btn-default');
+                    $("#suite_wrapper_{{ suite }}").show();
+                {% endfor %}
+            $(this).addClass('btn-primary').removeClass('btn-default');
+            $.fn.dataTable.ext.search.pop();
+        });
+    } );
+
+</script>
+</body>
+
