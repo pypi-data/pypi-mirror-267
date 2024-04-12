@@ -1,0 +1,11 @@
+tripp/Trajectory.py,sha256=dQ-Vd4e6SqWhe6dmx0XymMj0E_jjoHmWbg2XZbxxVrE,8118
+tripp/Visualization.py,sha256=Jg0MPZf4bDTcDVWuwlX4l8KXaUO6321TVEOh_AprlEg,5231
+tripp/__init__.py,sha256=YDWoURNzpX5qKkgPi94L0Lqx-w2R34hMlzhWk-YJk1Y,210
+tripp/color_palettes.py,sha256=BtYVW2PGpZOoiyGHG241Hdxubku3iOp5gIuvbQ-PfSc,11753
+tripp/edit_pdb.py,sha256=YPmzp5kyA9DrapGm2Yv5rJ5q36QbeKb8ydmFyjXxOg0,5454
+tripp/model_pka_values.py,sha256=pBkY--mpL7LJJDhM_UcxGy90V-u7xluAWweCNi-EfPQ,1292
+tripp/visualise_pka.py,sha256=mgYQkjRNJf1Yg_MX-yOrTMccHqV9MHpFjtPRI9Xje7M,3019
+tripp-0.1.8.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tripp-0.1.8.dist-info/METADATA,sha256=Jn0bWI0s9tPKjBLMoB-u9im3_SVSTPLMixCuU3WJfFY,2037
+tripp-0.1.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+tripp-0.1.8.dist-info/RECORD,,
