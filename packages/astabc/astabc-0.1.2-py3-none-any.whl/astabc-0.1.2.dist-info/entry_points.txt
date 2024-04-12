@@ -1,0 +1,2 @@
+[console_scripts]
+astabc = astabc.astabc:main
