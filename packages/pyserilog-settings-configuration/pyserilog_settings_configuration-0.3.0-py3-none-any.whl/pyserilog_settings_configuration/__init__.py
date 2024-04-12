@@ -1,0 +1,1 @@
+from configuration_extensions import configure_from_setting
