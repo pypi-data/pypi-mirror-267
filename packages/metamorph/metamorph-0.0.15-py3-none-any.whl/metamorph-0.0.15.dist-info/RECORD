@@ -1,0 +1,11 @@
+metamorph/__init__.py,sha256=zl_6-MgBmrFCohAYxCA60Uk2Z27yrubqXKc4DbD859Y,236
+metamorph/config.py,sha256=HNbzt8jQmqwwIJ6fBFCjKmX0QKNl2zO3WLfhJcep-Dk,6501
+metamorph/handler.py,sha256=6XX_YXS38ahUDEMtEOqjp2ybTRDOV-_Zn37yvSvaRmA,3190
+metamorph/interactive.py,sha256=VrIR3ZWlOZnHy3sDzYVNFjUf9kG7v_nKXJx_c1jefrU,3536
+metamorph/main.py,sha256=7lc5tfOfVEemlLeRBEFup6Cc_gk9tBiITQdrb6zJl8s,6051
+metamorph/util.py,sha256=f2o35gI3Acf-Glv4NRo9wkWuA6qEIBqqU74her_kV3U,1321
+metamorph-0.0.15.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+metamorph-0.0.15.dist-info/METADATA,sha256=Fp1nLzUqj2-BXNBk3iv6S0Fi10_039dmwhfBv7DTCn8,5110
+metamorph-0.0.15.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+metamorph-0.0.15.dist-info/entry_points.txt,sha256=drkEpQ_P9sn-Qg3_0xhl-MSOYBu-Pzp1KYKqzsNf3zw,53
+metamorph-0.0.15.dist-info/RECORD,,
