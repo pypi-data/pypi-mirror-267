@@ -1,0 +1,12 @@
+s3torchconnectorclient-1.2.3.dist-info/RECORD,,
+s3torchconnectorclient-1.2.3.dist-info/LICENSE,sha256=ov7vSJ63ANT0qyILoqEgcQPFmt1O_M3EYs7k1YlsYEY,1543
+s3torchconnectorclient-1.2.3.dist-info/WHEEL,sha256=3Ij8bI-sb8yCMxXItr4MLlNoRGZb2WoUxQe9xIFR_DQ,111
+s3torchconnectorclient-1.2.3.dist-info/NOTICE,sha256=YDE2g-i27eKwQKH0rKp4dn6xmKHkHKgIVIeEs4Tjlqc,99
+s3torchconnectorclient-1.2.3.dist-info/THIRD-PARTY-LICENSES,sha256=pvDuX5iKZN1qOYpJwWCRlkf0CMy5klhgH9kPNiwQjbA,1875635
+s3torchconnectorclient-1.2.3.dist-info/top_level.txt,sha256=kNucFkKqBrqGnyl0vc8-1Gb_ZBEzLR1YSzx3qCGidtY,23
+s3torchconnectorclient-1.2.3.dist-info/METADATA,sha256=40I_0QCHvOYMeEzhbXYEpnFZm8VWUpnEeB3g7Qd39zo,9861
+s3torchconnectorclient/_mountpoint_s3_client.pyi,sha256=raXBjcMFTXPVl_BLyjTbyb8zikBq5sotiqOpNGxlTOw,3223
+s3torchconnectorclient/_mountpoint_s3_client.cpython-311-darwin.so,sha256=bJbKjwHLbqKf_fRuhgrtkwyPMw2TMb5c2e6pjvSubAs,6444672
+s3torchconnectorclient/__init__.py,sha256=33DVDaDcvmplYb19EQpWH5eovBlGXxJHR53faX7zADw,488
+s3torchconnectorclient/_logger_patch.py,sha256=fkhVuJpXOlMTRNr1e4yzN-Q2eMcL7QNNWXoLJWLXOKY,205
+s3torchconnectorclient/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
