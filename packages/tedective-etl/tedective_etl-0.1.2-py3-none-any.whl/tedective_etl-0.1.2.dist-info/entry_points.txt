@@ -1,0 +1,4 @@
+[console_scripts]
+run-pipeline=tedective_etl.main:run_pipeline
+run-server=tedective_etl.server:run_luigid
+
