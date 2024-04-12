@@ -1,0 +1,3 @@
+[console_scripts]
+poetry_mix=poetry_mix:clique
+
