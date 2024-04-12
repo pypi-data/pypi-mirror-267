@@ -1,0 +1,39 @@
+<a href='https://acmetric.com/' target='_blank'><img src='https://i.postimg.cc/ZnscgcFb/Acmetric-Social-3.jpg' height="100" border='0' alt='Acmetric-Social-3'/></a> 
+# Introducing ACMetric package!
+### Current version: `1.3.0`
+
+This package is created to help you use ACMetric's brand colors and build plots without hours of tuning. Enjoy!
+
+## Installing on Google Colab 
+Setting up in Google Colab is described [here](https://github.com/ACMetric/acmetric_package/blob/master/colab_setup.md).
+
+## Importing
+We recommend importing it along with `matplotlib` and `seaborn`.
+
+```python3
+%matplotlib inline # display plots in the notebook right away
+%config InlineBackend.figure_format='retina' # high resolution
+import matplotlib.pyplot as plt
+import seaborn as sns
+import acmetric as ac
+```
+
+And it is ready to go!
+
+### You can find code examples here: [Jupyter](https://github.com/ACMetric/acmetric_package/blob/master/notebooks/acmetric_package_intro.ipynb) | [Google Colab](https://colab.research.google.com/drive/14eYxEthMcPohkTFC9CLhe-nzHbQDoEsu?usp=sharing)
+***
+## Some things you need to know
+
+`ac.display_colors()` will show you a table with all the colors available and their names.
+
+`ac.colors` module contains ACMetric colors, you can access them by writing `ac.colors.coral`, `ac.colors.sky_60`, etc.  
+
+`ac.palette` is a `matplotlib` color palette. You can call it and choose a color you like by index, e.g. `ac.palette[3]`.
+
+`ac.cmap` is a gradient colormap that can be used in `seaborn` heatmap and other plots.
+
+Run `ac.params.layout_color('black')` to make axes and text black. Run `ac.params.layout_color('default')` to make them grey again.
+
+Now 4 kinds of plots are available in the package: bar chart, pie chart, scatter plot and box plot. You can make them using `ac.bar`, `ac.pie`, `ac.scatter` and `ac.box`. All the possible parameters can be found in the docstring.
+
+**Note:** it doesn't mean you can't build other kinds of plots. Just import `matplotlib` or `seaborn`, and all the plots you create will also be ACMetric branded!
