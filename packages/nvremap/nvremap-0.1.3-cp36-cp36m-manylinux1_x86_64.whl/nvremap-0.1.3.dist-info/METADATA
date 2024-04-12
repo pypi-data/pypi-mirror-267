@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: nvremap
+Version: 0.1.3
+Summary: Image remapping using NVIDIA GPU
+Home-page: https://github.com/ArtificialNotImbecile/nvRemap
+Author: Yongxiang Luo
+License: MIT
+Project-URL: Source, https://github.com/ArtificialNotImbecile/nvRemap
+Project-URL: Tracker, https://github.com/ArtificialNotImbecile/nvRemap/issues
+Keywords: pynvremap,nvremap,image remap,gpu,nvidia
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.0
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# nvRemap
+using cuda to do image remapping. many image processing tasks can be done by remapping the image, for example
+- flip
+- rotate
+- scale
+- crop
+- perspective transform
+- lens distortion correction
+
+and so on. And this tasks ca be combined into single remapping kernel, see [transformation composition](https://en.wikipedia.org/wiki/Transformation_matrix#Composing_and_inverting_transformations)
+
+# install
+`pip install nvremap`
+
+or build from source
+
+```
+git clone https://github.com/ArtificialNotImbecile/nvRemap
+cd nvRemap
+python setup.py install
+```
+
+# usage
+see [examples](https://github.com/ArtificialNotImbecile/nvRemap/tree/main/examples)
+
+# TODO
+- [ ] add more examples
+- [ ] add transform composition
+- [ ] add more interpolation methods, currently only support bilinear interpolation
+
+
