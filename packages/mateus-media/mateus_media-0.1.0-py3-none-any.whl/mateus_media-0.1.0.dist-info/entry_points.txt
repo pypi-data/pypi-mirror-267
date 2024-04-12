@@ -1,0 +1,3 @@
+[console_scripts]
+medias=mateus_media.cli:app
+
