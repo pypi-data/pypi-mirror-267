@@ -1,0 +1,10 @@
+epidemik/EpiModel.py,sha256=XAgKX_A1AhBmEteJ61UEgxdA6NjjrMJUWQWfHuSeJkk,17939
+epidemik/MetaEpiModel.py,sha256=G5BnKOBWW2SssMjBqUIPHuFEqt-ut3KHTt9DfhKEbhU,11395
+epidemik/NetworkEpiModel.py,sha256=5hAyzMmP7JtZW5Epm_TNF0GHBuYLvUoGG7fIO467xAU,4721
+epidemik/__init__.py,sha256=JZh20eqkiyMOI_OS01a9sT-BX5XEnEIS8BxICtEOJ2A,290
+epidemik/utils.py,sha256=Ax_mZ7eawHP7dw0Dn5FbcNWpEdO9mSNSPq6JlD857Uc,41
+epidemik-0.0.15.dist-info/LICENSE,sha256=SumzJaNTiZp5XkSbTvmyNzddpg-om7xH96BX1frGrio,1073
+epidemik-0.0.15.dist-info/METADATA,sha256=6GsGhGNTf4owImPkg0YM_JJqhvpDQz3Pry1Z6CSx0JI,5360
+epidemik-0.0.15.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+epidemik-0.0.15.dist-info/top_level.txt,sha256=NTp_pVtNgG8XRpMsAzdkY0s3MHNWwCmLXaA9vC973F0,9
+epidemik-0.0.15.dist-info/RECORD,,
