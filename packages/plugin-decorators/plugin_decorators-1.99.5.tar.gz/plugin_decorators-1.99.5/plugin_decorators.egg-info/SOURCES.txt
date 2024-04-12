@@ -1,0 +1,5 @@
+setup.py
+plugin_decorators.egg-info/PKG-INFO
+plugin_decorators.egg-info/SOURCES.txt
+plugin_decorators.egg-info/dependency_links.txt
+plugin_decorators.egg-info/top_level.txt
