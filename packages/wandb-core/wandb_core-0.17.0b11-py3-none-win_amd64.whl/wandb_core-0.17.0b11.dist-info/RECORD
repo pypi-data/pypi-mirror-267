@@ -1,0 +1,6 @@
+wandb_core/__init__.py,sha256=B9D2vXqAuVJDypCydogtb8PnOZmyQ4XHlqsOSkzgzxc,715
+wandb_core/wandb-core,sha256=nLUtxU1VNF21Xgiqeai72dEpxQe3TFYyh1ydhaZpqQA,11741696
+wandb_core-0.17.0b11.dist-info/METADATA,sha256=71Vf2AM3UltiZazUwJ8MHrDSe7jLz7RkXirOQSM4hLw,5894
+wandb_core-0.17.0b11.dist-info/WHEEL,sha256=6iYPr8vTHsyDK75jr9X0V3I9wPSVmtwr_8fdATBciGk,98
+wandb_core-0.17.0b11.dist-info/top_level.txt,sha256=qtcphwb2RSCwTlbiZGMgJQSl2kYRbdXOOcfcHlUyibQ,11
+wandb_core-0.17.0b11.dist-info/RECORD,,
