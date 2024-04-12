@@ -1,0 +1,9 @@
+Search
+ {{ data_model.name.plural|lower }}
+ by
+{% if get_type(data_model.table.search.search_field) == "list" %}
+ {{ titleize(', '.join(data_model.table.search.search_field + data_model.table.search.hybrid_search_fields)) }}
+{% else %}
+ {{ titleize(data_model.table.search.search_field) }}
+{% endif %}
+......
