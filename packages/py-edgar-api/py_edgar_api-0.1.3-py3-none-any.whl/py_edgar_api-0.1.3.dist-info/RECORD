@@ -1,0 +1,6 @@
+py_edgar_api/__init__.py,sha256=4QrZKaMagwYSzK3RCJkWt_kQ48ubMuOg4co-Jdcb6ss,88
+py_edgar_api/client.py,sha256=3Whr9TQMjGeGs0ylb46gmxGIP9RWOSgv1p0XwY1GQO4,1279
+py_edgar_api/company.py,sha256=CKEFwdnfgHwUXPbpt9Nrm3a3Iw3SqlXoYNzIm4ABoyM,190
+py_edgar_api-0.1.3.dist-info/METADATA,sha256=-WCpTsygeOo39JaYwSnXHkWO9Y7N2imbM7XFCiVviGc,448
+py_edgar_api-0.1.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+py_edgar_api-0.1.3.dist-info/RECORD,,
