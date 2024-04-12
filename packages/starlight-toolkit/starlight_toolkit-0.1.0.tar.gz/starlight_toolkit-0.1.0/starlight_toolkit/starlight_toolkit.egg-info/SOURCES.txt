@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+starlight_toolkit/starlight_toolkit.egg-info/PKG-INFO
+starlight_toolkit/starlight_toolkit.egg-info/SOURCES.txt
+starlight_toolkit/starlight_toolkit.egg-info/dependency_links.txt
+starlight_toolkit/starlight_toolkit.egg-info/top_level.txt
