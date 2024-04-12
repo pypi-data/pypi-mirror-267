@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "django-signals"
+version = "1.0"
+authors = [
+{name = "Joseph Spracklen", email="joseph.spracklen@my.utsa.edu"},
+]
+description = " Django signals are used to send and receive specific essential information whenever a data model is saved, changed, or even removed"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+]
