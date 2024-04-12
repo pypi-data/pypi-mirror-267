@@ -1,0 +1,13 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "jupyterlab-datalogs"
+version = "0.0.0"
+description = "JupyterLab extension for DataLogs."
+authors = ["Alex Hadley <contact@alexhadley.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
