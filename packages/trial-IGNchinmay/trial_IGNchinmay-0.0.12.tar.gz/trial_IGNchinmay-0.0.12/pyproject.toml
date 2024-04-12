@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trial_IGNchinmay"
+version = "0.0.12"
+authors = [
+  { name="Chinmay", email="chinmayananda.sahu@ignitarium.com" },
+]
+description = "A small CV test package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+[project.urls]
+Homepage = "https://gitlab.ignitarium.in/ign-ai/internal/ign_py_library/trial_IGNchinmay/-/tree/main?ref_type=heads"
+Issues = "https://gitlab.ignitarium.in/ign-ai/internal/ign_py_library/trial_IGNchinmay/-/issues"
