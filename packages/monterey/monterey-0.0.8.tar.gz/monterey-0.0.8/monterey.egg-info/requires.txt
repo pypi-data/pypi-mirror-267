@@ -1,0 +1,6 @@
+art
+fire
+Ipython
+prompt_toolkit
+pathlib
+rich-cli
