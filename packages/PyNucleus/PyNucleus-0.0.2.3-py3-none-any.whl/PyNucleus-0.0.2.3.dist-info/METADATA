@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: PyNucleus
+Version: 0.0.2.3
+Summary: Essential Python Toolkit.
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyEssentials 
+## by Bartek Kansy
+
+### This package contains classes and functions that can be used to create programs, consoles etc.
