@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: LinAlgLib
+Version: 0.1.0
+Home-page: https://github.com/DWasilewski3/LinAlgLib
+Author: David_Wasilewski
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: sympy
+Requires-Dist: inspect
+
+Install command:     pip install --index-url https://test.pypi.org/simple/ LinAlgLib
+Update command:      pip install --index-url https://test.pypi.org/simple/ --upgrade LinAlgLib
+Uninstall command:   pip uninstall LinAlgLib
+
+import LinAlgLib.functions as lal
