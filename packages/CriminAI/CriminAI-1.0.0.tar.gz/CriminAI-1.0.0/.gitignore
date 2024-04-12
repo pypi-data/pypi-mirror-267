@@ -1,0 +1,9 @@
+_*
+.DS_Store
+*.rst
+*.spec
+*.bat
+Makefile
+dist
+build
+CriminAI.egg*
