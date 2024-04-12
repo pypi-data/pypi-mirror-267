@@ -1,0 +1,74 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "webdomains"
+description = "Manage your Web domains served by NGINX"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "GPL-3.0-or-later"
+authors = [
+  { name = "Cliss XXI", email = "contact@cliss21.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Operating System :: POSIX :: Linux",
+  "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+  "click>=7.0",
+  "jinja2>=2.10",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "pytest-cov",
+  "ruff~=0.3.5",
+]
+
+[project.scripts]
+webdomains = "webdomains.cli:cli"
+
+[project.urls]
+Repository = "https://framagit.org/cliss21/webdomains"
+Issues = "https://framagit.org/cliss21/webdomains/-/issues"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["webdomains"]
+
+[tool.ruff]
+line-length = 80
+
+[tool.ruff.lint]
+# E: pycodestyle errors
+# F: Pyflakes
+# I: isort
+# T20: flake8-print
+# BLE: flake8-blind-except
+# C4: flake8-comprehensions
+select = ["E", "F", "I", "T20", "BLE", "C4"]
+
+[tool.pytest.ini_options]
+python_files = ['test_*.py']
+testpaths = ['tests']
+
+[tool.coverage.run]
+branch = true
+source = ['webdomains']
+
+[tool.coverage.report]
+exclude_lines = ['# pragma: no cover', 'raise NotImplementedError']
+show_missing = true
