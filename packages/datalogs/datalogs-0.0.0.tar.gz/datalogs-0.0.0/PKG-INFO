@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: datalogs
+Version: 0.0.0
+Summary: Python package for logging data from scientific experiments.
+Home-page: https://github.com/PainterQubits/datalogs
+Author: Alex Hadley
+Author-email: contact@alexhadley.net
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/PainterQubits/datalogs
+Description-Content-Type: text/markdown
+
+# DataLogs
+
+Coming soon.
+
