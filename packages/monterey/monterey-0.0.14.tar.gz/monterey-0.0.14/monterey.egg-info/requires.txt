@@ -1,0 +1,7 @@
+art
+customtkinter
+fire
+prompt_toolkit
+pathlib
+pillow
+rich-cli
