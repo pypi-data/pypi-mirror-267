@@ -1,0 +1,9 @@
+dgcloud/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+dgcloud/cli.py,sha256=HO3QbstrAntC_wKKnULvmV_TjuXEZbhNJpwkK7t8Gl4,3300
+dgcloud/cloud.py,sha256=yAK-dkgCsh8zBcGgkgQ2YceJx20TlCmRpHY3HFfbBVk,3081
+dgcloud-0.1.2.dist-info/LICENSE,sha256=wmuJZablraIV5MlyL3pzn6PLvIOo_KQsfEwL2Vm8mKI,1067
+dgcloud-0.1.2.dist-info/METADATA,sha256=Q67dqzVRmhqGf75iziKw0fXHaNiGCDani2hlTODA24k,316
+dgcloud-0.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dgcloud-0.1.2.dist-info/entry_points.txt,sha256=Mk6q8OlCCgufPG-_y1jdDYTaARJMN4IEno4XW0ug3qs,46
+dgcloud-0.1.2.dist-info/top_level.txt,sha256=6X1MvautyUoA4vA0LRBasdSKRCW7pPrPHsAGbvxrNe8,8
+dgcloud-0.1.2.dist-info/RECORD,,
