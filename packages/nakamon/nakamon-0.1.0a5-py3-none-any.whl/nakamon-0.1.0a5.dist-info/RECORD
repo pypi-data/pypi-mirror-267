@@ -1,0 +1,12 @@
+data/nakamon_status.csv,sha256=ODPT-CKNDZrdotuKAdrtWrYKvoJoqRsbBgHuCx4YDw4,445554
+data/orange_skill.csv,sha256=xBHHVflcDiKE5HeznH4xU-7QbdVsqkh4aG0vcfSlgDA,13822
+data/red_skill.csv,sha256=NIQcp2twxWJTBB8ojY0PJYDPi3z5Cm76nMLiCMy_dLc,8449
+data/resistance_skill.csv,sha256=MIrwzP1zAVeZGTOMikRdHjeoE0zFNDi2oiIwl3H_HYU,4474
+data/resistance_status.csv,sha256=7j8UiKYtPc7EDiQdqqlMixIXP3XrXR2wczrv45ijVv8,5578
+nakamon/__init__.py,sha256=tq3gzWjbFWFq6tnWvCHlE0dRHfhCwTVU_NwUgC0CmMM,58
+nakamon/damage.py,sha256=BPOmAbk1jUmF7M904bNXKe9EkFvtbZL-x6TIznc5IQU,7648
+nakamon/nakamon.py,sha256=qBo7fltGMVE_jdomarY89hsyhZ3edB3izm1E0xd0P4M,5371
+nakamon-0.1.0a5.dist-info/LICENSE,sha256=fD2JX3b99yiV2Wvr3FfOKclaguz0y_9yLNg9CsJRlU0,1064
+nakamon-0.1.0a5.dist-info/METADATA,sha256=nAGv0qw3B8gn0HCzvtGeTlWc7nsIm8a3Zwv88hvZ124,8302
+nakamon-0.1.0a5.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+nakamon-0.1.0a5.dist-info/RECORD,,
