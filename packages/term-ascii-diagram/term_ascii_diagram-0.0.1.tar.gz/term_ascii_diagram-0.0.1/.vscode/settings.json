@@ -1,0 +1,22 @@
+{
+    "cSpell.words": [
+        "addch",
+        "addstr",
+        "attrset",
+        "BTAB",
+        "CHARTEXT",
+        "escdelay",
+        "getch",
+        "getmaxxy",
+        "getmaxyx",
+        "getparyx",
+        "klass",
+        "newwin",
+        "Nonsticky",
+        "SLEFT",
+        "SRIGHT",
+        "stdscr",
+        "stripspaces",
+        "subwin"
+    ]
+}
