@@ -1,0 +1,12 @@
+helpful-assistant/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+helpful_assistant/__init__.py,sha256=RPHqiZIGdwmDEeTxj7WNhKfmdzhhnsVQ4iNPozMIzcU,162
+helpful_assistant/action.py,sha256=EoVTs69k8lyiQ_2tWq1FvtPeG07EIkDZXqGdRkczw-E,453
+helpful_assistant/assistant.py,sha256=BL5dMPtqL2XbPQg8O68znE4R1rcIwc8ZAH_B6BZ1V_U,4397
+helpful_assistant/conversation.py,sha256=r5DqykErq4fxKzxwnrO9kwEF1MVhVafguwacgCfVhMI,1228
+helpful_assistant/module.py,sha256=1zsNFGIoDVvhhzFBBCrM1BploaeVgM4ybLDzcRV0R9k,664
+helpful_assistant/stream.py,sha256=OZY7COwAfbMgOOINskXEYH6nfx52R0O5MG8-d1EyBQY,355
+helpful_assistant-0.0.4.dist-info/LICENSE,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+helpful_assistant-0.0.4.dist-info/METADATA,sha256=qMiAGsm9T_f6OTey5QioD8VXZi8kVjtJLfUSu6IUinc,1658
+helpful_assistant-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+helpful_assistant-0.0.4.dist-info/top_level.txt,sha256=iHOOaB78h8--dsFJqfuGmfrOhQQCc_SeTcq5w83j6f0,36
+helpful_assistant-0.0.4.dist-info/RECORD,,
