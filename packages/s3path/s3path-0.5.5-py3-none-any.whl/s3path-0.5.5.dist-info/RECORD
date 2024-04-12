@@ -1,0 +1,9 @@
+s3path/__init__.py,sha256=v8zJSOUezjKezmeOyc2hOML7cPoQl_ndFWoWdzl2uUM,737
+s3path/accessor.py,sha256=02gqxeuIxBTaryxwSP515QrdpC-wCyrw1p1sVy0cNHU,17272
+s3path/current_version.py,sha256=LbC-7qS7QuWcpBNbdvNL9ZbJTvkVHgpiqSqtQqK70EM,28111
+s3path/old_versions.py,sha256=9IQAYkYzdrY9HU6otz0KXrBDhtg0Scr3JriV80gpk94,50156
+s3path-0.5.5.dist-info/LICENSE,sha256=_4-k0388RSVgQ8uv0FUO5sabjW5XRqoD_sT5F7EXJsY,11342
+s3path-0.5.5.dist-info/METADATA,sha256=msVK9FzMTNfzjFiOoK70rfgkEcy8ObSoLcf514wk7E0,5872
+s3path-0.5.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+s3path-0.5.5.dist-info/top_level.txt,sha256=fCxuPtuzhe9x4UqOtw1Kv1pd4XqNsHKbrvwPgnxsIDY,7
+s3path-0.5.5.dist-info/RECORD,,
