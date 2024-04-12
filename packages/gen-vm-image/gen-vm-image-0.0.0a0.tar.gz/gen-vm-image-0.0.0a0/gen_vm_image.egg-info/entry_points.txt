@@ -1,0 +1,3 @@
+[console_scripts]
+configure-vm-image = src.cli.configure_image:run_configure_image
+gen-vm-image = src.cli.build_image:run_build_image
