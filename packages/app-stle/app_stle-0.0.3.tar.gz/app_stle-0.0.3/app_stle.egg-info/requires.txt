@@ -1,0 +1,4 @@
+nlopt
+numpy
+scikit-learn
+scipy
