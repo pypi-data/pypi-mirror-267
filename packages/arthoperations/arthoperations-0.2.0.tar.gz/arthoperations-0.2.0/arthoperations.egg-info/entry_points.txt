@@ -1,0 +1,2 @@
+[console_scripts]
+arithmetic_operations = arithmetic_operations.__main__:main
