@@ -1,0 +1,14 @@
+cs.cmdutils>=20240211
+cs.context>=20240412
+cs.deco>=20240412
+cs.fs>=20240412
+cs.fstags>=20240412
+cs.hashutils>=20240412
+cs.lex>=20240316
+cs.logutils>=20230212
+cs.pfx>=20240412
+cs.psutils>=20240316
+cs.resources>=20240412
+cs.upd>=20240412
+icontract
+typeguard
