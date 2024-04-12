@@ -1,0 +1,12 @@
+node_modules/
+venv/
+
+build/
+dist/
+
+*.egg-info/
+*.o
+*.pyc
+
+.DS_Store
+yarn-error.log
