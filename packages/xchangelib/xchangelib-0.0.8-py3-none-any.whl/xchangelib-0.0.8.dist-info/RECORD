@@ -1,0 +1,12 @@
+xchangelib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xchangelib/service_pb2.py,sha256=Zhul8xmsCHRKd0tEutrgSmhy-mkhnzU17hJUdugYwWA,12187
+xchangelib/service_pb2_grpc.py,sha256=lfdrfABV3euIWz3N9EvoJTBpJAR0NIzbpaHoGFH5pek,8437
+xchangelib/setup.py,sha256=fGBdXezEKIV5WPZd7_0Cn5GgcvOMxZLcoOuuC40xsD8,398
+xchangelib/xchange_client.py,sha256=xK5-hzosj5oXwVSBUC0piS-OLEPJqQUA0Yv7QSwy1tc,15498
+xchangelib/docs/source/conf.py,sha256=I0Oe_wKz342C0SmIy-fXwQO4ZzYZCjHtMsyrTC3WG3w,2246
+xchangelib/examples/example_bot.py,sha256=PnPrFRRKWszPTx_ismTnLLNgZ45yxvLQyQcyNNG29IE,3683
+xchangelib-0.0.8.dist-info/LICENSE,sha256=qja6nzOfwkkddrIQ4Pr1YL3Rkj9GNHcxsdxzoF6t2Rs,1070
+xchangelib-0.0.8.dist-info/METADATA,sha256=dCY_y7dbo_3-vZcLx5lRxd5Z01lleMRWKoDQwJvtYE8,719
+xchangelib-0.0.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+xchangelib-0.0.8.dist-info/top_level.txt,sha256=zCZ1oUJfdCfOb8jU8AMvFKl72SfLQ94vHyUKCIinP8U,11
+xchangelib-0.0.8.dist-info/RECORD,,
