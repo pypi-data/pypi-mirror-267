@@ -1,0 +1,16 @@
+stpyvista/__init__.py,sha256=aIRGHDnaOv_T-pAK_au5fWL67aI-_fwFjsHNLbwAne4,4446
+stpyvista/__main__.py,sha256=0KkEi5hbPURhq3GuCG1KZO7oAqUmXtzFqoFoZ1OW-eU,77
+stpyvista/export.py,sha256=BJiztyrjs_qG1flpM7pUbHh1G-N-B0BG6CXdzlYNr_0,1161
+stpyvista/utils.py,sha256=-C-vYHVz0a2iS_nKBuHD_47ZAQQd8zUdrupn7aOPdxw,1503
+stpyvista/panel_based/fullscreen.js,sha256=XVa4LbdpRDOjSKFW1NVFUQ3oStgLZzL_cbyhJR2pzSQ,2284
+stpyvista/panel_based/index.html,sha256=AVxGukV-uZgLe1srVOe5EPVxJZMv2EEdAOQ2xVHE06k,1570
+stpyvista/panel_based/main.js,sha256=DM6Nw-bJGTcp-bJ3W7AFKqSkCucAZC0M4mfrehe-H0E,3028
+stpyvista/panel_based/streamlit-component-lib.js,sha256=bzV6LswOTbs566fXIboh58qJG6K6-pbKh0Pvjwa1tNU,1198
+stpyvista/panel_based/style.css,sha256=_MWr_a0PIv8mw7PxuAqLiK0X7MqnDqUMdZdIotXxQ7Q,546
+stpyvista/vanilla_vtkjs/index.html,sha256=pnvoKw-Mhpd_-G7ykm_S4-5XUdd-2AVOpmgjgFQ9HBk,1056948
+stpyvista/vanilla_vtkjs/main.js,sha256=7PnuQzyyq611CTyXNOpo-9_K-QRX7UkeZEU0HXlCi00,1334
+stpyvista/vanilla_vtkjs/streamlit-component-lib.js,sha256=bzV6LswOTbs566fXIboh58qJG6K6-pbKh0Pvjwa1tNU,1198
+stpyvista-0.0.17.dist-info/METADATA,sha256=UXtpvCfl1cO9CgUxTZbTu4o35flEkfw6dwopsnOFyrE,1349
+stpyvista-0.0.17.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+stpyvista-0.0.17.dist-info/licenses/LICENSE,sha256=mpavjX90A4UqinvM73RQrlm0Q1uRuP2eQehTb_gGySs,35129
+stpyvista-0.0.17.dist-info/RECORD,,
