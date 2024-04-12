@@ -1,0 +1,5 @@
+pyproject.toml
+smad_legi_extractor_donut_plausible.egg-info/PKG-INFO
+smad_legi_extractor_donut_plausible.egg-info/SOURCES.txt
+smad_legi_extractor_donut_plausible.egg-info/dependency_links.txt
+smad_legi_extractor_donut_plausible.egg-info/top_level.txt
