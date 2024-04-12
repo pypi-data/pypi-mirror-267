@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: felonfinder
+Version: 1.0.3
+Summary: Felon Finder facilitates face recognition through variational autoencoding and genetics-inspired algorithm.
+Author-email: Alexandre Layous <alexandre.layous@gmail.com>, Chada Salek <salek.chada@gmail.com>, Audrey Zarkua <audrey.zarkua@gmail.com>
+Project-URL: Repository, https://github.com/AlexandreLayous/felon-finder
+Project-URL: Documentation, https://alexandrelayous.github.io/felon-finder/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ==3.12.2
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: customtkinter==5.2.2
+Requires-Dist: keras==3.1.1
+Requires-Dist: matplotlib==3.8.4
+Requires-Dist: numpy==1.26.4
+Requires-Dist: pooch==1.7.0
+Requires-Dist: Pillow==10.3.0
+Requires-Dist: tensorflow==2.16.1
+Provides-Extra: windows
+Requires-Dist: tensorflow-intel==2.16.1; extra == "windows"
+
+# FELON FINDER
+
+This application aims to facilitate the recognition of a potential assailant by producing composite sketches.
+
+## Table of contents
+* [General info](#general-info-)
+* [Installation, Documentation, Q&A](#installation-documentation-qa-)
+
+### General info :
+***
+
+When launching FELON FINDER, four randomly selected images from our database (celebA dataset) are presented to the user.
+
+The user selects the most similar images. They can choose from one to four photos each time.
+
+By clicking on the "Valider" button, the selected images are then processed to produce four new composite sketches that increasingly resemble the assailant.
+
+Once the user has identified a suitable sketch, they can save the image.
+
+The software is currently only available in French.
+
+### Installation, Documentation, Q&A :
+***
+
+[Read the documentation](https://alexandrelayous.github.io/felon-finder/)

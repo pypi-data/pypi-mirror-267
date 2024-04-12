@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools"]
+
+[project]
+name = "felonfinder"
+version = "1.0.3"
+authors = [
+	{ name="Alexandre Layous", email="alexandre.layous@gmail.com" },
+	{ name="Chada Salek", email="salek.chada@gmail.com" },
+	{ name="Audrey Zarkua", email="audrey.zarkua@gmail.com" }
+]
+description = "Felon Finder facilitates face recognition through variational autoencoding and genetics-inspired algorithm."
+readme = "README.md"
+requires-python = "==3.12.2"
+classifiers = [
+"Programming Language :: Python :: 3",
+"License :: OSI Approved :: MIT License",
+"Operating System :: OS Independent",
+]
+dependencies = [
+	"customtkinter == 5.2.2",
+	"keras == 3.1.1",
+	"matplotlib == 3.8.4",
+	"numpy == 1.26.4",
+	"pooch == 1.7.0",
+	"Pillow == 10.3.0",
+	"tensorflow == 2.16.1",
+]
+
+[project.optional-dependencies]
+windows = ["tensorflow-intel == 2.16.1"]
+
+[project.scripts]
+felon-finder = "felonfinder:main"
+
+[project.gui-scripts]
+felon-finder-win = "felonfinder:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+felonfinder = ["img/*", "img/faces/*", "cfg/*.ini", "saved_filters/*"]
+
+[project.urls]
+Repository = "https://github.com/AlexandreLayous/felon-finder"
+Documentation = "https://alexandrelayous.github.io/felon-finder/"
