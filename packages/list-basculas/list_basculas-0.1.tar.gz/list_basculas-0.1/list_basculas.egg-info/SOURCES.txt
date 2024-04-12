@@ -1,0 +1,8 @@
+setup.py
+list_basculas.egg-info/PKG-INFO
+list_basculas.egg-info/SOURCES.txt
+list_basculas.egg-info/dependency_links.txt
+list_basculas.egg-info/requires.txt
+list_basculas.egg-info/top_level.txt
+migrations/0001_initial.py
+migrations/__init__.py
