@@ -1,0 +1,72 @@
+ubuntu-versions:
+  trusty:
+    packages:
+     - linux-generic
+     - linux-virtual
+     - linux-kvm
+     - linux-aws
+     - linux-lts-xenial
+     - linux-azure
+  xenial:
+    packages:
+     - linux-generic
+     - linux-virtual
+     - linux-kvm
+     - linux-aws
+     - linux-aws-edge
+     - linux-azure
+     - linux-gcp
+     - linux-oracle
+  bionic:
+    packages:
+     - linux-generic
+     - linux-virtual
+     - linux-kvm
+     - linux-aws
+     - linux-aws-5.4
+     - linux-azure     
+     - linux-azure-5.4
+     - linux-gcp
+     - linux-gke
+     - linux-gke-5.4
+     - linux-gkeop
+     - linux-gkeop-5.4
+     - linux-oracle
+  focal:
+    packages:
+     - linux-generic
+     - linux-virtual
+     - linux-kvm
+     - linux-aws
+     - linux-aws-5.15
+     - linux-azure          
+     - linux-azure-5.15
+     - linux-gcp
+     - linux-gke-5.4
+     - linux-gkeop-5.4
+  jammy:
+    packages:
+     - linux-generic
+     - linux-virtual
+     - linux-kvm
+     - linux-aws
+     - linux-azure
+     - linux-gcp
+     - linux-gke-5.15
+     - linux-gkeop-5.15
+  kinetic:
+    packages:
+     - linux-generic
+     - linux-virtual
+     - linux-kvm
+     - linux-aws
+     - linux-azure
+     - linux-gcp
+  lunar:
+    packages:
+     - linux-generic
+     - linux-virtual
+     - linux-kvm
+     - linux-aws
+     - linux-azure
+     - linux-gcp
