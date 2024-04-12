@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: nodestack
+Version: 0.0.2
+Summary: A simple tree objects library
+Project-URL: Homepage, https://gitea.lutix.org/ftg/nodestack
+Project-URL: Issues, https://gitea.lutix.org/ftg/nodestack/issues
+Author-email: fabthegreat <nodestack@lutix.org>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Nodestack
+
+Nodestack is a library that allows user to build structured trees of datas.
+
+Project is under active development. Have a look at the repository for usage. Feel free to push patches.
