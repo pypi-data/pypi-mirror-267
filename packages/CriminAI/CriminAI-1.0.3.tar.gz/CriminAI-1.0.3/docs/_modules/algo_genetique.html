@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>algo_genetique &#8212; Documentation CriminAI 0.1.4</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <script src="../_static/documentation_options.js?v=750eb482"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=d99ca74e"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Index général"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Index des modules Python"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Documentation CriminAI 0.1.4</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Code du module</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">algo_genetique</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Code source de algo_genetique</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Fonction pour appliquer du bruit à chaque vecteur</span>
+<div class="viewcode-block" id="add_noise">
+<a class="viewcode-back" href="../AlgoGenetique.html#algo_genetique.add_noise">[docs]</a>
+<span class="k">def</span> <span class="nf">add_noise</span><span class="p">(</span><span class="n">vector</span><span class="p">,</span> <span class="n">noise_factor</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Ajoute du bruit à un vecteur en lui ajoutant une petite valeur aléatoire à chaque coordonnée.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        vector (list(float)): Le vecteur auquel on veut appliquer du bruit.</span>
+<span class="sd">        noise_factor (float): Le facteur de bruit que l&#39;on souhaite appliquer lors de la génération de nouvelles coordonnées.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        list(float): Le vecteur avec un peu de bruit appliqué.</span>
+<span class="sd">    &quot;&quot;&quot;</span>   
+    <span class="n">noisy_vector</span> <span class="o">=</span> <span class="p">[</span><span class="n">coord</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">noise_factor</span><span class="p">)</span> <span class="k">for</span> <span class="n">coord</span> <span class="ow">in</span> <span class="n">vector</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">noisy_vector</span></div>
+
+
+
+<span class="c1"># Fonction pour initialiser une population de vecteurs avec un bruit à partir d&#39;un vecteur initial</span>
+<div class="viewcode-block" id="create_new_photos">
+<a class="viewcode-back" href="../AlgoGenetique.html#algo_genetique.create_new_photos">[docs]</a>
+<span class="k">def</span> <span class="nf">create_new_photos</span><span class="p">(</span><span class="n">nombre_photos</span><span class="p">,</span> <span class="n">base_vector</span><span class="p">,</span> <span class="n">noise_factor</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cette fonction prend en entrée un vecteur et génère plusieurs nouveaux vecteurs en appliquant un bruit aléatoire à chacune de ses coordonnées.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        nombre_photos (float): Le nombre de photos que l&#39;on veut générer.</span>
+<span class="sd">        base_vector (list(float)): Le vecteur à partir duquel on veut générer une nouvelle population.</span>
+<span class="sd">        noise_factor (float): Le facteur de bruit que l&#39;on souhaite appliquer lors de la génération de nouvelles coordonnées.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        list(list(float)): Les coordonnées générées des nouvelles photos.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">coordonnees_photos</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nombre_photos</span><span class="p">):</span>
+        <span class="n">new_vector</span> <span class="o">=</span> <span class="p">[</span><span class="n">add_noise</span><span class="p">(</span><span class="n">base_vector</span><span class="p">,</span> <span class="n">noise_factor</span><span class="p">)]</span>
+        <span class="n">coordonnees_photos</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_vector</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">coordonnees_photos</span></div>
+
+
+<span class="c1"># Methode 1 : calcule le vecteur de coordonnées des centroides des vecteurs fournis puis génère une population de vecteurs</span>
+<div class="viewcode-block" id="photos_methode_centroide">
+<a class="viewcode-back" href="../AlgoGenetique.html#algo_genetique.photos_methode_centroide">[docs]</a>
+<span class="k">def</span> <span class="nf">photos_methode_centroide</span><span class="p">(</span><span class="n">nombre_photos</span><span class="p">,</span> <span class="n">vectors</span><span class="p">,</span> <span class="n">noise_factor</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cette fonction génère les coordonnées de nouvelles photos à partir d&#39;un vecteur de vecteurs de coordonnées.</span>
+<span class="sd">    Dans cette fonction, les coordonnées des nouvelles photos sont générées en calculant le centroïde des vecteurs de la liste, puis en lui appliquant un bruit autant de fois que le nombre de photos que l&#39;on souhaite générer.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        nombre_photos (float): Le nombre de photos que l&#39;on veut générer.</span>
+<span class="sd">        vectors (list(list(float))): Les vecteurs de coordonnées sur lesquels appliquer l&#39;algorithme génétique et générer la nouvelle population</span>
+<span class="sd">        noise_factor (float, optional): Le facteur de bruit que l&#39;on souhaite appliquer lors de la génération de nouvelles coordonnées. Vaut 1 par défaut.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        list(list(float)): Les coordonnées générées des nouvelles photos.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">vectors</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>  <span class="c1"># Retourner None si la liste de vecteurs est vide</span>
+    <span class="n">dimensions</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">vectors</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Nombre de dimensions</span>
+    <span class="n">centroid_vector</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">dimensions</span>  <span class="c1"># Initialiser le vecteur centroïde à zéro</span>
+    <span class="n">num_vectors</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">vectors</span><span class="p">)</span>  <span class="c1"># Nombre de vecteurs</span>
+    <span class="k">for</span> <span class="n">vector</span> <span class="ow">in</span> <span class="n">vectors</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dimensions</span><span class="p">):</span>
+            <span class="n">centroid_vector</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">vector</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>  <span class="c1"># Ajouter les coordonnées de chaque vecteur</span>
+    <span class="n">centroid_vector</span> <span class="o">=</span> <span class="p">[</span><span class="n">coord</span> <span class="o">/</span> <span class="n">num_vectors</span> <span class="k">for</span> <span class="n">coord</span> <span class="ow">in</span> <span class="n">centroid_vector</span><span class="p">]</span>  <span class="c1"># Calculer la moyenne</span>
+
+    <span class="n">coords_photos</span> <span class="o">=</span> <span class="n">create_new_photos</span><span class="p">(</span><span class="n">nombre_photos</span><span class="p">,</span> <span class="n">centroid_vector</span><span class="p">,</span> <span class="n">noise_factor</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">coords_photos</span></div>
+
+
+<span class="c1"># Methode 2 : crée un nouveau vecteur composé des coordonnées de tous les vecteurs de manière aléatoire puis génère une population de vecteurs</span>
+<div class="viewcode-block" id="photos_methode_crossover">
+<a class="viewcode-back" href="../AlgoGenetique.html#algo_genetique.photos_methode_crossover">[docs]</a>
+<span class="k">def</span> <span class="nf">photos_methode_crossover</span><span class="p">(</span><span class="n">nombre_photos</span><span class="p">,</span> <span class="n">vectors</span><span class="p">,</span> <span class="n">noise_factor</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cette fonction génère les coordonnées de nouvelles photos à partir d&#39;un vecteur de vecteurs de coordonnées.</span>
+<span class="sd">    Dans cette fonction, les coordonnées des nouvelles photos sont générées en croisant aléatoirement les coordonnées des vecteurs de la liste dans un seul vecteur puis en lui appliquant un bruit, autant de fois que le nombre de photos que l&#39;on souhaite générer.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        nombre_photos (float): Le nombre de photos que l&#39;on veut générer.</span>
+<span class="sd">        vectors (list(list(float))): Les vecteurs de coordonnées sur lesquels appliquer l&#39;algorithme génétique et générer la nouvelle population</span>
+<span class="sd">        noise_factor (float, optional): Le facteur de bruit que l&#39;on souhaite appliquer lors de la génération de nouvelles coordonnées. Vaut 1 par défaut.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        list(list(float)): Les coordonnées générées des nouvelles photos.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">new_vector</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">vectors</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+        <span class="n">coord</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">vectors</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">new_vector</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vectors</span><span class="p">[</span><span class="n">coord</span><span class="p">][</span><span class="n">i</span><span class="p">])</span>
+
+    <span class="n">coords_photos</span> <span class="o">=</span> <span class="n">create_new_photos</span><span class="p">(</span><span class="n">nombre_photos</span><span class="p">,</span> <span class="n">new_vector</span><span class="p">,</span> <span class="n">noise_factor</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">coords_photos</span></div>
+
+
+<span class="c1"># Methode 3 : applique le bruit sur chacun des vecteurs avant le regroupement</span>
+<div class="viewcode-block" id="photos_methode_noise">
+<a class="viewcode-back" href="../AlgoGenetique.html#algo_genetique.photos_methode_noise">[docs]</a>
+<span class="k">def</span> <span class="nf">photos_methode_noise</span><span class="p">(</span><span class="n">nombre_photos</span><span class="p">,</span> <span class="n">vectors</span><span class="p">,</span> <span class="n">noise_factor</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cette fonction génère les coordonnées de nouvelles photos à partir d&#39;un vecteur de vecteurs de coordonnées.</span>
+<span class="sd">    Dans cette fonction, les coordonnées des nouvelles photos sont générées en appliquant simplement du bruit sur les vecteurs d&#39;entrée.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        nombre_photos (float): Le nombre de photos que l&#39;on veut générer.</span>
+<span class="sd">        vectors (list(list(float))): Les vecteurs de coordonnées sur lesquels appliquer l&#39;algorithme génétique et générer la nouvelle population</span>
+<span class="sd">        noise_factor (float, optional): Le facteur de bruit que l&#39;on souhaite appliquer lors de la génération de nouvelles coordonnées. Vaut 1 par défaut.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        list(list(float)): Les coordonnées générées des nouvelles photos.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Appliquer du bruit à chaque vecteur</span>
+    <span class="n">noisy_vectors</span> <span class="o">=</span> <span class="p">[</span><span class="n">add_noise</span><span class="p">(</span><span class="n">vector</span><span class="p">,</span> <span class="n">noise_factor</span><span class="p">)</span> <span class="k">for</span> <span class="n">vector</span> <span class="ow">in</span> <span class="n">vectors</span><span class="p">]</span>
+    
+    <span class="c1"># Générer une population de nouveaux vecteurs à partir des vecteurs bruités</span>
+    <span class="n">new_vectors_population</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nombre_photos</span><span class="p">):</span>
+        <span class="c1"># Pour chaque vecteur bruité, créer un nouveau vecteur en ajoutant un peu de bruit supplémentaire</span>
+        <span class="n">new_vector</span> <span class="o">=</span> <span class="p">[</span><span class="n">coord</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">noise_factor</span><span class="p">)</span> <span class="k">for</span> <span class="n">coord</span> <span class="ow">in</span> <span class="n">noisy_vectors</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">noisy_vectors</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)]]</span>
+        <span class="n">new_vectors_population</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_vector</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">new_vectors_population</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">vector_1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">60</span><span class="p">]</span>
+    <span class="n">vector_2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">73</span><span class="p">,</span><span class="mi">42</span><span class="p">,</span><span class="mi">901</span><span class="p">,</span><span class="mi">52</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+    <span class="n">vector_3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">17</span><span class="p">,</span><span class="mi">74</span><span class="p">,</span><span class="mi">63</span><span class="p">,</span><span class="mi">716</span><span class="p">,</span><span class="mi">893</span><span class="p">,</span><span class="mi">42</span><span class="p">]</span>
+    <span class="n">vector_4</span> <span class="o">=</span> <span class="p">[</span><span class="mi">643</span><span class="p">,</span><span class="mi">27</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">746</span><span class="p">,</span><span class="mi">123</span><span class="p">]</span>
+    <span class="n">vector_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">vector_1</span><span class="p">,</span><span class="n">vector_2</span><span class="p">,</span><span class="n">vector_3</span><span class="p">,</span><span class="n">vector_4</span><span class="p">]</span>
+
+    <span class="n">vector_method1</span> <span class="o">=</span> <span class="n">photos_methode_centroide</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">vector_list</span><span class="p">)</span>
+    <span class="n">vector_method2</span> <span class="o">=</span> <span class="n">photos_methode_crossover</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">vector_list</span><span class="p">)</span>
+    <span class="n">vector_method3</span> <span class="o">=</span> <span class="n">photos_methode_noise</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">vector_list</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">vector_method1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">vector_method2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">vector_method3</span><span class="p">)</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Index général"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Index des modules Python"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Documentation CriminAI 0.1.4</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Code du module</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">algo_genetique</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, ZOUARI Matis, SUTTER Clémence, PEREZ Lisa, ZHONG Zhihan.
+      Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

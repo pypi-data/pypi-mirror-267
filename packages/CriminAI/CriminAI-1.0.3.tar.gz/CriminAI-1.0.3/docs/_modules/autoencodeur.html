@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>autoencodeur &#8212; Documentation CriminAI 0.1.4</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=12dfc556" />
+    <script src="../_static/documentation_options.js?v=750eb482"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=d99ca74e"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Code source de autoencodeur</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">torch</span>
+<span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
+<span class="kn">import</span> <span class="nn">torch.optim</span> <span class="k">as</span> <span class="nn">optim</span>
+<span class="kn">from</span> <span class="nn">torchvision</span> <span class="kn">import</span> <span class="n">transforms</span>
+<span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">DataLoader</span><span class="p">,</span> <span class="n">Dataset</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="s2">&quot;&quot;</span>
+
+<span class="c1"># Définir la variable d&#39;environnement KMP_DUPLICATE_LIB_OK</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;KMP_DUPLICATE_LIB_OK&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;TRUE&#39;</span>
+
+
+
+<div class="viewcode-block" id="CustomDataset">
+<a class="viewcode-back" href="../autoencodeur.html#autoencodeur.CustomDataset">[docs]</a>
+<span class="k">class</span> <span class="nc">CustomDataset</span><span class="p">(</span><span class="n">Dataset</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Dataset personnalisé pour charger des images à partir d&#39;un répertoire donné.</span>
+
+<span class="sd">    Ce dataset charge les images à partir d&#39;un répertoire spécifié et permet</span>
+<span class="sd">    d&#39;appliquer des transformations facultatives à ces images.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        root_dir (str): Le chemin du répertoire contenant les images.</span>
+<span class="sd">        transform (callable, optional): Une fonction/transform pour appliquer</span>
+<span class="sd">            une transformation aux images. Default is None.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        root_dir (str): Le chemin du répertoire contenant les images.</span>
+<span class="sd">        transform (callable): La fonction/transform à appliquer aux images.</span>
+<span class="sd">        image_list (list): La liste des noms de fichiers des images dans le répertoire.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialise une instance de CustomDataset avec les paramètres spécifiés.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            root_dir (str): Le chemin du répertoire contenant les images.</span>
+<span class="sd">            transform (callable, optional): Une fonction/transform pour appliquer</span>
+<span class="sd">                une transformation aux images. Default is None.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">root_dir</span> <span class="o">=</span> <span class="n">root_dir</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">transform</span> <span class="o">=</span> <span class="n">transform</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">image_list</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Retourne le nombre total d&#39;images dans le dataset.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            int: Le nombre total d&#39;images dans le dataset.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">image_list</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Récupère une image du dataset à l&#39;indice spécifié.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            idx (int): L&#39;indice de l&#39;image à récupérer.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            PIL.Image.Image or torch.Tensor: L&#39;image chargée du dataset.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">img_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root_dir</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">image_list</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">img_name</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">transform</span><span class="p">:</span>
+            <span class="n">image</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">image</span></div>
+
+
+
+
+<div class="viewcode-block" id="VAE">
+<a class="viewcode-back" href="../autoencodeur.html#autoencodeur.VAE">[docs]</a>
+<span class="k">class</span> <span class="nc">VAE</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Implémente un Variational Autoencoder (VAE) pour la génération d&#39;images.</span>
+
+<span class="sd">    Le VAE est composé d&#39;un encodeur et d&#39;un décodeur, qui apprennent à</span>
+<span class="sd">    représenter et à générer des données, respectivement.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        latent_dim (int): La dimension de l&#39;espace latent.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        encoder (nn.Sequential): Le réseau de neurones de l&#39;encodeur.</span>
+<span class="sd">        decoder (nn.Sequential): Le réseau de neurones du décodeur.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">latent_dim</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialise une instance de VAE avec la dimension de l&#39;espace latent spécifiée.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            latent_dim (int): La dimension de l&#39;espace latent.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">VAE</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">encoder</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Flatten</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">128</span> <span class="o">*</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">256</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="n">latent_dim</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">decoder</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">latent_dim</span><span class="p">,</span> <span class="mi">256</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="mi">128</span> <span class="o">*</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">8</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Unflatten</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">)),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ConvTranspose2d</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ConvTranspose2d</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ConvTranspose2d</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+        <span class="p">)</span>
+
+
+
+    <span class="c1"># def sampling_without_randomness(self, mu: torch.Tensor, log_var: torch.Tensor) -&gt; torch.Tensor:</span>
+    <span class="c1">#     &quot;&quot;&quot;</span>
+    <span class="c1">#     Effectue l&#39;échantillonnage sans aléatoire dans l&#39;espace latent.</span>
+    <span class="c1">#</span>
+    <span class="c1">#     Args:</span>
+    <span class="c1">#         mu (torch.Tensor): La moyenne de la distribution latente.</span>
+    <span class="c1">#         log_var (torch.Tensor): Le logarithme de la variance de la distribution latente.</span>
+    <span class="c1">#</span>
+    <span class="c1">#     Returns:</span>
+    <span class="c1">#         torch.Tensor: L&#39;échantillon dans l&#39;espace latent sans ajout de l&#39;aléatoire.</span>
+    <span class="c1">#     &quot;&quot;&quot;</span>
+    <span class="c1">#     return mu</span>
+
+
+<div class="viewcode-block" id="VAE.reparameterize">
+<a class="viewcode-back" href="../autoencodeur.html#autoencodeur.VAE.reparameterize">[docs]</a>
+    <span class="k">def</span> <span class="nf">reparameterize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mu</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">log_var</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">variance_scale</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Effectue la reparamétrisation nécessaire pour échantillonner dans l&#39;espace latent.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            mu (torch.Tensor): La moyenne de la distribution latente.</span>
+<span class="sd">            log_var (torch.Tensor): Le logarithme de la variance de la distribution latente.</span>
+<span class="sd">            variance_scale : La modulation de la variance, multiplie log_var par une valeur supérieure à 1 augmente la variance</span>
+<span class="sd">        Returns:</span>
+<span class="sd">            torch.Tensor: L&#39;échantillon dans l&#39;espace latent.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">log_var</span> <span class="o">=</span> <span class="n">log_var</span> <span class="o">*</span> <span class="n">variance_scale</span>
+        <span class="n">std</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">log_var</span><span class="p">)</span>
+        <span class="n">eps</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn_like</span><span class="p">(</span><span class="n">std</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">mu</span> <span class="o">+</span> <span class="n">eps</span> <span class="o">*</span> <span class="n">std</span></div>
+
+
+<div class="viewcode-block" id="VAE.forward">
+<a class="viewcode-back" href="../autoencodeur.html#autoencodeur.VAE.forward">[docs]</a>
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Passe l&#39;entrée à travers l&#39;encodeur et le décodeur pour la reconstruction.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            x (torch.Tensor): L&#39;image d&#39;entrée.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            torch.Tensor: L&#39;image reconstruite, la moyenne de la distribution latente</span>
+<span class="sd">                et le logarithme de la variance de la distribution latente.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">z_params</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">encoder</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">mu</span><span class="p">,</span> <span class="n">log_var</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">chunk</span><span class="p">(</span><span class="n">z_params</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">reparameterize</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">log_var</span><span class="p">)</span>
+        <span class="n">x_recon</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">decoder</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">x_recon</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">log_var</span></div>
+</div>
+
+
+
+
+<div class="viewcode-block" id="train_VAE_model">
+<a class="viewcode-back" href="../autoencodeur.html#autoencodeur.train_VAE_model">[docs]</a>
+<span class="k">def</span> <span class="nf">train_VAE_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data_loader</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">num_epochs</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Entraîne le modèle VAE.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        model (nn.Module): Le modèle VAE à entraîner.</span>
+<span class="sd">        data_loader (DataLoader): Le DataLoader contenant les données d&#39;entraînement.</span>
+<span class="sd">        optimizer: L&#39;optimiseur utilisé pour la mise à jour des poids du modèle.</span>
+<span class="sd">        num_epochs (int): Le nombre d&#39;époques pour lesquelles entraîner le modèle. Default is 100.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        trained_model (nn.Module): Le modèle VAE entraîné.</span>
+<span class="sd">        reconstruction_losses (list): Liste des valeurs de perte de reconstruction pour chaque époque.</span>
+<span class="sd">        kl_losses (list): Liste des valeurs de perte de divergence KL pour chaque époque.</span>
+<span class="sd">        total_losses (list): Liste des valeurs de perte totale pour chaque époque.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">reconstruction_losses</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Liste pour stocker les valeurs de perte de reconstruction</span>
+    <span class="n">kl_losses</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Liste pour stocker les valeurs de perte de divergence KL</span>
+    <span class="n">total_losses</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Liste pour stocker les valeurs de perte totale</span>
+
+    <span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_epochs</span><span class="p">):</span>
+        <span class="n">total_loss</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">reconstruction_loss_total</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">kl_loss_total</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="k">for</span> <span class="n">batch</span> <span class="ow">in</span> <span class="n">data_loader</span><span class="p">:</span>
+            <span class="n">optimizer</span><span class="o">.</span><span class="n">zero_grad</span><span class="p">()</span>
+            <span class="n">recon_batch</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">log_var</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">batch</span><span class="p">)</span>
+            <span class="n">loss</span> <span class="o">=</span> <span class="n">combined_loss</span><span class="p">(</span><span class="n">batch</span><span class="p">,</span> <span class="n">recon_batch</span><span class="p">)</span>
+            <span class="n">loss</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
+            <span class="n">optimizer</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+
+            <span class="n">total_loss</span> <span class="o">+=</span> <span class="n">loss</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
+            <span class="n">reconstruction_loss_total</span> <span class="o">+=</span> <span class="n">loss</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>  <span class="c1"># correction ici</span>
+
+            <span class="c1"># Calculer la perte de divergence KL</span>
+            <span class="n">kl_divergence</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">torch</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">log_var</span> <span class="o">-</span> <span class="n">mu</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">log_var</span><span class="o">.</span><span class="n">exp</span><span class="p">())</span>
+            <span class="n">kl_loss_total</span> <span class="o">+=</span> <span class="n">kl_divergence</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
+
+        <span class="c1"># Calculer la perte moyenne par lot</span>
+        <span class="n">mean_reconstruction_loss</span> <span class="o">=</span> <span class="n">reconstruction_loss_total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_loader</span><span class="o">.</span><span class="n">dataset</span><span class="p">)</span>
+        <span class="n">mean_kl_loss</span> <span class="o">=</span> <span class="n">kl_loss_total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_loader</span><span class="o">.</span><span class="n">dataset</span><span class="p">)</span>
+        <span class="n">mean_total_loss</span> <span class="o">=</span> <span class="n">total_loss</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_loader</span><span class="o">.</span><span class="n">dataset</span><span class="p">)</span>
+
+        <span class="c1"># Ajouter les valeurs de perte à la liste</span>
+        <span class="n">reconstruction_losses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mean_reconstruction_loss</span><span class="p">)</span>
+        <span class="n">kl_losses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mean_kl_loss</span><span class="p">)</span>
+        <span class="n">total_losses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mean_total_loss</span><span class="p">)</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Epoch [</span><span class="si">{</span><span class="n">epoch</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">num_epochs</span><span class="si">}</span><span class="s2">], Loss: </span><span class="si">{</span><span class="n">mean_total_loss</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">model</span><span class="p">,</span> <span class="n">reconstruction_losses</span><span class="p">,</span> <span class="n">kl_losses</span><span class="p">,</span> <span class="n">total_losses</span></div>
+
+
+<div class="viewcode-block" id="plot_losses_and_parameters">
+<a class="viewcode-back" href="../autoencodeur.html#autoencodeur.plot_losses_and_parameters">[docs]</a>
+<span class="k">def</span> <span class="nf">plot_losses_and_parameters</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">reconstruction_losses</span><span class="p">,</span> <span class="n">kl_losses</span><span class="p">,</span> <span class="n">total_losses</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Affiche les paramètres du modèle et trace les courbes de perte.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        model (nn.Module): Le modèle pour lequel afficher les paramètres.</span>
+<span class="sd">        reconstruction_losses (list): Liste des valeurs de perte de reconstruction.</span>
+<span class="sd">        kl_losses (list): Liste des valeurs de perte de divergence KL.</span>
+<span class="sd">        total_losses (list): Liste des valeurs de perte totale.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Afficher les paramètres du modèle</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">named_parameters</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">param</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+    <span class="c1"># Tracer les courbes de perte</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">reconstruction_losses</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Reconstruction Loss&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kl_losses</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;KL Loss&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">total_losses</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Total Loss&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Epoch&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Loss&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Training Loss&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></div>
+
+
+
+<div class="viewcode-block" id="visualize_images">
+<a class="viewcode-back" href="../autoencodeur.html#autoencodeur.visualize_images">[docs]</a>
+<span class="k">def</span> <span class="nf">visualize_images</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data_loader</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Visualise les images originales et reconstruites après l&#39;entraînement du modèle.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        model (nn.Module): Le modèle VAE entraîné.</span>
+<span class="sd">        data_loader (DataLoader): Le DataLoader contenant les données d&#39;entraînement.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Prendre un batch d&#39;images d&#39;entrée</span>
+    <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
+        <span class="n">input_batch</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="n">data_loader</span><span class="p">))</span>
+
+    <span class="c1"># Reconstruire les images à partir du modèle</span>
+    <span class="n">recon_batch</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">log_var</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">input_batch</span><span class="p">)</span>
+    <span class="c1"># Reconstruire les images à partir du modèle en utilisant l&#39;échantillonnage sans aléatoire</span>
+    <span class="c1">#recon_batch_without_randomness = model.sampling_without_randomness(mu, log_var)</span>
+
+    <span class="c1"># Convertir les tenseurs PyTorch en numpy arrays</span>
+    <span class="n">input_batch</span> <span class="o">=</span> <span class="n">input_batch</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+    <span class="n">recon_batch</span> <span class="o">=</span> <span class="n">recon_batch</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+    <span class="c1">#recon_batch_without_randomness = recon_batch_without_randomness.detach().numpy()</span>
+
+    <span class="c1"># Afficher les images d&#39;entrée et les images reconstruites</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># Nombre d&#39;images à afficher</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="c1"># Afficher les images d&#39;entrée</span>
+        <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">input_batch</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Original&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+
+        <span class="c1"># Afficher les images reconstruites avec et sans aléatoire</span>
+        <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">n</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">recon_batch</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Reconstructed (with randomness)&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+
+        <span class="c1"># ax = plt.subplot(3, n, i + 1 + 2 * n)</span>
+        <span class="c1"># plt.imshow(np.clip(recon_batch_without_randomness[i].transpose(1, 2, 0), 0, 1))</span>
+        <span class="c1"># plt.title(&#39;Reconstructed (without randomness)&#39;)</span>
+        <span class="c1"># plt.axis(&#39;off&#39;)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></div>
+
+
+
+
+
+<div class="viewcode-block" id="combined_loss">
+<a class="viewcode-back" href="../autoencodeur.html#autoencodeur.combined_loss">[docs]</a>
+<span class="k">def</span> <span class="nf">combined_loss</span><span class="p">(</span><span class="n">batch</span><span class="p">,</span> <span class="n">recon_batch</span><span class="p">):</span>
+    <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.3</span>  <span class="c1"># Poids pour la perte L1</span>
+    <span class="n">beta</span> <span class="o">=</span> <span class="mf">0.7</span>  <span class="c1"># Poids pour la perte MSE</span>
+    <span class="n">loss1</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">L1Loss</span><span class="p">(</span><span class="n">reduction</span><span class="o">=</span><span class="s1">&#39;sum&#39;</span><span class="p">)</span>
+    <span class="n">loss2</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">MSELoss</span><span class="p">(</span><span class="n">reduction</span><span class="o">=</span><span class="s1">&#39;sum&#39;</span><span class="p">)</span>
+
+    <span class="n">loss_l1</span> <span class="o">=</span> <span class="n">loss1</span><span class="p">(</span><span class="n">recon_batch</span><span class="p">,</span> <span class="n">batch</span><span class="p">)</span>
+    <span class="n">loss_mse</span> <span class="o">=</span> <span class="n">loss2</span><span class="p">(</span><span class="n">recon_batch</span><span class="p">,</span> <span class="n">batch</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">loss_l1</span> <span class="o">+</span> <span class="n">beta</span> <span class="o">*</span> <span class="n">loss_mse</span></div>
+
+
+<span class="c1">### Chargement des données et autres configurations</span>
+<span class="n">celeba_data_dir</span> <span class="o">=</span> <span class="s2">&quot;image_batch&quot;</span> <span class="c1"># Chemin vers le dossier contenant les images = Chemin où les données CelebA sont extraites</span>
+<span class="c1"># Transformation des images</span>
+<span class="n">transform</span> <span class="o">=</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Compose</span><span class="p">([</span>
+    <span class="n">transforms</span><span class="o">.</span><span class="n">Resize</span><span class="p">((</span><span class="mi">64</span><span class="p">,</span> <span class="mi">64</span><span class="p">)),</span>  <span class="c1"># Redimensionner les images à une taille de 64x64 pixels</span>
+    <span class="n">transforms</span><span class="o">.</span><span class="n">ToTensor</span><span class="p">(),</span>  <span class="c1"># Convertir les images en tenseurs PyTorch</span>
+<span class="p">])</span>
+<span class="c1"># Charger les données à partir du dossier img_align_celeba</span>
+<span class="n">celeba_dataset</span> <span class="o">=</span> <span class="n">CustomDataset</span><span class="p">(</span><span class="n">root_dir</span><span class="o">=</span><span class="n">celeba_data_dir</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">transform</span><span class="p">)</span>
+<span class="c1"># Définir un DataLoader pour la gestion des données</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">64</span>
+<span class="n">data_loader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">celeba_dataset</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">latent_dim</span> <span class="o">=</span> <span class="mi">500</span> <span class="c1"># Définir les dimensions de l&#39;espace latent</span>
+<span class="n">num_epochs</span><span class="o">=</span> <span class="mi">3000</span> <span class="c1"># Définir le nombre d&#39;epochs</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="c1">### Initialisation du modèle VAE, fonction de perte et optimiseur</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">VAE</span><span class="p">(</span><span class="n">latent_dim</span><span class="p">)</span> <span class="c1"># Initialiser le modèle</span>
+    <span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">)</span>
+
+    <span class="c1">### Entraînement du modèle VAE avec la fonction définie</span>
+    <span class="n">trained_model</span><span class="p">,</span> <span class="n">reconstruction_losses</span><span class="p">,</span> <span class="n">kl_losses</span><span class="p">,</span> <span class="n">total_losses</span> <span class="o">=</span> <span class="n">train_VAE_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data_loader</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">num_epochs</span><span class="p">)</span>
+
+    <span class="c1">### Sauvegarder le modèle entraîné</span>
+    <span class="n">save_path</span> <span class="o">=</span> <span class="s2">&quot;models/vae_trained_model_celebA_mix_MSE_lossL1.pth&quot;</span>
+    <span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">trained_model</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span> <span class="n">save_path</span><span class="p">)</span>
+
+
+    <span class="c1">### Charger le modèle sauvegardé</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">VAE</span><span class="p">(</span><span class="n">latent_dim</span><span class="p">)</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">save_path</span><span class="p">))</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>  <span class="c1"># Mettre le modèle en mode évaluation</span>
+
+
+    <span class="c1">### Affichage des courbes de perte et des paramètres du modèle</span>
+    <span class="n">plot_losses_and_parameters</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">reconstruction_losses</span><span class="p">,</span> <span class="n">kl_losses</span><span class="p">,</span> <span class="n">total_losses</span><span class="p">)</span>
+
+
+    <span class="c1">### Visualisation des images reconstruites</span>
+    <span class="n">visualize_images</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data_loader</span><span class="p">)</span>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">CriminAI</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">CriminAI</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Code du module</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, ZOUARI Matis, SUTTER Clémence, PEREZ Lisa, ZHONG Zhihan.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
