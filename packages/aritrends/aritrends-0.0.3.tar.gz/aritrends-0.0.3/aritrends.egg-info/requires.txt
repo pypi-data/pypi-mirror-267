@@ -1,0 +1,6 @@
+docx2pdf
+qrcode
+pillow
+py7zr
+rarfile
+PyPDF2

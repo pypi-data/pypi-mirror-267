@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+aritrends.egg-info/PKG-INFO
+aritrends.egg-info/SOURCES.txt
+aritrends.egg-info/dependency_links.txt
+aritrends.egg-info/requires.txt
+aritrends.egg-info/top_level.txt
