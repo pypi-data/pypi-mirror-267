@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: quantminer
+Version: 0.4.1
+Summary: Data/Pattern Mining Algorithms for Financial Data
+Author: Jerry Inyang
+Author-email: jerprog0@gmail.com
+Requires-Dist: kneed
+Requires-Dist: quantstats
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: sktime
+Requires-Dist: dtaidistance
+Requires-Dist: matplotlib
+Requires-Dist: tslearn
+Requires-Dist: plotly
+
