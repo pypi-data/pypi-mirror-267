@@ -1,0 +1,14 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "jupyterlab-pdf-preview"
+version = "0.0.0"
+description = "JupyterLab extension to preview PDF files in the file browser on hover."
+authors = ["Alex Hadley <contact@alexhadley.net>"]
+readme = "README.md"
+repository = "https://github.com/PainterQubits/jupyterlab-pdf-preview"
+
+[tool.poetry.dependencies]
+python = "^3.9"
