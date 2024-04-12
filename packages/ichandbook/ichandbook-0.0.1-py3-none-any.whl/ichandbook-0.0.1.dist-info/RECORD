@@ -1,0 +1,9 @@
+ichandbook/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ichandbook/document.py,sha256=_BOGKFritarkaLGX8HE6Jyptt8Q3Ss91g7G5mHETxv0,949
+ichandbook/link_validator.py,sha256=NFWh9fQecaJGgS8tag0WCQVE7Vop2NmI6sta8Pa1c4g,2479
+ichandbook/markdown_page.py,sha256=zSHQxo3L03yCV7i_5C1VEQfhodzDhRJStrafK_fNXuk,700
+ichandbook-0.0.1.dist-info/LICENSE,sha256=iMVetwLmsUrHB1jTCB6JWzJ5lKJMlbdqk89NcRfhpXQ,34621
+ichandbook-0.0.1.dist-info/METADATA,sha256=54cmLYZDYamPMI7lh63rNyHwyyvY5fVa-niFGYsCnx0,1568
+ichandbook-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ichandbook-0.0.1.dist-info/top_level.txt,sha256=Y7wb6TkEfSqA3tic2qQmBDxUR9s-mI6ghV4SkBP9_ZY,11
+ichandbook-0.0.1.dist-info/RECORD,,
