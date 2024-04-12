@@ -1,0 +1,7 @@
+citiespy==0.5.5
+maturin==1.5.1
+pytest
+pytest-benchmark
+pytest-cov
+pytest-pretty
+pytz==2024.1
