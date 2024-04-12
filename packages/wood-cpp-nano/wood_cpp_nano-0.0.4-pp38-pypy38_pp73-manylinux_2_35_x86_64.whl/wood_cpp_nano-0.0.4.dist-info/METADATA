@@ -1,0 +1,163 @@
+Metadata-Version: 2.1
+Name: wood-cpp-nano
+Version: 0.0.4
+Summary: Binding for wood_cpp project that  is compiled into a binding using nanobind and scikit-build
+Author-Email: Petras Vestartas <petrasvestartas@gmail.com>
+Classifier: License :: OSI Approved :: BSD License
+Project-URL: Homepage, https://github.com/petrasvestartas/wood_cpp_nano
+Requires-Python: >=3.8.16
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+wood_cpp_nano
+=============
+
+|      CI              | status |
+|----------------------|--------|
+| pip builds           | [![Pip Action Status][actions-pip-badge]][actions-pip-link] |
+| wheels               | [![Wheel Action Status][actions-wheels-badge]][actions-wheels-link] |
+
+[actions-pip-link]:        https://github.com/wjakob/nanobind_example/actions?query=workflow%3APip
+[actions-pip-badge]:       https://github.com/wjakob/nanobind_example/workflows/Pip/badge.svg
+[actions-wheels-link]:     https://github.com/wjakob/nanobind_example/actions?query=workflow%3AWheels
+[actions-wheels-badge]:    https://github.com/wjakob/nanobind_example/workflows/Wheels/badge.svg
+
+
+This repository contains a tiny project showing how to create C++ bindings
+using [nanobind](https://github.com/wjakob/nanobind) and
+[scikit-build-core](https://scikit-build-core.readthedocs.io/en/latest/index.html). It
+was derived from the corresponding _pybind11_ [example
+project](https://github.com/pybind/scikit_build_example/) developed by
+[@henryiii](https://github.com/henryiii).
+
+Installation
+------------
+
+1. Clone this repository
+2. Run `pip install ./nanobind_example`
+
+Afterwards, you should be able to issue the following commands (shown in an
+interactive Python session):
+
+```pycon
+>>> import nanobind_example
+>>> nanobind_example.add(1, 2)
+3
+```
+
+CI Examples
+-----------
+
+The `.github/workflows` directory contains two continuous integration workflows
+for GitHub Actions. The first one (`pip`) runs automatically after each commit
+and ensures that packages can be built successfully and that tests pass.
+
+The `wheels` workflow uses
+[cibuildwheel](https://cibuildwheel.readthedocs.io/en/stable/) to automatically
+produce binary wheels for a large variety of platforms. If a `pypi_password`
+token is provided using GitHub Action's _secrets_ feature, this workflow can
+even automatically upload packages on PyPI.
+
+
+License
+-------
+
+_nanobind_ and this example repository are both provided under a BSD-style
+license that can be found in the [LICENSE](./LICENSE) file. By using,
+distributing, or contributing to this project, you agree to the terms and
+conditions of this license.
+
+
+Conda envirnoment
+-----------------
+
+```bash
+conda config --add channels conda-forge
+conda create -n wood python==3.8.16 pypy=7.3.11
+
+```
+
+Rhino ScriptEditor
+------------------
+
+```bash
+C:/Users/petras/.rhinocode/py39-rh8/python.exe -m pip install . 
+```
+
+```python
+import os
+import os.path as op
+import sys
+import ctypes
+
+CONDA_ENV = r'C:\Users\petras\.conda\envs\wood'
+COMPAS_WOOD_PATH = r'C:\brg\2_code\wood_cpp_nano\build\pp38-pypy38_pp73-win_amd64\Release'
+sys.path.append(op.join(CONDA_ENV, r"Lib\site-packages"))
+sys.path.append(COMPAS_WOOD_PATH)
+os.add_dll_directory(op.join(CONDA_ENV, r'Library\bin'))
+os.add_dll_directory(COMPAS_WOOD_PATH)
+
+import nanobind_example
+print(nanobind_example.add(1, 2))
+
+```
+
+wood_cpp submodule and download dependecies
+-------------------------------------------
+
+```bash
+cd ~/brg/2_code/wood_cpp_nano/src
+git submodule add https://github.com/petrasvestartas/wood_cpp.git
+cd wood_cpp
+sudo '/home/petras/brg/2_code/wood_cpp_nano/src/wood_cpp/install_ubuntu.sh'
+
+\Users\petras\.conda\envs\wood\Lib\site-packages\wood_cpp_nano must have cgal libgmp-10.dll and libmpfr-4.dll, it would be great that gmp and mpfr would be compiled together into one single .pyd file.
+Mac - not linked 
+
+test gmp from cgal
+
+pip
+---
+pip install build setuptools wheel twine
+export BUILDING_DIST="1" && python -m build --wheel && export BUILDING_DIST="1" && python -m build --wheel
+
+your_package_name-0.1.0-cp39-cp39-manylinux1_x86_64.whl
+your_package_name-0.1.0-cp39-cp39-macosx_10_9_x86_64.whl
+your_package_name-0.1.0-cp39-cp39-win_amd64.whl
+
+
+code wrapping
+-------------
+
+function based on the EDX tutorial
+
+compas_wood
+-----------
+pip install build setuptools wheel twine
+pip install https://files.pythonhosted.org/packages/8e/4a/87e63d5780d07a3e18066f2b24d1e58814f1823316b56260d4b67fd75950/wood_cpp_nano-0.0.2-pp38-pypy38_pp73-manylinux_2_35_x86_64.whl
+
+[project.optional-dependencies]
+windows-deps = ["pypiwin32; sys_platform == 'win32'"]
+linux-deps = ["somepackage; sys_platform == 'linux'"]
+mac-deps = ["anotherpackage; sys_platform == 'darwin'"]
+
+
+create a new branch e.g. compas2
+start from the new compas_wood cookiecutter
+rewrite the examples
+write a bat file that install compas_wood in one go including rhino
+documentation based on edx tutorials
+create compas_model with vizualization
+
+compas_wood - pip
+-----------------
+
+https://github.com/petrasvestartas/compas_snippets
+pip install build
+pip install setuptools
+pip install wheel
+pip install twine or sudo apt install twine
+
+answer comments on EDX
+----------------------
+how to install and how to run with the new examples
