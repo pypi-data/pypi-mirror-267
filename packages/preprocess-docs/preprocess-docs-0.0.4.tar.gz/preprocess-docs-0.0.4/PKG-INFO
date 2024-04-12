@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: preprocess-docs
+Version: 0.0.4
+Summary: An open source document preprocessor for AI.
+Home-page: https://github.com/eddyjin1/preprocess
+Author: Eddy Jin
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# preprocess
+
+An open source document preprocessor for AI.
+https://www.preprocess.net
+
+https://pypi.org/project/preprocess-docs/
+
+```python
+pip install preprocess-docs
+```
+
+
+### Build and upload
+
+```shell
+pip install setuptools wheel twine
+
+python setup.py sdist bdist_wheel
+
+python -m twine upload dist/*
+```

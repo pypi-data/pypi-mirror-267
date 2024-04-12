@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+preprocess/__init__.py
+preprocess/element.py
+preprocess/html.py
+preprocess_docs.egg-info/PKG-INFO
+preprocess_docs.egg-info/SOURCES.txt
+preprocess_docs.egg-info/dependency_links.txt
+preprocess_docs.egg-info/requires.txt
+preprocess_docs.egg-info/top_level.txt
