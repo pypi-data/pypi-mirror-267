@@ -1,0 +1,24 @@
+[project]
+name = "pykrotik"
+version = "0.0.5"
+dependencies = [
+    "pydantic"
+]
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "pytest",
+    "pytest-asyncio",
+    "twine"
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+asyncio_mode = "auto"
+testpaths = [
+    "tests"
+]
+
+[tool.setuptools.packages.find]
+include = ["pykrotik"]
