@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: MyPack1024
+Version: 0.0.1
+Summary: oss-dev calculator
+Home-page: https://github.com/pqud/oss--
+Download-URL: https://github.com/pqud/oss--/releases/tag/v1.0.1
+Author: Byeoru
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pytest
+
+oss-dev calculator python module!
