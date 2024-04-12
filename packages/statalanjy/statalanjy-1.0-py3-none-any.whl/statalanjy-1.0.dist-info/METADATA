@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: statalanjy
+Version: 1.0
+Summary: Khallik bl Parc (iykyk)
+Home-page: https://github.com/kristenkamouh/stats.git
+Author: Kristen Kamouh
+License: MIT
+Keywords: parc,AK,khallik-bl-parc
+Platform: UNKNOWN
+Requires-Python: >=3.5.3
+Description-Content-Type: text/markdown
+
+
+# Install
+
+```shell
+pip install statalanjy
+```
+
+# Usage
+
+### Scores:
+```py
+from statalanjy.score import score
+
+score()
+```
+### Teams:
+```py
+from statalanjy.teams import psg_sats
+
+psg_stats()
+```
+
+
+
+#### I won't be making docs for these, refer to the source code or ask in the support server if you have any questions
+
+
+

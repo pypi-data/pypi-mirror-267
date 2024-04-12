@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+statalanjy.egg-info/PKG-INFO
+statalanjy.egg-info/SOURCES.txt
+statalanjy.egg-info/dependency_links.txt
+statalanjy.egg-info/top_level.txt
