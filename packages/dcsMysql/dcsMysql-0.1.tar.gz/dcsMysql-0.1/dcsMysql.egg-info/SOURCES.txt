@@ -1,0 +1,7 @@
+setup.py
+dcsMysql.egg-info/PKG-INFO
+dcsMysql.egg-info/SOURCES.txt
+dcsMysql.egg-info/dependency_links.txt
+dcsMysql.egg-info/entry_points.txt
+dcsMysql.egg-info/requires.txt
+dcsMysql.egg-info/top_level.txt

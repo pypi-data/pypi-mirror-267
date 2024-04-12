@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dcsMysql
+Version: 0.1
+Summary: mysql
+Home-page: https://github.com/xiaoxiangXX/dcsMysql
+Author: azhen
+Author-email: xxiang0803@gmail.co,
+Requires-Dist: pymysql
