@@ -1,0 +1,64 @@
+name: Python Package
+
+on:
+  workflow_dispatch: 
+    inputs:
+      push:
+        description: Push the artifact to PyPi?
+        default: false
+        type: boolean
+      tag:
+        description: Tag to push
+        required: true
+        type: string
+  workflow_call: 
+    inputs:
+      push:
+        description: Push the artifact to PyPi?
+        default: true
+        type: boolean
+      tag:
+        description: Tag to push
+        required: true
+        type: string
+    secrets:
+      PYPI_API_TOKEN:
+        description: PyPi token
+        required: true
+
+jobs:
+  package:
+    name: Package
+    runs-on: ubuntu-latest
+    environment: 
+      name: pypi
+      url: https://pypi.org/project/duplocloud-client
+    steps:
+
+    - name: Setup
+      uses: duplocloud/duploctl/.github/actions/setup@main
+      with:
+        ref: ${{ inputs.tag }}
+        optionals: "[build]"
+
+    - name: Check True Version
+      id: check_version
+      run: |
+        version=$(python -m setuptools_scm)
+        echo "Building Version: $version"
+        echo "VERSION=$version" >> $GITHUB_OUTPUT
+    
+    - name: Run the Build
+      run: python -m build
+
+    - name: Publish Package to PyPI
+      if: inputs.push == true
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        password: ${{ secrets.PYPI_API_TOKEN }}
+
+    - name: Github Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: duplocloud-client-${{ steps.vars.outputs.VERSION }}
+        path: dist/duplocloud-client-*.tar.gz
