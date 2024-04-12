@@ -1,0 +1,10 @@
+plato/__init__.py,sha256=0sWMsdoa__Xm-ZOF6MTl8pVYLYi4EjbkvhcQ0krFL5w,23
+plato/api.py,sha256=MP0hle9ZSobVIWY51vq1dOKlP898EEU12rpzQYFUhKo,5121
+plato/constants.py,sha256=cFdVl8ogRJlhHyZTEE3zuppkvtlfUVlKtVuv_UKIIaE,168
+plato/main.py,sha256=As--uZQ31XFBswNGjhZWurck5mfRmoTyuTzfkLqcsq0,1556
+plato_rag-0.0.4.dist-info/LICENSE,sha256=r6gQ20Z3ZOTwhGR4Ul78CkDS1rN95K6HBRSEDXSfDdQ,1094
+plato_rag-0.0.4.dist-info/METADATA,sha256=fS1mJerPvXvcsfOy9mTuSXyYT6mltbCKEVGaz85knPA,100
+plato_rag-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+plato_rag-0.0.4.dist-info/entry_points.txt,sha256=z5ZDUNX6nUtrgscRRkG3MAwAviCOztih45bCXOecFRU,42
+plato_rag-0.0.4.dist-info/top_level.txt,sha256=UQK56B7rROCq2KiENCKB_DrD2Rc6jKfGiMOlWpL_zUc,6
+plato_rag-0.0.4.dist-info/RECORD,,
