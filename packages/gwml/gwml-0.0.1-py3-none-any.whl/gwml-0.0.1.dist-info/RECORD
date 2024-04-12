@@ -1,0 +1,9 @@
+wedomldump/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+wedomldump/command.py,sha256=cIvYNDZnrV3tK04bzmE8FrY0kJk9dKKCvO20_MP5d1Q,1520
+wedomldump/main.py,sha256=t_hZvZ44Vi_45XkvPChOoaxMBM410slz4iUIFjWXzKg,218
+wedomldump/mldump.py,sha256=BhfNWnOwFqjgwkH7CPDDwL4FfA1L-QKGvD4u5lKzhCA,104
+gwml-0.0.1.dist-info/METADATA,sha256=BYMLA12MrX40HQMFb32Sx5falsTvM4AQMCm3Ufn4r18,180
+gwml-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gwml-0.0.1.dist-info/entry_points.txt,sha256=L2FikDR0CgoVdsnxxwstxlMhR51ixUeT2nwaXAMO0Bg,45
+gwml-0.0.1.dist-info/top_level.txt,sha256=CCzsNzcCmXGGaaL8hQxSa2qhJv0GSScLdg0RmMmuz7o,11
+gwml-0.0.1.dist-info/RECORD,,

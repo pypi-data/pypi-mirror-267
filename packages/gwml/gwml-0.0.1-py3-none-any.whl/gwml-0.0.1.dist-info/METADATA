@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: gwml
+Version: 0.0.1
+Summary: GreenWhales Custom Model Tool
+Home-page: http://weda.kr
+Author: WEDA
+Author-email: dmshin@weda.kr
+Requires-Python: >= 3.7
+
