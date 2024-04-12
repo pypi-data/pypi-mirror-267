@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: py-edgar-api
+Version: 0.1.4
+Summary: Simple package to work with SEC EDGAR
+Author: grisha
+Author-email: grisha@grisha.co
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Simple SDK to work with SEC EDGAR.
