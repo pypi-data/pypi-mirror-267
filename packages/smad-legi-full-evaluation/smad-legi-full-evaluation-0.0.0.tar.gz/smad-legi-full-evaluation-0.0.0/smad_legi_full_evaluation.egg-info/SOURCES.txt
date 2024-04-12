@@ -1,0 +1,5 @@
+pyproject.toml
+smad_legi_full_evaluation.egg-info/PKG-INFO
+smad_legi_full_evaluation.egg-info/SOURCES.txt
+smad_legi_full_evaluation.egg-info/dependency_links.txt
+smad_legi_full_evaluation.egg-info/top_level.txt
