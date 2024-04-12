@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+nomad_camels_driver_SweepMe_device/SweepMe_device.py
+nomad_camels_driver_SweepMe_device/SweepMe_device_ophyd.py
+nomad_camels_driver_SweepMe_device/__init__.py
+nomad_camels_driver_SweepMe_device.egg-info/PKG-INFO
+nomad_camels_driver_SweepMe_device.egg-info/SOURCES.txt
+nomad_camels_driver_SweepMe_device.egg-info/dependency_links.txt
+nomad_camels_driver_SweepMe_device.egg-info/requires.txt
+nomad_camels_driver_SweepMe_device.egg-info/top_level.txt
