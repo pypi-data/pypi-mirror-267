@@ -1,0 +1,3 @@
+[console_scripts]
+fizz=fizz_cli.main:app
+

@@ -1,0 +1,10 @@
+fizz_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fizz_cli/main.py,sha256=_TEieHhT5QOfA457zDrRG4fNDXqNrsh043rStbsx2h0,8606
+fizz_cli/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fizz_cli/templates/main.py,sha256=jDw9cjGfHtKI0E3UL7tGUGdJ8g06OThJBp3sTU5c6Bg,40
+fizz_cli/templates/route.yaml,sha256=bpKTWghfArGsjP1u2JT-5beMhi8tkt59erO98OKEizk,415
+fizz_cli/utils.py,sha256=-WbR-seoR7i843bkthnvwA_9wTwAtyhlrhj49blU9a4,16914
+fizz_cli-0.1.2.dist-info/entry_points.txt,sha256=v7u8oyLGzlP9V4t2agPBr3NSceFwPOp0aDofcPVUGnU,42
+fizz_cli-0.1.2.dist-info/METADATA,sha256=SZ3ii_XEk6S8einF0hQGWIXc9ApD4sH-mYW74Bf3eYQ,5038
+fizz_cli-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fizz_cli-0.1.2.dist-info/RECORD,,
