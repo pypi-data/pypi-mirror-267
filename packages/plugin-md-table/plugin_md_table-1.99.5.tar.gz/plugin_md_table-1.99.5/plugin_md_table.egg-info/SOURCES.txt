@@ -1,0 +1,5 @@
+setup.py
+plugin_md_table.egg-info/PKG-INFO
+plugin_md_table.egg-info/SOURCES.txt
+plugin_md_table.egg-info/dependency_links.txt
+plugin_md_table.egg-info/top_level.txt
