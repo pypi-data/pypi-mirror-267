@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools >= 65.5.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smad-legi-classifier"
+authors = [
+  {name = "abox-team"},
+]
+description = "Classification of Identification Documents"
+version = "0.0.0"
+readme = "README.md"
+license = {"text"="tbd"}
+requires-python = ">=3.11"
+classifiers=[
+            # complete classifier list: http://pypi.python.org/pypi?%3Aaction=list_classifiers
+            "Development Status :: 1 - Planning",
+            "Intended Audience :: Developers",
+            "Operating System :: Unix",
+            "Operating System :: POSIX",
+            "Operating System :: Microsoft :: Windows",
+            "Programming Language :: Python",
+            "Programming Language :: Python :: 3 :: Only",
+            "Programming Language :: Python :: 3.11",
+            "Topic :: Utilities",
+        ]
