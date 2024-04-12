@@ -1,0 +1,14 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "jupyterlab-open-warning"
+version = "0.0.0"
+description = "JupyterLab extension to display a warning dialog when opening a file that another user has open."
+authors = ["Alex Hadley <contact@alexhadley.net>"]
+readme = "README.md"
+repository = "https://github.com/PainterQubits/jupyterlab-open-warning"
+
+[tool.poetry.dependencies]
+python = "^3.9"

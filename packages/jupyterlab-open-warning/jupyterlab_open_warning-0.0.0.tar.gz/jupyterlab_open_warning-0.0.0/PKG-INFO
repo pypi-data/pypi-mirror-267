@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: jupyterlab-open-warning
+Version: 0.0.0
+Summary: JupyterLab extension to display a warning dialog when opening a file that another user has open.
+Home-page: https://github.com/PainterQubits/jupyterlab-open-warning
+Author: Alex Hadley
+Author-email: contact@alexhadley.net
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/PainterQubits/jupyterlab-open-warning
+Description-Content-Type: text/markdown
+
+# JupyterLab Open Warning
+
+Coming soon.
+
