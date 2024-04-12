@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: recflows
+Version: 0.0.14
+Summary: Solution created to streamline the creation, programming, deployment and monitoring of recommendation systems.
+Home-page: https://github.com/cogdiver/recflows
+Author: cogdiver
+License: MIT
+Keywords: recommendation systems,programming
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mysql-connector-python ==8.3.0
+
+# RecFlows
+
+Solution created to streamline the creation, programming, deployment and monitoring of recommendation systems.
+
+
+## Installing from PyPI
+```bash
+pip install recflows
+```
+
+
+## Installing with Docker
+```bash
+docker run recflows # In development
+```

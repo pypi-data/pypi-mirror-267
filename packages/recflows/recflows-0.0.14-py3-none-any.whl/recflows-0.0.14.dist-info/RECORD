@@ -1,0 +1,13 @@
+recflows/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recflows/vars.py,sha256=7FRADobgA6bV_M8_XKPI8LXZkApmR-gBIYG6gPvCoXg,893
+recflows/decorators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recflows/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recflows/resources/app.py,sha256=NBII5kDLkxqtA5NDV2sA17e7N2227gAb_yiiwqWA89U,379
+recflows/resources/base.py,sha256=P2S-3Rag-NVeQH3gYPfPLkxaboWJ6hk7LrtGEaXBjE0,509
+recflows/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recflows/services/database.py,sha256=7Ai8QuUMClsa2yAg5sr8yZjd_yzM-yyYs4OGmT2s0LE,1928
+recflows-0.0.14.dist-info/LICENSE,sha256=SvE9P5n-jZyDaRe-cm8-x-RvhO--TkdzTocJKW4HUfE,1065
+recflows-0.0.14.dist-info/METADATA,sha256=_Ci6lLofVxLQDZWywDQR17orTG26LCOw-rPSRK388Ds,664
+recflows-0.0.14.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+recflows-0.0.14.dist-info/top_level.txt,sha256=0qEVGBDzrMOzT81_5Y-EUn2doT37RrTEJok9mM6mASM,9
+recflows-0.0.14.dist-info/RECORD,,
