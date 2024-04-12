@@ -1,0 +1,1 @@
+from minio_async_client.api import MinioAsyncClient
