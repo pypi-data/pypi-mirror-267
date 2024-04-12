@@ -1,0 +1,2 @@
+numpy<=1.26.2
+transformations~=2021.6.6

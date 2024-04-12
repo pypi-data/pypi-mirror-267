@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lib-dt-modeling
+Version: 0.0.8
+Home-page: http://github.com/duckietown/lib-dt-modeling
+Author: Andrea F. Daniele
+Author-email: afdaniele@duckietown.com
+Requires-Dist: numpy<=1.26.2
+Requires-Dist: transformations~=2021.6.6
+
+
+dt-modeling: Modeling components of Duckietown's autonomy behavior.
+===================================================================
+
+
+Modeling components of the autonomous behavior pipeline running on Duckietown robots.
+
