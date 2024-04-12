@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "Predviz"
+version = "0.0.1"
+authors = [
+  { name="Alfrethanov Christian Wijaya", email="alfrethanovcwjy@gmail.com" },
+]
+description = "Visualize the Comparison between the Predicted / Forecasted Values of a model with the Actual Values"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["viz","visualizer","vis","time series","time-series","forecast","predict","preds","compare","comparison"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Repository = "https://github.com/Arckitechttt/compare-preds-viz-1/tree/main"
