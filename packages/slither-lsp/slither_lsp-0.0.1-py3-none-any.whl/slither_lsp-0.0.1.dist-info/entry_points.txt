@@ -1,0 +1,2 @@
+[console_scripts]
+slither-lsp = slither_lsp.__main__:main
