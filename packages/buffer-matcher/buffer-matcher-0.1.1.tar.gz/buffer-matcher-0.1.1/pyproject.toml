@@ -1,0 +1,30 @@
+[project]
+name = "buffer-matcher"
+version = "0.1.1"
+dependencies = []
+requires-python = ">=3.12"
+authors = [{name="Shae.c32"}]
+maintainers = []
+description = "More efficiently match bytes using memoryviews to prevent copying"
+readme = "README.md"
+keywords = ["buffer", "match", "memory", "view"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://codeberg.org/Shae/BufferMatcher"
+Issues = "https://codeberg.org/Shae/BufferMatcher/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

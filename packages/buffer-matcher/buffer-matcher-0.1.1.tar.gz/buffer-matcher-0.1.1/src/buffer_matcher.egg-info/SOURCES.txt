@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/buffer_matcher/__init__.py
+src/buffer_matcher/base.py
+src/buffer_matcher/dynamic.py
+src/buffer_matcher/simple.py
+src/buffer_matcher/static.py
+src/buffer_matcher.egg-info/PKG-INFO
+src/buffer_matcher.egg-info/SOURCES.txt
+src/buffer_matcher.egg-info/dependency_links.txt
+src/buffer_matcher.egg-info/top_level.txt
