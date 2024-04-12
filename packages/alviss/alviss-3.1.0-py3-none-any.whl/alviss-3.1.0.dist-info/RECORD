@@ -1,0 +1,17 @@
+alviss/__init__.py,sha256=7RxE6oSK_yqsbRHzveLEAfuguOd5tW-uXF8EQiJYKfE,164
+alviss/quickloader.py,sha256=wl3oYFlf64jIbbG0oK35GVFVnlMZu_8_YQjlQWxFWWo,46
+alviss/loaders/__init__.py,sha256=YhOsgy9j98v9Roi9478UEo7jlgSLLyIebziwFxquVr0,99
+alviss/loaders/autoloader.py,sha256=Lxhl3FzI4A_Cin717nbpo3sRAvZKT506v2V4pie3gjo,3376
+alviss/loaders/base.py,sha256=BOPnnBVBHKdvCmaFU7Z8mSr5PaWUrpoxlud3zAUkVvs,16688
+alviss/loaders/interface.py,sha256=KMUmdrxHgZ7XdFdBTfTYcFQB3HpnkRAygoOR6PaeETw,2765
+alviss/loaders/jsonfile.py,sha256=RybAnegLWeP4bKvLTWFycxasXwvnRvwj2I7Cb1OpKc8,1029
+alviss/loaders/yamlfile.py,sha256=xze8sg2HM6Kc6TAQ3dM_lhYbyOtdz0uVED6sDAycuxw,773
+alviss/structs/__init__.py,sha256=I5JA-1-P1_HkOcE5UvISt0pLO0FmvfLZIA_wYM6kMCI,78
+alviss/structs/_base.py,sha256=gJcnfYXzLmMVhNKWFqCDH7vW3dSY1cMxiM_v3gndp-k,31
+alviss/structs/baseconfig.py,sha256=kpA1NYFHfHrg0-b1lB-glteJgUWL4Fe91ntparyrQlU,2795
+alviss/structs/singletonconfig.py,sha256=0aWJQ3EnZeuvLwkwdV_jR5cN4LDp3i68QmyBTfd8Dc8,162
+alviss-3.1.0.dist-info/LICENSE,sha256=5SHmpHjTTE8QtPzrgQi5CQBWU9NNLL8SbUFtwTrg-lE,1071
+alviss-3.1.0.dist-info/METADATA,sha256=Mgiql9myoWB2PQzoa83NwECZoIb2njAUQz23iDeFqpg,13406
+alviss-3.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+alviss-3.1.0.dist-info/top_level.txt,sha256=1nT45RM8v_BoCgY1K9PGR1a0WQ0dsH2Lsj9u495pkkk,7
+alviss-3.1.0.dist-info/RECORD,,
