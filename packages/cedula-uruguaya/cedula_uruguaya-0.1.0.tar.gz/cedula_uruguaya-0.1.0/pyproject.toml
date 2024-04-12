@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cedula_uruguaya"
+version = "0.1.0"
+description = "Gestión de cédulas uruguayas con validación de dígitos verificadores"
+readme = "README.md"
+authors = [
+    { name = "SoyVA3", email = "vic@knowmadinstitut.com" }
+]
+license.text = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+urls.homepage = "https://github.com/VicThor-wpp/cedula_uruguaya"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov"
+]
+
+
+# If there are no dependencies, you can omit the following section
+# [tool.setuptools]
+# install_requires = [
+#     # dependencies go here
+# ]

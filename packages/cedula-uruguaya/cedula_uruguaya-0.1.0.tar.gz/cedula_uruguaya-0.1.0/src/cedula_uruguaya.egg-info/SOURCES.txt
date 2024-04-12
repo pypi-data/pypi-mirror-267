@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+src/__init__.py
+src/cedula_uruguaya_soyva3.py
+src/cedula_uruguaya.egg-info/PKG-INFO
+src/cedula_uruguaya.egg-info/SOURCES.txt
+src/cedula_uruguaya.egg-info/dependency_links.txt
+src/cedula_uruguaya.egg-info/requires.txt
+src/cedula_uruguaya.egg-info/top_level.txt
+tests/test_main.py
