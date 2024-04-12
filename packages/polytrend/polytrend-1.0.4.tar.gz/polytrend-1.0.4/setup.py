@@ -1,0 +1,18 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="polytrend",
+    version="1.0.4",
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
+    install_requires=[
+        "cx_Freeze==6.15.16",
+        "matplotlib==3.8.3",
+        "numpy==1.26.4",
+        "pandas==2.2.2",
+        "PyQt6==6.6.1",
+        "PyQt6_sip==13.6.0",
+        "scikit_learn==1.4.1.post1",
+        "setuptools==65.5.0",
+    ],
+)
