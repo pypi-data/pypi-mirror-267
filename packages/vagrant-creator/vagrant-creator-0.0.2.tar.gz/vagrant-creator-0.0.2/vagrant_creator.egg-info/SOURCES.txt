@@ -1,0 +1,9 @@
+README.md
+setup.py
+vagrant_creator/__init__.py
+vagrant_creator/vagrant_creator.py
+vagrant_creator.egg-info/PKG-INFO
+vagrant_creator.egg-info/SOURCES.txt
+vagrant_creator.egg-info/dependency_links.txt
+vagrant_creator.egg-info/entry_points.txt
+vagrant_creator.egg-info/top_level.txt
