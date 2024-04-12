@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: badB
+Version: 0.0.5
+Summary: A pip package to create Flask RESTful-api seamlessly with customizations
+Project-URL: Homepage, https://github.com/Dev-Akash/badb
+Project-URL: Issues, https://github.com/Dev-Akash/badb/issues
+Author-email: Akash Srivastava <sriakash.dev@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# BadB
+This repo is python package to create api/backend using a simple JSON file with many customization features.
