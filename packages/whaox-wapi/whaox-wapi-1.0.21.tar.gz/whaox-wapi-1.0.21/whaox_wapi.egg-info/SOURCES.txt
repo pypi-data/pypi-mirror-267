@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+wapi/__init__.py
+whaox_wapi.egg-info/PKG-INFO
+whaox_wapi.egg-info/SOURCES.txt
+whaox_wapi.egg-info/dependency_links.txt
+whaox_wapi.egg-info/requires.txt
+whaox_wapi.egg-info/top_level.txt
