@@ -1,0 +1,12 @@
+satlaspretrain_models/__init__.py,sha256=CGtj6DVpxNH5L3Nr55_HLzs_RV1Sx6Uo9HcQxwZDDqU,68
+satlaspretrain_models/model.py,sha256=IW2y_M8nt75QNO7jgm6pUYa6jMgf542LAmmhI7IItic,10541
+satlaspretrain_models/utils.py,sha256=aPtTRKY_v1q7Qktrn_errd-h-IHbltydcj49swFOVT0,6776
+satlaspretrain_models/models/__init__.py,sha256=RBAtzA5H6bE1SJaD0VFAOSaTGNu2hVklQ-TFLappDak,145
+satlaspretrain_models/models/backbones.py,sha256=uho8HHtBgOU-CGWxa7wIY-R-dP6wR3JMxMIY7DfpwpI,4951
+satlaspretrain_models/models/fpn.py,sha256=I059CGcw36pzB3su5aCI1TOBlyZ8dOtfrXDwao2wvNs,1818
+satlaspretrain_models/models/heads.py,sha256=Ip-aP0fAD1v6GjONZLZXvhmZYk0T4nSIis37rpnsBP0,9046
+satlaspretrain_models-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+satlaspretrain_models-0.3.0.dist-info/METADATA,sha256=kHTw_rQdJB8mMyzN1sUwzgDxX7lElDJ5Hy2IogpP5Dg,13893
+satlaspretrain_models-0.3.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+satlaspretrain_models-0.3.0.dist-info/top_level.txt,sha256=PG0citAv6qIqsFir8ndAmehBPSROKo6JPFduurmVP-U,22
+satlaspretrain_models-0.3.0.dist-info/RECORD,,
