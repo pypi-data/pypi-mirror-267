@@ -1,0 +1,12 @@
+swiftrank/__init__.py,sha256=4M_ZwwrtC64Qf7q36IeAbsgGj3DgFNnaiaw5k--QpUs,77
+swiftrank/interface/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swiftrank/interface/api.py,sha256=oGJWKFMZaYyq45O6r_D_fU9FR6e81AjZaYhNGMhPUKo,4160
+swiftrank/interface/cli.py,sha256=eIGVnHPy6IdxDgS2YZV3U12rxcwzIFdEPvUANaP5Rps,4316
+swiftrank/interface/utils.py,sha256=R4zdZok7H_XZglNa6t3XdQDB9wYHw6ga9t5gdWm8ccM,2484
+swiftrank/ranker.py,sha256=7rDvveeNspnUL5MOO5q93lmnVqjUYIB2CvErFMLPpWA,7962
+swiftrank/settings.py,sha256=xh4Zbx6PdmTBTR1Te6OvtYEDAqxgYak1n6tLEoki95k,1712
+swiftrank-1.3.0.dist-info/entry_points.txt,sha256=ENbAegr7JYpf8jsULgjo5MpsJuoOCXBqr78i4UCE2kA,101
+swiftrank-1.3.0.dist-info/LICENSE,sha256=WtjCEwlcVzkh1ziO35P2qfVEkLjr87Flro7xlHz3CEY,11556
+swiftrank-1.3.0.dist-info/METADATA,sha256=5LW0zw2nFp5WiMtIdDh7iz1uCeu6-t34N4yBX1xBQ94,26530
+swiftrank-1.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+swiftrank-1.3.0.dist-info/RECORD,,
