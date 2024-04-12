@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: vagrant-file-generator
+Version: 0.0.1
+Summary: A tool to generate Vagrant init files with custom configurations
+Home-page: https://github.com/ChandulaJ/vagrant-creator
+Author: Chandula Jayathilake
+Author-email: chandulaj3000@gmail.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Requires-Dist: Vagrant
+Requires-Dist: VirtualBox
