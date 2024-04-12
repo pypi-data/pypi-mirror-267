@@ -1,0 +1,5 @@
+pyproject.toml
+smad_legi_model_monitoring.egg-info/PKG-INFO
+smad_legi_model_monitoring.egg-info/SOURCES.txt
+smad_legi_model_monitoring.egg-info/dependency_links.txt
+smad_legi_model_monitoring.egg-info/top_level.txt
