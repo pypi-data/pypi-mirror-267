@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: aioease
+Version: 0.1.21
+Summary: A simple and easy to use asyncio & aiohttp libraries.
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp >=3
+Requires-Dist: aiolimiter >=1
+
+# AIOEase
+
+`AIOEase` simplifies asynchronous HTTP requests in Python, offering a straightforward interface for handling multiple requests asynchronously with rate limiting.
+Proved a list of dictionaries and the `requests_per_second_max` (default 1). Returns the status and response as a list of dictionaries.
+
+## Installation
+
+```bash
+pip install aioease
+```
+
+## Usage
+
+Execute multiple HTTP requests asynchronously with ease:
+
+```python
+from aioease import execute
+
+requests = [
+    {"url": "https://some-url", "method": "get", "data": {"key": "value"}, "headers": {"header": "value"}},
+    {"url": "https://some-url", "method": "post", "data": {"key": "value"}, "headers": {"header": "value"}},
+]
+
+responses = execute(requests,requests_per_second_max=10)
+```
+
+## Configuring Logging
+
+Control the verbosity of logs for debugging:
+
+```python
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.ERROR)
+```
+
+## License
+
+Available under the MIT License.
+
+## Support
+
+For support, please open an issue on the GitHub issue tracker.
