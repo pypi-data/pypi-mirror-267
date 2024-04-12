@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polytrend"
+version = "1.0.1"
+authors = [
+  { name="Emmanuel Asiimwe", email="asiimwemmanuel47@gmail.com" },
+]
+description = "PolyTrend is a regression tool that fits polynomial curves to noisy data."
+readme = "README.md"
+requires-python = ">= 3.11.8"
+# dependencies = [
+#   "matplotlib==3.8.3",
+#   "numpy==1.21.5",
+#   "pandas==2.2.2",
+#   "scikit_learn==1.4.1.post1",
+# ]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/asiimwemmanuel/polytrend"
+Issues = "https://github.com/asiimwemmanuel/polytrend/issues"
