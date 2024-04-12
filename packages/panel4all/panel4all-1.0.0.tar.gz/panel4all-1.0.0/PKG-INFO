@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: panel4all
+Version: 1.0.0
+Summary: Utilities for parsing Panel4All survey result files
+Home-page: https://github.com/ariel-research/panel4all
+Author: Erel Segal-Halevi
+Author-email: erelsgl@gmail.com
+Project-URL: Documentation, https://github.com/ariel-research/panel4all
+Project-URL: Source Code, https://github.com/ariel-research/panel4all
+Project-URL: Bug Reports, https://github.com/ariel-research/panel4all/issues
+Keywords: opinion polls
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+
+# panel4all
+
+Functions for parsing results of surveys made by panel4all.co.il
+
+## Installation 
+
+    pip install panel4all
+
+## Usage
+
+See [example 1](example1/README.md) and [example 2](example2/README.md).

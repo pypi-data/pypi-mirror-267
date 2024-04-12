@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+example1/README.md
+example2/README.md
+panel4all/VERSION
+panel4all/__init__.py
+panel4all/pollresults.py
+panel4all.egg-info/PKG-INFO
+panel4all.egg-info/SOURCES.txt
+panel4all.egg-info/dependency_links.txt
+panel4all.egg-info/requires.txt
+panel4all.egg-info/top_level.txt
