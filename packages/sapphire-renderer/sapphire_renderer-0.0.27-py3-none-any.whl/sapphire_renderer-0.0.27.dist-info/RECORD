@@ -1,0 +1,16 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/sapphirerenderer/__init__.py,sha256=P7vNZh7aefHHq61VHzdLDcw5GMKecfD3MWofDTjxmZI,129
+src/sapphirerenderer/main.py,sha256=2aMo-ts8eUYw488UZl7hFwO9HAK4sTwJXqwaOxSLTPo,5843
+src/sapphirerenderer/settings.py,sha256=bx_yq76hCOkHDK0rQfPzcvtCEOzfvNU8dcu8Ndagb_g,175
+src/sapphirerenderer/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/sapphirerenderer/examples/orbit_example.py,sha256=g6gXdgJrSkCYm2LPGoYwaI-VFEUneCdWW32Y9DBreQ4,1629
+src/sapphirerenderer/object_classes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/sapphirerenderer/object_classes/base_object.py,sha256=rHNiN1Muv66uzWJDp8X2zkLJ4JmiVh2HZ6ejwtzCk-k,1663
+src/sapphirerenderer/object_classes/flat_faces_object.py,sha256=0nZRBjjLk5zzQNGxMoMbHxrWRztfKJNxMyPavtBjVps,5928
+src/sapphirerenderer/object_classes/surface_object.py,sha256=fumcLSPAKHrTrxNjBQfzAn5xi7a0FhwIpZkXMjyjeWM,1423
+src/sapphirerenderer/object_classes/text_object.py,sha256=m6VxKVo9GokpNGR0HBQfK_h97JOXLBN1ip-rAC475GA,1448
+src/sapphirerenderer/object_classes/vert_line_object.py,sha256=QZfWnv-6eiBmKghAw4gdQUPcq3KBG9WTVjECQd1LaEo,5252
+sapphire_renderer-0.0.27.dist-info/METADATA,sha256=ThgQiBO8w5O3tsAmnPvtI8CgWyVfegNMPibyvUrLVSI,2263
+sapphire_renderer-0.0.27.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sapphire_renderer-0.0.27.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+sapphire_renderer-0.0.27.dist-info/RECORD,,
