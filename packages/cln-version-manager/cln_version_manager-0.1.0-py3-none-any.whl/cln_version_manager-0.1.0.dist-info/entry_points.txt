@@ -1,0 +1,3 @@
+[console_scripts]
+clnvm=clnvm.cli:run
+

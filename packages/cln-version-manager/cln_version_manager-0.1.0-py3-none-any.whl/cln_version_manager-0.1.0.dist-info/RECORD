@@ -1,0 +1,11 @@
+clnvm/__init__.py,sha256=ahtbva7gc66FcY5gexlwz_TBDJTt4mneY26ZNgQZlWc,180
+clnvm/__main__.py,sha256=Dr9dOfmz7EuYI9eq1fxcdmPhR89G6y__9efYXcNYRYA,68
+clnvm/cli.py,sha256=vwuxrRi7IWvNjzk1uY4s2WfQYrjRlz9AmXw6DwxUzF4,2339
+clnvm/cln_version_manager.py,sha256=yMrqMwTG7Wkrwfah0BtYiNTsaOKMENYVs9xkdeg7NAE,9412
+clnvm/errors.py,sha256=yv4iOygp7YMl8308PDgfFQZdGdHtzPhnVsVSnJdSUZE,1332
+clnvm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clnvm/utils.py,sha256=I43LFa2zsK8x5AM0teMG3MiH8HhB_bfFGZUrUGKlwsw,516
+cln_version_manager-0.1.0.dist-info/METADATA,sha256=0RUW7I3ut-3HfghWV2vbyyZFxAmtqAxPhi1tFYmZ_p8,1288
+cln_version_manager-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cln_version_manager-0.1.0.dist-info/entry_points.txt,sha256=52lTIjNy9Sh7kLoHNtwI6jrF2hgaugEC7o-BRlUiL1M,39
+cln_version_manager-0.1.0.dist-info/RECORD,,
