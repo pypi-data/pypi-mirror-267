@@ -1,0 +1,16 @@
+flams/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flams/display.py,sha256=wYJVjehJktzVlvVa1X5_f63Hor_MhEK-3x_Wo7CBB8I,8289
+flams/flams.py,sha256=WH5kl0hSWstmv-Ed7rZS1JDh05kKOCuN5TffvC3VAfI,5019
+flams/input.py,sha256=gTr-P_Sg3KG3YxZWr_x2xz6GK5EWXFsSmqaVmyQgId0,30812
+flams/run_blast.py,sha256=BDefwFHySBQybek5Dp57FzFRYOOPXgc3Z8oe5F-mEag,13730
+flams/utils.py,sha256=b61hNlXZZEdxNFUrP_O3MDJYB4Fe0pmeEjscN-8k82k,859
+flams/databases/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flams/databases/cplmv4.py,sha256=7aQ4d-51pTQKD6YjxoIEnTKtocTbS1rK7lzdDGGC7mw,2874
+flams/databases/dbptm.py,sha256=EOROIuV4jqNhmEcH1KoqzEtt4pLe_nCyGkl1ENYwvAU,5695
+flams/databases/setup.py,sha256=kwwuzesHFm689jIeMPh-2c7O0q27yJkuBCfb3mqZ8EE,24304
+flams-1.1.4.dist-info/LICENSE,sha256=cyqRTQzYRnIZNRG4_Pgoc76X9xis3wbx_3oXaUPyAsI,1300
+flams-1.1.4.dist-info/METADATA,sha256=n000_ZoIUKu3K0ELsbmDoQqFaGUIZRAZI53an7YKM1E,21955
+flams-1.1.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+flams-1.1.4.dist-info/entry_points.txt,sha256=HSJnR6Qj7nCheAH6ZPkuhtBEBoGe7urS2ogmNLsOYG4,43
+flams-1.1.4.dist-info/top_level.txt,sha256=qDBsEjTXGAOtw8Sa7LyHDFc9BAKx2U4DDAlyPU83hA0,6
+flams-1.1.4.dist-info/RECORD,,
