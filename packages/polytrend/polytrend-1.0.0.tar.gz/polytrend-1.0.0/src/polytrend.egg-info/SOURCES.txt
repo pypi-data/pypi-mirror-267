@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/polytrend/__init__.py
+src/polytrend/polytrend.py
+src/polytrend.egg-info/PKG-INFO
+src/polytrend.egg-info/SOURCES.txt
+src/polytrend.egg-info/dependency_links.txt
+src/polytrend.egg-info/requires.txt
+src/polytrend.egg-info/top_level.txt
