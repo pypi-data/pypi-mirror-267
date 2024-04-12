@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tushare_interface"
+keywords = ["tushare", "stock"]
+version = "0.2.0"
+authors = [
+    { name="polaritec", email="yuan.xin@polaritec.com" },
+]
+description = "An interface encapsulated based on Tushare, which implements rate limiting and retry mechanisms."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "tushare>=1.4.5",
+    "pandas>=2.2.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/polaritec/tushare-interface"
