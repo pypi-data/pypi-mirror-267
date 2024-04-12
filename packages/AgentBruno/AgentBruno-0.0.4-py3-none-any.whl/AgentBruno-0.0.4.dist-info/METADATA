@@ -1,0 +1,169 @@
+Metadata-Version: 2.1
+Name: AgentBruno
+Version: 0.0.4
+Summary: Description of your package
+Home-page: https://github.com/NinJagtap/AgentBruno.git
+Author: Ninad Jagtap
+Author-email: digitalforutility@gmail.com
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: langchain ==0.1.14
+Requires-Dist: langchain-community ==0.0.30
+Requires-Dist: langchain-openai ==0.1.1
+Requires-Dist: langgraph ==0.0.30
+Requires-Dist: pinecone-client ==2.2.4
+Requires-Dist: duckduckgo-search ==5.2.2
+Requires-Dist: wikipedia ==1.4.0
+Requires-Dist: scikit-learn ==1.4.1.post1
+Requires-Dist: streamlit ==1.32.0
+
+# Agent Bruno
+
+## Introduction
+
+Agent Bruno is a package tailored for the energy and utility sector. It includes a variety of modules, classes, functions, and methods, all implementing Generative AI techniques outlined in established research papers. Built on LangChain and OpenAI, this user-friendly package aims to streamline your AI workflow.
+
+## Purpose
+
+The purpose of this package is to serve as a valuable resource, offering references, techniques, best practices, and guidance for solving diverse business problems using Generative AI. With the rapid pace of research in this field, keeping up with the latest techniques can be challenging. Agent Bruno addresses this challenge by encapsulating the implementation of various tricks and techniques, specifically curated for use in the energy and utility sector. Its primary goal is to provide easy access to these resources, simplifying your AI journey.
+
+**Note:**
+Please note that this package is not intended for production use. Instead, it's designed for quick reference, experimentation, and hypothesis testing. By leveraging Agent Bruno, you can reduce the time spent on research and gain a better understanding of which techniques to implement and how to use them effectively.
+
+## Module 1: Agent Bruno STORM Technique for Writing Articles
+
+This module offers an implementation of the STORM technique using LangChain, LangGraph, and OpenAI. STORM, which stands for Synthesis of Topic Outlines through Retrieval and Multi-perspective Question Asking, enables the creation of well-structured, comprehensive articles from scratch, comparable in depth and breadth to Wikipedia pages.
+The technique, introduced in the research paper "Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models" by Shao et al., operates through several stages, some of which are customized to suit the energy and utility sector use cases - for example connecting domain specific knowledge catalogue:
+
+![Fig 1: Gen AI STORM Technique](STORM.png)
+
+1. **Outline Generation and Subject Survey:** Initial creation of the outline and exploration of related subjects, featuring prompts tailored for the Energy and Utility sector.
+2. **Perspective Identification:** Identification of distinct perspectives relevant to the domain.
+3. **Expert Interviews:** Interactive role-playing sessions between the article writer and research experts, incorporating domain-specific queries and responses synthesized from both internet sources and the private Pinecone vector store. Note: the private Pinecone implementation is specific to Agent Bruno STORM.
+4. **Outline Refinement:** Refinement of the initial outline using insights gathered from expert interviews and additional research.
+5. **Section Writing and Article Compilation:** Composing individual sections of the article followed by compilation into a comprehensive piece, enriched with domain-specific knowledge.
+
+It's worth noting that most of the code is derived from LangGraph’s implementation of STORM as a baseline, further enhanced to cater to domain-specific needs and optionally integrate the Pinecone vector store.
+
+Integrating the vector store (Pinecone, in the current release) in this technique proves beneficial for business use cases, where companies may leverage internal data alongside external sources. The enhanced insights provided by integrating domain-specific knowledge catalogues can significantly expedite processes like regulatory reporting and submission, such as drafting RIIO submissions/draft determinations for Regulators. As a consultant in the energy sector, I've found that the STORM technique, when integrated with a domain-specific and private knowledge catalog, can greatly accelerate the drafting process.
+
+Give it a try on the topic of your choice: https://agentbrunopublic.streamlit.app
+
+For Implementing STORM technqiue with AgentBruno
+
+Agent Bruno is a package tailored for the energy and utility sector. It includes a variety of modules, classes, functions, and methods, all implementing Generative AI techniques outlined in established research papers - starting with STORM technique. Built on LangChain using OpenAI LLM, this user-friendly package aims to streamline your AI workflow.
+
+Now, I will show you how you can write wikipedia like articles with STORM technique using AgentBruno Package and view the article in browser using streamlit. 
+
+Good to have Pre-requisit
+
+1. Basic understanding of Python and setting up python environment.
+2. A separate python enviroment to test this code.
+3. Open AI API key
+
+**Step 1:** Install AgentBruno Package: 
+
+```bash
+pip install AgentBruno
+```
+
+This will install AgentBruno STORM module along with all the required packages including LangChain, LangGraph, streamlit and OpenAI. I recommend installing this package in a separate python enviornment.
+
+**Step 2:** Create a new python file for example: 'agentbruno_articlewriter.py' and import following
+
+```python
+#agentbruno_articlewriter.py
+from AgentBruno.storm import Storm
+import asyncio
+import streamlit as st
+```
+1. From AgentBruno.storm module we will import Storm class - Contains implementation for STROM technique - link to github repo provided below.
+2. We will import asyncio python package - an asynchronous frameworks.
+3. Finally, the streamlit package for user interface.
+
+**Step 3A:** We will now create an instance of Storm class,  initialise the parameters and call the write_storm_article() method. 
+```python
+#agentbruno_articlewriter.py
+
+from AgentBruno.storm import Storm
+import asyncio
+import streamlit as st
+
+async def main():    
+    
+    # This code researches about the topic over internet and generates an article. This code doesn't integrate with domain specific knowledge catalogue.    
+    topic = 'Navigating Risk - Considerations for Migrating SCADA Solutions to the Cloud' # Your topic name
+
+    open_ai_key = "<<Enter your API Key>>"      # Passin your OpenAI API key - you can directly passin the key
+    #open_ai_key = st.secrets["OPENAI_API_KEY"] # Passin your OpenAI API key - you can pull it from the streamlit secrets folder
+    
+    storm_instance = Storm(topic, open_ai_key)  # Create instance of Storm class
+    article = await storm_instance.write_storm_article() # Call the write_storm_article method to write the article.
+    
+    st.write(article) # Write the generated article on the Streamlit page.
+    
+if __name__ == '__main__':
+    asyncio.run(main())
+
+```
+Note: This implementation is without connecting to domain specific knowledge catalogue.
+
+1. Create an instance of Storm class and pass in your topic and open_ai_key
+2. Call the method write_storm_article()
+3. Print the article on a page
+
+Note: Running this code might take a few or two. Becuase the STROM code does work of researching and writing.
+
+**Step 3B:** (Optional) If you have a domain specific knowledge catalogue in Pinecone you can integrate it as follows
+
+```python
+#agentbruno_articlewriter.py
+
+from AgentBruno.storm import Storm 
+import asyncio
+import streamlit as st
+
+async def main():
+    
+  # Use this code if you have a domain specific knowledge catalogue in Pinecone. 
+
+    topic = 'Navigating Risk - Considerations for Migrating SCADA Solutions to the Cloud' # Your topic name
+
+    open_ai_key = "<<Enter your API Key>>"      # Passin your OpenAI API key - you can directly passin the key
+    #open_ai_key = st.secrets["OPENAI_API_KEY"] # Passin your OpenAI API key - you can pull it from the streamlit secrets folder
+    
+    # Use this code if you have a domain specific knowledge catalogue in Pinecone. Uncomment below section of code.
+    
+    pinecone_api_key = "<Enter Pinecone API key>" ##st.secrets['PINECONE_API_KEY']
+    pinecone_envo = "Enter Pinecone environment" ##st.secrets['PINECONE_ENV']
+    pinecone_index = "Enter Pinecone index" ##st.secrets['PINECONE_INDEX']
+    
+    storm_instance = Storm(topic, open_ai_key, pinecone_api_key, pinecone_envo, pinecone_index) ## Create instance of Storm class
+    article = await storm_instance.write_storm_article()  ## Call the write_storm_article method to write the article.
+    st.write(article) ## Write the generated article on the Streamlit page.
+    
+if __name__ == '__main__':
+    asyncio.run(main())
+```
+
+Note: The only addition to code we wrote in step 3A is that we are passing in additional pinecone parameters to the Storm class.
+
+1. Additionally, pass in pinecone_api_key, pinecone_envo & pinecone_index
+
+**Step 4:** To run the code we will open the terminal/command prompt - navigate to the project folder and activate the environment and run the following command
+
+```python
+streamlit run agentbruno_articlewriter.py
+```
+
+That's it - it might take a minute or two to write the article.
+
+**Disclaimer:** All the code, models, insights and contents are my own and do not reflect the views or opinions of my employer, client or any SaaS service providers.
+
+## Module Credits
+
+This project utilizes code from the following sources:
+
+- [Storm Notebook](https://github.com/langchain-ai/langgraph/blob/main/examples/storm/storm.ipynb): Portions of the code in this project are adapted from the Storm library, developed by LangChain.
+- [Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models](https://arxiv.org/abs/2402.14207): arXiv:2402.14207 [cs.CL]
