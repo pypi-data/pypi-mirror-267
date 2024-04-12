@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: lama2923
+Version: 0.1
+Requires-Dist: colorama
+Requires-Dist: requests
+
