@@ -1,0 +1,24 @@
+from collections.abc import Iterator
+from datetime import datetime
+from typing import Literal
+
+from pydantic import Field
+
+from ._default import DefaultModel, DefaultRootModel
+from .webhook_payload import WebhookPayload
+
+
+class Update(DefaultModel):
+    event_datetime: datetime = Field(alias="eventDateTime")
+    event_id: int
+    type: Literal["ORDER_FAILED", "ORDER_PAID"]
+    payload: WebhookPayload
+
+
+class Updates(DefaultRootModel):
+    """Список чатов."""
+
+    root: list[Update]
+
+    def __iter__(self) -> Iterator[Update]:
+        return iter(self.root)
