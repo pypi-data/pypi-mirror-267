@@ -1,0 +1,10 @@
+README.md
+setup.py
+aifile/__init__.py
+aifile/file_manager.py
+aifile.egg-info/PKG-INFO
+aifile.egg-info/SOURCES.txt
+aifile.egg-info/dependency_links.txt
+aifile.egg-info/entry_points.txt
+aifile.egg-info/requires.txt
+aifile.egg-info/top_level.txt
