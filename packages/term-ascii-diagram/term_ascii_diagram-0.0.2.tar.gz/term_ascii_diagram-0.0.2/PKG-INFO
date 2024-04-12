@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: term-ascii-diagram
+Version: 0.0.2
+Summary: Build ASCII diagrams in terminal using keyboard.
+Project-URL: Homepage, https://github.com/amirkarimi/term-ascii-diagram
+Project-URL: Issues, https://github.com/amirkarimi/term-ascii-diagram/issues
+Author-email: Amir Karimi <me@amirkarimi.dev>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+Build ASCII diagrams in terminal using keyboard.
+
+## Install
+
+```
+pip install term-ascii-diagram
+```
+
+## Shortcuts
+
+| Key    | Description |
+| ------ | ----------- |
+| `Arrow Keys` *or* `hjkl` | Move the cursor or selected object |
+| `Shift`+`Arrow Keys` *or* `HJLK` | Resize selected object |
+| `q` | Quit (with confirmation) |
+| `s` | Save to file |
+| `o` | Open from file |
+| `b` | Add box |
+| `c` | Add line |
+| `a` | Add arrow |
+| `d` | Delete selected object |
+| `t` | Toggle sticky mode (whether moving boxes should move attached arrows/lines) |
+| `Enter` | Edit box text if selected, otherwise, select the object under cursor |
+| `Esc` | Unselect current object |
+| `Space` | Toggle the line/arrow orientation or box border |
+| `Tab` | Select next object |
+| `Shift`+`Tab` | Select previous object |
