@@ -1,0 +1,13 @@
+spglib/__init__.py,sha256=f2uOmbTxvKF-WAyE4EPSpn1EfUwa6Zj0reIm8JYkwd0,2555
+spglib/_spglib.cpython-311-x86_64-linux-gnu.so,sha256=ncmGqXws21Q-zWMR8PT7CbGmt7aVmuQ7auZv2NyVZ3Q,32192
+spglib/_version.py,sha256=NXpAHvzuYHxlLDJV0489874frLu4dA2joFw1iHLLrOg,411
+spglib/include/spglib.h,sha256=5TcW7PQ8gLiQ28pDWAR0rvcy1j4C9UQpAJQUUhfRPTU,27948
+spglib/lib/libsymspg.so,sha256=CpOYvaC-bJsS16CZUpyrQeiUrhkmkRgqYjVCi3-xRkU,1857864
+spglib/lib/libsymspg.so.2,sha256=CpOYvaC-bJsS16CZUpyrQeiUrhkmkRgqYjVCi3-xRkU,1857864
+spglib/lib/libsymspg.so.2.4.0,sha256=CpOYvaC-bJsS16CZUpyrQeiUrhkmkRgqYjVCi3-xRkU,1857864
+spglib/spglib.py,sha256=3ThCjw9Wtd-SzVoU8NMAE3TeWLeeHdopcLdNldcwuhQ,66908
+spglib-2.4.0.dist-info/METADATA,sha256=1DZDamMEVKL4K3FF8RCimjF375XJmEFuIOJezY8ENeU,4245
+spglib-2.4.0.dist-info/WHEEL,sha256=G9l7574u6pTJv-HsfLhhmIsqCBsz4mhi96DjgcFThQc,117
+spglib-2.4.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spglib-2.4.0.dist-info/licenses/COPYING,sha256=t2dryHVLmzqvuy0TyRMeH3Oin1eoagUE1VDJiU3CaDM,1467
+spglib-2.4.0.dist-info/RECORD,,
