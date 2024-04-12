@@ -1,0 +1,102 @@
+Metadata-Version: 2.3
+Name: django_analytics_simple
+Version: 2024.0.9
+Summary: Django Analytics simple is a package designed to facilitate tracking and analysis of data in Django web applications
+Project-URL: Repository, https://github.com/h4cker54n/django_analytics_simple
+Author-email: Santiago Nestor Britos <s.britos@hotmail.com>
+License: Creative Commons License
+        Attribution-NonCommercial-NoDerivatives 4.0 International
+        
+        You are free to:
+        - Share: copy and redistribute the material in any medium or format.
+        
+        Under the following terms:
+        - Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+        - NonCommercial: You may not use the material for commercial purposes.
+        - NoDerivatives: If you remix, transform, or build upon the material, you may not distribute the modified material.
+        
+        Notices:
+        You are not required to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
+        No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
+License-File: LICENSE
+Keywords: Analytics,Application Development,Browser,Data,Database,Device,Django,Geographical Location,Informed Decisions,Maintenance,Middleware,Operating System,Table,Tracking,User,User Experience
+Classifier: Framework :: Django
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Requires-Dist: django>3.0
+Requires-Dist: maxminddb>2.0.0
+Requires-Dist: user-agents>2.0.0
+Description-Content-Type: text/markdown
+
+# Django Analytics Simple
+
+**See documentation at :** [Español](README_es.md) | [English](README.md)
+
+Django Analytics simple is a Django package designed to facilitate tracking and analysis of user data in web applications. It provides middleware that records information about users, including details such as browser, operating system, device, and geographical location. The collected data is stored in a new database table, enabling detailed analytics to improve user experience and make informed decisions in application development and maintenance.
+
+## Installation
+
+You can install Django Analytics simple using pip:
+
+```bash
+pip install django_analytics_simple
+```
+
+Then, add 'django_analytics' to your Django project's installed apps in the settings.py file:
+
+```python
+INSTALLED_APPS = [
+    ...
+    'django_analytics_simple',
+    ...
+]
+```
+
+Next, include the provided middleware in your project's middleware stack in the same settings.py file:
+
+```python
+MIDDLEWARE = [
+    ...
+    'django_analytics_simple.middleware.AnalyticsMiddleware',
+    ...
+]
+```
+
+## Configuration
+Django Analytics simple requires the GeoLite2-City.mmdb file for IP geolocation, which should already be included in the package, and it will be updated monthly.
+
+Additionally, you can set the ANALYTICS_LANGUAGE variable in your Django project's settings.py file to specify the language for location data retrieval.
+
+
+```python
+ANALYTICS_LANGUAGE = 'en'  # Specify the language for location data retrieval
+```
+
+Please note that you may need to review the languages supported by MaxMindDB for proper configuration.
+
+
+## Dependencies
+
+Django Analytics simple relies on the following external libraries:
+
+[MaxMindDB] https://pypi.org/project/maxminddb/
+[User-agents] https://pypi.org/project/user-agents/
+Ensure that these dependencies are installed before using Django Analytics.
+
+## Usage
+
+After configuring Django Analytics simple, run the following commands to apply migrations:
+
+```bash
+python manage.py makemigrations django_analytics_simple
+python manage.py migrate
+```
+
+## License
+
+This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. See the LICENSE file for details.
+
+## Author
+
+[Santiago Nestor Britos](mailto:s.britos@hotmail.com) - s.britos@hotmail.com
