@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: PicKit
+Version: 1.0.0
+Summary: A simple library for processing images.
+Author: Sumukh M G
+Author-email: sumukhmg45@gmail.com
+Requires-Dist: Pillow
