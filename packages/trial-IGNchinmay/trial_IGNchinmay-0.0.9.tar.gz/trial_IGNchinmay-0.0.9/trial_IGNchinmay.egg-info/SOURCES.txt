@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+trial_IGNchinmay/__init__.py
+trial_IGNchinmay/json_utils.py
+trial_IGNchinmay.egg-info/PKG-INFO
+trial_IGNchinmay.egg-info/SOURCES.txt
+trial_IGNchinmay.egg-info/dependency_links.txt
+trial_IGNchinmay.egg-info/top_level.txt
