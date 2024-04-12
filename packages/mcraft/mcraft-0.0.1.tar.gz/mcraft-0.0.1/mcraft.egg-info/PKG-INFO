@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: mcraft
+Version: 0.0.1
+Summary: A modern version of CRAFT-pytorch using the latest versions
+Home-page: https://github.com/manbehindthemadness/modern-craft
+Author: Manbehindthemadness
+Author-email: manbehindthemadness@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scikit-image>=0.14.2
+Requires-Dist: scipy>=1.1.0
+Requires-Dist: numpy
+Requires-Dist: opencv-python>=3.4.2.17
+Requires-Dist: torch>=2.0.0
+Requires-Dist: torchvision>=0.17.0
+
+# Modern CRAFT Library
+
+## Overview
+This Python library provides an interface for using the CRAFT (Character Region Awareness For Text Detection) algorithm for text detection in images. The library is based on the CRAFT implementation in Python.
+
+This is an adaptation of the CRAFT-python library allowing for use on modern packages (pytorch 2 > opencv-python > 3.4).
+
+## ToDo
+This library will need refactoring with respect to performance as the previous library introduced unneeded overhead.
+
+
+## Requirements
+- Python 3.x
+- PyTorch
+- OpenCV
+- NumPy
+
+## Installation
+You can install the library via pip:
+
+
+```
+pip install modern-craft
+```
+
+## Usage
+
+```
+    from mcraft import TNet
+    
+    # Load an image
+    image_path = "path/to/your/image.jpg"
+    
+    # Initialize the network
+    tnet = TNet()  # Adjust parameters as needed
+    
+    # Run a test
+    tnet.test(image_path)
+    
+    # Perform text detection
+    tnet.test(image_path)
+    
+    # After running test, the result will be saved as "res_image_mask.jpg" in the same directory as the input image
+```
+![res_cover_mask](https://github.com/manbehindthemadness/modern-craft/assets/24589462/6b3160a4-9223-42de-b5a6-5351ebd0ffff)
+
+
+## Features
+- Text detection in images produced as heat-maps bounding boxes and per-character polygons.
+- Adjustable parameters such as text threshold, link threshold, etc.
+
+## Important Notes
+- Preexisting or hand compiled instances of opencv, pytorch, and torchvision will **not** be replaced during setup.
+- The necessary model files (`craft_mlt_25k.pth` and `craft_refiner_CTW1500.pth`) will be downloaded to ~/.cache/mcraft.
+- GPU operations, whilst implemented, remain untested until I get back from abroad and regain access to my compute systems.
+- Official CRAFT PyTorch [repository](https://github.com/clovaai/CRAFT-pytorch)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
