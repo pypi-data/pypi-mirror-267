@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: gllogger
+Version: 0.0.1
+Summary: gllogger
+Author-email: calm51@protonmail.com
+Project-URL: Homepage, https://github.com/calm51
+Project-URL: Issues, https://github.com/calm51
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
