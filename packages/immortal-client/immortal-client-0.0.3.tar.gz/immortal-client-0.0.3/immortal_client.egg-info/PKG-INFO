@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: immortal-client
+Version: 0.0.3
+Summary: Wonderful Immortals client
+Home-page: https://github.com/goldenhand76/immortal-client
+Author: goldenhand76
+Author-email: goldenhand76 <rezazarindast76@gmail.com>
+Maintainer-email: goldenhand76 <rezazarindast76@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Reza Zarin
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/goldenhand76/immortal_client
+Project-URL: Documentation, https://github.com/goldenhand76/immortal_client
+Project-URL: Repository, https://github.com/goldenhand76/immortal_client.git
+Project-URL: Issues, https://github.com/goldenhand76/immortal_client/issues
+Keywords: IoT,python,gRPC,kafka
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests==2.31.0
+
+# Immortals Python Client
+
+The Immortals Python Client is a Python library that allows you to interact with the Immortals service, an automation platform for IoT purposes. It provides functionalities to connect to the Immortals service via Kafka and perform various operations.
+
+## Features
+
+- Connect to the Immortals service using Kafka messaging.
+- Subscribe to topics and consume messages from the Immortals service.
+- Send messages to the Immortals service for processing.
+
+## Installation
+
+You can install the Immortals Python Client using pip:
+
+```bash
+pip install immortals-client
