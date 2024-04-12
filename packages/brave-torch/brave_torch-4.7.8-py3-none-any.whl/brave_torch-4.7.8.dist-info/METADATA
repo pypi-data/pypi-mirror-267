@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: brave-torch
+Version: 4.7.8
+Summary: Swarms - Pytorch
+Home-page: https://github.com/kyegomez/BRAVE-ViT-Swarm
+License: MIT
+Keywords: artificial intelligence,deep learning,optimizers,Prompt Engineering,swarms,agents
+Author: Kye Gomez
+Author-email: kye@apac.ai
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: einops
+Requires-Dist: torch (>=2.1.1,<3.0)
+Requires-Dist: zetascale
+Project-URL: Documentation, https://swarms.apac.ai
+Project-URL: Repository, https://github.com/kyegomez/BRAVE-ViT-Swarm
+Description-Content-Type: text/markdown
+
+[![Multi-Modality](agorabanner.png)](https://discord.gg/qUtxnK2NMf)
+
+# BRAVE or Swarms of Vision Transformers
+Implementation of the paper: "BRAVE : Broadening the visual encoding of vision-language models". BRAVE achieves state-of-the-art performance on a broad range of captioning and VQA benchmarks and significantly reduces the aforementioned issues of VLMs, while requiring a smaller number of trainable parameters than existing methods and having a more compressed representation
+
+## install
+`pip3 install brave-torch`
+
+
+## usage
+```python
+import torch
+from brave_torch.main import SwarmOfViTs
+
+# IMG Tensor
+x = torch.randn(1, 3, 224, 224) 
+
+# Model
+model = SwarmOfViTs(
+    image_size=224,
+    patch_size=32,
+    encoder_dim=512,
+    encoder_depth=6,
+    encoder_heads=8,
+    num_of_vits=4
+)
+
+# Forward
+out = model(x)
+print(out)
+```
+
+# Citations
+
+
