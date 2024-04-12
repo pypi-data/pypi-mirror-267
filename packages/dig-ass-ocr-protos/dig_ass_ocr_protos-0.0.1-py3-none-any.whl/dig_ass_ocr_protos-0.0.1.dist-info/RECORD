@@ -1,0 +1,9 @@
+dig_ass_ocr_protos/DigitalAssistantOCR_pb2.py,sha256=ZG5YjRcR4XTQ8rycMkYkMOSdBX0cVcWlVF3PP6pA4uU,1689
+dig_ass_ocr_protos/DigitalAssistantOCR_pb2.pyi,sha256=BJy7JQ4Io-yqcVkaoH3lkGGUgdSxBVqZuKoOpegi8Wc,692
+dig_ass_ocr_protos/DigitalAssistantOCR_pb2_grpc.py,sha256=60piAuTwj0fIkhfmImCcARilCdf3g3BSqoZiP6hV8lI,2917
+dig_ass_ocr_protos/__init__.py,sha256=07NzQXBgNlnw5kSN6ZYxE9By-_RuH3Jyy58Z74sIio0,21
+dig_ass_ocr_protos/client.py,sha256=QuERAiD0eYJGyu6o28_ae8b6cOBt9ZrJtaxxfTVFe0k,832
+dig_ass_ocr_protos-0.0.1.dist-info/METADATA,sha256=-_OnqP1wZG5NX3Dy9tRYvMixzqiLrlLWnbT-b-zVQ88,335
+dig_ass_ocr_protos-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dig_ass_ocr_protos-0.0.1.dist-info/top_level.txt,sha256=nCCAK4KEy743lSbq-0Id7MajKyNKglwDXSz31a6NM8k,19
+dig_ass_ocr_protos-0.0.1.dist-info/RECORD,,
