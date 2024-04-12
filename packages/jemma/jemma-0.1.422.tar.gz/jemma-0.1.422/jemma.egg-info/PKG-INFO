@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: jemma
+Version: 0.1.422
+Summary: convert ideas into code
+Author: tolitius
+Provides-Extra: windows
