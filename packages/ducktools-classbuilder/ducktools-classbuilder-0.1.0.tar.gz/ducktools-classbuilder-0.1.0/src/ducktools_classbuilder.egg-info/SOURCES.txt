@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/ducktools/classbuilder/__init__.py
+src/ducktools/classbuilder/__init__.pyi
+src/ducktools/classbuilder/prefab.py
+src/ducktools/classbuilder/prefab.pyi
+src/ducktools/classbuilder/py.typed
+src/ducktools_classbuilder.egg-info/PKG-INFO
+src/ducktools_classbuilder.egg-info/SOURCES.txt
+src/ducktools_classbuilder.egg-info/dependency_links.txt
+src/ducktools_classbuilder.egg-info/requires.txt
+src/ducktools_classbuilder.egg-info/top_level.txt
