@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: tushare-interface
+Version: 0.1.0
+Summary: An interface encapsulated based on Tushare, which implements rate limiting and retry mechanisms.
+Home-page: https://github.com/polaritec/tushare-interface
+Author: polaritec
+Author-email: yuan.xin@polaritec.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tushare >=1.4.5
+Requires-Dist: pandas >=2.2.1
+
+# tushare-interface
+将tushare接口封装在类中，并提供限流、重试功能
+
+#### 安装教程
+1.  pip 安装（待定）
+2.  在.bashrc中添加环境变量：
+-   export TUSHARE_TOKEN='xxxxxxxxxx'  该api从tushare.pro网站购买
+-   export TUSHARE_API_PER_MINUTUS=100, 设置每分钟可访问接口的次数
+
+#### 使用说明
+
+1.  import tushare_interface
+2.  package内有实例化对象: interfaceTuShare, 
+-   如果环境变量已经设置好，import后即可使用
+-   如果环境变量未设置，可通过setToken函数设置从htp://tushare.pro获得的token; 以及
+-   通过setTimesPerMinutus函数设置每分钟可访问的次数（最少1次）
+3.  interfaceTuShare还可以使用setRetry设置重试次数（最少0次）和重试间隔（以秒为单位）
+4.  调用query接口从tushare下载数据，接口与tushare原始的query保持一致
+5.  函数原型
+-   setToken(self, token: str) -> None
+-   setTimesPerMinutus(self, timesPerMinutus: int) -> None
+-   setRetry(self, retrys: int, secondsWaitRetry: int) -> None
+-   query(self, func_name: str, **kwds: object) -> pandas.DataFrame | None
