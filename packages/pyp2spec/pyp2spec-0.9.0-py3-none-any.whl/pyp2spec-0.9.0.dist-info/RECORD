@@ -1,0 +1,16 @@
+pyp2spec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyp2spec/classifiers_to_fedora.json,sha256=WzBnNFcf8WYYdXR0a6Zj6Q9VKEEoVn4XXi3aiY3AxOU,5862
+pyp2spec/conf2spec.py,sha256=wYq0umcxc_MRO-lwXQSJdIyhgZGj194TiLo2qjFIW4s,6357
+pyp2spec/license_processor.py,sha256=Ss29vS72PPhF9fCAUtiFhrOZwPFY9InttGF3gHOR0lU,6903
+pyp2spec/pyp2conf.py,sha256=sKggkT7F5UFMOh6UwkKTx106jMT6aKI6kYjaDimkoGw,19327
+pyp2spec/pyp2spec.py,sha256=PN3MyZ8A4U5c82fn40SPz2W6XntTdjt1WE9e9TXI7nc,784
+pyp2spec/rpmversion.py,sha256=-T6LYzCzMvSnTv5i166v1-pJRYUWHqbnhYEbO6A4rFc,2604
+pyp2spec/template.spec,sha256=ms7BPTsDXZFUeUxVFzUJz5cLbl7ZHThNpBvO1j91BzE,2202
+pyp2spec/utils.py,sha256=dJDuRTXNIGsNtF9Qtpwlw8bHsOH-_GrXPwvzwZeL8Ak,89
+pyp2spec-0.9.0.dist-info/LICENSE-MIT,sha256=RzySmnhcviknMNdZhUpmh7MYCXKSV4W0Au6mLFCPRCQ,1103
+pyp2spec-0.9.0.dist-info/LICENSE-MIT-0,sha256=zeIRmDIveGOJsNgXsSMXiBE3KtMPmieTloABY6hRrZw,954
+pyp2spec-0.9.0.dist-info/METADATA,sha256=oV5BYVLdnQCSnQ-g067w3RPh_eg1lMXJHYrrqLpl3bU,7062
+pyp2spec-0.9.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyp2spec-0.9.0.dist-info/entry_points.txt,sha256=ms01GMkjm-UL4lnPsmy04o5wUfsvg6gA_wZGQRUahIM,122
+pyp2spec-0.9.0.dist-info/top_level.txt,sha256=xLDoTeEvt050TNF_G4iXheLlOIRnB0HTNHXAizNREKQ,9
+pyp2spec-0.9.0.dist-info/RECORD,,
