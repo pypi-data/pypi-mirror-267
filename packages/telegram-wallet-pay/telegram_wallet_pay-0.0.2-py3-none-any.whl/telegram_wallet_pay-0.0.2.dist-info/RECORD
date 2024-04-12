@@ -1,0 +1,15 @@
+telegram_wallet_pay/__init__.py,sha256=tNCBzXLLPMpCqIHkOLtFqE7GbuNyafsvtqxIZXI0t38,116
+telegram_wallet_pay/client.py,sha256=VBh8lyRQJpNbbY4Bfb8np95IgcpAFoMJWjSl00YD4JA,4355
+telegram_wallet_pay/tools.py,sha256=AC4gRdES2_PwgmAf6c0o1ekKz24VGuLNjumnYCLC0Ck,1042
+telegram_wallet_pay/schemas/__init__.py,sha256=1IqxP6lbmJqFzhr9CdxKOpBOh8mQV1l2QOo9gQ6Pqes,431
+telegram_wallet_pay/schemas/_default.py,sha256=xFtxIThhQKTbWgGmlzC3ZpCxVzO0FyhW6ReBD-Ze6ZI,350
+telegram_wallet_pay/schemas/money_amount.py,sha256=RqIgagfY5MF5TSuqXi4-KVXSIMeG_lFt1oBC4O6n_Sc,184
+telegram_wallet_pay/schemas/order_new.py,sha256=GZVSppVda4ys6kRUDcEIDNqfH1mR9olCp4wfNXhXQvE,648
+telegram_wallet_pay/schemas/order_preview.py,sha256=yyD3IjkZZ7pp_J6hW5cptsSiH8dzkmuf58jo0m6q-CI,657
+telegram_wallet_pay/schemas/order_result.py,sha256=WCqorJ0ZGQpFG1PYiC-Snpw3Dng5Lzjb_FkguAU6gwg,385
+telegram_wallet_pay/schemas/payment_option.py,sha256=o-5jiuNRekRrVbPG5635NZS58n9EcpeenUYcOfx6ss0,213
+telegram_wallet_pay/schemas/update.py,sha256=GwOwnodBvD4MPfg5VePm4dJmsAD9Dh3Z7DvHVGyPUO4,396
+telegram_wallet_pay/schemas/webhook_payload.py,sha256=F3yLkbAyXtzFGMLzeC2D3FyV2WWTUSfyGvgMwCHXqzU,597
+telegram_wallet_pay-0.0.2.dist-info/METADATA,sha256=d9WbYJa9TD85b_ObPkGemH2YkrVbXL8VDz-wBmlpdfU,1439
+telegram_wallet_pay-0.0.2.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+telegram_wallet_pay-0.0.2.dist-info/RECORD,,
