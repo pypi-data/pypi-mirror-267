@@ -1,0 +1,70 @@
+networks:
+  {{cookiecutter.project_name}}:
+    name:  {{cookiecutter.project_name}}
+
+
+services:
+  {{cookiecutter.project_name}}:
+    image: ${REGISTRY}/{{cookiecutter.project_name}}:${APP_VERSION}
+    container_name: {{cookiecutter.project_name}}_${DOCKER_CONTAINER_SUFFIX}
+    environment:
+      - DEVELOP
+      - APP_VERSION
+      - LOG_LEVEL
+      - POSTGRES_PASSWORD
+      - POSTGRES_USER
+      - POSTGRES_DB
+      - REDIS_HOST=${REDIS_DOCKER_HOST}
+      - POSTGRES_HOST=${POSTGRES_DOCKER_HOST}
+    networks:
+      {{cookiecutter.project_name}}:
+        aliases:
+          - {{cookiecutter.project_name}}
+    ports:
+      - "8080:80"
+    depends_on:
+      postgresDB:
+        condition: service_healthy
+      redisDB:
+        condition: service_healthy
+
+  postgresDB:
+      image: postgres
+      container_name: postgres_${DOCKER_CONTAINER_SUFFIX}
+      ports:
+        - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD
+      - POSTGRES_USER
+      - POSTGRES_DB
+      volumes:
+        - postgresDB:/var/lib/postgresql/data
+      networks:
+        {{cookiecutter.project_name}}:
+          aliases:
+            - ${POSTGRES_HOST}
+
+  redisDB:
+    image: redis
+    container_name: redis_${DOCKER_CONTAINER_SUFFIX}
+    command: redis-server --appendonly yes
+    volumes:
+      - redisDB:/data
+    ports:
+      - "6379:6379"
+    networks:
+      {{cookiecutter.project_name}}:
+        aliases:
+        - ${REDIS_HOST}
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+volumes:
+  postgresDB:
+    driver: local
+  redisDB:
+    driver: local
