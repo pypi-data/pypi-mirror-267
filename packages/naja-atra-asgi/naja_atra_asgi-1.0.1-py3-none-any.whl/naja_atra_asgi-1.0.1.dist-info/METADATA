@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: naja-atra-asgi
+Version: 1.0.1
+Summary: This is a simple http server, use MVC like design.
+Author-email: keijack <keijack.wu@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2018 Keijack Wu
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: homepage, https://github.com/naja-atra/naja-atra-asgi
+Project-URL: repository, https://github.com/naja-atra/naja-atra-asgi
+Keywords: http-server,websocket,http,web,web-server
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: naja-atra
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: uvicorn[standard] ; extra == 'test'
+Requires-Dist: websocket-client ; extra == 'test'
+
+# Naja Atra ASGI
+
+This ia a ASGI proxy that proxies requests to Naja Atra.
+
+# Usage
+
+Take `uvicorn` as an example.
+
+```python
+import uvicorn
+There is a legacy application
+from naja_atra import route
+from naja_atra_asgi import app
+
+@route("/hello")
+def hello(name: str):
+    return {"messag": f"Hello, {name}!"}
+
+if __name__ == '__main__':
+    uvicon_conf = uvicorn.Config(
+        app, host="0.0.0.0", port=9090, log_level="info")
+    asgi_server = uvicorn.Server(uvicon_conf)
+    asgi_server.run()
+```
+
+You can use `server.scan()` to import routes from other modules. And also you can use `naja_atra_asgi.config()` to function to sepecify the static resources routes.
+
+```python
+import os
+import uvicorn
+import naja_atra.server as server
+
+from naja_atra import route
+from naja_atra_asgi import config, app
+
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+if __name__ == '__main__':
+    server.scan(base_dir="tests/ctrls", regx=r'.*controllers.*',
+                project_dir=PROJECT_ROOT)
+    config(
+        resources={"/public/*": f"{PROJECT_ROOT}/tests/static",
+                   "/*": f"{PROJECT_ROOT}/tests/static"})
+    uvicon_conf = uvicorn.Config(
+        app, host="0.0.0.0", port=9090, log_level="info")
+    asgi_server = uvicorn.Server(uvicon_conf)
+    asgi_server.run()
+```
+
+## Legacy Applications
+
+You can use the legacy ASGI (V2) application function `app_v2` if your server does not support ASGI V3.
