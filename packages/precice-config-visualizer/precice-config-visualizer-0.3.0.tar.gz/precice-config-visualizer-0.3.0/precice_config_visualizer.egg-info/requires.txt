@@ -1,0 +1,5 @@
+lxml
+pydot
+xdot
+PyGObject
+typing_extensions
