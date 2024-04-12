@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: YanSH
+Version: 0.1.1
+Summary: 一个用于GUI界面设计的库，适用于PyQt5e
+Home-page: https://github.com/PyllerAya/YanSH
+Author: PyllerAya
+Author-email: yansh9773@163.com
+License-File: LICENSE
+
