@@ -1,0 +1,7 @@
+README.txt
+setup.py
+YanSH.egg-info/PKG-INFO
+YanSH.egg-info/SOURCES.txt
+YanSH.egg-info/dependency_links.txt
+YanSH.egg-info/requires.txt
+YanSH.egg-info/top_level.txt
