@@ -1,0 +1,321 @@
+### Get started
+
+```bash
+# install the client
+pip install rubyx
+
+# create the .rubyx folder
+mkdir -p ~/.rubyx 
+
+# ensure you have the required configuration in ~/.rubyx/config.json
+cat > ~/.rubyx/config.json << EOF
+{
+    "username": "rubyx",
+    "password": "<your secure password>",
+    "couchdb": "https://<your-rubyx-server>/rubyx",
+    "discord_webhook": "<your discord webhook if you want one>",
+    "ignore_ssl_errors": false
+}
+EOF
+# other optional settings are {"debug":true}
+
+# create a new program
+rubyx new test
+
+# or continue with a program you have created before
+rubyx use test
+
+# define a scope for your program
+rubyx inscope add '*.example.com' '*.sub.example.com' 'example.com'
+rubyx outscope add 'blog.example.com' '*.dev.example.com'
+
+# view the program in/out scope
+rubyx scope in
+rubyx scope out
+
+# start a background listener to listen for changes and send alerts to Slack
+# in production, you probably want this continuously running on a VPS somewhere
+rubyx listen &
+
+# add some domains manually
+rubyx domain add www.example.com example.com some.dev.example.com www.example.com www.example.com thisisnotadomain.example
+
+# note that rubyx automatically safeguards the data quality, e.g.
+# it checks the program's in and out scope to see if entries
+# should be processed or not, prevents duplicate entries in the database,
+# and rejects all input that is not a valid domain
+rubyx domains
+
+# add a list of ips from a file by piping into rubyx
+cat ips.txt | rubyx ip add -
+
+# run a tool based on the program scope, store results in rubyx,
+# and display a list of domains that have been added
+rubyx scope in --wildcard --top | subfinder | rubyx domain add - --show-new
+
+# retrieve a raw document from the rubyx server and format with jq
+rubyx show www.example.com | jq
+
+# update the outscope
+rubyx outscope add www.example.com
+
+# note that this does not automatically remove outscoped domains that
+# were already in the database, so you will manually need to fix that!
+rubyx domains | rubyx scope filter out | rubyx domain remove -
+
+# discover all features of rubyx on the help page
+rubyx -h
+
+# Use dnsx to resolve unresolved domains across all your programs
+# and store the results in rubyx, either by updating existing ips and domains,
+# or by adding them if they are new
+for p in $(rubyx programs); do
+  rubyx domains --view unresolved -p $p | \
+  dnsx -silent -a -resp | tr -d '[]' | tee \
+      >(awk '{print $1":"$2}' | rubyx domain update - -p $p -s dnsx) \
+      >(awk '{print $1":"$2}' | rubyx domain add - -p $p -s dnsx) \
+      >(awk '{print $2":"$1}' | rubyx ip add - -p $p -s dnsx) \
+      >(awk '{print $2":"$1}' | rubyx ip update - -p $p -s dnsx)
+done
+
+# view all resolved domains
+rubyx domains --view resolved
+```
+
+### Python module
+
+To use RUBYX in your Python projects, use the interface as follows:
+
+```python
+from rubyx import RubyxClient as rubyx
+
+# this will use the system's default ~/.rubyx/config.json file:
+programs = rubyx('programs').run()
+
+# to specify a custom configuration, provide a second argument:
+conf = {
+    "username": "rubyx",
+    "password": "<your secure password>",
+    "couchdb": "https://<your-instance>/rubyx",
+    "slack_token": "<a slack token to receive notifications>",
+    "discord_webhook": "<your discord webhook>",
+    "ignore_ssl_errors": false
+}
+
+domains = rubyx('domains --view resolved', conf).run()
+```
+
+### Dashboard
+
+If you like browsing through your recon data with a GUI, you can make use of the [RUBYX dashboard](https://github.com/honoki/rubyx-dashboard) on https://rubyx.me. Just plug in your server URL, username and password, and the dashboard will pull your data and make it searchable. Note that all communication to the server happens via your browser, so your data remains safe!
+
+[![asciicast](docs/rubyx-dashboard.gif)](https://rubyx.me/)
+
+### Advanced
+
+#### Domains
+
+RUBYX will accept and store domains in any of the following input formats:
+
+```
+<domain>
+<domain>:<ip>
+<domain>:<ip>,<ip>,...
+```
+
+Note that adding the DNS resolutions of a domain in this way does *not* automatically store the IP in the IPs table,
+but that domains and ips are logically seperated in the client, which requires you to write your scripts so that they 
+handle this distinction appropriately.
+
+```bash
+rubyx domain add www.example.com:1.1.1.1
+rubyx domain update www.example.com:2.2.2.2,3.3.3.3
+rubyx show www.example.com | jq
+```
+
+#### IPs
+
+Similarly, you can store hostnames of an IP address by appending one or more domains with a colon:
+
+```
+<ip>
+<ip>:<domain>
+<ip>:<domain>,<domain>,...
+```
+Again, RUBYX will make sure the provided hostnames are valid domain names before storing them, but will not add them to your list of domains for the program, nor does it validate these domains against the defined program scope. Instead, these domains are stored in a `domains` property on the IP document:
+
+```bash
+rubyx ip add 1.1.1.1:www.example.com,sub.example.com
+rubyx ip update 1.1.1.1:www.google.com,www.apple.com
+rubyx show 1.1.1.1 | jq
+```
+
+#### URLs
+RUBYX will help you manage your URLs, and store their hostname, port, status code and content length for you:
+
+```bash
+rubyx url add 'https://www.example.com:8443/a' 'http://www.example.com/b' 'http://www.example.com/c 200 1234'
+```
+
+Two formats are accepted: `<url>` or `<url> <statuscode> <contentlength>` delimited by spaces.
+
+The `<url>` can be absolute or relative. A relative URL will require the `-d <hostname>` flag to be specified or will be skipped. Whenever the `-d` flag is set, it will compare that with the hostname parsed from the URL, and skip the URL if they do not match.
+
+Relative URLs and URLs that do not specify a scheme (`http://` or `https://`) will always be interpreted with scheme `http://`. If no port is found, ports 80 and 443 will be used as a default depending on the scheme.
+
+The flag `--show-new` will print a list of new and updated URLs if they were added, or if their status code and/or content length were updated respectively:
+
+```bash
+cat urls.txt | rubyx url add - --show-new
+[UPDATED] https://sub.example.com:8443/b
+[NEW] http://www.example.com/a
+[NEW] http://www.example.com/c
+```
+
+To view a list of stored URLs of your active program, simply use:
+
+```bash
+rubyx urls
+``` 
+
+Or, to return URLs belonging to a specific host:
+
+```bash
+rubyx urls -d www.example.com
+``` 
+
+To list URLs across all programs, run:
+
+```bash
+rubyx urls --all
+```
+
+To print full URLs with the saved query strings:
+
+```bash
+rubyx urls --all --with-query
+```
+
+#### Services
+
+To store services (i.e. open ports) in RUBYX, provide the input formatted as `ip:port` or `ip:port:service`, and manually specify other properties by means of the tagging system (see below for more info about tags), e.g.:
+
+```bash
+rubyx service add 127.0.0.1:8443 127.0.0.1:8888 -t hostname:localhost -t protocol:tcp
+rubyx service add 127.0.0.1:80:http 127.0.0.1:21:ftp -t hostname:localhost -t protocol:tcp
+rubyx service add 127.0.0.1:22:ssh 127.0.0.1:53:domain 127.0.0.1:80 -t scanned:$(date +%s)
+```
+
+Note that services can only be stored for an IP address, and *not* as `domain:port` for example. This avoids the complexity of mapping domains to IPs (especially when an IP address maps to more than one domain), while still allowing search operations supported by a mix of default properties and tags:
+
+```bash
+# get all known services on port 8443
+rubyx services where port is 8443
+# return services for which a tag has been manually provided
+rubyx services where hostname is localhost
+```
+
+#### Tagging and querying
+
+By setting custom properties for the different document types (programs, domains, ips, urls and services), you can specify e.g. the platform a program belongs to or the name of a team member that added a bunch of new domains.
+
+To add tags to documents, specify a `-t key:value` when creating a new domain, ip, url or service, or leave empty to remove the tag:
+
+```bash
+# add a custom tag to all domains
+cat domains.txt | rubyx domain add - -t added_by:pieter -t from:domains.txt
+# create an IP with a custom tag
+rubyx ip add 1.2.3.4 -t added_by:pieter
+# remove the tag
+rubyx ip update 1.2.3.4 -t added_by:
+```
+
+Note that you can specify the same tag multiple times to store the tags as arrays. RUBYX will follow the following rules to determine how to store tags:
+ * if a single `-t tag:value` is found, treat as a normal value;
+ * if the same tag name is provided more than once, default to an array: `-t cname:one -t cname:two`
+ * by default, overwrite existing values for the tags when updating, unless `--append-tags` is specified, in which case append new values to existing values:
+ 
+```bash
+rubyx domain update www.example.tld -t name:value
+rubyx show www.example.tld | jq .tags # { "name": "value" }
+rubyx domain update www.example.tld -t name:value2 -t name:value3
+rubyx show www.example.tld | jq .tags # { "name": ["value2", "value3"] }
+rubyx domain update www.example.tld -t name:value4 --append-tags
+rubyx show www.example.tld | jq .tags # { "name": ["value2", "value3", "value4"] }
+rubyx domain update www.example.tld -t name:
+rubyx show www.example.tld | jq .tags # { }
+```
+
+To facilitate basic data querying, the RUBYX server provides an indexed search based on all custom tags, as well as some default properties of all document types:
+
+```bash
+# search domains based on custom tags:
+rubyx domains where added_by is pieter --all
+rubyx domains where last_updated is before 1610698911
+rubyx domains where last_scan is after 2021-01-01 -p myprogram
+
+# or search the properties that are available by design:
+rubyx domains where ip is 1.1.1.1
+rubyx ips where domain is www.example.com
+rubyx urls where port is 443
+rubyx services where port is 22
+```
+
+This works on domains, ips, urls and services and will search based on text-based comparisons as is defined in the [Unicode Collation Algorithm](https://unicode.org/reports/tr10/) as [implemented by Couchdb](https://docs.couchdb.org/en/latest/ddocs/views/collation.html#collation-specification).
+
+Since all values are stored as text, this allows date comparison if you store dates as unix timestamps or in a ISO-8601 format e.g. `2021-01-15T09:02:40.628Z`.
+
+That also means, however, that for example `"20"` comes after `"1000"`, which makes this less suitable for integer comparison. So if you want to store integers, you may want to use padded zeros at the front to ensure that `0020` comes before `1000`.
+
+### Dynamic program inference
+
+Use the dynamic program name `-p @INFER` to infer the program name based on other properties if you're unable to specify the program flag yourself for some reason; this is currently supported for the following operations:
+
+* `rubyx ip add 1.1.1.1:example.tld -p @INFER` will set the IP's program name to the same as the domain example.tld if it already exists;
+* `rubyx domain add some.example.tld:1.2.3.4 -p @INFER` will set the domain's program name to the same as 1.2.3.4 if it already exists - note that this will bypass the scope validation of the program, because the program name is inferred just before writing to the database.
+* `rubyx domain add some.example.tld some.other.tld -p @INFER` will add the domains to whatever program scope matches the input;
+* `rubyx url add http://this.example.tld https://that.some.tld/robots.txt -p @INFER` will add the URLs to whatever program has the domain in scope;
+
+
+
+#### RUBYX Listener
+
+In order to process changes and alerts as they are pushed to the data store, you need to have an active listener running somewhere:
+
+```bash
+rubyx listen
+```
+
+This will start listening for changes on the RUBYX server and push notifications to your configured Discord instance. Note that this will fail e.g. when the RUBYX server is temporarily unavailable or in case of certificate errors, so you may want to loop this to auto-start in case of issues.
+
+#### Custom execution hooks
+
+The RUBYX listener will also execute custom local scripts when it sees new or updated ips, domains, urls and/or services. It will automatically look for executable `.sh` files in the following locations:
+
+* `~/.rubyx/hooks/ip/new/`,
+* `~/.rubyx/hooks/ip/update/`,
+* `~/.rubyx/hooks/domain/new/`,
+* `~/.rubyx/hooks/domain/update/`,
+* `~/.rubyx/hooks/url/new/`,
+* `~/.rubyx/hooks/url/update/`,
+* `~/.rubyx/hooks/service/new/`,
+* `~/.rubyx/hooks/service/update/`,
+
+For example, here is a custom execution hook that will resolve newly added domains and store the results back in RUBYX. Find more examples in [`docs/hooks`](docs/hooks).
+
+```bash
+#!/bin/bash
+
+#
+# RUBYX hook - save to ~/.rubyx/hooks/domain/new/resolve.sh
+# and make sure it is executable: chmod +x resolve.sh
+#
+
+domains=$@
+
+printf '%s\n' ${domains[@]} | dnsx -silent -a -resp | tr -d '[]' | tee \
+      >(awk '{print $1":"$2}' | rubyx domain update -) \
+      >(awk '{print $2":"$1}' | rubyx ip add - -p @INFER) \
+      >(awk '{print $2":"$1}' | rubyx ip update -);
+```
+
