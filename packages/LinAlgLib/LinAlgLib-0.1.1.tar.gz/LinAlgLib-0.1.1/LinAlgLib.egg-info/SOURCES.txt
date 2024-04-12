@@ -1,0 +1,9 @@
+README.md
+setup.py
+LinAlgLib/__init__.py
+LinAlgLib/functions.py
+LinAlgLib.egg-info/PKG-INFO
+LinAlgLib.egg-info/SOURCES.txt
+LinAlgLib.egg-info/dependency_links.txt
+LinAlgLib.egg-info/requires.txt
+LinAlgLib.egg-info/top_level.txt
