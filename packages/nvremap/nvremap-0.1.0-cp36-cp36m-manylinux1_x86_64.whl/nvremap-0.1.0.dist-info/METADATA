@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nvremap
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Project-URL: Source, https://github.com/ArtificialNotImbecile/nvRemap
+Project-URL: Tracker, https://github.com/ArtificialNotImbecile/nvRemap/issues
+Keywords: pynvremap,nvremap,image remap,gpu,nvidia
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.0
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pybind11
+
+UNKNOWN
+
