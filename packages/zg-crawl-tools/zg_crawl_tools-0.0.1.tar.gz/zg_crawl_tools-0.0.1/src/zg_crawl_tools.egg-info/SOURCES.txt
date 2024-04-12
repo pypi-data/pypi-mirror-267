@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/zg_crawl_tools/__init__.py
+src/zg_crawl_tools/zg_extract_response.py
+src/zg_crawl_tools/zg_request.py
+src/zg_crawl_tools.egg-info/PKG-INFO
+src/zg_crawl_tools.egg-info/SOURCES.txt
+src/zg_crawl_tools.egg-info/dependency_links.txt
+src/zg_crawl_tools.egg-info/requires.txt
+src/zg_crawl_tools.egg-info/top_level.txt

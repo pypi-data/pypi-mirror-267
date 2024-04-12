@@ -1,0 +1,18 @@
+[project]
+name = "zg_crawl_tools"
+version = "0.0.1"
+authors = [
+    {name="by_yuanyuan", email="zhiboyuan666@gmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+    "lxml",
+]
