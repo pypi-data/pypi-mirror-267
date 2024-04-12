@@ -1,0 +1,11 @@
+server_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+server_client/ai_client.py,sha256=CnMQaJlBQAQWdoS_FsayeaU2xi78lzqTZSJpVlEEiAM,5390
+server_client/client.py,sha256=U7E7k3X_ljGylZOqxgjT4zIY6wo13Q7q6gMSIeBjpok,6133
+server_client/server.py,sha256=_20b26fIHN2_5_Wpxzyy8rQAAtdZoMqOrJhsBeaHxrU,3984
+server_client/start_server_with_ai_client.py,sha256=f3PxaMenY8xatkB5UMeLG50PXGq128LYHavnk5BNAF4,3456
+socktalk-0.1.7.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+socktalk-0.1.7.dist-info/METADATA,sha256=csz7DffJItPo3tkI1upcwuHEQTTZ9jXqzKTr2mbsxL0,4138
+socktalk-0.1.7.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+socktalk-0.1.7.dist-info/entry_points.txt,sha256=rSn1GC1Ez9tbmsrY1o7CzYfhO0DKaTw6CTAU4bq1qDo,157
+socktalk-0.1.7.dist-info/top_level.txt,sha256=tXw6u1vRIY3Q2Nfxskuj1JCosMBL2BHzI--mFvqvwCY,14
+socktalk-0.1.7.dist-info/RECORD,,
