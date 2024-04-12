@@ -1,0 +1,177 @@
+Metadata-Version: 2.1
+Name: ktianc
+Version: 0.3.1
+Summary: ktianc first package
+License: MIT
+Author: ktianc
+Author-email: 2445667550@qq.com
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+这是我的第一个 pypi 程序
+
+
+
+
+
+
+使用前先安装 poetry：
+
+```
+pip install poetry
+```
+
+
+
+## poetry 命令使用
+
+
+
+初始化项目：
+
+这个命令会引导你通过一系列问题来创建 pyproject.toml 文件，该文件是 Poetry 用来管理项目配置和依赖的
+
+```
+poetry init
+```
+
+
+
+添加生产环境依赖：
+
+Poetry 会自动处理依赖解析并更新到 pyproject.toml 和 poetry.lock 文件
+
+```
+poetry add fastapi
+```
+
+执行该命令后会直接安装该依赖
+
+
+
+添加开发、测试环境依赖：这会将依赖添加到 pyproject.toml 文件的 [tool.poetry.dev-dependencies] 部分
+
+```
+poetry add pytest --dev
+```
+
+
+
+安装所有依赖：安装开发依赖和生产依赖。这确保了开发环境具备执行测试和其他开发任务所需的一切。
+
+```
+poetry install 
+```
+
+
+
+仅安装生产环境依赖：
+
+```
+poetry install --no-dev
+```
+
+
+
+更新依赖：更新项目依赖至其最新版本
+
+```
+poetry update
+```
+
+
+
+删除生产环境依赖
+
+```
+poetry remove fastapi
+```
+
+
+
+删除开发环境依赖
+
+```
+poetry remove pytest --dev
+```
+
+
+
+## poetry 项目发布到 pypi
+
+打包：这将在 dist/ 目录下生成 .whl 和 .tar.gz 文件
+
+```
+poetry build
+```
+
+
+
+发布：将包发布到 PyPI
+
+发布前需要提前在 pypi 创建账号，并且获取到 token
+
+获取到后执行设置pypi token： 
+
+```
+poetry config pypi-token.pypi your_token
+```
+
+发布包
+
+```
+poetry publish
+```
+
+这个命令会要求你输入 PyPI 的用户名和密码。为了避免每次发布都输入密码，你可以使用 API 令牌，并将其存储在 pypirc 文件或环境变量中。
+
+
+
+## poetry 项目发布到 gitee
+
+打包：这将在 dist/ 目录下生成 .whl 和 .tar.gz 文件
+
+```
+poetry build
+```
+
+
+
+1. 首先需要在 Gitee 创建一个仓库
+
+2. 创建完成后，将代码推送到 Gitee 中
+
+3. 创建标签
+
+4. 创建发行版本，创建时添加 build 生成出的 dist/版本.whl
+
+   ![image-20240402141353393](./images/image-20240402141353393.png)
+
+5. 创建完成后表示发布成功
+
+
+
+使用 poetry 安装发布在 gitee 中的包
+
+```
+poetry add "my-package@git+https://gitee.com/<username>/<repository>#<branch_or_tag>"
+```
+
+这里的命令分解如下：
+
+- `my-package` 是包名。
+- `git+https://gitee.com/<username>/<repository>` 指定了Git仓库的URL。
+- `<branch_or_tag>` 是你想要安装的分支或标签名。
+
+实例：
+
+```
+poetry add "ktianc@git+https://gitee.com/ktianc/ktianc#v0.3.0"
+```
+
+
