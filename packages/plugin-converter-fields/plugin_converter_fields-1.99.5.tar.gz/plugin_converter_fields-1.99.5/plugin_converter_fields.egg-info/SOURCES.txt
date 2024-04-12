@@ -1,0 +1,5 @@
+setup.py
+plugin_converter_fields.egg-info/PKG-INFO
+plugin_converter_fields.egg-info/SOURCES.txt
+plugin_converter_fields.egg-info/dependency_links.txt
+plugin_converter_fields.egg-info/top_level.txt
