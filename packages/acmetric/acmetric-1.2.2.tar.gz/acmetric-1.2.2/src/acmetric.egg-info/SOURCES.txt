@@ -1,0 +1,16 @@
+LICENCE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/acmetric/Oswald-Regular.ttf
+src/acmetric/__init__.py
+src/acmetric/colors.py
+src/acmetric/fonts.py
+src/acmetric/params.py
+src/acmetric/plots.py
+src/acmetric.egg-info/PKG-INFO
+src/acmetric.egg-info/SOURCES.txt
+src/acmetric.egg-info/dependency_links.txt
+src/acmetric.egg-info/requires.txt
+src/acmetric.egg-info/top_level.txt
