@@ -1,0 +1,5 @@
+Click>=7.0
+Pillow>=8.0
+piexif
+shutil
+pathlib
