@@ -1,0 +1,22 @@
+{
+  "name": "gradio_highlightedtextlabeldefault",
+  "version": "0.4.14",
+  "description": "Gradio UI packages",
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "private": false,
+  "main_changeset": true,
+  "dependencies": {
+    "@gradio/atoms": "0.6.2",
+    "@gradio/icons": "0.3.4",
+    "@gradio/statustracker": "0.4.11",
+    "@gradio/theme": "0.2.1",
+    "@gradio/utils": "0.3.1"
+  },
+  "main": "./Index.svelte",
+  "exports": {
+    ".": "./Index.svelte",
+    "./package.json": "./package.json"
+  }
+}
