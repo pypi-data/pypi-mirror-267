@@ -1,0 +1,4 @@
+Flask~=3.0.2
+arcor2~=1.3.0
+fastuuid~=0.8.0
+pyhumps==3.8.0
