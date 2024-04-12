@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: egypt
+Version: 0.0.1
+Summary: A small example packag for pyramid
+Requires-Python: >=3.6
