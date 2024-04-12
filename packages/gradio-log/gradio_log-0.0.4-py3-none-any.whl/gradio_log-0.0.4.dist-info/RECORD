@@ -1,0 +1,8 @@
+gradio_log/__init__.py,sha256=OpE8yEYF2M10-mDZMD_tyK1p8d-iwssh1UhTkMsPNvQ,40
+gradio_log/log.py,sha256=BHG9i8Y9DGZZfWhKQ1uKTJSGVhsxhAPJ9pXq9y0NkMI,9800
+gradio_log/log.pyi,sha256=8HFTQUTF-A59DiY9C8LehQR5ZLqAwkIZf-2X-cM9asU,19916
+gradio_log/templates/component/index.js,sha256=NyLM-mpenMVrSJEX0XsvzT9sr69b6NXLJJaaJC0lryg,467008
+gradio_log/templates/component/style.css,sha256=M4YpWlql56Lbuy7E5PmF6i2XLbUCfY3hcY8okJW_y_4,16768
+gradio_log-0.0.4.dist-info/METADATA,sha256=N9DCY567UbxEVKC32MUdb2r4fCMY_U0Sc61WCXF-6Xs,16341
+gradio_log-0.0.4.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+gradio_log-0.0.4.dist-info/RECORD,,
