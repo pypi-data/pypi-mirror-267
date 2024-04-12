@@ -1,0 +1,3 @@
+include src/CriminAI/image_batch/*
+include src/CriminAI/image_batch
+include src/CriminAI/*.pth

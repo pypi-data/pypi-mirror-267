@@ -1,0 +1,12 @@
+_*
+.DS_Store
+*.rst
+*.spec
+*.bat
+Makefile
+dist
+build
+CriminAI.egg-info
+*.docx
+images_reconstruites
+images_selectionnees
