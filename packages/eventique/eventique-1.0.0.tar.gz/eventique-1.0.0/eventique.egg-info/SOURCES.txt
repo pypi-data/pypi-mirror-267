@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.py
+eventique/EventsHandler.py
+eventique/Listener.py
+eventique/ThreadSharedSingleton.py
+eventique/__init__.py
+eventique.egg-info/PKG-INFO
+eventique.egg-info/SOURCES.txt
+eventique.egg-info/dependency_links.txt
+eventique.egg-info/top_level.txt
