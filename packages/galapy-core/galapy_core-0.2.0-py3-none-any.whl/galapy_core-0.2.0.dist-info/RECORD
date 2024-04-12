@@ -1,0 +1,16 @@
+galapy_core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galapy_core/accounts.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galapy_core/assets.py,sha256=s9VUIQ0Vrl4KxXo0aZOpaJbNo6rmFLN2Nw7sstt7nNo,19258
+galapy_core/core.py,sha256=47JpPdsFI-zeEJXKwdkY2PQn3KwvqlrbgfHzjDNfEPo,971
+galapy_core/generators/README.md,sha256=wIFMHxZoWg9--dWDT4nIy2cTjje5_a-MAo0uov30gOY,160
+galapy_core/generators/__init__.py,sha256=_xCmuqwFEPNzeWt2n6wlTwUe042KE0K8aUiEYWSbu28,34
+galapy_core/generators/price.py,sha256=oQbKDS50cvLzotoA4mXuiD2Ys6-qsjS6PaEw8mnZtmY,1601
+galapy_core/generators.py,sha256=-p1-5bVSRI3x4iIWQ1BoBaRrkcLJpg2nP1xSSviw0M8,1219
+galapy_core/handlers.py,sha256=3fjOfJv5qeRd70-6W4EHc7HyErAuoBun9xvnYr_L6RA,12575
+galapy_core/market_data.py,sha256=3iV4acXskVKwBH5_0WwVCY8S_ktaxyaCl5pxxymkEFo,7141
+galapy_core/metrics.py,sha256=y3Z0bmUq3NfYA8Hk2zo9Sayi5SKreLxE6OPsAR3nEl0,9499
+galapy_core/orders.py,sha256=O3IfWGYCW1KrZ79m5UcSUGJ0BlegqlK0Wl3hBp_hBlE,8142
+galapy_core/portfolio.py,sha256=b0Gw9sLkiM-ovwC46EALmp9s8CbL69UKlEUQPptFLiA,11285
+galapy_core-0.2.0.dist-info/METADATA,sha256=cq1SsK-HdfRGAx0kjrb4iypklkvexWzcnVSNzP-3b6g,594
+galapy_core-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+galapy_core-0.2.0.dist-info/RECORD,,
