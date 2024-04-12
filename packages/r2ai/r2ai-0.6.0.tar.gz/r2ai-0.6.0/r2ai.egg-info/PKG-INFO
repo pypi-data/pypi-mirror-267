@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: r2ai
+Version: 0.6.0
+Requires-Dist: rich
+Requires-Dist: r2pipe
+Requires-Dist: inquirer
+Requires-Dist: llama-cpp-python
+Requires-Dist: huggingface_hub
+Requires-Dist: appdirs
+Requires-Dist: unidecode
+Requires-Dist: jsonref
+Requires-Dist: transformers
+Requires-Dist: pydantic
+Requires-Dist: torch
