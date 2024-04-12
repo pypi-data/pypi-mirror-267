@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interface &#8212; Documentation CriminAI 0.1.4</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <script src="../_static/documentation_options.js?v=750eb482"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=d99ca74e"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Index général"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Index des modules Python"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Documentation CriminAI 0.1.4</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Code du module</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">interface</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Code source de interface</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">import</span> <span class="nn">tkinter</span> <span class="k">as</span> <span class="nn">tk</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">ImageTk</span><span class="p">,</span> <span class="n">Image</span>
+<span class="kn">import</span> <span class="nn">torch</span>
+<span class="kn">import</span> <span class="nn">CriminAI.AlgoGenetique.algo_genetique</span> <span class="k">as</span> <span class="nn">algo_genetique</span> 
+<span class="kn">from</span> <span class="nn">CriminAI.VAE.autoencodeur_BW</span> <span class="kn">import</span> <span class="n">VAE</span><span class="p">,</span> <span class="n">data_loader</span> <span class="c1"># from CriminAI.VAE.autoencodeur import VAE, CustomDataset </span>
+
+<span class="sd">&quot;&quot;&quot; # Création des objets importés pour gérer les images</span>
+<span class="sd">### Chargement des données et autres configurations</span>
+<span class="sd">#</span>
+<span class="sd">celeba_data_dir = os.path.join(os.path.dirname(__file__), &#39;VAE/image_batch&#39;) # Chemin vers le dossier contenant les images = Chemin où les données CelebA sont extraites</span>
+
+<span class="sd"># Transformation des images</span>
+<span class="sd">transform = transforms.Compose([</span>
+<span class="sd">    transforms.Resize((64, 64)),  # Redimensionner les images à une taille de 64x64 pixels</span>
+<span class="sd">    transforms.ToTensor(),  # Convertir les images en tenseurs PyTorch</span>
+<span class="sd">])</span>
+<span class="sd"># Charger les données à partir du dossier img_align_celeba</span>
+<span class="sd">celeba_dataset = CustomDataset(root_dir=celeba_data_dir, transform=transform)</span>
+<span class="sd"># Définir un DataLoader pour la gestion des données</span>
+<span class="sd">batch_size = 64 </span>
+<span class="sd">data_loader = DataLoader(celeba_dataset, batch_size=batch_size, shuffle=True)&quot;&quot;&quot;</span>
+
+<span class="n">latent_dim</span> <span class="o">=</span> <span class="mi">64</span> <span class="c1"># Définir les dimensions de l&#39;espace latent</span>
+
+<span class="c1"># Charger le modèle sauvegardé</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s1">&#39;vae_model.pth&#39;</span><span class="p">))</span>
+<span class="n">checkpoint</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s1">&#39;vae_model.pth&#39;</span><span class="p">))</span>
+<span class="n">autoencoder</span> <span class="o">=</span> <span class="n">VAE</span><span class="p">(</span><span class="n">latent_dim</span><span class="p">)</span>
+<span class="n">autoencoder</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">checkpoint</span><span class="p">)</span>
+<span class="n">autoencoder</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>  <span class="c1"># Mettre le modèle en mode évaluation</span>
+
+<span class="c1"># Créer un dossier pour sauvegarder les images reconstruites</span>
+<span class="n">output_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s1">&#39;images_selectionnees&#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">output_dir</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">output_dir</span><span class="p">)</span>
+
+<span class="n">IMG_COORDS</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">PHOTOS</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">PHOTOS_ID</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Créer une variable pour suivre si le bouton a été créé</span>
+<span class="n">button_panier_created</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="c1"># Définir la fonction pour créer le bouton</span>
+<div class="viewcode-block" id="create_button_panier">
+<a class="viewcode-back" href="../interface.html#interface.create_button_panier">[docs]</a>
+<span class="k">def</span> <span class="nf">create_button_panier</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Crée le bouton du panier de photos sélectionnées</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">button_panier_created</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">button_panier_created</span><span class="p">:</span>
+        <span class="k">global</span> <span class="n">button_selection</span>
+        <span class="n">button_selection</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;Photos sélectionnées&quot;</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">command</span><span class="o">=</span><span class="n">photos_selectioned</span><span class="p">)</span>
+        <span class="n">button_selection</span><span class="o">.</span><span class="n">place</span><span class="p">(</span><span class="n">relx</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">rely</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="s1">&#39;ne&#39;</span><span class="p">,</span> <span class="n">bordermode</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mi">30</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+        <span class="n">button_panier_created</span> <span class="o">=</span> <span class="kc">True</span></div>
+
+
+<span class="c1"># Définir la fonction pour supprimer le bouton</span>
+<div class="viewcode-block" id="destroy_button_panier">
+<a class="viewcode-back" href="../interface.html#interface.destroy_button_panier">[docs]</a>
+<span class="k">def</span> <span class="nf">destroy_button_panier</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Détruit le bouton du panier de photos sélectionnées</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">button_panier_created</span>
+    <span class="k">if</span> <span class="n">button_panier_created</span><span class="p">:</span>
+        <span class="n">button_selection</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+        <span class="n">button_panier_created</span> <span class="o">=</span> <span class="kc">False</span></div>
+
+
+<span class="c1"># Fonction appelée lors du clic sur le bouton &quot;Créer un portrait robot&quot;</span>
+<div class="viewcode-block" id="create_portrait">
+<a class="viewcode-back" href="../interface.html#interface.create_portrait">[docs]</a>
+<span class="k">def</span> <span class="nf">create_portrait</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    La fonction qui génère la page qui contient les portraits robots.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">center_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">low_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+
+    <span class="n">photos_selectioned_page_principale</span><span class="p">()</span>
+
+    <span class="n">label_explication</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Commencez par sélectionner les photos qui se rapprochent le plus de l&#39;individu que vous pensez avoir aperçu. Appuyez sur &#39;Continuer la sélection&#39; pour que d&#39;autres photos soient proposées. Une fois votre sélection finie, appuyez sur &#39;Lancer l&#39;algorithme génétique&#39; pour que l&#39;algorithme génétique utilise les informations des images que vous avez choisi, pour vous proposer des protraits robots ressemblants.&quot;</span><span class="p">,</span>
+                                <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
+                                <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                                <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">18</span><span class="p">),</span>
+                                <span class="n">anchor</span><span class="o">=</span><span class="s2">&quot;n&quot;</span><span class="p">,</span>
+                                <span class="n">wraplength</span><span class="o">=</span><span class="mi">850</span><span class="p">)</span>
+    <span class="n">label_explication</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
+
+    <span class="c1"># Proposer desimages décodées</span>
+    <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
+        <span class="n">input_batch</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="n">data_loader</span><span class="p">))</span>
+    <span class="c1"># Reconstruire les images à partir du modèle</span>
+    <span class="k">global</span> <span class="n">recon_batch</span>
+    <span class="n">recon_batch</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">autoencoder</span><span class="p">(</span><span class="n">input_batch</span><span class="p">)</span>
+    <span class="c1"># Convertir les tenseurs PyTorch en numpy arrays</span>
+    <span class="n">input_batch</span> <span class="o">=</span> <span class="n">input_batch</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+    <span class="n">recon_batch</span> <span class="o">=</span> <span class="n">recon_batch</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+
+    <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># Nombre d&#39;images à afficher</span>
+    <span class="c1"># Enregistrer les images reconstruites au format JPG avec une correction des niveaux de gris</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">recon_batch</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">recon_batch</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+        <span class="n">img_array</span> <span class="o">=</span> <span class="p">((</span><span class="n">a</span><span class="o">/</span><span class="n">a</span><span class="o">.</span><span class="n">max</span><span class="p">())</span><span class="o">*</span><span class="mi">255</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">img_array</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span><span class="mi">64</span><span class="p">))</span> <span class="c1"># img_array.transpose(1, 2, 0)</span>
+        <span class="n">img_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;photo</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">)</span>  <span class="c1"># Utilisation de f-strings</span>
+        <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">img_path</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+        <span class="n">IMG_COORDS</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+
+    <span class="k">global</span> <span class="n">selected_photos</span>
+    <span class="n">selected_photos</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">photo_list</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Liste pour stocker les objets PhotoImage</span>
+
+    <span class="c1"># Charger les images reconstruites</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">img_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;photo</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">)</span>
+        <span class="n">photo</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="o">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">img_path</span><span class="p">))</span>
+        <span class="n">photo_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">photo</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">toggle_photo</span><span class="p">(</span><span class="n">photo_id</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">photo_id</span> <span class="ow">in</span> <span class="n">selected_photos</span><span class="p">:</span>
+            <span class="n">selected_photos</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">photo_id</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">selected_photos</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">photo_id</span><span class="p">)</span>
+
+    <span class="n">photo_checkboxes</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># Affichage des photos dans la fenêtre principale</span>
+    <span class="n">photos_per_row</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="mi">2</span>  <span class="c1"># Nombre de photos par ligne</span>
+    <span class="n">row_count</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="n">photos_per_row</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">photos_per_row</span>  <span class="c1"># Nombre total de lignes</span>
+    <span class="k">for</span> <span class="n">row_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">row_count</span><span class="p">):</span>
+        <span class="n">row_frame</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">center_frame</span><span class="p">)</span>  <span class="c1"># Créer un nouveau cadre pour chaque ligne</span>
+        <span class="n">row_frame</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>  <span class="c1"># Pack le cadre de la ligne</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">photos_per_row</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">row_index</span> <span class="o">*</span> <span class="n">photos_per_row</span> <span class="o">+</span> <span class="n">j</span>  <span class="c1"># Calcul de l&#39;index de la photo</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="n">n</span><span class="p">:</span>  <span class="c1"># Si nous avons dépassé le nombre total de photos, sortir de la boucle</span>
+                <span class="k">break</span>
+            <span class="n">photo</span> <span class="o">=</span> <span class="n">photo_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">photo_id</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+            <span class="n">checkbox_var</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">BooleanVar</span><span class="p">()</span>
+            <span class="n">checkbox</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Checkbutton</span><span class="p">(</span><span class="n">row_frame</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="n">photo</span><span class="p">,</span> <span class="n">variable</span><span class="o">=</span><span class="n">checkbox_var</span><span class="p">,</span> <span class="n">onvalue</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">offvalue</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="k">lambda</span> <span class="n">p</span><span class="o">=</span><span class="n">photo_id</span><span class="p">:</span> <span class="n">toggle_photo</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
+            <span class="n">checkbox</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">photo</span>
+            <span class="n">checkbox</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+            <span class="n">photo_checkboxes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">checkbox</span><span class="p">)</span>
+
+    <span class="c1"># Suppression des éléments inutiles</span>
+    <span class="n">label_welcome</span><span class="o">.</span><span class="n">pack_forget</span><span class="p">()</span>
+    <span class="n">button_create</span><span class="o">.</span><span class="n">pack_forget</span><span class="p">()</span>
+
+    <span class="c1"># Affichage des boutons &quot;Continuer&quot; et &quot;Terminer&quot;</span>
+    <span class="n">button_continue</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Continuer la sélection&quot;</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">command</span><span class="o">=</span><span class="n">continue_selection</span><span class="p">)</span>
+    <span class="n">button_continue</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">BOTTOM</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">PHOTOS</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">button_newfaces</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Lancer l&#39;algorithme génétique&quot;</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">command</span><span class="o">=</span><span class="n">new_faces</span><span class="p">)</span>
+        <span class="n">button_newfaces</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">BOTTOM</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">create_button_panier</span><span class="p">()</span></div>
+
+
+
+<div class="viewcode-block" id="photos_selectioned">
+<a class="viewcode-back" href="../interface.html#interface.photos_selectioned">[docs]</a>
+<span class="k">def</span> <span class="nf">photos_selectioned</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Génère la fenètre d&#39;affichage des photos sélectionnées au fur et à mesure par l&#39;utilisateur.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">destroy_button_panier</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">center_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">low_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="n">label_explication</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Voici les photos que vous avez sélectionnées pour le moment. Si vous pensez vous être trompé vous pouvez enlever une ou plusieurs photos en les sélectionnant puis en appuyant sur le bouton &#39;Enlever de la sélection&#39;.&quot;</span><span class="p">,</span>
+                                <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
+                                <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                                <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">18</span><span class="p">),</span>
+                                <span class="n">anchor</span><span class="o">=</span><span class="s2">&quot;n&quot;</span><span class="p">,</span>
+                                <span class="n">wraplength</span><span class="o">=</span><span class="mi">850</span><span class="p">)</span>
+    <span class="n">label_explication</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">toggle_photo</span><span class="p">(</span><span class="n">photo_id</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">photo_id</span> <span class="ow">in</span> <span class="n">selected_photos</span><span class="p">:</span>
+            <span class="n">selected_photos</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">photo_id</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">selected_photos</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">photo_id</span><span class="p">)</span>
+
+
+    <span class="k">def</span> <span class="nf">enlever_photos_selectionnees</span><span class="p">():</span>
+        <span class="k">global</span> <span class="n">PHOTOS</span>
+        <span class="n">PHOTOS</span> <span class="o">=</span> <span class="p">[</span><span class="n">PHOTOS</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">PHOTOS</span><span class="p">))</span> <span class="k">if</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">selected_photos</span><span class="p">]</span>
+        <span class="n">photos_selectioned</span><span class="p">()</span>
+
+    <span class="n">i</span><span class="o">=</span><span class="mi">1</span>
+    <span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">PHOTOS</span><span class="p">:</span>
+        <span class="n">img_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s1">&#39;images_selectionnees&#39;</span><span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;photo</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">)</span>  <span class="c1"># Utilisation de f-strings</span>
+        <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">img_path</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+        <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+
+    <span class="n">photo_list</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Liste pour stocker les objets PhotoImage</span>
+    <span class="n">n</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">PHOTOS</span><span class="p">)</span>
+    <span class="c1"># Charger les images reconstruites</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">img_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s1">&#39;images_selectionnees&#39;</span><span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;photo</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">)</span>
+        <span class="n">photo</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="o">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">img_path</span><span class="p">))</span>
+        <span class="n">photo_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">photo</span><span class="p">)</span>
+
+    <span class="n">photo_checkboxes</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># Affichage des photos dans la fenêtre principale</span>
+    <span class="k">if</span> <span class="n">n</span><span class="o">&lt;=</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">photos_per_row</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">row_count</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="n">photos_per_row</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="mi">2</span>  <span class="c1"># Nombre de photos par ligne</span>
+        <span class="n">row_count</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="n">photos_per_row</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">photos_per_row</span>  <span class="c1"># Nombre total de lignes</span>
+    <span class="k">for</span> <span class="n">row_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">row_count</span><span class="p">):</span>
+        <span class="n">row_frame</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">center_frame</span><span class="p">)</span>  <span class="c1"># Créer un nouveau cadre pour chaque ligne</span>
+        <span class="n">row_frame</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>  <span class="c1"># Pack le cadre de la ligne</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">photos_per_row</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">row_index</span> <span class="o">*</span> <span class="n">photos_per_row</span> <span class="o">+</span> <span class="n">j</span>  <span class="c1"># Calcul de l&#39;index de la photo</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="n">n</span><span class="p">:</span>  <span class="c1"># Si nous avons dépassé le nombre total de photos, sortir de la boucle</span>
+                <span class="k">break</span>
+            <span class="n">photo</span> <span class="o">=</span> <span class="n">photo_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">photo_id</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+            <span class="n">checkbox_var</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">BooleanVar</span><span class="p">()</span>
+            <span class="n">checkbox</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Checkbutton</span><span class="p">(</span><span class="n">row_frame</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="n">photo</span><span class="p">,</span> <span class="n">variable</span><span class="o">=</span><span class="n">checkbox_var</span><span class="p">,</span> <span class="n">onvalue</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">offvalue</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="k">lambda</span> <span class="n">p</span><span class="o">=</span><span class="n">photo_id</span><span class="p">:</span> <span class="n">toggle_photo</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
+            <span class="n">checkbox</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">photo</span>
+            <span class="n">checkbox</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+            <span class="n">photo_checkboxes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">checkbox</span><span class="p">)</span>
+            <span class="c1"># Ajouter l&#39;image à la liste des photos sélectionnées si elle est cochée</span>
+            <span class="c1">#checkbox_var.trace_add(&#39;write&#39;, lambda name, index, mode, var=checkbox_var, img=img: update_selected_photos(var, img))</span>
+
+    <span class="k">global</span> <span class="n">button_retour</span>
+    <span class="n">button_retour</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;Retour&quot;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">retour</span><span class="p">)</span>
+    <span class="n">button_retour</span><span class="o">.</span><span class="n">place</span><span class="p">(</span><span class="n">relx</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">rely</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="s1">&#39;ne&#39;</span><span class="p">,</span> <span class="n">bordermode</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mi">30</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+    <span class="c1"># Ajouter un bouton pour enlever les photos sélectionnées</span>
+    <span class="n">button_enlever</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Enlever de la sélection&quot;</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">command</span><span class="o">=</span><span class="n">enlever_photos_selectionnees</span><span class="p">)</span>
+    <span class="n">button_enlever</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="retour">
+<a class="viewcode-back" href="../interface.html#interface.retour">[docs]</a>
+<span class="k">def</span> <span class="nf">retour</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    La fonction qui est appliquée quand on clique sur le bouton &quot;Retour&quot;.</span>
+<span class="sd">    Elle vide le cadre et réaffiche la fenètre principale des portraits.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">button_retour</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">center_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+         <span class="n">create_portrait</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="continue_selection">
+<a class="viewcode-back" href="../interface.html#interface.continue_selection">[docs]</a>
+<span class="k">def</span> <span class="nf">continue_selection</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    La fonction qui génère les 10 premières images.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">center_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="n">i</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">IMG_COORDS</span><span class="p">)</span><span class="o">-</span><span class="mi">10</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">selected_photos</span><span class="p">:</span>
+        <span class="n">PHOTOS_ID</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">x</span><span class="o">+=</span><span class="n">i</span>
+        <span class="n">PHOTOS</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">IMG_COORDS</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">create_portrait</span><span class="p">()</span></div>
+
+
+
+<div class="viewcode-block" id="photos_selectioned_page_principale">
+<a class="viewcode-back" href="../interface.html#interface.photos_selectioned_page_principale">[docs]</a>
+<span class="k">def</span> <span class="nf">photos_selectioned_page_principale</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    La fonction qui génère la fenètre d&#39;affichage des photos sélectionnées au fur et à mesure par l&#39;utilisateur sur la page principale.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">center_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">()</span> <span class="p">:</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">low_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">()</span> <span class="p">:</span>
+        <span class="n">x</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">PHOTOS</span> <span class="p">:</span>
+
+        <span class="n">label_explication</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">low_frame</span><span class="p">,</span>
+                                    <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Les photos que vous avez sélectionnées :&quot;</span><span class="p">,</span>
+                                    <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
+                                    <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                                    <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">18</span><span class="p">),</span>
+                                    <span class="n">anchor</span><span class="o">=</span><span class="s2">&quot;nw&quot;</span><span class="p">,</span>
+                                    <span class="n">wraplength</span><span class="o">=</span><span class="mi">850</span><span class="p">)</span>
+        <span class="n">label_explication</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">i</span><span class="o">=</span><span class="mi">1</span>
+        <span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">PHOTOS</span><span class="p">:</span>
+            <span class="n">img_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s1">&#39;images_selectionnees&#39;</span><span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;photo</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">)</span>  <span class="c1"># Utilisation de f-strings</span>
+            <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">img_path</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+            <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+
+        <span class="n">photo_list</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Liste pour stocker les objets PhotoImage</span>
+        <span class="n">n</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">PHOTOS</span><span class="p">)</span>
+        <span class="c1"># Charger les images reconstruites</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+            <span class="n">img_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s1">&#39;images_selectionnees&#39;</span><span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;photo</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">)</span>
+            <span class="n">photo</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="o">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">img_path</span><span class="p">))</span>
+            <span class="n">photo_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">photo</span><span class="p">)</span>
+
+        <span class="c1"># Affichage des photos dans la fenêtre principale</span>
+        <span class="k">for</span> <span class="n">photo</span> <span class="ow">in</span> <span class="n">photo_list</span><span class="p">:</span>
+            <span class="n">label_photo</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">low_frame</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="n">photo</span><span class="p">)</span>
+            <span class="n">label_photo</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">photo</span>  <span class="c1"># Garde une référence à l&#39;objet PhotoImage</span>
+            <span class="n">label_photo</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span></div>
+
+
+
+
+<span class="c1">#### Partie ALGO GENETIQUE ####</span>
+<span class="c1"># Fonction appelée lors du clic sur le bouton &quot;Continuer&quot;</span>
+<div class="viewcode-block" id="new_faces">
+<a class="viewcode-back" href="../interface.html#interface.new_faces">[docs]</a>
+<span class="k">def</span> <span class="nf">new_faces</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    La fonction qui génère la page de nouveaux visages générés à partir de l&#39;algorithme génétique, c&#39;est-à-dire à partir de la sélection faite par l&#39;utilisateur.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">destroy_button_panier</span><span class="p">()</span>
+    <span class="n">photos_selectioned_page_principale</span><span class="p">()</span>
+
+    <span class="k">global</span> <span class="n">selected_photos_continue</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">center_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+            <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+
+    <span class="n">label_explication</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Les images présentées ci-dessous sont des portraits robots qui ont été reconstruits à partir des informations récupérées lors de l&#39;étape précédente. Vous pouvez désormais sélectionner un ou plusieurs portraits robots. Le bouton &#39;Continuer&#39; permet de présenter de nouveaux portraits robots. En revanche, pour pouvoir terminer cette étape vous devez appuyer sur le bouton &#39;Terminer&#39; en ayant sélectionner un seul portrait robot, celui se rapporchant le plus de l&#39;individu recherché.&quot;</span><span class="p">,</span>
+                                <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
+                                <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                                <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">18</span><span class="p">),</span>
+                                <span class="n">anchor</span><span class="o">=</span><span class="s2">&quot;n&quot;</span><span class="p">,</span>
+                                <span class="n">wraplength</span><span class="o">=</span><span class="mi">850</span><span class="p">)</span>
+    <span class="n">label_explication</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
+
+    <span class="n">image_coords</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">PHOTOS_ID</span> <span class="p">:</span>
+        <span class="n">image_coords</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">recon_batch</span><span class="p">[</span><span class="n">x</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">flatten</span><span class="p">())</span>
+    <span class="n">image_coords</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">image_coords</span><span class="p">)</span>
+    <span class="n">latent_coordinates</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">image_coords</span><span class="p">)</span>
+    <span class="n">generated_image</span> <span class="o">=</span> <span class="n">autoencoder</span><span class="o">.</span><span class="n">decoder</span><span class="p">(</span><span class="n">latent_coordinates</span><span class="p">)</span>
+    <span class="n">image</span> <span class="o">=</span> <span class="n">generated_image</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+    <span class="n">new_image_coords</span> <span class="o">=</span> <span class="n">algo_genetique</span><span class="o">.</span><span class="n">photos_methode_centroide</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="n">image_coords</span><span class="p">)</span>
+    <span class="n">new_images</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">new_image_coords</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">new_latent_coords</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">new_image_coords</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">new_latent_coords</span> <span class="o">=</span> <span class="n">new_latent_coords</span><span class="o">.</span><span class="n">float</span><span class="p">()</span>
+        <span class="n">new_gen_image</span> <span class="o">=</span> <span class="n">autoencoder</span><span class="o">.</span><span class="n">decoder</span><span class="p">(</span><span class="n">new_latent_coords</span><span class="p">)</span>
+        <span class="n">new_images</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_gen_image</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">())</span>
+    <span class="c1"># Créer un dossier pour sauvegarder les images reconstruites</span>
+    <span class="n">output_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s1">&#39;images_reconstruites&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">output_dir</span><span class="p">):</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">output_dir</span><span class="p">)</span>
+
+    <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># Nombre d&#39;images à afficher</span>
+    <span class="c1"># Enregistrer les images reconstruites au format JPG avec une correction des niveaux de gris</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">new_images</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">new_images</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+        <span class="n">img_array</span> <span class="o">=</span> <span class="p">((</span><span class="n">a</span><span class="o">/</span><span class="n">a</span><span class="o">.</span><span class="n">max</span><span class="p">())</span><span class="o">*</span><span class="mi">255</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">img_array</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span><span class="mi">64</span><span class="p">))</span> <span class="c1"># img_array.reshape(64,64)</span>
+        <span class="n">img_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;photo</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">)</span> 
+        <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">img_path</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+        <span class="n">IMG_COORDS</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+
+    <span class="n">selected_photos_continue</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">photo_list_continue</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Liste pour stocker les objets PhotoImage</span>
+
+    <span class="c1"># Charger les images reconstruites</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">img_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;photo</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">)</span>
+        <span class="n">photo</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="o">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">img_path</span><span class="p">))</span>
+        <span class="n">photo_list_continue</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">photo</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">toggle_photo</span><span class="p">(</span><span class="n">photo_id</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Cette fonction permet de gérer l&#39;ajout et la délétion de photos du panier.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            photo_id (int): L&#39;identifiant de la photo à ajouter au panier.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">photo_id</span> <span class="ow">in</span> <span class="n">selected_photos_continue</span><span class="p">:</span>
+            <span class="n">selected_photos_continue</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">photo_id</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">selected_photos_continue</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">photo_id</span><span class="p">)</span>
+
+    <span class="n">photo_checkboxes</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># Affichage des photos dans la fenêtre principale</span>
+    <span class="n">photos_per_row</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="mi">2</span>  <span class="c1"># Nombre de photos par ligne</span>
+    <span class="n">row_count</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="n">photos_per_row</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">photos_per_row</span>  <span class="c1"># Nombre total de lignes</span>
+    <span class="k">for</span> <span class="n">row_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">row_count</span><span class="p">):</span>
+        <span class="n">row_frame</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">center_frame</span><span class="p">)</span>  <span class="c1"># Créer un nouveau cadre pour chaque ligne</span>
+        <span class="n">row_frame</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>  <span class="c1"># Pack le cadre de la ligne</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">photos_per_row</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">row_index</span> <span class="o">*</span> <span class="n">photos_per_row</span> <span class="o">+</span> <span class="n">j</span>  <span class="c1"># Calcul de l&#39;index de la photo</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="n">n</span><span class="p">:</span>  <span class="c1"># Si nous avons dépassé le nombre total de photos, sortir de la boucle</span>
+                <span class="k">break</span>
+            <span class="n">photo</span> <span class="o">=</span> <span class="n">photo_list_continue</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">photo_id</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+            <span class="n">checkbox_var</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">BooleanVar</span><span class="p">()</span>
+            <span class="n">checkbox</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Checkbutton</span><span class="p">(</span><span class="n">row_frame</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="n">photo</span><span class="p">,</span> <span class="n">variable</span><span class="o">=</span><span class="n">checkbox_var</span><span class="p">,</span> <span class="n">onvalue</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">offvalue</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="k">lambda</span> <span class="n">p</span><span class="o">=</span><span class="n">photo_id</span><span class="p">:</span> <span class="n">toggle_photo</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
+            <span class="n">checkbox</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">photo</span>
+            <span class="n">checkbox</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+            <span class="n">photo_checkboxes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">checkbox</span><span class="p">)</span>
+
+    <span class="c1"># Suppression des éléments inutiles</span>
+    <span class="n">label_welcome</span><span class="o">.</span><span class="n">pack_forget</span><span class="p">()</span>
+    <span class="n">button_create</span><span class="o">.</span><span class="n">pack_forget</span><span class="p">()</span>
+
+    <span class="c1"># Affichage des boutons &quot;Continuer&quot; et &quot;Terminer&quot;</span>
+    <span class="n">button_newfaces</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Continuer&quot;</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">command</span><span class="o">=</span><span class="n">continue_selection_bis</span><span class="p">)</span>
+    <span class="n">button_newfaces</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">BOTTOM</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+    <span class="n">button_finish</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Terminer&quot;</span><span class="p">,</span><span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">finish_selection</span><span class="p">)</span>
+    <span class="n">button_finish</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">BOTTOM</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+    <span class="n">create_button_panier_bis</span><span class="p">()</span></div>
+
+
+
+<span class="n">button_panier_created_bis</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="c1"># Définir la fonction pour créer le bouton</span>
+<div class="viewcode-block" id="create_button_panier_bis">
+<a class="viewcode-back" href="../interface.html#interface.create_button_panier_bis">[docs]</a>
+<span class="k">def</span> <span class="nf">create_button_panier_bis</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Une deuxième fonction pour créer le bouton de panier.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">button_panier_created_bis</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">button_panier_created_bis</span><span class="p">:</span>
+        <span class="k">global</span> <span class="n">button_selection_bis</span>
+        <span class="n">button_selection_bis</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;Photos sélectionnées&quot;</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">command</span><span class="o">=</span><span class="n">photos_selectioned_bis</span><span class="p">)</span>
+        <span class="n">button_selection_bis</span><span class="o">.</span><span class="n">place</span><span class="p">(</span><span class="n">relx</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">rely</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="s1">&#39;ne&#39;</span><span class="p">,</span> <span class="n">bordermode</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mi">30</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+        <span class="n">button_panier_created_bis</span> <span class="o">=</span> <span class="kc">True</span></div>
+
+
+<span class="c1"># Définir la fonction pour supprimer le bouton</span>
+<div class="viewcode-block" id="destroy_button_panier_bis">
+<a class="viewcode-back" href="../interface.html#interface.destroy_button_panier_bis">[docs]</a>
+<span class="k">def</span> <span class="nf">destroy_button_panier_bis</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Une deuxième fonction pour détruire le bouton de panier.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">button_panier_created_bis</span>
+    <span class="k">if</span> <span class="n">button_panier_created_bis</span><span class="p">:</span>
+        <span class="n">button_selection_bis</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+        <span class="n">button_panier_created_bis</span> <span class="o">=</span> <span class="kc">False</span></div>
+
+
+<div class="viewcode-block" id="photos_selectioned_bis">
+<a class="viewcode-back" href="../interface.html#interface.photos_selectioned_bis">[docs]</a>
+<span class="k">def</span> <span class="nf">photos_selectioned_bis</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Une deuxième fonction pour générer la page des photos sélectionnées jusqu&#39;à maintenant.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">destroy_button_panier_bis</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">center_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">low_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="n">label_explication</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Voici les photos que vous avez sélectionnées pour le moment. Si vous pensez vous être trompé vous pouvez enlever une ou plusieurs photos en les sélectionnant puis en appuyant sur le bouton &#39;Enlever de la sélection&#39;.&quot;</span><span class="p">,</span>
+                                <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
+                                <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                                <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">18</span><span class="p">),</span>
+                                <span class="n">anchor</span><span class="o">=</span><span class="s2">&quot;n&quot;</span><span class="p">,</span>
+                                <span class="n">wraplength</span><span class="o">=</span><span class="mi">850</span><span class="p">)</span>
+    <span class="n">label_explication</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">toggle_photo</span><span class="p">(</span><span class="n">photo_id</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">photo_id</span> <span class="ow">in</span> <span class="n">selected_photos</span><span class="p">:</span>
+            <span class="n">selected_photos</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">photo_id</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">selected_photos</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">photo_id</span><span class="p">)</span>
+
+
+    <span class="k">def</span> <span class="nf">enlever_photos_selectionnees</span><span class="p">():</span>
+        <span class="k">global</span> <span class="n">PHOTOS</span>
+        <span class="n">PHOTOS</span> <span class="o">=</span> <span class="p">[</span><span class="n">PHOTOS</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">PHOTOS</span><span class="p">))</span> <span class="k">if</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">selected_photos</span><span class="p">]</span>
+        <span class="n">photos_selectioned_bis</span><span class="p">()</span>
+
+    <span class="n">i</span><span class="o">=</span><span class="mi">1</span>
+    <span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">PHOTOS</span><span class="p">:</span>
+        <span class="n">img_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s1">&#39;images_reconstruites&#39;</span><span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;photo</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">)</span>  <span class="c1"># Utilisation de f-strings</span>
+        <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">img_path</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+        <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+
+    <span class="n">photo_list</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Liste pour stocker les objets PhotoImage</span>
+    <span class="n">n</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">PHOTOS</span><span class="p">)</span>
+    <span class="c1"># Charger les images reconstruites</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">img_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s1">&#39;images_reconstruites&#39;</span><span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;photo</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">)</span>
+        <span class="n">photo</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="o">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">img_path</span><span class="p">))</span>
+        <span class="n">photo_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">photo</span><span class="p">)</span>
+
+    <span class="n">photo_checkboxes</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># Affichage des photos dans la fenêtre principale</span>
+    <span class="k">if</span> <span class="n">n</span><span class="o">&lt;=</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">photos_per_row</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">row_count</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="n">photos_per_row</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="mi">2</span>  <span class="c1"># Nombre de photos par ligne</span>
+        <span class="n">row_count</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="n">photos_per_row</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">photos_per_row</span>  <span class="c1"># Nombre total de lignes</span>
+    <span class="k">for</span> <span class="n">row_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">row_count</span><span class="p">):</span>
+        <span class="n">row_frame</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">center_frame</span><span class="p">)</span>  <span class="c1"># Créer un nouveau cadre pour chaque ligne</span>
+        <span class="n">row_frame</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>  <span class="c1"># Pack le cadre de la ligne</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">photos_per_row</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">row_index</span> <span class="o">*</span> <span class="n">photos_per_row</span> <span class="o">+</span> <span class="n">j</span>  <span class="c1"># Calcul de l&#39;index de la photo</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="n">n</span><span class="p">:</span>  <span class="c1"># Si nous avons dépassé le nombre total de photos, sortir de la boucle</span>
+                <span class="k">break</span>
+            <span class="n">photo</span> <span class="o">=</span> <span class="n">photo_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">photo_id</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+            <span class="n">checkbox_var</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">BooleanVar</span><span class="p">()</span>
+            <span class="n">checkbox</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Checkbutton</span><span class="p">(</span><span class="n">row_frame</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="n">photo</span><span class="p">,</span> <span class="n">variable</span><span class="o">=</span><span class="n">checkbox_var</span><span class="p">,</span> <span class="n">onvalue</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">offvalue</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="k">lambda</span> <span class="n">p</span><span class="o">=</span><span class="n">photo_id</span><span class="p">:</span> <span class="n">toggle_photo</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
+            <span class="n">checkbox</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">photo</span>
+            <span class="n">checkbox</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+            <span class="n">photo_checkboxes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">checkbox</span><span class="p">)</span>
+
+    <span class="k">global</span> <span class="n">button_retour</span>
+    <span class="n">button_retour</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;Retour&quot;</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">command</span><span class="o">=</span><span class="n">retour_bis</span><span class="p">)</span>
+    <span class="n">button_retour</span><span class="o">.</span><span class="n">place</span><span class="p">(</span><span class="n">relx</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">rely</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="s1">&#39;ne&#39;</span><span class="p">,</span> <span class="n">bordermode</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mi">30</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+    <span class="n">button_enlever</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Enlever de la sélection&quot;</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">command</span><span class="o">=</span><span class="n">enlever_photos_selectionnees</span><span class="p">)</span>
+    <span class="n">button_enlever</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="retour_bis">
+<a class="viewcode-back" href="../interface.html#interface.retour_bis">[docs]</a>
+<span class="k">def</span> <span class="nf">retour_bis</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Une deuxièmem fonction pour générer un bouton de retour à l&#39;écran principal.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">button_retour</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">center_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+         <span class="n">new_faces</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="continue_selection_bis">
+<a class="viewcode-back" href="../interface.html#interface.continue_selection_bis">[docs]</a>
+<span class="k">def</span> <span class="nf">continue_selection_bis</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Une deuxième fonction pour générer la page de sélection des images. </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">center_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="n">i</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">IMG_COORDS</span><span class="p">)</span><span class="o">-</span><span class="mi">10</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">selected_photos_continue</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">+=</span><span class="n">i</span>
+        <span class="n">PHOTOS</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">IMG_COORDS</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">new_faces</span><span class="p">()</span></div>
+
+
+
+<span class="c1">#### PAGE DE FIN ####</span>
+<span class="c1"># Fonction appelée lors du clic sur le bouton &quot;Terminer&quot;</span>
+<div class="viewcode-block" id="finish_selection">
+<a class="viewcode-back" href="../interface.html#interface.finish_selection">[docs]</a>
+<span class="k">def</span> <span class="nf">finish_selection</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    La fonction de génération de la page une fois la sélection terminée.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">destroy_button_panier_bis</span><span class="p">()</span>
+    <span class="n">create_button_panier_p3</span><span class="p">()</span>
+    <span class="c1"># Insère ici la logique pour afficher la photo sélectionnée en grand</span>
+     <span class="c1"># Afficher le commentaire au-dessus de la photo</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">selected_photos</span><span class="p">)</span><span class="o">!=</span><span class="mi">1</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">selected_photos_continue</span><span class="p">)</span><span class="o">!=</span><span class="mi">1</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">selected_photos</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">selected_photos_continue</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+            <span class="n">label_comment</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Error : Veuillez sélectionner le portrait robot qui ressemble le plus a l&#39;individu recherché pour Terminer.&quot;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">16</span><span class="p">),</span> <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
+            <span class="n">label_comment</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">selected_photos</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">1</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">selected_photos_continue</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
+            <span class="n">label_comment</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Error : Pour Terminer veuillez sélectionner une seule image, sinon veuillez appuyer sur Continuer&quot;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">16</span><span class="p">),</span> <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
+            <span class="n">label_comment</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">center_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+            <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">low_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+            <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+        <span class="n">photos_recap</span><span class="p">()</span>
+        <span class="n">label_comment</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">final_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Voici le portrait robot final : &quot;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">),</span> <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+        <span class="n">label_comment</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">selected_photos_continue</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+            <span class="n">selected_photos</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">selected_photos</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">selected_photos_continue</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="c1"># Charger et afficher l&#39;image</span>
+        <span class="n">img_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s1">&#39;images_reconstruites&#39;</span><span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;photo</span><span class="si">{</span><span class="n">selected_photos</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="o">+</span><span class="s1">&#39;.jpg&#39;</span><span class="p">)</span>
+        <span class="n">photo_finale</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="o">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">img_path</span><span class="p">))</span>
+        <span class="c1">#photo_finale = ImageTk.PhotoImage(Image.open(selected_photos[0]+&#39;.jpg&#39;))</span>
+        <span class="n">label_photo_final</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">final_frame</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="n">photo_finale</span><span class="p">)</span>
+        <span class="n">label_photo_final</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">photo_finale</span>
+        <span class="n">label_photo_final</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+        <span class="c1"># Créer un bouton &quot;Recommencer&quot;</span>
+        <span class="n">button_back</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">final_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Recommencer&quot;</span><span class="p">,</span><span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">back_to_selection</span><span class="p">)</span>
+        <span class="n">button_back</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">pady</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="photos_recap">
+<a class="viewcode-back" href="../interface.html#interface.photos_recap">[docs]</a>
+<span class="k">def</span> <span class="nf">photos_recap</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Une fonction qui permet d&#39;afficher sur la page de fin les photos sélectionnées par l&#39;utilisateur au cours de l&#39;usage du logiciel.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">label_explication</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Votre démarche était de retrouver un individu et pour cela vous avez procédé à la réalisation d&#39;un portrait robot. Au cours du processus vous avez sélectionné plusiers images correspondant à des individus qui ressemblent à celui qui est recherché. Vous pouvez appuyer sur &#39;Recommencer&#39; pour refaire tout le processus de reconnaissance, que vous venez de réaliser.&quot;</span><span class="p">,</span>
+                                <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
+                                <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                                <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">18</span><span class="p">),</span>
+                                <span class="n">anchor</span><span class="o">=</span><span class="s2">&quot;nw&quot;</span><span class="p">,</span>
+                                <span class="n">wraplength</span><span class="o">=</span><span class="mi">850</span><span class="p">)</span>
+    <span class="n">label_explication</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
+
+    <span class="n">i</span><span class="o">=</span><span class="mi">1</span>
+    <span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">PHOTOS</span><span class="p">:</span>
+        <span class="n">img_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s1">&#39;images_reconstruites&#39;</span><span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;photo</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">)</span>  <span class="c1"># Utilisation de f-strings</span>
+        <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">img_path</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+        <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+
+    <span class="n">photo_list</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Liste pour stocker les objets PhotoImage</span>
+    <span class="n">n</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">PHOTOS</span><span class="p">)</span>
+    <span class="c1"># Charger les images reconstruites</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">img_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s1">&#39;images_reconstruites&#39;</span><span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;photo</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">)</span>
+        <span class="n">photo</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="o">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">img_path</span><span class="p">))</span>
+        <span class="n">photo_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">photo</span><span class="p">)</span>
+
+    <span class="c1"># Affichage des photos dans la fenêtre principale</span>
+    <span class="k">for</span> <span class="n">photo</span> <span class="ow">in</span> <span class="n">photo_list</span><span class="p">:</span>
+        <span class="n">label_photo</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="n">photo</span><span class="p">)</span>
+        <span class="n">label_photo</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">photo</span>  <span class="c1"># Garde une référence à l&#39;objet PhotoImage</span>
+        <span class="n">label_photo</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span></div>
+
+
+
+<span class="n">button_panier_created_p3</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="c1"># Définir la fonction pour créer le bouton</span>
+<div class="viewcode-block" id="create_button_panier_p3">
+<a class="viewcode-back" href="../interface.html#interface.create_button_panier_p3">[docs]</a>
+<span class="k">def</span> <span class="nf">create_button_panier_p3</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Une troisième fonction pour créer un bouton de panier.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">button_panier_created_p3</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">button_panier_created_p3</span><span class="p">:</span>
+        <span class="k">global</span> <span class="n">button_selection_p3</span>
+        <span class="n">button_selection_p3</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;Photos sélectionnées&quot;</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">command</span><span class="o">=</span><span class="n">photos_selectioned_p3</span><span class="p">)</span>
+        <span class="n">button_selection_p3</span><span class="o">.</span><span class="n">place</span><span class="p">(</span><span class="n">relx</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">rely</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="s1">&#39;ne&#39;</span><span class="p">,</span> <span class="n">bordermode</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mi">30</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+        <span class="n">button_panier_created_p3</span> <span class="o">=</span> <span class="kc">True</span></div>
+
+
+<span class="c1"># Définir la fonction pour supprimer le bouton</span>
+<div class="viewcode-block" id="destroy_button_panier_p3">
+<a class="viewcode-back" href="../interface.html#interface.destroy_button_panier_p3">[docs]</a>
+<span class="k">def</span> <span class="nf">destroy_button_panier_p3</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Une troisième fonction pour détruire le bouton de panier.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">button_panier_created_p3</span>
+    <span class="k">if</span> <span class="n">button_panier_created_p3</span><span class="p">:</span>
+        <span class="n">button_selection_p3</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+        <span class="n">button_panier_created_p3</span> <span class="o">=</span> <span class="kc">False</span></div>
+
+
+<div class="viewcode-block" id="photos_selectioned_p3">
+<a class="viewcode-back" href="../interface.html#interface.photos_selectioned_p3">[docs]</a>
+<span class="k">def</span> <span class="nf">photos_selectioned_p3</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Une troisième fonction pour générer la page des photos sélectionnées.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">destroy_button_panier_p3</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">center_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">low_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">final_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+
+    <span class="n">label_explication</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Voici les photos que vous avez sélectionnées pour le moment. Si vous pensez vous être trompé vous pouvez enlever une ou plusieurs photos en les sélectionnant puis en appuyant sur le bouton &#39;Enlever de la sélection&#39;.&quot;</span><span class="p">,</span>
+                                <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
+                                <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                                <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">18</span><span class="p">),</span>
+                                <span class="n">anchor</span><span class="o">=</span><span class="s2">&quot;n&quot;</span><span class="p">,</span>
+                                <span class="n">wraplength</span><span class="o">=</span><span class="mi">850</span><span class="p">)</span>
+    <span class="n">label_explication</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">toggle_photo</span><span class="p">(</span><span class="n">photo_id</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">photo_id</span> <span class="ow">in</span> <span class="n">selected_photos</span><span class="p">:</span>
+            <span class="n">selected_photos</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">photo_id</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">selected_photos</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">photo_id</span><span class="p">)</span>
+
+
+    <span class="k">def</span> <span class="nf">enlever_photos_selectionnees</span><span class="p">():</span>
+        <span class="k">global</span> <span class="n">PHOTOS</span>
+        <span class="n">PHOTOS</span> <span class="o">=</span> <span class="p">[</span><span class="n">PHOTOS</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">PHOTOS</span><span class="p">))</span> <span class="k">if</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">selected_photos</span><span class="p">]</span>
+        <span class="n">photos_selectioned_p3</span><span class="p">()</span>
+
+    <span class="n">i</span><span class="o">=</span><span class="mi">1</span>
+    <span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">PHOTOS</span><span class="p">:</span>
+        <span class="n">img_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s1">&#39;images_reconstruites&#39;</span><span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;photo</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">)</span>  <span class="c1"># Utilisation de f-strings</span>
+        <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">img_path</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+        <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+
+    <span class="n">photo_list</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Liste pour stocker les objets PhotoImage</span>
+    <span class="n">n</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">PHOTOS</span><span class="p">)</span>
+    <span class="c1"># Charger les images reconstruites</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">img_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s1">&#39;images_reconstruites&#39;</span><span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;photo</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">)</span>
+        <span class="n">photo</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="o">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">img_path</span><span class="p">))</span>
+        <span class="n">photo_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">photo</span><span class="p">)</span>
+
+    <span class="n">photo_checkboxes</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># Affichage des photos dans la fenêtre principale</span>
+    <span class="k">if</span> <span class="n">n</span><span class="o">&lt;=</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">photos_per_row</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">row_count</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="n">photos_per_row</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="mi">2</span>  <span class="c1"># Nombre de photos par ligne</span>
+        <span class="n">row_count</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="n">photos_per_row</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">photos_per_row</span>  <span class="c1"># Nombre total de lignes</span>
+    <span class="k">for</span> <span class="n">row_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">row_count</span><span class="p">):</span>
+        <span class="n">row_frame</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">center_frame</span><span class="p">)</span>  <span class="c1"># Créer un nouveau cadre pour chaque ligne</span>
+        <span class="n">row_frame</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>  <span class="c1"># Pack le cadre de la ligne</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">photos_per_row</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">row_index</span> <span class="o">*</span> <span class="n">photos_per_row</span> <span class="o">+</span> <span class="n">j</span>  <span class="c1"># Calcul de l&#39;index de la photo</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="n">n</span><span class="p">:</span>  <span class="c1"># Si nous avons dépassé le nombre total de photos, sortir de la boucle</span>
+                <span class="k">break</span>
+            <span class="n">photo</span> <span class="o">=</span> <span class="n">photo_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">photo_id</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+            <span class="n">checkbox_var</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">BooleanVar</span><span class="p">()</span>
+            <span class="n">checkbox</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Checkbutton</span><span class="p">(</span><span class="n">row_frame</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="n">photo</span><span class="p">,</span> <span class="n">variable</span><span class="o">=</span><span class="n">checkbox_var</span><span class="p">,</span> <span class="n">onvalue</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">offvalue</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="k">lambda</span> <span class="n">p</span><span class="o">=</span><span class="n">photo_id</span><span class="p">:</span> <span class="n">toggle_photo</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
+            <span class="n">checkbox</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">photo</span>
+            <span class="n">checkbox</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+            <span class="n">photo_checkboxes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">checkbox</span><span class="p">)</span>
+
+    <span class="k">global</span> <span class="n">button_retour</span>
+    <span class="n">button_retour</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;Retour&quot;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">retour_p3</span><span class="p">)</span>
+    <span class="n">button_retour</span><span class="o">.</span><span class="n">place</span><span class="p">(</span><span class="n">relx</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">rely</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="s1">&#39;ne&#39;</span><span class="p">,</span> <span class="n">bordermode</span><span class="o">=</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=-</span><span class="mi">30</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+    <span class="n">button_enlever</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Enlever de la sélection&quot;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">enlever_photos_selectionnees</span><span class="p">)</span>
+    <span class="n">button_enlever</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="retour_p3">
+<a class="viewcode-back" href="../interface.html#interface.retour_p3">[docs]</a>
+<span class="k">def</span> <span class="nf">retour_p3</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Une troisième fonction de retour à la page principale.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">button_retour</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">center_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="n">finish_selection</span><span class="p">()</span></div>
+
+
+
+
+<span class="c1">#### POUR RECOMMENCER ####</span>
+<span class="c1"># Fonction appelée lors du clic sur le bouton &quot;Retour&quot;  : c plus le cas, j&#39;ai court circuité le truc pour directement choisir une méthode (toujours la même ou changer) après avoir appuyé sur retour</span>
+<div class="viewcode-block" id="back_to_selection">
+<a class="viewcode-back" href="../interface.html#interface.back_to_selection">[docs]</a>
+<span class="k">def</span> <span class="nf">back_to_selection</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    La fonction qui permet de recommencer le processus de 0 une fois le portrait final sélectionné.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">destroy_button_panier_p3</span><span class="p">()</span>
+    <span class="k">global</span> <span class="n">IMG_COORDS</span>
+    <span class="n">IMG_COORDS</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">global</span> <span class="n">PHOTOS</span>
+    <span class="n">PHOTOS</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">global</span> <span class="n">PHOTOS_ID</span>
+    <span class="n">PHOTOS_ID</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">center_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">root</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">widget</span><span class="p">,</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">)</span> <span class="ow">and</span> <span class="n">widget</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Retour&quot;</span><span class="p">:</span>
+            <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="c1">#for widget in low_frame.winfo_children():</span>
+         <span class="c1">#widget.destroy()</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">final_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+         <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+
+    <span class="c1"># Supprimer les images après utilisation (facultatif)</span>
+    <span class="c1">#for i in range(1,11):</span>
+        <span class="c1">#img_path = os.path.join(&quot;images_reconstruites&quot;, f&quot;photo{i}.jpg&quot;)</span>
+        <span class="c1">#os.remove(img_path)</span>
+    <span class="n">label2_welcome</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Bienvenue dans le créateur de portraits robots !&quot;</span><span class="p">,</span><span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span><span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">))</span>
+    <span class="n">label2_welcome</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
+    <span class="n">label2_explanation</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">explanation_text</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">14</span><span class="p">),</span> <span class="n">justify</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+    <span class="n">label2_explanation</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+    <span class="n">button2_create</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Créer un portrait robot&quot;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">choose_method</span><span class="p">,</span><span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">foreground</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span><span class="c1">#,font=(&quot;Helvetica&quot;, 15))</span>
+    <span class="n">button2_create</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span></div>
+
+
+
+<span class="c1">#### PAGE METHODES ####</span>
+<span class="c1"># Fonction pour créer le cadre pour le titre et l&#39;explication</span>
+<div class="viewcode-block" id="create_explanation_frame">
+<a class="viewcode-back" href="../interface.html#interface.create_explanation_frame">[docs]</a>
+<span class="k">def</span> <span class="nf">create_explanation_frame</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">explanation</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    La fonction appelée pour générer la page d&#39;explication du fonctionnement du logiciel ainsi que le choix des méthodes de croisement génétique possibles</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        method (int): Le numéro correspond à la méthode choisie.</span>
+<span class="sd">        explanation (str): Le texte d&#39;explication de chaque méthode de croisement génétique.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        tk.Frame: L&#39;objet Frame de Tk afin de pouvoir ajouter la case à cocher sur l&#39;affichage.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">frame</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+    <span class="n">frame</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
+
+    <span class="c1"># Titre en gras avec fond bleu foncé</span>
+    <span class="n">title_frame</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;#000080&quot;</span><span class="p">,</span> <span class="n">highlightbackground</span><span class="o">=</span><span class="s2">&quot;#000080&quot;</span><span class="p">,</span> <span class="n">highlightthickness</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">title_frame</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>  <span class="c1"># Utilisation de pack au lieu de grid</span>
+    <span class="n">title_text</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">title_frame</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">160</span><span class="p">,</span> <span class="n">wrap</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">WORD</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="s2">&quot;#000080&quot;</span><span class="p">,</span> <span class="n">borderwidth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+    <span class="n">title_text</span><span class="o">.</span><span class="n">tag_configure</span><span class="p">(</span><span class="s2">&quot;bold&quot;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s2">&quot;bold&quot;</span><span class="p">))</span>
+    <span class="n">title_text</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">tk</span><span class="o">.</span><span class="n">END</span><span class="p">,</span> <span class="n">method</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;bold&quot;</span><span class="p">)</span>
+    <span class="n">title_text</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">state</span><span class="o">=</span><span class="s2">&quot;disabled&quot;</span><span class="p">)</span>
+    <span class="n">title_text</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Explication avec indentation négative pour aligner les points avec le début de chaque ligne du titre</span>
+    <span class="n">explanation_text</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">160</span><span class="p">,</span> <span class="n">wrap</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">WORD</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span><span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">borderwidth</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">explanation_text</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">X</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>  <span class="c1"># Utilisation de pack avec une marge droite</span>
+    <span class="n">explanation</span> <span class="o">=</span> <span class="s2">&quot;    &quot;</span> <span class="o">+</span> <span class="n">explanation</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">    &quot;</span><span class="p">)</span>  <span class="c1"># Ajouter l&#39;indentation négative</span>
+    <span class="n">explanation_text</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">tk</span><span class="o">.</span><span class="n">END</span><span class="p">,</span> <span class="n">explanation</span><span class="p">)</span>
+    <span class="n">explanation_text</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">state</span><span class="o">=</span><span class="s2">&quot;disabled&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">frame</span>  <span class="c1"># Retourner le cadre pour permettre l&#39;ajout de la case à cocher</span></div>
+
+
+
+<span class="c1"># Définir une fonction pour choisir la méthode</span>
+<div class="viewcode-block" id="choose_method">
+<a class="viewcode-back" href="../interface.html#interface.choose_method">[docs]</a>
+<span class="k">def</span> <span class="nf">choose_method</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    La fonction qui permet l&#39;affichage des boites à cocher pour la sélection de méthode de croisement génétique.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Détruire tous les widgets du cadre central</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">center_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+        <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+
+    <span class="n">checkboxes</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Liste pour stocker les cases à cocher</span>
+
+    <span class="c1"># Afficher les explications de chaque méthode</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">method</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">methods</span><span class="p">):</span>
+        <span class="c1"># Créer le cadre pour le titre et l&#39;explication</span>
+        <span class="n">explanation_frame</span> <span class="o">=</span> <span class="n">create_explanation_frame</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">explanations</span><span class="p">[</span><span class="n">method</span><span class="p">])</span>
+
+        <span class="c1"># Créer la case à cocher et l&#39;ajouter à la liste</span>
+        <span class="n">checkbox</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Checkbutton</span><span class="p">(</span><span class="n">explanation_frame</span><span class="p">,</span> <span class="n">variable</span><span class="o">=</span><span class="n">method_var</span><span class="p">,</span> <span class="n">onvalue</span><span class="o">=</span><span class="n">method</span><span class="p">,</span> <span class="n">offvalue</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+        <span class="n">checkbox</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span> <span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span><span class="p">))</span>  <span class="c1"># Ajouter une marge gauche sauf pour le premier</span>
+        <span class="n">checkboxes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">checkbox</span><span class="p">)</span>
+    <span class="c1"># Affichage du bouton &quot;Valider&quot;</span>
+    <span class="n">button_continue</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Valider&quot;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">validate_method</span><span class="p">)</span>
+    <span class="n">button_continue</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">BOTTOM</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="validate_method">
+<a class="viewcode-back" href="../interface.html#interface.validate_method">[docs]</a>
+<span class="k">def</span> <span class="nf">validate_method</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    La fonction qui permet d&#39;enregistrer la méthode de croisement génétique par l&#39;utilisateur pour la suite de l&#39;utilisation du logiciel.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">picked_method</span>  <span class="c1"># Déclarer la variable globale</span>
+    <span class="c1"># Détruire tous les widgets du cadre central</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">center_frame</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+        <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="c1"># Créer une étiquette pour afficher les erreurs</span>
+    <span class="n">error_label</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">16</span><span class="p">),</span><span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+    <span class="n">error_label</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+    <span class="n">selected_method</span> <span class="o">=</span> <span class="n">method_var</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">selected_method</span><span class="p">:</span>
+        <span class="c1"># Vérifier que seule une méthode a été choisie</span>
+        <span class="k">if</span> <span class="n">selected_method</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># Commencer la création de portrait robot en fonction de la méthode choisie</span>
+            <span class="k">if</span> <span class="n">selected_method</span> <span class="o">==</span> <span class="s2">&quot;Méthode 1&quot;</span><span class="p">:</span>
+                <span class="n">picked_method</span> <span class="o">=</span> <span class="n">algo_genetique</span><span class="o">.</span><span class="n">photos_methode_centroide</span>
+                <span class="n">create_portrait</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="n">selected_method</span> <span class="o">==</span> <span class="s2">&quot;Méthode 2&quot;</span><span class="p">:</span>
+                <span class="n">picked_method</span> <span class="o">=</span> <span class="n">algo_genetique</span><span class="o">.</span><span class="n">photos_methode_crossover</span>
+                <span class="n">create_portrait</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="n">selected_method</span> <span class="o">==</span> <span class="s2">&quot;Méthode 3&quot;</span><span class="p">:</span>
+                <span class="n">picked_method</span> <span class="o">=</span> <span class="n">algo_genetique</span><span class="o">.</span><span class="n">photos_methode_noise</span>
+                <span class="n">create_portrait</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># Afficher un message d&#39;erreur si plus d&#39;une méthode a été choisie</span>
+            <span class="n">error_label</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;Erreur : Veuillez sélectionner une seule méthode.&quot;</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># Afficher un message d&#39;erreur si aucune méthode a été choisie</span>
+        <span class="n">error_label</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;Erreur : Veuillez sélectionner une méthode.&quot;</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
+        <span class="c1"># Redémarrer la sélection de méthode après un court délai</span>
+        <span class="n">center_frame</span><span class="o">.</span><span class="n">after</span><span class="p">(</span><span class="mi">2000</span><span class="p">,</span> <span class="n">choose_method</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="mainWindow">
+<a class="viewcode-back" href="../interface.html#interface.mainWindow">[docs]</a>
+<span class="k">def</span> <span class="nf">mainWindow</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    La fonction qui génère la fenêtre d&#39;accueil et les objets principaux pour l&#39;affichage.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Création de la fenêtre principale</span>
+    <span class="k">global</span> <span class="n">root</span>
+    <span class="n">root</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Tk</span><span class="p">()</span>
+    <span class="n">root</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;https://mon-portrait-robot.com&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Récupère les dimensions de l&#39;écran</span>
+    <span class="n">screen_width</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">winfo_screenwidth</span><span class="p">()</span>
+    <span class="n">screen_height</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">winfo_screenheight</span><span class="p">()</span>
+
+    <span class="c1"># Définition de la taille de la fenêtre principale</span>
+    <span class="n">root</span><span class="o">.</span><span class="n">geometry</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">screen_width</span><span class="si">}</span><span class="s2">x</span><span class="si">{</span><span class="n">screen_height</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">root</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Création d&#39;un cadre en haut de la fenêtre pour le titre</span>
+    <span class="k">global</span> <span class="n">title_frame</span>
+    <span class="n">title_frame</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">root</span><span class="p">,</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;#000080&quot;</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">title_frame</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">TOP</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">00</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
+    <span class="n">title_frame</span><span class="o">.</span><span class="n">pack_propagate</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1">#pour redéfinir les dimensions et être sur qu&#39;elles soient bien prises en compte</span>
+
+    <span class="c1"># Ajouter un titre au cadre</span>
+    <span class="k">global</span> <span class="n">label_title</span>
+    <span class="n">label_title</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">title_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Créateur de portraits robots&quot;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span> <span class="n">foreground</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span><span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;#000080&quot;</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">label_title</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+
+    <span class="c1"># Création d&#39;un cadre pour la zone centrale</span>
+    <span class="k">global</span> <span class="n">center_frame</span>
+    <span class="n">center_frame</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">root</span><span class="p">,</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span><span class="n">bd</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">center_frame</span><span class="o">.</span><span class="n">place</span><span class="p">(</span><span class="n">relx</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">rely</span><span class="o">=</span><span class="mf">0.49</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">CENTER</span><span class="p">)</span>
+    <span class="c1"># center_frame.pack(padx=50, pady=50, expand=True)  # Définit l&#39;expansion et le remplissage autour du cadre central</span>
+
+    <span class="k">global</span> <span class="n">final_frame</span>
+    <span class="n">final_frame</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span> <span class="n">bd</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">final_frame</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">TOP</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="s1">&#39;n&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Création d&#39;un cadre pour la zone du bas</span>
+    <span class="k">global</span> <span class="n">low_frame</span>
+    <span class="n">low_frame</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">root</span><span class="p">,</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span><span class="n">bd</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+    <span class="c1"># low_frame.pack(side=tk.LEFT, anchor=tk.S)</span>
+    <span class="n">low_frame</span><span class="o">.</span><span class="n">place</span><span class="p">(</span><span class="n">relx</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">rely</span><span class="o">=</span><span class="mf">0.72</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">NW</span><span class="p">)</span>
+
+    <span class="c1"># Définition des composants de l&#39;interface</span>
+    <span class="k">global</span> <span class="n">label_welcome</span>
+    <span class="n">label_welcome</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Bienvenue dans le créateur de portraits robots !&quot;</span><span class="p">,</span><span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span><span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="n">anchor</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">)</span>
+    <span class="n">label_welcome</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
+
+    <span class="c1"># Créer un bouton pour créer un portrait robot</span>
+    <span class="k">global</span> <span class="n">button_create</span>
+    <span class="n">button_create</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Créer un portrait robot&quot;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">create_portrait</span><span class="p">,</span><span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">foreground</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span><span class="c1">#,font=(&quot;Helvetica&quot;, 15))</span>
+    <span class="n">button_create</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">pady</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
+    <span class="n">button_create</span><span class="o">.</span><span class="n">pack_forget</span><span class="p">()</span>  <span class="c1"># Masquer le bouton initialement</span>
+
+    <span class="c1"># Créer un bouton pour accéder au panier es photos sélectionnées</span>
+    <span class="c1">#button_panier = tk.Button(text=&quot;Photos sélectionnées&quot;, command=photos_selectioned)</span>
+    <span class="c1">#button_panier_after_retour = tk.Button(text=&quot;Photos sélectionnées&quot;, command=photos_selectioned)</span>
+    <span class="c1"># Créer une Frame pour contenir le bouton</span>
+    <span class="c1">#button_frame = tk.Frame(root, bg=&quot;white&quot;)</span>
+    <span class="c1">#button_frame.pack(side=tk.TOP, anchor=&#39;ne&#39;, padx=10, pady=10)</span>
+    <span class="c1">#button_panier_p2= tk.Button(text=&quot;Photos sélectionnées 2&quot;, command=photos_selectioned_p2)</span>
+
+    <span class="c1"># Créer un bouton pour créer un portrait robot dans une autres fonction</span>
+    <span class="n">label2_welcome</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Bienvenue dans le créateur de portraits robots !&quot;</span><span class="p">,</span><span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span><span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">))</span>
+    <span class="n">button2_create</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Créer un portrait robot&quot;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">create_portrait</span><span class="p">,</span><span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">foreground</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span><span class="c1">#,font=(&quot;Helvetica&quot;, 15))</span>
+
+    <span class="c1"># Ajout des explications sur l&#39;objectif de l&#39;application</span>
+    <span class="k">global</span> <span class="n">explanation_text</span>
+    <span class="n">explanation_text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    Cette application vous permet de créer des portraits robots en utilisant un algorithme génétique.</span>
+<span class="s2">    Vous pouvez sélectionner une ou plusieurs photos de personnes, puis notre algorithme génétique va modifier</span>
+<span class="s2">    les visages pour obtenir un portrait robot qui ressemble le plus possible aux personnes que vous avez choisies.</span>
+<span class="s2">    Le but est d&#39;obtenir le portrait robot le plus ressemblant possible afin de retrouver un potentiel coupable.</span>
+<span class="s2">    &quot;&quot;&quot;</span>
+
+    <span class="n">label_explanation</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">explanation_text</span><span class="p">,</span><span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">14</span><span class="p">),</span> <span class="n">justify</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+    <span class="n">label_explanation</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+
+    <span class="c1"># Définir les noms des méthodes et leurs explications</span>
+    <span class="k">global</span> <span class="n">methods</span>
+    <span class="n">methods</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Méthode 1&quot;</span><span class="p">,</span> <span class="s2">&quot;Méthode 2&quot;</span><span class="p">,</span> <span class="s2">&quot;Méthode 3&quot;</span><span class="p">]</span>
+    <span class="k">global</span> <span class="n">explanations</span>
+    <span class="n">explanations</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;Méthode 1&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;&quot;</span><span class="se">\</span>
+<span class="s2">        Méthode 1 : Calcul des coordonnées du centroïde et génération de nouvelles photos.</span>
+<span class="s2">            • Cette méthode fonctionne en calculant d&#39;abord le vecteur de coordonnées des centroïdes des vecteurs fournis.</span>
+<span class="s2">            • Elle parcourt donc la liste des vecteurs fournis et additionne les coordonnées de chaque vecteur à un vecteur centroïde initialisé à 0.</span>
+<span class="s2">            • Ensuite, elle divise chaque coordonnée par le nombre total de vecteurs pour obtenir la moyenne.</span>
+<span class="s2">            • Ce vecteur de coordonnées du centroïde représente donc le centre géométrique des vecteurs fournis.</span>
+<span class="s2">            • Une fois le vecteur de coordonnées du centroïde calculé, la méthode génère une population de nouveaux vecteurs.</span>
+<span class="s2">            • Ces nouveaux vecteurs sont créés autour du centroïde calculé afin de générer des photos similaires mais légèrement différentes.</span>
+<span class="s2">            • Utile pour créer une variété de nouvelles photos basées sur un ensemble de photos initiales en conservant des caractères communs.&quot;&quot;&quot;</span><span class="p">,</span>
+
+        <span class="s2">&quot;Méthode 2&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;&quot;</span><span class="se">\</span>
+<span class="s2">        Méthode 2 : Génération de nouveaux vecteurs par crossover aléatoire.</span>
+<span class="s2">            • Cette méthode fonctionne en créant d&#39;abord un nouveau vecteur composé de coodrdonnées de tous les vecteurs sélectionnés aléatoirement.</span>
+<span class="s2">            • Pour chaque coordonnée du nouveau vecteur, la méthode sélectionne aléatoirement une coordonnée parmi celles de tous les vecteurs d&#39;origine.</span>
+<span class="s2">            • Une fois le nouveau vecteur composé, la méthode génère une population de nouveaux vecteurs en utilisant ce vecteur comme base.</span>
+<span class="s2">            • Ces nouveaux vecteurs sont créés avec des variations aléatoires autour du vecteur initial.</span>
+<span class="s2">            • Utile pour créer une variété de nouvelles photos en combinant de manière aléatoire les caractéristiques des photos initiales.&quot;&quot;&quot;</span><span class="p">,</span>
+
+        <span class="s2">&quot;Méthode 3&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;&quot;</span><span class="se">\</span>
+<span class="s2">        Méthode 3 : Introduction de bruit dans les vecteurs avant génération.</span>
+<span class="s2">            • Cette méthode consiste tout d&#39;abord à appliquer du bruit à chacun des vecteurs fournis.</span>
+<span class="s2">            • Pour cela, elle ajoute un bruit aléatoire à chaque coordonnée de chaque vecteur.</span>
+<span class="s2">            • Ensuite, elle génère une population de nouveaux vecteurs à partir des vecteurs bruités.</span>
+<span class="s2">            • Pour chaque vecteur bruité, la méthode crée un nouveau vecteur en ajoutant un peu de bruit supplémentaire à chaque coordonnée.</span>
+<span class="s2">            • Ces nouveaux vecteurs conservent les caractéristiques des vecteurs d&#39;origine mais présentent des variations dues au bruit introduit.</span>
+<span class="s2">            • Utile pour créer une variété de photos en introduisant des variations aléatoires mais contrôlées dans les caractéristiques des photos initiales.&quot;&quot;&quot;</span>
+    <span class="p">}</span>
+
+    <span class="c1"># Créer une variable pour stocker la méthode choisie</span>
+    <span class="k">global</span> <span class="n">method_var</span>
+    <span class="n">method_var</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">StringVar</span><span class="p">()</span>
+
+    <span class="n">button_method</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">center_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Choisir une méthode&quot;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">choose_method</span><span class="p">,</span><span class="n">fg</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">foreground</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span><span class="c1">#,font=(&quot;Helvetica&quot;, 15))</span>
+    <span class="n">button_method</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+
+    <span class="c1"># Lancement de la boucle principale de l&#39;interface graphique</span>
+    <span class="n">root</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">mainWindow</span><span class="p">()</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Index général"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Index des modules Python"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Documentation CriminAI 0.1.4</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Code du module</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">interface</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, ZOUARI Matis, SUTTER Clémence, PEREZ Lisa, ZHONG Zhihan.
+      Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

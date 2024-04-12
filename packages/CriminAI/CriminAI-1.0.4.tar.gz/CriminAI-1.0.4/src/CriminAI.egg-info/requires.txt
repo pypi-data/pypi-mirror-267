@@ -1,0 +1,7 @@
+numpy>=1.11.1
+matplotlib>=3.0.0
+torch==2.0.1
+torchvision
+tk
+pillow
+scikit-learn
