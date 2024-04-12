@@ -1,0 +1,1 @@
+data modify storage glm:parser stack[-1].metadata.pair.key set from storage glm:parser parsed.value

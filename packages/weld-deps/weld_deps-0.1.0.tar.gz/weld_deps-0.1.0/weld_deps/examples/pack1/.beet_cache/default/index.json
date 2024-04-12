@@ -1,0 +1,44 @@
+{
+  "timestamp": "2024-04-12T07:23:05.199068",
+  "expire": null,
+  "json": {
+    "weld_deps": {
+      "deps": [
+        "itemio@smithed#>0.7.0, <0.7.2",
+        "code-of-copper@modrinth#>0.1.0",
+        "custom-block@smithed#>0.0.0"
+      ],
+      "params": {
+        "clean_load_tag": false,
+        "enable_weld_merging": false,
+        "include_prerelease": false
+      },
+      "files": [
+        "HoIqL0Lk3HN3kl2aWZHK@Source.SMITHED#0.2.0-dp.zip",
+        "nhwFD5kibnbGXAlNhZan@Source.SMITHED#0.7.1-dp.zip",
+        "6kxnrwLF@Source.MODRINTH#0.3.1-dp.zip",
+        "6kxnrwLF@Source.MODRINTH#0.3.1-rp.zip",
+        "1a4OiT8y@Source.MODRINTH#0.5.11-dp.zip",
+        "JfLXS8eC@Source.MODRINTH#0.3.1-dp.zip",
+        "FXsmK8Ot@Source.MODRINTH#0.1.1-dp.zip"
+      ],
+      "urls": [
+        "https://github.com/Smithed-MC/Libraries/blob/d0f14054318cbbab0eb9d3b9d11ece9f529a6cbe/1.20/custom_block/smithed_custom_block_dp.zip?raw=true",
+        "https://github.com/edayot/ItemIO/releases/download/v0.7.1/ItemIO-v0.7.1-Datapack.zip",
+        "https://cdn.modrinth.com/data/6kxnrwLF/versions/C3ETExI6/Code%20of%20Copper-v0.3.1.zip",
+        "https://cdn.modrinth.com/data/6kxnrwLF/versions/C3ETExI6/CodeOfCopperRP.zip",
+        "https://cdn.modrinth.com/data/1a4OiT8y/versions/piSoqNsP/moxlib-v0.5.11.zip",
+        "https://cdn.modrinth.com/data/JfLXS8eC/versions/qawEA9X5/GolemScript-v0.3.1.zip",
+        "https://cdn.modrinth.com/data/FXsmK8Ot/versions/XnnhMfZd/Regex-0.1.1.zip"
+      ]
+    },
+    "weld_deps_installed": {
+      "custom-block": "0.2.0",
+      "itemio": "0.7.1",
+      "code-of-copper": "0.3.1",
+      "moxlib": "0.5.11",
+      "golemscript": "0.3.1",
+      "regex": "0.1.1"
+    }
+  }
+}

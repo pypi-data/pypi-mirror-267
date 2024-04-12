@@ -1,0 +1,1 @@
+execute if data storage glm:parser parent{variant:"end"} run function glm:parser/parse/instruction/action/end

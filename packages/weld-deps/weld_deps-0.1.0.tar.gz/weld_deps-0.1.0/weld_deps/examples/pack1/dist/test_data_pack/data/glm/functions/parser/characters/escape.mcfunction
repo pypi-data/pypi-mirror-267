@@ -1,0 +1,3 @@
+execute if data storage glm:parser current.escape{status:"current"} run data merge storage glm:parser {current:{escape:{escaped:false,status:"none"}}}
+execute if data storage glm:parser current.escape{status:"new"} run data modify storage glm:parser current.escape.status set value "current"
+execute if data storage glm:parser {current:{value:"\\",escape:{escaped:false}}} run data modify storage glm:parser current merge value {escape:{escaped:true,status:"new"},consumed:true,flags:["escape","meta"]}

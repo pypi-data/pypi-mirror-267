@@ -1,0 +1,1 @@
+data modify storage glm:parser stack append value {type:"literal",variant:"alphanumeric",metadata:{exclude:["function","resource"]}}

@@ -1,0 +1,2 @@
+execute if data storage glm:parser current{flags:["whitespace"]} run data modify storage glm:parser current.consumed set value true
+execute unless data storage glm:parser current{consumed:true} run function glm:parser/parse/literal/function/parse

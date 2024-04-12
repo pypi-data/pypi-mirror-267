@@ -1,0 +1,2 @@
+execute if score $current glm.utils.sort > $pivot glm.utils.sort run scoreboard players set $result glm.utils.sort 1
+execute if score $current glm.utils.sort <= $pivot glm.utils.sort run scoreboard players set $result glm.utils.sort -1

@@ -1,0 +1,14 @@
+{
+  "pack": {
+    "pack_format": 11,
+    "description": "A regex parser in Minecraft"
+  },
+  "overlays": {
+    "entries": [
+      {
+        "formats": 18,
+        "directory": "v18"
+      }
+    ]
+  }
+}

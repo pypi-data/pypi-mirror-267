@@ -1,0 +1,2 @@
+execute if data storage glm:parser stack[-1].metadata{no_matches:true} run function glm:parser/parse/line/no_matches
+execute unless data storage glm:parser stack[-1].metadata{no_matches:true} unless data storage glm:parser temp.replaced run function glm:parser/parse/line/instruction/check

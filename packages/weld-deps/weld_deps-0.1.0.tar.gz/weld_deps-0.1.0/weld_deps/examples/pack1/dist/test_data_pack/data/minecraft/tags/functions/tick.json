@@ -1,0 +1,7 @@
+{
+  "values": [
+    "bot:tick",
+    "glm:tick",
+    "regex:tick"
+  ]
+}
