@@ -1,0 +1,6 @@
+setup.py
+arthoperations.egg-info/PKG-INFO
+arthoperations.egg-info/SOURCES.txt
+arthoperations.egg-info/dependency_links.txt
+arthoperations.egg-info/entry_points.txt
+arthoperations.egg-info/top_level.txt
