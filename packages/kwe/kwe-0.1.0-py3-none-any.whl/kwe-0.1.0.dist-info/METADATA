@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: kwe
+Version: 0.1.0
+Summary: 
+Author: 윤성민
+Author-email: meetingstranger@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: datasets (>=2.18.0,<3.0.0)
+Requires-Dist: keybert (>=0.8.4,<0.9.0)
+Requires-Dist: nltk (>=3.8.1,<4.0.0)
+Requires-Dist: scipy (>=1.13.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+
+# `kwe` - KeyWord Extractor
+
+`kwe` is a simple tool to extract keywords from a text file.
+
+## Table of Contents
+
+* [Installation](#installation)
+* [Example](#minimal-example)
+* [Getting started](#getting-started)
+* [Implemented models](#implemented-models)
+
+## Installation
+
+````
+python
+```
+
+## Example
+
+## Implmented models
+
+* Statistical Model
+  * CountWords
+  * BM25
+* Graph-based Model
+  * [TextRank](https://aclanthology.org/W04-3252/)
+* Embed-based Model
+  * [EmbedRank](https://arxiv.org/abs/1801.04470)
+  * [KeyBERT](https://github.com/MaartenGr/KeyBERT)
+
