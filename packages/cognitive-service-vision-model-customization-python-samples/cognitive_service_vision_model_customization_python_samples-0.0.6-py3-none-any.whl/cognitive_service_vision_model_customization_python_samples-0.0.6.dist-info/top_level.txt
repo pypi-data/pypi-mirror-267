@@ -1,0 +1,3 @@
+aml-pipeline
+cognitive_service_vision_model_customization_python_samples
+test
