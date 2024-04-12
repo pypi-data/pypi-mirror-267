@@ -1,0 +1,141 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.wheel]
+packages = ["bids"]
+only-include = ["bids/ext/reports"]
+# recursive-include bids/ext/reports/config *.json
+# recursive-include bids/ext/reports/tests/data *
+
+[tool.hatch.build.hooks.vcs]
+version-file = "bids/ext/reports/_version.py"
+
+[project]
+name = "pybids_reports"
+description = "pybids-reports: report generator for BIDS datasets"
+authors = [{ name = "PyBIDS Developers", email = "bids-discussion@googlegroups.com"}]
+maintainers = [{ name = "PyBIDS Developers", email = "bids-discussion@googlegroups.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+  "chevron",
+  "pybids>=0.15",
+  "nibabel",
+  "num2words",
+  "rich"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering",
+]
+dynamic = ["version"]
+# version = "0.1.0"
+
+[project.scripts]
+pybids_reports = "bids.ext.reports.cli:cli"
+
+[project.urls]
+Homepage = "http://github.com/bids-standard/pybids-reports"
+Documentation = "https://pybids-reports.readthedocs.io/en/latest/"
+"Bug tracker" = "http://github.com/bids-standard/pybids-reports/issues"
+
+[project.optional-dependencies]
+doc = [
+  "furo",
+  "myst-parser",
+  "nbsphinx",
+	"numpydoc",
+	"sphinx",
+  "sphinx-argparse",
+  "sphinx-copybutton",
+  "sphinx_gallery",
+]
+docs=["pybids_reports[doc]"]
+test = [
+    "codecov",
+    "flake8-black",
+    "flake8-docstrings",
+    "flake8-isort",
+    "pytest>=3.3",
+    "pytest-cov",
+]
+tests=["pybids_reports[test]"]
+ci_tests = [
+  "pybids_reports[test]",
+  "pytest-xdist"
+]
+dev = [
+  "pybids_reports[doc]",
+  "pybids_reports[test]"
+]
+
+[tool.black]
+line-length = 99
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.github
+    | \.hg
+    | \.pytest_cache
+    | _build
+    | build
+    | dist
+  )/
+  | bids/ext/reports/_version.py
+  | bids/ext/reports/due.py
+)
+'''
+
+[tool.codespell]
+skip = "./.git,bids/ext/reports/tests/data/*"
+ignore-words-list = "te"
+
+[tool.mypy]
+exclude = ['bids/ext/reports/tests/']
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = [
+    'bids.ext.reports.tests.*',
+    'bids.ext.reports._version.*',
+    'bids.ext.reports.due.*',
+]
+ignore_errors = true
+
+[tool.coverage.paths]
+source = [
+  "bids/ext/reports",
+  "**/bids/ext/reports",
+]
+
+[tool.coverage.report]
+include_namespace_packages = true
+
+
+[tool.isort]
+combine_as_imports = true
+line_length = 99
+profile = "black"
+skip_gitignore = true
