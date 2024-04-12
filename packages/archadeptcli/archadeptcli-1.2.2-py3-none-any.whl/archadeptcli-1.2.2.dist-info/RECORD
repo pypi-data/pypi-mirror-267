@@ -1,0 +1,15 @@
+archadeptcli/__init__.py,sha256=UbSu7LPyKZgQjdDPS69Hsi0yRShCeOeX_03fu25CAbA,1171
+archadeptcli/__main__.py,sha256=PBoC1NX96omQH6RJYzdyvP8sxO2yRPLhifNG4f-gLp0,18306
+archadeptcli/console.py,sha256=kbUeDa4n96ESigA9EMHKivzO5zXHROjm1zjmiY6hvSw,3195
+archadeptcli/diagram.py,sha256=AfTeoIoECvfa4WGDZELzS0ys6IHszcNT_Toi62iJURc,25905
+archadeptcli/docker.py,sha256=TzxM034yo6rNWFFwPieX1wSwad7NllplwvAO9MUcV1s,14494
+archadeptcli/exceptions.py,sha256=TiRcpu4bx4gc_XR1OCnQHZ7DcTYv6B8zElORkQTNGpE,6784
+archadeptcli/static/FiraCodeNerdFont-Regular/FiraCodeNerdFont-Regular.ttf,sha256=BJI88-BEIgUysyHPQ2_D0wtLQYkQJjA2MEAE9uXwK7Y,2197404
+archadeptcli/static/FiraCodeNerdFont-Regular/LICENSE,sha256=HUHhADGrElMCeAoF7EyR0hjkfbDH43zzFczl5gjNwlw,4389
+archadeptcli/static/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+archadeptcli/static/instructions.json,sha256=VZAVjmdohd8ISUX7kvv4tpOb6g6iypPZ0q1dL8eTcEU,2827587
+archadeptcli-1.2.2.dist-info/LICENSE,sha256=fm1N4NYi5QzL-MOhpflwosVr2fC46byHuHAOZFGCDGI,1093
+archadeptcli-1.2.2.dist-info/METADATA,sha256=GP76Gf7ZPOoi4rFsUHoBrkMvwwDlTngDe-Ahb2P0VUI,10588
+archadeptcli-1.2.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+archadeptcli-1.2.2.dist-info/entry_points.txt,sha256=Qyu1PhJQyjSYRsVhZ9jwhizQpIIRkdigZVD11OAVpX0,56
+archadeptcli-1.2.2.dist-info/RECORD,,
