@@ -1,0 +1,59 @@
+
+
+
+<pre>
+
+	<h1>volts</h1>
+	
+	<h2>docker</h2>
+		docker network create --subnet=192.168.0.0/24 container_network
+		docker run --network container_network --ip 192.168.0.102 -v .:/volts -it jumps:v2.1.0
+		docker exec -it c416670e219c bash
+
+	<h2>link the readme</h2>
+		ln -s venues/stages/volts/room.md readme.MD
+
+	<h2>poetry</h2>
+		pip install poetry poetry-plugin-export
+	
+		<h3>add</h3>
+			poetry add body_scan botanist shares click coverage flask pdoc3 pexpect redis requests textual tinydb
+			
+			#
+			#	if dev dependencies
+			#
+			# poetry export --with dev --format requirements.txt --output requirements.txt
+			
+			rm -rf /volts/venues/stages_pip
+			poetry export --format requirements.txt --output requirements.txt
+			pip install -r requirements.txt -t /volts/venues/stages_pip
+			
+			# /root/.cache/pypoetry/virtualenvs/volts-p2eJTVsK-py3.10/lib/python3.10/site-packages/
+			# cp -R /root/.cache/pypoetry/virtualenvs/volts-p2eJTVsK-py3.10/lib/python3.10/site-packages/ /volts/venues/stages_pip
+		
+		<h3>installations venv</h3>
+			poetry config virtualenvs.path /path/to/your/directory
+			poetry env use python3
+			poetry shell
+
+			
+
+	<h2>publishing</h2>
+		python3 /volts/venues/stages/volts/_status/status.proc.py
+		cp /volts/venues/stages/volts/room.md /volts/readme.md
+		
+		#
+		#	poetry auth
+		#
+		
+		rm -rf dist && poetry build --verbose && poetry publish --verbose;
+		
+		# rm -rf stages_pip && pip install volts -t stages_pip
+
+	<h2>important</h2>
+		poetry show --tree
+
+
+	
+
+</pre>

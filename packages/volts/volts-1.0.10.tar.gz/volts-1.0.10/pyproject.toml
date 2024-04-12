@@ -1,0 +1,83 @@
+
+
+
+
+
+
+
+[tool.poetry]
+name = "volts"
+version = "1.0.10"
+description = ""
+authors = []
+readme = "venues/stages/volts/room.md"
+
+packages = [
+    { include = "volts", from = "venues/stages" }
+]
+exclude = []
+include = [ "*.HTML", "*.html", "*.JSON", "*.json" ]
+
+license = "GPL-3.0-only"
+
+keywords = [
+	"homeostasis",
+	"reliability",
+	"consistency",
+	"integrity",
+	
+	"guarantees",
+	"vows",
+	"oaths",
+	"assurances",
+	"insurances",
+	"ensurances",
+
+	"speed",
+	"calmness",
+
+	"education",
+
+	"augmentation",
+	"enhancement",
+	"improvements"
+]
+
+
+#
+#	⚠️
+#		Make sure that none of these depend on this module!
+#
+#		For the sake of sanity, please keep the "reliability, testing, etc."
+#		structure as a "tree, hierarchy, etc." etc. with no coodependencies
+#		that almost definitely cause chaos.
+#
+[tool.poetry.dependencies]
+python = "^3.10"
+body-scan = "^1.0.6"
+botanist = "^1.0.0"
+shares = "^3.1.9"
+click = "^8.1.7"
+coverage = "^7.4.4"
+flask = "^3.0.3"
+pdoc3 = "^0.10.0"
+pexpect = "^4.9.0"
+redis = "^5.0.3"
+requests = "^2.31.0"
+textual = "^0.56.4"
+tinydb = "^4.8.0"
+
+#
+#	https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#creating-executable-scripts
+#	from this_module import clique; clique ()
+#
+[tool.poetry.scripts]
+volts = 'volts:clique'
+
+[tool.poetry.urls]
+GitLab = "https://gitlab.com/status600/climates/volts"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
