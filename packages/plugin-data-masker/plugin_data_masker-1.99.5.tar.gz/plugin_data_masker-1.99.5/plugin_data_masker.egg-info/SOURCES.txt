@@ -1,0 +1,5 @@
+setup.py
+plugin_data_masker.egg-info/PKG-INFO
+plugin_data_masker.egg-info/SOURCES.txt
+plugin_data_masker.egg-info/dependency_links.txt
+plugin_data_masker.egg-info/top_level.txt
