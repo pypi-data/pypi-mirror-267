@@ -1,0 +1,32 @@
+[project]
+name = "kaque"
+version = "0.0.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "RenChu Wang", email = "patrick1031wang@gmail.com"},
+    {name = "Chun-Wei Ho", email = "chunweiho1999@gmail.com"},
+]
+dependencies = [
+    "networkx>=3.3",
+    "numpy>=1.26.4",
+    "scipy>=1.13.0",
+    "torch>=2.2.2",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+format = [
+    "autoflake>=2.3.1",
+    "black>=24.3.0",
+    "isort>=5.13.2",
+]

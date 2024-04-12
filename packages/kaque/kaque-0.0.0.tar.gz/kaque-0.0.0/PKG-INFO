@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: kaque
+Version: 0.0.0
+Summary: Default template for PDM package
+Author-email: RenChu Wang <patrick1031wang@gmail.com>, Chun-Wei Ho <chunweiho1999@gmail.com>
+License: Apache-2.0
+Requires-Python: >=3.10
+Requires-Dist: networkx>=3.3
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: scipy>=1.13.0
+Requires-Dist: torch>=2.2.2
+Description-Content-Type: text/markdown
+
+# kaque
