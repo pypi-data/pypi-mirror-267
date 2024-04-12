@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pyloggermanager
+Version: 0.1.2
+Summary: The pyloggermanager package is a vital logging framework for Python applications, providing developers with essential
+Home-page: https://github.com/coldsofttech/pyloggermanager
+Author: coldsofttech
+License: MIT
+License-File: LICENSE
+

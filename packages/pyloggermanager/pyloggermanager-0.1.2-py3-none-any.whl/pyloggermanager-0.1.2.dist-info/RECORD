@@ -1,0 +1,15 @@
+pyloggermanager/__init__.py,sha256=afGvLErsiMKM70FmJ8TVwfOvLAEM4KWmWKhx92Z02_w,3421
+pyloggermanager/__main__.py,sha256=jgkznp64DGB4bu7V93Xu9Ai8yIu1_N_QfF9RaKuVWeo,96688
+pyloggermanager/formatters/__init__.py,sha256=sMox9EbaYMUhja6fEqVe0gqAYY-GxdRKfDb0DHmyBEw,2379
+pyloggermanager/formatters/__main__.py,sha256=KcUCBxdI-fSShFFcTRhr1cL8u8MXKeSwQfiwTOxD54A,14809
+pyloggermanager/handlers/__init__.py,sha256=rQrvBEMLLr-PVcePTaLnwthhwSOaKDoGtRCksS-Gbkc,2292
+pyloggermanager/handlers/__main__.py,sha256=q63uDGSIt0lORP8Haind6iT97703xMtgd74o3yZQoZw,20136
+pyloggermanager/streams/__init__.py,sha256=Ky_2xBx5cDNfcNo7R63MMqrdKQC8GXwhM_-DdzstDbM,2413
+pyloggermanager/streams/__main__.py,sha256=A_HPItT2gQcly3P0_h91spcgGWRcHAVd-x6N7rabXqg,4315
+pyloggermanager/textstyles/__init__.py,sha256=ntj7mgiS2QANh0wcw33y-s7wGB07xZb4PJk_c4zI86U,2200
+pyloggermanager/textstyles/__main__.py,sha256=XKDGtV35nr_fRG_8U_w9agwjr_bwntzNicgb8EY938Y,12249
+pyloggermanager-0.1.2.dist-info/LICENSE,sha256=QDd-5ssO5cRVguOaD889uNuqyZlNg2DQS6VjttE-8Dk,1069
+pyloggermanager-0.1.2.dist-info/METADATA,sha256=wN-V34_qxOiqWHr95dYv67A7dpg26Kyl1blIc4AQ0-A,302
+pyloggermanager-0.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyloggermanager-0.1.2.dist-info/top_level.txt,sha256=427AjoG4-piQ3UJzKdLsUN7od0ylEYhotMppwna1-sQ,16
+pyloggermanager-0.1.2.dist-info/RECORD,,
