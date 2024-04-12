@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: floske
+Version: 0.0.0
+Summary: Flask, but cooler
+Home-page: https://ari.lt/gh/floske
+Author: Ari Archer
+Author-email: ari@ari.lt
+License: GPLv3+
+Keywords: flask,floske,wrapper,flask wrapper,web,webapp
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Floske
+
+> Flask, but cooler
