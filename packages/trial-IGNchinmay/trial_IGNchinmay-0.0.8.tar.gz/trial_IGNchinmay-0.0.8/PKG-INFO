@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: trial_IGNchinmay
+Version: 0.0.8
+Summary: A small CV test package
+Author-email: Chinmay <chinmayananda.sahu@ignitarium.com>
+Project-URL: Homepage, https://gitlab.ignitarium.in/ign-ai/internal/ign_py_library/trial_IGNchinmay/-/tree/main?ref_type=heads
+Project-URL: Issues, https://gitlab.ignitarium.in/ign-ai/internal/ign_py_library/trial_IGNchinmay/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# icutils
+<div align="center">
+  <img src="ignitarium-logo.png">
+</div>
+
+[![PyPI version](https://badge.fury.io/py/trial-IGNchinmay.svg)](https://badge.fury.io/py/trial-IGNchinmay)
+
+A sample test package for CV
