@@ -1,0 +1,13 @@
+arcor2_3d_mouse/VERSION,sha256=FXXhr0qV8S9wtO5qatzoFglT2T6hfcJhG5CIPMw607g,6
+arcor2_3d_mouse/__init__.py,sha256=5qUWRZPLDdHrZybntJ-Hseipd7VGf9Ut6nlyFDSfTvs,96
+arcor2_3d_mouse/mouse_controller.py,sha256=sZ6wplZwHvigb8Yg3f09QCRZCEfXhI6vqWqi5mKGFoo,5728
+arcor2_3d_mouse/mouse_program.py,sha256=pOXvVoFNcUot4lYzlYLOUFwzaVE_AMPelGx_DyfNreU,50719
+arcor2_3d_mouse/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_3d_mouse/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_3d_mouse/scripts/mouse_launcher.py,sha256=uMqsqQhF8IvRBKcIicBZa10ngd7z9V_YgfNyHmFn7mI,376
+arcor2_3d_mouse-1.1.0.dist-info/METADATA,sha256=Q5NZeA93rUV5qPwmNcBv1g0MojXBTXaNDIaz5mA-66I,3665
+arcor2_3d_mouse-1.1.0.dist-info/WHEEL,sha256=kmN8iOmIjgcrw-r1v8hy3z3h3NZZuoejDMXyy9YVKXk,94
+arcor2_3d_mouse-1.1.0.dist-info/entry_points.txt,sha256=qGDJBj0c9IuyH3fcJ6xHuFT9dGOAL-i2TrJUDMZGRsY,80
+arcor2_3d_mouse-1.1.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+arcor2_3d_mouse-1.1.0.dist-info/top_level.txt,sha256=U-yLpOlKavOWygl7NvhxJWAjo29uF0PCkE-TQc93asc,16
+arcor2_3d_mouse-1.1.0.dist-info/RECORD,,

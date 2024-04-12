@@ -1,0 +1,2 @@
+[console_scripts]
+arcor2_3d_mouse = arcor2_3d_mouse.scripts.mouse_launcher:main
