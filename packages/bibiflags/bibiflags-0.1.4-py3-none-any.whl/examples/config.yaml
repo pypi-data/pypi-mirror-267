@@ -1,0 +1,27 @@
+flags:
+- dest: filename
+  type: bool
+  option_strings: []
+  required: true
+- dest: count
+  type: bool
+  option_strings:
+  - -c
+  - --count
+  required: false
+- dest: verbose
+  type: bool
+  const: true
+  default: false
+  option_strings:
+  - -v
+  - --verbose
+  required: false
+  nargs: 0
+- dest: echo
+  type: bool
+  const: true
+  default: false
+  option_strings: []
+  required: true
+  nargs: 0

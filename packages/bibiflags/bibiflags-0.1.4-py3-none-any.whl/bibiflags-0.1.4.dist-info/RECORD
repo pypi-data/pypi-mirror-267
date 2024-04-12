@@ -1,0 +1,17 @@
+bibiflags/__init__.py,sha256=jrWeJq5RHmBB1-G-mI4COSvZJAGpwxRQTa-dOcuP40c,104
+bibiflags/bibiflags.py,sha256=EGQ5egc0C2mkRABYeJpBKfs9znI9GEVXPzoAujl_Y2E,7015
+bibiflags/bibiflags.yaml,sha256=qbBWRRg97fQ890ffws7zU9BJHJ_Y-_vrTA7zXK3sLG8,789
+bibiflags/test_bibiflags.yaml,sha256=FrOk5-K7y5mWqXNi-a2SAOaEiug0cZic6DG9Uq9fttg,11
+examples/config.py,sha256=Mlp6nB0bd6QEXwWgcAmwGc1anPE5wdivJP8zYllPyUI,677
+examples/config.yaml,sha256=W1F1_cvaTZVNlKrGaOz4fwBTNdqKX2E6G4kvpoHvy9U,418
+examples/initial.py,sha256=Nh9WwTAcxHqhpL9MVoNuWIj16h4pNSmv49TZL5My8Pg,820
+examples/initial.yaml,sha256=LSuQdoHswsuVEOjsdOHqY_q7J98Dhve5_B-HSlNZpLQ,286
+examples/main.py,sha256=A39DbVuzutc7DMvWi2S04nS36hcuUtD_PWyKgvRzPfA,176
+examples/main.yaml,sha256=qbBWRRg97fQ890ffws7zU9BJHJ_Y-_vrTA7zXK3sLG8,789
+examples/prog.py,sha256=UMvdypCjTjNroR6ku8CB7PmVwqdvDyQrYvWuJuy7DAk,376
+examples/prog.yaml,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bibiflags-0.1.4.dist-info/LICENSE,sha256=nZ1nU6nOoAl4KZn6HGEFGl1mU2dXL65zYqzUgv6W7VI,1067
+bibiflags-0.1.4.dist-info/METADATA,sha256=O7FMx1Zpwoq_4a5-hTP1dTszM6JDRQ3J1CssUfYOTOU,3186
+bibiflags-0.1.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+bibiflags-0.1.4.dist-info/top_level.txt,sha256=UuzssaZg6QDo1WeI9HrVlSZHWvGNR5OQUf0DcwUOzZk,19
+bibiflags-0.1.4.dist-info/RECORD,,
