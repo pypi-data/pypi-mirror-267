@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Mensajes-Truqueli
+Version: 4.0
+Summary: Un paquete para enviar mensajes
+Author: Diego Altamirano
+Author-email: diego@hola.com
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Mensajes 
+
+EL paquete de mensajerÃ­a de prueba
