@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bsl-translator-fingerspelling
+Version: 0.0.1
+Summary: BSL Translator for fingerspelling
+Home-page: UNKNOWN
+License: UNKNOWN
+Keywords: python,fingerspelling
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
+Open source BSL Translator for fingerspelling
+

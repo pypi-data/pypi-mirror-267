@@ -1,0 +1,11 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/dataset_creator.py,sha256=1aNntiAXvaXtgOI79E1GkGPURjCy253SZH6MDG8I77A,2942
+src/image_processing.py,sha256=OOrFw_WcS8x9JT5-EBpLhtuRGO_8SHOTUI-PLY6Fw9U,1178
+src/training.py,sha256=94ysn6KZuH_7J5tRZfJQAlTgatSHqkRQEr0no3eVIwE,859
+src/translate.py,sha256=LUcYebgxHk_UBE0kPGq7gszqIJgdv1WG2ew9890_52U,453
+src/translator_fingerspelling.py,sha256=WpX3p_KYtE7WR5EiiFRXSzCWx_A12DjV6UPd3utoHqs,866
+bsl_translator_fingerspelling-0.0.1.dist-info/LICENSE,sha256=UC9tLzQskIqlTBIvYGUoL0rSdZO4na2ipXB0YFNSi8c,1079
+bsl_translator_fingerspelling-0.0.1.dist-info/METADATA,sha256=xUHuY27YbmcTKraYACRzmh6EIDs2RXIUaZdgJTGmpWg,505
+bsl_translator_fingerspelling-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bsl_translator_fingerspelling-0.0.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+bsl_translator_fingerspelling-0.0.1.dist-info/RECORD,,
