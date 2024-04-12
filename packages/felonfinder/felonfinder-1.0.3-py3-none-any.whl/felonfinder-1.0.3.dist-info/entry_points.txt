@@ -1,0 +1,5 @@
+[console_scripts]
+felon-finder = felonfinder:main
+
+[gui_scripts]
+felon-finder-win = felonfinder:main
