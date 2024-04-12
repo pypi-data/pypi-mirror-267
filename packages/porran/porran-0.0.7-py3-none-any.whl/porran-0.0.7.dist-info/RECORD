@@ -1,0 +1,14 @@
+porran/__init__.py,sha256=LxOlH2M6IN6bOp8SWxQqOIfRYKiAF93-2u-qk_XONIQ,53
+porran/create_structure.py,sha256=i4ehQaZvjR6Y7mhIdUGw33wDt3Mzg8q0FIa7FB-nNF4,5725
+porran/get_zeolite.py,sha256=I5OPMflGjy8pi2xs9jD82GZHbls6o6nDg8l6hXWT98M,3125
+porran/graph_creation.py,sha256=DN6vY4tRy_bljekukIwKkZxpqBK7_3N6KE3CaNmCahc,3075
+porran/mask_method.py,sha256=deJb2ijR8CjUvozl-5X6-8Ah9BrN-F_LiHck8b7mEyI,4812
+porran/porran.py,sha256=f-eI66vWp39HMJ5LRnG7fI2xnYYV2d9aUdm3Jh7wUYg,14612
+porran/replacement_algorithms.py,sha256=SpWXrmP__OuV1Eh3YuiP8Vk-lRnFgwEWfcsbxT-ED7A,8849
+porran/transformations.py,sha256=hkhB3rOiSqODgK7m0MIls-B6Y4XnIB2CUxlLYIJpeCw,7163
+porran/utils.py,sha256=BKmj3IeT8AtH69RRozBWmkIXsWgWPJ1zGxdrfTyc9MU,3503
+porran-0.0.7.dist-info/LICENSE,sha256=-Q4bQZR1TaOLVeNkeDua-RksK4z_8FUboxOzwBiiQMA,1090
+porran-0.0.7.dist-info/METADATA,sha256=gbBXzVeXx78H-3VfK6L56mQ3BqpoyuVgyTyZZLzkpcI,1807
+porran-0.0.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+porran-0.0.7.dist-info/top_level.txt,sha256=CUbmHRgBWEQ1X4pliOoW07hGMDECtBtXRxC_8BmFT6w,7
+porran-0.0.7.dist-info/RECORD,,
