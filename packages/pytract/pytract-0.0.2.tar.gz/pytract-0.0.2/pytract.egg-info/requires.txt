@@ -1,0 +1,4 @@
+beartype
+eth-brownie
+jinja2
+pydantic
