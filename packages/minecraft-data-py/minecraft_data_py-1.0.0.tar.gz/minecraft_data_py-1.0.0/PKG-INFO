@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: minecraft_data_py
+Version: 1.0.0
+Summary: A Python package to access Minecraft data
+Home-page: UNKNOWN
+Author: ProfessorQu
+License: UNKNOWN
+Keywords: minecraft,data
+Platform: UNKNOWN
+License-File: LICENSE
+
+A Python package to access Minecraft data from the PrismarineJs/minecraft-data repository
+
