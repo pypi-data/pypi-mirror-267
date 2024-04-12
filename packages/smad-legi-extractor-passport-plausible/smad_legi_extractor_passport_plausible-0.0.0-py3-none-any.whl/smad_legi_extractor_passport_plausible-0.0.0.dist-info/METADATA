@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: smad-legi-extractor-passport-plausible
+Version: 0.0.0
+Summary: tbd
+Author: KarelZe
+License: tbd
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
