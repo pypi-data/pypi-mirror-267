@@ -1,0 +1,2 @@
+[console_scripts]
+click-app-template-demo-auto = click_app_template_demo_auto.cli:cli
