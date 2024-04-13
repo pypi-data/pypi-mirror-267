@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+coreai_sdk.egg-info/PKG-INFO
+coreai_sdk.egg-info/SOURCES.txt
+coreai_sdk.egg-info/dependency_links.txt
+coreai_sdk.egg-info/requires.txt
+coreai_sdk.egg-info/top_level.txt
