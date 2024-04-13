@@ -1,0 +1,6 @@
+setup.py
+QuartzFramework.egg-info/PKG-INFO
+QuartzFramework.egg-info/SOURCES.txt
+QuartzFramework.egg-info/dependency_links.txt
+QuartzFramework.egg-info/entry_points.txt
+QuartzFramework.egg-info/top_level.txt
