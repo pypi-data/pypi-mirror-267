@@ -1,0 +1,5 @@
+[console_scripts]
+analyze=chronos_ai:analyze
+chronos_ai=chronos_ai:main
+scan=chronos_ai:scan
+
