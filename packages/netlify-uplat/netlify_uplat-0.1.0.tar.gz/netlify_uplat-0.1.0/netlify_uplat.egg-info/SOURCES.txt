@@ -1,0 +1,13 @@
+setup.py
+netlify_py/__init__.py
+netlify_py/netlify_py.py
+netlify_py/apis/__init__.py
+netlify_py/apis/api_base.py
+netlify_py/apis/deploy.py
+netlify_py/apis/exceptions.py
+netlify_py/apis/sites.py
+netlify_uplat.egg-info/PKG-INFO
+netlify_uplat.egg-info/SOURCES.txt
+netlify_uplat.egg-info/dependency_links.txt
+netlify_uplat.egg-info/requires.txt
+netlify_uplat.egg-info/top_level.txt

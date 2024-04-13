@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: netlify_uplat
+Version: 0.1.0
+Summary: A python wrapper for creating, managing and deploying sites to Netlify using the Netlify APIs.
+Home-page: https://github.com/Rawknee-69/mmap_update.git
+Author: Rawknee.69
+Author-email: rawknee.6069@gmail.com
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
