@@ -1,0 +1,3 @@
+[console_scripts]
+ec-portal-gun=ec_portal_gun.main:app
+
