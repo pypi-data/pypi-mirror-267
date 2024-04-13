@@ -1,0 +1,9 @@
+crcany-0.2.0.dist-info/RECORD,,
+crcany-0.2.0.dist-info/LICENSE,sha256=-5sTnIJLJfO_2NCSrr9z1xg2dRmpMcirpgxoTIiJW5Y,1065
+crcany-0.2.0.dist-info/WHEEL,sha256=KYtn_mzb_QwZSHwPlosUO3fDl70znfUFngLlrLVHeBY,111
+crcany-0.2.0.dist-info/top_level.txt,sha256=hOesQYIQUlZhGVIEgkgg9Actmlj34Nv5gzcovPMgU2Y,7
+crcany-0.2.0.dist-info/METADATA,sha256=7IkapiET9VJSV3Zd3TQ6IPecCrFP16aYe6-w7tqI8Zo,1411
+crcany/crcany.pyx,sha256=dtQJfX2ZgXAWubobymc0Z0ZJsrfLBQlQylSE4NqEx5E,2503
+crcany/models.py,sha256=zrcrnwL7SBPFRBsGoOGuRmZRQuYle9ZvApVNQ8FyrX8,17322
+crcany/__init__.py,sha256=Exmb88ruYTT1ijptK_xGoEUcz1KqA2LSVKAnRNT7_pg,21
+crcany/crcany.cpython-312-darwin.so,sha256=Nqc7C9-LWfzuBcVtmzW6bsw-ME2mIpkEkFbCjmaEltk,105776
