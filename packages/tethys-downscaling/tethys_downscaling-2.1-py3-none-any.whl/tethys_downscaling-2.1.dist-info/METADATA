@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: tethys-downscaling
+Version: 2.1
+Summary: Spatial and Temporal Downscaling of Global Water Demands
+Home-page: https://github.com/JGCRI/tethys
+Author: Isaac Thompson, Chris Vernon
+License: BSD-2-Clause
+Requires-Python: >=3.9, <4
+License-File: LICENSE
+Requires-Dist: PyYAML >=6.0
+Requires-Dist: gcamreader >=1.2.5
+Requires-Dist: numpy >=1.22
+Requires-Dist: pandas >=1.2.4
+Requires-Dist: netCDF4 >=1.6
+Requires-Dist: dask[complete] >=2022.12.1
+Requires-Dist: dask-geopandas >=0.3.1
+Requires-Dist: xarray >=2022.09.0
+Requires-Dist: rioxarray >=0.12.4
+Requires-Dist: tqdm >=4.66.2
+Requires-Dist: matplotlib >=3.8.3
+Requires-Dist: bokeh !=3.0.*,>=2.4.2
+Requires-Dist: geopandas >=0.14.3
+Requires-Dist: hvplot >=0.9.2
+Provides-Extra: dev
+Requires-Dist: build ~=0.5.1 ; extra == 'dev'
+Requires-Dist: nbsphinx ~=0.8.6 ; extra == 'dev'
+Requires-Dist: setuptools ~=57.0.0 ; extra == 'dev'
+Requires-Dist: sphinx ~=4.0.2 ; extra == 'dev'
+Requires-Dist: sphinx-panels ~=0.6.0 ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ~=0.5.2 ; extra == 'dev'
+Requires-Dist: sphinx-mathjax-offline ~=0.0.1 ; extra == 'dev'
+Requires-Dist: twine >=3.4.1 ; extra == 'dev'
+Requires-Dist: click-default-group >=1.2.4 ; extra == 'dev'
+
