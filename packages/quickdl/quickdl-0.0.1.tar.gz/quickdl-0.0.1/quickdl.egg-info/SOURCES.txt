@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+quickdl/__init__.py
+quickdl.egg-info/PKG-INFO
+quickdl.egg-info/SOURCES.txt
+quickdl.egg-info/dependency_links.txt
+quickdl.egg-info/top_level.txt
