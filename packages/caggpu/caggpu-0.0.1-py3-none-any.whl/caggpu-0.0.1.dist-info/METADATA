@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: caggpu
+Version: 0.0.1
+Summary: A GPU utility package for Coargus services.
+Author-email: "minkyu.choi" <minkyu.choi07@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Coargus
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: homepage, https://github.com/Coargus/utility-pkg-gpu/
+Project-URL: documentation, https://github.com/Coargus/utility-pkg-gpu/docs
+Project-URL: repository, https://github.com/Coargus/utility-pkg-gpu/
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pynvml
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest >=6.0 ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# Python-Project-Template
+
+This is a template repository. Please initialize your python project using this template.
+
+1. Make sure you have a right python version installed locally and change the version of python from the files below
+   - `.github/workflows/ruff.yml`
+   - `pyproject.toml`
+
+2. `project_name` is your project package name including src.
+
+## Installing and Using the Package
+
+You can install the package locally from the top-level directory:
+```python
+python -m pip install --upgrade build
+python -m build
+python -m pip install .
+```
+
+Distribute
+If you want others to install your package via pip directly, you can upload it to PyPI. This requires an account on PyPI and then you can upload using Twine:
+```
+python -m pip install --upgrade twine
+twine upload dist/*
+```
