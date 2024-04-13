@@ -1,0 +1,2 @@
+[console_scripts]
+pynovnc = pynovnc.pynovnc:main
