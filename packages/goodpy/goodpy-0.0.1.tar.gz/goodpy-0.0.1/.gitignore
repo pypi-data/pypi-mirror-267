@@ -1,0 +1,3 @@
+dists/*
+.pickle*
+__pychache__/*
