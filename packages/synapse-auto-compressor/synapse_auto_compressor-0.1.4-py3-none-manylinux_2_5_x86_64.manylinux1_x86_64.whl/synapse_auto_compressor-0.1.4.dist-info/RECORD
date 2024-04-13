@@ -1,0 +1,6 @@
+synapse_auto_compressor-0.1.4.dist-info/METADATA,sha256=r0mv-3_mfQ1jajQ6BsOZyY01MdqC3AtzTCla_J63HyU,595
+synapse_auto_compressor-0.1.4.dist-info/WHEEL,sha256=awO26qRe_hy3FKlLUex5tTfq0SXNJJS6Pe7ytFXvS-o,122
+synapse_auto_compressor/__init__.py,sha256=sm4JDuS2Oy-p1ynWo7WE7is1CyAV0trjlWQgUhriqBw,153
+synapse_auto_compressor/ffi.py,sha256=l_i047dsYP8cOaqoz7oL9iajRvokRLdvFCPAGLcEz-U,118
+synapse_auto_compressor/synapse_auto_compressor.so,sha256=zqstEl_U1zuSN4VMrV6d5PgaCDPpqzegipf-Muq_JHI,15560
+synapse_auto_compressor-0.1.4.dist-info/RECORD,,
