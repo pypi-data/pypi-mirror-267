@@ -1,0 +1,9 @@
+README.md
+setup.py
+CropwiseWorker/__init__.py
+CropwiseWorker/cropwiseworker.py
+CropwiseWorker.egg-info/PKG-INFO
+CropwiseWorker.egg-info/SOURCES.txt
+CropwiseWorker.egg-info/dependency_links.txt
+CropwiseWorker.egg-info/requires.txt
+CropwiseWorker.egg-info/top_level.txt
