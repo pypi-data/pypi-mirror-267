@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+statiocrate.egg-info/PKG-INFO
+statiocrate.egg-info/SOURCES.txt
+statiocrate.egg-info/dependency_links.txt
+statiocrate.egg-info/top_level.txt
