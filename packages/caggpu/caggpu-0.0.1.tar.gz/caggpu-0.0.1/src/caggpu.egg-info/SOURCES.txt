@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/caggpu/__init__.py
+src/caggpu/nvidia_cuda.py
+src/caggpu.egg-info/PKG-INFO
+src/caggpu.egg-info/SOURCES.txt
+src/caggpu.egg-info/dependency_links.txt
+src/caggpu.egg-info/requires.txt
+src/caggpu.egg-info/top_level.txt
+tests/test_module_1.py

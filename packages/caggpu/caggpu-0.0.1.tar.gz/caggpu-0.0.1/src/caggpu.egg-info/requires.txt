@@ -1,0 +1,10 @@
+pynvml
+
+[dev]
+black
+flake8
+mypy
+
+[test]
+pytest>=6.0
+pytest-cov
