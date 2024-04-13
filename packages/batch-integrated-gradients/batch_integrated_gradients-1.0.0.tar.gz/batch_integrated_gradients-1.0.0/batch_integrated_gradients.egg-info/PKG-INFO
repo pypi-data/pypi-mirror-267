@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: batch-integrated-gradients
+Version: 1.0.0
+Summary: Batch Integrated Gradients is a simple method for explaining temporal data predictions.
+Home-page: https://github.com/jamie-duell/batch_integrated_gradients
+Author: Jamie Duell
+Author-email: 853435@swansea.ac.uk
+
+The Batch Integrated Gradients method is provides a simple method for explaining temporal data predictions. This provides details on both the gradients and integrated gradients that can be visualised.
