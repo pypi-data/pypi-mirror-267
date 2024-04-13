@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+dash_image_gallery/DashImageGallery.py
+dash_image_gallery/__init__.py
+dash_image_gallery/_imports_.py
+dash_image_gallery/dash_image_gallery.min.js
+dash_image_gallery/dash_image_gallery.min.js.map
+dash_image_gallery/metadata.json
+dash_image_gallery/package-info.json
+dash_image_gallery.egg-info/PKG-INFO
+dash_image_gallery.egg-info/SOURCES.txt
+dash_image_gallery.egg-info/dependency_links.txt
+dash_image_gallery.egg-info/top_level.txt
+tests/test_usage.py
