@@ -1,0 +1,21 @@
+click
+more_itertools
+requests
+rich
+
+[:python_version < "3.11"]
+tomli>=1.1.0
+
+[dev]
+build
+check-manifest
+cogapp
+freezegun
+pytest
+responses
+ruff
+setuptools
+tox
+tox-gh-actions
+twine
+wheel
