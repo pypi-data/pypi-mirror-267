@@ -1,0 +1,8 @@
+setup.py
+AgentlyCmd/__init__.py
+AgentlyCmd/cmd.py
+AgentlyCmd.egg-info/PKG-INFO
+AgentlyCmd.egg-info/SOURCES.txt
+AgentlyCmd.egg-info/dependency_links.txt
+AgentlyCmd.egg-info/entry_points.txt
+AgentlyCmd.egg-info/top_level.txt
