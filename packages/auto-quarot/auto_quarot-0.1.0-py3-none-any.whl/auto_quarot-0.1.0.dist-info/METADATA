@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: auto_quarot
+Version: 0.1.0
+Summary: Auto convert transformers models to QuaRot
+Author: sgsdxzy
+License: Apache 2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: fast-hadamard-transform
+Requires-Dist: tqdm
+
+# AutoQuarot
+Auto convert transformers models to [QuaRot: Outlier-Free 4-Bit Inference in Rotated LLMs](https://arxiv.org/abs/2404.00456).
+
+Code based on [QuaRot](https://github.com/spcl/QuaRot/)
