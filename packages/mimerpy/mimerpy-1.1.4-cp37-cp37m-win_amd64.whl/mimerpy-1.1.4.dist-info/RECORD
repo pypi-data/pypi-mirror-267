@@ -1,0 +1,13 @@
+mimerapi.cp37-win_amd64.pyd,sha256=_Jr4zOpaZAR11kcTGH3Pp5Puzv5tGs10L_UUc2CONVw,23040
+mimerpy/__init__.py,sha256=QJb6MujvVGlkDOqeKoMUBXrak71_58UpRPQCgioU1nI,6779
+mimerpy/__main__.py,sha256=o_imVYK5eSiT_Ha157hmVtEcGqcu7zkieiPBcUrEgSQ,3398
+mimerpy/connectionPy.py,sha256=zBeLNk6U7K17S11o7Q9FjjOccQ-OzQ99FxsWaencc_g,8966
+mimerpy/cursorPy.py,sha256=qVBzjaW0Fsu6clj8vRJKeqc7EvgyUEgMTaZBm4qG5fI,33334
+mimerpy/mimPyExceptionHandler.py,sha256=XA7xGITVBcoW1W6h8DWoDyQw2DJJFUNE4OB0MHPoqHE,3729
+mimerpy/mimPyExceptions.py,sha256=8QTZGKfdKoYUJTpf0FF6rW4czmg6eedwe6_U-jzuJpQ,3865
+mimerpy/pool.py,sha256=ISWv2qPK5z2j2vt3xb0GGhAkdt8nxIh6lEdA7r7aaSw,12179
+mimerpy-1.1.4.dist-info/LICENSE.txt,sha256=gIFfYfTZBEIxn-wZUKHc6q2clCisfHlg1UM3gQwUnrw,1091
+mimerpy-1.1.4.dist-info/METADATA,sha256=l9kbElUWkmbh8npdtxnMAGMDkoI2xvWeYij1dGVQqfk,2311
+mimerpy-1.1.4.dist-info/WHEEL,sha256=slqBGdqRnxanDn00BSYHhryEsWH_8CUurgRUvoMtK_Y,101
+mimerpy-1.1.4.dist-info/top_level.txt,sha256=TQcRqC8tNtDjPmfZyGfGQbFKeJlYHPBbssViY6Fb5Dc,17
+mimerpy-1.1.4.dist-info/RECORD,,
