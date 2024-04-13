@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+areacetra.egg-info/PKG-INFO
+areacetra.egg-info/SOURCES.txt
+areacetra.egg-info/dependency_links.txt
+areacetra.egg-info/requires.txt
+areacetra.egg-info/top_level.txt
+src/__init__.py
+src/loger.py
+src/main.py
