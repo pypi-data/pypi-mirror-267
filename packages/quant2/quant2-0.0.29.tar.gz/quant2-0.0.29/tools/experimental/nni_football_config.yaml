@@ -1,0 +1,29 @@
+# cd tools/experimental
+# nnictl create --config nni_football_config.yaml --port 8080
+experimentName: FootBall
+
+searchSpace:
+  pa:
+    _type: choice
+    _value: [16, 24, 32]
+  pb:
+    _type: choice
+    _value: ["a", "b"]
+
+trialCommand: python nni_football.py
+trialCodeDirectory: .
+trialConcurrency: 2
+trialGpuNumber: 1
+maxExperimentDuration: 4h
+maxTrialNumber: 300
+
+# Tuners: 'TPE', 'Evolution', 'Anneal'
+tuner:
+  name: TPE
+  classArgs:
+    optimize_mode: maximize
+
+trainingService:
+  platform: local
+  useActiveGpu: True
+  maxTrialNumberPerGpu: 2
