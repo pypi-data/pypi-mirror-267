@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: turkish-profile-generator
+Version: 0.1.6
+Summary: Generate random Turkish user profiles
+Home-page: https://github.com/bossturk/turkish-profile-generator/
+Author: Mustafa Buyruk
+Author-email: bossturk@hotmail.com
+License: MIT
+Keywords: turkish profile generator
