@@ -1,0 +1,6 @@
+setup.py
+algoconnectorhelper.egg-info/PKG-INFO
+algoconnectorhelper.egg-info/SOURCES.txt
+algoconnectorhelper.egg-info/dependency_links.txt
+algoconnectorhelper.egg-info/requires.txt
+algoconnectorhelper.egg-info/top_level.txt
