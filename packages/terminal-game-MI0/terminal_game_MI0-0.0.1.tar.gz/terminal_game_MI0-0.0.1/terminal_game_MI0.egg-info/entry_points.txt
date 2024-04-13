@@ -1,0 +1,2 @@
+[console_scripts]
+tgmi = terminal_game_MI0.Terminal_game:commence

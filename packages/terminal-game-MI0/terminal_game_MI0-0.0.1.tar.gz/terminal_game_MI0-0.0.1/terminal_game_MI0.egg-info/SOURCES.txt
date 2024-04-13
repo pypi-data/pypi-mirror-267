@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/Terminal_game.py
+src/__init__.py
+terminal_game_MI0.egg-info/PKG-INFO
+terminal_game_MI0.egg-info/SOURCES.txt
+terminal_game_MI0.egg-info/dependency_links.txt
+terminal_game_MI0.egg-info/entry_points.txt
+terminal_game_MI0.egg-info/top_level.txt
