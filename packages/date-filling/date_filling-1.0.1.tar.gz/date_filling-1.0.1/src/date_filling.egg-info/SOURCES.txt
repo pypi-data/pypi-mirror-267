@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/date_filling/__init__.py
+src/date_filling/filling.py
+src/date_filling.egg-info/PKG-INFO
+src/date_filling.egg-info/SOURCES.txt
+src/date_filling.egg-info/dependency_links.txt
+src/date_filling.egg-info/requires.txt
+src/date_filling.egg-info/top_level.txt
