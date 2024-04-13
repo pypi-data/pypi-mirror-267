@@ -1,0 +1,2 @@
+[console_scripts]
+fetch_stickers = giphy_sticker_fetcher:main

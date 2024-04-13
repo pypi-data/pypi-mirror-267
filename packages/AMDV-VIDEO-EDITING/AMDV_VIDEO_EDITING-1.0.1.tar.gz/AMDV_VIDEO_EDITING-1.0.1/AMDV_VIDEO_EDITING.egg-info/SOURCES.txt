@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+AMDV_VIDEO_EDITING/__init__.py
+AMDV_VIDEO_EDITING/sticker.py
+AMDV_VIDEO_EDITING.egg-info/PKG-INFO
+AMDV_VIDEO_EDITING.egg-info/SOURCES.txt
+AMDV_VIDEO_EDITING.egg-info/dependency_links.txt
+AMDV_VIDEO_EDITING.egg-info/entry_points.txt
+AMDV_VIDEO_EDITING.egg-info/requires.txt
+AMDV_VIDEO_EDITING.egg-info/top_level.txt

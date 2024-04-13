@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: AMDV_VIDEO_EDITING
+Version: 1.0.1
+Summary: AMDV_VIDEO_EDITING is a Python package for video editing tasks, such as trimming, splitting, merging, and applying various effects to videos. This package aims to provide a simple and efficient interface for performing common video editing operations using the AMDV (Advanced Multimedia Data Visualization) library.
+Home-page: https://github.com/AIFATS/AMDV_VIDEO_EDITHING.git
+Author: AMDV
+Author-email: info@aifats.com
+Keywords: python,video,stream,video stream,camera stream,sockets
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+Provides-Extra: full
+Requires-Dist: requests; extra == "full"
+Requires-Dist: python-dotenv; extra == "full"
+
+
+# AMDV_VIDEO_EDITING
+
+AMDV_VIDEO_EDITING is a Python package for video editing tasks, such as trimming, splitting, merging, and applying various effects to videos. This package aims to provide a simple and efficient interface for performing common video editing operations using the AMDV (Advanced Multimedia Data Visualization) library.
+
+## Installation
+
+You can install AMDV_VIDEO_EDITING using pip:
+
+```bash
+pip install AMDV_VIDEO_EDITING
