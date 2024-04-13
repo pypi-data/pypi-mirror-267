@@ -1,0 +1,28 @@
+{
+  "files": {
+    "file.bin": {
+      "file": {
+        "name": null,
+        "rename": false,
+        "request": {
+          "data": "",
+          "headers": {
+          }
+        },
+        "size": 0,
+        "url": null
+      },
+      "info": {
+        "name": null,
+        "request": {
+          "data": "",
+          "headers": {
+          }
+        },
+        "url": null,
+        "version": 1
+      }
+    }
+  },
+  "format": 1
+}
