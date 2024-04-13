@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rack
+Version: 0.0.2
+Summary: Persistent (LMDB-backed) data structures mimicking as Python native containers
+Author: Jérôme Carretero
+Project-URL: Homepage, https://gitlab.com/cJ/rack
+Project-URL: Download, https://pypi.python.org/pypi/rack
+Keywords: persistent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+#########################
+Rack, another shelve-like
+#########################
+
+
+Rack contains `PersistentSet` and `PersistentDict`
+classes that can be used to store data using set/dict semantics,
+while
