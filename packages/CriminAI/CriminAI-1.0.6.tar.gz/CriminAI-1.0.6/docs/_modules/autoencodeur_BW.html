@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>autoencodeur_BW &#8212; Documentation CriminAI 0.1.4</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <script src="../_static/documentation_options.js?v=750eb482"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=d99ca74e"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Index général"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Index des modules Python"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Documentation CriminAI 0.1.4</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Code du module</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">autoencodeur_BW</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Code source de autoencodeur_BW</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">torch</span>
+<span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
+<span class="kn">import</span> <span class="nn">torch.optim</span> <span class="k">as</span> <span class="nn">optim</span>
+<span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">DataLoader</span>
+<span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">fetch_olivetti_faces</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Charger la base de données Olivetti Faces</span>
+<span class="n">put_data_here</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">fetch_olivetti_faces</span><span class="p">(</span><span class="n">data_home</span><span class="o">=</span><span class="n">put_data_here</span><span class="p">)</span>
+<span class="n">images</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">images</span>
+<span class="n">images</span> <span class="o">=</span> <span class="n">images</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">images</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>  <span class="c1"># Adapter les images à la forme (channels, height, width)</span>
+
+<span class="c1"># Convertir les données en tenseurs PyTorch</span>
+<span class="n">tensor_x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">images</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+
+<span class="c1"># Définir un DataLoader pour la gestion des données</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">64</span>
+<span class="n">data_loader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">tensor_x</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<div class="viewcode-block" id="VAE">
+<a class="viewcode-back" href="../autoencodeur.html#autoencodeur_BW.VAE">[docs]</a>
+<span class="k">class</span> <span class="nc">VAE</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Implémente un Variational Autoencoder (VAE) pour la génération d&#39;images.</span>
+
+<span class="sd">    Le VAE est composé d&#39;un encodeur et d&#39;un décodeur, qui apprennent à</span>
+<span class="sd">    représenter et à générer des données, respectivement.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        latent_dim (int): La dimension de l&#39;espace latent.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        encoder (nn.Sequential): Le réseau de neurones de l&#39;encodeur.</span>
+<span class="sd">        decoder (nn.Sequential): Le réseau de neurones du décodeur.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">latent_dim</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialise une instance de VAE avec la dimension de l&#39;espace latent spécifiée.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            latent_dim (int): La dimension de l&#39;espace latent.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">VAE</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">encoder</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Flatten</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">128</span> <span class="o">*</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">256</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="n">latent_dim</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">decoder</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">latent_dim</span><span class="p">,</span> <span class="mi">256</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="mi">128</span> <span class="o">*</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">8</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">Unflatten</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">)),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ConvTranspose2d</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ConvTranspose2d</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="o">.</span><span class="n">ConvTranspose2d</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="VAE.reparameterize">
+<a class="viewcode-back" href="../autoencodeur.html#autoencodeur_BW.VAE.reparameterize">[docs]</a>
+    <span class="k">def</span> <span class="nf">reparameterize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">log_var</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Effectue la reparamétrisation nécessaire pour échantillonner dans l&#39;espace latent.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            mu (torch.Tensor): La moyenne de la distribution latente.</span>
+<span class="sd">            log_var (torch.Tensor): Le logarithme de la variance de la distribution latente.</span>
+<span class="sd">            variance_scale : La modulation de la variance, multiplie log_var par une valeur supérieure à 1 augmente la variance</span>
+<span class="sd">        Returns:</span>
+<span class="sd">            torch.Tensor: L&#39;échantillon dans l&#39;espace latent.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">std</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">log_var</span><span class="p">)</span>
+        <span class="n">eps</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn_like</span><span class="p">(</span><span class="n">std</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">mu</span> <span class="o">+</span> <span class="n">eps</span> <span class="o">*</span> <span class="n">std</span></div>
+
+
+<div class="viewcode-block" id="VAE.forward">
+<a class="viewcode-back" href="../autoencodeur.html#autoencodeur_BW.VAE.forward">[docs]</a>
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Passe l&#39;entrée à travers l&#39;encodeur et le décodeur pour la reconstruction.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            x (torch.Tensor): L&#39;image d&#39;entrée.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            torch.Tensor: L&#39;image reconstruite, la moyenne de la distribution latente</span>
+<span class="sd">                et le logarithme de la variance de la distribution latente.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">z_params</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">encoder</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">mu</span><span class="p">,</span> <span class="n">log_var</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">chunk</span><span class="p">(</span><span class="n">z_params</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">reparameterize</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">log_var</span><span class="p">)</span>
+        <span class="n">x_recon</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">decoder</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">x_recon</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">log_var</span></div>
+</div>
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">put_data_here</span><span class="p">)</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot; # Définir les dimensions</span>
+<span class="sd">    latent_dim = 64</span>
+
+<span class="sd">    # Initialiser le modèle</span>
+<span class="sd">    model = VAE(latent_dim)</span>
+
+<span class="sd">    # Définir la fonction de perte et l&#39;optimiseur</span>
+<span class="sd">    criterion = nn.BCEWithLogitsLoss(reduction=&#39;sum&#39;)</span>
+<span class="sd">    optimizer = optim.Adam(model.parameters(), lr=1e-3)</span>
+
+<span class="sd">    # Entraînement du modèle</span>
+<span class="sd">    num_epochs = 200</span>
+<span class="sd">    for epoch in range(num_epochs):</span>
+<span class="sd">        total_loss = 0</span>
+<span class="sd">        for batch in data_loader:</span>
+<span class="sd">            optimizer.zero_grad()</span>
+<span class="sd">            recon_batch, mu, log_var = model(batch)</span>
+<span class="sd">            reconstruction_loss = criterion(recon_batch, batch)</span>
+<span class="sd">            kl_divergence = -0.5 * torch.sum(1 + log_var - mu.pow(2) - log_var.exp())</span>
+<span class="sd">            loss = 50*reconstruction_loss + kl_divergence #pondération à tester</span>
+<span class="sd">            loss.backward()</span>
+<span class="sd">            optimizer.step()</span>
+<span class="sd">            total_loss += loss.item()</span>
+<span class="sd">        print(f&quot;Epoch [{epoch+1}/{num_epochs}], Loss: {total_loss/len(data_loader.dataset):.4f}&quot;)</span>
+
+<span class="sd">    # Sauvegarder le modèle</span>
+<span class="sd">    torch.save(model.state_dict(), &#39;vae_model.pth&#39;)</span>
+
+
+<span class="sd">    # Charger le modèle sauvegardé</span>
+<span class="sd">    model = VAE(latent_dim)</span>
+<span class="sd">    model.load_state_dict(torch.load(&#39;vae_model.pth&#39;))</span>
+<span class="sd">    model.eval()  # Mettre le modèle en mode évaluation</span>
+
+<span class="sd">    # Prendre un batch d&#39;images d&#39;entrée</span>
+<span class="sd">    with torch.no_grad():</span>
+<span class="sd">        input_batch = next(iter(data_loader))</span>
+
+<span class="sd">    # Reconstruire les images à partir du modèle</span>
+<span class="sd">    recon_batch, _, _ = model(input_batch)</span>
+
+<span class="sd">    # Convertir les tenseurs PyTorch en numpy arrays</span>
+<span class="sd">    input_batch = input_batch.numpy()</span>
+<span class="sd">    recon_batch = recon_batch.detach().numpy()</span>
+
+<span class="sd">    # Afficher les images d&#39;entrée et les images reconstruites</span>
+<span class="sd">    n = 10  # Nombre d&#39;images à afficher</span>
+<span class="sd">    plt.figure(figsize=(20, 4))</span>
+<span class="sd">    for i in range(n):</span>
+<span class="sd">        # Afficher les images d&#39;entrée</span>
+<span class="sd">        ax = plt.subplot(2, n, i + 1)</span>
+<span class="sd">        plt.imshow(input_batch[i].reshape(64, 64), cmap=&#39;gray&#39;)</span>
+<span class="sd">        plt.title(&#39;Image Originale&#39;)</span>
+<span class="sd">        plt.axis(&#39;off&#39;)</span>
+<span class="sd">        # Afficher les images reconstruites</span>
+<span class="sd">        ax = plt.subplot(2, n, i + 1 + n)</span>
+<span class="sd">        plt.imshow(recon_batch[i].reshape(64, 64), cmap=&#39;gray&#39;)</span>
+<span class="sd">        plt.title(&#39;Image Reconstruite&#39;)</span>
+<span class="sd">        plt.axis(&#39;off&#39;)</span>
+<span class="sd">    plt.show()</span>
+<span class="sd"> &quot;&quot;&quot;</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Index général"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Index des modules Python"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Documentation CriminAI 0.1.4</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Code du module</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">autoencodeur_BW</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, ZOUARI Matis, SUTTER Clémence, PEREZ Lisa, ZHONG Zhihan.
+      Créé en utilisant <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

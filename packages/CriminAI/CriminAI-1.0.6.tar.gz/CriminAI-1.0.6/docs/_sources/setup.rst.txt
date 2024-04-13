@@ -1,0 +1,7 @@
+VAE
+===
+
+.. automodule:: autoencodeur
+   :members:
+   :undoc-members:
+   :show-inheritance:
