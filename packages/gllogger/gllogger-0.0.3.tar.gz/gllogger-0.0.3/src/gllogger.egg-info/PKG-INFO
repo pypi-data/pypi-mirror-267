@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: gllogger
+Version: 0.0.3
+Summary: gllogger
+Author-email: calm51 <calm51@protonmail.com>
+Project-URL: Homepage, https://github.com/calm51/gllogger
+Project-URL: Issues, https://github.com/calm51/gllogger/issues
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+```python3
+from gllogger import gL
+
+# First, call it in your main.py file.
+gL.getLogger(__name__)
+gL.setGlobalLevel(logging.DEBUG)
+
+# You can log into the console.
+gL.init("console")
+
+# You can pass logs into a function.
+def gL_function(text):
+    print(text)
+gL.setFunction(gL_function)
+gL.init("function")
+
+# You can write logs to files.
+import os
+gL.setLogDir(os.path.join(os.getcwd(), "log", ))
+gL.init("logging")
+
+# Then, use the following function anywhere to log.
+gL.debugs("a", 1, True, )
+gL.infos()
+gL.warns()
+gL.errors()
+
+```
