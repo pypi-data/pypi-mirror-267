@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "turkish-profile-generator"
+version = "0.1.0"
+description = "A Python package for generating random Turkish user profiles."
+authors = [{name = "Mustafa Buyruk", email = "bossturk@hotmail.com"}]
+license = "MIT"
+readme = "README.md"

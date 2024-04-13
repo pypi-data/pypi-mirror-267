@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: turkish-profile-generator
+Version: 0.1.0
+Summary: A Python package for generating random Turkish user profiles.
+Home-page: https://github.com/bossturk/turkish-profile-generator
+Author: Your Name
+Author-email: bossturk@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Turkish Profile Generator
+
+Turkish Profile Generator is a Python package for generating random Turkish user profiles.
+
+## Installation
+
+You can install Turkish Profile Generator using pip:
+
+```bash
+pip install turkish_profile_generator
+
+
+from turkish_profile_generator import UserProfileGenerator
+
+# Create a UserProfileGenerator instance
+generator = UserProfileGenerator(min_age=18, max_age=65)
+
+# Generate a random user profile
+profile = generator.generate_profile()
+
+print(profile)
+
