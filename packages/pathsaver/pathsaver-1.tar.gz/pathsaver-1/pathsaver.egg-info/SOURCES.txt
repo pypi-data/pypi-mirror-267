@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pathsaver.py
+setup.py
+pathsaver.egg-info/PKG-INFO
+pathsaver.egg-info/SOURCES.txt
+pathsaver.egg-info/dependency_links.txt
+pathsaver.egg-info/entry_points.txt
+pathsaver.egg-info/requires.txt
+pathsaver.egg-info/top_level.txt

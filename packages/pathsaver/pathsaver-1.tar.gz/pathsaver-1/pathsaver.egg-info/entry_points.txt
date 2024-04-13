@@ -1,0 +1,2 @@
+[console_scripts]
+pathsaver = pathsaver:main
