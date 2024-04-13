@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+THREEDYARD.egg-info/PKG-INFO
+THREEDYARD.egg-info/SOURCES.txt
+THREEDYARD.egg-info/dependency_links.txt
+THREEDYARD.egg-info/requires.txt
+THREEDYARD.egg-info/top_level.txt
