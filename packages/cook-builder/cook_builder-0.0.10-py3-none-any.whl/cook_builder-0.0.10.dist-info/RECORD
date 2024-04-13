@@ -1,0 +1,14 @@
+cook/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cook/cli.py,sha256=rqB8D6Hb8iQugjV4ptspDuE1Gjac6l6YPKntE52GZQY,2188
+cook/configuration.py,sha256=nIbFe3OIwqBI6RUrlrQ1xT__h7chIgjWDITQchhx-VU,5723
+cook/cook.py,sha256=2og4RY38XUAtkP5XQfa2NDnhIjON6F7A5Bu5J9iLiyw,2648
+cook/executors.py,sha256=6PepdWbLp3byuy97qYiBnufoGMBaLLWkGHjbAJXFEYU,1495
+cook/logger.py,sha256=yJg66Y2lDiYp5AxZm1fyK9eVbtTi6sWe6YKSxDVyeSw,924
+cook/recipe.py,sha256=XhUw46mKY_8dxyPKU_kSP71Q-bXj52QMGlsS9VbpFxo,1388
+cook/rsync.py,sha256=TwVzcYuOg6nggquhB7wD_TIZwdELU_2Glf1RyjuXzyA,928
+cook_builder-0.0.10.dist-info/LICENSE,sha256=0UUuDFQWmwQWxyFKAOOpIJY0PYdk6_CsTLPvUl-wZUU,1072
+cook_builder-0.0.10.dist-info/METADATA,sha256=JvCqXfL1tzNjJqzh0QteR6gEtn91VDic0YpX-YNI33s,2984
+cook_builder-0.0.10.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cook_builder-0.0.10.dist-info/entry_points.txt,sha256=fhpuEi5Cdd9RpYJYwE0L43tEEkJCuogl9gSsgi5Tqt8,39
+cook_builder-0.0.10.dist-info/top_level.txt,sha256=ewNQIn2oRSYV98vAsUnw88u2Q8XHKhAz70ed2PEdR2c,5
+cook_builder-0.0.10.dist-info/RECORD,,
