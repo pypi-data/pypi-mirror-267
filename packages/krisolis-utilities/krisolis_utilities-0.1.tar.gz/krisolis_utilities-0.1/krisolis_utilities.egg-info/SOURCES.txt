@@ -1,0 +1,9 @@
+README.md
+setup.py
+krisolis_utilities/__init__.py
+krisolis_utilities/utils.py
+krisolis_utilities.egg-info/PKG-INFO
+krisolis_utilities.egg-info/SOURCES.txt
+krisolis_utilities.egg-info/dependency_links.txt
+krisolis_utilities.egg-info/requires.txt
+krisolis_utilities.egg-info/top_level.txt
