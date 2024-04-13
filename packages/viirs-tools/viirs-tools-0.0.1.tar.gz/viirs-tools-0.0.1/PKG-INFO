@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: viirs-tools
+Version: 0.0.1
+Summary: Python library for processing VIIRS data
+Author: Andrey Shuliak
+Requires-Dist: xarray
+Requires-Dist: numpy
+Provides-Extra: assimilator
+Requires-Dist: netcdf4; extra == "assimilator"

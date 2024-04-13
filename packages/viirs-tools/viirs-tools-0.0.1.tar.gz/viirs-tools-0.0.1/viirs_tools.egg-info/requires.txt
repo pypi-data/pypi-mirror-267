@@ -1,0 +1,5 @@
+xarray
+numpy
+
+[assimilator]
+netcdf4
