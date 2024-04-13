@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+Mensajes_Truqueli.egg-info/PKG-INFO
+Mensajes_Truqueli.egg-info/SOURCES.txt
+Mensajes_Truqueli.egg-info/dependency_links.txt
+Mensajes_Truqueli.egg-info/requires.txt
+Mensajes_Truqueli.egg-info/top_level.txt
+mensajes/__init__.py
+mensajes/despedida/__init__.py
+mensajes/despedida/despedida.py
+mensajes/hola/__init__.py
+mensajes/hola/saludos.py
+tests/__init__.py
+tests/test_hola.py
