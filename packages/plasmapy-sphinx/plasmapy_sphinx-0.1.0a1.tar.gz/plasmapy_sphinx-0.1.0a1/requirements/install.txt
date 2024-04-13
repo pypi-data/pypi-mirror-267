@@ -1,0 +1,8 @@
+# these are dependencies required to use the package
+# ought to mirror 'install_requires' under 'options' in setup.cfg
+-r build.txt
+docutils
+jinja2 != 3.1
+sphinx >= 4.4
+sphinx-gallery
+sphinx_rtd_theme >= 1.0.0
