@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: zero-init
+Version: 0.2
+Summary: PyTorch implementation of ZerO Initialization
+Home-page: https://github.com/stan-hua/ZerO-Initialization-PyTorch
+Author: Stanley Hua
+Project-URL: Source, https://github.com/stan-hua/ZerO-Initialization-PyTorch
+Keywords: pytorch implementation
+Requires-Dist: scipy>=0.8.0
+Requires-Dist: torch
