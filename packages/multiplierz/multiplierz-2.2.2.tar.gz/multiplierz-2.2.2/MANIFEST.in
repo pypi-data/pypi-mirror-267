@@ -1,0 +1,7 @@
+include COPYING
+include COPYING.LESSER
+include README
+recursive-include multiplierz *.dll *.pdb *.tlb *.xml *.bat *.config *.sqlite
+
+include multiplierz\COPYING
+include multiplierz\COPYING.LESSER

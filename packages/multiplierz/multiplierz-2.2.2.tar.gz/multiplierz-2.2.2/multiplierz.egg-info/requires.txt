@@ -1,0 +1,12 @@
+numpy
+matplotlib
+openpyxl
+xlrd
+xlwt
+requests
+beautifulsoup4
+pythonnet>=2.5.2
+
+[:platform_system == "Windows"]
+pywin32
+comtypes
