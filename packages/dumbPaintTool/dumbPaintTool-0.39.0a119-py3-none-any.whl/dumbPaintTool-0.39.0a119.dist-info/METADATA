@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: dumbPaintTool
+Version: 0.39.0a119
+Summary: ttkDesigner is a terminal user interface designer for pyTermTk applications
+Home-page: https://github.com/ceccopierangiolieugenio/pyTermTk
+Author: Eugenio Parodi
+Author-email: ceccopierangiolieugenio@googlemail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Terminals
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Terminals
+Classifier: Topic :: Text Editors :: Text Processing
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Graphics :: Editors
+Classifier: Topic :: Multimedia :: Graphics :: Editors :: Raster-Based
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyTermTk >=0.39.0a116
+Requires-Dist: pyperclip
+Requires-Dist: Pillow
+
+![Linux](https://img.shields.io/badge/-Linux-grey?logo=linux)
+![Usage](https://img.shields.io/badge/Usage-Terminal%20User%20Interface-yellow)
+![Python](https://img.shields.io/badge/Python-v3.9%5E-green?logo=python)
+![pyTermTk_version](https://img.shields.io/github/v/tag/ceccopierangiolieugenio/pyTermTk?label=version)
+[![Test Status](https://img.shields.io/github/actions/workflow/status/ceccopierangiolieugenio/pyTermTk/testing.yml?branch=main&label=tests)](https://github.com/ceccopierangiolieugenio/pyTermTk/actions?query=workflow%3Atesting)
+[![pypi_version](https://img.shields.io/pypi/v/ttkDesigner?label=pypi)](https://pypi.org/project/dumbPaintTool)
+[![pypi_version](https://img.shields.io/twitter/follow/Pier95886803?style=social&logo=twitter)](https://twitter.com/hashtag/pyTermTk?src=hashtag_click&f=live)
+
+
+[![dpt hero](https://github.com/ceccopierangiolieugenio/pyTermTk/assets/8876552/54d29d95-717d-404d-9112-efed866d4048)](https://pypi.org/project/tools/dumbPaintTool)
+
+
+## [the Dumb Paint Tool](https://github.com/ceccopierangiolieugenio/pyTermTk/tree/main/tools/dumbPaintTool)
+
+A Terminal ASCII Photoshop
+
+Try it live on [itch.io](https://ceccopierangiolieugenio.itch.io/dumb-paint-tool)
