@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "~~~project_name__snake~~~"
+version = "0.1.0"
+description = ""
+authors = ["___dev_id___"]
+license = "Proprietary"
+
+packages = [
+    {include = "___project_name__snake___"},
+]
+
+[tool.poetry.dependencies]
+python = "~3.11"
+modelw-preset-django = {extras = [
+    # :: IF api__celery
+    "celery",
+    # :: ENDIF
+    # :: IF api__channels
+    "channels",
+    # :: ENDIF
+    # :: IF api__wagtail
+    "wagtail",
+    # :: ENDIF
+    # :: IF api__wsgi
+    "gunicorn",
+    # :: ENDIF
+], version = ">=2024.4.0b1,<2024.5.0", allow-prereleases = true}
+drf-spectacular = {extras = ["sidecar"], version = "^0.26.2"}
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+isort = "*"
+ipython = "*"
+
+[tool.poetry.group.test.dependencies]
+psutil = "^5.9.8"
+pytest = "^8.1.1"
+pytest-bdd = "^7.0.1"
+pytest-django = "^4.8.0"
+pytest-html = "^4.1.1"
+pytest-playwright = "^0.4.4"
+node-edge = {version = "^0.1.0b6", allow-prereleases = true}
+
+[tool.isort]
+profile = "black"
+known_first_party = "___project_name__snake___"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "___project_name__snake___.django.settings"
+python_files = ["test_*.py", "*_test.py"]
+django_debug_mode = true
+addopts = ["--output", "bdd/report/results/media", "--screenshot", "on", "--video", "on", "--full-page-screenshot", "--cucumberjson=bdd/report/results/report.json", "--html=bdd/report/results/pytest.html"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
