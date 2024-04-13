@@ -1,0 +1,15 @@
+readme_patcher/__init__.py,sha256=qVhgrVyEU8jhQjtlWKoeaQAUhkXtlju0FJVgq13K_6c,924
+readme_patcher/badge.py,sha256=uTxNHv_rw8SSw3KMeG-rtjaWYrhXkqY-PZfONzS_Be4,2096
+readme_patcher/config.py,sha256=CV3DlSO7D7frj7DHvuT_OwBPsPnaPOVrVUaH7VYk3Cs,373
+readme_patcher/file.py,sha256=PkXmJo4CjSMX_5W0MWTUfEzFjlfj3ff2KICPHOYg1ts,2410
+readme_patcher/filters.py,sha256=mkI3bw5O7EX6iliMSCBBco2PAybUhUQFXdowTuV5SM0,1598
+readme_patcher/functions.py,sha256=ae4uKIaR9_MDY_JzFTEgoPg4zxFUEA5VaxA-EnSMNUU,1060
+readme_patcher/github.py,sha256=g_jKEEA6v36t--H7JYPdlGBZ4mG5IOzSk09CCPPqnqw,584
+readme_patcher/project.py,sha256=22kv1NWEASHTKQjr5ws4WdaI1uLuuiIncEPkcQ2s-cQ,2504
+readme_patcher/py_project.py,sha256=ZoXzNnUxmjJWFpUXNf5UNvWBS9JMEUY3-cQ3OjhUTBw,944
+readme_patcher/template.py,sha256=TutE3V96Gl4mIwAlEnlTtToDBBqbMd_JFFc4Ww22lkA,1190
+readme_patcher-0.7.0.dist-info/LICENSE,sha256=ejqFH_nPFaJO1iQ8-bQJcoUWk2DlhJmsmTlmcB9bb2s,1096
+readme_patcher-0.7.0.dist-info/METADATA,sha256=we-6zmMmk9UavVeqOpj97B_hz0KNAs5Eir64aG-0tA4,3750
+readme_patcher-0.7.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+readme_patcher-0.7.0.dist-info/entry_points.txt,sha256=T1YEeghpKfltmBgad6MXM_teZhpG6WKBW3lYSgii4oQ,54
+readme_patcher-0.7.0.dist-info/RECORD,,
