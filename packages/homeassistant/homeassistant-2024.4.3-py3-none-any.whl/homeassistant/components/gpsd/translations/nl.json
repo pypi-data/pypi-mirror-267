@@ -1,0 +1,30 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dienst is al geconfigureerd",
+            "cannot_connect": "Kan geen verbinding maken"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "port": "Poort"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "mode": {
+                "state_attributes": {
+                    "latitude": {
+                        "name": "Breedtegraad"
+                    },
+                    "longitude": {
+                        "name": "Lengtegraad"
+                    }
+                }
+            }
+        }
+    }
+}
