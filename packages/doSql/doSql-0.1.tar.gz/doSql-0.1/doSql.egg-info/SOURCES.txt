@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+doSql/__init__.py
+doSql/sql.py
+doSql.egg-info/PKG-INFO
+doSql.egg-info/SOURCES.txt
+doSql.egg-info/dependency_links.txt
+doSql.egg-info/top_level.txt
