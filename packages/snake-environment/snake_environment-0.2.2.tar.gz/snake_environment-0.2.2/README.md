@@ -1,0 +1,47 @@
+# Snake Environment
+
+The Snake Environment is a Python package designed for training machine learning models using reinforcement learning techniques. This environment mimics the OpenAI Gym interface, providing a familiar setup for those who are accustomed to using Gym for developing and testing AI models.
+
+## Features
+
+- **Game Environment**: Built using Pygame, this environment allows for on-screen rendering of the snake game, which is useful for visual feedback while training models.
+- **Compatibility with AI Training Workflows**: The `SnakeGame` class features a `step` function that returns a tuple of (done, reward, score, state), similar to environments found in OpenAI Gym.
+- **State Representation**: The state is represented as a numpy array with 18 dimensions, providing comprehensive information about the game environment at any given step.
+- **Utility Methods**: Includes `reset` and `state_dimensions` methods for resetting the game state and retrieving the dimensions of the state space, respectively.
+
+## Installation
+
+To install the Snake Environment, you can use pip:
+
+```bash
+pip install snake_environment
+```
+
+## Usage
+```python
+from snake_environment import SnakeGame
+
+# Initialize the environment
+env = SnakeGame(render=True)  # Set render=False if you do not need to visualize the training process
+
+# Start a new episode
+state = env.reset()
+
+# Loop until the episode is finished
+done = False
+while not done:
+    action = model.predict(state)  # Replace this with your model's prediction method
+    next_state, done, reward, score = env.step(action)
+    state = next_state
+
+# Get the dimensions of the state for input layer configuration or debugging
+state_dim = env.state_dimensions
+print("State dimensions:", state_dim)
+
+```
+
+## Contributions
+Contributions are welcome! If you'd like to improve the Snake Environment, please fork this repository and submit a pull request with your proposed changes.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
