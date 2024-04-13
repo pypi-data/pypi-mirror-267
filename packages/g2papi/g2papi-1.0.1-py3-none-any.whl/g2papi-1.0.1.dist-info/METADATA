@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: g2papi
+Version: 1.0.1
+Summary: A python client and CLI for easy access to G2P portal APIs
+Author: Jordan Safer
+Author-email: genomics2proteins@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pandas
+
+UNKNOWN
+
