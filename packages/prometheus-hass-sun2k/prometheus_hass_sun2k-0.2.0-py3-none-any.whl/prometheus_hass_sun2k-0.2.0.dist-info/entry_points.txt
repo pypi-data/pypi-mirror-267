@@ -1,0 +1,3 @@
+[console_scripts]
+prometheus-hass-sun2k=prometheus_hass_sun2k.cli:run_exporter
+
