@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: friendly-sequences
+Version: 1.0
+Summary: Friendly sequences made in Python with :love:
+Author-Email: zhukovgreen <iam+friendly-sequences@zhukovgreen.pro>
+Project-URL: Repository, https://github.com/zhukovgreen/friendly-sequences
+Requires-Python: >=3.10
+Requires-Dist: pytest>=7.3.1
+Requires-Dist: attrs>=23.2.0
+Description-Content-Type: text/markdown
+
+# Friendly Sequences
+
+Inspired by Scala Sequence class [1]. Good typing support.
+
+
+## Examples
+
+```python
+from friendly_sequences import Seq
+
+
+assert (
+    Seq((1, 2))
+    .zip(Seq((3, 4)))
+    .flat_map(lambda x: x)
+    .sort()
+    .map(str)
+    .to_tuple()
+) == ("1", "2", "3", "4")
+```
+
+[1] https://alvinalexander.com/scala/seq-class-methods-examples-syntax/
