@@ -1,0 +1,12 @@
+relax/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+relax/app.py,sha256=CVX--QE4IdQjs8Ui6HgHlrb5ye_BIT1LWh3MZnT5ORU,12932
+relax/config.py,sha256=avzQNb095S-IBLtomQe0_Bwb1KryNHLBOZSZKcN6sZ0,1184
+relax/html.py,sha256=fhrFRQG_LFDoPe7-tkwge1guy7otGcaQdcbYqAVz__w,18629
+relax/injection.py,sha256=hJGCaMRncV7t_1c6OH84jyieTh1N-ORIxtd2Du8-pfw,5421
+relax/js/hmr_reload.js,sha256=z-I_6FalBuFaglPFiCdhL27oANv7UzIzxWRQG7FxbGQ,934
+relax/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+relax/server.py,sha256=CnhY8pBejwZaTAvXCE45FqdKWWNJtlwKkN8Yw2IayNU,4294
+relax/test.py,sha256=kOCks6rcKLlnWZZ2Q5yYZKXRqXyQzTNAGrUyB8PI0kA,1089
+relax_py-0.0.13.dist-info/METADATA,sha256=-o2ffBZtG1ZgZUAwVxyWsomNbySAD2VmSpwbLwffaK8,1095
+relax_py-0.0.13.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+relax_py-0.0.13.dist-info/RECORD,,
