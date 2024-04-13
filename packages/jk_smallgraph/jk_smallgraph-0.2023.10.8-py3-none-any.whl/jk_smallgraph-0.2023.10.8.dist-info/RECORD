@@ -1,0 +1,12 @@
+jk_smallgraph/DirectedGraph.py,sha256=H-3P-SnFZ1DdD8hGbMVF9hvclIhGi_PWxNlXuAaT3xQ,7869
+jk_smallgraph/ILink.py,sha256=HZUkkpn-mGx5SApQFuDlIbl8fhOL7tDfhSy6UFF8-BA,1429
+jk_smallgraph/INode.py,sha256=VUz06w4ZFRFICgGiuAJ6JeghclXIByG6vGnGPNfevpQ,1475
+jk_smallgraph/Link.py,sha256=XEuaQUrFa6GDTwm4m0UAxKztd28RD2Rjf-_aHlOdGNU,2010
+jk_smallgraph/Node.py,sha256=b5r27bwWfGPC_QemRUYvy1eVQJz5PQtmFgkSYxRAbzQ,2142
+jk_smallgraph/__init__.py,sha256=WNlYQsp0F-gAOITFblkCaKO8OTK1tTVGLKvwL4nvTBc,204
+jk_smallgraph/io/GraphvizIO.py,sha256=1o0KHl1F0nbPtdlySwKpIXC9xswQCteOXsRHyFH7JC0,1783
+jk_smallgraph/io/SimpleEdgeListIO.py,sha256=wTefZXLstOr7SpEwOuLMpfOkSTB41WghkNlQeF8qtCM,2203
+jk_smallgraph/io/__init__.py,sha256=JBUeS9QTOcSpulAQ1hBDh_uHOEyzUZGf5MQtf05_BQA,87
+jk_smallgraph-0.2023.10.8.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+jk_smallgraph-0.2023.10.8.dist-info/METADATA,sha256=X71OPtkDyenwWQ7vFzvE-NMCwwSqlDKMIUvlrZS1Kx4,1702
+jk_smallgraph-0.2023.10.8.dist-info/RECORD,,
