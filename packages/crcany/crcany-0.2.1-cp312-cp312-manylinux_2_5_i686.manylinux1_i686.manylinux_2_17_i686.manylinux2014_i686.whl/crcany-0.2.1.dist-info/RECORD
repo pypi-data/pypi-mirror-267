@@ -1,0 +1,9 @@
+crcany-0.2.1.dist-info/top_level.txt,sha256=hOesQYIQUlZhGVIEgkgg9Actmlj34Nv5gzcovPMgU2Y,7
+crcany-0.2.1.dist-info/METADATA,sha256=sMS6omu9whHUOY7Uf16n2hnrcZ8OFEuqYYKoS1Fnu-k,1468
+crcany-0.2.1.dist-info/WHEEL,sha256=xuOxbzc0m96isSY_yubv3_wVSsJS_ImcBzTRGFtZ6qA,217
+crcany-0.2.1.dist-info/RECORD,,
+crcany-0.2.1.dist-info/LICENSE,sha256=-5sTnIJLJfO_2NCSrr9z1xg2dRmpMcirpgxoTIiJW5Y,1065
+crcany/crcany.pyx,sha256=Y-UpqAytxWx0v4aYdtUZ7FL0fOXq95iOGgdOUSAHe9c,2488
+crcany/__init__.py,sha256=Exmb88ruYTT1ijptK_xGoEUcz1KqA2LSVKAnRNT7_pg,21
+crcany/crcany.cpython-312-i386-linux-gnu.so,sha256=bxp5QKUbrtGtAez-M2KwM2ZvTTWBZNO6Pv_3oSKw2OI,525316
+crcany/models.py,sha256=6suxnHR3EEHkKanClSoMnEyR8PbPVSQZQTEVhjJpJA0,14937
