@@ -1,0 +1,2 @@
+[console_scripts]
+tgmi = terminalscape.Terminal_game:commence
