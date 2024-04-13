@@ -1,0 +1,7 @@
+apt/__init__.py,sha256=lpXE-t7vstLhZFoARpyTrroTH2CczoTglU_iRfQJoCs,264
+apt/aptll.py,sha256=g1WAOX79bvYVWGK0DmoWVKRcQdBY0wyeMRSeT8vBd44,1740
+aptll-2.2.6.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+aptll-2.2.6.dist-info/METADATA,sha256=4HM4-pKXYzjTzLvCN6p0N3j3PUsJbIelC9aIdyDRv4E,1733
+aptll-2.2.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+aptll-2.2.6.dist-info/top_level.txt,sha256=YhgJGFrtuW6lS3VRreO5Qlt5cNTJIPlhJMCFpVEjbJM,4
+aptll-2.2.6.dist-info/RECORD,,
