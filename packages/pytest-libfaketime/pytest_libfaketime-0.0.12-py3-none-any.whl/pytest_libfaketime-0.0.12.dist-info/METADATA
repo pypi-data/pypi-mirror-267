@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pytest-libfaketime
+Version: 0.0.12
+Summary: A python-libfaketime plugin for pytest
+Home-page: https://github.com/pytest-dev/pytest-libfaketime
+License: MIT
+Keywords: libfaketime,unit tests,mock
+Author: Yaal Coop
+Author-email: contact@yaal.coop
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: libfaketime (>=2.0.0,<3.0.0)
+Requires-Dist: pytest (>=3.0.0)
+Project-URL: Repository, https://github.com/pytest-dev/pytest-libfaketime
+Description-Content-Type: text/markdown
+
+# pytest-libfaketime [![Latest Version](https://img.shields.io/pypi/v/pytest-libfaketime.svg)](https://pypi.python.org/pypi/pytest-libfaketime)
+[python-libfaketime](https://github.com/simon-weber/python-libfaketime) plugin for pytest, with support for [pytest-xdist](https://github.com/pytest-dev/pytest-xdist).
+
+# Installation
+
+```pip install pytest-libfaketime```
+
+# Tests
+
+```tox```
+
