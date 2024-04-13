@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: irt-test
+Version: 0.1.0
+Summary: Package for calc difficult of test tasks and ability of test subjects by Rasch model (IRT 0).
+Author: Tim-Sa
+Author-email: salnikovtimofeyof@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# irt_test
+Package for calc difficult of test tasks and ability of test subjects by Rasch model (IRT 0).
+
