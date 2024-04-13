@@ -1,0 +1,8 @@
+pt_br_verbs_lemmatizer/__init__.py,sha256=86RhyEa6HfkIyKb85mBCIeYfZMCkrEsvtKxNwAX9t9o,106
+pt_br_verbs_lemmatizer/main.py,sha256=z4u-J23rz_gZHMmY2KIbi5uWys-ZnJiggCFavQ5fVXg,8625
+pt_br_verbs_lemmatizer/dataset/dic_duplicated_flex_verbs.msgpack,sha256=JsfzICBMzJId0j1Wfea1EqKJAtDBigXNm2HVp8kR5TI,92866
+pt_br_verbs_lemmatizer/dataset/dic_pt_br_verbs_lemma.msgpack,sha256=84Mq0MZFXK6UZMjxzirMm2uBnpp9e7u8yFa-xtM-tOc,85130351
+pt_br_verbs_lemmatizer-0.1.2.dist-info/METADATA,sha256=8mR52TjyFBQ_3PmiwY--HGeDJzQSeQlFwSmvJIjmWWc,12712
+pt_br_verbs_lemmatizer-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pt_br_verbs_lemmatizer-0.1.2.dist-info/top_level.txt,sha256=9qVh8XwRZepLNWr1PrRu9BIVai_4mjI-RRuazL6pt38,23
+pt_br_verbs_lemmatizer-0.1.2.dist-info/RECORD,,
