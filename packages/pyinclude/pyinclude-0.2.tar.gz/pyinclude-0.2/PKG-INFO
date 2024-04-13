@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pyinclude
+Version: 0.2
+Summary: A collection of python codes to be easy as possible
+Home-page: https://github.com/harrymkt/pyinclude
+Author: Harry Min Khant
+Author-email: harrymk64@gmail.com
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ctypes
+Requires-Dist: inflect
+Requires-Dist: wxpython
+
+# Python includeable package
+
+This is all the Python classes and functions which makes coding with python easyer.
+
+To use this, you will import
+```
+import pyinclude as engine
+print(engine.convert_size(2481918))
+```
+
+## Contribution
+
+Contributions are welcome.
+
+## Issues
+
+You can report issues.
+
+[Join the issueboard!](https://github.com/harrymkt/pyinclude/issues)
+
+## Discussions
+
+You can join the Discussions to get help and solve problems
+
+[Join the discussionboard!](https://github.com/harrymkt/pyinclude/discussions)
