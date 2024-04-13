@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: areacet
+Version: 0.0.3
+Summary: This is the simplest modul for calculate figure area.
+Home-page: https://github.com/krimerkhex
+Author: karleneg
+Author-email: kolya.gar.1@gmail.com
+Keywords: files areaDeterminant
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pytest==8.1.1
+Requires-Dist: loguru==0.7.2
+
+Р—Р°РґР°РЅРёРµ 2: 
+
+
+Р—Р°РґР°РЅРёРµ 3:
+
