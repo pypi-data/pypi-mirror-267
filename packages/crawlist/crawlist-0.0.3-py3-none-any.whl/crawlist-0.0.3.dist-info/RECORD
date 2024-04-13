@@ -1,0 +1,17 @@
+crawlist/__init__.py,sha256=F5_6LJigEysNH1G7VMdnB_bpR42r2Zg-_eJNsllWzGk,52
+crawlist/__version__.py,sha256=gbxVWIA75uz4o8Cn15BwMZJgqm3c7-D2QxVUwImJaRg,352
+crawlist/analyzers/__init__.py,sha256=Ou_9dtgaN0euIoF-bl-lIcweE88qetOKyzfuNLHKAMw,471
+crawlist/analyzers/analyzer.py,sha256=dwW3d4zGA7KjCMu_NmAPjUQ--tJ5A6LdBjx0KnME6JY,3839
+crawlist/analyzers/dynamic_pager.py,sha256=ckMbBVohXPq519t4lo3eT-Q6DXJ4cBWAxCYvLZKLCdw,11099
+crawlist/analyzers/pager.py,sha256=5b3ImnCivumpV06vCxgKMyDoKRmt-5U7aQ8gOor_2No,793
+crawlist/analyzers/request.py,sha256=ZZSQZMReyyx-U6GBg5H4QGGE_LlGSmmwucyK44P-cVc,785
+crawlist/analyzers/selector.py,sha256=Q5UTaIkc1BA8svjReDsrYhV12tnqlZSGO5Cy2liBlqQ,3033
+crawlist/analyzers/static_pager.py,sha256=HfIqt8t-3loye-49FUU_tIwcrTk0RbsDFnf5odI0fUs,2793
+crawlist/analyzers/valid.py,sha256=3AYQuTnHVks7DUoqZu753eF_D1bGdrI0aKWoZFssUvI,1266
+crawlist/processings/__init__.py,sha256=cVmbUisY4_YX5JbZaYpedXVVYOUedssrWa5k-6DdOMI,27
+crawlist/processings/action.py,sha256=oHXXoeRAF-f1chyMIzoJZKr6RuzM3NvRYanHdkKVrx0,3944
+crawlist-0.0.3.dist-info/LICENSE,sha256=jf8J1JfR-3FoqUs5DXU99mVYMj5amHejNYCcaSLB7bE,1063
+crawlist-0.0.3.dist-info/METADATA,sha256=-b5x3mkhckHIDySRv2YGou0utFaZPEfruFTxBEtK-HI,4351
+crawlist-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+crawlist-0.0.3.dist-info/top_level.txt,sha256=PAa3x9ZPh66vR4Iebhsz-z6zUbsmS_gIVtqyqa4IDt4,9
+crawlist-0.0.3.dist-info/RECORD,,
