@@ -1,0 +1,115 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hatch-compile-yaml"
+dynamic = ["version"]
+description = "Compile yaml files to msgpack"
+readme = "README.rst"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Tyler Levy Conde", email = "yonstib@gmail.com" },
+]
+classifiers = [
+  "Framework :: Hatch",
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = ["pathspec", "hatchling", "PyYaml", "msgpack"]
+
+[tool.hatch.version]
+path = "hatch_compile_yaml/__init__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pytest",
+  "hatch",
+  "toml",
+  "build",
+]
+
+[tool.hatch.envs.default.scripts]
+test = "pytest -vv {args:tests}"
+
+[project.entry-points.hatch]
+build-script = "hatch_compile_yaml.hooks"
+
+[tool.hatch.envs.lint]
+detached = true
+dependencies = [
+  "black>=23.1.0",
+  "mypy>=1.0.0",
+  "ruff>=0.0.243",
+  "hatchling",
+]
+[tool.hatch.envs.lint.scripts]
+typing = "mypy --install-types --non-interactive {args:hatch_build_scripts tests}"
+style = [
+  "ruff {args:.}",
+  "black --check --diff {args:.}",
+]
+fix = [
+  "black {args:.}",
+  "ruff --fix {args:.}",
+  "style",
+]
+all = [
+  "style",
+  "typing",
+]
+
+[tool.black]
+target-version = ["py310"]
+
+[tool.ruff]
+target-version = "py310"
+select = [
+  "A",
+  "ARG",
+  "B",
+  "C",
+  "DTZ",
+  "E",
+  "EM",
+  "F",
+  "FBT",
+  "I",
+  "ICN",
+  "ISC",
+  "N",
+  "PLC",
+  "PLE",
+  "PLR",
+  "PLW",
+  "Q",
+  "RUF",
+  "S",
+  "T",
+  "TID",
+  "UP",
+  "W",
+  "YTT",
+]
+
+unfixable = [
+  # Don't touch unused imports
+  "F401",
+]
+
+[tool.ruff.isort]
+known-first-party = ["hatch_compile_yaml"]
+
+[tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.per-file-ignores]
+# Tests can use magic values, assertions, and relative imports
+"tests/**/*" = ["PLR2004", "S101", "TID252", "S603"]
