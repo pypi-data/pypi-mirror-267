@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+clubbi_json/__init__.py
+clubbi_json/json.py
+clubbi_json.egg-info/PKG-INFO
+clubbi_json.egg-info/SOURCES.txt
+clubbi_json.egg-info/dependency_links.txt
+clubbi_json.egg-info/top_level.txt
+tests/test_default_json.py
+tests/test_orjson.py
