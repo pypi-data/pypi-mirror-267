@@ -1,0 +1,7 @@
+hatch_compile_yaml/__init__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+hatch_compile_yaml/hooks.py,sha256=79uuxFNkYBLwhgiNzXe_mc8n9kBRXYsV-wD2Kr7ozvQ,160
+hatch_compile_yaml/plugin.py,sha256=Bn0dAM4Pp3vJJwXhfea1fjUET7Vf755Wfbhd5I6ke3c,898
+hatch_compile_yaml-1.0.0.dist-info/METADATA,sha256=AInneBNwxQjGyyjjtsfD3T1VvFKQjrVCMsqBXzUdemE,2417
+hatch_compile_yaml-1.0.0.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+hatch_compile_yaml-1.0.0.dist-info/entry_points.txt,sha256=gORgLMOSN6BDgEW7EIi2VcgeN-Ay_i_X18-ZteH7YPk,48
+hatch_compile_yaml-1.0.0.dist-info/RECORD,,
