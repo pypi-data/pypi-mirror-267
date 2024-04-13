@@ -1,0 +1,14 @@
+layrz_forms/__init__.py,sha256=QHmyuunD2PHe9gCFzet_ZH6z6oEoBtuVwRE5VDkC_Uk,6220
+layrz_forms/fields/__init__.py,sha256=hJmXxeu4Gcrn4EyRrvVPn-nWlJooYAEOPCF-eBc-D0U,605
+layrz_forms/fields/base.py,sha256=c8j_IehWLUTZtoHFPaZykuMdLHm2C_2_xFx4YujgS0c,1377
+layrz_forms/fields/boolean.py,sha256=F1X6i11LBmRXxptAN8hFSzKKTe73CpgaX29D1h4w3bE,873
+layrz_forms/fields/char.py,sha256=yudUYCpdwDgZE8jf0yYfg1xGoRRZDO2Khofgy6ZWilQ,2627
+layrz_forms/fields/email.py,sha256=hl1oAHeDHMbMwcdzQgAQg35ed4eRBMkmoM08n4TMvCY,1555
+layrz_forms/fields/id.py,sha256=h4sorcgctPNfZMvSs5HHffxlBZ10-fH2JpDMgSuphFU,1209
+layrz_forms/fields/json.py,sha256=MpqTj6-EBW954gMtMg2vj8d84Ta9WwUxb61y0HMoZX4,1618
+layrz_forms/fields/number.py,sha256=DdY8r8kzAxpklnVMwyjs-K3GV_KXsm1i3UbD79VJ_8U,2263
+layrz_forms-2.0.0.dist-info/LICENSE,sha256=UEEUIHbhRzA1kRX2dPDSphko1YbMePEivioHzs9FzFw,1052
+layrz_forms-2.0.0.dist-info/METADATA,sha256=z3DXN7bEJ4g-U2cTrA-wEutOwKm6zGaYWuQ6rX5m11U,3086
+layrz_forms-2.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+layrz_forms-2.0.0.dist-info/top_level.txt,sha256=HJL-iF3MKWuOkMdo1T98saJyjsQzMTlzkgFh1lmz9zc,12
+layrz_forms-2.0.0.dist-info/RECORD,,
