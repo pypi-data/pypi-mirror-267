@@ -1,0 +1,8 @@
+benchita/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+benchita/logging.py,sha256=8hR-d0bpNv_VXL7_BYYRzj2SyqDGIDprhsWIgU9lv3Q,288
+benchita/main.py,sha256=epGn8aO3QKy4-703aAV6GcIJw0ns-QVbtJONGxbYKUo,6568
+benchita/utils.py,sha256=EHhdrI6RFaG7APPs_jw2hmXBoUaI-SrD0Uq6oK433fw,2065
+benchita-0.0.1.dist-info/METADATA,sha256=MgfxSAOClCEwi_I9aHJV2OASYI5spi91lD9xuA0HAOU,390
+benchita-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+benchita-0.0.1.dist-info/top_level.txt,sha256=yd62Jv1i5ylHzppqAi-XM8zd-o4UObd7rmeXtMo0MoM,9
+benchita-0.0.1.dist-info/RECORD,,
