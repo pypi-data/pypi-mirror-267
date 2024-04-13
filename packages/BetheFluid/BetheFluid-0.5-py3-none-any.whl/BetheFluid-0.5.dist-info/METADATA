@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: BetheFluid
+Version: 0.5
+Summary: Python package for solving GHD equations
+Author: Antoni Lis, Milosz Panfil
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: dill
+
