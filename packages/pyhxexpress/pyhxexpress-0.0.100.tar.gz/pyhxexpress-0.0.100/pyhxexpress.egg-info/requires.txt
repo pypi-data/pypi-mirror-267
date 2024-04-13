@@ -1,0 +1,8 @@
+biopython
+brain-isotopic-distribution
+matplotlib
+numpy
+pandas
+pymupdf
+pyteomics
+scipy
