@@ -1,0 +1,13 @@
+BetheFluid/__init__.py,sha256=h_H8s6TuYsOQnzy33L3D9MhkYfHcjqkLqYrI-534-1E,198
+BetheFluid/calc.py,sha256=Hk4oseEJMTUJMhozwPl4UNO8AHjIQlmfgeaIl6x0JWY,1999
+BetheFluid/observable.py,sha256=w3DnnZMGPl89VigXqr9vLdKDAamQ9phBPgSIwR2Sp7g,6166
+BetheFluid/plotter.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BetheFluid/solver.py,sha256=ywuiLLilqAb-qfI_pXxX3pso6WpFk6agnJ9q41MuzuM,13466
+BetheFluid/utils.py,sha256=mL6_Z1K9czTKOaYRZlyJ0QaLU21DAAcroDnatojqCY8,1880
+BetheFluid/models/__init__.py,sha256=FRCG3QeM8hAHMy5xpiHnhIeBp2QmXsZDH_sypBoukOI,62
+BetheFluid/models/calc_Lieb_Liniger.py,sha256=co5ijL7e5r923jXtTHKzyIMCo1O_KPwNWe-lo-EC8xo,3884
+BetheFluid/models/calc_Q_Bosons.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BetheFluid-0.6.dist-info/METADATA,sha256=NVQn4QqUerbR4eErF1tkponrgSH2ABfN6qmI5_aPNTs,256
+BetheFluid-0.6.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+BetheFluid-0.6.dist-info/top_level.txt,sha256=sDLEybqaV7KC-iH8vFmYGjvKwgWXlvQ7sdqHJw06oIQ,11
+BetheFluid-0.6.dist-info/RECORD,,
