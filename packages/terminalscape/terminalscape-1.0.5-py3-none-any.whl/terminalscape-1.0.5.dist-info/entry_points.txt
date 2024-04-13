@@ -1,0 +1,2 @@
+[console_scripts]
+tgmi = src.Terminal_game:commence
