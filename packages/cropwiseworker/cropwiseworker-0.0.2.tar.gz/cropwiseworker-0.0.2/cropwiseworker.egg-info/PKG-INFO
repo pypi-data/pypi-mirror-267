@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: cropwiseworker
+Version: 0.0.2
+Summary: Модуль реализует функции для работы с API цифровой платформы управления агропредприятием Cropwise Operations.
+Home-page: https://github.com/molevaa/cropwiseworker
+Download-URL: https://github.com/molevaa/cropwiseworker/archive/refs/heads/main.zip
+Author: Molev Arkhip
+Author-email: jobarkhip@gmail.com
+Keywords: cropwise
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas
+
+
+# cropwiseworker
+
+## Описание
+Модуль `Cropwise Worker` предназначен для работы с API цифровой платформы управления агропредприятием Cropwise Operations. Модуль позволяет взаимодействовать с различными данными платформы, облегчая интеграцию и автоматизацию задач.
+
+## Установка
+Установите пакет с помощью pip:
+
+```bash
+pip install cropwiseworker
+```
+
+## Пример использования
+Пример использования модуля для получения информации о полях:
+
+```python
+from cropwiseworker import data_downloader
+
+token='YOUR_TOKEN'
+
+field_data = data_downloader('fields',token)
+print(field_data)
+```
+
+## Лицензия
+Данный пакет распространяется под лицензией Apache License 2.0.
