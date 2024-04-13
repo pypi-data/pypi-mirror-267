@@ -1,0 +1,7 @@
+setup.py
+jamesisconfused/__init__.py
+jamesisconfused/jamesisconfused.py
+jamesisconfused.egg-info/PKG-INFO
+jamesisconfused.egg-info/SOURCES.txt
+jamesisconfused.egg-info/dependency_links.txt
+jamesisconfused.egg-info/top_level.txt
