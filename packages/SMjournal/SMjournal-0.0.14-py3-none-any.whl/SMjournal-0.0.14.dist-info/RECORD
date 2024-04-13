@@ -1,0 +1,11 @@
+SMjournal/__init__.py,sha256=7sKZxHQvqiQMb4UJ9eZ9GbyNokIVKFSQcieBxIzp-V4,124
+SMjournal/collinearity.py,sha256=NnrtKXBrAcVzduESSgr055sA7EUIT_FJ50IogBT6ZYg,5190
+SMjournal/data.py,sha256=yCg3jeUQ0cfSQOfuDaRl77_3XgbEPzLo1LueYLNtRxc,4690
+SMjournal/low_level.py,sha256=HLFWQDSAaw0yRdKWYyOdqaiy3ntd9vEHXw9YBnnYjQM,1512
+SMjournal/meta_reg.py,sha256=zsQdhpOYEN-GW-r3IsGQ3uBv8a062bkO4uYDl1iIJQc,4434
+SMjournal/potentiality.py,sha256=GaZcQrBS-PFc6u8HlMNaAM1-FXQUKXZwWpShnZ2mPFE,3074
+SMjournal-0.0.14.dist-info/LICENSE,sha256=y4auNMzT0FY28aD_7QKuBzrVGUXNyQLvs_vKigjYck4,1077
+SMjournal-0.0.14.dist-info/METADATA,sha256=eCdeQCqKAkE1oPk9o1Jg0Xb1Jx1X72fcVZooUmY_7Oc,681
+SMjournal-0.0.14.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+SMjournal-0.0.14.dist-info/top_level.txt,sha256=vBTyCWPKNmw_YeLnAX2gpuKMlYedyfhnPqcL3sB7_Yw,10
+SMjournal-0.0.14.dist-info/RECORD,,
