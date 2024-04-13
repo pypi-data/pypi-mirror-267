@@ -1,0 +1,12 @@
+speech_user_interface/__init__.py,sha256=IR5zyVrRzIUyNcRHBeVwgJInXf0pyQ6m7tsM3XTIemA,1744
+speech_user_interface/compare_strings.py,sha256=wz8lTqe4lhUz71grDJVruct-CiL4TOiIevDDUczsb1A,191
+speech_user_interface/CONSTANTS.py,sha256=w5896qss4a-j4tSPkfePo9ZSF0LeW3CWrFKUk-lso68,49
+speech_user_interface/download_file.py,sha256=8p0WcqhWeVNdWi2Qq8sH0ku-bUt_GMa2Co0l-RpKtjE,1186
+speech_user_interface/load_vosk_model.py,sha256=aKBiKjcFT_Ja0Agc_alJTQt_r7PTOWBXirI1ssNJmOg,610
+speech_user_interface/read_in_speech.py,sha256=Fmz6YUG8fIrtAl_89jf8XBvaSvvJcDfq9e-KNHDX69o,1416
+speech_user_interface/send_text_to_chatgpt.py,sha256=Wtgd7lMeijGU6TMu30fZVKE5MU5PaxQzW9aHlzdV5BA,462
+speech_user_interface/speak_text.py,sha256=FWxhx9e6ww-6r2eaoQPR5F_Bnj2Zsm7OeKtTQ9iqeXs,490
+speech_user_interface-0.1.11.dist-info/entry_points.txt,sha256=BcAmomH67yiipxRXw-MCK-krdXkQcEaHd_EPLp8lFGk,50
+speech_user_interface-0.1.11.dist-info/METADATA,sha256=sfrblmTrvX39Sn_RKSqiLf8XwtNWOvWQfi4U01B79Is,1777
+speech_user_interface-0.1.11.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+speech_user_interface-0.1.11.dist-info/RECORD,,
