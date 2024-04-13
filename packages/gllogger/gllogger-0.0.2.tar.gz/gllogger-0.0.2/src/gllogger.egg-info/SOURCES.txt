@@ -1,0 +1,6 @@
+pyproject.toml
+src/gllogger.py
+src/gllogger.egg-info/PKG-INFO
+src/gllogger.egg-info/SOURCES.txt
+src/gllogger.egg-info/dependency_links.txt
+src/gllogger.egg-info/top_level.txt
