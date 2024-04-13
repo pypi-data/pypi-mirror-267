@@ -1,0 +1,11 @@
+r3xa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+r3xa/gui.py,sha256=2HoNQWQ2DQgRg-sqv2cTx92drT-dNgQzXQ6zlnSEpBo,24788
+r3xa/metadata.py,sha256=eMMAFXNwXsUrpDPmTMcfNEZ7AJ3d9rBQVENMjkJqFHk,10884
+r3xa/scripts.py,sha256=MGic82Zgpqvrj4QkPyqscU9taSJqFtHrr23rkkdAM4o,1432
+r3xa/utils.py,sha256=OobTF9kRGaiD8ADGMuynsghJUiYxaq5u8cwB3LFwj08,3122
+r3xa/validation.py,sha256=vMxFLtNGdKZIV8rTnsUMkKCgpfNcUhUbMSqT35y5znA,517
+resources/schema.json,sha256=QBFm-mC3d1RScCaTuIMXWimZeIn-ZgiWMjBehCPI6UY,33756
+r3xa-2024.4.12b0.dist-info/METADATA,sha256=ARyJNtknKdqG9-ol02m8kr5yCaRqtXR1mdlR_UafMbU,1113
+r3xa-2024.4.12b0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+r3xa-2024.4.12b0.dist-info/entry_points.txt,sha256=tf8wjRFSn2tXvc3H1ghH15zv657gvobOkjn5OHPNyos,91
+r3xa-2024.4.12b0.dist-info/RECORD,,
