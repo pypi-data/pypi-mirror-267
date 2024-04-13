@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+variable_polyline_buffer.egg-info/PKG-INFO
+variable_polyline_buffer.egg-info/SOURCES.txt
+variable_polyline_buffer.egg-info/dependency_links.txt
+variable_polyline_buffer.egg-info/requires.txt
+variable_polyline_buffer.egg-info/top_level.txt
