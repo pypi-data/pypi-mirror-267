@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: snake_environment
+Version: 0.2.0
+Summary: A simple snake environment with 18 states and 4 actions
+Author-email: LPengulin <contact@pengulin.com>
+Project-URL: Homepage, https://github.com/LPengulin/Python_snake_environment
+Project-URL: Issues, https://github.com/LPengulin/Python_snake_environment/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pygame
+
+Simple snake environment with 18 states and 4 
+actions.
+
+<h3>
+    Usage
+</h3>
+
+```commandline
+pip install snake_environment
+```
+
+```commandline
+from snake_environment import SnakeGame
+
+env = SnakeGame()
+
+# enable rendering
+env = SnakeGame(render=True)
+```
+
+<h5>
+Play it yourself
+</h5>
+
+```commandline
+from snake_environment import play_game
+
+play_game()
+```
