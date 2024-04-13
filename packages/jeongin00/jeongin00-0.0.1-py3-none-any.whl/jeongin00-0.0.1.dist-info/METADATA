@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: jeongin00
+Version: 0.0.1
+Summary: first package
+Home-page: https://github.com/jeongin22/Jeongin_sw
+Download-URL: https://github.com/jeongin22/Jeongin_sw
+Author: jeongin
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pytest
+
+oss-dev calculator and tengudan python module
