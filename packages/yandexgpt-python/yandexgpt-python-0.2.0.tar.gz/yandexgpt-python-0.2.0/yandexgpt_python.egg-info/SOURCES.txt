@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+yandex_gpt/__init__.py
+yandex_gpt/config_manager.py
+yandex_gpt/yandex_gpt.py
+yandexgpt_python.egg-info/PKG-INFO
+yandexgpt_python.egg-info/SOURCES.txt
+yandexgpt_python.egg-info/dependency_links.txt
+yandexgpt_python.egg-info/requires.txt
+yandexgpt_python.egg-info/top_level.txt
