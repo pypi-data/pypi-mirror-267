@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "irt-test"
+version = "0.1.0"
+description = "Package for calc difficult of test tasks and ability of test subjects by Rasch model (IRT 0)."
+authors = ["Tim-Sa <salnikovtimofeyof@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26.4"
+pandas = "^2.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
