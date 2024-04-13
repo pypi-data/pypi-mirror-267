@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyhxexpress
+Version: 0.0.100
+Summary: pyHXExpress
+Home-page: https://github.com/tuttlelm/pyHXExpress
+Author: <Lisa M Tuttle>
+Author-email: <tuttlelm@uw.edu>
+License: GPLv3
+Keywords: HDX-MS
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+Requires-Dist: biopython
+Requires-Dist: brain-isotopic-distribution
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pymupdf
+Requires-Dist: pyteomics
+Requires-Dist: scipy
+
+High-throughput polymodal analysis of protein HDX-MS spectra
+
