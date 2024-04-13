@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+git_root_to_syspath/__init__.py
+git_root_to_syspath/git_root_to_syspath.py
+git_root_to_syspath.egg-info/PKG-INFO
+git_root_to_syspath.egg-info/SOURCES.txt
+git_root_to_syspath.egg-info/dependency_links.txt
+git_root_to_syspath.egg-info/top_level.txt
