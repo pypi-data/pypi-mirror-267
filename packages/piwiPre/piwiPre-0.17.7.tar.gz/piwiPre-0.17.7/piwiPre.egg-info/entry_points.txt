@@ -1,0 +1,8 @@
+[console_scripts]
+piwiPre = piwiPre.pwpMain:pwp_toplevel
+pwpConfigurator = piwiPre.pwpConfigurator:configurator_console
+pwpInstaller = piwiPre.pwpInstaller:installer_console
+
+[gui_scripts]
+pwpConfiguratorGui = piwiPre.pwpConfigurator:configurator_gui
+pwpInstallerGui = piwiPre.pwpInstaller:installer_toplevel
