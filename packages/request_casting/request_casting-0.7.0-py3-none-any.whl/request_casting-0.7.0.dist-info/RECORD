@@ -1,0 +1,12 @@
+request_casting/__init__.py,sha256=WM8NXRLVp_TAOt7X6H5DYmHQS9OG2lyH5Ndcf6AIdtw,145
+request_casting/locale/en/LC_MESSAGES/request_casting.mo,sha256=-5Hgff2pmCFFbfqMcHAYXFXkXlPdLpoT0F_kuCmmPwM,424
+request_casting/locale/en.po,sha256=iQd3zNctpjlvAm1LA1MxAq2imsN7GQKqcEPdk9gdXpY,738
+request_casting/locale/es/LC_MESSAGES/request_casting.mo,sha256=A9YD4z0L5Cd0MGmZnERj35jUHWqhYhFusy1msJDyULo,524
+request_casting/locale/es.po,sha256=aEJV1zTjuL6_HP5F_45ep9to3NXEIvlLL0s9hrxMVSc,1335
+request_casting/locale/request_casting.pot,sha256=fLGtUHYHWAp5q5-EvTFMWfyt6XkdmT9h2D6rBLoEM9E,772
+request_casting/poethepoet.py,sha256=p-ncKp1rBr1Tx8fvmWkILwH4ZVhFitLANXM3BNFI0Mw,1456
+request_casting/request_casting.py,sha256=oD70-0caRn424MeAYdHJ5oIhpiOol0KxcydGOeueoyI,9617
+request_casting-0.7.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+request_casting-0.7.0.dist-info/METADATA,sha256=UOzjcBQHq9UpyaWuriU5A3YMCxtR5NMBPwTvVhBjsgM,7474
+request_casting-0.7.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+request_casting-0.7.0.dist-info/RECORD,,
