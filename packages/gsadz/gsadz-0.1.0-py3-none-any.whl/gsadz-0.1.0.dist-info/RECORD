@@ -1,0 +1,10 @@
+gsadz/__init__.py,sha256=M52hBtFtxc-7Qfvs4xc88eYfUdcPzd83sWnbJH2S9Eg,10895
+gsadz/parse_data.py,sha256=X_KW1RLk2whJKHxfrDLEbE7wlob4LQirsFxX5gcm7Ic,3551
+gsadz/pt/SentiLex-flex-PT02.txt,sha256=iKtzib_m9KK0iaSlPEIwZpF5a8L--dTComeQ3ZJ7qFw,6936203
+gsadz/pt/SentiLex-lem-PT02.txt,sha256=aqhv0VmDNu0quaDTTy1rUeBTfQqJLmMK1D8oms39KaU,344162
+gsadz/pt/booster.txt,sha256=1kBJnteiLcEX2Znq1vYoQRaNtu75nkxZFiu7_PkcJdw,983
+gsadz/pt/negate.txt,sha256=ejI3Kbxws-QVV3V9VPrwO4MSMSaPNnRRW911t1uMU40,512
+gsadz-0.1.0.dist-info/entry_points.txt,sha256=ntif74zFmYcEzP2qiqiSuriO8cLwZVTYhR1ePpyPYog,36
+gsadz-0.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+gsadz-0.1.0.dist-info/METADATA,sha256=jTv0V10Hi-qAYj3v_vUVO0PdE3jZMbJuOywsKrgh_wc,3320
+gsadz-0.1.0.dist-info/RECORD,,
