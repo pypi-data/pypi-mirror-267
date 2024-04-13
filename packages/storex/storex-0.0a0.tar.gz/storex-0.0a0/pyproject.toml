@@ -1,0 +1,22 @@
+[project]
+name = "storex"
+version = "0.0a0"
+description = "Default template for PDM package"
+authors = [
+    { name = "Arwichok", email = "arwichok@gmail.com" },
+]
+dependencies = []
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
