@@ -1,0 +1,16 @@
+GPUtil
+huggingface-hub
+librosa
+matplotlib
+numpy
+penn
+pycwt
+pyfoal
+pypar
+pyyaml
+reseval
+scipy
+torch
+torchutil
+torchaudio
+yapecs
