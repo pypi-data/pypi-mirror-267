@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+mors_client.egg-info/PKG-INFO
+mors_client.egg-info/SOURCES.txt
+mors_client.egg-info/dependency_links.txt
+mors_client.egg-info/top_level.txt
