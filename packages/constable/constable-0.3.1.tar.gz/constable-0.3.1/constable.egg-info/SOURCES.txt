@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+setup.py
+constable/__init__.py
+constable.egg-info/PKG-INFO
+constable.egg-info/SOURCES.txt
+constable.egg-info/dependency_links.txt
+constable.egg-info/top_level.txt
