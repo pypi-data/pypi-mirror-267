@@ -1,0 +1,9 @@
+pal_api-0.1.0.dist-info/METADATA,sha256=GFb4ZAb6RJZb7JXyBDoSGsSauxgsrWeQkl5YtPh2cTY,2560
+pal_api-0.1.0.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+pal_api-0.1.0.dist-info/licenses/LICENSE,sha256=28IvITNut6oPIuNxYPnFxOrisREN7L9GJyhicvHt6X4,1091
+pal_api/__init__.py,sha256=ex4fftTAWnPTd4JfRN1iqST104q4yn4IksrDR-vPdTY,100
+pal_api/async_client.py,sha256=MwpGDYzzKpEHhf6hz8GOl4cgUh6DtOVRru-d0N7NubY,4441
+pal_api/client.py,sha256=xtGHkGVU5pziwkpyneHKJbR4ircC3rY2kHFk-KYpa7I,3889
+pal_api/errors.py,sha256=teB9DPa9egme6qZGLBOriBL9Dcr_kyy20-VCjPnv34k,132
+pal_api/models.py,sha256=sfrxd0naBsM2d1rc6JZ0cI7XhXbQkmpi72SAilVKVxc,1687
+pal_api-0.1.0.dist-info/RECORD,,
