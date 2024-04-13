@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xdas"
+version = "0.1rc0"
+requires-python = ">= 3.7"
+authors = [
+    { name = "Alister Trabattoni", email = "alister.trabattoni@gmail.com" },
+]
+dependencies = [
+    "dask",
+    "h5py",
+    "netcdf4",
+    "numpy",
+    "obspy",
+    "pandas",
+    "scipy",
+    "tqdm",
+    "xarray",
+    "xinterp",
+    "watchdog",
+]
+
+[project.optional-dependencies]
+dev = ["black", "isort", "twine"]
+docs = [
+    "ipykernel",
+    "matplotlib",
+    "myst-nb",
+    "pydata-sphinx-theme",
+    "sphinx-design",
+    "sphinx-copybutton",
+    "sphinx",
+]
+tests = ["pytest", "pytest-cov"]
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+doctest_optionflags = "NORMALIZE_WHITESPACE"
