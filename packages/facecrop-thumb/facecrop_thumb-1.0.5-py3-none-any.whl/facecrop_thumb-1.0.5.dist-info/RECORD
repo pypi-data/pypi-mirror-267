@@ -1,0 +1,13 @@
+facecrop_thumb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+facecrop_thumb/__main__.py,sha256=Vdhw8YA1K3wPMlbJQYL5WqvRzAKVeZ16mZQFO9VRmCo,62
+facecrop_thumb/face_detection.py,sha256=53ZIAOFQ8gRFJv1_HIqTx_OD6Gr4rwqsaDrXQoprWXw,272
+facecrop_thumb/image_processing.py,sha256=UhHDoTVxIo6q4MHDTY1hjfVIOYb9-lTR1aN1aUG5Xvc,765
+facecrop_thumb/main.py,sha256=8YYBc3WmO71EFw866g2XWL7L2koGgxRiY8Szqu193vw,1159
+facecrop_thumb/thumbnail_generation.py,sha256=fanTPkUExDwBL6YOyiuE20RZr5hr1Fmgak7-Li9bHks,2410
+facecrop_thumb/version.py,sha256=c_ze905nYtc4YMhztpSDwQgaxCKfL3HM75hI5ocPNM8,21
+facecrop_thumb-1.0.5.dist-info/LICENSE,sha256=wN_CRBKNlK28mPOahLTj20WTGWVQt0MWl_FR2LHoTWw,1071
+facecrop_thumb-1.0.5.dist-info/METADATA,sha256=OqNB1lvV63StW6G5aHuVeL5irzUEuMlPmem_7U9yvms,2145
+facecrop_thumb-1.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+facecrop_thumb-1.0.5.dist-info/entry_points.txt,sha256=jo_F51hDMkJ62fMvMjb9F8Usa5EAc68bEX8YSyAzBHc,60
+facecrop_thumb-1.0.5.dist-info/top_level.txt,sha256=fn6hpEczNwU49Go8EScfzQQ7t1fa0gH2dONJowjki9I,15
+facecrop_thumb-1.0.5.dist-info/RECORD,,
