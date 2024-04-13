@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: sopel-amputator
+Version: 0.1.0
+Summary: Sopel plugin that detects AMP links and finds their canonical forms using AmputatorBot
+Home-page: https://github.com/dgw/sopel-amputator
+Author: dgw
+Author-email: dgw@technobabbl.es
+License: Eiffel Forum License, version 2
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Eiffel Forum License (EFL)
+Classifier: License :: OSI Approved :: Eiffel Forum License
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: sopel <9,>=8.0.0.dev0
+
+# sopel-amputator
+
+Sopel plugin that detects AMP links and finds their canonical forms using
+[AmputatorBot](https://www.amputatorbot.com/)
+
+## Installing
+
+Releases are hosted on PyPI, so after installing Sopel, all you need is `pip`:
+
+```shell
+$ pip install sopel-amputator
+```
+
+## Configuring
+
+The easiest way to configure `sopel-amputator` is via Sopel's
+configuration wizard—simply run `sopel-plugins configure amputator`
+and enter the values for which it prompts you.
+
+Individual settings are described below.
+
+### `ignore_domains`
+
+This is a list of hostnames which `sopel-amputator` will ignore, even if they
+match one of the common AMP substrings it looks for. By default it contains a
+set of ignored domains from the AmputatorBot project.
+
+The default list is _overridden_ when setting this value, so make sure to also
+enter any of the default entries you want to keep.
+
+
+## Changelog
+
+### 0.1.0
+
+Initial release.
+
+Pending conversion from `setup.py`+`setup.cfg` template to newer style package
+using `pyproject.toml`—plus some other features on the todo list—but the basics
+are here:
+
+* Detect likely AMP links
+* Call AmputatorBot API for the canonical URL of each suspected AMP link
+* Skip links from a configurable list of ignored domains
+* Silently fail if no better URL is found
