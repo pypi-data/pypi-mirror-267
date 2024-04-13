@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: LinguAligner
+Version: 0.2
+Summary: An amazing sample package!dd
+Author-email: lfc <lfc@di.uminho.pt>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# LinguAlign
+LinguALign is a comprehensive corpus translation and alignment pipeline designed to facilitate the translation of corpora across different languages. It translates corpora using machine translation and aligns the translated annotations with their corresponding translated text. Initially developed for the automatic translation of ACE-2005 into Portuguese, LinguALign has since been adapted into a versatile package for effortless translation of other corpora.
+
+It is composed of two main components: 
+
+- Text translation: We support DeepL Translator, Google Translator and Microsoft Translators APIs. 
+- Annotations alignments: We developed an annotation alignment pipeline that uses several alignment techniques to align the translated annotations within the translated text.
+
+
+## Annotation Alignment Modules
+Our pipeline is composed of a total of five annotation alignment components:
+
+    - Lemmatization
+    - Multiple word translation
+    - Synonyms
+    - BERT-based word aligner
+    - Fuzzy Match (Gestalt Patter Matching and Levenstein distance)
+
+The pipeline operates sequentially, meaning that annotations aligned by earlier methods are not addressed by subsequent pipeline elements. According to our experiments, the list above corresponds to the best order sequence.
+
+
+## Usage
+
+
+
+3. **Translate Corpora**
+    An API key is need in order to use the Translation APIs.
+
+4. **Run the Annotation Alignment Pipeline**
+
+
+   Users can select the aligners they intend to use and must indicate the path for the alignment resources for each alignment component, such as multiple translations of annotations, previously calculated lemmas, synonyms, etc. 
+
+## Evaluation
+
+To measure the effectiveness of the alignment pipeline, manual alignments were conducted on the entire ACE-2005-PT test set, which includes 1,310 annotations (triggers and arguments). These alignments were performed by a linguist expert to ensure high-quality annotations, following the same annotation [guidelines](https://www.ldc.upenn.edu/sites/www.ldc.upenn.edu/files/english-events-guidelines-v5.4.3.pdf) of the original ACE-2005 corpus.
+
+The evaluation results are presented in Table 1:
+
+<p>
+    <img src="./img/eval_by_comp.png" alt="Results" width="500"/>
+    <br>
+    <em>Table 1: Evaluation Results by pipeline component</em>
+</p>
+
+
+
+
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Citation
+
+Comming Soon.
+
+
+
