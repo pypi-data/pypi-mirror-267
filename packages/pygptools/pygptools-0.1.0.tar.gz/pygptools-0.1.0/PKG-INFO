@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pygptools
+Version: 0.1.0
+Summary: A collection of tools for GPT models
+Home-page: https://github.com/alejoair/gptools
+Author: AlejoAir
+Author-email: example@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# gptools
+
+A collection of tools for GPT models
