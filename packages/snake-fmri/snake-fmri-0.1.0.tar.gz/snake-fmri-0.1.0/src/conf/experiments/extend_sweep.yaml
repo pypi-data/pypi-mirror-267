@@ -1,0 +1,31 @@
+# @package _global_
+
+hydra:
+  job:
+    chdir: true
+  mode: MULTIRUN
+  sweeper:
+    params:
+      simulation.handlers.noise.snr:  10, 30, 100, 300,  1000
+      simulation.handlers.acquisition.accel: 2, 4, 6, 8, 10, 12
+      simulation.handlers.acquisition.acs: 0.05
+      simulation.handlers.acquisition.constant: true, false
+      simulation.sim_params.seed: 0, 1, 2, 3, 4, 5
+      reconstruction: lowrank_sparse, sequential, zero_filled
+
+  run:
+    dir: /volatile/pierre-antoine/snkf/outputs/${hydra.job.name}/${now:%Y-%m-%d_%H-%M-%S}
+  sweep:
+    dir: /volatile/pierre-antoine/snkf/multirun/extend-sweep/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}
+
+  callbacks:
+    gather_files:
+      _target_: hydra_callbacks.MultiRunGatherer
+      result_file: "results.json"
+      aggregator:
+        _target_: snkf.runner.utils.aggregate_results
+        _partial_: true
+
+    latest_link:
+      _target_: hydra_callbacks.LatestRunLink

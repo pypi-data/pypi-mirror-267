@@ -1,0 +1,4 @@
+[console_scripts]
+snkf-data = simfmrmi.cli.generate_dataset:generate_data
+snkf-main = snkf.cli.main:main_app
+snkf-rec = snkf.cli.eval_recon:eval_recon

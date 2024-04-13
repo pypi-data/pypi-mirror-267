@@ -1,0 +1,31 @@
+# general things to ignore
+*build/
+dist/
+**/_autosummary*
+docs/auto_examples/
+*.egg-info/
+*.egg
+*.py[cod]
+__pycache__/
+*.so
+*~
+# due to using tox and pytest
+.tox
+.cache
+
+_version.py
+# hydra
+outputs/
+multirun/
+# personal stuff
+scripts/
+datasets/
+benchmark/
+
+# jupyter crap
+#
+*.ipynb
+**/.ipynb_checkpoints/
+
+# Docs
+docs/_api/
