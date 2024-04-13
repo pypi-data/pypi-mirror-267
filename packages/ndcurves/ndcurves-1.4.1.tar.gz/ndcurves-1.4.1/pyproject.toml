@@ -1,0 +1,38 @@
+[build-system]
+build-backend = "cmeel"
+requires = [
+  "cmeel-boost[build] ~= 1.83.0",
+  "cmeel[build]",
+  "pin[build] ~= 2.7"
+]
+
+[project]
+dependencies = [
+  "cmeel-boost ~= 1.83.0",
+  "pin ~= 2.7"
+]
+description = "Library for creating smooth cubic splines"
+license = "BSD-3-Clause"
+name = "ndcurves"
+version = "1.4.1"
+
+[project.urls]
+changelog = "https://github.com/loco-3d/ndcurves/blob/master/CHANGELOG.md"
+homepage = "https://github.com/cmake-wheel/ndcurves"
+upstream = "https://github.com/loco-3d/ndcurves"
+
+[tool.cmeel]
+build-number = 1
+configure-args = ["-DBUILD_PYTHON_INTERFACE=ON"]
+
+[tool.ruff]
+extend-exclude = ["cmake"]
+
+[tool.ruff.lint]
+extend-select = ["I", "NPY", "RUF", "UP", "W"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["ndcurves"]
+
+[tool.tomlsort]
+all = true
