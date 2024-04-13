@@ -1,0 +1,12 @@
+sphinx_autobuild/__init__.py,sha256=8MTG49U7Y8KPOfp6g5K_32-Zcz2ny6VeehmaTdio7Tg,110
+sphinx_autobuild/__main__.py,sha256=2oUvOtU1LCAS_hnYSQH-Xz720IE_XHiH7sfgiQzQSbc,5966
+sphinx_autobuild/build.py,sha256=Lva8tjbnWH3IlWAOdUzaNIY8KsbVkgFnKgWkkvtTSuU,1864
+sphinx_autobuild/filter.py,sha256=zttHWraPKlzkZHVw44HjcyJCrnvXGj9eSncVT1arjB0,1051
+sphinx_autobuild/middleware.py,sha256=hAsNaELVIF92HEeleRyQpCXXuU9UXY70VNU2k7U4xxQ,1614
+sphinx_autobuild/server.py,sha256=MC0AaAftHX0ivI3XRC9rgd174khaevxZdnKtbkDyAvY,2635
+sphinx_autobuild/utils.py,sha256=PJdoJhYg9zwAQQrB_8q5dWHOxbyhCGS0G9LH5ljZV3s,1134
+sphinx_autobuild-2024.4.13.dist-info/entry_points.txt,sha256=kbA-MazTZ3qkR4US67kOdnNUnVTWhHatv-WMRQ_JGNk,67
+sphinx_autobuild-2024.4.13.dist-info/LICENSE.rst,sha256=-JrsrXPXu8dnykUR2q6sPMxCTyefS_VVe2IWVF6qBj4,1129
+sphinx_autobuild-2024.4.13.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+sphinx_autobuild-2024.4.13.dist-info/METADATA,sha256=6-NYDieZ6IoDNO6ubrAM6oSGhZjCFaLB9V-jGhV_SVQ,7675
+sphinx_autobuild-2024.4.13.dist-info/RECORD,,
