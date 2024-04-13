@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: alwtmc
+Version: 0.1.1
+Summary: ALWTMC is A lazy way to monitor commands
+Home-page: http://pypi.python.org/pypi/alwtmc/
+Author: Supratim Samanta
+Author-email: supratim.iee23.ju2005@gmail.com
+License: LICENSE.txt
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: PyQt5

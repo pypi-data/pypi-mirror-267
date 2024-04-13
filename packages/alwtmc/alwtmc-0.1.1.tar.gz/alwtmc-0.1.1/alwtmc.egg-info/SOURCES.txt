@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+alwtmc/__init__.py
+alwtmc/main.py
+alwtmc.egg-info/PKG-INFO
+alwtmc.egg-info/SOURCES.txt
+alwtmc.egg-info/dependency_links.txt
+alwtmc.egg-info/entry_points.txt
+alwtmc.egg-info/requires.txt
+alwtmc.egg-info/top_level.txt
