@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: mlx_ctc
+Version: 0.0.1
+Summary: C++ and Metal extensions for MLX CTC Loss
+Author-email: Yury Popov <dev@phoenix.dj>
+Project-URL: Homepage, https://github.com/djphoenix/mlx-ctc
+Project-URL: Issues, https://github.com/djphoenix/mlx-ctc/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+
+# MLX CTC
+
+C++ and Metal extensions for [MLX](https://github.com/ml-explore/mlx) CTC Loss
+
+## Library status
+
+Library is passing initial tests and benchmarks.
+
+However, it is still under development, and so called "alpha".
+
+## TODO
+
+- Add tests and benchmarks
+- Optimize code more
+
+## Credits
+
+Thanks [pytorch source](https://github.com/pytorch/pytorch/blob/main/aten/src/ATen/native/LossCTC.cpp) for reference implementation, that used for initial CTC Loss development.
