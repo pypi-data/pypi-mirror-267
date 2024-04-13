@@ -1,0 +1,8 @@
+GeoCS/__init__.py,sha256=LrGlq7_a5XQT72Rec_LIoB2homVRm9XkHGRSa1pUcoA,49
+GeoCS/calc_lib.py,sha256=zwkMZF_N6TYF-Zf9kciYk-G62sgWj81cwQyUuXMq_VU,10378
+GeoCS/data_lib.py,sha256=xcw_s4gDHDcm9u00-o0OCizeJEsg-3lHQf2kzujE7_M,26704
+GeoCS/plot_lib.py,sha256=XehhnVrFVcZbSDnvFyj-VBfZ0FrvcbBZOAi-CvRg6Q8,17433
+geocs-1.0.1.dist-info/METADATA,sha256=j4RJevF4HqTqYeV5UgtJBNw13La_YorvhqkveC3URfU,4494
+geocs-1.0.1.dist-info/WHEEL,sha256=uNdcs2TADwSd5pVaP0Z_kcjcvvTUklh2S7bxZMF8Uj0,87
+geocs-1.0.1.dist-info/licenses/LICENSE,sha256=n9P3Az1_SdmE2lo1Yr0cXku65AOBL2BhAWWjWNcjRTM,1076
+geocs-1.0.1.dist-info/RECORD,,
