@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: jsonapi-python
+Version: 0.1.1.post1
+Summary: Python JSON:API implementation
+License: MIT
+Author: david-why
+Author-email: david_why@outlook.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Requires-Dist: aiohttp (>=3.9.3,<4.0.0)
+Requires-Dist: pydantic (>=2.6.4,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# pyjsonapi
+
+A JSON:API implementation in Python.
+
+## Usage
+
+```python
+from pyjsonapi import Model, ToManyRelationship, Session
+
+class Student(Model, type='student'):
+    name: str
+    age: int
+    classrooms: ToManyRelationship['Classroom']
+
+class Classroom(Model, type='classroom'):
+    name: str
+    students: ToManyRelationship[Student]
+
+session = Session('http://example.com/api')
+student = session.fetch(Student, 'id-of-student')
+print(student.name, 'age', student.age)
+classrooms = student.classrooms.items
+print('classrooms:')
+for classroom in classrooms:
+    print(classroom.name)
+```
+
