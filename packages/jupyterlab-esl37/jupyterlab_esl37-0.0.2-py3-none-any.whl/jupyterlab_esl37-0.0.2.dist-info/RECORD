@@ -1,0 +1,16 @@
+jupyterlab_esl37/__init__.py,sha256=5LUtzdo5BHdNx85z9Pt0njk5cfXX-LM-ahWfqCFvxHc,590
+jupyterlab_esl37/_version.py,sha256=xXdun1GAFdip5wOJAatCWNy7wD7ydbBDHn3QOpeMy2Y,171
+jupyterlab_esl37-0.0.2.data/data/share/jupyter/labextensions/jupyterlab-esl37/package.json,sha256=a7eAd9xPgmiVXt0RXBQ9-6Xo_nW5nPNg8DPkLPJoU9E,6223
+jupyterlab_esl37-0.0.2.data/data/share/jupyter/labextensions/jupyterlab-esl37/schemas/jupyterlab-esl37/package.json.orig,sha256=arnbKePVZfnbnN8mQTSvFKs0GuYYhhrBYJRigRC-kwg,7009
+jupyterlab_esl37-0.0.2.data/data/share/jupyter/labextensions/jupyterlab-esl37/schemas/jupyterlab-esl37/plugin.json,sha256=teDgSjyEquNpnGyCD27Dy7KmhkFYMl1SaqRUNyjjFLA,185
+jupyterlab_esl37-0.0.2.data/data/share/jupyter/labextensions/jupyterlab-esl37/static/184.ad70652429d233749061.js,sha256=rXBlJCnSM3SQYUmHPyzurxz6Yx9gQ-gtRbJ7tGVRz0s,16510
+jupyterlab_esl37-0.0.2.data/data/share/jupyter/labextensions/jupyterlab-esl37/static/421.a28879aa9daad3686566.js,sha256=ooh5qp2q02hlZjqiRHYntrGd9_faTa9Ee4fXWhFVarY,28054
+jupyterlab_esl37-0.0.2.data/data/share/jupyter/labextensions/jupyterlab-esl37/static/728.7c5beb779e5ff2a8727a.js,sha256=fFvrd55f8qhyeqFvEy4MyrsLQe9RbK-oECO8lDi32hU,4010
+jupyterlab_esl37-0.0.2.data/data/share/jupyter/labextensions/jupyterlab-esl37/static/remoteEntry.c840aea7aebb4c73921c.js,sha256=yECup667THOSHJUwduPEWPdZTmccgLG5uMkIqxv3b9I,7119
+jupyterlab_esl37-0.0.2.data/data/share/jupyter/labextensions/jupyterlab-esl37/static/style.js,sha256=rBoaypmD47NA2_AXkH32i-DJOIlQNXcTDsNKRfHFS9k,159
+jupyterlab_esl37-0.0.2.data/data/share/jupyter/labextensions/jupyterlab-esl37/static/third-party-licenses.json,sha256=KoE2VtP5NBQPkuXrRX6kRh1CWsqdr0YIIKJT_GRogEE,4955
+jupyterlab_esl37-0.0.2.data/data/share/jupyter/labextensions/jupyterlab-esl37/install.json,sha256=QPLC0vOMfTKe_BfP8RX0hs8EWogq42LkpUXfCmZTxck,193
+jupyterlab_esl37-0.0.2.dist-info/METADATA,sha256=E0ytRJtGHV5EKdv3xV5l-Y654xrRVyWVK_Y49nNHAxo,2705
+jupyterlab_esl37-0.0.2.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+jupyterlab_esl37-0.0.2.dist-info/licenses/LICENSE,sha256=DKaMp41vmLXDUDE4r7NxI0jMtqfxR448AbmnElvqLNk,1093
+jupyterlab_esl37-0.0.2.dist-info/RECORD,,
