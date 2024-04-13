@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: seventilation-client
+Version: 0.1.0
+Summary: SEC Smart API
+Home-page: https://github.com/epiehl/seventilation-client.git
+Author-email: 
+Keywords: Swagger,SEC Smart API
+License-File: LICENSE
+Requires-Dist: urllib3 >=1.15
+Requires-Dist: six >=1.10
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+    This is the API for the &lt;b&gt;SEC Smart System&lt;/b&gt;.&lt;br&gt;&lt;font color&#x3D;\&quot;#ff0000\&quot;&gt;&lt;b&gt;ACHTUNG:&lt;/b&gt; Diese API ist noch nicht für den produktiven Einsatz freigegeben!&lt;/font&gt;  # noqa: E501
+    
