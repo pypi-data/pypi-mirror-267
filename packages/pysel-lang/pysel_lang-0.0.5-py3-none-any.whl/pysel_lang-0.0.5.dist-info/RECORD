@@ -1,0 +1,12 @@
+pysel/__init__.py,sha256=8imyivQb95DnQ2bt9FxnKihHs7_19ZTQS6VFTb6dGA0,2920
+pysel/ast.py,sha256=qqMPEJiBRayzwEFqHjGmD39oS0XcoW-um4Kwq6SADPQ,19193
+pysel/errors.py,sha256=JJIwFy-x4lr9wtH8IDs9I33PrQbH2iKKKjdmIoGSd6c,1695
+pysel/lexer.py,sha256=TYqOyIYxXpDPHpK-HjyPkVWx0IjAaBUBvahzW0UwAM8,4822
+pysel/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysel/tokens.py,sha256=fhmcWWdAVJINS8BN6DoIq2Fw7utResE4PQBEzC0JoE8,4014
+pysel/vm.py,sha256=dRUIYbYInlZUP7NPUhW4mXMx3HkjCmAMpCbkgv-ydto,6438
+pysel_lang-0.0.5.dist-info/LICENSE,sha256=V_r8eo0bkZDwlrxAHIzAx4gQiKzByDw-tRRKdrAsK5k,1062
+pysel_lang-0.0.5.dist-info/METADATA,sha256=KrPfesxsYGPCtrN7Oq9HUFmfr92v6fTOWHgLYwr1DFw,10377
+pysel_lang-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pysel_lang-0.0.5.dist-info/top_level.txt,sha256=NiYof8E65OW-rB3zQubXo4THF5rW_0cXrkhrGrDwFXg,6
+pysel_lang-0.0.5.dist-info/RECORD,,
