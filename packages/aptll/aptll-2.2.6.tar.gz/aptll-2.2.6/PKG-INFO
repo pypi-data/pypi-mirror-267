@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: aptll
+Version: 2.2.6
+Summary: A proxy package for aplustools with simplified naming and version management
+Author-email: Cariel Becker <cariel.becker@gmx.de>
+Maintainer-email: Cariel Becker <cariel.becker@gmx.de>
+License: GPL-3.0-or-later
+Project-URL: Home, https://pypi.org/project/apt/
+Project-URL: Repository, https://github.com/adalfarus/apt
+Project-URL: Documentation, https://github.com/adalfarus/apt/wiki
+Project-URL: Issue tracker, https://github.com/adalfarus/apt/issues
+Keywords: proxy,aplustools,simplified,apt
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aplustools
+
+# aptll (Aplustools linking library)
+[![Active Development](https://img.shields.io/badge/Maintenance%20Level-Actively%20Developed-brightgreen.svg)](https://gist.github.com/cheerfulstoic/d107229326a01ff0f333a1d3476e068d)
+[![Build Status](https://github.com/Adalfarus/apt/actions/workflows/python-publish.yml/badge.svg)](https://github.com/Adalfarus/apt/actions)
+[![License: GPL-3.0](https://img.shields.io/github/license/Adalfarus/apt)](https://github.com/Adalfarus/apt/blob/main/LICENSE)
+
+ Makes writing code and switching versions easier than ever!
+
+
+### Switching aplustools version
+```python
+from apt import aptll
+
+# This will restart python with the current script after the 
+aptll.change_version("0.1.3.6")  #  new version is installed.
+```
+
+### aplustools modules
+Work as usual, just typing info from advanced editors won't work.
+```python
+from apt.package.timid import TimidTimer
+
+timer = TimidTimer()
+print(timer.end())
+```
