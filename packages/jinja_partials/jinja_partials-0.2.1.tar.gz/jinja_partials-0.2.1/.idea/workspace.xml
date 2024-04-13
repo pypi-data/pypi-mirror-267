@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a7f44092-76a5-40ce-bc9d-c186ca2635cb" name="Changes" comment="Move requirements into setup.py to aid conda. #9">
+      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mikeckennedy&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mikeckennedy/jinja_partials&quot;,
+    &quot;accountId&quot;: &quot;86c8999c-1cf4-4701-93e5-3111300e3d4e&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="1vrjivaj7xqJ49NbOqVOKnKiqJh" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests in test_rendering.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in tests.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/michaelkennedy/github/mk/jinja_partials&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/example" />
+      <recent name="$PROJECT_DIR$/example/templates/shared/partials" />
+      <recent name="$PROJECT_DIR$/example/templates/home" />
+      <recent name="$PROJECT_DIR$/example/models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/readme_resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests in tests">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="jinja_partials" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/example" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/example/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_rendering.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="jinja_partials" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_rendering.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in tests" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="jinja_partials" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests in tests" />
+        <item itemvalue="Python tests.Python tests in test_rendering.py" />
+        <item itemvalue="Python.app" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PY-241.14494.241" />
+        <option value="bundled-python-sdk-0509580d9d50-28c9f5db9ffe-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.14494.241" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SwiftWorkspaceSettings">
+    <option name="detectedToolchain" value="true" />
+    <option name="toolchainPathValue" value="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a7f44092-76a5-40ce-bc9d-c186ca2635cb" name="Changes" comment="" />
+      <created>1627327233067</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627327233067</updated>
+      <workItem from="1627327234843" duration="584000" />
+      <workItem from="1627328296392" duration="5145000" />
+      <workItem from="1627335268134" duration="609000" />
+      <workItem from="1627357244700" duration="86000" />
+      <workItem from="1627357599110" duration="197000" />
+      <workItem from="1627361801239" duration="33000" />
+      <workItem from="1627361877404" duration="88000" />
+      <workItem from="1627362001196" duration="29000" />
+      <workItem from="1627417955078" duration="557000" />
+      <workItem from="1627498608425" duration="7000" />
+      <workItem from="1628440936008" duration="2000" />
+      <workItem from="1633540171992" duration="107000" />
+      <workItem from="1634413324930" duration="1455000" />
+      <workItem from="1634499460890" duration="17000" />
+      <workItem from="1639692913438" duration="60000" />
+      <workItem from="1639795875683" duration="4000" />
+      <workItem from="1706801164286" duration="1002000" />
+      <workItem from="1706857924647" duration="3000" />
+      <workItem from="1712939388636" duration="90000" />
+      <workItem from="1712939484571" duration="2249000" />
+    </task>
+    <task id="LOCAL-00001" summary="First pass at the flask integration.">
+      <created>1627327802165</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1627327802165</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Almost got the demo app in place!">
+      <created>1627329783126</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1627329783126</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Here we go, the demo site is working well now.">
+      <created>1627330255663</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1627330255663</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Specify the readme format for pypi.">
+      <created>1627333441895</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1627333441895</updated>
+    </task>
+    <task id="LOCAL-00005" summary="More content on the readme introducing the library.">
+      <created>1627334670580</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627334670580</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Will that relative path work?">
+      <created>1627334776883</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627334776883</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Link to the demo app.">
+      <created>1627334849857</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1627334849857</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Full path to image for linking from pypi.">
+      <created>1627334898466</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1627334898466</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Grammer on readme.">
+      <created>1627335756247</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1627335756247</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Read the version from the library itself rather than duplicate it.">
+      <created>1627335862402</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1627335862402</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Cross link to flask version.">
+      <created>1627361826314</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1627361826314</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Tighten up the partial file names.">
+      <created>1627361952342</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1627361952342</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Tighten up the partial file names.">
+      <created>1627362017146</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1627362017146</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add discussion about include and macro.">
+      <created>1633540264462</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1633540264462</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add a bunch of tests for the library.">
+      <created>1634414749045</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1634414749045</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add Ruff formatting to the project.">
+      <option name="closed" value="true" />
+      <created>1706801577975</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1706801577975</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Format the project with Ruff">
+      <option name="closed" value="true" />
+      <created>1706801636548</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1706801636548</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Rename the fixture file so pytest finds it by default.">
+      <option name="closed" value="true" />
+      <created>1706801662591</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1706801662591</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Format the project with Ruff">
+      <option name="closed" value="true" />
+      <created>1706801672139</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1706801672139</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Bump the version for the new register_environment feature.">
+      <option name="closed" value="true" />
+      <created>1706801695283</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1706801695283</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Add Hatch to the dev dependencies for packaging goodies.">
+      <option name="closed" value="true" />
+      <created>1706802155310</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1706802155310</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Move requirements into setup.py to aid conda. #9">
+      <option name="closed" value="true" />
+      <created>1712940172667</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1712940172667</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First pass at the flask integration." />
+    <MESSAGE value="Almost got the demo app in place!" />
+    <MESSAGE value="Here we go, the demo site is working well now." />
+    <MESSAGE value="Specify the readme format for pypi." />
+    <MESSAGE value="More content on the readme introducing the library." />
+    <MESSAGE value="Will that relative path work?" />
+    <MESSAGE value="Link to the demo app." />
+    <MESSAGE value="Full path to image for linking from pypi." />
+    <MESSAGE value="Grammer on readme." />
+    <MESSAGE value="Read the version from the library itself rather than duplicate it." />
+    <MESSAGE value="Cross link to flask version." />
+    <MESSAGE value="Tighten up the partial file names." />
+    <MESSAGE value="Add discussion about include and macro." />
+    <MESSAGE value="Add a bunch of tests for the library." />
+    <MESSAGE value="Add Ruff formatting to the project." />
+    <MESSAGE value="Rename the fixture file so pytest finds it by default." />
+    <MESSAGE value="Format the project with Ruff" />
+    <MESSAGE value="Bump the version for the new register_environment feature." />
+    <MESSAGE value="Add Hatch to the dev dependencies for packaging goodies." />
+    <MESSAGE value="Move requirements into setup.py to aid conda. #9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move requirements into setup.py to aid conda. #9" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/jinja_partials$.coverage" NAME=" Coverage Results" MODIFIED="1712939810220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/jinja_partials$app.coverage" NAME="app Coverage Results" MODIFIED="1627361935327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/example" />
+  </component>
+</project>
