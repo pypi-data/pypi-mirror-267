@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+csmpy/__init__.py
+csmpy/colors.py
+csmpy/csmpy.py
+csmpy/utils.py
+csmpy.egg-info/PKG-INFO
+csmpy.egg-info/SOURCES.txt
+csmpy.egg-info/dependency_links.txt
+csmpy.egg-info/requires.txt
+csmpy.egg-info/top_level.txt

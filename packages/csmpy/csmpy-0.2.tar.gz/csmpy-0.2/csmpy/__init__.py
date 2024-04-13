@@ -1,0 +1,1 @@
+from .csmpy import ColorSchemeManager
