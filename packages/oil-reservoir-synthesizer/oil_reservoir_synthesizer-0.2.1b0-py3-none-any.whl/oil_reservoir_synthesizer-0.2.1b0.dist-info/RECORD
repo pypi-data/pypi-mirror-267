@@ -1,0 +1,10 @@
+oil_reservoir_synthesizer/__init__.py,sha256=baBZWPD2JF7YzN2cayiGvnurCvUnivDGl1dljb1JbA4,329
+oil_reservoir_synthesizer/_oil_simulator.py,sha256=5T7WLP2UeGrzdms3i33Zq1ILZyoRajy5JKT-yflh7eA,8916
+oil_reservoir_synthesizer/_perlin.py,sha256=0Aa-m-23M9qi0OiV91SvoYYJ4WPT6Jv6SlX3em4d64M,1896
+oil_reservoir_synthesizer/_prime_generator.py,sha256=JYhfaCv8euSArffQX37TB6rASgNuYlTioHFiN0-Nh3U,1552
+oil_reservoir_synthesizer/_shaped_perlin.py,sha256=7o2by8IWPyj_NhliUyxgS1VcRCIe2CImfxDcSCDGP7g,4232
+oil_reservoir_synthesizer-0.2.1b0.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+oil_reservoir_synthesizer-0.2.1b0.dist-info/METADATA,sha256=KhUwaCu4g-rYxYFw_Ux6_m9VxRRi1TiNHe2P8l5TUxg,2294
+oil_reservoir_synthesizer-0.2.1b0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+oil_reservoir_synthesizer-0.2.1b0.dist-info/top_level.txt,sha256=3XIrPhWH9yEJ8T8MUNZA4aIfnOquhmrRwVjhkEUKc5U,26
+oil_reservoir_synthesizer-0.2.1b0.dist-info/RECORD,,
