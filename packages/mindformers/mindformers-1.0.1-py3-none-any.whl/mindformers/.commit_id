@@ -1,0 +1,8 @@
+r1.0
+commit c9b9436
+Merge: 8bb203e c5b84a8
+Author: i-robot <huawei_ci_bot@163.com>
+Date:   Thu Mar 14 11:29:13 2024 +0000
+
+    !2428 【r1.0】【bugfix】边训练边评估流程中eval_network使用_virtual_dataset封装
+    Merge pull request !2428 from huanglei/virtual_ds
