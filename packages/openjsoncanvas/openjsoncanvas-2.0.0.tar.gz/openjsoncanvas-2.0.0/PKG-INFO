@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: openjsoncanvas
+Version: 2.0.0
+Summary: A python implementation of the JsonCanvas format: https://github.com/obsidianmd/jsoncanvas/blob/main/spec/1.0.md
+Author: Alyce Osbourne
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pydantic
+Project-URL: Home, https://github.com/AlyceOsbourne/openjsoncanvas
+
+# JsonCanvas Python Implementation
+
+This project provides a Python implementation of the [JsonCanvas format](https://github.com/obsidianmd/jsoncanvas/blob/main/spec/1.0.md), designed to enable the creation, manipulation, and serialization of a structured canvas representation. It is built using Python's `dataclasses` for easy data management and supports various node types including Text, File, Link, Group, and Edge elements.
+
+## Features
+
+- Define and manipulate canvas elements like Nodes and Edges.
+- Serialize and deserialize canvas data to and from JSON.
+- Easy integration with file systems for reading and writing canvas data.
+
+## Installation
+
+`pip install openjsoncanvas`
+
+## Usage
+
+### Creating a Canvas
+
+You can create a canvas programmatically by adding nodes and edges:
+
+```python
+from openjsoncanvas import Canvas, TextNode, LinkNode, Edge
+
+# Create a new canvas
+canvas = Canvas()
+
+# Add nodes
+canvas.add_node(TextNode(id='1', x=100, y=100, width=200, height=100, text='Hello World'))
+canvas.add_node(LinkNode(id='2', x=300, y=100, width=200, height=100, url='https://example.com'))
+
+# Add an edge
+canvas.add_edge(Edge(id='1', fromNode='1', toNode='2'))
+
+# Serialize to JSON
+json_output = canvas.to_json()
+print(json_output)
+
+# Write to file
+canvas.to_file('example.canvas')
+```
+
+### Loading from JSON
+
+You can load a canvas from a JSON string or file:
+
+```python
+# Load from JSON string
+json_str = '{"nodes": [{"id": "1", "type": "text", "x": 100, "y": 100, "width": 200, "height": 100, "text": "Hello World"}]}'
+loaded_canvas = Canvas.from_json(json_str)
+
+# Load from a file
+loaded_canvas = Canvas.from_file('path_to_your_canvas_file.canvas')
+```
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests to our repository.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
