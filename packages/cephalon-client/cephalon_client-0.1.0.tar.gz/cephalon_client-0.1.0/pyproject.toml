@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "cephalon-client"
+version = "0.1.0"
+description = "Python client for interacting with Cephalon Intelligence API."
+authors = ["Cephalon Intelligence <research@cephalon.io>"]
+readme = "README.md"
+packages = [{ include = "cephalon" }]
+include = ["cephalon/.include/**/*"]
+
+[tool.poetry.dependencies]
+python = ">=3.10, <4.0"
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+cephalon = "cephalon.cli:entry"
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
