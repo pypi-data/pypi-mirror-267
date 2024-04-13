@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: mngs
+Version: 1.3.1
+Summary: For lazy python users (monogusa people in Japanse), especially in ML/DSP fields
+Home-page: https://github.com/ywatanabe1989/mngs
+Author: ywatanabe1989
+Author-email: ywata1989@gmail.com
+License: MIT
+Description: # monogusa (= lazy in Japanese)
+        mngs is Python utilities for ML and DSP projects
+        
+        ![CI](https://github.com/ywatanabe1989/mngs/actions/workflows/pip_install.yml/badge.svg)
+        
+        ![Hard Working Sloth](./docs/hard_working_sloth.jpg)
+        
+        ## Installation
+        ``` bash
+        $ pip install mngs
+        ```
+        
+        ## Galleries
+        - [`mngs.dsp`](https://github.com/ywatanabe1989/mngs/tree/main/src/mngs/dsp#readme)
+          Digital Signal Processing
+        - [`mngs.res`](https://github.com/ywatanabe1989/mngs/tree/main/src/mngs/res#readme)
+          Resource
+        
+        - mngs.general
+        - mngs.io
+        - mngs.plt
+        - mngs.ml
+        - mngs.stats
+        
+        ## Contact
+        Yusuke Watanabe (ywata1989@gmail.com).
+        
+        
+Keywords: utils,utilities,python,machine learning
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
