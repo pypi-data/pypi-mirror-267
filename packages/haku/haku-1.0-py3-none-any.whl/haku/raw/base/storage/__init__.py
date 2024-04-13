@@ -1,0 +1,9 @@
+#HALO INI ADALAH CLONE DARI PYROFORK.
+
+# # # # # # # # # # # # # # # # # # # # # # # #
+#               !!! WARNING !!!               #
+#          This is a generated file!          #
+# All changes made in this file will be lost! #
+# # # # # # # # # # # # # # # # # # # # # # # #
+
+from .file_type import FileType

@@ -1,0 +1,22 @@
+#HALO INI ADALAH CLONE DARI PYROFORK.
+
+import logging
+
+import haku
+from haku import raw
+
+log = logging.getLogger(__name__)
+
+
+class GetPasswordHint:
+    async def get_password_hint(
+        self: "haku.Client",
+    ) -> str:
+        """Get your Two-Step Verification password hint.
+
+        .. include:: /_includes/usable-by/users.rst
+
+        Returns:
+            ``str``: On success, the password hint as string is returned.
+        """
+        return (await self.invoke(raw.functions.account.GetPassword())).hint

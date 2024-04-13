@@ -1,0 +1,64 @@
+#HALO INI ADALAH CLONE DARI PYROFORK.
+
+from io import BytesIO
+
+from haku.raw.core.primitives import Int, Long, Int128, Int256, Bool, Bytes, String, Double, Vector
+from haku.raw.core import TLObject
+from haku import raw
+from typing import List, Optional, Any
+
+# # # # # # # # # # # # # # # # # # # # # # # #
+#               !!! WARNING !!!               #
+#          This is a generated file!          #
+# All changes made in this file will be lost! #
+# # # # # # # # # # # # # # # # # # # # # # # #
+
+
+class UpdateReadStories(TLObject):  # type: ignore
+    """Telegram API type.
+
+    Constructor of :obj:`~haku.raw.base.Update`.
+
+    Details:
+        - Layer: ``177``
+        - ID: ``F74E932B``
+
+    Parameters:
+        peer (:obj:`Peer <haku.raw.base.Peer>`):
+            N/A
+
+        max_id (``int`` ``32-bit``):
+            N/A
+
+    """
+
+    __slots__: List[str] = ["peer", "max_id"]
+
+    ID = 0xf74e932b
+    QUALNAME = "types.UpdateReadStories"
+
+    def __init__(self, *, peer: "raw.base.Peer", max_id: int) -> None:
+        self.peer = peer  # Peer
+        self.max_id = max_id  # int
+
+    @staticmethod
+    def read(b: BytesIO, *args: Any) -> "UpdateReadStories":
+        # No flags
+        
+        peer = TLObject.read(b)
+        
+        max_id = Int.read(b)
+        
+        return UpdateReadStories(peer=peer, max_id=max_id)
+
+    def write(self, *args) -> bytes:
+        b = BytesIO()
+        b.write(Int(self.ID, False))
+
+        # No flags
+        
+        b.write(self.peer.write())
+        
+        b.write(Int(self.max_id))
+        
+        return b.getvalue()

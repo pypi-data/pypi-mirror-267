@@ -1,0 +1,42 @@
+#HALO INI ADALAH CLONE DARI PYROFORK.
+
+import haku
+
+from haku import raw, types
+
+from .input_media_area import InputMediaArea
+
+from typing import Union
+
+class InputMediaAreaChannelPost(InputMediaArea):
+    """A channel post media area.
+
+    Parameters:
+        coordinates (:obj:`~haku.types.MediaAreaCoordinates`):
+            Media area coordinates.
+
+        chat_id (``int`` | ``str``):
+            Unique identifier (int) or username (str) of the target channel.
+
+        message_id (``int``):
+            A single message id.
+    """
+
+    def __init__(
+        self,
+        coordinates: "types.MediaAreaCoordinates",
+        chat_id: Union[int, str],
+        message_id: int
+    ):
+        super().__init__(coordinates=coordinates)
+
+        self.coordinates = coordinates
+        self.chat_id = chat_id
+        self.message_id = message_id
+
+    async def write(self, client: "haku.Client"):
+        return raw.types.InputMediaAreaChannelPost(
+            coordinates=self.coordinates,
+            channel=await client.resolve_peer(self.chat_id),
+            msg_id=self.message_id
+        )
