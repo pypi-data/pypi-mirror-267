@@ -1,0 +1,15 @@
+setup.py
+pymysqls/ImportType.py
+pymysqls/MainWindow.py
+pymysqls/PieChartWindow.py
+pymysqls/__init__.py
+pymysqls/db.py
+pymysqls/db2.py
+pymysqls/import_fles.py
+pymysqls/main.py
+pymysqls/main2.py
+pymysqls.egg-info/PKG-INFO
+pymysqls.egg-info/SOURCES.txt
+pymysqls.egg-info/dependency_links.txt
+pymysqls.egg-info/requires.txt
+pymysqls.egg-info/top_level.txt
