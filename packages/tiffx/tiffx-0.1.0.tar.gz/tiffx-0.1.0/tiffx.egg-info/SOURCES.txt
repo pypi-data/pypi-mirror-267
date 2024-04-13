@@ -1,0 +1,8 @@
+README.md
+setup.py
+tiffx/__init__.py
+tiffx.egg-info/PKG-INFO
+tiffx.egg-info/SOURCES.txt
+tiffx.egg-info/dependency_links.txt
+tiffx.egg-info/requires.txt
+tiffx.egg-info/top_level.txt
