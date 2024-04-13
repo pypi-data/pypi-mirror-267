@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+getcp/__init__.py
+getcp/cc.py
+getcp/cf.py
+getcp.egg-info/PKG-INFO
+getcp.egg-info/SOURCES.txt
+getcp.egg-info/dependency_links.txt
+getcp.egg-info/requires.txt
+getcp.egg-info/top_level.txt
