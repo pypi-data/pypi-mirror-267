@@ -1,0 +1,17 @@
+hermitage_alchemy/__init__.py,sha256=QzcTEJbZxXTlfuPioeVhbnhMYAyThdiZa13TOejkOCw,609
+hermitage_alchemy/assembling.py,sha256=6rW1RZ9Nem00ug0F3VLthPo00kKwRMiUafLeZQTZWmo,10318
+hermitage_alchemy/bootstraping.py,sha256=N1Yn2YsIdMtEM4UcIpK48l3BCB2YzI-Ee8T-LW8FB-U,824
+hermitage_alchemy/configuration.py,sha256=hWaN28U2R4li6FaIWfKS9M4MnMqJFmwcTg8JiJrycKE,6903
+hermitage_alchemy/definition/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hermitage_alchemy/definition/contracts.py,sha256=_uPowyR_wJfrchSgHLrrrKXJYke9dNVuFFFzeO7CRDM,2766
+hermitage_alchemy/definition/exceptions.py,sha256=wUGwNKHRiO5wIqoB8uZtCiinSc5XJbgFGkLHMrzyZeA,660
+hermitage_alchemy/execution/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+hermitage_alchemy/execution/fetching.py,sha256=ovUEqRsMiYBdJOO-W4aVzSMv14tculNoaN1dv3prMLU,6220
+hermitage_alchemy/execution/storing.py,sha256=xeYNKesOTVZxkvLMnVLMX2LptueSA0IS0kMdZZlNrFQ,3933
+hermitage_alchemy/plugins/__init__.py,sha256=KoBtmV1E49zH47t-O4mDijPbpqeR19-5BoJfVQfWExw,97
+hermitage_alchemy/plugins/generic.py,sha256=-garN8m2VVpAR1fk7OIM201m2JH_679MIRc5rO9XX40,251
+hermitage_alchemy/plugins/total.py,sha256=Ktt6OL-A42Mihu_lCjBMc4Fxo01jX927zff5urt7HdA,1163
+hermitage_alchemy/plugins/upsert.py,sha256=ftAkT9hBaUgQ8byxAicJCS2LdZVm9RqHk7bQfQ2QCTQ,907
+hermitage_alchemy-0.1.0.dist-info/METADATA,sha256=huWS-vR9LWfelKwqFBjRP6wJpFSq-88teSw8PbtLRx4,298
+hermitage_alchemy-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+hermitage_alchemy-0.1.0.dist-info/RECORD,,
