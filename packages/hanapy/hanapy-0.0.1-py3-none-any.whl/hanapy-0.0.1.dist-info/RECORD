@@ -1,0 +1,17 @@
+hanapy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hanapy/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hanapy/core/action.py,sha256=L2tv9B5xII0eP7wqgvb-EdAz1T85OlMGKsOofTZGrRY,3725
+hanapy/core/card.py,sha256=uW_ljJPR12sBq1bseaF7JBElzvZsykgXM4Y17rEoS8M,165
+hanapy/core/deck.py,sha256=DnPz383LV-EX-N5tH7260hAMcegLBnkLIg7xdgh-Cxs,467
+hanapy/core/errors.py,sha256=XZy0Y7OVTb32rg6FfahuYNgvIxHnuPKU4GHGTyzbaY4,89
+hanapy/core/loop.py,sha256=zqZdWVlW7fbDChh2SAM_vsmf9MbvrL8RsclV0seIDD8,1637
+hanapy/core/player.py,sha256=lh4eyzdP-BYB1kbzfz-3xTzLzfpzDZCj9gEn6k-uN5U,857
+hanapy/core/state.py,sha256=bnqVIATfF3UEfF-gsqbumqm79TuSl6f2_rwKZLIFKfo,1958
+hanapy/players/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hanapy/players/dummy.py,sha256=Pfa6Rk4F6A4j7D9PQDmgDnWkYA5kHuD-qoPaRd7Mth4,381
+hanapy/variants/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hanapy/variants/classic.py,sha256=pIL_2WAwoCr-D8YmtYwsZ6xCoQcb3QKX5ptEuDBkuX0,1232
+hanapy-0.0.1.dist-info/LICENSE,sha256=N3J_wbYmneJXimeGoiiNbivXyFxDBwigLOFEQZW8tmU,578
+hanapy-0.0.1.dist-info/METADATA,sha256=4BE59I8vh7cLLLco0OgbGTqgSKXVJs4fs1mlxLaDRTw,3124
+hanapy-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+hanapy-0.0.1.dist-info/RECORD,,
