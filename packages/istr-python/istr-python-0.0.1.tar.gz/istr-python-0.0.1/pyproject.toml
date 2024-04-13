@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "istr-python"
+authors = [
+    {name = "Ruud van der Ham", email = "rt.van.der.ham@gmail.com"}
+]
+description = "istr description"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+]
