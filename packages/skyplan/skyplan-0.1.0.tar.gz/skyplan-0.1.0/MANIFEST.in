@@ -1,0 +1,2 @@
+include skyplan/data/*.zip
+include skyplan/data/*.txt
