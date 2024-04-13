@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "tux-cal"
+version = "0.1.0"
+description = "A simple calendar tool mimicking Unix 'cal' command."
+authors = ["Estevao Fonseca <estevaopfon@gmail.com>"]
+license = "MIT"
+packages = [{include = "cal"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.scripts]
+cal = "cal:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
