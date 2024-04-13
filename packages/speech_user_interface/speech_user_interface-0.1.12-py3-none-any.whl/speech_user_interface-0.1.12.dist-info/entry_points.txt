@@ -1,0 +1,3 @@
+[console_scripts]
+sui=speech_user_interface:main
+
