@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ourJWT
+Version: 0.0.4
+Summary: repackaging of pyJWT package, adding fonction required for our_transcendence
+Author: gd-harco
+Author-email: gd-harco@student.42lyon.fr
+Requires-Dist: asgiref==3.8.1
+Requires-Dist: cffi==1.16.0
+Requires-Dist: cryptography==42.0.5
+Requires-Dist: Django==5.0.4
+Requires-Dist: pycparser==2.22
+Requires-Dist: PyJWT==2.8.0
+Requires-Dist: sqlparse==0.4.4
+Requires-Dist: typing_extensions==4.11.0
