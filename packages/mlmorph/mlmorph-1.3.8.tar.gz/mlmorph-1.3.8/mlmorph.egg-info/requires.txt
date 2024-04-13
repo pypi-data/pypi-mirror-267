@@ -1,0 +1,9 @@
+regex
+sfst>=1.5.7
+
+[dev]
+ruff
+tox
+
+[tests]
+pytest
