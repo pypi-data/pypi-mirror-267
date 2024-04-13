@@ -1,0 +1,8 @@
+gliner_finetune/__init__.py,sha256=t8F4obDkBXZBY2EpVOfO0Gyd93N6X8BItS9vSr2x8Is,68
+gliner_finetune/convert.py,sha256=NZ51MtZJ20KFqLEkgSP3c_vWEhf-TG_HXsRw47hMCEs,1690
+gliner_finetune/synthetic.py,sha256=73AjLBJLOOB1k9eX7hE6rUU70oxwk8M51YW3Y6BVJkU,4382
+gliner_finetune/train.py,sha256=yuz5GOxVejuqE7dWahDaMRBYgrP6kYpZC7pBWRGcLdM,5544
+gliner_finetune-0.0.1.dist-info/METADATA,sha256=3kgEDGElGmzhFtGTX0VBFDECC9WBnSh5H3tUzyarcD4,4143
+gliner_finetune-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gliner_finetune-0.0.1.dist-info/top_level.txt,sha256=VSyWtPU4YsqMwXJyJg451rpUwG8cH1TnNRpO-9ZWs5w,16
+gliner_finetune-0.0.1.dist-info/RECORD,,
