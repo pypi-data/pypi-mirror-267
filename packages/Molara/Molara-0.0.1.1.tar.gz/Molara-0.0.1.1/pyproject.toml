@@ -1,0 +1,114 @@
+[build-system]
+requires = ["setuptools>=65.0.0", "cython", "numpy", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[project]
+name = "Molara"
+version = "0.0.1.1"
+description = "A visualisation tool for chemical structures."
+authors = [
+    {name = "Michel Heinz"},
+    {name = "Gereon Feldmann"},
+    {name = "Adrian Usler", email = "adrian.usler@rwth-aachen.de"},
+    {name = "Alexander Bonkowski", email = "alexander.bonkowski@rwth-aachen.de"},
+]
+maintainers = [
+    {name = "Michel Heinz, Gereon Feldmann, Adrian Usler, Alexander Bonkowski"},
+]
+dependencies = [
+    "PyOpenGL",
+    "PySide6<=6.6.2",
+    "matplotlib",
+    "numpy",
+    "pyrr",
+    "scipy",
+    "cython",
+    "typing_extensions",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["analysis, science, structure, visualisation"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Repo = "https://github.com/Molara-Lab/Molara"
+
+[project.optional-dependencies]
+dev = [
+    "mypy",
+    "pre-commit",
+    "pytest",
+    "pytest-qt",
+    "pytest-xvfb",
+    "cython",
+    "pytest-cov",
+    "pytest-split",
+    "ruff",
+]
+crystal = [
+    "pymatgen",
+    "ase",
+]
+
+[project.scripts]
+molara = "molara.__main__:main"
+
+[tool.ruff]
+exclude = ["ui_*",]
+target-version = "py39"
+line-length = 120
+lint.select = ["ALL"]
+lint.ignore = [
+  "ANN101", # Missing type annotation for `self` in method
+  "ERA001", # Found commented-out code
+  "D203",   # 1 blank line required before class docstring (incompatible with D211)
+  "D213",   # Multi-line docstring summary should start at the second line (incompatible with D212)
+  "FBT001", # Boolean-typed positional argument in function definition
+  "FBT002", # Boolean default positional argument in function definition
+  "INP001", # File {name} is part or an implicit namespace package. Add an `__init__.py`.
+  "PTH100", # `os.path.abspath()` should be replaced by `Path.resolve()`
+  "PTH123", # `open()` should be replaced by `Path.open()`
+  "S101",   # Use of assert detected
+  ]
+lint.isort.required-imports = ["from __future__ import annotations"]
+
+[tool.mypy]
+exclude = ["ui_*"]
+ignore_missing_imports = true
+no_implicit_optional = false
+
+[tool.codespell]
+ignore-words-list = "nd,te"
+check-filenames = true
+
+[tool.cythonize]
+# Specify the files to be compiled by Cython
+modules = [
+    "src/molara/Rendering/cylinder.pyx",
+    "src/molara/Rendering/sphere.pyx",
+    "src/molara/Rendering/matrices.pyx",
+    "src/molara/Tools/mathtools.pyx",
+]
+# Optional: Specify include directories
+include-dirs = [
+    "",
+    "{env:NUMPY_INCLUDE}",
+]
