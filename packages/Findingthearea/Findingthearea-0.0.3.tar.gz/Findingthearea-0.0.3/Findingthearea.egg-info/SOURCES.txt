@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+Findingthearea.egg-info/PKG-INFO
+Findingthearea.egg-info/SOURCES.txt
+Findingthearea.egg-info/dependency_links.txt
+Findingthearea.egg-info/requires.txt
+Findingthearea.egg-info/top_level.txt
+src/__init__.py
+src/loger.py
+src/main.py
