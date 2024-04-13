@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "vellox"
+version = "0.1.2"
+description = "GCP Cloud Functions support for ASGI applications"
+authors = ["junah201 <junah.dev@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://vellox.junah.dev"
+repository = "https://github.com/junah201/vellox"
+documentation = "https://vellox.junah.dev"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+
+Flask = "==2.2.5"
+typing_extensions = "==4.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+extend-exclude = [
+    "docs/*"
+]
