@@ -1,0 +1,8 @@
+# Virtual Env
+local/
+
+# build
+dist/
+
+# Python
+__pycache__/
