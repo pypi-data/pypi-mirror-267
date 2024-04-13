@@ -1,0 +1,9 @@
+pyjsonapi/__init__.py,sha256=agU6H8QHrVfUOWyZlI0RszJx9AbE-adluDQg_nqG4og,403
+pyjsonapi/model.py,sha256=tzy1b0lJ-DM4ONAIXFFoPSYUxFHuXciFmFNGvxy9Xr0,5491
+pyjsonapi/relationship.py,sha256=I0o8FScPkt43aQea7Dexwz9SFPqusVrPU9zsJ0-akd8,5364
+pyjsonapi/session.py,sha256=Uc_seJN_VxneD5a5oLgxy2FlzHURB4sK1kFcGlpaDjo,5045
+pyjsonapi/utils.py,sha256=_KuzNojy6m7UteDT56dS5BvIkPrW_lN4S9vZrY49LoI,396
+jsonapi_python-0.1.1.dist-info/LICENSE,sha256=I0OGe8pXlCNgxWqomNTR_FVYPGTrJralE217d7Ljl8Q,1066
+jsonapi_python-0.1.1.dist-info/METADATA,sha256=0C1p_3UkIQyfc8X7ANb0LHe1zsAemdIShk5GaCmzT1E,1233
+jsonapi_python-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+jsonapi_python-0.1.1.dist-info/RECORD,,
