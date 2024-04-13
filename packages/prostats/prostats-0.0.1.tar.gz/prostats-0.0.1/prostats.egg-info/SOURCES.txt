@@ -1,0 +1,9 @@
+README.md
+setup.py
+prostats.egg-info/PKG-INFO
+prostats.egg-info/SOURCES.txt
+prostats.egg-info/dependency_links.txt
+prostats.egg-info/entry_points.txt
+prostats.egg-info/requires.txt
+prostats.egg-info/top_level.txt
+scripts/setup_alias.sh
