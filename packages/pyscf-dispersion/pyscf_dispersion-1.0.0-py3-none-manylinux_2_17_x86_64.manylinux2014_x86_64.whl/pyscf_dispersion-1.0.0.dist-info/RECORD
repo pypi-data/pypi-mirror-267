@@ -1,0 +1,14 @@
+pyscf/lib/libdftd4.so,sha256=krbIcHy77PGLmt9HzIMrGu3qOFjPmx0HsqQEWArUR3o,1374321
+pyscf/lib/libs-dftd3.so,sha256=yhmqgUUzHEEJGMJqFX6nJNM3Z3TrzA7Xwh96yfVCMlc,1782993
+pyscf/dispersion/dftd4.py,sha256=MtvlCFy4iFhoM4uHFyjY2CJu1ZeCZfyvUVdWqqdOZAQ,3618
+pyscf/dispersion/__init__.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+pyscf/dispersion/dftd3.py,sha256=1Y32ysd5UbUgPTzZrRlAlP5kHa_-TH4148DvypYjQL4,4392
+pyscf_dispersion.libs/libopenblas-r0-f650aae0.3.3.so,sha256=eewCtT9XPNcRaonwTDl0cwGOf9oFcgs1TUNQXBnUeVg,37325001
+pyscf_dispersion.libs/libgfortran-91cc3cb1.so.3.0.0,sha256=VePrZzBsL_F-b4oIEOqg3LJulM2DkkxQZdUEDoeBRgg,1259665
+pyscf_dispersion.libs/libquadmath-96973f99.so.0.0.0,sha256=k0wi3tDn0WnE1GeIdslgUa3z2UVF2pYvYLQWWbB12js,247609
+pyscf_dispersion.libs/libgfortran-040039e1.so.5.0.0,sha256=FK-zEpsai1C8QKOwggx_EVLqm8EBIaqxUpQ_cFdHKIY,2686065
+pyscf_dispersion-1.0.0.dist-info/top_level.txt,sha256=-PTes7ZVYfXPi-AIPAMR9vCJdPaFCLjwxfdldz9UUpA,6
+pyscf_dispersion-1.0.0.dist-info/METADATA,sha256=IPg7PfZo6Aqp9mm_-VGHQndu1lXLxtiT3WdZHLTPWUQ,1674
+pyscf_dispersion-1.0.0.dist-info/WHEEL,sha256=m5r-5MXR37uxKCJ56xnmHOhKbF0hPJO5LF4lZ8W2cQA,145
+pyscf_dispersion-1.0.0.dist-info/RECORD,,
+pyscf_dispersion-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
