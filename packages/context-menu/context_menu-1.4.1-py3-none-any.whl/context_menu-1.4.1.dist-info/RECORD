@@ -1,0 +1,10 @@
+context_menu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+context_menu/linux_menus.py,sha256=EjHUth6QGMdLO2tzGwn-1ClAKLORDSSOTjzguR_Qljc,12780
+context_menu/menus.py,sha256=2ZqRo3QPDMnQN__PZDYEBD2fAZC_oMN-XFFfw28TZGo,6494
+context_menu/pytest_plugin.py,sha256=tYC7p-NjbWfOWz0drRezGsdxqbaCDLoh56I3hzHnTK8,7824
+context_menu/windows_menus.py,sha256=VjjZR63U-nYHSGFcKEW1LjEXPy3Fp7Hl0CCEjA7zQXw,15776
+context_menu-1.4.1.dist-info/LICENSE,sha256=3m7dwKsJtPd1C4OgebotYLZZbsr-gC_t_r6lvBFzMi4,1086
+context_menu-1.4.1.dist-info/METADATA,sha256=bTWxjNSDXcwl_8K_I52h9_w3gAVjYPcPQhbbJuyZjuE,15256
+context_menu-1.4.1.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+context_menu-1.4.1.dist-info/top_level.txt,sha256=kE_j7NMpIr7VDkcLaD-fRDrdjzxmSyJO6lAA1IMjtE4,13
+context_menu-1.4.1.dist-info/RECORD,,
