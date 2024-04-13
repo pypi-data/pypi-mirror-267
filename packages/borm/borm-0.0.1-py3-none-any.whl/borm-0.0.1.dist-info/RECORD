@@ -1,0 +1,9 @@
+borm/__init__.py,sha256=PGH7Llo6sUuiY_tOcwibIs79LTie8hMnzdCzJjh-vx4,86
+borm/database.py,sha256=rxjTRk2dyqgGQiK46t9En8E0tLeeVkhaEjEArkXx0Q0,2546
+borm/fields.py,sha256=_u7tSyABAdXzEcLEU07oWWji85iiTOU2OhEuTXeDZ3c,2680
+borm/manager.py,sha256=q6r6uT3kswrR6h0BpuHVYXNkwRPZ-7BiLbPvIn3x3Io,3027
+borm/models.py,sha256=53-g8qlL6zna4IhSHkomJVjpkzf0FajRCSNqFH1Iar0,2492
+borm/settings.py,sha256=uB9USrBwpNmt2A6YvxzTIXnDV2ZBkC7WRniQlH44cpY,131
+borm-0.0.1.dist-info/METADATA,sha256=Dy6hkHmZgjl6m8KmXmnaALPWY54MHLJez-q8F_-0648,2864
+borm-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+borm-0.0.1.dist-info/RECORD,,
