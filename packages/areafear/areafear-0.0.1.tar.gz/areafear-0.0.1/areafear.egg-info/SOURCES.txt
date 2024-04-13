@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+area/__init__.py
+area/area_determ.py
+area/loger.py
+areafear.egg-info/PKG-INFO
+areafear.egg-info/SOURCES.txt
+areafear.egg-info/dependency_links.txt
+areafear.egg-info/requires.txt
+areafear.egg-info/top_level.txt

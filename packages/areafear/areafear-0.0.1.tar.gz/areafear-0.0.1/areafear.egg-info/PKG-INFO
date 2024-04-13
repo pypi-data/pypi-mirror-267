@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: areafear
+Version: 0.0.1
+Summary: This is the simplest modul for calculate figure area.
+Author: karleneg
+Author-email: kolya.gar.1@gmail.com
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pytest==8.1.1
+Requires-Dist: loguru==0.7.2
+
+# Description
+
+This is simple lib for get area of figure.
+Module have class *AreaDeterminant*. For get area you need call *get_area*.
