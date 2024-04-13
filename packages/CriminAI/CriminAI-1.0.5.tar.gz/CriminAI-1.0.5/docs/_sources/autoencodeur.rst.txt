@@ -1,0 +1,8 @@
+VAE
+===
+
+.. automodule:: autoencodeur_BW
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
