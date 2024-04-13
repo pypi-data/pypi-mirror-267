@@ -1,0 +1,9 @@
+README.md
+setup.py
+CogencisDataApiPy/CogencisDataApiPy.py
+CogencisDataApiPy/__init__.py
+CogencisDataApiPy.egg-info/PKG-INFO
+CogencisDataApiPy.egg-info/SOURCES.txt
+CogencisDataApiPy.egg-info/dependency_links.txt
+CogencisDataApiPy.egg-info/requires.txt
+CogencisDataApiPy.egg-info/top_level.txt
