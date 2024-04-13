@@ -1,0 +1,13 @@
+kibo_unibs_fp_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kibo_unibs_fp_lib/ansi_colors.py,sha256=0y3Jymb1pjBcWzcOifmGDf52zousVa1k8vY_cF-ZRws,712
+kibo_unibs_fp_lib/file_service.py,sha256=-z4JFp-x0Z9iEUVyy6obvFhb26vamTJQvYShuG_H_NQ,2151
+kibo_unibs_fp_lib/input_data.py,sha256=yE2-eJ3s5AIkszVew9cRoRw55F5G7DGO7XGqYMc_ov0,10127
+kibo_unibs_fp_lib/known_problems.py,sha256=2ntNXATky3bNuuqzK2ZGTo7OPKCe-sRF5e8k7eEIibI,3223
+kibo_unibs_fp_lib/menu.py,sha256=3HKR2ypq14jjRgae9YfVb6CTTNix4sygPBTkyuTr30c,5065
+kibo_unibs_fp_lib/pretty_strings.py,sha256=Vr5vIEQPBbqgnKR14cVhjWUpWUQTCNinZjMhqkXbrZk,4790
+kibo_unibs_fp_lib/random_draws.py,sha256=gfsV-6pimqbE48eGnanVtOpD5-xZCwP7v5-rsBMetcM,2745
+kibo_unibs_fp_lib-1.0.4.dist-info/LICENSE.txt,sha256=5tq3ISirk-A7ASkyMl___KBgqfU9HFgAK59ND9vx6T4,1073
+kibo_unibs_fp_lib-1.0.4.dist-info/METADATA,sha256=UyFaxz5DbT3Yo_nZT65lOSyrggo82IXrKZssD1pK5f0,2460
+kibo_unibs_fp_lib-1.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+kibo_unibs_fp_lib-1.0.4.dist-info/top_level.txt,sha256=bqHPsPj8F9CJlcbPSgcpnJaUd3AyhnwmFPusHl03tC8,18
+kibo_unibs_fp_lib-1.0.4.dist-info/RECORD,,
