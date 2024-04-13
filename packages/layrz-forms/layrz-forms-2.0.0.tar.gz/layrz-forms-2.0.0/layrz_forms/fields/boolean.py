@@ -1,0 +1,40 @@
+""" Boolean field """
+from typing import Any
+
+from .base import Field
+
+
+class BooleanField(Field):
+  """
+  IdField class for validation
+  ---
+  Attributes
+    required: bool
+      Indicates if the field is required or not
+  """
+
+  def __init__(self, required: bool = False) -> None:
+    super().__init__(required=required)
+
+  def validate(self, key: str, value: Any, errors: dict) -> None:
+    """
+    Validate the field with the following rules:
+    - Should be a bool
+    ---
+    Arguments
+      key: str
+        Key of the field
+      value: any
+        Value to validate
+      errors: dict
+        Dict of errors
+    """
+
+    super().validate(key=key, value=value, errors=errors)
+
+    if not isinstance(value, bool) and (self.required and value is not None):
+      self._append_error(
+        key=key,
+        errors=errors,
+        to_add={'code': 'invalid'},
+      )
