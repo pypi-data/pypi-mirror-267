@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+omni_python/__init__.py
+omni_python/base.py
+omni_python/client.py
+omni_python/response.py
+slang_omni.egg-info/PKG-INFO
+slang_omni.egg-info/SOURCES.txt
+slang_omni.egg-info/dependency_links.txt
+slang_omni.egg-info/top_level.txt
