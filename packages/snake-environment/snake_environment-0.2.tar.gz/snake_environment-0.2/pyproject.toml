@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snake_environment"
+version = "0.2.0"
+authors = [
+  { name="LPengulin", email="contact@pengulin.com" },
+]
+description = "A simple snake environment with 18 states and 4 actions"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies=[
+    "numpy",
+    "pygame"
+]
+
+[project.urls]
+Homepage = "https://github.com/LPengulin/Python_snake_environment"
+Issues = "https://github.com/LPengulin/Python_snake_environment/issues"
