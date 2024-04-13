@@ -1,0 +1,2 @@
+[console_scripts]
+g2papi = g2papi.cli:main
