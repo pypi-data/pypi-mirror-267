@@ -1,0 +1,75 @@
+#HALO INI ADALAH CLONE DARI PYROFORK.
+
+from io import BytesIO
+
+from haku.raw.core.primitives import Int, Long, Int128, Int256, Bool, Bytes, String, Double, Vector
+from haku.raw.core import TLObject
+from haku import raw
+from typing import List, Optional, Any
+
+# # # # # # # # # # # # # # # # # # # # # # # #
+#               !!! WARNING !!!               #
+#          This is a generated file!          #
+# All changes made in this file will be lost! #
+# # # # # # # # # # # # # # # # # # # # # # # #
+
+
+class InvitedUsers(TLObject):  # type: ignore
+    """Telegram API type.
+
+    Constructor of :obj:`~haku.raw.base.messages.InvitedUsers`.
+
+    Details:
+        - Layer: ``177``
+        - ID: ``7F5DEFA6``
+
+    Parameters:
+        updates (:obj:`Updates <haku.raw.base.Updates>`):
+            N/A
+
+        missing_invitees (List of :obj:`MissingInvitee <haku.raw.base.MissingInvitee>`):
+            N/A
+
+    Functions:
+        This object can be returned by 3 functions.
+
+        .. currentmodule:: haku.raw.functions
+
+        .. autosummary::
+            :nosignatures:
+
+            messages.AddChatUser
+            messages.CreateChat
+            channels.InviteToChannel
+    """
+
+    __slots__: List[str] = ["updates", "missing_invitees"]
+
+    ID = 0x7f5defa6
+    QUALNAME = "types.messages.InvitedUsers"
+
+    def __init__(self, *, updates: "raw.base.Updates", missing_invitees: List["raw.base.MissingInvitee"]) -> None:
+        self.updates = updates  # Updates
+        self.missing_invitees = missing_invitees  # Vector<MissingInvitee>
+
+    @staticmethod
+    def read(b: BytesIO, *args: Any) -> "InvitedUsers":
+        # No flags
+        
+        updates = TLObject.read(b)
+        
+        missing_invitees = TLObject.read(b)
+        
+        return InvitedUsers(updates=updates, missing_invitees=missing_invitees)
+
+    def write(self, *args) -> bytes:
+        b = BytesIO()
+        b.write(Int(self.ID, False))
+
+        # No flags
+        
+        b.write(self.updates.write())
+        
+        b.write(Vector(self.missing_invitees))
+        
+        return b.getvalue()
