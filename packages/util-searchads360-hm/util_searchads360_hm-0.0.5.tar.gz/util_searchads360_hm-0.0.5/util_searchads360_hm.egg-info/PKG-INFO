@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: util-searchads360-hm
+Version: 0.0.5
+Summary: A package of the Search Ads 360 Utility Tool
+Home-page: https://developers.google.com/search-ads/reporting/client-libraries/client-libraries
+Author: Joe Fedorowicz
+Author-email: jfedorowicz@harmelin.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+
+UNKNOWN
+
