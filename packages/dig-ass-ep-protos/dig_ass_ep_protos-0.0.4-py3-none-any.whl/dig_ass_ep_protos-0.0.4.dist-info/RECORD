@@ -1,0 +1,9 @@
+dig_ass_ep_protos/DigitalAssistantEntryPoint_pb2.py,sha256=nTtVNa0Cy_VAufQdFZfwTDU_GT0k8vyRANSLCJb0TuU,2166
+dig_ass_ep_protos/DigitalAssistantEntryPoint_pb2.pyi,sha256=VtbHs0yjEUPUak4zPdpsWy3rXwV5qnAS8Ubj4548Nb0,1455
+dig_ass_ep_protos/DigitalAssistantEntryPoint_pb2_grpc.py,sha256=h0sLqy067Ly9vL0NssQJ2smcoHX3ZZj6QCtsTpbGNDY,3050
+dig_ass_ep_protos/__init__.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+dig_ass_ep_protos/client.py,sha256=yHYDqG4lxoLgY5erZpBF9u3E87zGN3xJCje2AmNlXUY,1612
+dig_ass_ep_protos-0.0.4.dist-info/METADATA,sha256=RTcG1orO5NI09NGVCas0NH6jGp-uPnzIA3ziUmMiXKM,333
+dig_ass_ep_protos-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dig_ass_ep_protos-0.0.4.dist-info/top_level.txt,sha256=PQCUIRWapT8EGtAYQgsf9SiKk5G_m4o13Uh1dl5jRI8,18
+dig_ass_ep_protos-0.0.4.dist-info/RECORD,,
