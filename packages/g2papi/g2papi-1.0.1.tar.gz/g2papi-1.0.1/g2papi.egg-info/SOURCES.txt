@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+g2papi/__init__.py
+g2papi/api.py
+g2papi/cli.py
+g2papi.egg-info/PKG-INFO
+g2papi.egg-info/SOURCES.txt
+g2papi.egg-info/dependency_links.txt
+g2papi.egg-info/entry_points.txt
+g2papi.egg-info/requires.txt
+g2papi.egg-info/top_level.txt
