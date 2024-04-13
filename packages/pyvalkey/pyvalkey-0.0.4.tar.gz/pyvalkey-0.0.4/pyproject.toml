@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "pyvalkey"
+version = "0.0.4"
+description = "pyvalkey: Python implemented Valkey server"
+authors = ["Netanel Revah <netanelrevah@outlook.com>"]
+license = "MIT License"
+readme = "README.md"
+packages = [
+    { include = "pyvalkey" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.9.0"
+sortedcontainers = "^2.4.0"
+typing-extensions = "^4.8.0"
+
+[tool.poetry.group.dev.dependencies]
+redis = "^5.0.0"
+pytest = "^7.3.1"
+ruff = "^0.1.0"
+mypy = "^1.6.0"
+pytest-parametrization = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+
+ignore = ["E731"]
+
+[[tool.mypy.overrides]]
+module = [
+    "sortedcontainers",
+]
+ignore_missing_imports = true
