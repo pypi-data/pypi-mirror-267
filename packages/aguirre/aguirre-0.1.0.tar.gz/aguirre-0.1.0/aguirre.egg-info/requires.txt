@@ -1,0 +1,6 @@
+
+[testing]
+flask
+mypy
+pyroma
+quart
