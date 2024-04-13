@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: ignutils
+Version: 0.0.6
+Summary: A small CV test package
+Author-email: Chinmay <chinmayananda.sahu@ignitarium.com>
+Project-URL: Homepage, https://gitlab.ignitarium.in/ign-ai/internal/ign_py_library/ignutils/-/tree/main?ref_type=heads
+Project-URL: Issues, https://gitlab.ignitarium.in/ign-ai/internal/ign_py_library/ignutils/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: termcolor
+
+# ignutils
+<div align="center">
+  <img src="ignitarium-logo.png">
+</div>
+
+[![PyPI version](https://badge.fury.io/py/ignutils.svg)](https://badge.fury.io/py/ignutils)
+
+A python package of reusable, battle tested common modules, mainly related to image processing. Issues and contributions are welcome.
+
+## Install
+
+`python3.8 -m venv venv3.8`\
+`source venv3.8/bin/activate`\
+`pip3 install --upgrade pip`\
+`pip3 install -e ignutils/`
+
+### [ignutils](ignutils)  :heart_eyes_cat: Computer Vision Package
+
+- [x] [Json Utils](cvutils/cvutils/json_utils.py): Utils for reading, writing, comparing json files..
