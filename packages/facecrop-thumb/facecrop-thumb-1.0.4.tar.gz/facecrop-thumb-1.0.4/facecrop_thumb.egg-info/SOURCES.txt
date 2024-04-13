@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+facecrop_thumb/__init__.py
+facecrop_thumb/face_detection.py
+facecrop_thumb/image_processing.py
+facecrop_thumb/main.py
+facecrop_thumb/thumbnail_generation.py
+facecrop_thumb.egg-info/PKG-INFO
+facecrop_thumb.egg-info/SOURCES.txt
+facecrop_thumb.egg-info/dependency_links.txt
+facecrop_thumb.egg-info/entry_points.txt
+facecrop_thumb.egg-info/requires.txt
+facecrop_thumb.egg-info/top_level.txt

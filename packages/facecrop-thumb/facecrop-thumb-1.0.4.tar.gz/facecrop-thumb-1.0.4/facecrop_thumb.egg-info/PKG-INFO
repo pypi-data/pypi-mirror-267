@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: facecrop-thumb
+Version: 1.0.4
+Summary: Generate thumbnails of detected faces in images using Python.
+Home-page: https://github.com/mr-vaibh/facecrop-thumb
+Author: Vaibhav Shukla
+Author-email: shuklavaibhav336@example.com
+License: MIT
+Keywords: face detection thumbnail image-processing
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE
+Requires-Dist: mtcnn>=0.1.1
+Requires-Dist: opencv-python>=4.9.0.80
+
+FaceCropThumb is a Python package for generating thumbnails of detected faces in images. It utilizes the MTCNN (Multi-Task Cascaded Convolutional Neural Network) for accurate face detection and OpenCV for image processing.
