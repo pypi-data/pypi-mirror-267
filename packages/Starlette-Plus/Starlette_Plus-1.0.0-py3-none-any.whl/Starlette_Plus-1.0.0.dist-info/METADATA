@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: Starlette-Plus
+Version: 1.0.0
+Summary: Additional features, utilities and helpers for Starlette.
+Author: PythonistaGuild
+Project-URL: Homepage, https://github.com/PythonistaGuild/StarlettePlus
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: starlette >=0.37.2
+Requires-Dist: itsdangerous >=2.1.2
+Requires-Dist: redis >=5.0.3
+Provides-Extra: dev
+Requires-Dist: ruff ; extra == 'dev'
+Requires-Dist: pyright ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Requires-Dist: mkdocstrings-python ; extra == 'docs'
+Requires-Dist: mkdocstrings ; extra == 'docs'
+
+# Starlette-Plus
+
+Some helpers, utilities and middleware for Starlette.
+
+### This is a beta release, documentation has not been implemented yet.
+
+
+```
+pip install starlette-plus
+```
