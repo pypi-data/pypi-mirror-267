@@ -1,0 +1,15 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+Steps to Build.txt
+pyproject.toml
+setup.py
+mat_summarization.egg-info/PKG-INFO
+mat_summarization.egg-info/SOURCES.txt
+mat_summarization.egg-info/dependency_links.txt
+mat_summarization.egg-info/requires.txt
+mat_summarization.egg-info/top_level.txt
+matsummarization/LICENSE
+matsummarization/README.md
+matsummarization/__init__.py
