@@ -1,0 +1,14 @@
+mana_clust/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mana_clust/common_functions.py,sha256=h-58XPsiBC2ylFKCEac3PuYNsC5Lpr_L_s4EVj_CAes,12025
+mana_clust/mana_annotate_results.py,sha256=OI3e-f5rmWpuJ73fSxelNW2EDzetnI9hDJPAtPJ3bvM,35055
+mana_clust/mana_cat.py,sha256=rcFaaZkDnRewLaubGs-vUbNpk-lEpceiCfCcqIbuTps,39286
+mana_clust/mana_clust.py,sha256=BHcdOjvD0Fth4Z8S0wAqKmsCkxqwZTtEsGepnE5DWlM,32395
+mana_clust/mana_continuous.py,sha256=B82rY6KElyZTxQGlruzOzNkFsbIyF1F8cLWoSOZHNcY,47935
+mana_clust/mana_log_loss.py,sha256=564mz0i74lYXNxcN6stdT52ApliyHhOXggFyIJNkhW8,17273
+mana_clust/mana_make_website.py,sha256=tXPATp3-tr9PE_NYf_Efn7CS-V4fOPNEiqknsbvmzMc,61497
+mana_clust/run_simulation_study.py,sha256=vcjNYVQLqchjUKXvGcLtbeM05tZMo3MrD999FiNzldY,19704
+mana_clust/simulate_datasets.py,sha256=TOriadOd8n1ovNGEOQHE0l_oAfDXr-FFf1E7TlNXdpw,9406
+MANAclust-0.7.3.dist-info/METADATA,sha256=kfSRglY5NCfwqgmBkt8hQ-iwn4a02NN2OqEh16p3N9w,6671
+MANAclust-0.7.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+MANAclust-0.7.3.dist-info/top_level.txt,sha256=I9zIRPlCvrJe_kX7w4sgV1JM44UZsW1_1lZ0BmewvkM,11
+MANAclust-0.7.3.dist-info/RECORD,,
