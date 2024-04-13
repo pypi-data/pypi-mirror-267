@@ -1,0 +1,6 @@
+secure_email/__init__.py,sha256=D1BowHG-ENhuvM2qKoW_EIJn0FTpXzyWfujzqcERVZ0,335
+secure_email/sendmail.py,sha256=V9bRGkfR6cSXIsfobfrxK2ZUJWpHjNhhnYrNMFDbNNA,6935
+secure_email-1.0.0.dist-info/LICENSE,sha256=eY8VcfmctunsFiKL9qIGTH-CINXrLplpMfS1KRRIBIE,1087
+secure_email-1.0.0.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+secure_email-1.0.0.dist-info/METADATA,sha256=hdzRYmF5j8bi9KxY2UZrdSVcPiYKit17rmsnpxwIag8,4309
+secure_email-1.0.0.dist-info/RECORD,,
