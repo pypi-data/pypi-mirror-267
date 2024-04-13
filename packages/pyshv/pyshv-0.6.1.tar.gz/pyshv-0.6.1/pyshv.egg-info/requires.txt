@@ -1,0 +1,15 @@
+pyserial
+aioserial
+
+[:sys_platform == "linux"]
+asyncinotify
+
+[docs]
+sphinx
+sphinx_rtd_theme
+sphinx-multiversion
+
+[test]
+pytest
+pytest-asyncio==0.21.1
+pytest-cov
