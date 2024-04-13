@@ -1,0 +1,12 @@
+numpy
+scipy
+matplotlib
+pyproj
+configparser
+mt_metadata
+mth5
+geopandas
+rasterio
+contextily
+pyevtk
+SimPEG==0.20.0
