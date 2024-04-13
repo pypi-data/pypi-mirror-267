@@ -1,0 +1,8 @@
+README.md
+setup.py
+modcondor/__init__.py
+modcondor/cal.py
+modcondor.egg-info/PKG-INFO
+modcondor.egg-info/SOURCES.txt
+modcondor.egg-info/dependency_links.txt
+modcondor.egg-info/top_level.txt

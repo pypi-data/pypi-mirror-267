@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: modcondor
+Version: 0.1
+Summary: Ejercicio de paquetes de python
+Author: jhony
+Author-email: jhony28bravo@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# Proyecto modulo
+
+## Ejemplo de como usar el paquete previamente instalado 
+
+''' 
+from modcondor import *
+
+print(cal.areaCirculo(5))
+
+'''
