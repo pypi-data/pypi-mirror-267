@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: krisolis-utilities
+Version: 0.11
+Summary: Utility functions for data visualization and model evaluation
+Home-page: https://github.com/tfiroze/krisolis_utilities
+Author: Tehsein
+Keywords: krisolis utilities tools
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+
