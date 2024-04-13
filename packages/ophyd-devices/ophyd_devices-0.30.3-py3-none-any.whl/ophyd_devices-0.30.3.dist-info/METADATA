@@ -1,0 +1,29 @@
+Metadata-Version: 2.3
+Name: ophyd_devices
+Version: 0.30.3
+Summary: Custom device implementations based on the ophyd hardware abstraction layer
+Project-URL: Bug Tracker, https://gitlab.psi.ch/bec/ophyd_devices/issues
+Project-URL: Homepage, https://gitlab.psi.ch/bec/ophyd_devices
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.10
+Requires-Dist: bec-lib
+Requires-Dist: h5py
+Requires-Dist: hdf5plugin
+Requires-Dist: numpy
+Requires-Dist: ophyd~=1.9
+Requires-Dist: prettytable
+Requires-Dist: pyepics
+Requires-Dist: pytest
+Requires-Dist: pyyaml
+Requires-Dist: std-daq-client
+Requires-Dist: typeguard
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: coverage; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Requires-Dist: pylint; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-random-order; extra == 'dev'
