@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://widgets.acme.com/acme_payload_widget_v1",
+  "title": "acme_payload_widget_v1",
+  "description": "defines the structure of widget data",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["batchNo"],
+  "properties": {
+    "syntheticId": {
+      "description": "indicates the instance of data is not production data and may be ignored by downstream consumers",
+      "type": "string",
+      "pattern": "^[^\\:.]+\\:.+$",
+      "examples": [
+        "acme:integration-tests:widgets -> reject invalid widget",
+        "acme:heartbeat:source=kafka,topic=some-topic,timestamp=1697487814",
+        "acme:adg:user1",
+        "some-partner:some-test1"
+      ]
+    },
+    "batchNo": {
+      "description": "indicates the manufacturing batch of the widget",
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

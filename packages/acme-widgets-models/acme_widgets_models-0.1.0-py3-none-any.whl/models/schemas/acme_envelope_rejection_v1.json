@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://widgets.acme.com/acme_envelope_rejection_v1",
+  "title": "acme_envelope_rejection",
+  "description": "captures rejection  information along with rejected item",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["code", "issues", "subject"],
+  "properties": {
+    "code": {
+      "description": "indicates why the item was rejected",
+      "type": "string",
+      "enum": [
+        "duplicate",
+        "invalid",
+        "unconvertable",
+        "unparsable",
+        "unsupported"
+      ]
+    },
+    "issues": {
+      "description": "a list of problem(s) causing the subject item to be rejected",
+      "type": "array",
+      "items": {
+        "description": "describes an individual issue/problem with the subject item",
+        "type": "object",
+        "required": ["location", "reason"],
+        "additionalProperties": false,
+        "properties": {
+          "location": {
+            "description": "JSON path indicating where in the document the issue resides",
+            "type": "string",
+            "minLength": 1,
+            "examples": ["$.someProperty"]
+          },
+          "reason": {
+            "description": "human readable description of the issue",
+            "type": "string",
+            "minLength": 1,
+            "examples": ["invalid date format", "field is required"]
+          }
+        }
+      }
+    },
+    "context": {
+      "description": "primarily contains all of the properties found in the item's envelope but may include additional information",
+      "type": "object",
+      "additionalProperties": true
+    },
+    "subject": {
+      "description": "the entity/item being rejected - envelope excluded",
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

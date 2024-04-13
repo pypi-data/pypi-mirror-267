@@ -1,0 +1,14 @@
+models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+models/schemas/__init__.py,sha256=VF_YOx2H0XNuvJr5YG5GIXESNFFNpMGweQdLUdJrwf4,903
+models/schemas/acme_envelope_ingest_v1.json,sha256=Evd0t4j-pWSJFQ0NO_u4xEf3TtMU7tNdyGVwpxQkzUQ,2666
+models/schemas/acme_envelope_rejection_v1.json,sha256=HUvsedc6Z-nNC4G3LiaEtAFH3E3ub4MjLePLPMk61dk,1820
+models/schemas/acme_envelope_widget_v1.json,sha256=4wYSa1Lz9GSmbRhqSpeObB4jMf7Eqn04YrpNLViO9hE,3105
+models/schemas/acme_payload_widget_v1.json,sha256=a34n9P0tBUEigzc82OuEREmTFau3QI4SUwg_3IhAJMg,901
+models/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+models/tests/conftest.py,sha256=hBtZpolZQ4HOTC2o_1c86tQ2jicj2L6vTY2JwBHIfgs,321
+models/tests/schemas_test.py,sha256=zNZcRobdsBSMs1g5FchJqQ2u4iiL_NVxYp1S2UZYkys,798
+models/tests/validation_test.py,sha256=FgJqHb239B8lmhKURe8lB_8yDMcTuMJfkoa19DLW-JM,850
+models/validation.py,sha256=z3iTSgBvk3uS4pySUR9Lr4sFG4hdzFexyHbHs-yhY1Q,786
+acme_widgets_models-0.1.0.dist-info/METADATA,sha256=N6bLF13j0VlInx5M0vMqKJ7LmXLP6YD2AF5Pmo0JHFU,1434
+acme_widgets_models-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+acme_widgets_models-0.1.0.dist-info/RECORD,,
