@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/optioner.py
+src/optioner.egg-info/PKG-INFO
+src/optioner.egg-info/SOURCES.txt
+src/optioner.egg-info/dependency_links.txt
+src/optioner.egg-info/top_level.txt
+tests/test_basic.py
+tests/test_compulsory_args.py
+tests/test_ifthisthennotthat.py
+tests/test_ifthisthennotthat_vigorous.py
+tests/test_ignore.py
