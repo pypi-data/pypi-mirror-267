@@ -1,0 +1,70 @@
+==================
+Hatch Yaml Compile
+==================
+
+.. image:: https://img.shields.io/badge/made%20with-python-yellow
+   :alt: Made with Python
+   :target: https://www.python.org/
+
+
+A hatch build hook that takes yaml files and converts them to msgpack.
+This way, your code can ship with msgpack data files for lightning-fast conversion,
+but your repo can contain easy-to-maintain yaml.
+
+Getting Started
+===============
+
+Prerequisites
+-------------
+
+* Python 3.10+
+* git *(if installing from source, or contributing to the project)*
+
+Installation
+------------
+
+.. note::
+
+   If wanting to contribute to the project, and setup your local development
+   environment, see the ``CONTRIBUTING.rst`` document in the source repository
+   for this project.
+
+
+
+Installation
+------------
+
+To set up ``hatch-yaml-compile`` for your project you just need to put it in
+your project's ``pyproject.toml`` file as a ``build-system`` requirement:
+
+.. code-block:: toml
+
+   [build-system]
+   requires = ["hatchling", "hatch-yaml-compile"]
+   build-backend = "hatchling.build"
+
+Usage
+=====
+
+Now you'll need to configure the build scripts you want to run.
+This is done by adding an array of scripts to the tool.hatch.build.hooks.build-scripts.scripts
+key in your pyproject.toml file. In practice this looks like:
+
+.. code-block:: toml
+
+   [tool.hatch.build.hooks.convert-data-file.options]
+   pattern = "*.yaml"
+   target_format = "msgpack"
+   remove_source_files = true
+
+
+Roadmap
+=======
+
+Reference the `open issues <https://gitlab.com/Akm0d/salt-agi/issues>`__ for a list of
+proposed features (and known issues).
+
+Acknowledgements
+================
+
+* `Img Shields <https://shields.io>`__ for making repository badges easy.
