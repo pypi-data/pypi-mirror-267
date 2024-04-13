@@ -1,0 +1,17 @@
+click
+
+[dev]
+pip-tools
+
+[release]
+python-semantic-release==9.4.0
+build
+setuptools-scm[toml]
+
+[test]
+isort
+black
+flake8
+ruff
+pytest
+pytest-cov
