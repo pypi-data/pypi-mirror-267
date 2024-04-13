@@ -1,0 +1,25 @@
+{
+    "Name of Sample": "sample",
+    "Name of Reference": "ref",
+    "Minimum mapping quality to use an aligned read": -1,
+    "Minimum number of reads in an alignment map": 100000,
+    "Number of Reads": 100000,
+    "Compute relationships for bases in a read that extend beyond its mate": true,
+    "Number of Batches": 2,
+    "MD5 Checksums of Batches": {
+        "relate": [
+            "aecbe173fb50e87d9096762523981401",
+            "11752dc71834a49e7666029a38852b13"
+        ],
+        "qnames": [
+            "d3cec040fabddf98dc0592a67c6a2ec6",
+            "d29341656aa6073dece27c32fa68ae50"
+        ]
+    },
+    "MD5 Checksum of Reference Sequence File": "ca87a559caf786b3b137caf32e798d1b",
+    "Branches": [],
+    "Time Began": "2024-04-10 at 15:18:13",
+    "Time Ended": "2024-04-10 at 15:18:15",
+    "Time Taken (minutes)": 0.03,
+    "Version of SEISMIC-RNA": "0.15.4"
+}
