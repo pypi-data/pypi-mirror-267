@@ -1,0 +1,12 @@
+{
+    "entity": {
+        "button": {
+            "connect": {
+                "name": "\u8fde\u63a5"
+            },
+            "disconnect": {
+                "name": "\u65ad\u5f00"
+            }
+        }
+    }
+}
