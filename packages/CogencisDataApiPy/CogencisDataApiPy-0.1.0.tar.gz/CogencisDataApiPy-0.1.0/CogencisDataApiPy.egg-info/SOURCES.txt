@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+CogencisDataApiPy.egg-info/PKG-INFO
+CogencisDataApiPy.egg-info/SOURCES.txt
+CogencisDataApiPy.egg-info/dependency_links.txt
+CogencisDataApiPy.egg-info/requires.txt
+CogencisDataApiPy.egg-info/top_level.txt
