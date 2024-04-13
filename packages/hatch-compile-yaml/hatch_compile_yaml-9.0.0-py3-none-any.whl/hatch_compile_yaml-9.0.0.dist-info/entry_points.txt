@@ -1,0 +1,2 @@
+[hatch]
+build-script = hatch_compile_yaml.hooks
