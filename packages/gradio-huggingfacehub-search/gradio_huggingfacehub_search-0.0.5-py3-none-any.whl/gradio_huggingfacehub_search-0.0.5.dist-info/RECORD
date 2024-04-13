@@ -1,0 +1,11 @@
+gradio_huggingfacehub_search/__init__.py,sha256=l-zcSCmCUEP9nLWKzIfyYCiUABVi3tzppvC3zvuv5Oo,93
+gradio_huggingfacehub_search/huggingfacehub_search.py,sha256=tc5Fg5pL991JfjZWk54zvfJcRciq5RZm80Ma-dgamWc,4725
+gradio_huggingfacehub_search/huggingfacehub_search.pyi,sha256=_AfYAIlMrinarOjJXogDyiM77sv3-MwC9UhGoKyty_k,20061
+gradio_huggingfacehub_search/huggingfacehub_search.pyi.temo,sha256=YgHH2rg794UDRANF1dDftfU5kxWp0MhCfov-z-hhMus,39420
+gradio_huggingfacehub_search/templates/component/index.js,sha256=4H4SL74HZxzFpi7aK-GF-82SyzL2vKpJDk8F6Q7_QJ4,115227
+gradio_huggingfacehub_search/templates/component/style.css,sha256=2c4K_yoimlEMi_oi80U2wrMkZ4X-qkkVYx7ijnzS2sQ,144797
+gradio_huggingfacehub_search/templates/example/index.js,sha256=UrGDTnz0aa5VEibDg5DSOvY3oEl3yVPdr-ugkiIJNeU,2315
+gradio_huggingfacehub_search/templates/example/style.css,sha256=-DHk5asz3SWFNLQlCnYuMN4b4gTf_srMmlu5x_xU_Pw,147
+gradio_huggingfacehub_search-0.0.5.dist-info/METADATA,sha256=-XqiMZ_eDQZzkeodUx-JwXhRQSEASfovZrSkIIFgw64,8734
+gradio_huggingfacehub_search-0.0.5.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+gradio_huggingfacehub_search-0.0.5.dist-info/RECORD,,
