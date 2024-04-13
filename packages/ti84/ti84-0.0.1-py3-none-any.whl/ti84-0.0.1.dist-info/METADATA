@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: ti84
+Version: 0.0.1
+Project-URL: Homepage, https://github.com/Dmarky9873/ti84
+Project-URL: Issues, https://github.com/Dmarky9873/ti84/issues
+Author-email: Daniel Markusson <markussondan@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# ti84
+A graphing calculator library based on the ti84.
