@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: rich_split
+Version: 0.0.1
+Summary: Library for splitting simple strings and markdown
+Project-URL: Homepage, https://github.com/Danstiv/rich_split
+Project-URL: Bug Tracker, https://github.com/Danstiv/rich_split/issues
+Author-email: Danstiv <danstiv@yandex.ru>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: marko>=2.0.3
+Description-Content-Type: text/markdown
+
+# Rich Split
+
+Library for splitting simple text and markdown
+
+Will be documented later.
