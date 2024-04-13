@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+lib/crcany/crc.c
+lib/crcany/model.c
+src/crcany/__init__.py
+src/crcany/crcany.pyx
+src/crcany/models.py
+src/crcany.egg-info/PKG-INFO
+src/crcany.egg-info/SOURCES.txt
+src/crcany.egg-info/dependency_links.txt
+src/crcany.egg-info/top_level.txt
