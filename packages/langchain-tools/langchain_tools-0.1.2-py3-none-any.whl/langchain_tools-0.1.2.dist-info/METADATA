@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: langchain-tools
+Version: 0.1.2
+Requires-Dist: langchain
+Requires-Dist: langchain-community
+Requires-Dist: langchain-openai
+
