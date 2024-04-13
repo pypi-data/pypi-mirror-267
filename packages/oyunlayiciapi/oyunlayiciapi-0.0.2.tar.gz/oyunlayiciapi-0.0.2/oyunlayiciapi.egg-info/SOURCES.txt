@@ -1,0 +1,9 @@
+README.md
+setup.py
+oyunlayici-api/__init__.py
+oyunlayici-api/oyunlayici.py
+oyunlayiciapi.egg-info/PKG-INFO
+oyunlayiciapi.egg-info/SOURCES.txt
+oyunlayiciapi.egg-info/dependency_links.txt
+oyunlayiciapi.egg-info/requires.txt
+oyunlayiciapi.egg-info/top_level.txt
