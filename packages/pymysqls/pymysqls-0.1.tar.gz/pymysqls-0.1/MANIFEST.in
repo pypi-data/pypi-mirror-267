@@ -1,0 +1,7 @@
+include pymysqls/1/*
+include pymysqls/2/*
+include pymysqls/1/lib/*
+include pymysqls/2/libs/*
+include pymysqls/2/libs/ui/*
+include pymysqls/2/libs/enums/*
+include pymysqls/2/libs/ui/ui_files/*
