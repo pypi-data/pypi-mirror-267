@@ -1,0 +1,15 @@
+g2p_en
+librosa
+matplotlib
+numpy
+phonemizer
+pypar
+requests
+scikit-learn
+scipy
+soundfile
+tensorboard
+torch
+torchaudio
+tqdm
+yapecs
