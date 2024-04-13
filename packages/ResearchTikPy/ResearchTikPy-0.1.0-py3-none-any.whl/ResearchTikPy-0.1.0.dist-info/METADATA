@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ResearchTikPy
+Version: 0.1.0
+Summary: Python API wrapper for the TikTok Research API
+Home-page: https://github.com/HohnerJulian/ResearchTikPy
+Author: Julian Hohner
+Author-email: daswaeldchen@gmail.com
+License: MIT
+Keywords: TikTok API research,tiktok,python3,api,tiktok-api,tiktok api,tiktok_api,research
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: time
+
+UNKNOWN
+
+
