@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pes-innovation-lab-hunt
+Version: 1.2
+Summary: Hunt package
+Author: PES Innovation Lab
+Author-email: innovationlab@pes.edu
+Description-Content-Type: text/markdown
+
+
+# pes_innovation_lab_hunt
+
+```python
+import pes_innovation_lab_hunt
+# poke around and find out!
+
