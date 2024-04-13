@@ -1,0 +1,7 @@
+gptify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gptify/cli.py,sha256=JyNuU7u66g4sR7cLiUk-RT2z01HAv4__E0-hk2pBalY,201
+gptify/gpt_repository_loader.py,sha256=6oenNUl5ewYYbwFWsM7quvXFWLpHIUHNDrwiEjScZIM,4678
+gptify-0.2.0.dist-info/METADATA,sha256=fCw3bJ_baH8iC1cxrpWyYShYT8vVkjclVvxIHiUVUYw,1760
+gptify-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+gptify-0.2.0.dist-info/entry_points.txt,sha256=XHJ1Pj08u7j4vpSwAwDyGoQd_JGAjhzHKJEvEFxfQ6c,42
+gptify-0.2.0.dist-info/RECORD,,
