@@ -1,0 +1,11 @@
+syllogistic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syllogistic/__main__.py,sha256=zwxPqrSbFyi8tds7thDCO0UifDAzqOLDoozyXANCz4k,45
+syllogistic/main.py,sha256=FR2jbMIyWL0A1HfYnXozYKuxP2WWKd65WwB8DfKOEws,1582
+syllogistic/processor.py,sha256=mBIRZC-aaPozoOHN3s_6Sm9yIZqkbqkfZtVuzsE5p8k,20039
+syllogistic/watcher.py,sha256=XF0QfywxDqaHAOgCe3MRgYou9P9cBmUF-VkCAVMc86g,3800
+syllogistic-0.1.1.dist-info/LICENSE,sha256=fl84AM8NlCQTUhScCilAT8W4-ML-LUJ2mvQ4j3G3pzM,244
+syllogistic-0.1.1.dist-info/METADATA,sha256=IvQ1e-VX5MfWyB6N5nrJUmja7otwooJrV6yef5ldn0o,1903
+syllogistic-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+syllogistic-0.1.1.dist-info/entry_points.txt,sha256=m1oOk2-36latMf5WdrkrJaNla3yBMckYsB2cg9gFVOg,54
+syllogistic-0.1.1.dist-info/top_level.txt,sha256=LCCvVLoTUHFNVd65P-eMc7tPCZhtYZy7GWenjowP06o,12
+syllogistic-0.1.1.dist-info/RECORD,,
