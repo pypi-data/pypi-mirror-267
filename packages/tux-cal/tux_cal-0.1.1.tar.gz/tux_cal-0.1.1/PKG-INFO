@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: tux-cal
+Version: 0.1.1
+Summary: A simple calendar tool mimicking Unix 'cal' command.
+License: MIT
+Author: Estevao Fonseca
+Author-email: estevaopfon@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Cal-Tool Unix cal copycat
+Cal-Tool is a Python-based command-line utility that mimics the Unix `cal` command, allowing users to display calendars in the terminal. It supports displaying a calendar for a specific month, the entire year, or using the current year if no year is provided when specifying a month.
+
+## Installation
+
+Install Cal-Tool via pip with the following command:
+
+```bash
+pip install cal-tool
+
+# Usage
+```bash
+cal
+```
+
+```bash             
+cal -y 2024 -m 5
+```
+
+## Contribution
+
+Contributions are always welcome! To contribute, please fork the repository, make your changes, and submit a pull request.
+
+## License
+
+This project is distributed under the MIT license. See the LICENSE file for more details.
+
