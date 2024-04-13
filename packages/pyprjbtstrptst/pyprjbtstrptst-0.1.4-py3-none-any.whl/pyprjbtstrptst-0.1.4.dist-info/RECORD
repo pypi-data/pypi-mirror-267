@@ -1,0 +1,13 @@
+BuildBinary.py,sha256=j15PSyA81YSLJ8ZziP4NqZk-69fqXRuEJ6QerV-Cs48,3513
+PythonProjectBootstrapperTesting/EntryPoint.py,sha256=3Xi6ot1lveR6dzDTSOtfs-N9zqOOM1c75JIRVTrTdvA,2552
+PythonProjectBootstrapperTesting/Math.py,sha256=XZnF-rHcwrp9fwb63pRAVNvpu2XswUexp-ubChWXERU,947
+PythonProjectBootstrapperTesting/__init__.py,sha256=42TfbLDT-LM5pLO_p7Etv-xmPRH9pjJuaemgso3cMPg,612
+pyprjbtstrptst/EntryPoint.py,sha256=QDkGQG_LjbrpSZPeEMrnXbZH3ZwzKv-2aI1yDo2G-r0,2534
+pyprjbtstrptst/Math.py,sha256=wVHMx-yYuLo9F4iQdwpmML3KN9rpuBjxdGhTYVef13Q,835
+pyprjbtstrptst/__init__.py,sha256=EZi2E7o_Nodxx8ZXFSrAZxC9ZnS_da3nDoNfxxCW4Is,598
+pyprjbtstrptst-0.1.4.dist-info/LICENSE.txt,sha256=ck47cFE0d6sqDBoVjVwmjNZnp_nqmwwMfWAePJ4wuJA,1091
+pyprjbtstrptst-0.1.4.dist-info/METADATA,sha256=7SkJ-oKAVJwnoPt6uLACW4th0YUlZhEfTKjfpHFPSNU,6179
+pyprjbtstrptst-0.1.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyprjbtstrptst-0.1.4.dist-info/entry_points.txt,sha256=OJJ4E_AkMaIJS_L9JY-OkG7dNAMUK2vtGEOAgvJWzdE,65
+pyprjbtstrptst-0.1.4.dist-info/top_level.txt,sha256=ugqgXJWGUckZyN2Pm-7sF6RRSnPhorM11ChCP5Yfgcc,60
+pyprjbtstrptst-0.1.4.dist-info/RECORD,,
