@@ -1,0 +1,47 @@
+# Messari
+
+[![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-370/)
+[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
+[![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+
+-------
+
+### Unofficial [Messari's Crypto Data API](https://messari.io/) client in python
+The library can be used for crypto prices, market data metrics, on-chain metrics, and qualitative information (asset profile).
+For more information, see [Messari API Documentation](https://messari.io/api)
+
+### Installation:
+use pip to install:
+``` 
+pip install messari
+```
+-----------
+
+### Authentication:
+
+Pass API key in object initialization.
+
+-----------
+
+### Example usage:
+```
+from messari import Messari
+
+# initialize api client
+
+messari = Messari(key='xxxxxxxxxxxxxxx')
+
+# Get the paginated list of all assets and their metrics and profiles.
+response = messari.get_all_assets()
+
+```
+
+-------
+#### Donate & Help maintain the library
+
+[![Paypal](qrcode.png)](https://www.paypal.com/ncp/payment/KLFNJN7SH39EN)
+
+-------
