@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: getcp
+Version: 1.0.0
+Summary: get cp stats of users with the help of their usernames
+Author: uddalak seal
+Author-email: hidan84@duck.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+
+THIS IS A PACKAGE TO GET USER STATS OF COMPETITVE CODERS FROM VARIOUS POPULAR CP PLATFORMS WITH USERNAME AS AN INPUT
