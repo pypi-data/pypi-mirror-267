@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: prostats
+Version: 0.0.1
+Summary: A command-line tool to quantify files and directories contents
+Author: Joel Yisrael
+Author-email: joel@sss.bot
+Description-Content-Type: text/x-rst
+Requires-Dist: termcolor
+
+A command-line tool to quantify files and directories contents
