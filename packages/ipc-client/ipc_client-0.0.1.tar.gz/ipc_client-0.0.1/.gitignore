@@ -1,0 +1,33 @@
+# Ignore the test code folder
+TestCode/
+
+#backup files
+*.bkp
+
+# Any certficates
+*.pem
+#OpenVPN profiles
+*.ovpn
+# SSH Keys
+*_rsa
+*.pub
+*/ssh/
+
+# All env files
+.env*
+*.env
+Docker/thingsboard/ssh/thingsboard.dump
+
+*.pyc
+
+certs/
+
+*.log
+
+*_queue.q*
+
+controls.txt
+*.pkl
+*.db
+
+node_modules/

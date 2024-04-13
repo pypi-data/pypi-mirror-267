@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: ipc_client
+Version: 0.0.1
+Summary: An AWS IoT Greengrass IPC client that can be used for both local testing on a non IoT core device and on a deployed IoT core device.
+Project-URL: Documentation, https://github.com/unknown/ipc_client#readme
+Project-URL: Issues, https://github.com/unknown/ipc_client/issues
+Project-URL: Source, https://github.com/unknown/ipc_client
+Author-email: Geoffrey Knox <geoffrey@prioto.com>
+License: Copyright (c) 2024 Prioto Limited. All rights reserved.
+        This software is for the private use of Prioto limited and
+        no license or permission, either explicit or implied, for 
+        it's copying or reuse for any purpose is given.
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Requires-Dist: awsiotsdk==1.19.0
+Requires-Dist: paho-mqtt==1.6.1
+Requires-Dist: pytest==8.0.0
+Description-Content-Type: text/markdown
+
+# Building this project:
+1. Clone this repository
+2. cd into the ipc_client directory
+3. Run `py -m pip install --upgrade build`
+4. Run `py -m build`

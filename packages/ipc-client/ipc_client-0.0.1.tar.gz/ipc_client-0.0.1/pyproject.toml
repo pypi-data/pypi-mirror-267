@@ -1,0 +1,47 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ipc_client"
+version = "0.0.1"
+authors = [
+  { name="Geoffrey Knox", email="geoffrey@prioto.com" },
+]
+license = {file = "LICENSE"}
+description = "An AWS IoT Greengrass IPC client that can be used for both local testing on a non IoT core device and on a deployed IoT core device."
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.10"
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3.10",
+]
+
+dependencies = [
+    "awsiotsdk==1.19.0",
+    "paho_mqtt==1.6.1",
+    "pytest==8.0.0",
+]
+
+[project.urls]
+Documentation = "https://github.com/unknown/ipc_client#readme"
+Issues = "https://github.com/unknown/ipc_client/issues"
+Source = "https://github.com/unknown/ipc_client"
+
+[tool.coverage.run]
+source_pkgs = ["ipc_client", "tests"]
+branch = true
+parallel = true
+omit = []
+
+[tool.coverage.paths]
+ipc_client = ["src/ipc_client", "*/ipc_client/src/ipc_client"]
+tests = ["tests", "*/ipc_client/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
