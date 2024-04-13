@@ -1,0 +1,2 @@
+[console_scripts]
+pyprojbtstrptest2 = pyprojbtstrptest2:EntryPoint.app
