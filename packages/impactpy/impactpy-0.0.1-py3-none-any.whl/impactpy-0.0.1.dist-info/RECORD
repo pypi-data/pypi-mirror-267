@@ -1,0 +1,17 @@
+impactpy/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+impactpy/src/alpha/__init__.py,sha256=qEvyqpP4IZOVWbuvLZBFIuyLZhmjP6FR0vG5ykvEqCs,142
+impactpy/src/alpha/base_alpha.py,sha256=rI0QFKs0jsd5LCWEU0viBQ_mQwnogOlDWYzO2IUS2eY,209
+impactpy/src/alpha/intraday_alpha.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+impactpy/src/alpha/overnight_alpha.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+impactpy/src/alpha/trading_alpha.py,sha256=Mn1bhzdT26G_JknjTgwrdMG1iEHL3L5zwgFbWTJSIx4,82
+impactpy/src/models/__init__.py,sha256=_nlLBKOH4e_jnPhfjyD5iiMZ-PEY0bntQR6kfhEuNDo,78
+impactpy/src/models/afs_model.py,sha256=r78fkM4-f5YppgNQxA4XJ6rNq9EvnZpdkdNvVk5toEE,72
+impactpy/src/models/impact_model.py,sha256=9_plNZPgL82_kf69KqO5wb2v6J9e14WtldYaXQNYNv0,2515
+impactpy/src/models/ow_model.py,sha256=cK6UCFFSuXq_lxoHCWIIVfAztqJ5E0ShCEJU1pvZp0E,71
+impactpy/src/schedule/__init__.py,sha256=if57cgzlXz_Fx8QQY6vTdfO6BtAO9ipD9MhGEcSCBrA,47
+impactpy/src/schedule/schedule.py,sha256=wNCBVzLq9aTLm20Ldz1S4TA6Co_19-D9lmOKj4yyrMU,19
+impactpy/src/tca/__init__.py,sha256=RLta-wp6Bf_457Vt_opsyx-Jam5sqHCAH2Hwg30JfPo,50
+impactpy/src/tca/tca_report.py,sha256=SZJSMUEDay97Isg3GvHDaoOmMaDvj7sJC64YquLIc_c,20
+impactpy-0.0.1.dist-info/METADATA,sha256=C2hfuoD4y5YmWwQwVqQnQEU3Zsz1zxVkkwmgIyc5xjA,462
+impactpy-0.0.1.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+impactpy-0.0.1.dist-info/RECORD,,
