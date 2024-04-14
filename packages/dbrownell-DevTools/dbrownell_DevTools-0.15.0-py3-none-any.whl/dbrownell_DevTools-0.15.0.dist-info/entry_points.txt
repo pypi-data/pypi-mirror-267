@@ -1,0 +1,4 @@
+[console_scripts]
+match_tests = dbrownell_DevTools.Scripts.Python:MatchTests.app
+output2markdown = dbrownell_DevTools:Output2Markdown.app
+vscode_tests = dbrownell_DevTools.Scripts.Python:VSCodeTests.app
