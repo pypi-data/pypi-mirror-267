@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: YAPCP
+Version: 0.0.0.6
+Summary: Yield AOSP PIP Compiler Package
+Home-page: https://github.com/hccodetech/yapcp
+Download-URL: https://github.com/hccodetech/yapcp
+Author: hccodetech
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aospdtgen
+Requires-Dist: backports.lzma
+Requires-Dist: extract-dtb
+Requires-Dist: protobuf
+Requires-Dist: pycryptodome
+Requires-Dist: docopt
+Requires-Dist: zstandard
+
+# YAPCP
+
+Yield AOSP PIP Compiler Package

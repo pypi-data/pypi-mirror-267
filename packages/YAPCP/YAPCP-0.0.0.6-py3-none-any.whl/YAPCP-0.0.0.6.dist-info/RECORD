@@ -1,0 +1,11 @@
+YAPCP-0.0.0.6.data/scripts/instotherpkg.sh,sha256=ZvNv73xvtylHr1VIOr5XCOnFsfT84n9tkgeVn-8utUg,707
+YAPCP-0.0.0.6.data/scripts/instsyspkg.sh,sha256=gmLo1cXVRbnbYWdPB11a7XgOiw_l9wg2GEBDGJ8lCjU,916
+yapcp/__init__.py,sha256=4W8VliAYUP1KY2gLJ_YDy2TmcXYVm-PY7XikQD_bFwA,2
+yapcp/instotherpkg.sh,sha256=ZvNv73xvtylHr1VIOr5XCOnFsfT84n9tkgeVn-8utUg,707
+yapcp/instsyspkg.sh,sha256=gmLo1cXVRbnbYWdPB11a7XgOiw_l9wg2GEBDGJ8lCjU,916
+yapcp/yapcp.py,sha256=EKaWHnyByz1eyyPdSyGPmDfvSa9Jz_qKaTrgFW8k93Y,388
+YAPCP-0.0.0.6.dist-info/LICENSE,sha256=g6kgizuEHCET3r1nKM1lzgzP4UpOJtKiJpbFVw6duKE,1067
+YAPCP-0.0.0.6.dist-info/METADATA,sha256=TMOVRvU1L0U9bZJVA1BnHtegmK4WCtqxPd4BapkJorM,577
+YAPCP-0.0.0.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+YAPCP-0.0.0.6.dist-info/top_level.txt,sha256=ua5lXWmwzJg6HtWpbwtPjbw6D2vv83Q3UBSoISXPY-g,6
+YAPCP-0.0.0.6.dist-info/RECORD,,
