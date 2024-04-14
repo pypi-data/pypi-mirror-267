@@ -1,0 +1,3 @@
+[console_scripts]
+labelle = labelle.command_line:main
+labelle-gui = labelle.gui:main
