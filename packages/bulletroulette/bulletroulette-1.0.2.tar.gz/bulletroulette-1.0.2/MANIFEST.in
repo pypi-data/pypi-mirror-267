@@ -1,0 +1,5 @@
+include *.png
+include *.ogg
+include *.wav
+include *.ttf
+include *.py
