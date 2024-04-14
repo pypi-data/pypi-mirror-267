@@ -1,0 +1,8 @@
+README.txt
+setup.py
+Mycontent/My.py
+Mycontent/__init__.py
+Myexperiment.egg-info/PKG-INFO
+Myexperiment.egg-info/SOURCES.txt
+Myexperiment.egg-info/dependency_links.txt
+Myexperiment.egg-info/top_level.txt
