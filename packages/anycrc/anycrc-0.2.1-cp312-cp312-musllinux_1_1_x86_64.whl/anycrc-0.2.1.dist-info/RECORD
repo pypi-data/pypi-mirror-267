@@ -1,0 +1,10 @@
+anycrc-0.2.1.dist-info/top_level.txt,sha256=CD2YwlC_PMLx6UYBYCHkfBsV5s5-Nkfw0QMrV7X9WvY,14
+anycrc-0.2.1.dist-info/METADATA,sha256=luhHWmkG1KrnEpjX9NgVZLbgKApoMKFcICRzlVh__uY,1473
+anycrc-0.2.1.dist-info/WHEEL,sha256=u3WJvwcnUGXBzVB5YEzh4MIq4CvlLxbaEALwCGrbBH8,113
+anycrc-0.2.1.dist-info/RECORD,,
+anycrc-0.2.1.dist-info/LICENSE,sha256=-5sTnIJLJfO_2NCSrr9z1xg2dRmpMcirpgxoTIiJW5Y,1065
+anycrc/anycrc.pyx,sha256=ukbv4FIo-esq_96W7uo-BvdGUKlFHPk0aLVijkh_Fmg,2560
+anycrc/anycrc.cpython-312-x86_64-linux-musl.so,sha256=wuPJV9X0EHaJoGTGJ_zJp1O6rXeKMJd9FJxTwcteiKY,698680
+anycrc/__init__.py,sha256=6WUxWuBxHrqqbAXrKSveKIr9ZMlihLyjTONUmYSHIBw,21
+crcany/__init__.py,sha256=Exmb88ruYTT1ijptK_xGoEUcz1KqA2LSVKAnRNT7_pg,21
+crcany/models.py,sha256=6suxnHR3EEHkKanClSoMnEyR8PbPVSQZQTEVhjJpJA0,14937
