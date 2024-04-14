@@ -1,0 +1,24 @@
+# Python
+**/__pycache__
+.pytest_cache
+
+# Pixi
+.pixi
+
+# Hatch
+dist
+*.egg-info
+
+# ruff
+/.ruff_cache
+
+# IDEs
+/.vscode
+
+# coverage
+/.coverage*
+/htmlcov
+/coverage.xml
+
+# System
+.DS_Store
