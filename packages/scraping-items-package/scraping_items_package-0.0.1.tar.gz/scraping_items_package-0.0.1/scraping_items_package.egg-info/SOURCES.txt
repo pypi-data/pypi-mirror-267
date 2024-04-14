@@ -1,0 +1,17 @@
+MANIFEST.in
+setup.py
+scraping_items_package/__init__.py
+scraping_items_package.egg-info/PKG-INFO
+scraping_items_package.egg-info/SOURCES.txt
+scraping_items_package.egg-info/dependency_links.txt
+scraping_items_package.egg-info/entry_points.txt
+scraping_items_package.egg-info/top_level.txt
+scraping_items_package/tools/__init__.py
+scraping_items_package/tools/autodoc_scraping.py
+scraping_items_package/tools/create_response.py
+scraping_items_package/tools/onlinecarparts_scraping.py
+scraping_items_package/tools/scraping_tool.py
+scraping_items_package/tools/utils.py
+scraping_items_package/yamls/scraping_tool.yaml
+tests/__init__.py
+tests/test_scraping_tool.py
