@@ -1,0 +1,10 @@
+pubmed_parser/__init__.py,sha256=MaWm0-DOguUlb7cDCapVwhW4-fam7wiymI1tc38MCkQ,549
+pubmed_parser/medline_parser.py,sha256=7F0OnG0iBCA05Cch5KNB7AuTOWaISrNAiifrK7eM6DY,25027
+pubmed_parser/pubmed_oa_parser.py,sha256=qc5l-uIJWEw9kC6sEYwCXvbUt54eQhILU--gM8rRNB0,18736
+pubmed_parser/pubmed_web_parser.py,sha256=hLQy_AVxZX3poVVZgRL-U1KOjnb7bdUV8iAhD4B8nMI,13709
+pubmed_parser/utils.py,sha256=6mQCQLAusupEtN7-mDNyOprPmMhpLX2JWZ4DhjFyv2Q,4118
+pubmed_parser-0.4.0.dist-info/LICENSE,sha256=XwMWeU_SGj-5G6yaeYEboufQjrfQ9DmSbAshA6THSBQ,1101
+pubmed_parser-0.4.0.dist-info/METADATA,sha256=OTvpahOBM8DVBMaWYgALaDAnMT_DOYkRVQ9dJp-_HWA,16859
+pubmed_parser-0.4.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pubmed_parser-0.4.0.dist-info/top_level.txt,sha256=pHB3LA3cr-POXVXgiRHYmUotXt_f38zzLtNCyFDNJXs,14
+pubmed_parser-0.4.0.dist-info/RECORD,,
