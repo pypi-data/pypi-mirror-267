@@ -1,0 +1,10 @@
+smart_arrays/__init__.py,sha256=AwdcW9sbITD3A34etDAt3aP_qzMCP0rK-bhjjb303cw,408
+smart_arrays/smart_arrays.py,sha256=4p8Qfi6yq3n74QQVdyvyJkxZYC7McxhiHDbjAZxrCOk,2555
+smart_arrays/smart_arrays_base.py,sha256=lyTWWd7Jfb1KMwF9EDYOPXUQ7FNjRUHov69Nlz1AwVI,15494
+smart_arrays/stats.py,sha256=wWkYfYFhIo1G-PFyl8f4vWTX6LH7rbgKN_fnuJ3k7Pc,3143
+smart_arrays/uncertainties_arrays.py,sha256=6rjABV6oASYd-xSH-Ye5tjgXm93IyS0ODwKJ8fg4Gbw,7779
+smart_arrays/utils.py,sha256=tSGd2q_wMvIb60RIRgcetI-D2cQj0gdKwfjCVWLA2mI,2236
+smart_arrays-0.0.1.dist-info/METADATA,sha256=j3yt5H1srmuySel3uM0-z8AfItDuybMiAObhBUmgSjE,3727
+smart_arrays-0.0.1.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+smart_arrays-0.0.1.dist-info/licenses/LICENSE,sha256=q53beP3D3E4wl7D4M9qQHZIYJAZLeg3rpeepB0BTMWc,1076
+smart_arrays-0.0.1.dist-info/RECORD,,
