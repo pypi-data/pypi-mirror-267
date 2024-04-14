@@ -1,0 +1,1 @@
+from vagrant_creator import generate_vagrantfile
