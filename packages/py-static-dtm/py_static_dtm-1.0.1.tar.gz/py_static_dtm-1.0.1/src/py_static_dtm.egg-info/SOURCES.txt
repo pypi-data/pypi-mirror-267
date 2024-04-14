@@ -1,0 +1,26 @@
+.gitignore
+.pre-commit-config.yaml
+LICENSE
+README.md
+build_and_publish.sh
+pyproject.toml
+.github/workflows/lint.yaml
+.github/workflows/test.yaml
+.vscode/settings.json
+docs/Haifa Sea With Tests Points.kml
+src/py_static_dtm/__init__.py
+src/py_static_dtm/kml_utils.py
+src/py_static_dtm/polygon_utils.py
+src/py_static_dtm/py.typed
+src/py_static_dtm/static_dtm.py
+src/py_static_dtm.egg-info/PKG-INFO
+src/py_static_dtm.egg-info/SOURCES.txt
+src/py_static_dtm.egg-info/dependency_links.txt
+src/py_static_dtm.egg-info/requires.txt
+src/py_static_dtm.egg-info/top_level.txt
+tests/HaifaSea.kml
+tests/conftest.py
+tests/haifa_points.py
+tests/test_example_simple_usage.py
+tests/test_fastkml_poc.py
+tests/test_stress_static_dtm.py
