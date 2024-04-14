@@ -1,0 +1,2 @@
+[console_scripts]
+yahoo_searcher = yahoo_searcher:main
