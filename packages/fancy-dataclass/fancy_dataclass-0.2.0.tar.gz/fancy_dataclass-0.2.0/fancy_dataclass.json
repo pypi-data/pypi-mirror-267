@@ -1,0 +1,159 @@
+{
+  "name": "fancy_dataclass",
+  "created_time": "2024-03-20T22:58:02Z-0400",
+  "projects": {},
+  "tasks": {
+    "1": {
+      "name": "toml",
+      "description": "Provide a toml submodule with TOMLDataclass mixin.",
+      "expected_duration": 0.10416666666666667,
+      "created_time": "2024-03-20T22:59:57Z-0400",
+      "status": "todo",
+      "total_time_worked": 0.0,
+      "is_overdue": false
+    },
+    "2": {
+      "name": "doc-config",
+      "description": "Documentation for configuring fancy dataclasses.",
+      "expected_duration": 0.027777777777777776,
+      "created_time": "2024-03-20T23:01:36Z-0400",
+      "status": "todo",
+      "total_time_worked": 0.0,
+      "is_overdue": false
+    },
+    "3": {
+      "name": "doc-json",
+      "description": "Documentation for JSONDataclass.",
+      "expected_duration": 0.027777777777777776,
+      "created_time": "2024-03-20T23:01:56Z-0400",
+      "status": "todo",
+      "total_time_worked": 0.0,
+      "is_overdue": false
+    },
+    "4": {
+      "name": "doc-toml",
+      "description": "Documentation for TOMLDataclass.",
+      "expected_duration": 0.027777777777777776,
+      "created_time": "2024-03-20T23:02:08Z-0400",
+      "status": "todo",
+      "total_time_worked": 0.0,
+      "is_overdue": false
+    },
+    "5": {
+      "name": "doc-sql",
+      "description": "Documentation for SQLDataclass.",
+      "expected_duration": 0.027777777777777776,
+      "created_time": "2024-03-20T23:02:22Z-0400",
+      "status": "todo",
+      "total_time_worked": 0.0,
+      "is_overdue": false
+    },
+    "6": {
+      "name": "doc-cli",
+      "description": "Documentation for ArgparseDataclass.",
+      "expected_duration": 0.027777777777777776,
+      "created_time": "2024-03-20T23:02:37Z-0400",
+      "status": "todo",
+      "total_time_worked": 0.0,
+      "is_overdue": false
+    },
+    "7": {
+      "name": "doc-subprocess",
+      "description": "Documentation for SubprocessDataclass.",
+      "expected_duration": 0.027777777777777776,
+      "created_time": "2024-03-20T23:02:56Z-0400",
+      "status": "todo",
+      "total_time_worked": 0.0,
+      "is_overdue": false
+    },
+    "8": {
+      "name": "pypi",
+      "description": "Upload package to PyPI.",
+      "expected_duration": 0.03125,
+      "created_time": "2024-03-20T23:03:22Z-0400",
+      "status": "todo",
+      "total_time_worked": 0.0,
+      "is_overdue": false
+    },
+    "9": {
+      "name": "gh-actions",
+      "description": "Set up Github Actions for automated linting/testing.",
+      "expected_duration": 0.08333333333333333,
+      "created_time": "2024-03-20T23:03:50Z-0400",
+      "status": "todo",
+      "total_time_worked": 0.0,
+      "is_overdue": false
+    },
+    "10": {
+      "name": "flatten-merge",
+      "description": "Implement flattening/merging of dataclasses.",
+      "priority": 8.0,
+      "expected_duration": 0.16666666666666666,
+      "created_time": "2024-03-27T18:23:19Z-0400",
+      "first_started_time": "2024-03-27T18:23:30Z-0400",
+      "completed_time": "2024-03-29T23:50:04Z-0400",
+      "status": "complete",
+      "lead_time": 2.226909722222222,
+      "cycle_time": 2.2267824074074074,
+      "total_time_worked": 2.2267824074074074,
+      "is_overdue": false
+    },
+    "11": {
+      "name": "field-settings",
+      "description": "Standardize field settings for each mixin.",
+      "priority": 7.0,
+      "expected_duration": 0.08333333333333333,
+      "created_time": "2024-03-28T20:24:29Z-0400",
+      "first_started_time": "2024-03-30T10:19:43Z-0400",
+      "completed_time": "2024-04-01T18:50:31Z-0400",
+      "status": "complete",
+      "lead_time": 3.9347453703703703,
+      "cycle_time": 2.354722222222222,
+      "total_time_worked": 2.354722222222222,
+      "is_overdue": false
+    },
+    "13": {
+      "name": "basic-docs",
+      "description": "Placeholders for mixin pages; CHANGELOG.",
+      "priority": 5.0,
+      "expected_duration": 0.03125,
+      "created_time": "2024-03-28T20:25:43Z-0400",
+      "first_started_time": "2024-04-01T18:00:00Z-0400",
+      "completed_time": "2024-04-11T22:00:00Z-0400",
+      "status": "complete",
+      "lead_time": 14.065474537037037,
+      "cycle_time": 10.166666666666666,
+      "total_time_worked": 10.166666666666666,
+      "is_overdue": false
+    },
+    "0": {
+      "name": "unit-tests",
+      "description": "Unit tests for new behavior.",
+      "priority": 7.0,
+      "expected_duration": 0.0625,
+      "created_time": "2024-04-12T20:51:56Z-0400",
+      "first_started_time": "2024-04-12T21:00:00Z-0400",
+      "completed_time": "2024-04-13T10:08:13Z-0400",
+      "status": "complete",
+      "lead_time": 0.5529753423611111,
+      "cycle_time": 0.5473734905092593,
+      "total_time_worked": 0.5473734905092593,
+      "is_overdue": false
+    },
+    "12": {
+      "name": "doc-subpage-intro",
+      "description": "Write 1-2 sentence intro for each dataclass mixin.",
+      "priority": 7.0,
+      "expected_duration": 0.020833333333333332,
+      "created_time": "2024-04-12T20:52:37Z-0400",
+      "first_started_time": "2024-04-13T11:08:26Z-0400",
+      "completed_time": "2024-04-13T13:08:59Z-0400",
+      "status": "complete",
+      "lead_time": 0.6780341079513889,
+      "cycle_time": 0.08371509230324074,
+      "total_time_worked": 0.08371509230324074,
+      "is_overdue": false
+    }
+  },
+  "version": 0
+}
