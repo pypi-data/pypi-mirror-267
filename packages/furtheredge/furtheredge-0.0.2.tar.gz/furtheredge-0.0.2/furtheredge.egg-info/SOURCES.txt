@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+furtheredge/__init__.py
+furtheredge/main.py
+furtheredge/universal_life.py
+furtheredge.egg-info/PKG-INFO
+furtheredge.egg-info/SOURCES.txt
+furtheredge.egg-info/dependency_links.txt
+furtheredge.egg-info/entry_points.txt
+furtheredge.egg-info/requires.txt
+furtheredge.egg-info/top_level.txt
