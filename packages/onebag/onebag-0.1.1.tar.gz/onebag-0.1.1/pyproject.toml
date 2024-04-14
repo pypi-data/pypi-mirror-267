@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "onebag"
+version = "0.1.1"
+description = "A collection of various helpers I use in a variety of projects"
+authors = ["Andrew Reifman-Packett <andrew@reifman.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8.0"
+praw = "^7.7.1"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

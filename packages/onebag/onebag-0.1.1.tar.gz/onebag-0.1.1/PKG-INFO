@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: onebag
+Version: 0.1.1
+Summary: A collection of various helpers I use in a variety of projects
+Author: Andrew Reifman-Packett
+Author-email: andrew@reifman.net
+Requires-Python: >=3.8.0,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: praw (>=7.7.1,<8.0.0)
+Description-Content-Type: text/markdown
+
+
