@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+area_of_a_shape.egg-info/PKG-INFO
+area_of_a_shape.egg-info/SOURCES.txt
+area_of_a_shape.egg-info/dependency_links.txt
+area_of_a_shape.egg-info/requires.txt
+area_of_a_shape.egg-info/top_level.txt
+mindbox/__init__.py
