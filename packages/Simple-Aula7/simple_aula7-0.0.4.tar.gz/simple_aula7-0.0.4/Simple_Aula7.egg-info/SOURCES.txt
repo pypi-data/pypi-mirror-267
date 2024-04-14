@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Simple_Aula7.egg-info/PKG-INFO
+Simple_Aula7.egg-info/SOURCES.txt
+Simple_Aula7.egg-info/dependency_links.txt
+Simple_Aula7.egg-info/top_level.txt
+aula7/__init__.py
+aula7/main.py
