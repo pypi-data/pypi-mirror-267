@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: AnySugar
+Version: 0.0.0
+Summary: Python AnySugar Libraries
+Home-page: https://github.com/veinkr/AnySugar
+Author: Demon Finch
+Author-email: yhf2lj@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2
+Requires-Dist: numpy
+Requires-Dist: sqlalchemy
+Requires-Dist: pandas
+Requires-Dist: psycopg2-binary
+Requires-Dist: cryptography
+Requires-Dist: langchain
+Requires-Dist: langchain-openai
+Requires-Dist: fastapi
+Requires-Dist: chromadb
+Provides-Extra: dev
+Requires-Dist: pytest >=3.7 ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+
+# langpt
+- GPT usage by langchain
