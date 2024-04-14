@@ -1,0 +1,12 @@
+handouter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+handouter/__main__.py,sha256=_aTjt6b15bLdnbkmm53RdteTNPMnMKIuTGhLssoSVF8,8674
+handouter/gen.py,sha256=Oq1UW6suZmqFe7Sz1up5-xsFhoa2qbUuM6vpKKVfXms,2604
+handouter/tex_internals.py,sha256=EP8WdKGUY--pTTbFl5_kCD7u502sDlae6TJLNcDzQwg,1326
+handouter/utils.py,sha256=KvkXnkKVE-HlM5RsdU5EyRc-jvDmQaY21wb_8facw7s,531
+handouter/version.py,sha256=i_8WJmpfvLpsjKXabWI0e47fVoWC1Es8pVboBDn2ORg,21
+handouter-0.0.9.dist-info/LICENSE.md,sha256=G88KttTx1xtWD0BnnKYYLi-Q667REmMk60qsbKSopQc,1061
+handouter-0.0.9.dist-info/METADATA,sha256=yM5isFQ0mIdcWKmw0IJDYvqMEPsG3Cd-imdDqsaiTRI,791
+handouter-0.0.9.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+handouter-0.0.9.dist-info/entry_points.txt,sha256=cKm8v2dgWhZezawyIceffX54WukPdFBKW2-_hZ4jlCQ,79
+handouter-0.0.9.dist-info/top_level.txt,sha256=Xk1tNR4CEUBYTz3c2ycyO9RnuuFTfhKp8Pu-1iiW_oU,10
+handouter-0.0.9.dist-info/RECORD,,
