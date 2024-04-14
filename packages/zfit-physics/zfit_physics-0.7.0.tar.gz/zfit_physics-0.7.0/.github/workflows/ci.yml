@@ -1,0 +1,86 @@
+name: unittests
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "*"
+    branches:
+      - master
+      - develop
+      - "release/*"
+  pull_request:
+  release:
+    types:
+      - published
+
+defaults:
+  run:
+    # The login shell is necessary for the setup-micromamba setup
+    # to work in subsequent jobs.
+    # https://github.com/mamba-org/setup-micromamba#about-login-shells
+    shell: bash -e -l {0}
+
+jobs:
+  tests_graph:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      max-parallel: 4
+      fail-fast: False
+      matrix:
+        python-version: [ "3.9", "3.10", "3.11", "3.12" ]
+    name: JIT compiled tests for Python ${{ matrix.python-version }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: mamba-org/setup-micromamba@v1
+        name: Set up Micromamba environment
+        with:
+          environment-name: test-env
+          create-args: >-
+            python=${{ matrix.python-version }} pip ${{ matrix.python-version != '3.12' && 'root' || '' }}
+      - name: Install Python dependencies
+        run: |
+          which python
+          python -V
+          python -m pip install uv
+          python -m uv pip install -e ".[dev]"
+          python -m uv pip install git+https://github.com/HDembinski/numba-stats.git
+      - name: Test with pytest
+        run: |
+          coverage run --source=. --omit=".tox/*" --branch -m pytest .
+          coverage report
+
+  tests_eager:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      max-parallel: 4
+      fail-fast: False
+      matrix:
+        python-version: [ "3.9", "3.10", "3.11", "3.12" ]
+    name: Eager mode tests for Python ${{ matrix.python-version }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: mamba-org/setup-micromamba@v1
+        name: Set up Micromamba environment
+        with:
+          environment-name: test-env
+          create-args: >-
+            python=${{ matrix.python-version }} pip ${{ matrix.python-version != '3.12' && 'root' || '' }}
+      - name: Install Python dependencies
+        run: |
+          which python
+          python -V
+          python -m pip install uv
+          python -m uv pip install -e ".[dev]"
+          python -m uv pip install git+https://github.com/HDembinski/numba-stats.git
+      - name: Test with pytest
+        run: |
+          ZFIT_DO_JIT=0
+          coverage run --source=. --omit=".tox/*,*/test*," --branch -m pytest .
+          coverage report
