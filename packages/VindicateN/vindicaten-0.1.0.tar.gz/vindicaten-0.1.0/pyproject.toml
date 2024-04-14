@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "VindicateN"
+version = "0.1.0"
+description = ""
+authors = ["why_zsr <why3157@163.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.25.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
