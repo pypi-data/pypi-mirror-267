@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sense-data-ng
+Version: 0.7.0
+Summary: stock information
+Author: xw20181227
+Author-email: weix@sensedeal.ai
+License: XW License
+Requires-Dist: grpcio
+Requires-Dist: grpcio-tools
+Requires-Dist: sense-core
+Requires-Dist: datetime
+
