@@ -1,0 +1,9 @@
+pysftp==0.2.9
+azure-data-tables==12.5.0
+azure-core
+azure-data-tables
+azure-storage-blob
+python-dotenv
+pytest
+pytest
+pyodbc
