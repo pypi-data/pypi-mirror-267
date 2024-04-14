@@ -1,0 +1,42 @@
+Metadata-Version: 2.3
+Name: mbodied-agents
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/unknown/mbodied-agents#readme
+Project-URL: Issues, https://github.com/unknown/mbodied-agents/issues
+Project-URL: Source, https://github.com/unknown/mbodied-agents
+Author-email: Sebastian Peralta <sebastian@mbodi.ai>
+License-Expression: Apache-2.0
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# mbodied-agents
+
+[![PyPI - Version](https://img.shields.io/pypi/v/mbodied-agents.svg)](https://pypi.org/project/mbodied-agents)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mbodied-agents.svg)](https://pypi.org/project/mbodied-agents)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install mbodied-agents
+```
+
+## License
+
+`mbodied-agents` is distributed under the terms of the [apache-2.0](https://spdx.org/licenses/apache-2.0.html) license.
