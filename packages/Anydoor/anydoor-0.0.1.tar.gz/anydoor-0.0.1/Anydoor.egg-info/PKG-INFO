@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: Anydoor
+Version: 0.0.1
+Summary: Anydoor Libraries
+Author-email: Demon Finch <yhf2lj@gmail.com>
+Maintainer-email: Demon Finch <yhf2lj@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/veinkr/Anydoor
+Keywords: Anydoor
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2
+Requires-Dist: numpy
+Requires-Dist: sqlalchemy
+Requires-Dist: pandas
+Requires-Dist: psycopg2-binary
+Requires-Dist: cryptography
+Requires-Dist: langchain
+Requires-Dist: langchain-openai
+Requires-Dist: fastapi
+Provides-Extra: cli
+Requires-Dist: rich; extra == "cli"
+Requires-Dist: click; extra == "cli"
+
+# langpt
+- GPT usage by langchain
