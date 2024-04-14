@@ -1,0 +1,285 @@
+Metadata-Version: 2.1
+Name: fnsecure
+Version: 0.1.1
+Summary: Make python functions more secure and descriptive.
+License: GNU GENERAL PUBLIC LICENSE  Version 2
+Author: richard-rikk
+Author-email: rikk.richard@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# fnsecure
+
+This package aims to make python functions more secure by making them more explicit. The
+package is separated into the following parts:
+1. **conditions**: defines conditions on the function parameters to ensure safe
+execution of the function.
+1. **exceptions**: provides exception handling for the functions. 
+
+
+## Conditions
+
+Defines conditions on the function parameters to ensure safe execution of the function.
+Let's us introduce the concept through the following example. Assume that we have the 
+given function:
+
+```python
+def factorial(n):
+    # Check if input is negative
+    if n < 0:
+        return None
+    # Calculate factorial iteratively
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+```
+
+This function is simple therefore it is easy to see that we do not always get a result
+back. To make our preconditions more explicit, we can write the following:
+```python
+from conditions import expects
+
+@expects(lambda n: n >= 0, None)
+def factorial2(n: int) -> int:
+
+    # Calculate factorial iteratively
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+```
+
+Decorator `@expects` has two inputs: a validator function, which receives all inputs
+that the original function receives and returns `True` or `False` depending on whether
+or not the precondition holds; if not, it returns the second value. Type hints will be
+automatically updated to reflect the changes made by the decorator.
+
+## Exceptions
+
+Python exceptions are handled using `try`-`catch` logic. This approach works; however,
+it is not without its problems. Many great packages aim to introduce error handling
+similar to that found in Rust or Go to Python. However, because Python uses
+`try`-`catch`, these solutions can introduce a lot of friction and/or require a certain
+setup that might not be possible for every project.
+
+In this section, we go over some examples and try to show how we can manage exceptions
+more effectively using this module. The performance cost of handling exceptions this way
+is minimal, as we keep the "happy path" as clean as possible.
+
+Let's assume we have the following functions:
+```python
+def foo():
+    """Can raise FileNotFoundError exception."""
+    ...
+    return _r
+
+
+def bar():
+    """Can raise ZeroDivisionError and RuntimeError exceptions."""
+    ...
+    return _r
+```
+
+### Unhandled Exceptions
+
+In many cases, exceptions are not handled because we know that in the given context the
+function will either not raise the exception, or if it does, we want the program to stop
+executing anyway. We can express the fact that this function will not be handled using
+the following:
+
+```python
+from fnsecure.exceptions import raises, unhandled
+
+@raises("foo", [FileNotFoundError])
+def foo():
+    ...
+
+@unhandled("foo")
+def function_that_calls_foo():
+    foo()
+    ...
+```
+Decorator `@raises` takes a unique string as the first argument; by convention, this
+should be the name of the function or `class_name.function_name` in case the function
+name is not unique. The second parameter is a list of exception types that the function
+can raise.
+
+Decorator `@unhandled` takes the same unique string associated with the function to be
+handled. When an exception is raised by function `foo`, the original exception will be
+raised. Additionally, another exception signals that the function shouldn't have thrown
+an exception in the given context.
+
+Just like type hinting, this makes our function declarations more expressive and helps
+signal intent. `@raises` makes it clear what exception to expect, while `@unhandled`
+signals that the given function does not have to be handled in the current context.
+
+
+### Handled Exceptions
+
+In other cases, exceptions need to be handled, but the same function might need to be
+handled differently depending on the context. For this reason, this module provides
+multiple exception handler functions to cover most cases. In this section, we go over 
+them one by one, providing an example for each.
+
+Decorator `@handle` takes the same unique string associated with the function to be
+handled and a list of exception handlers.
+
+#### Function: Raise
+
+Functions handled with `Raise` will simply raise the exceptions. This handler should be
+used when the exception should stop the execution of the program.
+
+```python
+from fnsecure.exceptions import handle
+from fnsecure.shared import ExceptionHandler
+from fnsecure.exceptions.functions import Raise
+
+@handle("foo", [ExceptionHandler(FileNotFoundError, Raise())])
+def function_using_foo():
+    foo()
+    ...
+
+```
+
+#### Function: RaiseWithMessage
+
+Functions handled with `RaiseWithMessage` will raise the exception with a specific
+message. This handler should be used when the exception should stop the execution of the
+program and additional information needs to be provided.
+
+```python
+from fnsecure.exceptions import handle
+from fnsecure.shared import ExceptionHandler
+from fnsecure.exceptions.functions import RaiseWithMessage
+
+@handle("foo", [ExceptionHandler(FileNotFoundError, RaiseWithMessage("Message"))])
+def function_using_foo():
+    foo()
+    ...
+
+```
+
+#### Function: Continue
+
+Functions handled with `Continue` will continue the program execution with the specified
+value when an exception raised. This handler should be used when an exception should not
+stop the execution of the program.
+
+```python
+from fnsecure.exceptions import handle
+from fnsecure.shared import ExceptionHandler
+from fnsecure.exceptions.functions import Continue
+
+@handle("foo", [ExceptionHandler(FileNotFoundError, Continue(None))])
+def function_using_foo():
+    _r = foo() # _r will be None, when an exception is raised.
+    ...
+
+```
+
+#### Function: Retry
+
+Functions handled with `Retry` will retry the function with the same parameters up to 
+`n` times. It returns the value of the first successful function call. This should be
+used for functions that can fail but successive function calls might be successful.
+For example, connecting to a database.
+
+```python
+from fnsecure.exceptions import handle
+from fnsecure.shared import ExceptionHandler
+from fnsecure.exceptions.functions import Retry
+
+@handle("foo", [ExceptionHandler(FileNotFoundError, Retry(3))])
+def function_using_foo():
+    _r = foo() # foo will be run three times after an exception is thrown
+    ...
+
+```
+
+#### Function: RetryWithFunction
+
+Functions handled with `RetryWithFunction` will replace the function with the provided
+one and returns its result. This should be used for functions that when fail a new
+function should be called. We can use this method to call the same function with 
+different parameters.
+
+```python
+from fnsecure.exceptions import handle
+from fnsecure.shared import ExceptionHandler
+from fnsecure.exceptions.functions import RetryWithFunction
+
+@handle(
+    "always_fail",
+    [
+        ExceptionHandler(
+            Exception, RetryWithFunction(lambda *args, **kwargs: "success", (), {})
+        )
+    ],
+)
+def function_using_foo():
+    _r = foo() # _r will be "success" if an exception is thrown.
+    ...
+
+```
+
+### Handling All Exception
+
+Decorator `@handle` will raise an exception, if not all exceptions are handled for a
+given function. To cover all exceptions, we can use `ExceptionHandler` and 
+`GroupExceptionHandler` classes. These work similarly but `GroupExceptionHandler` takes
+a list of exception types and maps them to the same handler function.
+
+```python
+from fnsecure.shared import GroupExceptionHandler
+
+@handle("bar", [GroupExceptionHandler([ZeroDivisionError, RuntimeError], Raise())])
+def uses_bar():
+    bar()
+```
+
+### Multithreading and Exception Handling
+
+The groundwork has been laid for multithread support during exception handling; however,
+this still needs some work. This is because by default, the `exceptions` module uses a 
+global context variable to check the registered functions and their handler functions.
+These handler functions are updated and then cleared by the `@handle` decorator. Any
+given function can only have one set of handler functions at a time, which are deleted
+after they have been used. Therefore, if the handlers update the same set, that will
+invalidate that set. We have to ensure that handlers cannot update the set of handler
+functions. We can ensure that by creating a new context and using this context in
+different threads. Here is an example:
+
+```python
+from shared import Context
+...
+
+def create_threads(n: int):
+
+    threads = []
+    for i in range(n):
+        c = Context()
+
+        @raises("foo", [RuntimeError], c)
+        def foo():
+            ...
+    
+        @handle(..., c)
+        def function_calls_foo():
+            _r = foo()
+        
+        thread = threading.Thread(target=function_calls_foo, args=(arg1, arg2))
+        threads.append(thread)
+        thread.start()
+    
+    # Wait for all threads to complete
+    for thread in threads:
+        thread.join()
+```
+
+Later more convenient methods can be added as the need arises.
