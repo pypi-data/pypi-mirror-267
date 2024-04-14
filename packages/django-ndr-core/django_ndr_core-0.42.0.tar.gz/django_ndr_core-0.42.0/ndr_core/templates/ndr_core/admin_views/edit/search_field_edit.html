@@ -1,0 +1,15 @@
+{% extends 'ndr_core/admin_views/edit/_edit.html' %}
+{% load static %}
+
+{% block back_url %}
+    {% url 'ndr_core:configure_search' %}
+{% endblock %}
+
+{% block title %}
+    Update Search Field
+{% endblock %}
+
+{% block page_js %}
+    <script src="{% static 'ndr_core/js/admin/search_field_create_edit.js' %}"></script>
+    {% include 'ndr_core/widgets/csv_text_editor_import_modal.html' %}
+{% endblock %}
