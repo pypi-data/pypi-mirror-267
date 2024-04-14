@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+disinfo_domains.egg-info/PKG-INFO
+disinfo_domains.egg-info/SOURCES.txt
+disinfo_domains.egg-info/dependency_links.txt
+disinfo_domains.egg-info/requires.txt
+disinfo_domains.egg-info/top_level.txt
+disinfodomains/__init__.py
+disinfodomains/disinfodomains.py
