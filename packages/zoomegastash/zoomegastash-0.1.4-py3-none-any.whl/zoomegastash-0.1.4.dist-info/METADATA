@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: zoomegastash
+Version: 0.1.4
+Summary: Zoo Mega Stash - Utilities and tool for Colon's zoo bot discord minigame
+License: GPL-3.0
+Author: TheCreatorrrr
+Requires-Python: >=3.12,<3.13
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: attr (>=0.3.2,<0.4.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: tcrutils (>=12.0.143)
+Description-Content-Type: text/markdown
+
+# ZMS - Zoo Mega Stash
+
+Utilities and tool for Colon's zoo bot discord minigame
+
