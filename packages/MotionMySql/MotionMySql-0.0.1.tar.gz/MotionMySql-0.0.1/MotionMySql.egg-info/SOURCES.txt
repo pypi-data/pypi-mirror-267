@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+MotionMySql/__init__.py
+MotionMySql/example.py
+MotionMySql.egg-info/PKG-INFO
+MotionMySql.egg-info/SOURCES.txt
+MotionMySql.egg-info/dependency_links.txt
+MotionMySql.egg-info/requires.txt
+MotionMySql.egg-info/top_level.txt
