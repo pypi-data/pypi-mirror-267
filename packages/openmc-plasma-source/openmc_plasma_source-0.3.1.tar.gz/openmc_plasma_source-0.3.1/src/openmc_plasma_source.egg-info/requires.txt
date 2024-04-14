@@ -1,0 +1,6 @@
+numpy>=1.9
+matplotlib>=3.2.2
+
+[tests]
+pytest>=5.4.3
+hypothesis
