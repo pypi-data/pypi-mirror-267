@@ -1,0 +1,11 @@
+annoy
+face_recognition
+imutils
+opencv-python
+matplotlib
+numpy
+tqdm
+pillow
+torch
+onnx2torch
+requests
