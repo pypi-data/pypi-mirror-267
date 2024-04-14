@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hermitage
+Version: 0.1.2
+Summary: Contracts and tools for building invoices to storages
+Author: Smairon
+Author-email: man@smairon.ru
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: zodchy (>=0.1.0,<0.2.0)
+Requires-Dist: zodchy_patterns (>=0.1.0,<0.2.0)
+Description-Content-Type: text/markdown
+
+
