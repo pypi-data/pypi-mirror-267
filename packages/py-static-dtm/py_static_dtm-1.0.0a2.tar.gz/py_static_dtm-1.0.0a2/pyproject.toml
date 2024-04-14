@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "py-static-dtm"
+dynamic = ["version"]
+authors = [
+  { name="Ben Sembira", email="classified@classified.classified" },
+]
+description = "A custom DTM object that returns a constant value in a certain polygon"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "fastkml",
+  "lxml",
+  "shapely",
+  "pyproj",
+  "numpy",
+  "pytest",
+]
+
+[project.urls]
+Homepage = "https://github.com/ben-sembira-1/py-static-dtm"
+Issues = "https://github.com/ben-sembira-1/py-static-dtm/issues"
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+]
+
+[tool.setuptools_scm]
