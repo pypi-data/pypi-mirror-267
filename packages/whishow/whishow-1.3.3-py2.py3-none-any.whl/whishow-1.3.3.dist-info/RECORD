@@ -1,0 +1,12 @@
+whishow/NotoSansCJKsc-Regular.ttf,sha256=ebHembhhphIpJJouit9XVHPsICNtxNkgBozLl65AojY,16574124
+whishow/__init__.py,sha256=zVRBkKHhqddeUbbh5Vx3ePsgx_NgDbPUQBf0Uji8Z0Y,107
+whishow/__main__.py,sha256=h1GTreoTgYzaQ-Dh1_N6YuqJh8qA6LcfMYvKv59KPBw,66
+whishow/easyplayer.py,sha256=pd98Snq_hM2TMvQ7_-xmhJuc7W7xgdffJ1M52V5K3iI,1557
+whishow/stream.py,sha256=9_8co2OAiJpaU4rV30X1WFnrhtFYC4d9JMwh_qVFMz4,7263
+whishow/utils.py,sha256=1LLUWI5eqM1I7W_CFLII_r-pHdXfLPHQk18apMovcWM,4093
+whishow/whishow.py,sha256=nsMMXnl1WzQ3LUC7X6rgDLXYCdDzN-9Of6K91LTfJtk,8521
+whishow-1.3.3.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+whishow-1.3.3.dist-info/METADATA,sha256=DZSg7nbr5U_PeZuLX-JLnCFuPtnIYj3-Evde2DPIRZs,886
+whishow-1.3.3.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+whishow-1.3.3.dist-info/top_level.txt,sha256=8jiD8NtoF80xztcrrSTXycTZIEMKH3tfUNrJ0wQqZBY,8
+whishow-1.3.3.dist-info/RECORD,,
