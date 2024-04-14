@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: cronvisio
+Version: 0.9.0
+Summary: cronvisio - Monitor and control services through cron and notifiers.
+Home-page: http://github.com/AlbertWeichselbraun/cronitor
+License: GPL-3.0
+Keywords: bibPublish,bibtex,publish
+Author: Albert Weichselbraun
+Author-email: albert@weichselbraun.net
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matrix-nio (>=0.24.0,<0.25.0)
+Project-URL: Repository, http://github.com/AlbertWeichselbraun/cronitor
+Description-Content-Type: text/markdown
+
+# Cronitor
+
+Monitor services through cron and notifiers.
+
+## Implemented services
+
+- postfix mail queue size
+- mail TLS reports
+- borg backups
+- automysqlbackup
+- amazon kindle quotes (publish quotes from Amazon Kindle on matrix)
+
+## Implemented notifiers:
+
+- stdout
+- matrix
+
