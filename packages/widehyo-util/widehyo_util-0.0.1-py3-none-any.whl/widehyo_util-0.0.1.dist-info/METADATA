@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: widehyo-util
+Version: 0.0.1
+Summary: utility function storage
+Author: widehyo
+Author-email: widehyo@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: build (>=1.2.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# widehyo_util
+
+## utility function storage
+---
+
+
