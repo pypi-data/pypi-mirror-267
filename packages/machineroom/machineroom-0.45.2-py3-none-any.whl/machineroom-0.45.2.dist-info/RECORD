@@ -1,0 +1,12 @@
+machineroom/__init__.py,sha256=rvwzR7MIqG2a2ilbR2O_aN-WvjFveD3L03WndRtpKe8,1301
+machineroom/const.py,sha256=FLZnqzI-FFDw5E1rvgxBPYVwJdCzpBB2m4eNXK9T7aw,7516
+machineroom/schema.json,sha256=T6HDodkvARrUTZ4lRAh-FW81e64kEFYCdm46o2hQFew,996
+machineroom/sql.py,sha256=ePjJzmiD5l_NvYlbQR31CtekTm_XJeSAuOEw70ce7Fo,13510
+machineroom/taskbase.py,sha256=uuzO9ruE5uhcCeO0rBjdYw7eS7MitgHJT3Jy1tUcs3U,22749
+machineroom/util.py,sha256=z0zZu7KyUjto8Qm1Yw2yyetlY9r4urmkZy2uXrpOzB8,14368
+machineroom/worker.py,sha256=eo71-PqRLFYswEWeBhM0824qW80P73jkrKHHwEIRzxA,2759
+machineroom-0.45.2.dist-info/LICENSE,sha256=0HJT2ahRLSeJGSqyjSCcgxsErG-DbPgp-cdZMY_Jxd8,1068
+machineroom-0.45.2.dist-info/METADATA,sha256=393zm32lZvSgMeIV8H7mSPEgM_hUQsxrTUchg-kyIUw,4392
+machineroom-0.45.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+machineroom-0.45.2.dist-info/top_level.txt,sha256=TkiXjsqLJ8eQ8BwoY5nQlUdINLotUl3G_ObtLbup5GE,12
+machineroom-0.45.2.dist-info/RECORD,,
