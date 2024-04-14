@@ -1,0 +1,6 @@
+setup.py
+app/ipvanishproxy.egg-info/PKG-INFO
+app/ipvanishproxy.egg-info/SOURCES.txt
+app/ipvanishproxy.egg-info/dependency_links.txt
+app/ipvanishproxy.egg-info/requires.txt
+app/ipvanishproxy.egg-info/top_level.txt
