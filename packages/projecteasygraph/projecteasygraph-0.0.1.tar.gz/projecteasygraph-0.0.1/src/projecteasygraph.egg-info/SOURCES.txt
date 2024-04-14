@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/easygraph/__init__.py
+src/easygraph/graphs.py
+src/easygraph/utils.py
+src/projecteasygraph.egg-info/PKG-INFO
+src/projecteasygraph.egg-info/SOURCES.txt
+src/projecteasygraph.egg-info/dependency_links.txt
+src/projecteasygraph.egg-info/top_level.txt

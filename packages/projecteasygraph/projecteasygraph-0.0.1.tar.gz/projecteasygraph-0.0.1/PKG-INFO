@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: projecteasygraph
+Version: 0.0.1
+Summary: A small project for graphs
+Author-email: Estefania Restreo <estefania.restrepo127@gmail.com>
+Project-URL: Homepage, https://github.com/EstefaniaRestrepo127/easy_graph
+Project-URL: Issues, https://github.com/EstefaniaRestrepo127/easy_graph/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# easy_graph
