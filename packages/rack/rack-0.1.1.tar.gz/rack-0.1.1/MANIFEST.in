@@ -1,0 +1,2 @@
+include dict_test.py
+recursive-include *_test.py
