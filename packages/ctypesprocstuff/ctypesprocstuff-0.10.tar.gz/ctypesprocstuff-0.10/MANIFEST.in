@@ -1,0 +1,3 @@
+include ctypesprocstuff/requirements.txt
+include ctypesprocstuff/thirdparty.json
+include ctypesprocstuff/README.MD
