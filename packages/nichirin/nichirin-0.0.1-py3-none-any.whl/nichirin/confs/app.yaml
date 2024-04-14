@@ -1,0 +1,11 @@
+## Conf params for Retrieval
+retrieval:  
+  gte-large:
+    model_id: 'thenlper/gte-large'
+
+retrieval_threshold: 0.60
+retrieval_top_k: 10
+
+# Params to control if external search is to be used
+use_search: True
+show_refs: True
