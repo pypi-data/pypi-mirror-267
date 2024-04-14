@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: SimpleAxel-Account
+Version: 0.0.2
+Summary: Account blueprint for SimpleAxel (https://git.tech.eus/EuskadiTech/Simple-Account)
+Home-page: https://git.tech.eus/EuskadiTech/Simple-Account
+Author: EuskadiTech
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires: requests
+Requires: Flask
+Requires: stripe
+Requires: SimpleSDK
+License-File: LICENSE
