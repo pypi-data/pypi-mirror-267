@@ -1,0 +1,9 @@
+airflow/providers/odbc/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/odbc/__init__.py,sha256=6WPspgVZiW5I-81VoskQgBvKoSUsOesek5-Qlv15868,1579
+airflow/providers/odbc/get_provider_info.py,sha256=z3_udvNHXZ_zryCu4OzkMNXjaLXcuINDPMFKsBaAnsE,2449
+airflow/providers/odbc/hooks/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/odbc/hooks/odbc.py,sha256=sA6Z_851nW9Jlbor2w8n0T2KqV-Ii8xi59FqrW-dPBI,9984
+apache_airflow_providers_odbc-4.5.0.dist-info/entry_points.txt,sha256=eSe1sZIylSfwwYaICop6LfqAS-L5P4Lhdd9erzsiQdo,100
+apache_airflow_providers_odbc-4.5.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_odbc-4.5.0.dist-info/METADATA,sha256=VXVAbjoTTpslE5fLiSa__JASmdb8lEFtiLjDclopNpg,6048
+apache_airflow_providers_odbc-4.5.0.dist-info/RECORD,,
