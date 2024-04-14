@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "zorge"
+version = "1.1.0"
+description = "Implementation of dependency injection pattern"
+authors = ["Smairon <man@smairon.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
