@@ -1,0 +1,3 @@
+from .base_alpha import BaseAlpha
+
+class IntradayAlpha(BaseAlpha): ...
