@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fnsecure"
+version = "0.1.2"
+description = "Make python functions more secure and descriptive."
+authors = ["richard-rikk <rikk.richard@gmail.com>"]
+license = "GNU GENERAL PUBLIC LICENSE  Version 2"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.3.0"
+isort = "^5.13.2"
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
