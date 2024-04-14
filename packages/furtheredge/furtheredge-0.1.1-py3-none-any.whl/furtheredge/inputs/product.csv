@@ -1,0 +1,8 @@
+﻿PRODUCT_ID;PRODUCT_NAME;PRODUCT_TYPE;PLAN_CODE;TECH_ASSUMPTION_ID;RI_RATES_ID;WOP_RATES_ID
+1;EDB;Universal Life;Education;1;1;1
+2;EDM;Universal Life;Education;2;1;1
+3;EDU;Universal Life;Education;3;1;1
+4;OLB;Universal Life;retirement;4;1;1
+5;OLF;Universal Life;retirement;5;1;1
+6;OLG;Universal Life;retirement;6;1;1
+7;OLM;Universal Life;retirement;7;1;1
