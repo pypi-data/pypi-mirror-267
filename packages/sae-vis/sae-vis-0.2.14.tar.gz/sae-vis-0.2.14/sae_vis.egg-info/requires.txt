@@ -1,0 +1,9 @@
+torch
+einops
+eindex-callum
+rich
+transformer_lens
+datasets
+dataclasses-json
+jaxtyping
+pytest
