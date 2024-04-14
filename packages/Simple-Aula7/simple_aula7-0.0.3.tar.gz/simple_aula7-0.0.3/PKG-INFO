@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Simple-Aula7
+Version: 0.0.3
+Summary: Aula7 blueprint for SimpleAxel (https://git.tech.eus/EuskadiTech/Simple-Aula7)
+Home-page: https://git.tech.eus/EuskadiTech/Simple-Aula7
+Author: EuskadiTech
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires: requests
+Requires: Flask
+Requires: stripe
+Requires: SimpleSDK
+License-File: LICENSE
