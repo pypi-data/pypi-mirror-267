@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "philosophese"
+version = "0.0.1"
+authors = [
+  { name="Lafcadia", email="chuishenx@oblivionocean.top" },
+]
+description = "输入中文，他会将它转化为哲♂学的语言。Chinese -> “哲♂学” Language"
+readme = "readme.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Lafcadia/philosophese"
+Issues = "https://github.com/Lafcadia/philosophese/issues"

@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+readme.md
+src/philosophese/__init__.py
+src/philosophese.egg-info/PKG-INFO
+src/philosophese.egg-info/SOURCES.txt
+src/philosophese.egg-info/dependency_links.txt
+src/philosophese.egg-info/top_level.txt
