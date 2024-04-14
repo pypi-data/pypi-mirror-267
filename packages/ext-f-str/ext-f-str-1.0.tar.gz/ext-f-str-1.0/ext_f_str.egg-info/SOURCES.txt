@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+ext_f_str.egg-info/PKG-INFO
+ext_f_str.egg-info/SOURCES.txt
+ext_f_str.egg-info/dependency_links.txt
+ext_f_str.egg-info/entry_points.txt
+ext_f_str.egg-info/top_level.txt
+extfstr/__init__.py
