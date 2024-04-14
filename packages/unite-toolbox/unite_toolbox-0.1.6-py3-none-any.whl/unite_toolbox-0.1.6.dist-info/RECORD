@@ -1,0 +1,14 @@
+unite_toolbox/__init__.py,sha256=n3oM6B_EMz93NsTI18NNZd-jKFcUPzUkbIKj5VFK5ok,22
+unite_toolbox/bin_estimators.py,sha256=fnXTtUf3Btv-MLNotblp-gFUz89p7Q-7h05z3ZsOYCA,11593
+unite_toolbox/kde_estimators.py,sha256=R2mFndwjek1P3Ljfx0mTb6DKzo1vWpKKPknruka12R8,6846
+unite_toolbox/knn_estimators.py,sha256=Cm2Jt6RBGX71WxG2iRJafAmYabCdkk-1_-tKu8emcFA,7898
+unite_toolbox/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unite_toolbox/utils/bootstrapping.py,sha256=2r3OwQ4L6NItIJvOhWnj6tDpy4sJVpixZFHJ5ylEdNE,1326
+unite_toolbox/utils/data_validation.py,sha256=GaTLTW000l_iw5qsd545TF6HPmGs_IWwTc-NLREd8MI,3162
+unite_toolbox/utils/marginal_information.py,sha256=xZjVzXqAQ2ByOhjJyNtcIM591rlyVWA6UYSGLAfULO8,1376
+unite_toolbox/utils/sampling.py,sha256=LGdSOVLuls935sOY0wselEkDOqTHAlvfQYTVKraYYkg,706
+unite_toolbox-0.1.6.dist-info/LICENSE,sha256=tr59usXciw-qBjhrV-Sl-TxPN36TNTrgEs1KzzKXQzc,1079
+unite_toolbox-0.1.6.dist-info/METADATA,sha256=gzeN7vjioa1m6oSmOytjhVQ_-crTFvu1CkYfx2-HFS4,2561
+unite_toolbox-0.1.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+unite_toolbox-0.1.6.dist-info/top_level.txt,sha256=U7-1osicdrB12NmvZOArSrlQeGDRE3tRY_429rURLnk,14
+unite_toolbox-0.1.6.dist-info/RECORD,,
