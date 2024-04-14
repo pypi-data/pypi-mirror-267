@@ -1,0 +1,100 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hardware-control"
+dynamic = ["version"]
+authors = [
+   { name = "Arun Persaud", email = "apersaud@lbl.gov" },
+   { name = "Ariel Amsellem", email = "ajamsellem@lbl.gov" },
+   { name = "Brian Mak", email = "brianmak@lbl.gov" },
+   { name = "Mauricio Ayllon Unzueta", email = "mayllonu@lbl.gov" },
+   { name = "Brian Wynne", email = "bwynne@lbl.gov" },
+   { name = "Grant Giesbrecht", email = "ggiesbrecht@lbl.gov" },
+   { name = "Timo Bauer", email = "TimoBauer@lbl.gov" },
+   { name = "Zhihao Qin", email = "zqin@lbl.gov" },
+   { name = "Arfon Smith", email = "arfon.smith@gmail.com" },
+   { name = "Sara Matsuo Saib", email = "smsaib@lbl.gov" },
+   { name = "Caroline Egan", email = "cegan@lbl.gov" },
+   { name = "Schuyler Freeman", email = "skyfreeman@lbl.gov" },
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+dependencies = [
+    "docopt",
+    "matplotlib",
+    "nidaqmx >= 0.6.4",
+    "numpy",
+    "pandas",
+    "picoscope",
+    "pymodbus >= 3.0.0",
+    "PyQt6",
+    "pyqtgraph",
+    "pytest",
+    "PyVISA",
+    "qtconsole >= 5.3.2",
+    "recommonmark",
+    "scipy",
+    "setuptools",
+    "setuptools-scm",
+    "Sphinx",
+    "sphinx_rtd_theme",
+    "pyzmq",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: BSD License",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+
+[project.urls]
+documentation = "https://hardware-control.readthedocs.io/"
+homepage = "https://bitbucket.org/berkeleylab/hardware-control"
+issues = "https://bitbucket.org/berkeleylab/hardware-control/issues"
+changelog = "https://bitbucket.org/berkeleylab/hardware-control/src/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["icons/*svg"]
+
+[tool.setuptools_scm]
+write_to = "src/hardware_control/_version.py"
+
+[tool.pylint.FORMAT]
+max-line-length="88"
+
+[tool.pylint."MESSAGES CONTROL"]
+# bad-continuation: Black does the job, no need to check.
+disable = "bad-continuation, logging-fstring-interpolation, line-too-long"
+
+[tool.pylint.MASTER]
+extension-pkg-whitelist="PyQt6"
+jobs=4
+
+[tool.pylint.TYPECHECK]
+# zmq.{LINGER,REQ,ROUTER,NOBLOCK} are dynamically generated and so pylint
+# doesn't see them, causing false positives.
+generated-members=[
+	"REQ",
+	"REP",
+	"RCVTIMEO",
+	"PUB",
+	"SUB",
+	"NOBLOCK",
+	"AF_INET",
+	"SOCK_STREAM",
+	"TCP_NODELAY",
+	"SOCK_DGRAM",
+	"IPPROTO_TCP",
+	]
