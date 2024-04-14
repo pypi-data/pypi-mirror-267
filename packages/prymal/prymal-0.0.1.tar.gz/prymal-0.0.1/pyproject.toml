@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "prymal"
+version = "0.0.1"
+authors = [
+	{ name="Pilsang Kim", email="pilsang0512@gmail.com" },
+]
+description = "Prime number functionalities like factorization and primality test in python."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+classifiers = [
+	"Development Status :: 3 - Alpha",
+
+	"Intended Audience :: Developers",
+	"Topic :: Scientific/Engineering :: Mathematics",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+]
+
+[project.urls]
+HomePage = "https://github.com/haha0512/pyprimes"
+Issues = "https://github.com/haha0512/pyprimes/issues"
