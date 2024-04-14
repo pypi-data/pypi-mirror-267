@@ -1,0 +1,15 @@
+scraping_items_package/__init__.py,sha256=SXUyE9hmQeYBcmIxmXrAZAIeYfMHAA7cy2vPwgRceTo,82
+scraping_items_package/tools/__init__.py,sha256=SXUyE9hmQeYBcmIxmXrAZAIeYfMHAA7cy2vPwgRceTo,82
+scraping_items_package/tools/autodoc_scraping.py,sha256=NMv7x_XIxmBIq8Tc-E8vaGxzNvQ8wustC_Fu0aX0uwk,7474
+scraping_items_package/tools/create_response.py,sha256=exnn-aOm-k_1O_ugVRB2o6tEV1-i7AW9nHCbq6slQE0,5786
+scraping_items_package/tools/onlinecarparts_scraping.py,sha256=ApLQEZH08LsGpyn7KNR4gQw3JpcAVQeviddQmvtcBig,7077
+scraping_items_package/tools/scraping_tool.py,sha256=Sq6KO9j7Fc84lzncghaMS4r6rKBKKfObhXBG6prp5MA,820
+scraping_items_package/tools/utils.py,sha256=FKxG-XvEPP8UfUDxrkHrxUloVVvl1vkIceXBObz-50A,553
+scraping_items_package/yamls/scraping_tool.yaml,sha256=lcpX2xloEIJiYKGigR1H-I3ir4reHj1FgNxgjIqgB3Q,328
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_scraping_tool.py,sha256=nDoiSER2C3wl_2qpRUHmDyRcl2BjSMKf4-SWlVY6VE0,721
+scraping_items_package-0.0.1.dist-info/METADATA,sha256=kx-avGwg8NJy0c0F259n-nHSTtepyLO_9xmCY68C8K8,106
+scraping_items_package-0.0.1.dist-info/WHEEL,sha256=5sUXSg9e4bi7lTLOHcm6QEYwO5TIF1TNbTSVFVjcJcc,92
+scraping_items_package-0.0.1.dist-info/entry_points.txt,sha256=wIH2uno8tcnm9j_rqfujZpNLzsMgybdzu7Bhx2uyxr4,86
+scraping_items_package-0.0.1.dist-info/top_level.txt,sha256=K8c0jnpj6-n5An8h4RstfIT68sl_hJTgUz5a3sEtlUg,29
+scraping_items_package-0.0.1.dist-info/RECORD,,

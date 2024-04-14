@@ -1,0 +1,2 @@
+[package_tools]
+scraping_tool = scraping_items_package.tools.utils:list_package_tools

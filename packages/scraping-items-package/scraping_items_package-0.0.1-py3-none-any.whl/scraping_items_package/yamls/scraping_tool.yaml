@@ -1,0 +1,13 @@
+scraping_items_package.tools.scraping_tool.find_parts:
+  function: find_parts
+  inputs:
+    connection:
+      type:
+      - CustomConnection
+    input_text:
+      type:
+      - string
+  module: scraping_items_package.tools.scraping_tool
+  name: Hello World Tool
+  description: This is hello world tool
+  type: python
