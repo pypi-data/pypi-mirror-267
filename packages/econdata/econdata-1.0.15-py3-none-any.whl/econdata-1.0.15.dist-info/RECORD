@@ -1,0 +1,12 @@
+econdata/BCRP.py,sha256=dHvv2j578NzWNbsoVGnnyzcjITGm9VYoCA0QBxi0pvI,5130
+econdata/FRED.py,sha256=EuaexiHFE3N8wMD2VOYDJqOvC6Q2Whd1Gs1FV8ZK3Uc,3853
+econdata/IMF.py,sha256=hLWtsXRd1O-v2lq0ibnKH_HPvVEv5_lG7VukcVfCsK0,4240
+econdata/OECD.py,sha256=Vq2g5_13GHotwRpQUBXan9oDaaDXlmnv6zifSckDBW4,2089
+econdata/WB.py,sha256=_4UknnZyR62zdKJ9Yuc-gykHwmaJ_LYXzxqGeueMLIQ,3835
+econdata/YFinance.py,sha256=sflVkZ6JX1WX8JFDeruQyXuGdmFFXLNuyeS7G6XyfKA,2792
+econdata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+econdata-1.0.15.dist-info/LICENSE,sha256=UYPudr3U36qt8MVxNiQnR4GD5dVPwxJlR9Loe_fTno4,38
+econdata-1.0.15.dist-info/METADATA,sha256=RmEghCKfPNTI09tbCVQh8y7d0KaCDsx8kCuvG2BXrKc,8688
+econdata-1.0.15.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+econdata-1.0.15.dist-info/top_level.txt,sha256=zjZ_dNrjFWjIvlYzFzRTs9WTcUZM1mZ79HMrYcBpnT0,9
+econdata-1.0.15.dist-info/RECORD,,
