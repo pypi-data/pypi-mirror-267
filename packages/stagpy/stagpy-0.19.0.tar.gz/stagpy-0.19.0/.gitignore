@@ -1,0 +1,9 @@
+*.pdf
+*.swp
+__pycache__/
+.coverage
+.tox
+stagpy.egg-info/
+/build/
+/stagpy/_version.py
+/stagpy_git/
