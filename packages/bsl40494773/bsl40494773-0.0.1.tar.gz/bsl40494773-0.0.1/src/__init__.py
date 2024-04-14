@@ -1,0 +1,1 @@
+from translator_fingerspelling import FingerSpelling
