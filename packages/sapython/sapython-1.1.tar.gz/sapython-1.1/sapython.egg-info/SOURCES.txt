@@ -1,0 +1,11 @@
+README.md
+setup.py
+sap_automation_lib/__init__.py
+sap_automation_lib/close_process.py
+sap_automation_lib/logs_exec.py
+sap_automation_lib/open_sap.py
+sap_automation_lib/sap_gui_init.py
+sapython.egg-info/PKG-INFO
+sapython.egg-info/SOURCES.txt
+sapython.egg-info/dependency_links.txt
+sapython.egg-info/top_level.txt
