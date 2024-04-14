@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+src/ximreader.cpp
+ximreader/__init__.py
+ximreader/ximReader.py
+ximreader.egg-info/PKG-INFO
+ximreader.egg-info/SOURCES.txt
+ximreader.egg-info/dependency_links.txt
+ximreader.egg-info/requires.txt
+ximreader.egg-info/top_level.txt

@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ximreader
+Version: 1.0.1
+Summary: Python extension for reading xim files
+Author: Dinesh Kumar
+Author-email: Dinesh Kumar <dkumar@lbl.gov>
+Project-URL: Homepage, https://github.com/aryabhatt/ximreader
+Project-URL: Issues, https://github.com/aryabhatt/ximreader/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+## ximReader Python package for loading xim files
+
+ximReader is an open-source tool for reading xim files as NumPy array. It is based on XimReader (https://bitbucket.org/dmoderesearchtools/ximreader/src/master/). 
+
+## Installation
+
+ximReader can be installed via pip
+
+    pip install git+https://github.com/aryabhatt/ximreader.git
+
+Alternatively, it can be installed from the source. It is recommended that a virtual environment be used for the source installation.
+
+
+## Usage
+
+    from ximreader import ximReader
+
+    def awesone_function(..., ximfilename, ...)
+        ...
+
+        image = ximReader(ximfilename)
+
+        ...
