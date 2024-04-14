@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: mousepad
+Version: 0.1.1
+Summary: Multidevice controller using python
+Home-page: https://github.com/neetishsingh/mousepad
+Author: Neetish Singh
+Author-email: neetishsingh97@gmail.com
+License: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Freeware
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: asyncio
+Requires-Dist: pyautogui
+
+# Mousepad
+Mousepad is a Python-based library designed to facilitate seamless connectivity between multiple devices on the same network such as wifi, enabling users to interact with each other in various ways, including mouse control, keypad input, joystick emulation, screen sharing, file sharing like Airdrop, and multiplayer gaming.
+
+## Features
+- **Device Integration:** Connect and manage multiple devices on the same network.
+- **Mouse Control:** Utilize devices as a mouse for precise control.
+- **Keypad Input:** Input text or commands using connected devices.
+- **Joystick Emulation:** Transform devices into game controllers for gaming applications.
+- **Screen Sharing:** Share screens across devices for collaborative work or presentations.
+- **Airdrop File Sharing:** Seamlessly share files between devices using Airdrop functionality.
+- **Multiplayer Gaming:** Enable multiplayer gaming experiences over the same network, such as WiFi, for enhanced gameplay.
