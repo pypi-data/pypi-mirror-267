@@ -1,0 +1,8 @@
+README.md
+setup.py
+nuumpy/__init__.py
+nuumpy/nuumpy.py
+nuumpy.egg-info/PKG-INFO
+nuumpy.egg-info/SOURCES.txt
+nuumpy.egg-info/dependency_links.txt
+nuumpy.egg-info/top_level.txt
