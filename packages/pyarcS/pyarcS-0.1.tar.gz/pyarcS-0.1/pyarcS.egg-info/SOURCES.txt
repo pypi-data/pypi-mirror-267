@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pyarcS/QueryManager.py
+pyarcS/__init__.py
+pyarcS.egg-info/PKG-INFO
+pyarcS.egg-info/SOURCES.txt
+pyarcS.egg-info/dependency_links.txt
+pyarcS.egg-info/requires.txt
+pyarcS.egg-info/top_level.txt
