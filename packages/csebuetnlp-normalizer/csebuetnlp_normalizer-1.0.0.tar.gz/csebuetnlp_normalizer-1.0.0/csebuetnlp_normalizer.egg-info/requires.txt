@@ -1,0 +1,3 @@
+regex
+emoji==1.4.2
+ftfy==6.0.3

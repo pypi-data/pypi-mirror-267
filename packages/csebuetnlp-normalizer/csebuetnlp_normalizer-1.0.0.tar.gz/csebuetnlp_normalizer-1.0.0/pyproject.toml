@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=40.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csebuetnlp-normalizer"
+version = "1.0.0"
+description = "Normalizer for bengali / english text."
+readme = "README.md"
+requires-python = ">=3.5"
+authors = [{name = "Sawradip Saha", email = "sawradip0@gmail.com"}] 
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "regex",
+    "emoji==1.4.2",
+    "ftfy==6.0.3"
+]
