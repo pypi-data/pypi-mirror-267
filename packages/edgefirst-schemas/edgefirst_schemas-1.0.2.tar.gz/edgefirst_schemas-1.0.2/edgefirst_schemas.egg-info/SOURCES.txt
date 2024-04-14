@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+edgefirst/schemas/__init__.py
+edgefirst/schemas/buildin_interfaces.py
+edgefirst/schemas/sensor_msgs.py
+edgefirst/schemas/std_msgs.py
+edgefirst_schemas.egg-info/PKG-INFO
+edgefirst_schemas.egg-info/SOURCES.txt
+edgefirst_schemas.egg-info/dependency_links.txt
+edgefirst_schemas.egg-info/requires.txt
+edgefirst_schemas.egg-info/top_level.txt
