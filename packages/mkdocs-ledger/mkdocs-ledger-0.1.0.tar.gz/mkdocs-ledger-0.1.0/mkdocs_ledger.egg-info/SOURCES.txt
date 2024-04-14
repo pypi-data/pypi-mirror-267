@@ -1,0 +1,6 @@
+README.md
+setup.py
+mkdocs_ledger.egg-info/PKG-INFO
+mkdocs_ledger.egg-info/SOURCES.txt
+mkdocs_ledger.egg-info/dependency_links.txt
+mkdocs_ledger.egg-info/top_level.txt
