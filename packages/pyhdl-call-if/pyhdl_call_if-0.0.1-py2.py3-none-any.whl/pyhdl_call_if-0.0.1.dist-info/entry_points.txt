@@ -1,0 +1,2 @@
+[ivpm.pkginfo]
+pyhdl-call-if = hdl_call_if.pkginfo:PkgInfo
