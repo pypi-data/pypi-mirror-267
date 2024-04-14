@@ -1,0 +1,35 @@
+---
+default_language_version:
+  python: python3.12
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: debug-statements
+      - id: requirements-txt-fixer
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.3.7
+    hooks:
+      - id: ruff
+        args: [--fix]
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.9.0
+    hooks:
+      - id: mypy
+        additional_dependencies: [types-setuptools, types-freezegun, pytest]
+  - repo: https://github.com/ambv/black
+    rev: 24.4.0
+    hooks:
+      - id: black
+  # - repo: https://github.com/mimre25/python-eol/
+  #   rev: v0.0.3
+  #   hooks:
+  #     - id: python-eol-check
+  #       args: [--fail-close-to-eol]

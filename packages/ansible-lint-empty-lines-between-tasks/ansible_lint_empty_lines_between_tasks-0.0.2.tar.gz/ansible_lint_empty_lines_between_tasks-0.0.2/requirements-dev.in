@@ -1,0 +1,13 @@
+ansible-lint
+black
+bump2version
+flake8
+freezegun
+mypy
+pytest
+pytest-cov
+ruff
+tox
+types-freezegun
+types-setuptools
+yamlfix

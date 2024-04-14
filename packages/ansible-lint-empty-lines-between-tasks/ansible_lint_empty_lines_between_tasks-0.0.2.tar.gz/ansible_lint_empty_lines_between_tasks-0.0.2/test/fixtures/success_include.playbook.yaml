@@ -1,0 +1,6 @@
+---
+- name: Foo
+  hosts: all
+  tasks:
+    - name: Foo
+      ansible.builtin.include_tasks: success.tasks.yaml
