@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: SimpleAxel-Auth
+Version: 0.0.1
+Summary: Auth blueprint for SimpleAxel (https://git.tech.eus/EuskadiTech/Simple-Auth)
+Home-page: https://git.tech.eus/EuskadiTech/Simple-Auth
+Author: EuskadiTech
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires: requests
+Requires: Flask
+Requires: stripe
+Requires: SimpleSDK
+License-File: LICENSE
