@@ -1,0 +1,11 @@
+docker
+huggingface-hub
+numpy
+aiohttp
+coloredlogs
+
+[quality]
+ruff
+
+[testing]
+pytest
