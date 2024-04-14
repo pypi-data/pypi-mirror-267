@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mousepad
+Version: 0.1.0
+Summary: Multidevice controller using python
+Home-page: https://github.com/neetishsingh/mousepad
+Author: Neetish Singh
+Author-email: neetishsingh97@gmail.com
+License: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Freeware
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: asyncio
+Requires-Dist: pyautogui
