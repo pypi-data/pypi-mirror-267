@@ -1,0 +1,2 @@
+[console_scripts]
+furtheredge = furtheredge.main:main
