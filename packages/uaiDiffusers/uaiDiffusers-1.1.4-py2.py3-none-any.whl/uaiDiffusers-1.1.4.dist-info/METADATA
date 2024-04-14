@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: uaiDiffusers
+Version: 1.1.4
+Summary: uaiDiffusers
+Home-page: https://github.com/vltmedia/uaiDiffusers
+Author: Justin Jaro
+Author-email: info@uai.contact
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# UAI Diffusers
+
+Some useful functions, and classes for AI work
+
+# Examples
+Check out the ```examples/examples.ipynb``` file for examples.
+
