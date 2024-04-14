@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mesmerize_viz/VERSION
+mesmerize_viz/__init__.py
+mesmerize_viz/_cnmf.py
+mesmerize_viz/_mcorr.py
+mesmerize_viz/_utils.py
+mesmerize_viz.egg-info/PKG-INFO
+mesmerize_viz.egg-info/SOURCES.txt
+mesmerize_viz.egg-info/dependency_links.txt
+mesmerize_viz.egg-info/requires.txt
+mesmerize_viz.egg-info/top_level.txt
