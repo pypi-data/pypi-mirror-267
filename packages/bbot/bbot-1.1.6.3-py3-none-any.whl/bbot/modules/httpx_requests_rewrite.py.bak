@@ -1,0 +1,129 @@
+from contextlib import suppress
+
+from bbot.modules.base import BaseModule
+
+
+class httpx(BaseModule):
+    watched_events = ["OPEN_TCP_PORT", "URL_UNVERIFIED", "URL"]
+    produced_events = ["URL", "HTTP_RESPONSE"]
+    flags = ["active", "safe", "web-basic", "web-thorough", "social-enum", "subdomain-enum", "cloud-enum"]
+    meta = {"description": "Visit webpages. Many other modules rely on httpx"}
+
+    options = {"in_scope_only": True, "version": "1.2.5", "max_response_size": 5242880}
+    options_desc = {
+        "in_scope_only": "Only visit web resources that are in scope.",
+        "version": "httpx version",
+        "max_response_size": "Max response size in bytes",
+    }
+    max_event_handlers = 25
+    scope_distance_modifier = 0
+    _priority = 2
+
+    def setup(self):
+        self.timeout = self.scan.config.get("httpx_timeout", 5)
+        self.retries = self.scan.config.get("httpx_retries", 1)
+        self.max_response_size = self.config.get("max_response_size", 5242880)
+        self.visited = set()
+        return True
+
+    def filter_event(self, event):
+        if "_wildcard" in str(event.host).split("."):
+            return False, "event is wildcard"
+
+        if "unresolved" in event.tags:
+            return False, "event is unresolved"
+
+        if event.module == self:
+            return False, "event is from self"
+
+        # scope filtering
+
+        in_scope_only = self.config.get("in_scope_only", True)
+        safe_to_visit = "httpx-safe" in event.tags
+        if not safe_to_visit and (in_scope_only and not self.scan.in_scope(event)):
+            return False, "event is not in scope"
+        # reject base URLs to avoid visiting a resource twice
+        # note: speculate makes open ports from
+
+        if "spider-danger" in event.tags:
+            return False, "event has spider danger"
+
+        # don't visit the same host twice
+        url_hash = None
+        if event.type.startswith("URL"):
+            if event.parsed.path == "/":
+                url_hash = hash((event.host, event.port))
+        else:
+            url_hash = hash((event.host, event.port))
+
+        if url_hash is not None:
+            if url_hash in self.visited:
+                return False, "URL already visited"
+            else:
+                self.visited.add(url_hash)
+
+        return True
+
+    def handle_event(self, event):
+        url = event.data
+        urls = [url]
+        if not self.helpers.is_url(url):
+            if event.port == 80:
+                urls = [f"http://{url}"]
+            elif event.port == 443:
+                urls = [f"https://{url}"]
+            else:
+                urls = [f"http://{url}", f"https://{url}"]
+
+        for _url in urls:
+            if self.scan.stopping:
+                break
+            event_data = {"url": _url}
+            response = self.request(_url)
+            if response is not None:
+                # discard 404s from unverified URLs
+                if event.type == "URL_UNVERIFIED" and response.status_code in (404,):
+                    self.debug(f'Discarding 404 from "{_url}"')
+                    return
+                tags = [f"status-{response.status_code}"]
+                url_event = self.make_event(_url, "URL", tags=tags, source=event)
+                if url_event:
+                    if url_event != event:
+                        await self.emit_event(url_event)
+                    else:
+                        url_event._resolved.set()
+                    # HTTP response
+                    event_data["body"] = self.helpers.smart_decode(response.iterated_content)
+                    event_data["header-dict"] = response.headers
+                    await self.emit_event(event_data, "HTTP_RESPONSE", tags=tags, source=url_event, internal=True)
+
+    def request(self, url):
+        response = self.helpers.request(url, stream=True, timeout=self.timeout, retries=self.retries)
+        if response is not None:
+            cancel_msg = (
+                f"Cancelling request to {url} because its content is larger than {self.max_response_size} bytes"
+            )
+            content_length = 0
+            with suppress(ValueError):
+                content_length = int(response.headers.get("Content-Length", 0))
+            if content_length > self.max_response_size:
+                response.close()
+                self.warning(cancel_msg)
+                return
+            else:
+                content = []
+                # Iterate over the response content incrementally to limit the amount of data downloaded
+                content_size = 0
+                for chunk in response.iter_content(chunk_size=1024**2):
+                    content_size += len(chunk)
+                    content.append(chunk)
+                    if content_size > self.max_response_size:
+                        response.close()
+                        self.warning(cancel_msg)
+                        return
+                response.iterated_content = b"".join(content)
+            return response
+
+    def cleanup(self):
+        resume_file = self.helpers.current_dir / "resume.cfg"
+        resume_file.unlink(missing_ok=True)

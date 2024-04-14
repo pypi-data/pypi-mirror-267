@@ -1,0 +1,54 @@
+from .base import BaseModule
+
+
+class google_analytics(BaseModule):
+    watched_events = ["DNS_NAME"]
+    produced_events = ["DNS_NAME"]
+    flags = ["affiliates", "active", "safe"]
+    meta = {"description": "Query hackertarget database for subdomains"}
+
+    hackertarget_url = "https://api.hackertarget.com/analyticslookup/?q={query}"
+    site_overview_url = "http://site-overview.com/website-report-search/analytics-account-id/{query}"
+    osint_sh_url = "https://osint.sh/analytics/"
+
+    async def setup(self):
+        self.processed = set()
+        return True
+
+    async def handle_event(self, event):
+        ua = "UA-33427076"
+        ua_hash = hash(ua)
+        if ua_hash not in self.processed:
+            self.processed.add(ua_hash)
+            results = set()
+            for method in ("site_overview",):
+                fn = getattr(self, f"get_{method}")
+                for result in await fn(ua):
+                    results.add(result)
+            for result in results:
+                await self.emit_event(result, "DNS_NAME", source=event, tags=["affiliate"])
+
+    async def get_hackertarget(self, ua):
+        results = set()
+        r = await self.helpers.request(self.hackertarget_url.format(query=ua))
+        if r is not None and r.status_code == 200:
+            if not "error getting results" in r.text:
+                lines = [l.strip() for l in r.text.splitlines()]
+                results = set([l for l in lines if l])
+        return results
+
+    async def get_site_overview(self, ua):
+        results = set()
+        r = await self.helpers.request(self.site_overview_url.format(query=ua))
+        self.hugesuccess(f"{r}:{r.text}:{r.headers}")
+        # if r is not None and r.status_code == 200:
+        # lines = [l.strip() for l in r.text.splitlines()]
+        # results = set([l for l in lines if l])
+        return results
+
+    async def get_osint_sh(self, ua):
+        results = set()
+        data = f"code={ua}"
+        r = await self.helpers.request(self.osint_sh_url, method="POST", data=data)
+        self.hugesuccess(f"{r}:{r.text}")
+        return results

@@ -1,0 +1,33 @@
+from bbot.modules.base import BaseModule
+
+
+class whoisxmlapi(BaseModule):
+    watched_events = ["DNS_NAME"]
+    produced_events = ["WHOIS"]
+    flags = ["passive", "safe"]
+    meta = {
+        "description": "Query WhoisXMLAPI for WHOIS data",
+    }
+    options = {"api_key": "at_FXbOAhBxxPZrUM7ZDfSQvCU05hvxx"}
+    options_desc = {"api_key": "WhoisXMLAPI Key"}
+    per_domain_only = True
+
+    base_url = "https://www.whoisxmlapi.com/whoisserver/WhoisService"
+
+    async def setup(self):
+        return await self.require_api_key()
+
+    async def handle_event(self, event):
+        _, domain = self.helpers.split_domain(event.data)
+        url = f"{self.base_url}?apiKey={self.api_key}&domainName={domain}&outputFormat=JSON"
+        self.hugeinfo(f"Visiting {url}")
+        response = await self.helpers.request(url)
+        if response is not None:
+            data = response.json()
+            whois_record = data.get("WhoisRecord", {})
+            # clean up data
+            whois_record.pop("registryData")
+            whois_record.pop("rawText")
+            strippedText = whois_record.pop("strippedText")
+            self.hugesuccess(strippedText)
+            await self.emit_event(whois_record, "WHOIS", source=event)
