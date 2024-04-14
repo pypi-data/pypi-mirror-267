@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ConnectedPapersExtractor/ArticleFilter.py
+src/ConnectedPapersExtractor/PdfSummary.py
+src/ConnectedPapersExtractor/__init__.py
+src/ConnectedPapersExtractor/_get_pdf_summaries.py
+src/ConnectedPapersExtractor/_get_urls.py
+src/ConnectedPapersExtractor/get_summaries.py
+src/ConnectedPapersExtractor.egg-info/PKG-INFO
+src/ConnectedPapersExtractor.egg-info/SOURCES.txt
+src/ConnectedPapersExtractor.egg-info/dependency_links.txt
+src/ConnectedPapersExtractor.egg-info/requires.txt
+src/ConnectedPapersExtractor.egg-info/top_level.txt
