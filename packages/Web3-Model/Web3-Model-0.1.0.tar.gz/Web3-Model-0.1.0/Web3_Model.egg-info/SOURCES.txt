@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+Web3_Model.egg-info/PKG-INFO
+Web3_Model.egg-info/SOURCES.txt
+Web3_Model.egg-info/dependency_links.txt
+Web3_Model.egg-info/requires.txt
+Web3_Model.egg-info/top_level.txt
+web3_model/__init__.py
+web3_model/contract.py
+web3_model/erc20.py
+web3_model/wallet.py
