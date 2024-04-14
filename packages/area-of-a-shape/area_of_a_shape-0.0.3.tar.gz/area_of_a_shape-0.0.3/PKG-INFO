@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: area_of_a_shape
+Version: 0.0.3
+Summary: A library that can calculate the area of a circle by radius and a triangle on three sides.
+Home-page: https://vk.com/mrrobot1234
+Author: Akim
+Author-email: akimserverov75@gmail.com
+Project-URL: Profile author, https://vk.com/mrrobot1234
+Keywords: triangle rectangle
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+Test_2
