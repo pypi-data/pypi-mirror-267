@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: llonebot
+Version: 1.0.0
+Summary: NTQQ llonebot插件 python交互包
+Author: 格索伊
+Author-email: 719893361@qq.com
+Requires-Python: >=3.7
+Requires-Dist: websockets
+Requires-Dist: pydantic
+Requires-Dist: aiocron
+
