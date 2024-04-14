@@ -1,0 +1,14 @@
+fmtutil/__about__.py,sha256=bCxli_lVMv1zbbPpxxzv319nt7EpaPbktBJ2I3GAiQ4,108
+fmtutil/__init__.py,sha256=ky8kwye_mdYHpNFdeH5lEoMvxRDvcAiHNaXEg265TH8,1706
+fmtutil/__main__.py,sha256=bYt9eEaoRQWdejEHFD8REx9jxVEdZptECFsV7F49Ink,30
+fmtutil/__type.py,sha256=QrXiGZZeh55ROJuGn06GSQ4yw5tHmYC2kewEWZ5ljb0,1873
+fmtutil/__version.py,sha256=KT3S3RBxDl0z39Ag7ePbnO82FXKCumhR3WrYTQ7lKKw,36758
+fmtutil/cli.py,sha256=Iwxn9T8Um_z5bVHeKwHpZBeBXAi6zfXBvNjX019olAc,2639
+fmtutil/exceptions.py,sha256=9l48lylr5Y0unAPilqeWf6LszONuncppok-IaoKhSA0,2580
+fmtutil/formatter.py,sha256=Q0B7CBHHacDnjV9M3r1Bwr0Xl6fFSFuNpP0zOJQuPTw,133452
+fmtutil/utils.py,sha256=8CnvEQKYk-Z0cKsxK2LZJ9f7LytZwOU96v_uuKxenNs,3633
+fmtutil-1.0.2.dist-info/METADATA,sha256=w7_I-b8b2UA23-2fopw1v1lq0S4dQooADZ4CFc8iq7E,9126
+fmtutil-1.0.2.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+fmtutil-1.0.2.dist-info/entry_points.txt,sha256=qm_lKo4H_jj5gNEkH75JRdndLuXzgofZK818DeM20h4,50
+fmtutil-1.0.2.dist-info/licenses/LICENSE,sha256=ya1kgjiTc2fqGDilFpcWcm_ImOAiZhRfctlAX-DsyW4,1073
+fmtutil-1.0.2.dist-info/RECORD,,
