@@ -1,0 +1,6 @@
+factorial_aio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+factorial_aio/app.py,sha256=SNI2ZEF9sRl3qWUsM5F9JlfgbCFP9XI6GzYovj4P1AM,378
+factorial_aio/factorial.py,sha256=QS28E0UXhSOpgqZAUq9BgtXNvtU2jgMM0kwIED2n06Y,179
+factorial_aio-0.1.0.dist-info/METADATA,sha256=sHjyPW7FjRf-BtYO9GYFCGVsRSzA_uYGaSOeA3s9ITM,432
+factorial_aio-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+factorial_aio-0.1.0.dist-info/RECORD,,
