@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: hearthistory
+Version: 0.1.0
+Summary: A library to generate random artworks from the Art Institute of Chicago
+Home-page: https://github.com/kevinmsong/ApplicationProgrammingInterfaces
+Author: Kevin Song
+Author-email: kevinmsong@email.com
+Requires-Dist: requests
+Requires-Dist: pillow
