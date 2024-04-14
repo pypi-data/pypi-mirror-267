@@ -1,0 +1,3 @@
+[console_scripts]
+cronvisio=cronvisio.cli:cli
+

@@ -1,0 +1,16 @@
+cronvisio/__init__.py,sha256=slyaLaFjEIRFZpUIFqi0YT1pdj6fTMqurt3L-LDboLM,626
+cronvisio/cli.py,sha256=4SiQa_3t5XV01htZbjtkWUytViMzQ1z_Z-x1Jjk26bs,2080
+cronvisio/monitor/__init__.py,sha256=05mG0RRD6GQqnRFsOzSWAA1fIbLPWK_rklCVRyD95Rk,305
+cronvisio/monitor/amazon_kindle_quotes.py,sha256=VTa7lDuYILAocaDbju7cp5jYEBE5Jlz9HOmTTguIDJA,3511
+cronvisio/monitor/automysqlbackup.py,sha256=iw0qGOE_Mq5rLu_d0knyja4d0WY8jOo0DcaY0QauSiQ,1432
+cronvisio/monitor/borgbackup.py,sha256=xIPIKpsWB8pytMMSSnpim-K8_z7QSnSTonPouFd6-U4,2729
+cronvisio/monitor/postfix.py,sha256=lFtPq2LC9FAsGP3QsSwzuj4v_tUuox88yG1YlpK8Mqk,796
+cronvisio/monitor/tlsreport.py,sha256=q9M0q1npCqHLIpJoOPia1DVAZaOwPCAxNFoC46u6FG0,4666
+cronvisio/notifier/__init__.py,sha256=0q5Yv3b-NHKRWMXKri34TpKAu_C-aL6_4enwFaDsVEk,122
+cronvisio/notifier/matrix.py,sha256=kDAL7e8_qzemWGuppWS93VGR1T-BzwVJfSZdqvCakEY,1812
+cronvisio/notifier/stdout.py,sha256=8NZKpy2RsCAqIIzZUFhvolPrioVDlT9VdYCsEq8K8vw,173
+cronvisio-0.9.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cronvisio-0.9.0.dist-info/METADATA,sha256=Ce7bMSw5rztLX6DG6r43t8dyJ7IMs64tkv1Aht3Y9U0,1151
+cronvisio-0.9.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cronvisio-0.9.0.dist-info/entry_points.txt,sha256=EhX1cgOP8fhch7PDGX7tEJYLEKiMkTtKA5jKtKDBjeA,47
+cronvisio-0.9.0.dist-info/RECORD,,
