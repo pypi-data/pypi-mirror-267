@@ -1,0 +1,9 @@
+README.md
+setup.py
+image_preprocessorpy/__init__.py
+image_preprocessorpy/imagepreporcess.py
+image_preprocessorpy.egg-info/PKG-INFO
+image_preprocessorpy.egg-info/SOURCES.txt
+image_preprocessorpy.egg-info/dependency_links.txt
+image_preprocessorpy.egg-info/requires.txt
+image_preprocessorpy.egg-info/top_level.txt
