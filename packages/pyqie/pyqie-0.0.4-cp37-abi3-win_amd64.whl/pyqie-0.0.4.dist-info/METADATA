@@ -1,0 +1,255 @@
+Metadata-Version: 2.3
+Name: pyqie
+Version: 0.0.4
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Rust
+License-File: LICENSE
+Summary: A retro game engine for Python
+Keywords: quantdev,python
+Author: Takashi Kitao <takashi.xiatian0716@gmail.com>
+Author-email: xiatian0716 <takashi.xiatian0716@gmail.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: homepage, https://github.com/xiatian0716/pyqie
+
+[ [中文](README.cn.md) ]
+
+**Pyqie**是一个 python 的经典的量化策略引擎。
+
+由于这只是一个简单的策略运行套件，所以并不推荐在实际的工作中使用。
+
+## 说明
+
+- 支持调用 pyqie 的指标计算库
+- 支持在 python 环境下调用 pyqie 的数学库
+- 支持使用简单的 python 环境下的 ECS 启发 pyqie 的指标计算
+
+## 如何安装
+
+### Windows
+
+在安装[Python3](https://www.python.org/) (3.7 或更高版本) 之后，执行以下命令：
+
+```sh
+pip install -U pyqie
+```
+
+如果你使用官方安装程序安装 Python，请勾选`Add Python 3.x to PATH`复选框以启用`pyqie`命令。
+
+### Mac
+
+在安装[Python3](https://www.python.org/) (3.7 或更高版本) 之后，执行以下命令：
+
+```sh
+python3 -m pip install -U pyqie
+```
+
+如果你使用默认安装在 Mac 上的 Python3，请在上述命令的开头添加`sudo`以启用`pyqie`命令。
+
+### Linux
+
+[Python3](https://www.python.org/) (3.7 或更高版本)，以及`python3-pip`这三个包之后，执行以下命令：
+
+```sh
+sudo pip3 install -U pyqie
+```
+
+如果上述方法不奏效，请根据[Makefile](../Makefile)中的说明尝试自我构建。
+
+### 尝试 Pyqie 例程
+
+以 Python 包版本为例，安装 Pyqie 后，用以下命令将 Pyxe 例程复制到当前文件夹：
+
+```sh
+pyqie copy_examples
+```
+
+例程包含：
+
+<table>
+<tr>
+<td>01_hello_pyqie.py</td>
+<td>最简单的应用</td>
+<td><a href="https://github.com/xiatian0716/pyqie/blob/main/python/pyqie/examples/01_hello_pyqie.py">Code</a></td>
+</tr>
+<tr>
+<td>02_hello_esper.py</td>
+<td>自带 python 风格的 ECS</td>
+<td><a href="https://github.com/xiatian0716/pyqie/blob/main/python/pyqie/examples/02_hello_esper.py">Code</a></td>
+</tr>
+</table>
+
+运行例程，可以使用以下命令：
+
+```sh
+cd pyqie_examples
+pyqie run 01_hello_pyqie.py
+pyqie play 30SecondsOfDaylight.pyxapp
+```
+
+## 使用教程
+
+### 创建 Pyqie 应用
+
+在 python 文件中导入 Pyqie 包后，首先使用`init`函数指定窗口大小，然后使用`run`函数启动 Pyqie 应用。
+
+```python
+import pyqie
+
+pyqie.init(160, 120)
+
+def update():
+  sq4 = pyqie.sqrt(4)
+  print(sq4)
+  print("update")
+
+def draw():
+  print("draw")
+
+def close():
+  print("close")
+
+pyqie.run(update, draw,close)
+```
+
+`run`函数的两个参数`update`函数和`draw`函数分别用来在需要时更新帧和绘制画面。
+
+实际应用中，建议将 pyqie 代码封装成如下类：
+
+```python
+import pyqie
+import asyncio
+
+class App:
+  def __init__(self):
+    pyqie.init(1000)
+    pyqie.run(self.update, self.draw,self.close)
+
+  def update(self):
+    sq4 = pyqie.sqrt(4)
+    print(sq4)
+    print("update")
+
+  def draw(self):
+    print("draw")
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(self.consumer())
+
+  def close(self):
+    print("close")
+
+  async def consumer(self):
+    print("consumer")
+
+App()
+```
+
+
+### 运行 Pyqie 应用
+
+创建的 Python 脚本可以使用以下命令执行：
+
+```sh
+pyqie run PYTHON_SCRIPT_FILE
+```
+
+它也可以像普通的 Python 脚本一样被执行：
+
+```sh
+python3 PYTHON_SCRIPT_FILE
+```
+
+
+### 如何发布应用
+
+Pyqie 支持跨平台的应用文件格式 (Pyqie 应用文件)。
+
+使用以下命令创建 Pyqie 应用文件 (.pyxapp)：
+
+```sh
+pyqie package APP_DIR STARTUP_SCRIPT_FILE
+```
+
+如果应用程序应包括资源或其他模块，请将它们放在应用程序目录中。
+
+创建好的应用文件使用以下命令执行：
+
+```sh
+pyqie play PYQIE_APP_FILE
+```
+
+Pyqie 应用程序文件也可以通过`pyqie app2exe`或`pyqie app2html`命令转换为可执行文件或 HTML 文件。
+
+## API 参考手册
+
+### 系统
+
+- `width`，`height`<br>
+  画面的宽和高
+
+- `frame_count`<br>
+  目前为止，经过的总帧数
+
+- `init(width, height, [title], [fps], [quit_key], [display_scale], [capture_scale], [capture_sec])`<br>
+  使用屏幕尺寸 (`width`，`height`) 初始化 Pyqie 应用。以下属性为可选配置项：窗口标题`title`，帧率`fps`，应用退出按键`quit_key`，用 "display_scale "来决定显示的比例，用 "capture_scale "来决定屏幕捕捉的比例，以及屏幕捕获的最长记录时间`capture_sec`。<br>
+  示例：`pyqie.init(160, 120, title="My Pyqie App", fps=60, quit_key=pyqie.KEY_NONE, capture_scale=3, capture_sec=0)`
+
+- `run(update, draw)`<br>
+  启动 Pyqie 应用，并调用`update`函数刷新画面帧，并使用`draw`函数渲染画面。
+
+- `show()`<br>
+  显示屏幕直到`Esc`键被按下。
+
+- `flip()`<br>
+  将屏幕重新调整一帧。当按下`Esc`键时，应用程序退出。该功能在网络版中不起作用。
+
+- `quit()`<br>
+  退出 Pyqie 应用。
+
+### 数学
+
+- `ceil(x)`<br>
+  返回大于或等于`x`的最小的整数。
+
+- `floor(x)`<br>
+  返回小于或等于`x`的最大整数。
+
+- `sgn(x)`<br>
+  当`x`是正数时返回 1，当它是零时返回 0，当它是负数时返回 1。
+
+- `sqrt(x)`<br>
+  返回`x`的平方根。
+
+- `sin(deg)`<br>
+  返回`deg`度的正弦。
+
+- `cos(deg)`<br>
+  返回`deg`度的余弦。
+
+- `atan2(y, x)`<br>
+  返回`y`/`x`的正切，单位是度。
+
+- `rseed(seed)`<br>
+  设置随机数发生器的种子。
+
+- `rndi(a, b)`<br>
+  返回一个大于或等于`a`且小于或等于`b`的随机整数。
+
+- `rndf(a, b)`<br>
+  返回一个大于或等于`a`且小于或等于`b`的随机小数。
+
+- `nseed(seed)`<br>
+  设置佩林噪声的种子。
+
+- `noise(x, [y], [z])`<br>
+  返回指定坐标的佩林噪声值。
+
+## 许可证
+
+Pyqie 遵循[MIT License](../LICENSE)。您可以在专利软件中重复使用，前提是该软件的所有副本或重要部分均包含 MIT 许可条款的副本和版权声明。
