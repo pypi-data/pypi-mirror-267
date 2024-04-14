@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: BoostCLI
+Version: 0.6.1
+Summary: BoostCLI
+Author-email: boostcli.v1pty@slmail.me
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: grpcio <2,>=1.62
+Requires-Dist: aiogrpc <2,>=1.8
+Requires-Dist: click <9,>=8.0.3
+Requires-Dist: beautifulsoup4 <5,>=4.10.0
+Requires-Dist: lxml <5,>=4.7.1
+Requires-Dist: requests <3,>=2.27.1
+Requires-Dist: tabulate <1,>=0.8.9
+Requires-Dist: tqdm <5,>=4.62.3
+Requires-Dist: rich <13,>=12.5.1
+Requires-Dist: protobuf <5
+Provides-Extra: deploy
+Requires-Dist: build <1,>=0.8.0 ; extra == 'deploy'
+Requires-Dist: twine <5,>=4.0.1 ; extra == 'deploy'
+Provides-Extra: dev
+Requires-Dist: grpcio-tools <2,>=1.62 ; extra == 'dev'
+Requires-Dist: pytest <7,>=6.2.5 ; extra == 'dev'
+Requires-Dist: flake8 <5,>=4.0.1 ; extra == 'dev'
+Requires-Dist: flake8-black <1,>=0.3.2 ; extra == 'dev'
+
