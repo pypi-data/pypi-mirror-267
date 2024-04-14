@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cc_package
+Version: 0.0.1
+Summary: package test
+Author: cc
+Author-email: cc@qq.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+This is a test.
