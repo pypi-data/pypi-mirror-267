@@ -1,0 +1,8 @@
+docker
+RestrictedPython
+
+[test]
+pytest
+pytest-cov
+pytest-benchmark
+mypy
