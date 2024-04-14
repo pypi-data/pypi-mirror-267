@@ -1,0 +1,21 @@
+licence = "MIT"
+
+[tool.poetry]
+name = "widehyo-util"
+version = "0.0.1"
+authors = ["widehyo <widehyo@gmail.com>"]
+description = "utility function storage"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python"
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+build = "^1.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
