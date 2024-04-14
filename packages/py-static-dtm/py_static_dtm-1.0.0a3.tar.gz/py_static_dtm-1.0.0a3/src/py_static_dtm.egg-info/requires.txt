@@ -1,0 +1,6 @@
+fastkml
+lxml
+shapely
+pyproj
+numpy
+pytest
