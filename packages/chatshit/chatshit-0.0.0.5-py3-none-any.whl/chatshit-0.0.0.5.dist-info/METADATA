@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: chatshit
+Version: 0.0.0.5
+Summary: Worst chatroom ever
+Author: mark bragin
+Author-email: m4rk.brag1n@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: textual (>=0.54.0,<0.55.0)
+Description-Content-Type: text/markdown
+
+# WORST CHATROOM EVER
+
