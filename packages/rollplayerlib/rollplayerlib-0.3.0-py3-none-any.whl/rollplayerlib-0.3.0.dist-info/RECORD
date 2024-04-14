@@ -1,0 +1,11 @@
+rollplayerlib/__init__.py,sha256=NxKFhe81EHrvltsX6n22a6EYb4CGfubUvnBUkbxriEI,268
+rollplayerlib/bonuses.py,sha256=OajFMstRWnx01S1D7cht0xZA0GHjLSsQcWXenmhIk8k,6073
+rollplayerlib/dice.py,sha256=6qcDXZWih7UTfd10zSeFAcQK7WUwkFGl7BMMg0zju6I,9563
+rollplayerlib/enums.py,sha256=SZPAZOu6D38egTNWqIKHIdPdE_aH1wd3rIbY6XjbY10,543
+rollplayerlib/exceptions.py,sha256=79DrzsY_TKqClDPtuTGQ4vIxNzLehrLb4DaoExGiT60,139
+rollplayerlib/formatting.py,sha256=YgHRoA9g8LVq6Nb5wdMXBaz9GSRw_B2bBiv655pMZH4,3330
+rollplayerlib-0.3.0.dist-info/LICENSE,sha256=vm-ggacIyNYQzECRtW4WOC2XtxJ05Z4rvfKmJzJAn_o,1068
+rollplayerlib-0.3.0.dist-info/METADATA,sha256=-WVHOLMRohtgpxpZJrECiHww3OFMN75OCBRBw8vkuEA,3853
+rollplayerlib-0.3.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+rollplayerlib-0.3.0.dist-info/top_level.txt,sha256=0oA8d2kwfxXPMy1nQDKHWCgZy7-R6Ud14T9lHIBwelw,14
+rollplayerlib-0.3.0.dist-info/RECORD,,
