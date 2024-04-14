@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: podRacer
+Version: 0.0.1.2
+Summary: A library for interacting with podcasts
+Author: Mike Afshari
+Author-email: theneed4swede@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: certifi (==2023.7.22)
+Requires-Dist: charset-normalizer (==3.3.2)
+Requires-Dist: feedparser (==6.0.10)
+Requires-Dist: idna (==3.4)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: sgmllib3k (==1.0.0)
+Requires-Dist: tqdm (==4.66.1)
+Requires-Dist: urllib3 (==2.0.7)
+Requires-Dist: validators (==0.22.0)
+
+<div align="center">
+
+**Now this is podRacing!**
+
+______________________________________________________________________
+
+<p align="center">
+  <a href="https://podracer.app">Documentation</a> •
+</p>
+
+</div>
+
+## Installation
+
+```sh
+pip install podracer
+```
+
+### What is podRacer?
+
+A python library for working with podcasts and RSS feeds
