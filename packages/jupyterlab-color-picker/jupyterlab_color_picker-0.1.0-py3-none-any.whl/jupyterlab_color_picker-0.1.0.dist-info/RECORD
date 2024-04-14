@@ -1,0 +1,15 @@
+jupyterlab_color_picker/__init__.py,sha256=wfKusFy5Wih_iewgebtOdNoL9kBDLpmZctWHwbYpe-I,604
+jupyterlab_color_picker/_version.py,sha256=ac3tgjoOzsODOlacRPCwz99LbZv0NK7ZYAaBWulFo7E,171
+jupyterlab_color_picker-0.1.0.data/data/share/jupyter/labextensions/jupyterlab-color-picker/package.json,sha256=rHoRJ9of3nHYVHdZ-8YfwzFgShcoiT62oPnyoiOVYWc,5798
+jupyterlab_color_picker-0.1.0.data/data/share/jupyter/labextensions/jupyterlab-color-picker/static/255.ed57596e47fb69367c6d.js,sha256=7VdZbkf7aTZ8bfhCyJY3AV9TYZwEwfeSqn__KLIuddM,25734
+jupyterlab_color_picker-0.1.0.data/data/share/jupyter/labextensions/jupyterlab-color-picker/static/271.2e442c0392a3eae4301a.js,sha256=LkQsA5Kj6uQwGuk6o7cWcSh3_mIqMbGF4cGaLRQyCcc,8753
+jupyterlab_color_picker-0.1.0.data/data/share/jupyter/labextensions/jupyterlab-color-picker/static/652.df44c038e5a86c301e50.js,sha256=30TAOOWobDAeUIJq045ApFtx0dCcTPegl7vUVT8gKRk,8753
+jupyterlab_color_picker-0.1.0.data/data/share/jupyter/labextensions/jupyterlab-color-picker/static/728.08817c0706986b0dc3a8.js,sha256=CIF8BwaYaw3DqCM1eocIligvKAQ5e2TVcOZx_3XZhTY,4024
+jupyterlab_color_picker-0.1.0.data/data/share/jupyter/labextensions/jupyterlab-color-picker/static/remoteEntry.f56a712f79a665e443b1.js,sha256=9WpxL3mmZeRDsW38oM9EllLb9AyOl1PBtZqxKPbUldc,7374
+jupyterlab_color_picker-0.1.0.data/data/share/jupyter/labextensions/jupyterlab-color-picker/static/style.js,sha256=m4whkcVfOhJoUUDKbk4MnOJG82G7IN-Bw5o9owFD_Ro,166
+jupyterlab_color_picker-0.1.0.data/data/share/jupyter/labextensions/jupyterlab-color-picker/static/third-party-licenses.json,sha256=KMOIjErQDeJAspq6O3qj8sRlDsTca84gHNK5g1gFrBw,2601
+jupyterlab_color_picker-0.1.0.data/data/share/jupyter/labextensions/jupyterlab-color-picker/install.json,sha256=aT9kFq9vzzPq59D66-Gcd4ULuE7PvSgixCluJdhowhQ,207
+jupyterlab_color_picker-0.1.0.dist-info/METADATA,sha256=PBI39JLjo395O-DniZxC6-FLrdfo1An8EzF5AUwOHfQ,6348
+jupyterlab_color_picker-0.1.0.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+jupyterlab_color_picker-0.1.0.dist-info/licenses/LICENSE,sha256=YhosQVS_0e7PVW89sqtEvX-KimMPEtWMdoxkBgu1TrY,1526
+jupyterlab_color_picker-0.1.0.dist-info/RECORD,,
