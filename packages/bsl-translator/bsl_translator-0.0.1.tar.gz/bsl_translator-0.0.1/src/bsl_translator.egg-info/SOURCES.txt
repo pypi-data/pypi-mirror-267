@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/__init__.py
+src/dataset_creator.py
+src/image_processing.py
+src/training.py
+src/translate.py
+src/translator_fingerspelling.py
+src/bsl_translator.egg-info/PKG-INFO
+src/bsl_translator.egg-info/SOURCES.txt
+src/bsl_translator.egg-info/dependency_links.txt
+src/bsl_translator.egg-info/requires.txt
+src/bsl_translator.egg-info/top_level.txt
