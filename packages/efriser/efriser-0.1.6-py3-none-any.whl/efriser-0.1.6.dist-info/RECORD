@@ -1,0 +1,16 @@
+efris/__init__.py,sha256=Cj-ezkh4Xy1uBdchCi2BzxxZXm3D7q-qCAG653FeFxU,136
+efris/invoicing.py,sha256=liuSANHWUfPYMoVPq_uaahIf4hTiCSjLXIQNWzLhHn4,6242
+efris/output_cleaner.py,sha256=exMQUVub33Chh4JgYgastO4kEWGwlf2Qigb3MfQVf0g,12249
+efris/payload.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+efris/services.py,sha256=LmCtWXDrwKcdxIs1Af-cKe7z2UZiXh7diQcFeE0CHjU,1354
+efris/utils.py,sha256=0EqMPIJWa6-TgT1i9qUP4BSwSopmn0GnwnryQFcnu50,6816
+efriser/__init__.py,sha256=ywNE-lOaP3klHdYRSLEQMBJu1atKf-vtamzrryJFAOw,54
+efriser/invoicing.py,sha256=WZMaP2-lC6tsrkpiYTAbYJnkFYbj-2UggppgL3-flRo,6221
+efriser/output_cleaner.py,sha256=exMQUVub33Chh4JgYgastO4kEWGwlf2Qigb3MfQVf0g,12249
+efriser/payload.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+efriser/services.py,sha256=LmCtWXDrwKcdxIs1Af-cKe7z2UZiXh7diQcFeE0CHjU,1354
+efriser/utils.py,sha256=0EqMPIJWa6-TgT1i9qUP4BSwSopmn0GnwnryQFcnu50,6816
+efriser-0.1.6.dist-info/METADATA,sha256=sqmLjdi7wKcfnxMHIh8Gd2BKis-VSr9_65kf4JqIQpk,488
+efriser-0.1.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+efriser-0.1.6.dist-info/top_level.txt,sha256=Som7hDYGgPTVOCmZZQfcz-oeJr-bbCvIt8kfPclnUUU,6
+efriser-0.1.6.dist-info/RECORD,,

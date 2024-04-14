@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: efriser
+Version: 0.1.6
+Summary: This is a python package to aid in fiscalisation of invoices with the Uganda Revenue Authority (URA) using the EFRIS API.
+Home-page: UNKNOWN
+Author: Douglas Ssekuwanda
+Author-email: cytixdoug@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests (>=2.24.0)
+
+UNKNOWN
+
