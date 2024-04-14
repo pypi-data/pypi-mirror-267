@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bsl_translator.egg-info/PKG-INFO
+bsl_translator.egg-info/SOURCES.txt
+bsl_translator.egg-info/dependency_links.txt
+bsl_translator.egg-info/requires.txt
+bsl_translator.egg-info/top_level.txt
