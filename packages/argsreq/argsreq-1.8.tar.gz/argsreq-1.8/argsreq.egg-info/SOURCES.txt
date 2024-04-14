@@ -1,0 +1,9 @@
+setup.py
+argsreq.egg-info/PKG-INFO
+argsreq.egg-info/SOURCES.txt
+argsreq.egg-info/dependency_links.txt
+argsreq.egg-info/top_level.txt
+reqargs/__init__.py
+reqargs/__main__.py
+reqargs/colorls.py
+reqargs/reqargs.py
