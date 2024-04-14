@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sourcetrust/__init__.py
+sourcetrust/sourcetrust.py
+sourcetrust.egg-info/PKG-INFO
+sourcetrust.egg-info/SOURCES.txt
+sourcetrust.egg-info/dependency_links.txt
+sourcetrust.egg-info/requires.txt
+sourcetrust.egg-info/top_level.txt
