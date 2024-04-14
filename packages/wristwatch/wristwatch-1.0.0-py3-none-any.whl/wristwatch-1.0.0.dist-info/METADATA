@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: wristwatch
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: beautifulsoup4
+Requires-Dist: rookiepy
+Requires-Dist: selenium
+
+UNKNOWN
+
