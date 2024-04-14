@@ -1,0 +1,32 @@
+# An Unofficial Django and Firebase Library
+
+This library aims to enable the uploading of media directly to Firebase from Django forms.
+
+The FirebaseFileField provides four main automatic functionalities, which are:
+* Saving the file to Firebase: If a file with the same name already exists, it will be renamed and saved. If you update the file, the previous one will be deleted.
+* Moving the file: If you change the `upload_to` field and update a post of this model, the file will be automatically moved to the new address specified in `upload_to`.
+* Checking if the file still exists: If you update a post and the file has been manually deleted from Firebase, the link in the post will be updated to `None`.
+* Deleting the file: If you select to empty the field, the file will be automatically deleted.
+
+How to use:
+* First, you need to have the Firebase key file. It can be added to the root directory or another path of your choice and added to the settings, but it must be renamed to `Key.json`.
+
+        FIREBASEKEYPATH = "example/example"
+
+* Second, you need to add the Firebase storage bucket to the settings.
+
+      STORAGEBUCKET = {'storageBucket': 'example.appspot.com'}
+
+* Now, you just need to import and use it.
+
+      from firebasefilefield.fieldbase.functions import FirebaseFileField
+      
+      class ExampleModel(models.Model):
+          Example = FirebaseFileField(upload_to='uploads/', null=True, blank=True)
+
+If you don't want files to be automatically deleted along with the post, just set `auto_delete` to `False`.
+
+      from firebasefilefield.fieldbase.functions import FirebaseFileField
+      
+      class ExampleModel(models.Model):
+          Example = FirebaseFileField(upload_to='uploads/', null=True, blank=True, auto_delete=False)

@@ -1,0 +1,8 @@
+LICENCE
+README.md
+setup.py
+django_firebase_filefield.egg-info/PKG-INFO
+django_firebase_filefield.egg-info/SOURCES.txt
+django_firebase_filefield.egg-info/dependency_links.txt
+django_firebase_filefield.egg-info/requires.txt
+django_firebase_filefield.egg-info/top_level.txt
