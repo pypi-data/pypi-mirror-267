@@ -1,0 +1,10 @@
+[console_scripts]
+create-core = nichirin.scripts.create_core:main
+index-solr = nichirin.retriever.solr_index_docs:main
+install-solr = nichirin.scripts.install_solr:main
+partition-data = nichirin.scripts.data_partition:main
+pipeline = nichirin.pipeline:main
+query-solr = nichirin.retriever.solr:main
+seed-urls = nichirin.scripts.seed_urls:main
+start-crawler = nichirin.crawler:main
+start-serve = nichirin.serve.app:main
