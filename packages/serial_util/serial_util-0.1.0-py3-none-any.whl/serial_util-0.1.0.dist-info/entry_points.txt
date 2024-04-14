@@ -1,0 +1,4 @@
+[console_scripts]
+serial_monitor=serial_util.interface_core:serial_monitor_cli
+serial_plotter=serial_util.gui:serial_monitor_gui
+
