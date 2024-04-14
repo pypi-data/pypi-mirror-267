@@ -1,0 +1,11 @@
+snake_environment/__init__.py,sha256=KdASAYsXthnGHzp9apTltJ2nRzOXVU-t-0yTxXOSP5Y,118
+snake_environment/game/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snake_environment/game/objects.py,sha256=Hy0dq7ujjjWvXxCFUEU6pHJvssvqP4H7OoW2RhsABn4,2932
+snake_environment/game/snake_game.py,sha256=0N1_D5q-EGlKZxgw1014f8Tg8EkE9kgOmqErgK76qY0,8398
+snake_environment/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snake_environment/helpers/helpers.py,sha256=HtEWgzXtVOJX8hH4SXUSNKMk229JjHLB4h-2sy37U9E,816
+snake_environment-0.3.6.dist-info/LICENSE,sha256=YFXWhdtjTr8PvhW2LieOVF3I1nmKkX9OYhYklFQ1zvM,1093
+snake_environment-0.3.6.dist-info/METADATA,sha256=mCvti77ZAOonJ0JZ754EQSVfx4m_Mjx2QyWJB304Gso,2652
+snake_environment-0.3.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+snake_environment-0.3.6.dist-info/top_level.txt,sha256=TkV9YaeQg8NQlxNiFIW-wRsH4vJSqnZpGpN9CO_0_b8,18
+snake_environment-0.3.6.dist-info/RECORD,,
