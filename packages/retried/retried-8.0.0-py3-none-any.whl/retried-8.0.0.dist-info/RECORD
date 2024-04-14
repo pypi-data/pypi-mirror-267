@@ -1,0 +1,8 @@
+retried-8.0.0.dist-info/METADATA,sha256=iKWsixrSbCeFcnkuEaMVktb4oQk5d7-sORP7vCdfnXQ,276
+retried-8.0.0.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+retried/__init__.py,sha256=091PmkM4ARt5szpcwPLRREVwrYE9_m1zxZB_WbJ-blQ,224
+retried/__version__.py,sha256=AyZRTIkSz5fujITsF1zQUnF6aX_yUifvSGuLSU642Hg,18
+retried/aretry.py,sha256=QWnLq21mK91C08t0TwsfCiC7fFjVAj6idwS1DFRWkls,2290
+retried/retry.py,sha256=tXCxca6F0JWUR3OsrnOfTfIoNPqDWm5MlCytah1SfzU,4018
+retried/utils.py,sha256=WIm1mGWlOzlB0U_E4MDEKaM-IyV2P6TrQGUCre7gRbE,189
+retried-8.0.0.dist-info/RECORD,,
