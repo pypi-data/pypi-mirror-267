@@ -1,0 +1,12 @@
+fancy_dataclass/__init__.py,sha256=rKXwWniA6pbV9L5Os7fUY92KhUfuMC3xUevQk3Nl0Bg,344
+fancy_dataclass/cli.py,sha256=cqUF4D4rNUUXh8bwvZdCo9ajrSsdVKFAxK_BW0u8WYw,14543
+fancy_dataclass/config.py,sha256=ZAsfMkFlxO6ZT5MUewKhwTogsWu3Mss5HJ9cJyLacsU,2586
+fancy_dataclass/dict.py,sha256=6XGMZqOtH7WUCV0jEQMfsBi7xBXmgu7-rtCCQVpFQkg,15960
+fancy_dataclass/json.py,sha256=fP88gVd1oih0TPZQo-xRr4AcLHM4K05g9cRuyZTR8vg,7949
+fancy_dataclass/mixin.py,sha256=2kfHvO4q2Oi714j16Ybee7dXAodqVNcC7RATfX75n7I,11440
+fancy_dataclass/sql.py,sha256=Eyuo7obnDT9HW2RKP_z76Np-hWQXtFQlpJjpTrLDiQs,5922
+fancy_dataclass/subprocess.py,sha256=16pI6VosjqweWg9P_WQb8UHLMuD-VOKdnwNBvhvRglY,8063
+fancy_dataclass/utils.py,sha256=s8ISYtKQjohoDqQw4XOmD_nwwiKTGlIeHX5WVzb_MLE,17262
+fancy_dataclass-0.2.0.dist-info/METADATA,sha256=Ba0AJrw7t4NIr-PSeSrcDgTwQ85xoSRLV_irUp2z1J8,2750
+fancy_dataclass-0.2.0.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+fancy_dataclass-0.2.0.dist-info/RECORD,,
