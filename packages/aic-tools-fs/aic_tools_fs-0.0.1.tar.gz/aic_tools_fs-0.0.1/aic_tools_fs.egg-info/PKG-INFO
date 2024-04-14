@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: aic_tools_fs
+Version: 0.0.1
+Summary: Pinecone tools for AI Characters
+Author: Viacheslav Kovalevskyi
+Author-email: viacheslav@kovalevskyi.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: crewai-tools==0.1
+Requires-Dist: python-dotenv==1.0.0
