@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyplatter
+Version: 1.0.0
+Summary: An MVC object-oriented framework for RESTful APIs with built-in WSGI support.
+Author-email: Will Brandon <dev.willbrandon@gmail.com>
+Maintainer-email: Will Brandon <dev.willbrandon@gmail.com>
+Project-URL: Homepage, https://projects.willbrandon.com/pyextras
+Project-URL: Documentation, https://docs.willbrandon.com/pyextras
+Project-URL: Repository, https://github.com/will-brandon/PyExtra
+Keywords: util,utilities,extra,tools,types,typing
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyplatter
+An MVC object-oriented framework built on top of Flask to allow for organized development of RESTful APIs. Uses waitress
+for built-in WSGI support.
