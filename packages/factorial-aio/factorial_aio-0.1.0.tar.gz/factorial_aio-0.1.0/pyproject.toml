@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "factorial-aio"
+version = "0.1.0"
+description = ""
+authors = ["Koii2k3 <devkoi2k3@gmail.com>"]
+readme = "README.md"
+packages = [{include = "factorial_aio"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.33.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
