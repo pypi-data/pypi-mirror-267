@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+anysugar/AnySugar.egg-info/PKG-INFO
+anysugar/AnySugar.egg-info/SOURCES.txt
+anysugar/AnySugar.egg-info/dependency_links.txt
+anysugar/AnySugar.egg-info/requires.txt
+anysugar/AnySugar.egg-info/top_level.txt

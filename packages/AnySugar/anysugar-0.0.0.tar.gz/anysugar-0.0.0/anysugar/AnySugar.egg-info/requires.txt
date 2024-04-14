@@ -1,0 +1,14 @@
+requests>=2
+numpy
+sqlalchemy
+pandas
+psycopg2-binary
+cryptography
+langchain
+langchain-openai
+fastapi
+chromadb
+
+[dev]
+pytest>=3.7
+sphinx
