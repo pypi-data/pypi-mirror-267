@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bsl-translator40494773
+Version: 0.0.1
+Summary: Open source library to translate BSL signs into text
+Author: Miguel Garcia
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: opencv-python~=4.9.0.80
+Requires-Dist: numpy
+Requires-Dist: mediapipe
+Requires-Dist: tensorflow~=2.15.0.post1
+Requires-Dist: keras~=2.15.0
+Requires-Dist: scikit-learn~=1.4.0

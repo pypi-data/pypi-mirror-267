@@ -1,0 +1,6 @@
+setup.py
+bsl_translator40494773.egg-info/PKG-INFO
+bsl_translator40494773.egg-info/SOURCES.txt
+bsl_translator40494773.egg-info/dependency_links.txt
+bsl_translator40494773.egg-info/requires.txt
+bsl_translator40494773.egg-info/top_level.txt
