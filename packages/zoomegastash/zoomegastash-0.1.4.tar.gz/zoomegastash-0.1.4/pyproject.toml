@@ -1,0 +1,24 @@
+[tool.ruff]
+extend = "C:/CUSTOM_ASSETS/pyproject.toml"
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+
+[tool.poetry]
+name = "zoomegastash"
+version = "0.1.4"
+description = "Zoo Mega Stash - Utilities and tool for Colon's zoo bot discord minigame"
+authors = ["TheCreatorrrr"]
+license = "GPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+tcrutils = ">=12.0.143"
+attr = "^0.3.2"
+click = "^8.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
