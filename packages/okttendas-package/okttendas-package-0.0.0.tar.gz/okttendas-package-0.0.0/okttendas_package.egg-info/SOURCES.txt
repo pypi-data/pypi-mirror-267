@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+libname/__init__.py
+libname/main.py
+okttendas_package.egg-info/PKG-INFO
+okttendas_package.egg-info/SOURCES.txt
+okttendas_package.egg-info/dependency_links.txt
+okttendas_package.egg-info/top_level.txt
