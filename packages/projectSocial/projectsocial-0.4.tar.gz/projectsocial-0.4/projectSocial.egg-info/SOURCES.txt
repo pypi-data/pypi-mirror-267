@@ -1,0 +1,7 @@
+setup.py
+projectSocial.egg-info/PKG-INFO
+projectSocial.egg-info/SOURCES.txt
+projectSocial.egg-info/dependency_links.txt
+projectSocial.egg-info/entry_points.txt
+projectSocial.egg-info/requires.txt
+projectSocial.egg-info/top_level.txt
