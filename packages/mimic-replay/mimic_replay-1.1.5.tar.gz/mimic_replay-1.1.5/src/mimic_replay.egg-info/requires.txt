@@ -1,0 +1,4 @@
+uuid
+requests
+bcrypt
+BeautifulSoup>=4.11.0
