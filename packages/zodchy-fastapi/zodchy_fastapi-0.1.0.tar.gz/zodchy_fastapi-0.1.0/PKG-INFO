@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: zodchy-fastapi
+Version: 0.1.0
+Summary: Collection of tools to integrate fastapi to zodchy architecture
+Author: Smairon
+Author-email: man@smairon.ru
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi (>=0.103.1,<0.104.0)
+Requires-Dist: zodchy (>=0.1.0,<0.2.0)
+Description-Content-Type: text/markdown
+
+# Zodchy fastapi
