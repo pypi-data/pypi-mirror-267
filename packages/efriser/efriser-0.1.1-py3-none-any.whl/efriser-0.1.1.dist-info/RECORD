@@ -1,0 +1,10 @@
+efriser/__init__.py,sha256=qfiMkbDAxWO6T9JLSTh5mZ1Y3UvdH9aYcRa2TDVfPzc,29
+efriser/invoicing.py,sha256=l6RC90BtngccnSM_Pq37pZFDzIK34HW4jp7sfWnEbrA,6226
+efriser/output_cleaner.py,sha256=exMQUVub33Chh4JgYgastO4kEWGwlf2Qigb3MfQVf0g,12249
+efriser/payload.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+efriser/services.py,sha256=LmCtWXDrwKcdxIs1Af-cKe7z2UZiXh7diQcFeE0CHjU,1354
+efriser/utils.py,sha256=0EqMPIJWa6-TgT1i9qUP4BSwSopmn0GnwnryQFcnu50,6816
+efriser-0.1.1.dist-info/METADATA,sha256=rm9dLjRC5PFbwr1O4RgnImgq9cK9C5YUwC5IzbLaWCs,308
+efriser-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+efriser-0.1.1.dist-info/top_level.txt,sha256=C5bqyQoL_GnrC9MzOnPAMCco33zhblss3YYUySrBVjg,8
+efriser-0.1.1.dist-info/RECORD,,
