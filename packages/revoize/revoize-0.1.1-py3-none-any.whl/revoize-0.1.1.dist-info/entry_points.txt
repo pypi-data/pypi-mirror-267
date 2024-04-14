@@ -1,0 +1,3 @@
+[console_scripts]
+revoize-enhance=revoize.scripts.enhance_cli:_enhance
+
