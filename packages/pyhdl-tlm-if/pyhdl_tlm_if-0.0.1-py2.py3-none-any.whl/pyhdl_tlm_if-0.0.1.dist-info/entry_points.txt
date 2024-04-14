@@ -1,0 +1,2 @@
+[ivpm.pkginfo]
+pyhdl-tlm-if = hdl_tlm_if.pkginfo:PkgInfo

@@ -1,0 +1,14 @@
+hdl_tlm_if/__build_num__.py,sha256=gT-GGnA0Mkbx34Dy8CqzV2wlwmAJSdVEm_JaQ8uEvvM,21
+hdl_tlm_if/__init__.py,sha256=6OG6sHFBdBFKGfkuUuZH3gddOq80Qfl650K8QK6nVko,386
+hdl_tlm_if/__main__.py,sha256=EvuGuc2XWlHHjYgxhYK2gaeKXJIQ6Uti7bK4IlKUyZg,694
+hdl_tlm_if/decorators.py,sha256=n0JRIjfVAki9ZNDcmSuRjCDff144zckjBDrJ3darbmY,979
+hdl_tlm_if/pkginfo.py,sha256=nbQDnwszrlj2hg5Z0ggMZagr0ZVQy0s1jJgQBiTQvK4,2378
+hdl_tlm_if/tlm_ifc.py,sha256=9RiTKtP6Q5VztizZCx-nnqqgB94BgmWW7mXOw2XiUR8,1390
+hdl_tlm_if/tlm_ifc_rgy.py,sha256=hfYIlksHv8Nq8UgVy1TMRsrtJNnKnKte1Lgg-1y8yFY,1267
+hdl_tlm_if/tlm_method.py,sha256=4w81GrMMO1WyDwCuh5CbJOlESM1egCVLz4NcX-j-cBY,1105
+pyhdl_tlm_if-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyhdl_tlm_if-0.0.1.dist-info/METADATA,sha256=lKYJ5IMzxYee_3vxvnI40xOoi9FX5CQvwS9JOn6tWqQ,433
+pyhdl_tlm_if-0.0.1.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+pyhdl_tlm_if-0.0.1.dist-info/entry_points.txt,sha256=tIEXrr7Fx7ZBOxMLfOvGDCeh7TVuAb4ZUPUXayVAK74,57
+pyhdl_tlm_if-0.0.1.dist-info/top_level.txt,sha256=TX0MrVgPG3PKyJpEk2sza9W-p4-xc9BvrxDsHFsTdNU,11
+pyhdl_tlm_if-0.0.1.dist-info/RECORD,,
