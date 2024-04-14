@@ -1,0 +1,10 @@
+paperplotlib/__init__.py,sha256=NMLOt_ITs-ZxKhVDavo7azfj7KhnLM9tKfY4vDZEtdk,90
+paperplotlib/bar_graph.py,sha256=rbR9k_dR5W5Elzt-jPdyRqupwkGhJmYSgSBv0E8hMCs,3173
+paperplotlib/color.css,sha256=dfr_V4KvLV-HUBics-N0tOE3qIecFhdirCdrSt3p10g,1473
+paperplotlib/color.py,sha256=DWHTF5Norm_njjlcL11sU8aXEy1TYtvb8gAm9G3xHXU,2786
+paperplotlib/graph.py,sha256=edzY-OdbmtKumHR2lMkkmNrn0xZD4K6QP8wYAE39n8M,3042
+paperplotlib/line_graph.py,sha256=TX6SkKLJThe8qKiX4FCimQXwcMQqeEV5mQ-LHV3iGhE,2422
+paperplotlib-0.0.3.dist-info/LICENSE,sha256=PilnE3nFW8JtAavDflmenrGbZnaUefqEGz9xK9GM56Y,1064
+paperplotlib-0.0.3.dist-info/METADATA,sha256=8NlGYtV0ASA3kfagJ-bfKzs98mWv3w6GTqBt44PtgVE,2388
+paperplotlib-0.0.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+paperplotlib-0.0.3.dist-info/RECORD,,
