@@ -1,0 +1,9 @@
+
+
+'''
+	picks:
+		( ) sequentially
+		( ) simultaneously
+		( ) one
+'''
+
