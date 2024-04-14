@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "zodchy-identity"
+version = "0.1.0"
+description = "Collection of tools to work with identifiers in applications with zodchy architecture"
+authors = ["Smairon <man@smairon.ru>"]
+readme = "README.md"
+packages = [{ include = "zodchy_identity" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
