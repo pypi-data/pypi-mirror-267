@@ -1,0 +1,8 @@
+scikit-image>=0.18.1
+transformers>=4.10.2
+numpy
+ftfy
+tqdm
+torch>=2.0.0
+torchvision>=0.17.0
+quickdl
