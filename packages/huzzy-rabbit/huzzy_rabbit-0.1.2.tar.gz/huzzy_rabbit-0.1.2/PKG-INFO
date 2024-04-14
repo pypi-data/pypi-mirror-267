@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: huzzy-rabbit
+Version: 0.1.2
+Summary: 
+Author: Huzzy619
+Author-email: blazingkrane@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aio-pika (>=9.4.1,<10.0.0)
+Description-Content-Type: text/markdown
+
+Connection
+
+    expects a valid amqp url to connect the app to the server
+
+Exchange 
+    https://aio-pika.readthedocs.io/en/latest/rabbitmq-tutorial/3-publish-subscribe.html
+
+Queue 
+
+Binding 
+
+
+Routing keys 
+
+Routing Actions 
