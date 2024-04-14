@@ -1,0 +1,24 @@
+---
+- name: Foo
+  hosts: all
+  tasks:
+    - name: Task 1
+      ansible.builtin.file:
+        path: /some/path/to
+        mode: '0775'
+        state: directory
+    - name: Task 2
+      ansible.builtin.git:
+        repo: https://github.com/foo/bar
+        dest: /some/path/to
+        version: main
+    - name: Task 3
+      community.general.make:
+        chdir: /some/path/to
+        jobs: 4
+    - name: Task 4
+      become: true
+      become_user: root
+      community.general.make:
+        chdir: /some/path/to
+        target: install

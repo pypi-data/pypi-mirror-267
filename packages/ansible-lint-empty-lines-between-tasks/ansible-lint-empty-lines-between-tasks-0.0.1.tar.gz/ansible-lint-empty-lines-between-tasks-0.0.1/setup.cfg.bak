@@ -1,0 +1,17 @@
+[metadata]
+name = custom_ansible_rule
+description = Ansible-lint custom rule examples
+license = MIT
+
+[options]
+include_package_data = True
+packages =
+    ansiblelint.rules.custom.ansible_lint_rules
+package_dir =
+    ansiblelint.rules.custom.ansible_lint_rules = rules
+
+
+# minimum dependencies.
+install_requires =
+    setuptools
+    ansible-lint

@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ansible-lint-empty-lines-between-tasks"
+version = "0.0.1"
+authors = [
+  {name = "Martin Imre", email = "martinimre25@gmail.com"}
+]
+description = "Ansible-lint rule to check for empty lines between tasks"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only"
+]
+dependencies = ["ansible-lint"]
+
+[project.urls]
+"Source" = "https://github.com/mimre25/ansible-lint-empty-lines-between-tasks"
+
+[tool.setuptools]
+include-package-data = true
+packages = ["ansiblelint.rules.custom.ansible_lint_rules"]
+package-dir = {"ansiblelint.rules.custom.ansible_lint_rules" = "rules"}
+
+
+###### Tooling #####
+
+##### ruff #####
+[tool.ruff.lint]
+select = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W", "ANN", "ARG", "BLE", "COM", "DJ",  "EM", "ERA", "EXE", "FBT", "ICN", "INP", "ISC", "NPY", "PD", "PGH", "PIE", "PL", "PT", "PTH", "PYI",  "RSE", "RUF", "SIM", "SLF", "TCH", "TID", "TRY", "UP", "YTT"]
+ignore = ["D203", "D213", "G004", "PLC1901", "S101", "A003", "D102", "ARG002", "D104", "D100", "PLR2004", "RUF012"]
+
+fixable = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W", "ANN", "ARG", "BLE", "COM", "DJ",  "EM", "ERA", "EXE", "FBT", "ICN", "INP", "ISC", "NPY", "PD", "PGH", "PIE", "PL", "PT", "PTH", "PYI",  "RSE", "RUF", "SIM", "SLF", "TCH", "TID", "TRY", "UP", "YTT"]
+unfixable = []
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*"= ["S101", "D100", "D103", "D104", "FBT001"]
+
+##### pytest #####
+[tool.pytest.ini_options]
+testpaths = ["test"]
+
+[tool.coverage.run]
+source = ["rules"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+exclude_lines = []
+
+###### mypy #####
+[tool.mypy]
+python_version = "3.12"
+strict = true
+disallow_subclassing_any = false
+
+##### black #####
+[tool.black]
+target_version = ["py37", "py38", "py39", "py310", "py311"]
+include = '\.py$'
+exclude = '.+\.json'

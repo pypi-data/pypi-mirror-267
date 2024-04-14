@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ansible-lint-empty-lines-between-tasks
+Version: 0.0.1
+Summary: Ansible-lint rule to check for empty lines between tasks
+Author-email: Martin Imre <martinimre25@gmail.com>
+Project-URL: Source, https://github.com/mimre25/ansible-lint-empty-lines-between-tasks
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ansible-lint
+
+
+# Empty Line Between Tasks
+
+This is an [`ansible-lint`](https://github.com/ansible/ansible-lint) that checks for empty lines between tasks for readability.
+The detailed documentation of the rule can be found in [`rules/empty_line_between_tasks.md`].
+
+## Installation
+```sh
+pip install ansible-lint-empty-lines-between-tasks
+```
+
+## Usage
+Just run `ansible-lint` as usual.
+This rule can also fix the issues via `ansible-lint --fix`.
