@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: getcp
+Version: 1.0.22
+Summary: getcp is a Python package that provides functions to retrieve stats from Competitive Programming platforms. Currently, it supports fetching stats from CodeChef and Codeforces.
+Home-page: https://github.com/UD11/getcp-pkg
+Author: Uddalak Seal
+Author-email: hidan84@duck.com
+License: MIT
+Project-URL: Documentation, https://ud11.github.io/getcp-docs/
+Project-URL: Source, https://github.com/UD11/getcp-pkg?tab=readme-ov-file
+Project-URL: Tracker, https://github.com/UD11/getcp-pkg/issues
+Keywords: competitive programming codeforces codechef api scraper
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+
+# getcp
+
+## Description
+
+`getcp` is a Python package 
+that provides functions to 
+retrieve stats from CP
+platforms. Currently, it supports user stats
+from CodeChef and Codeforces.
+
+### links
+
+- [getcp-docs](https://ud11.github.io/getcp-docs/#currently-supported-platforms)
+- [package link](https://pypi.org/project/getcp/)
+
+## Installation
+
+You can install `getcp` using pip:
+
+```bash
+pip install getcp
+```
+
+## Usage
+
+```py
+    from getcp import cc, cf, github
+    
+    codechef_stats = cc.get_codechef_stats('username')
+    codeforces_stats = cf.get_codeforces_stats('username')
+    github_info = github.get_github_stats('username')
+    
+    print("CodeChef Stats:")
+    print(codechef_stats)
+    
+    print("\nCodeforces Stats:")
+    print(codeforces_stats)
+    
+    print("\nGithub Info:")
+    print(github_info)
+
+```
