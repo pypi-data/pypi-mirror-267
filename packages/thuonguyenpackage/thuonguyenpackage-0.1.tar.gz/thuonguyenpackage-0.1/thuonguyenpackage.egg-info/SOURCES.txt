@@ -1,0 +1,5 @@
+setup.py
+thuonguyenpackage.egg-info/PKG-INFO
+thuonguyenpackage.egg-info/SOURCES.txt
+thuonguyenpackage.egg-info/dependency_links.txt
+thuonguyenpackage.egg-info/top_level.txt
