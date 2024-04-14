@@ -1,0 +1,10 @@
+weedata/__init__.py,sha256=YRzVHZcClCmxRie9DYsZZQEq_A5L1DaLPM6TkdCF0As,497
+weedata/client.py,sha256=junMsNgcRPRKk3KjI21v6ALWJj7s9UaKo0KCrXdl2mI,31685
+weedata/fields.py,sha256=j2CYatVrox3NCgG9qBc8xWFPIGq9rVc90klHFQiLFsA,15500
+weedata/model.py,sha256=SvIhzlTd69p8a7NtXWPejhkewcuZHE4Iu51CQ6R8P1w,9591
+weedata/queries.py,sha256=bIrhcCPfJXPcvBx21Ba3qQ_LUK5HoJVBJQIZkrH1xfY,8012
+weedata-0.2.3.dist-info/LICENSE,sha256=BUyVEGCrCnUgzLUKdgLrkifGXywr8RiQJgWtPNM3LGM,1084
+weedata-0.2.3.dist-info/METADATA,sha256=hxfD_rRVVSYUzs8-G4_-7aBg1jKWOafQG4bNdb4AxrA,19037
+weedata-0.2.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+weedata-0.2.3.dist-info/top_level.txt,sha256=vVioF0bW-G7JLJxQFAONlyGIDA_zUOrY_E8a6xqMPYA,8
+weedata-0.2.3.dist-info/RECORD,,
