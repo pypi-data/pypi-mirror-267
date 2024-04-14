@@ -1,0 +1,16 @@
+matplotlib>=3.6
+numpy>=1.20
+pandas>=2.0
+scipy!=1.11.0,>=1.6
+
+[doc]
+furo==2023.8.19
+m2r2==0.3.3.post2
+sphinx==7.2.6
+
+[test]
+coverage==7.3.2
+hypothesis==6.88.3
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-xdist==3.3.1
