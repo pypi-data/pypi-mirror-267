@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyplatter/__init__.py
+src/pyplatter/platter.py
+src/pyplatter/py.typed
+src/pyplatter.egg-info/PKG-INFO
+src/pyplatter.egg-info/SOURCES.txt
+src/pyplatter.egg-info/dependency_links.txt
+src/pyplatter.egg-info/top_level.txt
