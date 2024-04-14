@@ -1,0 +1,7 @@
+buffalo_gym/__init__.py,sha256=gRuxU72Of_F9Ua88a_TUTzTmT6E5UT4sRydH3sGlSI8,157
+buffalo_gym/envs/__init__.py,sha256=iGqjo4ToNdEDH24C4H9TXeUiyok8CxF9OgL6Ga-yljw,51
+buffalo_gym/envs/buffalo_gym.py,sha256=W7WF8v1lb3Zy_bv2tbAkvabczXZXfcDIEAY4QJkEFHQ,1377
+buffalo_gym-0.0.1.dist-info/METADATA,sha256=l3IMpvB_8MhUC5Vg1W3aR6h0upz6ObdFBKcNZs_gj5c,1366
+buffalo_gym-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+buffalo_gym-0.0.1.dist-info/top_level.txt,sha256=hmv_t2ZXCOWqFu6kBALasHjvXWFnYTaeOonIgpbVb9Y,12
+buffalo_gym-0.0.1.dist-info/RECORD,,
