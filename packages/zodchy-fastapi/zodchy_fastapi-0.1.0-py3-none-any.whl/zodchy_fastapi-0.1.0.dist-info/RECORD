@@ -1,0 +1,9 @@
+zodchy_fastapi/__init__.py,sha256=x8-6nzKjzk3CRzoGFqQqx9yyGKgMPstrjmQ0VIRGifw,58
+zodchy_fastapi/contracts/__init__.py,sha256=4qk4Q57bsA6lW_boj-U--WAXOqADuLEWLGYXazAhFrM,246
+zodchy_fastapi/contracts/request.py,sha256=lUqV7iawoW-tauNDeYFlBnV18F9fAlhnCD9e53lXE6w,3424
+zodchy_fastapi/contracts/response.py,sha256=BkCTT4NPj9oJtbCRZaWk2SgXwIBa7Go_O9dAI7y-BAY,1306
+zodchy_fastapi/handlers.py,sha256=s-Oxr-J0ofZ7U2VI8axcAzKUeveQJYX8EgbnBmup6Nc,1209
+zodchy_fastapi/router.py,sha256=GpuFeEq3Td9mUgnPGIvYZBEDw6MTlrDU0wAmaqWlSbg,784
+zodchy_fastapi-0.1.0.dist-info/METADATA,sha256=V8JiUsVIYqtP_EFNocFPdNtGgBhwwuRmxJYJtfchL38,496
+zodchy_fastapi-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+zodchy_fastapi-0.1.0.dist-info/RECORD,,
