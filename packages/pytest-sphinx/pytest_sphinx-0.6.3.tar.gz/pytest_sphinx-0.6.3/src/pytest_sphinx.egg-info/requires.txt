@@ -1,0 +1,7 @@
+pytest>=8.1.1
+
+[lint]
+isort>=5
+flake8
+black
+mypy
