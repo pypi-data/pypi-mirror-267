@@ -1,0 +1,6 @@
+[project]
+name = "alphaquery-sdk"
+version = "0.1.0"
+description = "AlphaQuery SDK"
+readme = "README.md"
+dependencies = ["pandas", "requests"]

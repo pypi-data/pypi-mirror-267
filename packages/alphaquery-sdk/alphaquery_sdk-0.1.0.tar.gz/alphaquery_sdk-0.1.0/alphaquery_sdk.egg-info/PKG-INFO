@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: alphaquery-sdk
+Version: 0.1.0
+Summary: AlphaQuery SDK
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: requests
+
+AlphaQuery SDK
