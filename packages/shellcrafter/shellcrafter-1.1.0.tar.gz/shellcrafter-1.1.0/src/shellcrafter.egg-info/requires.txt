@@ -1,0 +1,7 @@
+numpy
+keystone-engine
+termcolor
+rich
+ropper
+capstone
+typer
