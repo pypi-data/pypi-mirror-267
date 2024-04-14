@@ -1,0 +1,11 @@
+google-generativeai
+tiktoken
+colorama
+cryptography
+click
+prompt-toolkit
+yaspin
+rich
+isort
+pytest
+pylint
