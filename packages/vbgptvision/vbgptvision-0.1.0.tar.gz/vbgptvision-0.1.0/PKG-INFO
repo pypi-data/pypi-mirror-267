@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: vbgptvision
+Version: 0.1.0
+Summary: 
+Author: vaibhavblayer
+Author-email: vaibhavblayer@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+
