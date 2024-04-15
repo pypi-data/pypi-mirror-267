@@ -1,0 +1,7 @@
+numpy
+pyproj
+scipy
+xarray
+plotly
+requests
+pandas
