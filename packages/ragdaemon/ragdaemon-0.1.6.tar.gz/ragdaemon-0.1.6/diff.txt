@@ -1,0 +1,839 @@
+diff --git a/ragdaemon/annotators/base_annotator.py b/ragdaemon/annotators/base_annotator.py
+index 213b151..cd94f93 100644
+--- a/ragdaemon/annotators/base_annotator.py
++++ b/ragdaemon/annotators/base_annotator.py
+@@ -1,9 +1,9 @@
+ from typing import Optional
+ 
+-import networkx as nx
+ from spice import Spice
+ 
+ from ragdaemon.database import Database
++from ragdaemon.graph import KnowledgeGraph
+ 
+ 
+ class Annotator:
+@@ -14,10 +14,10 @@ class Annotator:
+         self.spice_client = spice_client
+         pass
+ 
+-    def is_complete(self, graph: nx.MultiDiGraph, db: Database) -> bool:
++    def is_complete(self, graph: KnowledgeGraph, db: Database) -> bool:
+         raise NotImplementedError()
+ 
+     async def annotate(
+-        self, graph: nx.MultiDiGraph, db: Database, refresh: bool = False
+-    ) -> nx.MultiDiGraph:
++        self, graph: KnowledgeGraph, db: Database, refresh: bool = False
++    ) -> KnowledgeGraph:
+         raise NotImplementedError()
+diff --git a/ragdaemon/annotators/chunker.py b/ragdaemon/annotators/chunker.py
+index 527c920..073b690 100644
+--- a/ragdaemon/annotators/chunker.py
++++ b/ragdaemon/annotators/chunker.py
+@@ -1,6 +1,6 @@
+ """
+ Chunk data a list of objects following [
+-    {id: path/to/file:class.method, start_line: int, end_line: int} 
++    {id: path/to/file:class.method, start_line: int, end_line: int}
+ ]
+ 
+ It's stored on the file node as data['chunks'] and json.dumped into the database.
+@@ -20,11 +20,11 @@ import json
+ from pathlib import Path
+ from typing import Any, Coroutine, Callable, Optional
+ 
+-import networkx as nx
+ from tqdm.asyncio import tqdm
+ 
+ from ragdaemon.annotators.base_annotator import Annotator
+ from ragdaemon.database import Database
++from ragdaemon.graph import KnowledgeGraph
+ from ragdaemon.errors import RagdaemonError
+ from ragdaemon.utils import get_document, hash_str
+ 
+@@ -105,13 +105,12 @@ async def get_file_chunk_data(
+ def add_file_chunks_to_graph(
+     file: str,
+     data: dict,
+-    graph: nx.MultiDiGraph,
++    graph: KnowledgeGraph,
+     db: Database,
+     refresh: bool = False,
+     verbose: bool = False,
+ ) -> dict[str, list[Any]]:
+     """Load chunks from file data into db/graph"""
+-    cwd = Path(graph.graph["cwd"])
+     add_to_db = {"ids": [], "documents": [], "metadatas": []}
+     if not isinstance(data["chunks"], list):
+         data["chunks"] = json.loads(data["chunks"])
+@@ -126,7 +125,7 @@ def add_file_chunks_to_graph(
+             # Get the checksum record from database
+             id = chunk["id"]
+             ref = chunk["ref"]
+-            document = get_document(ref, cwd)
++            document = get_document(ref, Path(graph.graph["cwd"]))
+             checksum = hash_str(document)
+             records = db.get(checksum)["metadatas"]
+             if not refresh and len(records) > 0:
+@@ -197,7 +196,7 @@ class Chunker(Annotator):
+             ]
+         self.chunk_extensions = chunk_extensions
+ 
+-    def is_complete(self, graph: nx.MultiDiGraph, db: Database) -> bool:
++    def is_complete(self, graph: KnowledgeGraph, db: Database) -> bool:
+         for node, data in graph.nodes(data=True):
+             if data is None:
+                 raise RagdaemonError(f"Node {node} has no data.")
+@@ -235,8 +234,8 @@ class Chunker(Annotator):
+         raise NotImplementedError()
+ 
+     async def annotate(
+-        self, graph: nx.MultiDiGraph, db: Database, refresh: bool = False
+-    ) -> nx.MultiDiGraph:
++        self, graph: KnowledgeGraph, db: Database, refresh: bool = False
++    ) -> KnowledgeGraph:
+         # Remove any existing chunk nodes from the graph
+         for node, data in graph.nodes(data=True):
+             if data is None:
+diff --git a/ragdaemon/annotators/chunker_llm.py b/ragdaemon/annotators/chunker_llm.py
+index 6b9b7b8..23f6196 100644
+--- a/ragdaemon/annotators/chunker_llm.py
++++ b/ragdaemon/annotators/chunker_llm.py
+@@ -20,27 +20,25 @@ EXAMPLE:
+ src/graph.py
+ 1:import pathlib as Path
+ 2:
+-3:import networkx as nx
+-4:
+-5:
+-6:class KnowledgeGraph:
+-7:    def __init__(self, cwd: Path):
+-8:        self.cwd = cwd
+-9:
+-10:_knowledge_graph = None
+-11:def get_knowledge_graph():
+-12:    global _knowledge_graph
+-13:    if _knowledge_graph is None:
+-14:        _knowledge_graph = KnowledgeGraph(Path.cwd())
+-15:    return _knowledge_graph
+-16:
++3:
++4:class KnowledgeGraph:
++5:    def __init__(self, cwd: Path):
++6:        self.cwd = cwd
++7:
++8:_knowledge_graph = None
++9:def get_knowledge_graph():
++10:    global _knowledge_graph
++11:    if _knowledge_graph is None:
++12:        _knowledge_graph = KnowledgeGraph(Path.cwd())
++13:    return _knowledge_graph
++14:
+ 
+ RESPONSE:
+ {
+     "chunks": [
+-        {"id": "src/graph.py:KnowledgeGraph", "start_line": 6, "end_line": 8},
+-        {"id": "src/graph.py:KnowledgeGraph.__init__", "start_line": 7, "end_line": 8},
+-        {"id": "src/graph.py:get_knowledge_graph", "start_line": 11, "end_line": 15}
++        {"id": "src/graph.py:KnowledgeGraph", "start_line": 4, "end_line": 6},
++        {"id": "src/graph.py:KnowledgeGraph.__init__", "start_line": 5, "end_line": 6},
++        {"id": "src/graph.py:get_knowledge_graph", "start_line": 9, "end_line": 13}
+     ]
+ }
+ --------------------------------------------------------------------------------
+diff --git a/ragdaemon/annotators/diff.py b/ragdaemon/annotators/diff.py
+index 792fb6d..290b6a1 100644
+--- a/ragdaemon/annotators/diff.py
++++ b/ragdaemon/annotators/diff.py
+@@ -2,7 +2,6 @@ import json
+ import re
+ from pathlib import Path
+ 
+-import networkx as nx
+ from spice import Spice
+ 
+ from ragdaemon.annotators.base_annotator import Annotator
+@@ -11,6 +10,7 @@ from ragdaemon.database import (
+     MAX_TOKENS_PER_EMBEDDING,
+     Database,
+ )
++from ragdaemon.graph import KnowledgeGraph
+ from ragdaemon.errors import RagdaemonError
+ from ragdaemon.utils import get_document, hash_str, parse_path_ref
+ 
+@@ -80,22 +80,22 @@ class Diff(Annotator):
+     def id(self) -> str:
+         return "DEFAULT" if not self.diff_args else self.diff_args
+ 
+-    def is_complete(self, graph: nx.MultiDiGraph, db: Database) -> bool:
+-        cwd = graph.graph["cwd"]
++    def is_complete(self, graph: KnowledgeGraph, db: Database) -> bool:
++        cwd = Path(graph.graph["cwd"])
+         document = get_document(self.diff_args, cwd, type="diff")
+         checksum = hash_str(document)
+         return self.id in graph and graph.nodes[self.id]["checksum"] == checksum
+ 
+     async def annotate(
+-        self, graph: nx.MultiDiGraph, db: Database, refresh: bool = False
+-    ) -> nx.MultiDiGraph:
++        self, graph: KnowledgeGraph, db: Database, refresh: bool = False
++    ) -> KnowledgeGraph:
+         graph_nodes = {
+             node
+             for node, data in graph.nodes(data=True)
+             if data and data.get("type") == "diff"
+         }
+         graph.remove_nodes_from(graph_nodes)
+-        cwd = graph.graph["cwd"]
++        cwd = Path(graph.graph["cwd"])
+         document = get_document(self.diff_args, cwd, type="diff")
+         checksum = hash_str(document)
+         existing_records = db.get(checksum)
+diff --git a/ragdaemon/annotators/hierarchy.py b/ragdaemon/annotators/hierarchy.py
+index 3ccefdb..10248b4 100644
+--- a/ragdaemon/annotators/hierarchy.py
++++ b/ragdaemon/annotators/hierarchy.py
+@@ -1,11 +1,11 @@
+ import fnmatch
+ from pathlib import Path
+ 
+-import networkx as nx
+ from spice import Spice
+ 
+ from ragdaemon.annotators.base_annotator import Annotator
+ from ragdaemon.database import MAX_TOKENS_PER_EMBEDDING, Database
++from ragdaemon.graph import KnowledgeGraph
+ from ragdaemon.errors import RagdaemonError
+ from ragdaemon.llm import DEFAULT_COMPLETION_MODEL
+ from ragdaemon.utils import get_document, get_non_gitignored_files, hash_str
+@@ -104,15 +104,15 @@ class Hierarchy(Annotator):
+         self.ignore_patterns = ignore_patterns
+         super().__init__(*args, **kwargs)
+ 
+-    def is_complete(self, graph: nx.MultiDiGraph, db: Database) -> bool:
++    def is_complete(self, graph: KnowledgeGraph, db: Database) -> bool:
+         cwd = Path(graph.graph["cwd"])
+         return graph.graph.get("files_checksum") == files_checksum(
+             cwd, self.ignore_patterns
+         )
+ 
+     async def annotate(
+-        self, graph: nx.MultiDiGraph, db: Database, refresh: bool = False
+-    ) -> nx.MultiDiGraph:
++        self, graph: KnowledgeGraph, db: Database, refresh: bool = False
++    ) -> KnowledgeGraph:
+         """Build a graph of active files and directories with hierarchy edges."""
+         cwd = Path(graph.graph["cwd"])
+         checksums = get_active_checksums(
+@@ -125,7 +125,7 @@ class Hierarchy(Annotator):
+         _files_checksum = files_checksum(cwd, self.ignore_patterns)
+ 
+         # Initialize an empty graph. We'll build it from scratch.
+-        graph = nx.MultiDiGraph()
++        graph = KnowledgeGraph()
+         graph.graph["cwd"] = str(cwd)
+         edges_to_add = set()
+         for path, checksum in checksums.items():
+diff --git a/ragdaemon/annotators/layout_hierarchy.py b/ragdaemon/annotators/layout_hierarchy.py
+index 59eb4ec..bd12e8e 100644
+--- a/ragdaemon/annotators/layout_hierarchy.py
++++ b/ragdaemon/annotators/layout_hierarchy.py
+@@ -1,9 +1,9 @@
+-import networkx as nx
+ import numpy as np
+ from tqdm import tqdm
+ 
+ from ragdaemon.annotators.base_annotator import Annotator
+ from ragdaemon.database import Database
++from ragdaemon.graph import KnowledgeGraph
+ from ragdaemon.errors import RagdaemonError
+ 
+ 
+@@ -85,7 +85,7 @@ def fruchterman_reingold_3d(
+ class LayoutHierarchy(Annotator):
+     name = "layout_hierarchy"
+ 
+-    def is_complete(self, graph: nx.MultiDiGraph, db: Database) -> bool:
++    def is_complete(self, graph: KnowledgeGraph, db: Database) -> bool:
+         # Check that they have data.layout.hierarchy
+         for node, data in graph.nodes(data=True):
+             if data is None:
+@@ -96,11 +96,11 @@ class LayoutHierarchy(Annotator):
+ 
+     async def annotate(
+         self,
+-        graph: nx.MultiDiGraph,
++        graph: KnowledgeGraph,
+         db: Database,
+         refresh: bool = False,
+         iterations: int = 40,
+-    ) -> nx.MultiDiGraph:
++    ) -> KnowledgeGraph:
+         """
+         a. Regenerate x/y/z for all nodes
+         b. Update all nodes
+diff --git a/ragdaemon/app.py b/ragdaemon/app.py
+index c0ddc73..7ae4be9 100644
+--- a/ragdaemon/app.py
++++ b/ragdaemon/app.py
+@@ -87,15 +87,17 @@ templates = Jinja2Templates(directory=app_dir / "templates")
+ @app.get("/", response_class=HTMLResponse)
+ async def home(request: Request):
+     # Serialize graph and send to frontend
+-    nodes = [{"id": node, **data} for node, data in daemon.graph.nodes(data=True) if data]
++    nodes = [
++        {"id": node, **data} for node, data in daemon.graph.nodes(data=True) if data
++    ]
+     edges = list[dict[str, Any]]()
+-    for edge in daemon.graph.edges(data=True, keys=True):
++    for edge in daemon.graph.edges():
+         source = edge[0]
+         target = edge[1]
+-        data = edge[-1]
++        data = daemon.graph.get_edge_data(*edge)
+         if data:
+             edges.append({"source": source, "target": target, **data})
+-    metadata = daemon.graph.graph
++    metadata = dict(daemon.graph.graph)
+     return templates.TemplateResponse(
+         "index.html",
+         {"request": request, "nodes": nodes, "edges": edges, "metadata": metadata},
+diff --git a/ragdaemon/context.py b/ragdaemon/context.py
+index c705bf0..f02ac39 100644
+--- a/ragdaemon/context.py
++++ b/ragdaemon/context.py
+@@ -1,10 +1,9 @@
+ from pathlib import Path
+ from typing import Any, Optional
+ 
+-import networkx as nx
+-
+ from ragdaemon.annotators.diff import parse_diff_id
+ from ragdaemon.database import Database
++from ragdaemon.graph import KnowledgeGraph
+ from ragdaemon.utils import parse_path_ref
+ 
+ 
+@@ -34,7 +33,7 @@ def render_comments(comments: list[Comment]) -> str:
+ class ContextBuilder:
+     """Renders items from a graph into an llm-readable string."""
+ 
+-    def __init__(self, graph: nx.MultiDiGraph, db: Database, verbose: bool = False):
++    def __init__(self, graph: KnowledgeGraph, db: Database, verbose: bool = False):
+         self.graph = graph
+         self.db = db
+         self.verbose = verbose
+diff --git a/ragdaemon/daemon.py b/ragdaemon/daemon.py
+index 1397359..34a326c 100644
+--- a/ragdaemon/daemon.py
++++ b/ragdaemon/daemon.py
+@@ -4,13 +4,13 @@ import time
+ from pathlib import Path
+ from typing import Any, Optional
+ 
+-import networkx as nx
+ from networkx.readwrite import json_graph
+ from spice import Spice
+ 
+ from ragdaemon.annotators import Annotator, annotators_map
+ from ragdaemon.context import ContextBuilder
+ from ragdaemon.database import DEFAULT_EMBEDDING_MODEL, Database, get_db
++from ragdaemon.graph import KnowledgeGraph
+ from ragdaemon.llm import DEFAULT_COMPLETION_MODEL
+ from ragdaemon.utils import get_non_gitignored_files
+ 
+@@ -26,7 +26,7 @@ def default_annotators():
+ class Daemon:
+     """Build and maintain a searchable knowledge graph of codebase."""
+ 
+-    graph: nx.MultiDiGraph
++    graph: KnowledgeGraph
+     _db: Database
+ 
+     def __init__(
+@@ -56,7 +56,7 @@ class Daemon:
+         self.provider = provider
+ 
+         # Initialize an empty graph
+-        self.graph = nx.MultiDiGraph()
++        self.graph = KnowledgeGraph()
+         self.graph.graph["cwd"] = self.cwd.as_posix()
+         if self.verbose:
+             print("Initialized empty graph.")
+diff --git a/ragdaemon/database/chroma_database.py b/ragdaemon/database/chroma_database.py
+index 236ddc9..385be72 100644
+--- a/ragdaemon/database/chroma_database.py
++++ b/ragdaemon/database/chroma_database.py
+@@ -9,7 +9,10 @@ from ragdaemon.errors import RagdaemonError
+ MAX_INPUTS_PER_CALL = 2048
+ 
+ if TYPE_CHECKING:
+-    from chromadb.api.types import Embeddable, EmbeddingFunction, Embeddings, Metadata, GetResult # noqa: F401
++    from chromadb.api.types import (
++        Metadata,
++        GetResult,
++    )  # noqa: F401
+ 
+ 
+ class ChromaDB(Database):
+@@ -78,10 +81,10 @@ class ChromaDB(Database):
+         self._collection.update(**updates)
+         # Parse results. Return results for the 'first query' only
+         if (
+-            response is None or
+-            response["metadatas"] is None or
+-            response["documents"] is None or
+-            response["distances"] is None
++            response is None
++            or response["metadatas"] is None
++            or response["documents"] is None
++            or response["distances"] is None
+         ):
+             return []
+         _metadatas = response["metadatas"][0]
+diff --git a/ragdaemon/database/database.py b/ragdaemon/database/database.py
+index 9949bd2..d11c1f3 100644
+--- a/ragdaemon/database/database.py
++++ b/ragdaemon/database/database.py
+@@ -1,7 +1,7 @@
+ from pathlib import Path
+ from typing import Optional
+ 
+-import networkx as nx
++from ragdaemon.graph import KnowledgeGraph
+ 
+ 
+ class Database:
+@@ -13,14 +13,12 @@ class Database:
+     def __getattr__(self, name):
+         """Delegate attribute access to the collection."""
+         return getattr(self._collection, name)
+-    
+-    def query(
+-        self, query: str, active_checksums: list[str]
+-    ) -> list[dict]:
++
++    def query(self, query: str, active_checksums: list[str]) -> list[dict]:
+         raise NotImplementedError
+-    
++
+     def query_graph(
+-        self, query: str, graph: nx.MultiDiGraph, n: Optional[int] = None
++        self, query: str, graph: KnowledgeGraph, n: Optional[int] = None
+     ) -> list[dict]:
+         """Return documents, metadatas and distances, sorted, for nodes in the graph.
+ 
+diff --git a/ragdaemon/database/lite_database.py b/ragdaemon/database/lite_database.py
+index 07f3b41..1a291b6 100644
+--- a/ragdaemon/database/lite_database.py
++++ b/ragdaemon/database/lite_database.py
+@@ -61,7 +61,9 @@ class LiteCollection:
+ 
+     def query(self, query: str, active_checksums: list[str]) -> dict[str, list[Any]]:
+         # Select active/filtered records
+-        records = [{"id": k, **v} for k, v in self.data.items() if k in active_checksums]
++        records = [
++            {"id": k, **v} for k, v in self.data.items() if k in active_checksums
++        ]
+         if not query:
+             return {
+                 "ids": [r["id"] for r in records],
+diff --git a/ragdaemon/graph.py b/ragdaemon/graph.py
+new file mode 100644
+index 0000000..6cef67b
+--- /dev/null
++++ b/ragdaemon/graph.py
+@@ -0,0 +1,62 @@
++import json
++from typing import Any, cast, TypedDict, Literal, Optional
++
++import networkx as nx
++from networkx.readwrite import json_graph
++
++
++class NodeMetadata(TypedDict):
++    id: Optional[str]  # Human-readable path, e.g. `path/to/file:class.method`
++    type: Literal["directory", "file", "chunk", "diff"]
++    ref: Optional[
++        str
++    ]  # Used to fetch document: path/to/file:start-end, diff_ref:start-end
++    checksum: Optional[str]  # Unique identifier for chroma; sha256 of the document
++    active: bool  # Used to filter nodes for search
++    chunks: Optional[
++        list[dict[str, str]]
++    ]  # For files, func/class/method. For diff, by file/hunk
++
++
++class EdgeMetadata(TypedDict):
++    type: Literal["hierarchy", "diff"]
++
++
++def validate_attrs(attrs: dict[str, Any], type: Literal["node", "edge"]):
++    if type == "node":
++        metadata = NodeMetadata
++    elif type == "edge":
++        metadata = EdgeMetadata
++    try:
++        metadata(**attrs)
++    except TypeError as e:
++        raise TypeError(f"Invalid attributes for {type}: {e}")
++
++
++class GraphMetadata(TypedDict):
++    cwd: str  # Current working directory
++    files_checksum: str  # Hash of all active files in cwd
++
++
++class KnowledgeGraph(nx.MultiDiGraph):
++    graph: GraphMetadata
++
++    @classmethod
++    def load(cls, path: str):
++        with open(path, "r") as f:
++            data = json.load(f)
++            graph = json_graph.node_link_graph(data)
++            return cls(graph)
++
++    def copy(self, *args, **kwargs):
++        return cast(KnowledgeGraph, super().copy(*args, **kwargs))
++
++    def add_node(self, node_for_adding: str, **attrs):
++        validate_attrs(attrs, "node")
++        return super().add_node(node_for_adding, **attrs)
++
++    def add_edge(
++        self, u_for_edge: str, v_for_edge: str, key: Optional[str | int] = None, **attrs
++    ):
++        validate_attrs(attrs, "edge")
++        return super().add_edge(u_for_edge, v_for_edge, key, **attrs)
+diff --git a/tests/annotators/test_chunker.py b/tests/annotators/test_chunker.py
+index 6dd87d5..9e1009f 100644
+--- a/tests/annotators/test_chunker.py
++++ b/tests/annotators/test_chunker.py
+@@ -1,26 +1,20 @@
+-import json
+ from pathlib import Path
+-from typing import cast
+ from unittest.mock import AsyncMock
+ 
+-import networkx as nx
+-from networkx.readwrite import json_graph
+ import pytest
+ 
+ from ragdaemon.annotators import Chunker, ChunkerLLM
+ from ragdaemon.daemon import Daemon
++from ragdaemon.graph import KnowledgeGraph
+ 
+ 
+ def test_chunker_is_complete(cwd, mock_db):
+     chunker = Chunker()
+ 
+-    empty_graph = nx.MultiDiGraph()
++    empty_graph = KnowledgeGraph()
+     assert chunker.is_complete(empty_graph, mock_db), "Empty graph is complete."
+ 
+-    with open("tests/data/hierarchy_graph.json", "r") as f:
+-        data = json.load(f)
+-        hierarchy_graph = json_graph.node_link_graph(data)
+-    hierarchy_graph = cast(nx.MultiDiGraph, hierarchy_graph)
++    hierarchy_graph = KnowledgeGraph.load("tests/data/hierarchy_graph.json")
+     assert not chunker.is_complete(
+         hierarchy_graph, mock_db
+     ), "Hierarchy graph should not be complete."
+@@ -40,10 +34,7 @@ def test_chunker_is_complete(cwd, mock_db):
+         incomplete_graph, mock_db
+     ), "Empty chunks should be complete"
+ 
+-    with open("tests/data/chunker_graph.json", "r") as f:
+-        data = json.load(f)
+-        chunker_graph = json_graph.node_link_graph(data)
+-    chunker_graph = cast(nx.MultiDiGraph, chunker_graph)
++    chunker_graph = KnowledgeGraph.load("tests/data/chunker_graph.json")
+     assert chunker.is_complete(
+         chunker_graph, mock_db
+     ), "Chunker graph should be complete."
+diff --git a/tests/annotators/test_diff.py b/tests/annotators/test_diff.py
+index 91c009f..ea72e8e 100644
+--- a/tests/annotators/test_diff.py
++++ b/tests/annotators/test_diff.py
+@@ -1,13 +1,12 @@
+ import json
+ 
+-import networkx as nx
+ import pytest
+-from typing import cast
+ 
+ from networkx.readwrite import json_graph
+ from ragdaemon.annotators.diff import Diff, get_chunks_from_diff, parse_diff_id
+ from ragdaemon.context import ContextBuilder
+ from ragdaemon.daemon import Daemon
++from ragdaemon.graph import KnowledgeGraph
+ from ragdaemon.utils import get_git_diff
+ 
+ 
+@@ -38,10 +37,7 @@ def test_diff_parse_diff_id():
+ 
+ @pytest.mark.asyncio
+ async def test_diff_annotate(git_history, mock_db):
+-    with open("tests/data/chunker_graph.json", "r") as f:
+-        data = json.load(f)
+-        graph = json_graph.node_link_graph(data)
+-    graph = cast(nx.MultiDiGraph, graph)
++    graph = KnowledgeGraph.load("tests/data/hierarchy_graph.json")
+     graph.graph["cwd"] = git_history.as_posix()
+     annotator = Diff()
+     actual = await annotator.annotate(graph, mock_db)
+@@ -50,7 +46,9 @@ async def test_diff_annotate(git_history, mock_db):
+     with open("tests/data/diff_graph.json", "r") as f:
+         data = json.load(f)
+         expected = json_graph.node_link_graph(data)
+-    expected_nodes = {n for n, d in expected.nodes(data=True) if d and d["type"] == "diff"}
++    expected_nodes = {
++        n for n, d in expected.nodes(data=True) if d and d["type"] == "diff"
++    }
+ 
+     assert actual_nodes == expected_nodes
+ 
+diff --git a/tests/annotators/test_hierarchy.py b/tests/annotators/test_hierarchy.py
+index 6349fcb..3359020 100644
+--- a/tests/annotators/test_hierarchy.py
++++ b/tests/annotators/test_hierarchy.py
+@@ -1,12 +1,11 @@
+ import json
+ from pathlib import Path
+-from typing import cast
+ 
+-import networkx as nx
+ from networkx.readwrite import json_graph
+ import pytest
+ 
+ from ragdaemon.annotators.hierarchy import Hierarchy, get_active_checksums
++from ragdaemon.graph import KnowledgeGraph
+ 
+ 
+ def test_get_active_checksums(cwd, mock_db):
+@@ -17,10 +16,7 @@ def test_get_active_checksums(cwd, mock_db):
+         isinstance(v, str) for v in checksums.values()
+     ), "Values are not all strings"
+ 
+-    with open("tests/data/hierarchy_graph.json", "r") as f:
+-        data = json.load(f)
+-        hierarchy_graph = json_graph.node_link_graph(data)
+-    hierarchy_graph = cast(nx.MultiDiGraph, hierarchy_graph)
++    hierarchy_graph = KnowledgeGraph.load(cwd / ".ragdaemon" / "graph.json")
+     expected = {
+         (node, data["checksum"])
+         for node, data in hierarchy_graph.nodes(data=True)
+@@ -31,7 +27,7 @@ def test_get_active_checksums(cwd, mock_db):
+ 
+ 
+ def test_hierarchy_is_complete(cwd, mock_db):
+-    empty_graph = nx.MultiDiGraph()
++    empty_graph = KnowledgeGraph()
+     empty_graph.graph["cwd"] = cwd.as_posix()
+     hierarchy = Hierarchy()
+ 
+@@ -40,7 +36,8 @@ def test_hierarchy_is_complete(cwd, mock_db):
+     ), "Empty graph should not be complete."
+     incomplete_graph = empty_graph.copy()
+     path_str = cwd.as_posix()
+-    incomplete_graph.add_node(path_str, path=path_str, type="directory", id=path_str)
++    record = {"id": path_str, "type": "directory", "ref": path_str}
++    incomplete_graph.add_node(path_str, **record)
+     assert not hierarchy.is_complete(
+         incomplete_graph, mock_db
+     ), "Incomplete graph should not be complete"
+@@ -48,7 +45,7 @@ def test_hierarchy_is_complete(cwd, mock_db):
+ 
+ @pytest.mark.asyncio
+ async def test_hierarchy_annotate(cwd, mock_db):
+-    graph = nx.MultiDiGraph()
++    graph = KnowledgeGraph()
+     graph.graph["cwd"] = cwd.as_posix()
+     hierarchy = Hierarchy()
+     actual = await hierarchy.annotate(graph, mock_db)
+diff --git a/tests/annotators/test_layout_hierarchy.py b/tests/annotators/test_layout_hierarchy.py
+index 1bd4767..437464a 100644
+--- a/tests/annotators/test_layout_hierarchy.py
++++ b/tests/annotators/test_layout_hierarchy.py
+@@ -1,25 +1,18 @@
+-import json
+-from typing import cast
+-
+-import networkx as nx
+ import pytest
+-from networkx.readwrite import json_graph
+ 
+ from ragdaemon.annotators.layout_hierarchy import LayoutHierarchy
++from ragdaemon.graph import KnowledgeGraph
+ 
+ 
+ def test_layout_hierarchy_is_complete(cwd, mock_db):
+     layout_hierarchy = LayoutHierarchy()
+ 
+-    empty_graph = nx.MultiDiGraph()
++    empty_graph = KnowledgeGraph()
+     assert layout_hierarchy.is_complete(
+         empty_graph, mock_db
+     ), "Empty graph is complete."
+ 
+-    with open("tests/data/hierarchy_graph.json", "r") as f:
+-        data = json.load(f)
+-        hierarchy_graph = json_graph.node_link_graph(data)
+-    hierarchy_graph = cast(nx.MultiDiGraph, hierarchy_graph)
++    hierarchy_graph = KnowledgeGraph.load("tests/data/hierarchy_graph.json")
+     assert not layout_hierarchy.is_complete(
+         hierarchy_graph, mock_db
+     ), "Hierarchy graph should not be complete."
+@@ -33,10 +26,9 @@ def test_layout_hierarchy_is_complete(cwd, mock_db):
+         incomplete_graph, mock_db
+     ), "Incomplete graph should not be complete"
+ 
+-    with open("tests/data/layout_hierarchy_graph.json", "r") as f:
+-        data = json.load(f)
+-        layout_hierarchy_graph = json_graph.node_link_graph(data)
+-    layout_hierarchy_graph = cast(nx.MultiDiGraph, layout_hierarchy_graph)
++    layout_hierarchy_graph = KnowledgeGraph.load(
++        "tests/data/layout_hierarchy_graph.json"
++    )
+     assert layout_hierarchy.is_complete(
+         layout_hierarchy_graph, mock_db
+     ), "Layout hierarchy graph should be complete."
+@@ -44,10 +36,7 @@ def test_layout_hierarchy_is_complete(cwd, mock_db):
+ 
+ @pytest.mark.asyncio
+ async def test_layout_hierarchy_annotate(cwd, mock_db):
+-    with open("tests/data/hierarchy_graph.json", "r") as f:
+-        data = json.load(f)
+-        hierarchy_graph = json_graph.node_link_graph(data)
+-    hierarchy_graph = cast(nx.MultiDiGraph, hierarchy_graph)
++    hierarchy_graph = KnowledgeGraph.load("tests/data/hierarchy_graph.json")
+     actual = await LayoutHierarchy().annotate(hierarchy_graph, mock_db)
+ 
+     all_coordinates = set()
+diff --git a/tests/test_comments.py b/tests/test_comments.py
+index d0ec247..739de82 100644
+--- a/tests/test_comments.py
++++ b/tests/test_comments.py
+@@ -4,6 +4,7 @@ import pytest
+ from ragdaemon.context import ContextBuilder, NestedStrDict
+ from ragdaemon.daemon import Daemon
+ 
++
+ @pytest.mark.asyncio
+ async def test_comment_render(git_history, mock_db):
+     daemon = Daemon(cwd=git_history)
+@@ -11,16 +12,32 @@ async def test_comment_render(git_history, mock_db):
+ 
+     context = ContextBuilder(daemon.graph, daemon.db)
+     context.add_ref("src/operations.py")
+-    context.add_comment("src/operations.py", {"comment": "What is this file for?"}, tags=["test-flag"])
+-    context.add_comment("src/operations.py", {"comment": {"author": "bot", "content": "test"}}, line=10, tags=["test-flag2"])
+-    context.add_comment("src/operations.py", {"comment": {"author": "bot", "content": "Two comments on one line"}}, line=10)
+-    nested_comment: NestedStrDict = {"author": "replier", "content": "Look replies are easy!"}
+-    context.add_comment("src/operations.py", {"author": "bot", "content": "hello", "replies": nested_comment}, line=20)
++    context.add_comment(
++        "src/operations.py", {"comment": "What is this file for?"}, tags=["test-flag"]
++    )
++    context.add_comment(
++        "src/operations.py",
++        {"comment": {"author": "bot", "content": "test"}},
++        line=10,
++        tags=["test-flag2"],
++    )
++    context.add_comment(
++        "src/operations.py",
++        {"comment": {"author": "bot", "content": "Two comments on one line"}},
++        line=10,
++    )
++    nested_comment: NestedStrDict = {
++        "author": "replier",
++        "content": "Look replies are easy!",
++    }
++    context.add_comment(
++        "src/operations.py",
++        {"author": "bot", "content": "hello", "replies": nested_comment},
++        line=20,
++    )
+     context.add_comment("src/operations.py", "Comments can just be strings", line=12)
+     actual = context.render()
+-    assert (
+-        actual
+-        == dedent("""\
++    assert actual == dedent("""\
+             src/operations.py
+             <comment>What is this file for?</comment>
+             1:import math
+@@ -59,13 +76,10 @@ async def test_comment_render(git_history, mock_db):
+                 <content>Look replies are easy!</content>
+             </replies>
+             21:    return math.sqrt(a)
+-            """
+-    ))
++            """)
+     context.remove_comments("src/operations.py", tags=["test-flag"])
+     actual = context.render()
+-    assert (
+-        actual
+-        == dedent("""\
++    assert actual == dedent("""\
+             src/operations.py
+ 
+             1:import math
+@@ -104,13 +118,10 @@ async def test_comment_render(git_history, mock_db):
+                 <content>Look replies are easy!</content>
+             </replies>
+             21:    return math.sqrt(a)
+-            """
+-    ))
++            """)
+     context.remove_comments("src/operations.py")
+     actual = context.render()
+-    assert (
+-        actual
+-        == dedent("""\
++    assert actual == dedent("""\
+             src/operations.py
+             1:import math
+             2: #modified
+@@ -133,5 +144,4 @@ async def test_comment_render(git_history, mock_db):
+             19:
+             20:def sqrt(a):
+             21:    return math.sqrt(a)
+-            """
+-    ))
++            """)
+diff --git a/tests/test_context.py b/tests/test_context.py
+index a6136b9..321d552 100644
+--- a/tests/test_context.py
++++ b/tests/test_context.py
+@@ -1,8 +1,7 @@
+ from pathlib import Path
+ 
+-import networkx as nx
+-
+ from ragdaemon.context import ContextBuilder
++from ragdaemon.graph import KnowledgeGraph
+ from ragdaemon.utils import get_document
+ 
+ 
+@@ -11,7 +10,7 @@ def test_daemon_render_context(cwd, mock_db):
+     ref = path_str
+ 
+     # Base Chunk
+-    context = ContextBuilder(nx.MultiDiGraph(), mock_db)
++    context = ContextBuilder(KnowledgeGraph(), mock_db)
+     context.context = {
+         path_str: {
+             "lines": set([1, 2, 3, 4, 15]),
+@@ -72,7 +71,7 @@ def test_to_refs(cwd, mock_db):
+     ref = path_str
+ 
+     # Setup Context
+-    context = ContextBuilder(nx.MultiDiGraph(), mock_db)
++    context = ContextBuilder(KnowledgeGraph(), mock_db)
+     context.context = {
+         path_str: {
+             "lines": set([1, 2, 3, 4, 15]),
