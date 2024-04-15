@@ -1,0 +1,17 @@
+chikvdf.cp311-win_amd64.pyd,sha256=lh4xf04gB6av4SYuCDU_5VPfItW9jzSDR2w8AoOqJVU,172032
+chikvdf-1.1.4.data/platlib/mpir.dll,sha256=Mu7H0j-5_6aoQlsWMvCe4u84GMB6I4owtv2Ox6Uc-0k,50176
+chikvdf-1.1.4.data/platlib/mpir_broadwell.dll,sha256=QgsSt0VpPskY08hRr60-1H7gWBL2iSnaIu7laUTzXbc,574976
+chikvdf-1.1.4.data/platlib/mpir_broadwell_avx.dll,sha256=4uE85-AgbJq6ICs79Q-H9XeGSfHpn7STI0Av9D-3SJU,577536
+chikvdf-1.1.4.data/platlib/mpir_bulldozer.dll,sha256=dTaoADiNG5V88JIrOSGtiqNxpBku2YB9DgYS4LGlFP8,564224
+chikvdf-1.1.4.data/platlib/mpir_gc.dll,sha256=jr_ToKBRz7pBgrWjJwwex-1SHBFEnlApsZGXK0dicmE,600064
+chikvdf-1.1.4.data/platlib/mpir_haswell.dll,sha256=N8rxyUOyL04rZTn8ZW21tvwBYVxAo9vNbWi0Ro-eVGg,569344
+chikvdf-1.1.4.data/platlib/mpir_piledriver.dll,sha256=ThZ1zDg2ljuhTbUg7n7Cd55QSDw0SH41rxBAAbwsqLI,564224
+chikvdf-1.1.4.data/platlib/mpir_sandybridge.dll,sha256=g9Gofr0gAHARdiLsN_QXs3mV_5XHPt592X1U97Kf08Q,571904
+chikvdf-1.1.4.data/platlib/mpir_skylake_avx.dll,sha256=FxLlEbzcf4Ou3Pg8zrph4npdQm0VZLaOHUehgDcdgAU,574464
+chikvdf-1.1.4.data/platlib/msvcp140.dll,sha256=j1nF9clJpqZTLsG7o_4IX6jBVzVPZuyBZqCcxbfsrsg,621960
+chikvdf-1.1.4.dist-info/DELVEWHEEL,sha256=m6xRxAf5kpDE900YBI2e-45KGMcv51_6vwjBBTX8Tss,630
+chikvdf-1.1.4.dist-info/LICENSE,sha256=r8mefZGWxrV9farV_s4a8fklsKW3Tl4X6W-chSJo5X8,11548
+chikvdf-1.1.4.dist-info/METADATA,sha256=If3MZbDYPaO5thqtEs-AEGEgTWZPfeykIMIA2FKOQpI,20517
+chikvdf-1.1.4.dist-info/RECORD,,
+chikvdf-1.1.4.dist-info/top_level.txt,sha256=2O0Z8210v_l0SSroS92ThXxKL35qe8-CECKxWGwxxB8,8
+chikvdf-1.1.4.dist-info/WHEEL,sha256=nSybvzWlmdJnHiUQSY-d7V1ycwEVUTqXiTvr2eshg44,102
