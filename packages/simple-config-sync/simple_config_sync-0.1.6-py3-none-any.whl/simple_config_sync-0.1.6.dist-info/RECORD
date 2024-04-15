@@ -1,0 +1,11 @@
+simple_config_sync/__init__.py,sha256=KmbUWLEqnmlbULpXXXKElw97Ux2Li3Z6Q_ElWp83cgQ,42
+simple_config_sync/__main__.py,sha256=RllGy9xE4iuduoHbQUh_Dpj_Z_WTIeB3yYvVlGROnLM,68
+simple_config_sync/core/__init__.py,sha256=55yLg0IJvtWVr-fBq9-wSY7guUGHUy9OG6UYNJzUSB4,193
+simple_config_sync/core/cli.py,sha256=kuw_P4OlD_PFsU0XGgd6O0hZCdcmxof-BNGehJYa9xs,222
+simple_config_sync/core/config.py,sha256=lZgUUK53iPKh1BxafKSkZWDncSFIc_ZtXYd-90WD1GI,5052
+simple_config_sync/core/tui.py,sha256=Y3meFyBcRkkcI_CoJT1nvNidUHeN1c_PWv24WA3vFBA,3649
+simple_config_sync-0.1.6.dist-info/METADATA,sha256=_3LDom-G6Nywc2Rvs_XkWNRyZCyUc8rH1Yf6KB3pki8,817
+simple_config_sync-0.1.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+simple_config_sync-0.1.6.dist-info/entry_points.txt,sha256=zA9L5ndoZ7KXhXdTV7FamtjBhKKtSYs2JR2EffqUy4I,124
+simple_config_sync-0.1.6.dist-info/top_level.txt,sha256=rqmxrz24RCBy1P_m9VA5YgNZZ329agrowiyJeeeZOgU,19
+simple_config_sync-0.1.6.dist-info/RECORD,,
