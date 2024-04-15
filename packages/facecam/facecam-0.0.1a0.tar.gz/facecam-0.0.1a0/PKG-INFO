@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: facecam
+Version: 0.0.1a0
+Summary: A simple AI face detection library that can perform real-time face detection and includes preset sticker images, specifically for Huanma coding courses.
+Home-page: UNKNOWN
+Author: emhang
+Author-email: emhang@126.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+A simple AI face detection library that can perform real-time face detection and includes preset sticker images, specifically for Huanma coding courses.
+

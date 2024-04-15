@@ -1,0 +1,1 @@
+A simple AI face detection library that can perform real-time face detection and includes preset sticker images, specifically for Huanma coding courses.
