@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling", "requests"]
+build-backend = "hatchling.build"
+
+[project]
+name = "shell_shockers_utils"
+version = "0.0.1"
+authors = [
+  { name="porcupane", email="based@national.shitposting.agency" },
+]
+description = "(Nothing here yet) Package for interacting with the Shell Shockers backend via python"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
