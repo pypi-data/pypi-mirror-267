@@ -1,0 +1,8 @@
+morphdb_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morphdb_utils/api.py,sha256=iew0eDBaqQPqpeHzGZAB3d2lxYRZ7VkMJRK4ZC9PyF8,12131
+morphdb_utils/logging.py,sha256=KBMGxwCnguYvXLR-UHZO5upj_zfScLk9riPcvIu6v2E,426
+morphdb_utils/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morphdb_utils/type.py,sha256=U1K2ZXO1jYoBC5GNc_yGKdStzfTGgerjl6kSM2MarZk,1616
+morphdb_utils-0.1.16.dist-info/METADATA,sha256=1IrQ_inqEpTNuCdsYNWPJ1rVAaJ-cbUL9v0mm2DGpz8,687
+morphdb_utils-0.1.16.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+morphdb_utils-0.1.16.dist-info/RECORD,,
