@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/EZCommandLine/__init__.py
+src/EZCommandLine.egg-info/PKG-INFO
+src/EZCommandLine.egg-info/SOURCES.txt
+src/EZCommandLine.egg-info/dependency_links.txt
+src/EZCommandLine.egg-info/top_level.txt
