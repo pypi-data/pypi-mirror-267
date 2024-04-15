@@ -1,0 +1,12 @@
+lib/__init__.py,sha256=26UWatnbm6ZIwQMuu9NNzQ0IW1ACO4Oe9caModuTpWM,4
+lib/daf_indexing.py,sha256=YebKyHENPYTWpMeyCOlHPlHulG8rUKYUbh5ZuM8qVcc,43076
+lib/daf_md.py,sha256=Y70Ly06WuPLgQjBOudcwwhN3gLIkbiNrpnWhSRlm5jw,31511
+lib/daf_pandas.py,sha256=j5Tip_f2UMqHXWKUx23xnd6UbtY5P5g4EFxskc4IEDQ,7580
+lib/daf_types.py,sha256=Slc882bDs9RkcAq73nkTaBUC_BTJ44q4m0hY67zuWu4,5327
+lib/daf_utils.py,sha256=BqxCBJsd6I3CXsOa-gcpYE-S3V3Znn1v1oJzS9UbI84,46595
+lib/md_demo.py,sha256=E1MhfU_HWZ6iZpdB-P0vroY2uhYFeD39XYpgsnqcySM,5796
+daffodil-0.3.0.dist-info/LICENSE,sha256=Fb82tF9m2N3tYJfDUj1HDuXKN2xzjnzk3_lpKc1iBaY,1090
+daffodil-0.3.0.dist-info/METADATA,sha256=NpTDDCMYDI0Ea1a0dVHixoHQsZ5xKbB0YMhYleLQpq8,50165
+daffodil-0.3.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+daffodil-0.3.0.dist-info/top_level.txt,sha256=oyXcrLgLICoBS0ILk_wZBhkAAY-M4hbQoMsA1hDsf5c,4
+daffodil-0.3.0.dist-info/RECORD,,
