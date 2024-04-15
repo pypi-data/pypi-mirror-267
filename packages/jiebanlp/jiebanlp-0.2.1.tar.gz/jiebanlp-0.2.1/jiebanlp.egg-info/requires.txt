@@ -1,0 +1,5 @@
+mysql-connector-python
+jieba
+Flask
+APScheduler
+flask-cors
