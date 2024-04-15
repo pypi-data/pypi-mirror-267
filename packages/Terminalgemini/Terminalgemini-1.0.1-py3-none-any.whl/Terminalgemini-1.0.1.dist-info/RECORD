@@ -1,0 +1,14 @@
+terminalgpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terminalgpt/chat.py,sha256=K3ptZ_ZlnswlbMUWQ0p_ii90lMENSoddru8oo1LU_Ag,8077
+terminalgpt/config.py,sha256=1R8ga1j0MhI_gV4IwR-Ka3YZ5or325IMXDRJOWlpJUY,3108
+terminalgpt/conversations.py,sha256=dcBqwQEiE79YnQZ9rfZ1Bz-S3ttfl5TU0e74w6LeD_I,2477
+terminalgpt/encryption.py,sha256=INhhy4Q40h0o9PLYkQKIK08btkXemu83s4Et1eN4mc0,2368
+terminalgpt/main.py,sha256=bjFfmqCImvuGcTFam8pe4ereEQ8R4nJLXIVp8Ju5qnI,15360
+terminalgpt/printer.py,sha256=d0W5sF7ghrzl20Un76VLDGSzB9l862m0GFAD7YBmcfg,6289
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Terminalgemini-1.0.1.dist-info/LICENSE,sha256=vGE0YG2jhyZyiyhfaltxs0QR5IFSVrCsyHh6CuoESTM,1070
+Terminalgemini-1.0.1.dist-info/METADATA,sha256=WPuXH2gMha0qU3aweKZOd5EXB8pAr-itFkobX4A7FzU,5435
+Terminalgemini-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+Terminalgemini-1.0.1.dist-info/entry_points.txt,sha256=kT0FT5IuPQMXdZvUn_Yv3scnBc482pFKBKTrXfOeYkU,53
+Terminalgemini-1.0.1.dist-info/top_level.txt,sha256=d58-ZF5m-uzRWSacwUjFXLjnskme0IBZm5PlZe0nAG0,18
+Terminalgemini-1.0.1.dist-info/RECORD,,
