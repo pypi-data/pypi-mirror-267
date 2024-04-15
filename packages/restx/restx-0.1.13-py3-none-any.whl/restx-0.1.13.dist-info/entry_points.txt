@@ -1,0 +1,6 @@
+[console_scripts]
+documentation=https://www.linkedin.com/pulse/introducing-restx-your-ultimate-cli-tool-http-arjun-umathanu-ugrrc/
+homepage=https://pypi.org/project/restx/
+repository=https://github.com/fullstack-spiderman/restx
+restx=restx.cli:app
+
