@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: chronik-client
+Version: 0.0.1
+Summary: Python client for the Bitcoin ABC Chronik indexer
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: protobuf
+Requires-Dist: websocket-client
+
+UNKNOWN
+
