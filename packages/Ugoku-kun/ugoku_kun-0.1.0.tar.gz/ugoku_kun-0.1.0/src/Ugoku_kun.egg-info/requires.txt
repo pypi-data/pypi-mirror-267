@@ -1,0 +1,5 @@
+pyserial
+requests
+pandas
+pykeigan-motor
+timeout-decorator
