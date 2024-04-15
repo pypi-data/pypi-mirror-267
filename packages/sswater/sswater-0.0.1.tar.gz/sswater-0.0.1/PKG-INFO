@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: sswater
+Version: 0.0.1
+Summary: SSCNS Water API
+Home-page: https://github.com/teddylee777/teddynote
+Author: hslim
+Author-email: gustn2607@naver.com
+Keywords: sscns,sswater
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
