@@ -1,0 +1,2 @@
+[console_scripts]
+feas = feas.cli:main

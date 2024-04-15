@@ -1,0 +1,16 @@
+# Welcome to feas
+
+
+[![image](https://img.shields.io/pypi/v/feas.svg)](https://pypi.python.org/pypi/feas)
+
+
+**Fire Evacuation Automation System**
+
+
+-   Free software: MIT License
+-   Documentation: <https://TIqbal70.github.io/feas>
+    
+
+## Features
+
+-   TODO
