@@ -1,0 +1,7 @@
+Version Log
+==========
+
+3.3.0 (15/04/2024)
+-------------------
+- Improved sample data api
+
