@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: corkit
+Version: 1.0.3
+Summary: Open source coronagraph data downloader and calibrator
+Home-page: https://github.com/Jorgedavyd/corkit
+Author: Jorge David Enciso Martínez
+Author-email: jorged.encyso@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
