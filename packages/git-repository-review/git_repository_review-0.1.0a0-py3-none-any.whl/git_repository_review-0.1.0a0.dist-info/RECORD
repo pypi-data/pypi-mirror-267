@@ -1,0 +1,9 @@
+git_repository_review/__init__.py,sha256=olp4OHcLouxp79dFrzr33z0R97yHj6uELZzD5TRnSIM,153
+git_repository_review/__main__.py,sha256=tfgj8IIWywghuPoYyLIM0O4okjwUDPCG0UobR5Q98pg,211
+git_repository_review/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_repository_review/validate.py,sha256=QNLFkEqriH6LPohJVeq2UqxIgk9KQYLzf66VICuMySE,6353
+git_repository_review/version.py,sha256=ArQbBN6TR2uNDeC6Up0oDEt-U3n9VHrrapEemxQiII4,350
+git_repository_review-0.1.0a0.dist-info/LICENSE,sha256=FKsDedCfzv4LnBywyfSYdTYqRKuqe8cnvbkjuFJP15o,1130
+git_repository_review-0.1.0a0.dist-info/METADATA,sha256=Hf0a9x4QdMS5QNe5JooQf-ljI-p9WzC7ntSQvEI7heI,4464
+git_repository_review-0.1.0a0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+git_repository_review-0.1.0a0.dist-info/RECORD,,
