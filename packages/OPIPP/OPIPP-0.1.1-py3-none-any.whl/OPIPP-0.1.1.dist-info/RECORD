@@ -1,0 +1,12 @@
+OPIPP/__init__.py,sha256=VCTOFWga-jxlFEDPlHmuq1Ton0FvXi_LIMfCO8Cb53Q,489
+OPIPP/cooling.py,sha256=XAylt_zvHwdiqoncZDoYUAtl2JVgoPiAi21KlT1sgcs,3088
+OPIPP/feature.py,sha256=s_cUn-JV7XvVbDvCAOi7aORMc_JjsVcbwh49NbAKkgM,5661
+OPIPP/mosaic.py,sha256=JyeE2d7rPvC-JQQtqsj5Vq-_oZloG0GNtN7pJXO34Xw,20446
+OPIPP/pattern.py,sha256=-MgHIkawEPUTdPx9YB7fOX5PFkerB9_2cKVcBcGJYZg,25438
+OPIPP/scope.py,sha256=8KYKOlwCRxeBPdqo7DYI-kiqHRjFv-cgmsIvgZm1PuE,4552
+OPIPP/utils.py,sha256=f3AAxTNCB0J0Qrwkj-q7qcX3wqZg_KU6L1fh_wyhjSM,1531
+OPIPP-0.1.1.dist-info/LICENSE,sha256=ZQVnTL5xEMNdmglAetbd2AS4OFJsgOX4-tCmeFv7MEg,1086
+OPIPP-0.1.1.dist-info/METADATA,sha256=VnEvkpkTrkdN5DVZ7_hkVNPvGYgy83vfWffFvFjIjsA,4060
+OPIPP-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+OPIPP-0.1.1.dist-info/top_level.txt,sha256=BT73WUXtgZOhGFV4xzMwssnFdk78sPVINZZ83oTd5RU,6
+OPIPP-0.1.1.dist-info/RECORD,,
