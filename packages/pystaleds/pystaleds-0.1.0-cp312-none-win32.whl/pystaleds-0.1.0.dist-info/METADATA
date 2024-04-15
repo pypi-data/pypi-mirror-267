@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: pystaleds
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Documentation
+License-File: LICENSE
+Summary: CLI tool for checking stale docstrings.
+Keywords: rust,docstrings,pre-commit,cli,tool,testing,ci
+Author-email: Aloizio Macedo <aloizioMacedo@gmail.com>
+Maintainer-email: Aloizio Macedo <aloizioMacedo@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Repository, https://github.com/AloizioMacedo/pystaleds
+
+# pystaleds
+
+![Code Tests](https://github.com/AloizioMacedo/pystaleds/actions/workflows/tests.yml/badge.svg?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/AloizioMacedo/pystaleds/badge.svg?branch=master)](https://coveralls.io/github/AloizioMacedo/pystaleds?branch=master)
+![Linting](https://github.com/AloizioMacedo/pystaleds/actions/workflows/linting.yml/badge.svg?branch=master)
+
+Tool to check for docstring stale status compared to function signature.
+
+Compares thing such as order of arguments, type mismatches, absence of arguments etc.
+
