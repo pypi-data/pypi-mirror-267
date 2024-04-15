@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/prerun/__init__.py
+src/prerun/__main__.py
+src/prerun.egg-info/PKG-INFO
+src/prerun.egg-info/SOURCES.txt
+src/prerun.egg-info/dependency_links.txt
+src/prerun.egg-info/entry_points.txt
+src/prerun.egg-info/requires.txt
+src/prerun.egg-info/top_level.txt
