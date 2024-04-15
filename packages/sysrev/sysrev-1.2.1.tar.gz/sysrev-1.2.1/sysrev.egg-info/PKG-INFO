@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sysrev
+Version: 1.2.1
+Summary: Gets annotations from Sysrev API
+Home-page: https://github.com/sysrev/PySysrev
+Author: Thomas Luechtefeld
+Author-email: tom@insilica.co
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: pathlib
