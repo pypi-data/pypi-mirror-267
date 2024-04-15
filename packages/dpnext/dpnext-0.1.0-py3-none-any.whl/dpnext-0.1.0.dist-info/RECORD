@@ -1,0 +1,8 @@
+dpnext/__init__.py,sha256=sZXg3dneNGdwBKypGowJfSGDPOtNBxs0S4UtXHY5XY8,45
+dpnext/settings.py,sha256=GmcT2-nNHceEdh2uslQI46ODcVIbaVqD-QOJqmn_Pl8,29
+dpnext/__spec__/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dpnext/__spec__/test_version.py,sha256=heyOnjzn7ybddio6cZV_2RM9rGmeNOPbxSupPW-JHfw,77
+dpnext-0.1.0.dist-info/METADATA,sha256=mGA03iW2xlPBw5mwOkSDnEMMUwyOEAByp3E3hZuoPBw,2648
+dpnext-0.1.0.dist-info/WHEEL,sha256=xl5aZkiJYVTjhVaiADvIe6UeUVylGNomrxKZ0Zda1CE,87
+dpnext-0.1.0.dist-info/entry_points.txt,sha256=qDnQV339T1fiYctAwFucMys9eMSwBymgqCS9XToXHJU,59
+dpnext-0.1.0.dist-info/RECORD,,
