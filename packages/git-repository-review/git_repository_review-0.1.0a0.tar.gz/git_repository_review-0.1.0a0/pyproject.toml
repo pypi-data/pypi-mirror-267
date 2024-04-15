@@ -1,0 +1,127 @@
+[tool.poetry]
+name = "git-repository-review"
+
+# Do not update. This is updated by poetry-version-plugin at build time
+version = "0"
+
+description = "Review a Git repository to make sure it matches expected style settings and is not doing anything that is not cross-platform compatible."
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/joelvaneenwyk/git-repository-review"
+authors = [
+  "Joel Van Eenwyk <joel.vaneenwyk@gmail.com>",
+  "Felipe N. Schuch",
+]
+packages = [{ include = "git_repository_review" }]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Intended Audience :: Developers",
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/joelvaneenwyk/git-repository-review/issues"
+"Changelog" = "https://github.com/joelvaneenwyk/git-repository-review/releases"
+"Documentation" = "https://joelvaneenwyk.github.io/git-repository-review/"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pathspec = "^0.12.1"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+codespell = "^2.2.5"
+gitpython = "^3.1.43"
+mypy = "^1.5.1"
+pre-commit = "^3.7.0"
+pytest = "^8.1.1"
+pytest-cov = "^5.0.0"
+pytest-random-order = "^1.1.0"
+ruff = "^0.3.5"
+taskipy = "^1.12.0"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+docutils = "0.20.1"
+jupyter-book = "^1.0.0"
+sphinx-autobuild = "^2024.2.4"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = [
+  "-s",
+  "--random-order",
+  "--cov=git_repository_review",
+  "--cov-report=xml:build/coverage.xml",
+  "--doctest-modules",
+  "--doctest-glob='*.md'",
+  "--doctest-continue-on-failure",
+  "--doctest-report=ndiff",
+]
+
+[tool.coverage.run]
+parallel = true
+source = ["docs", "tests", "git_repository_review"]
+
+[tool.coverage.report]
+fail_under = 70
+show_missing = true
+
+[tool.coverage.html]
+show_contexts = true
+
+[tool.pylint]
+max-line-length = 120
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["./docs/conf.py"]
+
+[tool.ruff.lint]
+select = ["A", "B", "C", "D", "E", "F", "FBT", "I", "N", "S", "SIM", "UP", "W"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"] # imported but unused
+"tests/*" = ["S101"]     # use of assert detected
+"*.ipynb" = ["E402"]     # module level import not at top of file
+
+[tool.mypy]
+pretty = true
+ignore_missing_imports = true
+exclude = ["docs/conf.py"]
+
+[tool.codespell]
+skip = "./docs/conf.py,poetry.lock"
+check-filenames = true
+
+[tool.taskipy.settings]
+runner = "poetry run"
+
+[tool.taskipy.tasks]
+pre_commit_install = "pre-commit install"
+test = "pytest"
+pre_lint = "task pre_commit_install"
+lint = "pre-commit run --all-files"
+qa = "task lint && task test && echo '✅ QA passed'"
+docs_update_config = "jupyter-book config sphinx docs"
+pre_docs = "poetry install --with docs"
+docs = "jupyter-book build docs --path-output build"
+pre_docs_serve = "task pre_docs"
+docs_serve = "sphinx-autobuild docs build/_build/html --open-browser --watch git_repository_review"
+
+[tool.poetry-version-plugin]
+source = "git-tag"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
