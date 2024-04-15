@@ -1,0 +1,8 @@
+signal_filters/__init__.py,sha256=8kcv8jkYTAM_5pYUQvjy7L4m7mu88Xc5-gCctIT4Sxk,600
+signal_filters/filters.py,sha256=0Gyq7WYqyG6X-02zPR6w_FB-LWOXnb89rNYOKbQn5Ho,36796
+signal_filters/utils.py,sha256=zyp_1-gX3RK1wY-Jy5y_iysV-9-vKYbXQ640A9Z5vPM,15206
+SignalFilters-0.0.8.dist-info/LICENSE.txt,sha256=wep-QFF_qoiVMvo9VzDHL2ozOLTMESTR9abTK4KmZeU,1103
+SignalFilters-0.0.8.dist-info/METADATA,sha256=Tu_XAilFkJLY4V7pwCFVvNxdgEzP1N7OGI1ciOzkPgg,4823
+SignalFilters-0.0.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+SignalFilters-0.0.8.dist-info/top_level.txt,sha256=XHClTp3qo7TXi_kKoKz86MyrxTDymmQOehu_X0FlwHk,15
+SignalFilters-0.0.8.dist-info/RECORD,,
