@@ -1,0 +1,9 @@
+README.md
+setup.py
+Chainzpy/__init__.py
+Chainzpy/main.py
+Chainzpy.egg-info/PKG-INFO
+Chainzpy.egg-info/SOURCES.txt
+Chainzpy.egg-info/dependency_links.txt
+Chainzpy.egg-info/requires.txt
+Chainzpy.egg-info/top_level.txt
