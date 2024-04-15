@@ -1,0 +1,9 @@
+numpy
+ipyleaflet
+pandas
+
+[all]
+geoquanta[extra]
+
+[extra]
+pandas
