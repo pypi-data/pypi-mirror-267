@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "starlette-ras-handle"
+version = "1.0.1"
+description = "This library patches starlette, so you can handle \"RuntimeError: Caught handled exception, but response already started.\" exception"
+authors = ["sushka <r.m.poltorabatko@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+starlette = "^0.37.2"
+
+
+[tool.poetry.group.examples.dependencies]
+fastapi = "^0.110.1"
+uvicorn = "^0.29.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
