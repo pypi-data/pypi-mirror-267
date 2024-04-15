@@ -1,0 +1,25 @@
+[project]
+name = "objectcrawler"
+authors = [
+    {name = "Louis Beal", email = "louis.j.beal@gmail.com"}
+]
+requires-python = ">=3.7"
+description = "simple object crawling debug tool"
+# readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = 'objectcrawler.__version__'}
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
