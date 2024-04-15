@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pyproject.toml
+src/ParliamentArch.egg-info/PKG-INFO
+src/ParliamentArch.egg-info/SOURCES.txt
+src/ParliamentArch.egg-info/dependency_links.txt
+src/ParliamentArch.egg-info/top_level.txt
+src/parliamentarch/__init__.py
+src/parliamentarch/_util.py
+src/parliamentarch/geometry.py
+src/parliamentarch/svg.py
