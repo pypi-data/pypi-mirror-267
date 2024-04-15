@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+MayuriScanner/__init__.py
+MayuriScanner/main.py
+MayuriScanner.egg-info/PKG-INFO
+MayuriScanner.egg-info/SOURCES.txt
+MayuriScanner.egg-info/dependency_links.txt
+MayuriScanner.egg-info/requires.txt
+MayuriScanner.egg-info/top_level.txt
