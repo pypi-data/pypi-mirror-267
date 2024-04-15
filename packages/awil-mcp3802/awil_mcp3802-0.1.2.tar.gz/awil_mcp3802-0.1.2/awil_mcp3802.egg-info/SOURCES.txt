@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+awil_mcp3802/__init__.py
+awil_mcp3802/awil_mcp3802.py
+awil_mcp3802.egg-info/PKG-INFO
+awil_mcp3802.egg-info/SOURCES.txt
+awil_mcp3802.egg-info/dependency_links.txt
+awil_mcp3802.egg-info/requires.txt
+awil_mcp3802.egg-info/top_level.txt
