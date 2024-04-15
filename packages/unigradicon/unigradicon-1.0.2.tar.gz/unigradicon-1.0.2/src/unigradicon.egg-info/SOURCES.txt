@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/unigradicon/__init__.py
+src/unigradicon.egg-info/PKG-INFO
+src/unigradicon.egg-info/SOURCES.txt
+src/unigradicon.egg-info/dependency_links.txt
+src/unigradicon.egg-info/entry_points.txt
+src/unigradicon.egg-info/requires.txt
+src/unigradicon.egg-info/top_level.txt
+tests/test_itk_interface.py
