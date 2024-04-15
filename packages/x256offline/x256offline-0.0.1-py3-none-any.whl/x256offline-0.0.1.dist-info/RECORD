@@ -1,0 +1,9 @@
+x256offline/__init__.py,sha256=e2JKIQllfpFlPcUKHHVy815acd4iAGg5mO_GkPXZPgA,58
+x256offline/euclidean_distance.bin,sha256=S2MQhS82R2XSbv3RCyyKJwLlt_vVvL6VGhq33uGfSYI,16777216
+x256offline/weighted_euclidean_distance.bin,sha256=megLagF95cccQuEPiqBZG0SeI9GUCkuR8iiJKCxsF1w,16777216
+x256offline/x256.py,sha256=uXT4MEN0noYLXDfx3BdkVyu_tcLdE3BYf7FQMSSzI_U,3367
+x256offline-0.0.1.dist-info/LICENSE,sha256=3yrCcu9HE-f2cZLDihNkDwr8dQK473Dhb_SwYiy6qCo,1063
+x256offline-0.0.1.dist-info/METADATA,sha256=FrV7V1FOft9l8HkTGmDkZ4TDLSviIhpB4gONSqBmqIU,2380
+x256offline-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+x256offline-0.0.1.dist-info/top_level.txt,sha256=d3Odsm506b2e_8f_b8ex0b_5E_kadkNMIMmXhBwEEQk,12
+x256offline-0.0.1.dist-info/RECORD,,
