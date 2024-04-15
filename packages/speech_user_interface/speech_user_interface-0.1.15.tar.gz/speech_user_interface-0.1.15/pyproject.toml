@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "speech_user_interface"
+version = "0.1.15"
+description = "A universal speech user interface for wrapping applications to provide them with a user interface that uses speech rather than text commands or traditional user interfaces"
+authors = ["David Piper <dbpiper@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+sui = "speech_user_interface:main"
+
+
+[tool.poetry.dependencies] # Include specific files or directories
+python = "^3.11"
+pandas = "^2.1.4"
+numpy = "^1.26.3"
+pydash = "^7.0.7"
+einops = "^0.7.0"
+tenacity = "^8.2.3"
+tqdm = "^4.66.2"
+vosk = "^0.3.45"
+gtts = "^2.5.1"
+openai = "^1.17.0"
+python-dotenv = "^1.0.1"
+pyaudio = "^0.2.14"
+pygame = "^2.5.2"
+fuzzywuzzy = "^0.18.0"
+python-levenshtein = "^0.25.1"
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
