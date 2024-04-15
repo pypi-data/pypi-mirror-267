@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sqla-assigner
+Version: 0.1.0
+Summary: A simple type safety helper for assigning values to attributes of SQLAlchemy models
+Author-Email: Nikitosio Noskovinni <nik.noskov08@gmail.com>
+License: MIT
+Project-URL: Github, https://github.com/barbarrista/sqla-assigner
+Project-URL: Gitlab, https://gitlab.com/n.one.k/opensource/sqla-assigner
+Requires-Python: >=3.11
+Requires-Dist: sqlalchemy>=2.0.29
+Description-Content-Type: text/markdown
+
+# SQLAlchemy Assigner
+
+A simple type safety helper for assigning values to attributes of SQLAlchemy models
