@@ -1,0 +1,15 @@
+minject/README.md,sha256=Q8ZEkaOzBldc8zLFppXIMhKrAnrlupucGGQ6WxnVYaw,106
+minject/__init__.py,sha256=fewWGmAJ9Fmvj7oRzCW32_teBc4dq8T7IZCnYxc5Bk8,1996
+minject/config.py,sha256=d0z5qMGqAwQUQGSL3U9MjtAi-RbOWRiwmJqx8QqVcEw,3441
+minject/inject.py,sha256=uGfbApO-V0lbADobexOohdJMyC0Az1TpSk1dQC6lf3o,14223
+minject/inject_attrs.py,sha256=qJTzl-xLrbT8-umRfTTGG94_zRRS5ml3hfF5Mw9EvZg,6809
+minject/metadata.py,sha256=bXgyvzCbbGALqMk7yLUXyrYm59dPgBeu5PSBplGfOAY,7521
+minject/mock.py,sha256=I83UViZSiawT2gj-JUXwb26l8FImAV-LbeBjYc3jxq0,1966
+minject/model.py,sha256=mCxxQgbbzkC1AUhJzR5Q3xvM2zED_viw9evuCvZuv48,1816
+minject/mypy_plugin.py,sha256=tJGFSW5Y847ddcSkJLbb7SJF5HtxQBFDdHTKbM7C-bU,2126
+minject/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minject/registry.py,sha256=RgBCvgpiupTZg5heABIvuO4NsxIgzzzECxXuOrKte34,11561
+minject/types.py,sha256=KnNtBUpzJVr_xqS40KtWnxe_kGU8sxGA2jjLJnkEvlo,589
+minject-0.1.0.dist-info/METADATA,sha256=u9-X1qvN7cgy84NovOPeOgPuY2LPAHgDRjbvUfNzNMo,386
+minject-0.1.0.dist-info/WHEEL,sha256=xl5aZkiJYVTjhVaiADvIe6UeUVylGNomrxKZ0Zda1CE,87
+minject-0.1.0.dist-info/RECORD,,
