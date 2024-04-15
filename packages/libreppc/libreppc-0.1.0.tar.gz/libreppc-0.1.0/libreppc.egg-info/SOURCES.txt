@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+libreppc/__init__.py
+libreppc/__main__.py
+libreppc/libreppc.py
+libreppc.egg-info/PKG-INFO
+libreppc.egg-info/SOURCES.txt
+libreppc.egg-info/dependency_links.txt
+libreppc.egg-info/requires.txt
+libreppc.egg-info/top_level.txt
