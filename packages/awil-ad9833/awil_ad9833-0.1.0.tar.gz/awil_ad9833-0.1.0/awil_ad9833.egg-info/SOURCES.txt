@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+awil_ad9833/__init__.py
+awil_ad9833/awil_ad9833.py
+awil_ad9833.egg-info/PKG-INFO
+awil_ad9833.egg-info/SOURCES.txt
+awil_ad9833.egg-info/dependency_links.txt
+awil_ad9833.egg-info/requires.txt
+awil_ad9833.egg-info/top_level.txt
