@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/terminate_thread/__init__.py
+src/terminate_thread/libterminate.dll
+src/terminate_thread/libterminate.so
+src/terminate_thread/terminate_thread.py
+src/terminate_thread.egg-info/PKG-INFO
+src/terminate_thread.egg-info/SOURCES.txt
+src/terminate_thread.egg-info/dependency_links.txt
+src/terminate_thread.egg-info/top_level.txt
