@@ -1,0 +1,10 @@
+README.md
+setup.py
+IbbUploader.egg-info/PKG-INFO
+IbbUploader.egg-info/SOURCES.txt
+IbbUploader.egg-info/dependency_links.txt
+IbbUploader.egg-info/requires.txt
+IbbUploader.egg-info/top_level.txt
+src/__init__.py
+src/test_ibbuploader.py
+src/uploader.py
