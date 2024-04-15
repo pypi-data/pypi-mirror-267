@@ -1,0 +1,2 @@
+recursive-include mobilenn *.pyc
+include *.md
