@@ -1,0 +1,6 @@
+authentication/__init__.py,sha256=OCA4J5Mi4h3yrXerbUuo12Ey4ma8wF6Dh2NdbFkE2kw,24
+authentication/jwt_auth.py,sha256=95vCZjD57_aB1d4rHWmO-jvjA2r1nq7PKoMydXt9npE,1705
+soildx_fastapi_jwt_auth-0.0.2.dist-info/METADATA,sha256=uIMs-62hqTL4za2BnY30fZ696z62SvTtf4jp6Z5rIuI,348
+soildx_fastapi_jwt_auth-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+soildx_fastapi_jwt_auth-0.0.2.dist-info/top_level.txt,sha256=VXISBSpQIrEFW1wlnq3UihPHmjYCFTAMV1PReHDUpis,15
+soildx_fastapi_jwt_auth-0.0.2.dist-info/RECORD,,
