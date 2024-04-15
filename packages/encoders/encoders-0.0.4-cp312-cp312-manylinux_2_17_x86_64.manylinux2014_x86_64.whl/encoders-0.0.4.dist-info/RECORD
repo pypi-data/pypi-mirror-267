@@ -1,0 +1,8 @@
+encoders/cyfuncs.cpython-312-x86_64-linux-gnu.so,sha256=punb8TzkScAIkhVqtyKTdZ1RFvnuN-n_TO4lM-HZF8Q,2305288
+encoders/encoder.py,sha256=6pPvQgqLa_REgQl9G0iAYBGK0ntaa-KfNeEdtW_-xkM,73
+encoders/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+encoders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+encoders-0.0.4.dist-info/RECORD,,
+encoders-0.0.4.dist-info/top_level.txt,sha256=OZKV_6dtOsrOUkm2TpGU5stm4ooVOHnvrynwgWRjx4s,9
+encoders-0.0.4.dist-info/METADATA,sha256=1MBuxT2H1DBWAbEN9jB4n0r65df_BBuUUMlvCgW3pDU,1027
+encoders-0.0.4.dist-info/WHEEL,sha256=OvtvnbpcaxHa5TgXgfC48E6JA7zLr7svMspPP7Vk5o8,152
