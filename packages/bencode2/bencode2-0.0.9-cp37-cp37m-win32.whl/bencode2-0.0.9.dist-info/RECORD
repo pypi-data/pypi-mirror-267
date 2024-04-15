@@ -1,0 +1,16 @@
+bencode2/__init__.py,sha256=4A7POX8qNedm34-EINawgavZQQeQvP82yJww8j4sADc,592
+bencode2/_decoder.c,sha256=VhmnL5PrRiOcjm3Qmg_v9yFOlpM06oi2g_URKwBWliE,487612
+bencode2/_decoder.cp37-win32.pyd,sha256=T6QPPKv2eXAqFV2119HU2x4vAi79GltMbyaO_8Ikmtw,72192
+bencode2/_decoder.pyx,sha256=eoVAPobdY14VDWGKYX3yO64H_SxKCaiYOCWHYD7u4mo,3028
+bencode2/_encoder.c,sha256=5ENAxvku_zI0SCl_LBwaunRiOCP_REp7BueTLxaZMRI,375805
+bencode2/_encoder.cp37-win32.pyd,sha256=RPM00VDbJ8aW5WzyvETcIciif58-X_hQ2MnAr_rDfsc,48128
+bencode2/_encoder.pyx,sha256=uRHagfQtTpqwa7eDXyrk-M417SiWNzTNlvcNQrtHBks,2993
+bencode2/_exceptions.c,sha256=E0LdoxN9k87Xi00ecME2clNoCRHlr-cpugEw3P8Dk5Y,190932
+bencode2/_exceptions.cp37-win32.pyd,sha256=ZaPwrG5_0Tv8EQKHzY9m4u1SczgmezDBGB9Fqs3X2Ak,20992
+bencode2/_exceptions.pyx,sha256=I2-FP4Dm_ctm9zTak1n3yWmKb8bvUVxvM5PePB-Sr9s,176
+bencode2/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bencode2-0.0.9.dist-info/LICENSE,sha256=EEoYi1hvWZLRB6rUABEsjEdCJ56eZs_20XL8mJO-SfA,1106
+bencode2-0.0.9.dist-info/METADATA,sha256=fBRFMi_8T9ne6vhC5BuxX29U3gHPWwfqHB5mksIUhRQ,665
+bencode2-0.0.9.dist-info/WHEEL,sha256=-4e2_5zQjKFRyJsP6SfWXi5m1fmK3VBANPdPzrOxl7c,97
+bencode2-0.0.9.dist-info/top_level.txt,sha256=X79h81kwbP5Ffn5c2lhZh_XMN6fC9Ix7OEMuNSnjSPI,9
+bencode2-0.0.9.dist-info/RECORD,,
