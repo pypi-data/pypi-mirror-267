@@ -1,0 +1,6 @@
+setup.py
+securechat/__init__.py
+securechat.egg-info/PKG-INFO
+securechat.egg-info/SOURCES.txt
+securechat.egg-info/dependency_links.txt
+securechat.egg-info/top_level.txt
