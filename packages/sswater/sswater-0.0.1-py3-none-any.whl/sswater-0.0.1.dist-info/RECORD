@@ -1,0 +1,14 @@
+sswater/GAILinear.py,sha256=fyPkDxhpwWKq5_tnmuttDhIQ25vSsORWm8B0CVhMsOI,3566
+sswater/NLinear.py,sha256=gZWqEzdyQf8GP-_u7joF9iBB2K9wcWH9JbCn3bGSavw,1437
+sswater/__init__.py,sha256=07NzQXBgNlnw5kSN6ZYxE9By-_RuH3Jyy58Z74sIio0,21
+sswater/calData.py,sha256=jYcBdGHk8Z6vEDRdYKeaFCMgtTugxU7-Yu8QPzz-X8U,1117
+sswater/config.py,sha256=YPgzXG6DTkVpI5ExnnnQ2JGHn4NVsmWN7YRnffKSH04,490
+sswater/create_seq.py,sha256=MF5HEglFrgGBqhBLxkZEq2Qx290z3Ft-sbQOVKyN9NU,679
+sswater/getDatas.py,sha256=nmXGcYLJwE8m1xvyBYqFl4r__HSTsdv9LbewVgNaTno,1375
+sswater/preprocessing.py,sha256=o5pxIhQAJvigcDByq0nndaviHkbr7mRlXDEN6WHzSUc,1881
+sswater/services.py,sha256=qrKvx7LlMprDZcIIgmAA9LsQNE9iBg4WgGI6FnzPHtc,4519
+sswater/train.py,sha256=zOBMugxqguidmm9RWeOg5AkA7GVxRzsOJKWkt_bxGcM,4142
+sswater-0.0.1.dist-info/METADATA,sha256=CuYTRlPD3tUwZuaPne2reFN9H68AFNA9Lk57pEGtKYw,383
+sswater-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sswater-0.0.1.dist-info/top_level.txt,sha256=y3N-5l_zmmjr16Spjgqy2Ji7JQ1ThRmRdtEfQu4mqBo,8
+sswater-0.0.1.dist-info/RECORD,,
