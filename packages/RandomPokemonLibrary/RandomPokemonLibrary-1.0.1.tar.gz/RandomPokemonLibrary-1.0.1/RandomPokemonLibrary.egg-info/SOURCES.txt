@@ -1,0 +1,8 @@
+setup.py
+RandomPokemon/RandomPokemonLibrary.py
+RandomPokemon/__init__.py
+RandomPokemonLibrary.egg-info/PKG-INFO
+RandomPokemonLibrary.egg-info/SOURCES.txt
+RandomPokemonLibrary.egg-info/dependency_links.txt
+RandomPokemonLibrary.egg-info/requires.txt
+RandomPokemonLibrary.egg-info/top_level.txt
