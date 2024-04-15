@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: systemd-language-server
+Version: 0.3.5
+Summary: Language server for systemd unit files
+Home-page: https://github.com/psacawa/systemd-language-server
+License: GPL3.0
+Keywords: systemd,language,server,lsp,completion
+Author: Paweł Sacawa
+Author-email: pawel@sacawa.net
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: Text Editors :: Integrated Development Environments (IDE)
+Classifier: Topic :: Utilities
+Requires-Dist: lxml (>=5.0.0,<6.0.0)
+Requires-Dist: pygls (>=1.3,<2.0)
+Project-URL: Repository, https://github.com/psacawa/systemd-language-server
+Description-Content-Type: text/markdown
+
+# systemd-language-server
+
+[![PyPI](https://img.shields.io/pypi/v/systemd-language-server)](https://pypi.org/project/systemd-language-server)
+[![GitHub Actions (Tests)](https://github.com/psacawa/systemd-language-server/actions/workflows/test.yml/badge.svg)](https://github.com/psacawa/systemd-language-server/actions)
+[![GitHub](https://img.shields.io/github/license/psacawa/systemd-language-server)](https://github.com/psacawa/systemd-language-server/blob/master/LICENSE)
+
+Language server for systemd unit files. Result of an exercise to learn the language server protocol.
+
+## Supported Features
+
+### `textDocument/completion`
+
+Completion for
+
+- unit file directives
+- unit file sections
+<!-- - values of some directives -->
+
+![](assets/completion.gif)
+
+### `textDocument/hover`
+
+Documentation for directives supplied on hovering.
+
+![](assets/hover.gif)
+
+For markup in hover windows (i.e. the fancy highlighting), `pandoc` must be found in `$PATH`. Otherwise, there will be fallback to plain text.
+
+## Installation
+
+```
+pip install systemd-language-server
+```
+
+## Example Integrations
+
+### coc.nvim
+
+In `coc-settings.json`, under `.languageserver`:
+
+```json
+...
+"systemd-language-server": {
+  "command": "systemd-language-server",
+  "filetypes": ["systemd"]
+}
+...
+```
+
+### nvim-lspconfig
+
+```lua
+local lspconfig = require 'lspconfig'
+local configs = require 'lspconfig.configs'
+
+if not configs.systemd_ls then
+  configs.systemd_ls = {
+    default_config = {
+      cmd = { 'systemd-language-server' },
+      filetypes = { 'systemd' },
+      root_dir = function() return nil end,
+      single_file_support = true,
+      settings = {},
+    },
+    docs = {
+      description = [[
+https://github.com/psacawa/systemd-language-server
+
+Language Server for Systemd unit files.
+]]
+    }
+  }
+end
+
+lspconfig.systemd_ls.setup {}
+```
+
+Courtesy of @ValdezFOmar
+
