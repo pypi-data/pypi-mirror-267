@@ -1,0 +1,4 @@
+openai
+retry
+wrapt_timeout_decorator
+Pillow
