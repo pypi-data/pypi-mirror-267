@@ -1,0 +1,11 @@
+source_azure_blob_storage/__init__.py,sha256=dUrGWNqeIfK3e4yI6dgpIzSi8d03kItsUWCHQcmxXlg,281
+source_azure_blob_storage/config.py,sha256=w7hEWeY8cnNJ_jtAr-ZzkhyZ7pAxI6sQLUi2BG75jGQ,3949
+source_azure_blob_storage/config_migrations.py,sha256=_Dq-N4T6xTL2HpDmYIr-5K5CKCudUmEjA3x9wUdcHMg,2712
+source_azure_blob_storage/legacy_config_transformer.py,sha256=yiS4GgjaVvJtedmweAkq-eEdPG0RWWAAr0T9UV4RmOQ,1306
+source_azure_blob_storage/run.py,sha256=hUxQJCBSS_pzGzSE92Fum5C9EY7cU4yP3u-KefiC9cI,1890
+source_azure_blob_storage/source.py,sha256=lHyvHaEghSgxs1zK67o_x6viSVZ3oZOJca2Y-owI9J8,3456
+source_azure_blob_storage/stream_reader.py,sha256=YpPYv5l2eLRtxTNTLGQ6LCOHtwDdmC9TRLBt9M7ZGTU,4227
+airbyte_source_azure_blob_storage-0.4.0.dist-info/METADATA,sha256=IMQQw4bC4D6p4FGYRUPV-DstwWu2_uic9YJoMPn9P7Y,6246
+airbyte_source_azure_blob_storage-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_azure_blob_storage-0.4.0.dist-info/entry_points.txt,sha256=75v_DA_Xu0qr0eqtEXyh8sPCqcL9eXKWY8UwdST3ANE,79
+airbyte_source_azure_blob_storage-0.4.0.dist-info/RECORD,,
