@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: lite-sandbox
+Version: 0.0.1
+Summary: Lightweight sandboxing in Python for Python script test
+Home-page: https://github.com/rainbowphysics/lite-sandbox
+Author: Physics System
+Author-email: rainbowphysicsystem@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security
+Classifier: Environment :: Plugins
+License-File: LICENSE
+
+UNKNOWN
+
