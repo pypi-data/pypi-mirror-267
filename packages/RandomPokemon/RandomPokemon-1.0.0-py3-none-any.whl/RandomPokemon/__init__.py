@@ -1,0 +1,1 @@
+from RamdomPokemon import RandomPokemon
