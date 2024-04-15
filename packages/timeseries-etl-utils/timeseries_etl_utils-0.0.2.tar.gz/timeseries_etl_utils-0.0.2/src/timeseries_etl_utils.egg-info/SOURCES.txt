@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/timeseries_etl_utils/__init__.py
+src/timeseries_etl_utils/utils.py
+src/timeseries_etl_utils.egg-info/PKG-INFO
+src/timeseries_etl_utils.egg-info/SOURCES.txt
+src/timeseries_etl_utils.egg-info/dependency_links.txt
+src/timeseries_etl_utils.egg-info/requires.txt
+src/timeseries_etl_utils.egg-info/top_level.txt
