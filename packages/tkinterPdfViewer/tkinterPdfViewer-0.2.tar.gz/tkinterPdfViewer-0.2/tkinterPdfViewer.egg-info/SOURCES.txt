@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+tkinterPdfViewer/__init__.py
+tkinterPdfViewer/tkinterPdfViewer.py
+tkinterPdfViewer.egg-info/PKG-INFO
+tkinterPdfViewer.egg-info/SOURCES.txt
+tkinterPdfViewer.egg-info/dependency_links.txt
+tkinterPdfViewer.egg-info/requires.txt
+tkinterPdfViewer.egg-info/top_level.txt
