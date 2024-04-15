@@ -1,0 +1,8 @@
+SQLAlchemy==1.4.51
+pyramid_mako
+pyramid_beaker
+pyramid_jinja2
+alembic
+cryptography
+pyotp
+qrcode
