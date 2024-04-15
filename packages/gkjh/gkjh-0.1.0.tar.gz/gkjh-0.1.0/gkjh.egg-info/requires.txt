@@ -1,0 +1,12 @@
+sympy==1.12
+matplotlib>=3.8
+pandas>=1.5
+
+[dev]
+black
+pytest
+
+[extras]
+pandas_datareader>=0.10.0
+yfinance>=0.2.36
+control>=0.9.4
