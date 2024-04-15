@@ -1,0 +1,25 @@
+svgen>=0.6.5
+websockets
+psutil
+vcorelib>=3.2.3
+
+[test]
+pylint
+flake8
+black
+ruff
+mypy
+isort
+yamllint
+yambs
+vmklib
+sphinx
+sphinx-book-theme
+pytest-asyncio
+pytest-timeout
+types-psutil
+setuptools-wrapper
+types-setuptools
+
+[test:sys_platform != "win32" and sys_platform != "cygwin"]
+uvloop
