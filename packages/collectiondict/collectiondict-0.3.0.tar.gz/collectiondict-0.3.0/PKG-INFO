@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: collectiondict
+Version: 0.3.0
+Summary: Helpers to create dictionaries that collect values into collections
+Home-page: https://github.com/MaxG87/collectiondict/
+License: BSD-3-Clause
+Author: Max Görner
+Author-email: 5477952+MaxG87@users.noreply.github.com
+Requires-Python: >=3.9,<3.13
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Project-URL: Changelog, https://github.com/MaxG87/collectiondict/releases/
+Project-URL: Repository, https://github.com/MaxG87/collectiondict/
+Description-Content-Type: text/markdown
+
+# collectiondict - Create multidicts more easily
+
+This package simplifies the creation of dictionaries which collect a stream of
+key-value-pairs into a dictionaries of containers. It is conceptunally similar
+to [multidict](https://pypi.org/project/multidict/) but much broader with
+respect to the supported types.
+
