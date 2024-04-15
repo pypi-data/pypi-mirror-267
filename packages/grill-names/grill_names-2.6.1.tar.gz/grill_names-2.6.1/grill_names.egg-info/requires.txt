@@ -1,0 +1,11 @@
+naming>=0.6
+
+[docs]
+sphinx
+myst-parser
+sphinx-toggleprompt
+sphinx-copybutton
+sphinx-togglebutton
+sphinx-hoverxref
+sphinx_autodoc_typehints
+shibuya
