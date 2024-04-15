@@ -1,0 +1,13 @@
+libbash-0.1.10.data/purelib/libbash/__init__.py,sha256=oKfanrd71yWKxabf9iud5yo46A5bsQ6TonDTpqDih48,85
+libbash-0.1.10.data/purelib/libbash/api.py,sha256=sqPSq-PjcxqKwM6_SBy4E5VElRzWMH_7pP6rIjXxUrY,5210
+libbash-0.1.10.data/purelib/libbash/ctypes_bash_command.py,sha256=P21H_YojPPXAJjiSEqeFpaM54dZEvu8ZU_6pCVsJSfU,6741
+libbash-0.1.10.data/purelib/libbash/test.py,sha256=Z8-94NHPM1CRrpXOGJRBqjNbFHkvNXllWj4DgO5FE88,5510
+libbash-0.1.10.data/purelib/libbash/bash_command/__init__.py,sha256=5R_zojd4bl81cZFg36Tww76XwdfkGmAD2exrbWXus4g,44
+libbash-0.1.10.data/purelib/libbash/bash_command/command.py,sha256=DRL7KXR-FJrdPHVpKWlAb5PUO7mzcS2SvTyTcXvVV1k,52587
+libbash-0.1.10.data/purelib/libbash/bash_command/flags.py,sha256=p3xhRU1UZXpP7EJ94t6c21rwzJW5cmpPSsv31EL_X18,21976
+libbash-0.1.10.data/purelib/libbash/bash_command/util.py,sha256=yqOpQ8yVmJdz-_SVJM86kcrhontUcinOHGuCTBo6nHU,585
+libbash-0.1.10.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+libbash-0.1.10.dist-info/METADATA,sha256=lJVOC787AXh4ZHkFIVDAZpWCz4VIbInzwK5BwbA7OZs,3750
+libbash-0.1.10.dist-info/WHEEL,sha256=iG8A0NTh07TTUrjuItt5jQWSaCWls4bkT_lqUuVXNGc,109
+libbash-0.1.10.dist-info/top_level.txt,sha256=n4Jins3ae1BnWXPpn_DA7BYhxBYmVaVEJ7EMFRd8vXM,8
+libbash-0.1.10.dist-info/RECORD,,
