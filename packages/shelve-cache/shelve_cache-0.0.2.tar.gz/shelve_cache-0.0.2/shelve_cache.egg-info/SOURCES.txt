@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+shelve_cache.egg-info/PKG-INFO
+shelve_cache.egg-info/SOURCES.txt
+shelve_cache.egg-info/dependency_links.txt
+shelve_cache.egg-info/top_level.txt
+shelvecache/__init__.py
+shelvecache/shelvecache.py
