@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grizzlys"
+description = "Python DataFrames powered by Julia"
+version = "0.0.1"
+authors = [
+    { name = "Hadar Sharon", email = "hadar.sharon94@gmail.com" },
+]
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+readme = "README.md"
+dependencies = [
+    "juliacall>=0.9.19"
+]
+keywords = ["python", "julia", "pandas", "polars", "koalas", "data-science", "data-engineering", "data-analysis", "dataframe", "dataframes"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[project.urls]
+Documentation = "https://github.com/hadarsharon/grizzlys/wiki"
+Repository = "https://github.com/hadarsharon/grizzlys"
+Changelog = "https://github.com/hadarsharon/grizzlys/releases"
+
+[tool.setuptools.packages]
+find = { }
+
+[tool.ruff]
+line-length = 120
+fix = true
+
+[tool.ruff.lint]
+exclude = [
+    "*.md",
+    ".git",
+    ".idea",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    "CODEOWNERS",
+    "venv"
+]
+
+[tool.ruff.format]
+quote-style = "double"
+skip-magic-trailing-comma = false
+preview = true
