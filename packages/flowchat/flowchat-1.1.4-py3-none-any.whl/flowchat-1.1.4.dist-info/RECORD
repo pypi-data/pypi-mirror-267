@@ -1,0 +1,10 @@
+flowchat/__init__.py,sha256=41-ewyW7kUXVjPXlOrglt-ibxVcN_aiWexH7tPJmJCc,185
+flowchat/autodedent.py,sha256=Y0RSQ69MitCL1_7DtDqfEsRvhew1nIUVZCCOsxIPqIA,590
+flowchat/chain.py,sha256=o6nOw_WNtbsQU4X5nQ_Jf_mNkKwEtSNRtM_VBxkoYeI,11790
+flowchat/private/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flowchat/private/_private_helpers.py,sha256=rk7gLOvROozxKdPn2UyM6gqrQ1lgXB-OtW851M9lud8,309
+flowchat-1.1.4.dist-info/LICENSE,sha256=_qGUEDC7JHvluOwy6X0vTX4ZivJ1Jq9fD1uo8YNit8Y,1068
+flowchat-1.1.4.dist-info/METADATA,sha256=glYd1yAhr9eut0okmy9ecUta35lsSbh_ifie0u0o-VE,7676
+flowchat-1.1.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+flowchat-1.1.4.dist-info/top_level.txt,sha256=9PFIoHlG45Ck8HGtR102eacYuI5Ksk0dsv5ZMSxApRo,9
+flowchat-1.1.4.dist-info/RECORD,,
