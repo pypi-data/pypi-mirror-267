@@ -1,0 +1,59 @@
+#file: noinspection YAMLDuplicatedKeys
+#@formatter:off
+{% set ALL -%}
+      - GET
+      - POST
+      - DELETE
+      - PATCH
+      - PUT
+      - HEAD
+      - OPTIONS
+{% endset %}
+{% set AUTH -%}
+  authenticators:
+    - handler: cookie_session
+    - handler: anonymous
+  authorizer:
+    handler: remote_json
+  mutators:
+    - handler: header
+  errors:
+    - handler: json
+{% endset %}
+{% set PASS -%}
+  authenticators:
+    - handler: noop
+  authorizer:
+    handler: allow
+  mutators:
+    - handler: noop
+  errors:
+    - handler: json
+{% endset %}
+
+{% set plugins = config.plugins %}
+{% set app_with_rules %}
+  {% for plugin_output in plugin_outputs if plugins[plugin_output.config.name].enabled and plugin_output.oathkeeper_rules -%}
+    {{ plugin_output.config.name ~ '$' ~ '|' ~ plugin_output.config.name ~ '/' }}{{ '|' if not loop.last }}
+  {%- endfor %}
+{% endset %}
+
+- id: apps
+  match:
+    url: '{{ base_url }}app/<(?!(?:{{ app_with_rules }}))[^/]*><.*>'
+    methods:
+      {{ ALL }}
+  {{ AUTH }}
+
+{% for plugin_output in plugin_outputs %}
+  {% if plugins[plugin_output.config.name].enabled and plugin_output.oathkeeper_rules %}
+{{ plugin_output.oathkeeper_rules }}
+  {% endif %}
+{% endfor %}
+
+- id: catch-all
+  match:
+    url: '{{ base_url }}<(?!app/).*>'
+    methods:
+      {{ ALL }}
+  {{ PASS }}

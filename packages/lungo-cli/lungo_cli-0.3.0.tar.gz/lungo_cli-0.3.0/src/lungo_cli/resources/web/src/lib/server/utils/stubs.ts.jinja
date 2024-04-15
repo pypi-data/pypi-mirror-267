@@ -1,0 +1,15 @@
+import type { AppInfo } from "$lib/types"
+
+export function getAllApps(): AppInfo[] {
+    const apps = [
+        {% for plugin in plugin_outputs %}
+        {
+            name: "{{ plugin.config.name }}",
+            descriptiveName: "{{ plugin.config.descriptive_name or plugin.config.name|capitalize }}",
+            href: "/app/{{ plugin.config.name }}",
+        },
+        {% endfor %}
+    ]
+
+    return apps.sort((a, b) => a.descriptiveName.localeCompare(b.descriptiveName))
+}
