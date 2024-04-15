@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: tetraframework
+Version: 0.0.6
+Summary: Transition package to 'tetra'
+Home-page: https://www.tetraframework.com
+Author: Sam Willis
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tetra>=0.1.0
+
+# Tetra
+
+Full stack component framework for [Django](http://djangoproject.com) using [Alpine.js](https://alpinejs.dev)
+
+The package `tetraframework` was renamed to `tetra`: 
+This is just an empty transition package that depends on `tetra`.
+
+Ressources:
+* https://github.com/tetra-framework/tetra
+* https://www.tetraframework.com/
+
+For new projects, install:
+```bash
+python -m pip install tetra
+```
+
+If you already had `tetraframework` installed, you can just upgrade it, and remove the old package afterwords:
+
+```bash
+# upgrade tetraframework
+pip install -U tetraframework
+# This will install "tetra" as dependency...
+ 
+# now it should be safe to remove the old package:
+pip uninstall tetraframework
+```
