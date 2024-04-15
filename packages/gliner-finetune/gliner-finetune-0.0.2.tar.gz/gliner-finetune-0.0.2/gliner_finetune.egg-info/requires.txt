@@ -1,0 +1,9 @@
+gliner
+openai
+spacy
+scikit-learn
+torch
+transformers
+tqdm
+json
+dotenv
