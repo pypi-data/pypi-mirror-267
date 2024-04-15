@@ -1,0 +1,6 @@
+README.md
+setup.py
+haveenox.egg-info/PKG-INFO
+haveenox.egg-info/SOURCES.txt
+haveenox.egg-info/dependency_links.txt
+haveenox.egg-info/top_level.txt
