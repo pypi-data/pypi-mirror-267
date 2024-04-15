@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "PortableTab"
+version = "0.3.4"
+description = "Python package for serializing tables in portable format with Capnp."
+authors = ["Takeshi Sagara <sagara@info-proto.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "PortableTab"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+docopt = "^0.6.2"
+pycapnp = "^2.0.0"
+marisa-trie = ">=1.1.0"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
+flake8 = "*"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.1.1"
+
+[tool.poetry.group.doc.dependencies]
+sphinx = "<6"
+sphinx-rtd-theme = "^1.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+portabletab = "PortableTab.__main__:main"
