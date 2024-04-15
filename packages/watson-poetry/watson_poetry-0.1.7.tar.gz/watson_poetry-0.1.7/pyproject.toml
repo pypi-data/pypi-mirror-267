@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "watson-poetry"
+version = "0.1.7"
+description = "Build via maturin when changes are detected"
+authors = ["Jocelyn-Gas <jocelyn.gas@dillygence.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+poetry = "^1.8.2"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."poetry.application.plugin"]
+watson= "watson_poetry.plugin:PoetryPlugin"
+
+[tool.watson]
+always_compile_before_running = false
+compile_command = "maturin develop"
+run_in_venv = true
