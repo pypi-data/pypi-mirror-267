@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: OpenRAG
+Version: 0.0.1
+Summary: An open-source project focused on Retrieval-Augmented Generation (RAG)
+Author: zhaojianqiang
+Author-email: zhaojianqiang@foxmail.com
+Requires-Python: >=3.8

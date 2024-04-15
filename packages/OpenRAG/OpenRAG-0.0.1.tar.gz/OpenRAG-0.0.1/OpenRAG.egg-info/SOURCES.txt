@@ -1,0 +1,6 @@
+README.md
+setup.py
+OpenRAG.egg-info/PKG-INFO
+OpenRAG.egg-info/SOURCES.txt
+OpenRAG.egg-info/dependency_links.txt
+OpenRAG.egg-info/top_level.txt
