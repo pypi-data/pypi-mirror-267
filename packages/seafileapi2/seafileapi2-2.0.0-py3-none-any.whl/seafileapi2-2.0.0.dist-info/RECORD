@@ -1,0 +1,15 @@
+seafileapi/__init__.py,sha256=h5_UpxCbGm5hJhxPCM-nCpgwWH1HKYNwQ_xXRxT7QN0,37
+seafileapi/exceptions.py,sha256=earUrkuDjcJcdIAcPtdGLI_yw4q0CsbyAMHEDcxOPsU,618
+seafileapi/main.py,sha256=FQF82I67a9k3I-vkTd87-zwR4dEwBKGDzxfd8f3Avo4,7738
+seafileapi/utils.py,sha256=Cvq-u373B5BBnuZ17SBKMjvxKt164fBqtftEUdDMiNI,862
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=-j48hf6ZiLA3FxZgq5hZoNmHHemzicq-naSLC1gDhxE,29
+tests/fixtures.py,sha256=N5RFZF9Cnjx3Bk9S2jfHReRi9H4thdhALK2LZToV9nc,789
+tests/test_files.py,sha256=76iQHkz6qZknSsCPzS2TVB0EmLqKAY9O7Fjpcv9hoVE,11446
+tests/test_repos.py,sha256=n1JRhSY1UHHpqqGzK6TjuJIM-B0agegX-RSH5fpBM5g,921
+tests/utils.py,sha256=ezRUCdGLJcnveaCP9aSExBxyvDyJ9E0c1fqPbVXOm3U,295
+seafileapi2-2.0.0.dist-info/LICENSE,sha256=qK0xscP0DcpahBGTUbj6jdyGjt13-tio6_bY8tFvpK4,11324
+seafileapi2-2.0.0.dist-info/METADATA,sha256=xYiwZdoSpUyoKi8s9x_ioM1aSwkGgoj5NpMgXdmkBiU,305
+seafileapi2-2.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+seafileapi2-2.0.0.dist-info/top_level.txt,sha256=jrFpEKUmus7Wqe9EQ61FX_wT8F3yTqTw9EBEnXVsF0k,11
+seafileapi2-2.0.0.dist-info/RECORD,,
