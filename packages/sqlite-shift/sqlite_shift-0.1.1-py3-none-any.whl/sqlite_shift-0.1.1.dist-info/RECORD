@@ -1,0 +1,16 @@
+sqlite_shift/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sqlite_shift/base_migration.py,sha256=uS7oBO5fkHBgKrAp7NiS653AY7mJMCobYIr07MgD3H4,500
+sqlite_shift/main.py,sha256=03rXWBiNSmGMhZtSFtsLOIunO7hMoAaL_v1Vg77NVug,1359
+sqlite_shift/manager.py,sha256=VtHkA_D_FJdqEhj_r4qeCC8MkBWumGOBJDd3XTOHSsI,10511
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=hfnKwxriEf0UfUXrB_B9ONKMJzuBIJG5HvxgjpwWTXs,907
+tests/test_manager.py,sha256=D_Jjc5pECIfmzttGR1eDwmUSTIYDgc0WJl8kIHTSfKA,1344
+tests/schema_migrations/001_initial.py,sha256=oy5URfmbXQSTgKje79pTjKlGlXTwuJJymVTNcmx6vP0,593
+tests/schema_migrations/002_add_foriegn_key.py,sha256=Kyb2GWiD7x5rzK5TIiTT4LFer_OT_a5nGAn2IiRQGe4,445
+tests/schema_migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlite_shift-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sqlite_shift-0.1.1.dist-info/METADATA,sha256=LsCX591FosZdcAyYDC3jvh6J2XEYnrjxkYY1YA69RJg,6551
+sqlite_shift-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sqlite_shift-0.1.1.dist-info/entry_points.txt,sha256=1wIvREbPiKS4qjceNOBA1XLdXxPjhbl3GP2CJ94HbyY,56
+sqlite_shift-0.1.1.dist-info/top_level.txt,sha256=2uHWsQxgoeflXLNaEl67HYlr5Tsiyd82N6wJlsLYgF0,19
+sqlite_shift-0.1.1.dist-info/RECORD,,
