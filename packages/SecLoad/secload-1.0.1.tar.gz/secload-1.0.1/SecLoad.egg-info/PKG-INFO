@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: SecLoad
+Version: 1.0.1
+Summary: SecLoad SDK package for Roblox Script Builder APIs.
+Author: equsjd
+Keywords: roblox
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: license.txt
+Requires-Dist: requests_html
+Requires-Dist: lxml_html_clean
+
+# Secload SDK
+##### Made for Roblox SB games
+##### Created by equsjd and the help of Cparke
+
+![PyPI - Version](https://img.shields.io/pypi/v/secload)
+![PyPI - License](https://img.shields.io/badge/secload-MIT-license?label=license&link=https://opensource.org/license/mit)
+![Discord](https://img.shields.io/discord/1178213683839651891?logo=discord&logoColor=FFF&color=454FBF&link=https%3A%2F%2Fdiscord.gg%2FJJhxSTn6Nk)
+
+# Usage
+## Installation
+To install, run this in a CLI. It should automatically install the dependancies too
+```sh
+pip install secload
+```
+
+## Setting it up
+
+#### Getting an API Key
+Send a `POST` request to https://secload.scriptlang.com/secload/publicapi/CreateNewKey
+Or do it via https://secload.scriptlang.com/docs
+
+```py
+import requests
+                                                                                # Minimum key length is 25
+print(requests.post("https://secload.scriptlang.com/secload/publicapi/CreateNewKey", json={Length: 50}).text)
+```
+
+#### Making the code
+
+Create a `.py` file with the contents of:
+```py
+from SecLoad import ScriptType, SecLoad
+secload = SecLoad("Insert API Key here")
+# -> Errors if the API key does not exist
+```
+
+To add a script to SecLoad, do:
+```py
+from SecLoad import ScriptType, SecLoad
+secload = SecLoad("Insert API Key here")
+
+secload.CreateScript("scriptname", "source of the script (made for Roblox so its a lua script)", ScriptType.TEXT)
+# OR
+secload.CreateScript("scriptname", "/path/to/file", ScriptType.FILE)
+```
+
+To remove scripts, do:
+```py
+from SecLoad import ScriptType, SecLoad
+secload = SecLoad("Insert API Key here")
+
+secload.RemoveScript("scriptname")
+```
+
+To overwrite an existing script do:
+```py
+from SecLoad import ScriptType, SecLoad
+secload = SecLoad("Insert API Key here")
+
+secload.OverwriteScript("scriptname", "new source", ScriptType.TEXT)
+# OR
+secload.OverwriteScript("scriptname", "/path/to/file", ScriptType.FILE)
+```
+
+To view an existing script source, do:
+```py
+from SecLoad import ScriptType, SecLoad
+secload = SecLoad("Insert API Key here")
+
+secload.GetScriptSource("scriptname")
+```
+
+To list what scripts you have saved, do:
+```py
+from SecLoad import ScriptType, SecLoad
+secload = SecLoad("Insert API Key here")
+
+secload.ListScripts() # -> returns a python list
+```
+
+To generate a key, do:
+```py
+from SecLoad import ScriptType, SecLoad
+secload = SecLoad("Insert API Key here")
+
+secload.GenerateKey("scriptname", "robloxuser (REQUIRED)", "expire time") # -> returns the script EXAMPLE: require(idhere)("key", "key2", "username", true)
+```
+
+#### All Functions
+```py
+from SecLoad import ScriptType, SecLoad
+secload = SecLoad("Insert API Key here")
+
+secload.AddScript()
+secload.RemoveScript()
+secload.OverwriteScript()
+secload.GetScriptSource() # -> returns a string with the script source
+secload.ListScripts() # -> returns a python list
+secload.GenerateKey() # -> returns the script EXAMPLE: require(idhere)("key", "key2", "username", true)
+```
