@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: starlette-ras-handle
+Version: 1.0.0
+Summary: This library patches starlette, so you can handle "RuntimeError: Caught handled exception, but response already started." exception
+License: MIT
+Author: sushka
+Author-email: r.m.poltorabatko@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: starlette (>=0.37.2,<0.38.0)
+Description-Content-Type: text/markdown
+
+# Starlette RAS-handler
+This library adds the ability to handle `RuntimeError: Caught handled exception, but response already started.` error, so you can silent it, or do whatever you want
+
+## Usage
+1. Define an async function that accepts `(Exception, Request | WebSocket)` and returns `None`
+    ```python
+    async def print_handler(exc: Exception, request: Request | WebSocket) -> None:
+        print("Caught", exc)
+    ```
+
+2. Patch!
+    ```python
+    from handler import print_handler
+    
+    from starlette_ras_handle import handle_starlette_ras
+    handle_starlette_ras(print_handler)
+    
+    # other imports...
+    ```
+   
+**IMPORTANT:** If you want the patch to work properly, you should use it before you import anything, related to `starlette` (e.g. `FastAPI`)
+
+You can check out an example in `/examples/example.py`
