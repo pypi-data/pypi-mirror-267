@@ -1,0 +1,14 @@
+archerdfu/bmp/__init__.py,sha256=oaqt8wmELNoZzUC_5-cKANXYQI2MSgPKP71CqpuS9u4,92
+archerdfu/bmp/__main__.py,sha256=CSYmZLcXHX8Zs4LydgS7-KmdbG6ocjGlYgKHuUTXItE,1980
+archerdfu/bmp/caliber_icons.py,sha256=N_BilEhHY_qB1CXzzpFlcdYNZqp4DGuCRvGgXoAbPcU,3255
+archerdfu/bmp/processing.py,sha256=Sx8Zrg3x6WMZy0D-Sz9sLxRPkuhVURNVoAl_YT9xt_Q,4143
+archerdfu/bmp/__pyinstaller/__init__.py,sha256=-c4Zo8nQGKAm8wc_LDscxMtK7zr_YhZwRnC9CMruUBE,72
+archerdfu/bmp/__pyinstaller/hook-archerdfu.py,sha256=JWTE2ac3UTNKDvDyzHOqhVyNfZpLXF3JKvMiYrxh2Gc,99
+archerdfu/bmp/fonts/default.flf,sha256=P-2e_5KO6hMWkmmXep2Q9Zs3I_xfon1paPFCiL99hd4,10742
+archerdfu/bmp/fonts/pixel.flf,sha256=NE6wfdzU-d1Ytqyqk8J053o9Uct2aPqVY_v1mnllz4I,5619
+archerdfu.bmp-1.0.1.dist-info/LICENSE,sha256=L8vFn9ZHT3RRpTtzuzhkgDTutx_NNhMzCw_9YpbZR4Q,35129
+archerdfu.bmp-1.0.1.dist-info/METADATA,sha256=ak0DlrXZ15RFP-jJG3NEZoi9OcIjVDwjLmbQLIAZSeo,41756
+archerdfu.bmp-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+archerdfu.bmp-1.0.1.dist-info/entry_points.txt,sha256=Na6lhA8DfB5XuePNBnCG67jIP2ps6UlF7EetaJvu4Pc,63
+archerdfu.bmp-1.0.1.dist-info/top_level.txt,sha256=b876wBTlYt-fmGQZA2A2zXdd2Qgx2n7smsZRQ_CVTSY,10
+archerdfu.bmp-1.0.1.dist-info/RECORD,,
