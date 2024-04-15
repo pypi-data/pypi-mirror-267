@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: jean_flores
+Version: 0.0.1
+Summary: Trabajo de modulos
+Author: CARLO_10
+Author-email: antonicontrerasaveiro@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# Trabajo de modulos 
+
+## Este trabajo trata sobre la creacion de un paquete y subirlo a python 
+
+### uso del programa:
+'''
+from adrian_unoja import cal
+
+
+print(cal.area_cir(5))
+'''
