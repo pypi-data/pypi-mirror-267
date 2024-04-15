@@ -1,0 +1,13 @@
+vloc/__init__.py,sha256=47q6JfqSshzyfxTUDdbTHh1yq0Ew4GAyrq2IWoatIXo,180
+vloc/__detect__/__detect__.py,sha256=WrIVXX7WmHCOJPR3k08bUOZjzyOjbYI7AdutoBlRjLQ,5816
+vloc/__detect__/__info__.py,sha256=yYt5v27o9KRCuQN9awojjaoDjp8XHSaOWOVbJtPWwbM,152
+vloc/exception/__exception__.py,sha256=iUhHJadvuPiHI6iyUjexyOEiF2G-jruNc47msBG6WPA,209
+vloc/exception/__init__.py,sha256=cngFL9AKd77nmlIhFnHHa5fgWnFtSXxJdM7bUsNAndU,114
+vloc/module/__config__.py,sha256=31fb_jI9tffEad1oklECY5_8Ew25HoYs7WsJD-rA56A,2293
+vloc/module/__init__.py,sha256=8yzuK0UMfDYBEkGQx0qozIhl2AHjzSxUIG32506VYjw,67
+vloc/module/__module__.py,sha256=WMuEUuPXuIsvgWMRM00YiRKzEyNloBRtqv2ml16_wsM,813
+vloc-0.1.17.dist-info/LICENSE.txt,sha256=WvXSU3See8rbEHLHYL142w6BJZF7pWXftHJYy7QN5AI,1064
+vloc-0.1.17.dist-info/METADATA,sha256=rM8NSy1goQ76yCvR1nXJI-4AQPuX1zucjriy8MDoG-c,497
+vloc-0.1.17.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+vloc-0.1.17.dist-info/top_level.txt,sha256=FJ8kiX7LWHohRaRq43MHRIvzgWoNe3t_KzwoLDCvI_g,5
+vloc-0.1.17.dist-info/RECORD,,
