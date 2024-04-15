@@ -1,0 +1,16 @@
+Label {
+    width: 100%;
+    text-align: center;
+}
+
+Rule {
+    margin: 0;
+}
+
+Horizontal {
+    align: center top;
+}
+
+Button {
+    margin: 1 2;
+}
