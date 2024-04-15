@@ -1,0 +1,29 @@
+Metadata-Version: 2.3
+Name: sprinko
+Version: 0.9.0b1
+Summary: sprinkles on scoop
+Author-email: ZackaryW <36378555+ZackaryW@users.noreply.github.com>
+Requires-Python: >=3.8
+Requires-Dist: click>=8.1.7
+Requires-Dist: keyrings-cryptfile>=1.3.9
+Requires-Dist: ptpython>=3.0.26
+Requires-Dist: pymasscode>=1.0.0b3
+Requires-Dist: readchar>=4.0.6
+Description-Content-Type: text/markdown
+
+# sprinko
+sprinkles on scoop
+
+## Development Status
+Experimental/ Proof of concept
+
+## Warning
+This tool is very likely to allow arbitary code execution in its current stage of implementations. Use with high levels of caution.
+
+## Features
+[x] support quick code execution
+[ ] saving profiles
+[ ] generating file based on cmd
+[ ] support live updating from gist and repos / remote
+[ ] unifying a config.toml
+[ ] more consistent security features

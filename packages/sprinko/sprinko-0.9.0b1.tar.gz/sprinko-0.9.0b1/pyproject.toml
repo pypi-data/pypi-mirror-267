@@ -1,0 +1,39 @@
+[project]
+name = "sprinko"
+version = "0.9.0b1"
+description = "sprinkles on scoop"
+authors = [
+    { name = "ZackaryW", email = "36378555+ZackaryW@users.noreply.github.com" }
+]
+dependencies = [
+    "keyrings-cryptfile>=1.3.9",
+    "pymasscode>=1.0.0b3",
+    "click>=8.1.7",
+    "readchar>=4.0.6",
+    "ptpython>=3.0.26",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pip>=24.0",
+    "psutil>=5.9.8",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sprinko"]
+
+[project.scripts]
+sprinko = "sprinko.__main__:run"
+
+[tool.ruff.extend-per-file-ignores]
+"**/std.py" = ["F401"]
