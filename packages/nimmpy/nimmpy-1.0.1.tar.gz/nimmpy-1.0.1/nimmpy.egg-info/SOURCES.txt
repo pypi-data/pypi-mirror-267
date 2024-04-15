@@ -1,0 +1,9 @@
+README.md
+setup.py
+nimmpy.egg-info/PKG-INFO
+nimmpy.egg-info/SOURCES.txt
+nimmpy.egg-info/dependency_links.txt
+nimmpy.egg-info/requires.txt
+nimmpy.egg-info/top_level.txt
+nimpy/__init__.py
+nimpy/nimpy.py
