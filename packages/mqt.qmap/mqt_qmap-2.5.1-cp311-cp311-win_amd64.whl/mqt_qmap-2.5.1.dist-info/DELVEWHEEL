@@ -1,0 +1,2 @@
+Version: 1.5.4
+Arguments: ['C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-x2czqt0x\\cp311-win_amd64\\build\\venv\\Scripts\\delvewheel', 'repair', '-v', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-x2czqt0x\\cp311-win_amd64\\repaired_wheel', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-x2czqt0x\\cp311-win_amd64\\built_wheel\\mqt_qmap-2.5.1-cp311-cp311-win_amd64.whl']
