@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: questest
+Version: 0.1
+Summary: Console utility ro interactively choose tests and run them with breakpoints
+Home-page: https://github.com/nasonovandrey/questest
+Author: Andrei Nasonov
+Author-email: andrey.m.nasonov@gmail.com
+License: BSD
+License-File: LICENSE.md
+Requires-Dist: pytest==7.2.2
+Requires-Dist: ipytest==0.14.0
