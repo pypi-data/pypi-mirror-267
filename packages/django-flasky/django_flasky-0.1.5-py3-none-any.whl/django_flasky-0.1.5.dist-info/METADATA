@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: django-flasky
+Version: 0.1.5
+Summary: django-flasky is now nanodjango
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: nanodjango
+
+# django-flasky is now nanodjango
+
+This package has been renamed. Use `pip install nanodjango` instead.
+
+New package: https://pypi.org/project/nanodjango/
