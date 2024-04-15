@@ -1,0 +1,11 @@
+swpclib/__init__.py,sha256=iS4tngOaOVvovB1KIPlTY2CDjw7Oc3RwekMRu9kiA-k,161
+swpclib/alerts.py,sha256=u35FIR1-eLJFdkwU6KN7kIg87BaT2tvMma7IgrGYVrI,7052
+swpclib/animate.py,sha256=tMtt0kyXFFntvJojjrf31Dk80vaFqxDQwOs3yPGa5tA,867
+swpclib/cli.py,sha256=3PyadKOMAiVmTwxgeuMxDED0dOMGi49M-xXRHD0Lc5Y,3626
+swpclib/swpclib.py,sha256=szjODodwZ2g1KdlILSwCUUHb20eOnzJlnSuJIoCowEA,8167
+swpclib-4.3.1.dist-info/LICENSE,sha256=uXRyWcqLCv0CAfmIv0Al10sR8fHcbhst6QbR2UIvvgE,1071
+swpclib-4.3.1.dist-info/METADATA,sha256=cJq3RRFUhV8U8SJRUJL1VbG4i4fjiSWmtlEUN0MFrM8,459
+swpclib-4.3.1.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+swpclib-4.3.1.dist-info/entry_points.txt,sha256=uwEXb5URfvTag5GYiTXRJmb1YttttsyUZlW-b1cO8Pc,101
+swpclib-4.3.1.dist-info/top_level.txt,sha256=g0QJZt7EfpxJK5xg65Stf1Ly4RjqB-TtHxltfSxTwf8,8
+swpclib-4.3.1.dist-info/RECORD,,
