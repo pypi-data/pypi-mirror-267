@@ -1,0 +1,3 @@
+[console_scripts]
+test-option-deps=test_option_deps:cli
+

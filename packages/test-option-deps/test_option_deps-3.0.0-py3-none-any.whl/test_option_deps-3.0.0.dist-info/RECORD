@@ -1,0 +1,5 @@
+test_option_deps/__init__.py,sha256=IUO0zcj6bJhsj0ANbb2N3uRpzMs7_Y3zvL9R8vNtrC4,37
+test_option_deps-3.0.0.dist-info/METADATA,sha256=333dKztlREchSufaNIYwLialbzRyslnrlu4N1lonjT8,545
+test_option_deps-3.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+test_option_deps-3.0.0.dist-info/entry_points.txt,sha256=1ePjAWG7uKRAb_5Q3VKYhlBnOtDx3YDxIhWDHwyT85c,57
+test_option_deps-3.0.0.dist-info/RECORD,,
