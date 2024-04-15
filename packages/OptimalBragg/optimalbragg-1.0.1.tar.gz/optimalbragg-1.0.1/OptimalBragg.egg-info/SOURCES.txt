@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+OptimalBragg/__init__.py
+OptimalBragg/analysis.py
+OptimalBragg/costs.py
+OptimalBragg/layers.py
+OptimalBragg/materials.py
+OptimalBragg/noise.py
+OptimalBragg/optimizer.py
+OptimalBragg/plot.py
+OptimalBragg.egg-info/PKG-INFO
+OptimalBragg.egg-info/SOURCES.txt
+OptimalBragg.egg-info/dependency_links.txt
+OptimalBragg.egg-info/requires.txt
+OptimalBragg.egg-info/top_level.txt
