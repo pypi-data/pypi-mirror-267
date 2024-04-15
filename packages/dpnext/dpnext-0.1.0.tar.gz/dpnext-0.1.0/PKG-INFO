@@ -1,0 +1,67 @@
+Metadata-Version: 2.3
+Name: dpnext
+Version: 0.1.0
+Summary: Python implementation of the Data Package standard
+Project-URL: homepage, https://github.com/dpnext/dpnext-py
+Author-email: Evgeny Karev <eskarev@gmail.com>
+License-Expression: MIT
+Keywords: data package,data validation,json schema,json table schema,open data,tabular data package
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Requires-Dist: fsspec[http]>=2023.1.0
+Requires-Dist: jsonpath>=0.80
+Requires-Dist: jsonschema>=3.0
+Requires-Dist: pydantic>=2.0
+Requires-Dist: python-slugify>=6.0
+Requires-Dist: pyyaml>=5.0
+Requires-Dist: typing-extensions>=4.0
+Provides-Extra: cli
+Requires-Dist: rich>=10.0; extra == 'cli'
+Requires-Dist: typer>=0.12; extra == 'cli'
+Provides-Extra: dcat
+Requires-Dist: rdflib>=6.0; extra == 'dcat'
+Provides-Extra: dev
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: httpx; extra == 'dev'
+Requires-Dist: ipython; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Requires-Dist: mkdocs; extra == 'dev'
+Requires-Dist: mkdocs-material; extra == 'dev'
+Requires-Dist: mkdocstrings[python]; extra == 'dev'
+Requires-Dist: moto; extra == 'dev'
+Requires-Dist: neovim; extra == 'dev'
+Requires-Dist: oauth2client; extra == 'dev'
+Requires-Dist: pyright; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: pytest-dotenv; extra == 'dev'
+Requires-Dist: pytest-lazy-fixtures; extra == 'dev'
+Requires-Dist: pytest-mock; extra == 'dev'
+Requires-Dist: pytest-only; extra == 'dev'
+Requires-Dist: pytest-timeout; extra == 'dev'
+Requires-Dist: pytest-vcr; extra == 'dev'
+Requires-Dist: requests-mock; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Requires-Dist: yattag; extra == 'dev'
+Provides-Extra: pandas
+Requires-Dist: isodate>=0.6; extra == 'pandas'
+Requires-Dist: numpy>=1.0; extra == 'pandas'
+Requires-Dist: pandas-stubs>=1.0; extra == 'pandas'
+Requires-Dist: pandas>=1.0; extra == 'pandas'
+Provides-Extra: polars
+Requires-Dist: polars-lts-cpu>=0.10; extra == 'polars'
+Provides-Extra: sql
+Requires-Dist: sqlalchemy>=1.4; extra == 'sql'
+Description-Content-Type: text/markdown
+
+# dpnext-py
