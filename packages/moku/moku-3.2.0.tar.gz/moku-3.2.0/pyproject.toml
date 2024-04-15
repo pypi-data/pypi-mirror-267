@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moku"
+version = "3.2.0"
+dependencies = ["requests>=2.18.0", "zeroconf"]
+requires-python = ">=3.8"
+authors = [
+    { name = "Liquid Instruments", email = "info@liquidinstruments.com" },
+]
+maintainers = [
+    { name = "Liquid Instruments", email = "info@liquidinstruments.com" },
+]
+description = "Python scripting interface to the Liquid Instruments Moku hardware"
+readme = "README.rst"
+license = { file = "LICENSE.txt" }
+keywords = [
+    "moku",
+    "mokulab",
+    "mokugo",
+    "mokupro",
+    "liquid instruments",
+    "test",
+    "measurement",
+    "lab",
+    "equipment",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Homepage = "https://liquidinstruments.com"
+Documentation = "https://apis.liquidinstruments.com"
+Repository = "https://github.com/me/spam.git"
+"Bug Tracker" = "https://github.com/me/spam/issues"
+Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
+
+[project.scripts]
+spam-cli = "spam:main_cli"
+
+[project.gui-scripts]
+spam-gui = "spam:main_gui"
+
+[project.entry-points."spam.magical"]
+tomatoes = "spam:main_tomatoes"
