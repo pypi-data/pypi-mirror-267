@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+ahmedPy.egg-info/PKG-INFO
+ahmedPy.egg-info/SOURCES.txt
+ahmedPy.egg-info/dependency_links.txt
+ahmedPy.egg-info/top_level.txt
+code/__init__.py
+code/ahmedPy.py
