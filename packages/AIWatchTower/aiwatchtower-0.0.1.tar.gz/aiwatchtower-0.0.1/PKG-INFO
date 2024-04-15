@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: AIWatchTower
+Version: 0.0.1
+Summary: A library of wrapper functions for OpenAI's API and Azure Congnitive Services API
+Author-email: Harman Khungura <khungura.harman@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: openai==1.17.1
+Requires-Dist: azure-ai-documentintelligence==1.0.0b3
+
+# AIWatchTower
+
+This is a set of wrapper functions and objects to aid in the use of OpenAI's API and Azure's AI API

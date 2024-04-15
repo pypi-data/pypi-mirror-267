@@ -1,0 +1,22 @@
+[project]
+name = "AIWatchTower"
+version = "0.0.1"
+dependencies = [
+  "openai==1.17.1",
+  "azure-ai-documentintelligence==1.0.0b3", 
+]
+authors = [
+  { name="Harman Khungura", email="khungura.harman@gmail.com" },
+]
+description = "A library of wrapper functions for OpenAI's API and Azure Congnitive Services API"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

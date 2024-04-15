@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+AIWatchTower/AIWatchTower.py
+AIWatchTower/__init__.py
+AIWatchTower/__main__.py
+AIWatchTower.egg-info/PKG-INFO
+AIWatchTower.egg-info/SOURCES.txt
+AIWatchTower.egg-info/dependency_links.txt
+AIWatchTower.egg-info/requires.txt
+AIWatchTower.egg-info/top_level.txt
+AIWatchTower/tests/__init__.py
