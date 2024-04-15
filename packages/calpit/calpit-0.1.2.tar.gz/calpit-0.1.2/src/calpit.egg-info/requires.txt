@@ -1,0 +1,16 @@
+numpy
+scipy
+prettytable
+torch
+torchvision
+tqdm
+
+[dev]
+asv==0.6.3
+black
+jupyter
+mypy
+pre-commit
+pylint
+pytest
+pytest-cov
