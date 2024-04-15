@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: sparrowDB
+Version: 0.1
+Summary: 基于Python字典的内存数据库
+Requires-Python: >=3.11
+Requires-Dist: sparrowApi
