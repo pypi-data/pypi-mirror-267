@@ -1,0 +1,51 @@
+---
+- hosts: all
+  become: true
+  gather_facts: true
+  tasks:
+    - name: "Include standard Ansible role"
+      include_role:
+        name: "{{ item }}"
+      loop:
+        - apt-update
+        - apache2
+        - php
+        - pip
+        - mysql
+        - wordpress
+
+    - name: Conditionally include SSL role
+      include_role:
+        name: ssl-selfsigned
+      when: ssl_selfsigned
+
+    # It's important that this runs after the selfsigned certificates,
+    # if those are being used, but before Certbot, if that's being used.
+    - name: Include Apache virtual host role
+      include_role:
+        name: apache-vhosts
+
+    - name: Conditionally include SSL role
+      include_role:
+        name: ssl-certbot
+      when: ssl_certbot
+
+    - pause:
+        seconds: "{{ wordpress_5_minute_install_seconds }}"
+        prompt: "Please navigate to your site right now to complete the 'Famous 5 Minute WordPress Installation'. This is required for the next step of the script to suceed (setting some configurations in the database), and it's also important for security reasons that you do this right away. You have exactly {{ wordpress_5_minute_install_seconds }} seconds to complete this step."
+      when: ssl_certbot
+
+    - name: Conditionally include WordPress domain configuration - needed for SSL
+      include_role:
+        name: domain-for-wordpress
+      when: ssl_certbot
+
+    - name: Conditionally include custom Apache configuration
+      include_role:
+        name: apache-conf
+      when: ssl_selfsigned
+
+    - name: Conditionally include fail2ban role
+      include_role:
+        name: fail2ban
+      when: not insecure_skip_fail2ban
