@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bicleaner-ai-glove
+Version: 0.2.1
+Summary: glove-python fork for bicleaner-ai
+Home-page: https://github.com/bitextor/bicleaner-ai-glove
+Download-URL: https://github.com/bitextor/bicleaner-ai-glove/releases/
+Author: Maciej Kula
+Maintainer: Jaume Zaragoza
+Maintainer-email: jzaragoza@prompsit.com
+License: Apache 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+
