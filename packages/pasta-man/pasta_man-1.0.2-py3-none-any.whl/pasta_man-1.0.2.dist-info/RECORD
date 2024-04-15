@@ -1,0 +1,14 @@
+pasta_man/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pasta_man/__main__.py,sha256=VhJA5YM9eQ7igGaGSJZUG_RUHL4AQxn1sySyrizqmR8,129
+pasta_man/encryption.py,sha256=3QWyNoyzhcwspuf184_OlHn7WV_aIRVBR1-X6o2LxVQ,776
+pasta_man/exceptions.py,sha256=h35WaUp5SELZhadjpG7WXOagHFK2PBWgvuLcVlu15PI,237
+pasta_man/gui.py,sha256=Ga6QDgep-1j5_DGFdrP2muOhipYDcdZV6XnL5lHUF88,10798
+pasta_man/helptext.py,sha256=nNquEQkne4Svxak56csz1y0QrehPfx6NV3_McGahKkU,639
+pasta_man/pasta_man.py,sha256=bKGxoybrf7fYqBbUBnwL8YQZPoyrWoQmWuTX71o1mXw,3623
+pasta_man/targets.py,sha256=Fvt876iR9_tRT2dXK3F8vecW5L8r2271q15pc_vaduQ,9793
+pasta_man-1.0.2.dist-info/LICENSE,sha256=S4rDwZvYPJR0ElFfB7WJFdYclKHHcWjEnl8rmul28FE,1074
+pasta_man-1.0.2.dist-info/METADATA,sha256=OWDrIxJmAY079_r1bdqfF0aAO1zS5To9fMorj5d_-nk,5764
+pasta_man-1.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pasta_man-1.0.2.dist-info/entry_points.txt,sha256=Zyiy5X3uDVKztTU5wewZb5yWk0Y0Rr5cndtsOxBK1EE,55
+pasta_man-1.0.2.dist-info/top_level.txt,sha256=-AN0YqCC5sDULIfTH9QeXa73hsC8uodGXUMcvIhvkdQ,10
+pasta_man-1.0.2.dist-info/RECORD,,
