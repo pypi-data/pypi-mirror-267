@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: utjls
+Version: 0.1.0
+Summary: This utils package attempts to chunk information, improve workflow and acts as a home for continious improvement
+Author: cltj
+Author-email: tj@cloudlink.ai
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: azure-devops (>=7.1.0b4,<8.0.0)
+Requires-Dist: azure-identity (>=1.16.0,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# utils
+
+This utils package attempts to chunk information, improve workflow and acts as a home for continious improvement
+
+
