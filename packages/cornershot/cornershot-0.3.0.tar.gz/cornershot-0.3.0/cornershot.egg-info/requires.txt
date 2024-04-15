@@ -1,0 +1,7 @@
+impacket==0.9.23
+
+[dev]
+check-manifest
+
+[test]
+coverage
