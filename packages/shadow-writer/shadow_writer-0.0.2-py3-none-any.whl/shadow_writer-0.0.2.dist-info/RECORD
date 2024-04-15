@@ -1,0 +1,12 @@
+shadow_writer/agents/editor.py,sha256=hdQbDrpzNVhdBRQgFvmqfj5TnlQ0_lGfx2O0aYAPHqw,3139
+shadow_writer/agents/researcher.py,sha256=kKVIMxqMLWkc6yKv2GRUX8IEFgiij4A4eofNA-Gbty4,4644
+shadow_writer/agents/writer.py,sha256=5S4OKGh6cJOktQcH3W7BM7CwBmy9J4a63BMlhHjlYHg,3794
+shadow_writer/llm/gemini.py,sha256=L3ytb0HMoekuUwDwxhbpMlmqWahyJYLydq717w5D4nc,722
+shadow_writer/llm/openai.py,sha256=G66Td3FAKqu258dB6cwvB-IOhvhrlrX8sWzUWBA3VVQ,817
+shadow_writer/models/api.py,sha256=p_-H1SAYiMM4DF1J6cvJaPDhX6PKmTIA4IIAGRHap-c,930
+shadow_writer/rag/tidb.py,sha256=INky-mjM-zklFy9mks4dMujSVVL4rDOM8sXDofYJHrg,7682
+shadow_writer/server/main.py,sha256=vgE4E9qB7ZoxkXJHkDOXLaWbdHcONnTcaN9k44LoqSM,4631
+shadow_writer-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+shadow_writer-0.0.2.dist-info/METADATA,sha256=eRzzN8UxemaglN6SivId3R2OMy8k7UsAyfQXtF_P-Qo,966
+shadow_writer-0.0.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+shadow_writer-0.0.2.dist-info/RECORD,,
