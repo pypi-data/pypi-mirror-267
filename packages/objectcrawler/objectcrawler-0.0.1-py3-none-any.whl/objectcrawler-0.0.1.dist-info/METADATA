@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: objectcrawler
+Version: 0.0.1
+Summary: simple object crawling debug tool
+Author-email: Louis Beal <louis.j.beal@gmail.com>
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+

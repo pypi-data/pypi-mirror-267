@@ -1,0 +1,9 @@
+objectcrawler/__init__.py,sha256=eg41c6SvMLBTa8Wa5EDydVUDpxZRWfo6MgDVqcr9sWc,391
+objectcrawler/crawler.py,sha256=lpttunYp0r9e34XHkFiDwRoItAX85_MamYgjyqvu9S4,9635
+objectcrawler/entity.py,sha256=U9Yb75g4vKbelueQfolHlbWu-5aPqQ8EZ3D2VW_rZAs,2666
+objectcrawler/get_assignment.py,sha256=ODavINE6JaVoQdfi2nQs0JmOHSDr_4jVxwh2-_FxAd0,565
+objectcrawler-0.0.1.dist-info/LICENSE,sha256=-jxz-1VFQRI3dRI2YWBsBDL_NLBZtPWlsThHw6bIgtI,1083
+objectcrawler-0.0.1.dist-info/METADATA,sha256=vpD7_x_A_DKbUQkzYVcjubsVVWWxOxqG8s9YyQdgU9Q,293
+objectcrawler-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+objectcrawler-0.0.1.dist-info/top_level.txt,sha256=GQVqjmeembelUBmCWEjeS3cwsPA7DvJhKTfG-o97PIE,14
+objectcrawler-0.0.1.dist-info/RECORD,,
