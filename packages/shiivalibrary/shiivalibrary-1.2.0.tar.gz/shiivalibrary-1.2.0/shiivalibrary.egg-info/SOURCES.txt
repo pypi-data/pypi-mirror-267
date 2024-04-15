@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+shiivalibrary/__init__.py
+shiivalibrary/main.py
+shiivalibrary.egg-info/PKG-INFO
+shiivalibrary.egg-info/SOURCES.txt
+shiivalibrary.egg-info/dependency_links.txt
+shiivalibrary.egg-info/top_level.txt
