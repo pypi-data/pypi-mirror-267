@@ -1,0 +1,8 @@
+torch<2.3,>=2.0
+
+[dev]
+mypy
+ruff
+
+[test]
+torchvision<0.18,>=0.15
