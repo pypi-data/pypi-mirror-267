@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+danila.egg-info/PKG-INFO
+danila.egg-info/SOURCES.txt
+danila.egg-info/dependency_links.txt
+danila.egg-info/requires.txt
+danila.egg-info/top_level.txt
