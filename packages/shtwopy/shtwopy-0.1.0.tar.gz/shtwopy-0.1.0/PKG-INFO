@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: shtwopy
+Version: 0.1.0
+Summary: Convert a python script into a decrypted shell script and vice versa.
+Home-page: https://github.com/grethler/sh2py
+Download-URL: https://github.com/grethler/Sh2py/archive/refs/tags/0.1.0.tar.gz
+Author: Florian Grethler
+License: GPL-3.0
+License-File: LICENSE

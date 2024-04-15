@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+shtwopy/__init__.py
+shtwopy.egg-info/PKG-INFO
+shtwopy.egg-info/SOURCES.txt
+shtwopy.egg-info/dependency_links.txt
+shtwopy.egg-info/top_level.txt
