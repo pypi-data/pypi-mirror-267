@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: sova
+Version: 0.1.0
+Summary: SLAM on Voxel Alignment
+Home-page: https://github.com/prime-slam/
+License: APACHE
+Author: Pavel Mokeev
+Author-email: pav3l.mokeev@gmail.com
+Requires-Python: ==3.10.*
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: PyYAML (>=6.0.1,<6.1.0)
+Requires-Dist: mrob (>=0.0.12,<0.0.13)
+Requires-Dist: numpy (>=1.26.0,<2.0.0)
+Requires-Dist: octreelib (>=0.0.6,<0.0.7)
+Requires-Dist: open3d (>=0.17.0,<0.18.0)
+Requires-Dist: scikit-learn (>=1.3.1,<2.0.0)
+Project-URL: Repository, https://github.com/prime-slam/sova
+Description-Content-Type: text/markdown
+
+<img src="assets/logo.png">
+SOVA is a SLAM on Voxel Alignment and an open-source Python library, designed for fast 
+and adaptive comparison of different approaches to solving the voxel-based planar SLAM problem.
+
+Our main goal is to provide extendable, simple and efficient interfaces for
+testing various voxel SLAM hypotheses, which include different subdivision/segmenter/backend criteria.
+
+[![Tests](https://github.com/prime-slam/sova/actions/workflows/tests.yaml/badge.svg)](https://github.com/prime-slam/sova/actions/workflows/tests.yaml)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+- - -
+# Installation
+
+To use this library you need to:
+
+1. Download and install Python 3.10 from the [official website](https://www.python.org/downloads/).
+2. Install pip package:
+   ```bash
+   pip install sova
+   ```
+   If you want to use `MROBBackend` robust optimisations, you have to install mrob library manually:
+   1. Download [wheel from source](https://drive.google.com/file/d/1rUdbybNvHx80ykr62aceAcBIPtlntWIz/view?usp=sharing)
+   2. Install mrob from wheels
+   ```bash
+   python -m pip install mrob --no-index --find-links wheel/ --force-reinstall
+   ```
+
+Now you have everything you need to run your voxel-based pipeline.
+
+# Examples
+
+Examples of using the voxel-based pipeline are presented in the [`examples`](https://github.com/prime-slam/sova/tree/main/examples) 
+directory with the all necessary instructions of how to run them.
+
+# Contributing
+
+To contribute to the project you must:
+1. Get to know the project structure:
+    ```
+    sova
+    ├── backend
+    ├── filter
+    ├── pipeline
+    ├── segmenter
+    ├── subdivider
+    ├── typing
+    └── utils
+        ├── dataset_reader
+    ```
+2. Implement new subdivision/segmenter/backend approach which satisfy the relevant interface.
+3. Create PullRequest to the repository.
+4. Go through the review and wait for your code to appear in the main branch.
+
