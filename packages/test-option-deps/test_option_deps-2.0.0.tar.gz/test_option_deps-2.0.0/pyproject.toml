@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "test-option-deps"
+version = "2.0.0"
+description = "Testing optional dependencies"
+authors = ["Saipraneeth <2506664+msaipraneeth@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+smart-open = [
+	{version = "^7.0.4"},
+	{extras = ["all"], version = "^7.0.4", optional = true}
+]
+
+[tool.poetry.scripts]
+test-option-deps = 'test_option_deps:cli'
+
+[tool.poetry.extras]
+all = ['smart-open']
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
