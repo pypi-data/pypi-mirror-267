@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bencode2
+Version: 0.0.5
+Summary: bencode serialize/deserialize library
+Home-page: https://github.com/trim21/py-bencode
+Author: trim21
+Author-email: trim21.me@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# A bencode serialize/deserialize library based on cython
+
