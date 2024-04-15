@@ -1,0 +1,7 @@
+README.md
+setup.py
+django_flasky.egg-info/PKG-INFO
+django_flasky.egg-info/SOURCES.txt
+django_flasky.egg-info/dependency_links.txt
+django_flasky.egg-info/requires.txt
+django_flasky.egg-info/top_level.txt
