@@ -1,0 +1,10 @@
+apiModels/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apiModels/get_bibtex_from_crossref.py,sha256=MJ11LwTGv_iGjrzBkOuWTN_Buk5k3ZcIkL6SEdyvEPU,2848
+apiModels/get_bibtex_from_google_scholar.py,sha256=2FdzXuEH9MUwLxBqV2pDyhXUT6vv7KpWU2RdCF3z-DA,3465
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/get_bibtex_from_link.py,sha256=2O5OmK5T7O33HeSjbwmYXyqC_D9mjVHcriwP1AM1i90,337
+utils/verify.py,sha256=DEH6ULrBPxU0t3RCfBg1EpE48vutGLzFpWbaUT0US18,607
+get_bibtex-1.0.1.dist-info/METADATA,sha256=8t547hcrsC5tI9vFyGbIjPIp-j3pVR1FoWRCvFhO_qQ,1352
+get_bibtex-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+get_bibtex-1.0.1.dist-info/top_level.txt,sha256=3dQcUG0jEZ68n0Ak0qDmkd-g7pEM5aKmGvPsUWtP-JA,16
+get_bibtex-1.0.1.dist-info/RECORD,,
