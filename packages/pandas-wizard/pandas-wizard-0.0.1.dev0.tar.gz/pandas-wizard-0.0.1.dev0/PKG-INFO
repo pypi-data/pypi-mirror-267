@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pandas-wizard
+Version: 0.0.1.dev0
+Summary: Utility Functions, Wrappers for pandas Module
+Home-page: https://github.com/sharkutilities/pandas-wizard
+Author: shark-utilities developers
+Author-email: neuralNOD@outlook.com
+Project-URL: Issue Tracker, https://github.com/sharkutilities/pandas-wizard/issues
+Keywords: pandas,utility,utilities,util,utils,wrappers,data science,data analysis,data scientist,data analyst
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h1 align = "center">Pandas-Wizard</h1>
+
+<div align = "justify">
+
+[**Pandas-Wizard (`pandaswizard`)**](https://github.com/sharkutilities/pandas-wizard) is a simple Python module for providing
+utility functions and wrappers for the `pandas` module. The module is kept simple and use of external dependencies is minimized
+unless needed to enhance performance.
+
+This is a relatively new repository, and if you find any performance or improvement scope please check the
+[contributing guidelines](https://github.com/sharkutilities/.github/blob/master/.github/CONTRIBUTING.md) for the organization.
+All help and criticism are appreciated. If you find any additional use cases please create a pull request or submit for a
+new feature.
+
+</div>
