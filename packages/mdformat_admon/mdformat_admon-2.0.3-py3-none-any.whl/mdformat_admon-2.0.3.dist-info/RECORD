@@ -1,0 +1,12 @@
+mdformat_admon/__init__.py,sha256=vOm0ymUpinE5t3CZHjDchU6pQh9nMDBbCbNllFkns4U,109
+mdformat_admon/plugin.py,sha256=jus1xsKrIIZVG80qxzeqCQPoHqD87E7BTObb5motOj8,1766
+mdformat_admon/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mdformat_admon/factories/__init__.py,sha256=VyghBoWCO0XgfOyGkmYKFsmJguhfCjulKcBtecEUC6w,176
+mdformat_admon/factories/_whitespace_admon_factories.py,sha256=99dP3KUVU0majLd9D0dse3eYH1BnWxIhkjUL6etc2Hk,6784
+mdformat_admon/mdit_plugins/__init__.py,sha256=D1QNSAPwbqdQwgeyaAO4Q9nJ9ebQK9aGmLjSgWeABhI,115
+mdformat_admon/mdit_plugins/_python_markdown_admon.py,sha256=SypJre36rOHsou16Q9lX7skQWYEQCWJN0mtdCzbhAWo,2444
+mdformat_admon-2.0.3.dist-info/entry_points.txt,sha256=9bO0j-MxDPaKXf5Q_1Wa2bWX5PjTCrzdwyHRzgdwa3Y,50
+mdformat_admon-2.0.3.dist-info/LICENSE,sha256=-voxTd2luDRUXIFkSXQRQGL3cHzC9AnnJkv3LJrla3o,1073
+mdformat_admon-2.0.3.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+mdformat_admon-2.0.3.dist-info/METADATA,sha256=oFKdnr5ecY9pXzUcSf_QpvPo70zjx19EpOh7ZiYf7X4,4998
+mdformat_admon-2.0.3.dist-info/RECORD,,
