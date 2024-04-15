@@ -1,0 +1,5 @@
+setup.py
+corinvo.egg-info/PKG-INFO
+corinvo.egg-info/SOURCES.txt
+corinvo.egg-info/dependency_links.txt
+corinvo.egg-info/top_level.txt
