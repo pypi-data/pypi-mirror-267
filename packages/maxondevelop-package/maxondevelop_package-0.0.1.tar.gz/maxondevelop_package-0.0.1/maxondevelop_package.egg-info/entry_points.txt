@@ -1,0 +1,2 @@
+[console_script]
+maxondevelop_package = maxondevelop_package.cli:main

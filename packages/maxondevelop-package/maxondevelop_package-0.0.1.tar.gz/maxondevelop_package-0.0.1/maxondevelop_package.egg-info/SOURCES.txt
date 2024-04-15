@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+maxondevelop_package/__init__.py
+maxondevelop_package/__main__.py
+maxondevelop_package/cli.py
+maxondevelop_package.egg-info/PKG-INFO
+maxondevelop_package.egg-info/SOURCES.txt
+maxondevelop_package.egg-info/dependency_links.txt
+maxondevelop_package.egg-info/entry_points.txt
+maxondevelop_package.egg-info/requires.txt
+maxondevelop_package.egg-info/top_level.txt
