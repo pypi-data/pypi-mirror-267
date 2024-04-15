@@ -1,0 +1,2 @@
+[console_scripts]
+quantmsio_cli = quantmsio.quantmsio_cli:quantms_io_main
