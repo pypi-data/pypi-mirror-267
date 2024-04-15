@@ -1,0 +1,15 @@
+upstream oathkeeper {
+    server {{ ip_addresses['oathkeeper'] }}:80;
+    keepalive 4;
+}
+
+upstream node {
+    server {{ ip_addresses['node'] }}:80;
+    keepalive 4;
+}
+
+{% for plugin_output in plugin_outputs %}
+    {% if plugin_output.config.have_backend and config.plugins[plugin_output.config.name].enabled %}
+{{ plugin_output.nginx_upstream }}
+    {% endif %}
+{% endfor %}
