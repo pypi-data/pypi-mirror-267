@@ -1,0 +1,12 @@
+pynurbs/__classes__.py,sha256=jjDuh-4qtS3bWEs0_-hgYuY9tlxa3RMouSdjhhPnRHs,2895
+pynurbs/__init__.py,sha256=WU_FaBW8s-Xfwmr9rGp41RZ9Ehwv7q5aKhbkZuXa1wQ,262
+pynurbs/advanced.py,sha256=PkHjje4P3u_gd2Duu1sM36Osm5gv2t7EN4NFkrhEMQs,11629
+pynurbs/calculus.py,sha256=9JN4JoK8wx_yLTgofLVqimtHJDJtp8zxfbyLuYOFJ08,13662
+pynurbs/curves.py,sha256=gEpJSS2lP75zHq5CH_-02E0uHrsqH_UTkRRbUMze8MU,40540
+pynurbs/functions.py,sha256=4yxxqCO3_tzUgM1cpAOxx-fGDiUUKIgB6ihG9ByWE1o,10504
+pynurbs/heavy.py,sha256=3G-ml2UgGOgqlZHjNQsFZHT5iRrb_VMLfOx6rbjAfVk,61021
+pynurbs/knotspace.py,sha256=vrqPHM-oHDr-v00iIIJEhvNbKv7ZFCVCtT9xysP8Iz0,22964
+pynurbs-1.1.0.dist-info/LICENSE.md,sha256=hkZVnIZll7e_KNEQzeY94Y9tlzVL8iVZBTMBvDykksU,35142
+pynurbs-1.1.0.dist-info/METADATA,sha256=5HBGew3Eglu0dFw0z2PJGMQfr1Y0AEZYGPIXVwgj32I,3046
+pynurbs-1.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pynurbs-1.1.0.dist-info/RECORD,,
