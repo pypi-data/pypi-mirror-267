@@ -1,0 +1,13 @@
+OptimalBragg/__init__.py,sha256=fIaMw7pwZvQgqrxOHumTqITvEIwT8CspVu7c0i-jRhI,5652
+OptimalBragg/analysis.py,sha256=xise_FnQ8Ru3u-cPgDGJNVdEyPRpU-Inuz4ja8hdsJY,2354
+OptimalBragg/costs.py,sha256=ny2sQQIEkOMMPewFIurXjFsQ-uMKKIMCVsbN8WkfgYY,6453
+OptimalBragg/layers.py,sha256=a80Tco8WMQu838EwrVWir03muvmE1HJ75i7D2l9OmgY,9131
+OptimalBragg/materials.py,sha256=TQvEpbSIidEtThibzHLic9Y46PJMZVvVs1K8KMMXk1Q,8276
+OptimalBragg/noise.py,sha256=UdjclE1GUJ6dvJywBs2WYXQObu1N34tcHii_H9zFw4Y,35483
+OptimalBragg/optimizer.py,sha256=PQtH5GHLR7XPmqidGkEA-vQOWYFOHMUm7NhHJklSVZU,12432
+OptimalBragg/plot.py,sha256=0vV8Ww8psIevTyFPWg-31xyaW_Q4Ytmh3OdwVXIXndg,10406
+OptimalBragg-1.0.0.dist-info/LICENSE,sha256=_pdBLxmVdMOeo4s7v8mPXB34bJt4PlAO3L0dn-6LLIA,1541
+OptimalBragg-1.0.0.dist-info/METADATA,sha256=picH2KZ660Z62dTt1mJ69qlT3r8MwbfvELmN-JK8rRM,4531
+OptimalBragg-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+OptimalBragg-1.0.0.dist-info/top_level.txt,sha256=AFz7nrfbNGlAQnMJflkRH9rUod669rqxxXkbXsr-BUs,13
+OptimalBragg-1.0.0.dist-info/RECORD,,
