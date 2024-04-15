@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: my-playground
+Version: 0.1.8
+Summary: Default template for PDM package
+Author-Email: Shao-Lun Huang <simon.linux7@gmail.com>
+License: MIT
+Requires-Python: >=3.11
+Requires-Dist: taichi>=1.7.0
+Description-Content-Type: text/markdown
+
+# playground
