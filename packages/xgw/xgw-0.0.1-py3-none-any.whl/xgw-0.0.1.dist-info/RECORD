@@ -1,0 +1,12 @@
+xgw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xgw/browser.py,sha256=Yo3mKSIaP3feQvGuA4n-DuHWjlJeMNWlF2sr5oQwrJ4,1441
+xgw/cli.py,sha256=MaFnmhnOreosidm9Ggpj4JNHQcWUE3QBHtHX3ZcKXZc,4869
+xgw/gw_client.py,sha256=1UDk_D5l1Ts_-X1-tSD8SlqF9hO0AbhlIL-iRjGMX2o,4672
+xgw/home_client.py,sha256=g4nDqcq9hTW5qyKLid7ma7aWMg4RWbbVu4KbS-Suprw,8769
+xgw/model.py,sha256=pJ6mZlpw38H2PnQCz3TW1yURmXWc8UwnUiu1LgfaBko,2671
+xgw/ws_client.py,sha256=hEhTC9u70Xvwd3fPYS6VmpKjFYcYtEIdlQQZdlMTMN0,2678
+xgw-0.0.1.dist-info/METADATA,sha256=9280avu9vuWGlSvdHJjwZAcq_boO7Zf8IxfnZPZYPu4,1994
+xgw-0.0.1.dist-info/WHEEL,sha256=xl5aZkiJYVTjhVaiADvIe6UeUVylGNomrxKZ0Zda1CE,87
+xgw-0.0.1.dist-info/entry_points.txt,sha256=7PsCPWrtvLryO0bUoonLca8z8DKFiPw-ffSqbG28i1E,37
+xgw-0.0.1.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+xgw-0.0.1.dist-info/RECORD,,
