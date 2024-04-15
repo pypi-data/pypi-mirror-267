@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+#
+# pylint: disable=W0611
+# ruff: noqa: E402
+
+
+"control"
+
+
+import getpass
+import os
+import sys
+
+
+from objx import Default, Workdir, skel
+from objr import cmnd, parse_cmd
+from objd import modules
+
+
+Cfg             = Default()
+Cfg.mod         = "cmd,mod"
+Cfg.name        = "objd"
+Cfg.wd          = os.path.expanduser(f"~/.{Cfg.name}")
+Cfg.pidfile     = os.path.join(Cfg.wd, f"{Cfg.name}.pid")
+Cfg.user        = getpass.getuser()
+
+
+Workdir.workdir = Cfg.wd
+
+
+def main():
+    "main"
+    skel()
+    parse_cmd(Cfg, " ".join(sys.argv[1:]))
+    cmnd(Cfg.otxt, print)
+
+
+if __name__ == "__main__":
+    main()
