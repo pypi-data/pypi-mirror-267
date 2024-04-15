@@ -1,0 +1,6 @@
+astropy
+sep
+xarray
+matplotlib
+numpy
+tensorflow
