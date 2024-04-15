@@ -1,0 +1,9 @@
+sqlrepo-0.2.0.dist-info/METADATA,sha256=d8MeWSE-ys7Uai1_M8gec3uc73BlS35p0zGNOxgod9M,395
+sqlrepo-0.2.0.dist-info/WHEEL,sha256=gZRWN_1fGFDwBnXrZ9N3dgvbKlKgo5AUcDIMajlGpKM,90
+sqlrepo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlrepo/exc.py,sha256=jsen87-hCsj9TGr6r_o9KCBzUHlBu_eZplhU5YJVFIo,452
+sqlrepo/logging.py,sha256=B7v_Rj6b8wFsOtsqUM_--UPzU8NN9wAAqUcXADtT2Rk,748
+sqlrepo/queries.py,sha256=U4jRSpVGiq8ZDa27umg_Rxw-Nre8X92LiZMQYv7KwBs,26229
+sqlrepo/repositories.py,sha256=Cz2AUgMM9lS68gHdNrNeIxpnC0GAR4_O5hvfvVYL250,15641
+sqlrepo/uow.py,sha256=AZFy1FXxVJYUvz-6OI2FA0fC-71O7YuDjwoyTxL0sp8,2565
+sqlrepo-0.2.0.dist-info/RECORD,,
