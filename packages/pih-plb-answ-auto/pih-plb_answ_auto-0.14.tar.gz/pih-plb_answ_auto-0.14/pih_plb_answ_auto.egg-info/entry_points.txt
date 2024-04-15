@@ -1,0 +1,2 @@
+[console_scripts]
+pih-plb_answ_auto = PolibasePersonAnswerAutomationService.__main__:start
