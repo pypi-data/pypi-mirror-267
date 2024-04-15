@@ -1,0 +1,10 @@
+term_ascii_diagram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+term_ascii_diagram/core.py,sha256=2ZglexRzamBzndN9S_ynPdJ6QyusUkyNNc-icj_YcYI,4275
+term_ascii_diagram/diagram.py,sha256=eJt-QZMnYGQdG05Pmo-TLYziM0g7PH2hEo4hvgEWhRE,22571
+term_ascii_diagram/main.py,sha256=Azy4MNjztpeiV98bOBzJd0NGZAMDvOKU43FEBljw7yw,1909
+term_ascii_diagram/status_bar.py,sha256=UxRSbwFKpi0KUMcFODQVl_2U-MLAcX_XqjOa7Gt8jcw,2405
+term_ascii_diagram-0.0.5.dist-info/METADATA,sha256=cwGRbe6ovrpixgMzYF7OTHDBOUgH5tzxqR0R5C3SseM,1492
+term_ascii_diagram-0.0.5.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+term_ascii_diagram-0.0.5.dist-info/entry_points.txt,sha256=u78rdoFzhcR_tGWVyprQ3u_0Jmrnwah-hazuYes9MJ0,67
+term_ascii_diagram-0.0.5.dist-info/licenses/LICENSE,sha256=5DzzV-qkirKRVPfEfcgqqVt_QjRNHqxwDjxRNy34Ttw,1068
+term_ascii_diagram-0.0.5.dist-info/RECORD,,
