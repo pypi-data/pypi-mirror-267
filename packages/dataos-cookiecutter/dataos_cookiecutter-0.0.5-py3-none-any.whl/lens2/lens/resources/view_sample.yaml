@@ -1,0 +1,16 @@
+views:
+  - name: view_name
+    description: View containing view_name information
+    public: true
+
+    tables:
+        # table name to include in view
+      - join_path: table1
+        # Set to true to add the table name as prefix to measure/dimension
+        prefix: true
+        # To include all measures and dimensions
+        includes: "*"
+        # To exclude specific measures and dimensions
+        excludes:
+          - measure
+          - dimension

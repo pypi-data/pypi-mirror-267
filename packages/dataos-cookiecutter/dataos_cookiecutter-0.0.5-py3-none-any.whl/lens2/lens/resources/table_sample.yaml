@@ -1,0 +1,57 @@
+tables:
+  - name: table_name
+    # Path of the sql file, example - {{table_name.sql}}
+    sql: {{ load_sql('sql_sample') }}
+    description: Table description
+    # For visibility control of table
+    public: true
+
+    # To establish relationship with other table (this will always create left join)
+    # joins:
+    #   - name: target_table
+    #     relationship: one_to_one
+    #     sql: TABLE.dimension_name = target_table.dimension_name
+
+    dimensions:
+        # Name should follow snake-case format
+      - name: dimension_name
+        title: dimension_title
+        description: Dimension description
+        # Mapping of specific column from sql of the table to the dimension
+        sql: dimension_sql
+        # Data type of the dimension (types - time, string, number and boolean)
+        type: dimension_type
+        # To make this dimension primary key set to true
+        primary_key: false
+        # To make this dimension accessible set to true
+        public: true
+        # To associate additional key value properties
+        meta:
+          key: value
+
+    measures:
+      - name: measure_name
+        title: measure_title
+        description: Measure description
+        # Define custome SQL snippet or map dimension
+        sql: measure_sql
+        # Set type for this measure (types - string,time,boolean,number,count,count_distinct,count_distinct_approx,sum,avg,min,max)
+        type: string
+        drill_members:
+          - drill_members_name
+        # To apply additional filter
+        filters:
+          - sql: "{TABLE}.dimension_name = 'dimension_value' "
+        meta:
+          key: value
+
+    # To create pre-defined filter for table
+    segments:
+      - name: segment_name
+        public: true
+        # SQL statement for filter
+        sql: "{TABLE}.dimension_name = 'dimension_value' "
+        meta:
+          # To apply pre-defined filter by default to user groups
+          secure:
+            user_group: default
