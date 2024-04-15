@@ -1,0 +1,2 @@
+[console_scripts]
+osmexp = osmexp.__main__:main
