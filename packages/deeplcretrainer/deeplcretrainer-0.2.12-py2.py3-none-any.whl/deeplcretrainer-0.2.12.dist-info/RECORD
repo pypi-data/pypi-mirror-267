@@ -1,0 +1,7 @@
+deeplcretrainer/__init__.py,sha256=9sJB0hVCkjsZSc1CDUqfg6Ks-87o_lOIf_lEFJtVIJU,49
+deeplcretrainer/cnn_functions.py,sha256=PZ4rFC_MEJfuN8ZpMIn86iubPXN02tUxr8ROidTFUIM,36176
+deeplcretrainer/deeplcretrainer.py,sha256=q-MCjwW-vA5JLg3fkrZwOsSxNfRLEdC-oFH8pPMIINg,17726
+deeplcretrainer-0.2.12.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+deeplcretrainer-0.2.12.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+deeplcretrainer-0.2.12.dist-info/METADATA,sha256=smylRy-PrQLm_Zjxbh6fTY4U2MVDBdi4bpYdJS43xTg,730
+deeplcretrainer-0.2.12.dist-info/RECORD,,
