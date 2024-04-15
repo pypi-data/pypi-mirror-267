@@ -1,0 +1,10 @@
+README.md
+setup.py
+pdfToAudio/__init__.py
+pdfToAudio/pdf_to_audio.py
+pdfToAudio/tests_pdf_to_audio.py
+pdfToAudio.egg-info/PKG-INFO
+pdfToAudio.egg-info/SOURCES.txt
+pdfToAudio.egg-info/dependency_links.txt
+pdfToAudio.egg-info/requires.txt
+pdfToAudio.egg-info/top_level.txt
