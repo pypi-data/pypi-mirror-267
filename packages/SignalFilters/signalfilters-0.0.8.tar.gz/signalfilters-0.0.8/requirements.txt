@@ -1,0 +1,9 @@
+funcy
+
+matplotlib
+numpy
+pandas
+PeakUtils
+scipy
+setuptools
+tabulate
