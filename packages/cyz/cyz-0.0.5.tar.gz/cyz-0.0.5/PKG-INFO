@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cyz
+Version: 0.0.5
+Summary: Has been deprecated, please refer to `cyzutils`
+Home-page: https://github.com/cyz020403
+Author: cyz020403
+Author-email: cyz020403@gmail.com
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Has been deprecated, please refer to `cyzutils`.
+
