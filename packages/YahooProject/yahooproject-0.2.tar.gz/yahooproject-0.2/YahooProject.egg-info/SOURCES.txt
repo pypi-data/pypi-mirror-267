@@ -1,0 +1,8 @@
+README.md
+setup.py
+YahooProject/__intit__.py
+YahooProject.egg-info/PKG-INFO
+YahooProject.egg-info/SOURCES.txt
+YahooProject.egg-info/dependency_links.txt
+YahooProject.egg-info/requires.txt
+YahooProject.egg-info/top_level.txt
