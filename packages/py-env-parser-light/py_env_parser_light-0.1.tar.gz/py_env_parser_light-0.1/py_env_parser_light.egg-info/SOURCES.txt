@@ -1,0 +1,8 @@
+README.md
+setup.py
+py_env_parser_light/__init__.py
+py_env_parser_light/environment_controller.py
+py_env_parser_light.egg-info/PKG-INFO
+py_env_parser_light.egg-info/SOURCES.txt
+py_env_parser_light.egg-info/dependency_links.txt
+py_env_parser_light.egg-info/top_level.txt
