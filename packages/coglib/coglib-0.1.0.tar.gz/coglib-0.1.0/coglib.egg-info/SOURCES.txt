@@ -1,0 +1,9 @@
+README.md
+setup.py
+coglib/__init__.py
+coglib/coglib.py
+coglib.egg-info/PKG-INFO
+coglib.egg-info/SOURCES.txt
+coglib.egg-info/dependency_links.txt
+coglib.egg-info/requires.txt
+coglib.egg-info/top_level.txt
