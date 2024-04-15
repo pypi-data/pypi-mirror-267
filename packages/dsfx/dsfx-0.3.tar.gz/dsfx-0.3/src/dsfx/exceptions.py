@@ -1,0 +1,3 @@
+
+class ParameterNotSet(Exception):
+    pass

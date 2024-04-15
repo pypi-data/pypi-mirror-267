@@ -1,0 +1,5 @@
+optioner>=1.5.2
+colorama
+argparse
+cryptography
+pyinstaller
