@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: sparrowApi
+Version: 0.1
+Summary: 基于socket的Api工具
+Requires-Python: >=3.11
