@@ -1,0 +1,31 @@
+[project]
+name = "InstagramReelDownloader"
+authors = [
+  { name="Ankushtpss", email="ankushkumartpss@gmail.com" },
+]
+description = "Instagram reel downloader using Selenium WebDriver."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "selenium",
+    "webdriver_manager",
+]
+
+version = "1"
+
+[tool.setuptools_scm]
+
+[project.urls]
+"Homepage" = "https://github.com/Ankushtpss/InstagramReelDownloader"
+"Bug Tracker" = "https://github.com/Ankushtpss/InstagramReelDownloader/issues"
+
+
+[build-system]
+requires = ["setuptools","setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
