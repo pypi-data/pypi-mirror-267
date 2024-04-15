@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: jax-smfsb
+Version: 0.0.1
+Summary: Python+JAX code relating to the textbook, Stochastic modelling for systems biology, third edition
+Project-URL: Homepage, https://github.com/darrenjw/jax-smfsb
+Project-URL: Documentation, https://jax-smfsb.readthedocs.io/
+Project-URL: Issues, https://github.com/darrenjw/jax-smfsb/issues
+Author-email: Darren Wilkinson <darrenjwilkinson@btinternet.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: jaxlib
+Requires-Dist: numpy<2
+Requires-Dist: sbmlsh
+Requires-Dist: scipy
+Description-Content-Type: text/markdown
+
+# jax-smfsb
+SMfSB code in JAX
