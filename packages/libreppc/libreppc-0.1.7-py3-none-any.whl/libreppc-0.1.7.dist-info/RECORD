@@ -1,0 +1,12 @@
+libreppc/__init__.py,sha256=pRK1-4ddm4kf3vyASVWtcf2uvyed3Fj9JaBbDit5Vvs,48
+libreppc/__main__.py,sha256=AiPPgGpq4p9N_McCKLrqiuv1KIcHEdO8Rphc4I9K1ns,783
+libreppc/libreppc.py,sha256=dPooatjGwbiVd30GlW3LUbpNF86BI6OzKsoLg_d3JHo,6340
+libreppc/static/bloger.css,sha256=u-sLaBJturTY3RegSs9-hs5p9iGzaMgY3_-j5SDaBEU,2736
+libreppc/static/mastodon.css,sha256=Kl2HJ3zpuwUur8EmPE13lmxvloViXk1GEr2Susad-Pg,2720
+libreppc/templates/index.html,sha256=y4o14qOBbi8w0oEcJV0y-t0tEY2I1qKBFjoNNLtk9iI,2706
+libreppc/templates/post.html,sha256=DTWBGMKN2KKHjabei2DCx6gXD9eElsQxZVBvpmaSJu8,2693
+libreppc-0.1.7.dist-info/LICENSE,sha256=1keQ4GTSXtPMRpSeEHT43B955dx-M6AzzSKF3bE7Gew,1096
+libreppc-0.1.7.dist-info/METADATA,sha256=ZM54vIvnlbR4f0Zh8HR2t1zyjJqK45kE51dYG1JL5yk,2209
+libreppc-0.1.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+libreppc-0.1.7.dist-info/top_level.txt,sha256=gH7XSI1vMQyjmTbzhrhPBGkc8U4IDvrQOq6XGA1YBCM,9
+libreppc-0.1.7.dist-info/RECORD,,
