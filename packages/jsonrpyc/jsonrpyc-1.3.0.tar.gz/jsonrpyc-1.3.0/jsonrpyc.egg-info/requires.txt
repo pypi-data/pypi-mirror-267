@@ -1,0 +1,17 @@
+typing_extensions~=4.8
+
+[dev]
+mypy~=1.9.0
+flake8~=7.0.0
+flake8-commas~=2.1.0
+flake8-quotes~=3.3.2
+pytest~=7.4.4
+pytest-cov~=4.1.0
+types-docutils~=0.20.0
+
+[docs]
+sphinx~=6.2.1
+sphinx-book-theme~=1.0.1
+sphinx-autodoc-typehints<1.23,~=1.22
+sphinx-lfs-content~=1.1.7
+myst-parser~=2.0.0

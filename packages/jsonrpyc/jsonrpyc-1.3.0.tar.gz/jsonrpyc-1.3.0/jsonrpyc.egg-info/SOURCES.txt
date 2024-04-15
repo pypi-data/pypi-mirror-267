@@ -1,0 +1,17 @@
+.flake8
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+requirements_dev.txt
+requirements_docs.txt
+jsonrpyc/__init__.py
+jsonrpyc/__meta__.py
+jsonrpyc.egg-info/PKG-INFO
+jsonrpyc.egg-info/SOURCES.txt
+jsonrpyc.egg-info/dependency_links.txt
+jsonrpyc.egg-info/requires.txt
+jsonrpyc.egg-info/top_level.txt
+tests/test_rpc.py
+tests/test_spec.py
