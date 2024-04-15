@@ -1,0 +1,9 @@
+scipy
+matplotlib
+LatLon23
+SRTM.py
+cartopy
+
+[test]
+pytest
+netcdf4
