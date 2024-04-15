@@ -1,0 +1,17 @@
+CHANGES.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+docs/backlog.md
+docs/sandbox.md
+ds18b20_datalogger/__init__.py
+ds18b20_datalogger/cli.py
+ds18b20_datalogger/core.py
+ds18b20_datalogger/grafana-dashboard.json
+ds18b20_datalogger.egg-info/PKG-INFO
+ds18b20_datalogger.egg-info/SOURCES.txt
+ds18b20_datalogger.egg-info/dependency_links.txt
+ds18b20_datalogger.egg-info/entry_points.txt
+ds18b20_datalogger.egg-info/requires.txt
+ds18b20_datalogger.egg-info/top_level.txt
