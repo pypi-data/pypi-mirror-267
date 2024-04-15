@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/marksplitz/__init__.py
+src/marksplitz/marksplitz.py
+src/marksplitz.egg-info/PKG-INFO
+src/marksplitz.egg-info/SOURCES.txt
+src/marksplitz.egg-info/dependency_links.txt
+src/marksplitz.egg-info/entry_points.txt
+src/marksplitz.egg-info/requires.txt
+src/marksplitz.egg-info/top_level.txt
+tests/test_marksplitz.py
