@@ -1,0 +1,8 @@
+pandas
+scipy
+matplotlib
+snowflake-connector-python[pandas]
+s3fs
+boto3
+openpyxl
+xlsxwriter
