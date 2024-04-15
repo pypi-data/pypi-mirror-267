@@ -1,0 +1,8 @@
+Metadata-Version: 2.3
+Name: shell_shockers_utils
+Version: 0.0.1
+Summary: (Nothing here yet) Package for interacting with the Shell Shockers backend via python
+Author-email: porcupane <based@national.shitposting.agency>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
