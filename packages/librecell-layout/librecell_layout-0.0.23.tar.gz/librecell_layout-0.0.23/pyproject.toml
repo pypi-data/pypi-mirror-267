@@ -1,0 +1,42 @@
+# SPDX-FileCopyrightText: 2023 Thomas Kramer
+#
+
+[project]
+name = "librecell-layout"
+version = "0.0.23"
+description='DEPRECATED - use `lclayout` package instead - CMOS standard-cell layout generator.'
+readme = {file = "README.md", content-type="text/markdown"}
+license = {text = "OHL-S v2.0"}
+
+requires-python = ">=3.7"
+
+keywords= ["cmos", "cell", "layout", "generator", "klayout", "vlsi", "asic"]
+
+authors = [ 
+  {name = "T. Kramer", email = "code@tkramer.ch"}
+]
+
+
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Topic :: Scientific/Engineering',
+    'Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)',
+    'Programming Language :: Python :: 3'
+]
+
+dependencies = [
+	'lclayout>=0.0.23'
+]
+
+
+[project.urls]
+'Homepage' = 'https://codeberg.org/librecell/lclayout'
+'Repository' = 'https://codeberg.org/librecell/lclayout'
+'Issue Tracker' = 'https://codeberg.org/librecell/lclayout/issues'
+
+
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=43.0.0"]
+build-backend = "setuptools.build_meta"
