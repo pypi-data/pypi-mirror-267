@@ -1,0 +1,24 @@
+version: "2.2"
+
+x-lens2-environment: &lens2-environment
+  LENS2_REFRESH_WORKER: true
+  LENS2_SCHEDULED_REFRESH_DEFAULT: "false"
+  LENS2_PG_SQL_PORT: 5432
+  LENS2_PG_SQL_PASSWORD:
+
+  LENS2_WRITE_TRANSPILED_YAML: "true"
+#  LENS2_INIT_NOTIFY_URL: "https://webhook.site/cedf099b-1fc7-441a-b883-05d2d5eb64dc"
+
+services:
+  api:
+    restart: always
+    image: rubiklabs/lens2:${LENS2_VERSION}
+    ports:
+      - 4000:4000
+      - 15432:5432
+    environment:
+      <<: *lens2-environment
+    env_file:
+      - .env
+    volumes:
+      - .:/etc/dataos/work
