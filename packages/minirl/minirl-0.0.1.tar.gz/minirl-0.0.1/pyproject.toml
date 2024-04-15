@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "minirl"
+version = "0.0.1"
+description = "minirl - RL for Robot"
+authors = ["Nicolasalan <grottimeireles@gmail.com>"]
+license = "LICENSE"
+readme = "README.md"
+packages = [{ include = "minirl" }]
+
+[tool.poetry.urls]
+bugs = "https://github.com/minirl/minirl/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+matplotlib = "^3.4.3"
+numpy = "^1.24.2"
+torch = "^2.0.1"
+torchvision = "^0.17.2"
+torchinfo = "^1.5.2"
+lightning = "^2.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-cov = "^4.1.0"
+black = "^24.1.1"
+isort = "^5.13.2"
+taskipy = "^1.12.2"
+ruff = "^0.2.1"
+codespell = "^2.2.6"
+commitizen = "^3.14.1"
+pre-commit = "^3.7.0"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.taskipy.tasks]
+lint = "black --check --diff --exclude docs . --exclude data && ruff check --diff --exclude docs . && isort --check --diff --skip docs . && codespell --skip=*.css,*.js,*.map,*.scss,*.svg,*.html,*.json,*.yml,*.yaml,*.md,*.jsx,*.mdx,*.pyx,*.cpp,./data/map/*,./docs/*"
+pre_test = "task lint"
+test = "pytest -s -x --cov=minirl -vv"
+post_test = "coverage html"
+publish = "poetry publish --build -u __token__ -p $MINIRL_PYPI_TOKEN"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
