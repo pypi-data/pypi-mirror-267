@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.py_bck
+.github/workflows/publish.yml
+InstagramReelDownloader/InstagramReelDownloader.py
+InstagramReelDownloader/__init__.py
+InstagramReelDownloader.egg-info/PKG-INFO
+InstagramReelDownloader.egg-info/SOURCES.txt
+InstagramReelDownloader.egg-info/dependency_links.txt
+InstagramReelDownloader.egg-info/requires.txt
+InstagramReelDownloader.egg-info/top_level.txt
+InstagramReelDownloader/__pycache__/InstagramReelDownloader.cpython-38.pyc
