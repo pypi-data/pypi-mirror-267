@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+raspidevkit.egg-info/PKG-INFO
+raspidevkit.egg-info/SOURCES.txt
+raspidevkit.egg-info/dependency_links.txt
+raspidevkit.egg-info/requires.txt
+raspidevkit.egg-info/top_level.txt
+tests/test_arduino.py
+tests/test_drivers.py
+tests/test_gpio_devices.py
