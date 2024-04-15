@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Lab93CryptographyAPI"
+version = "0.0.1"
+authors = [
+  { name="Hunter Dale", email="hunter.g.dale@gmail.com" },
+]
+description = "A wrapper for python encryption to aid in the use of one-way and two-way encryption."
+readme = "readme.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "cryptography"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/guyyatsu/Lab93Cryptogram"
+"Bug Tracker" = "https://github.com/guyyatsu/Lab93Cryptogram/issues"
