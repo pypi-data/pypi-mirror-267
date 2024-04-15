@@ -1,0 +1,10 @@
+recommender_agent/__init__.py,sha256=CVaNnhGq9SGRZcMoFwPHBHTPfVYa_uoP1Qe6J1Q0hj4,66
+recommender_agent/recommenderSystem.py,sha256=p49IRwq_i1wlPTLM-Ojnn2ZHNQq4j7Ufe7hezkrkadc,2941
+recommender_agent/components/__init__.py,sha256=jZDb8Ig3d2s-zRa4e51MBrQvLC2eM8_Y5hGMv3iGpuM,130
+recommender_agent/components/agent.py,sha256=QrlhzdM9hOU7qTHa-TGDS8TExTSfnFjaOGB74yfzOx0,9045
+recommender_agent/components/vectorStoreClient.py,sha256=BoDF7d2GoAC-zPiQ5hcBDrwyxAOcFWS-0HfDhyGla7I,2897
+recommender_agent-0.1.dist-info/LICENSE,sha256=FJqXZ28gLL_OmTQNgkcouwz3_TOj34UV7nZfc9jEIKs,1093
+recommender_agent-0.1.dist-info/METADATA,sha256=OUb-CUSiylhnzlGKSnDMJ1D9X9GoSh-wGw9Arnx6jI4,4298
+recommender_agent-0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+recommender_agent-0.1.dist-info/top_level.txt,sha256=MR-pwYxngeJ4SmjDfR5xAFCoIxCNcpyr0Q18x7kOVWc,18
+recommender_agent-0.1.dist-info/RECORD,,
