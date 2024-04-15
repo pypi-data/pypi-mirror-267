@@ -1,0 +1,10 @@
+packaging_demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packaging_demo/colorized_demo.py,sha256=uX4ncejwLk1UmmP6tCAuu6lZFZNKa9Shb73VqLabGXo,170
+packaging_demo/my_file.py,sha256=2CGexAQXKBKQnAfnSsRB5I_OsPX6lcYnNfdjOpbdsL0,403
+packaging_demo/my_other_file.py,sha256=nmukJ2Zew6Eln68QUtv3C17nhwadWrlStWLlDs4QkA0,37
+packaging_demo/slow.py,sha256=Rsd-u4gT6d3H9CLD6S3--mwsMnzljlq_b-bGqZnqb1I,85
+packaging_demo/states_info.py,sha256=7nXTCBBdxaOut99qVi5Q8RpDSsA_y9T3b6nISSEo304,634
+packaging_demo_hubzar-1.1.0.dist-info/METADATA,sha256=_EuaTGxgbyLf3KCdgU1J_VutT3HJTNoJ5le1Qhq4vPE,1386
+packaging_demo_hubzar-1.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+packaging_demo_hubzar-1.1.0.dist-info/top_level.txt,sha256=JQYuoHLSBUdWNZjDus5DYc3ohopasuGzDPZpph3ynKg,15
+packaging_demo_hubzar-1.1.0.dist-info/RECORD,,
