@@ -1,0 +1,10 @@
+LICENSE,sha256=jBFnchJYVS1WstX9GyoKLW6Jjy8ja9xZK_9_NugQO78,1071
+restx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+restx/cli.py,sha256=Z65NLOoATKBlWWNxnc6DSUDjnxN0d7fIt4P8-ujQcg8,3931
+restx/enums.py,sha256=Gm7Uulj0pywZTbhwLY-IQVKUMjjvv8EmMo_OyYNtmNY,140
+restx/utils.py,sha256=NoqYo6jaVoIjEOPsokq9hOReJaBzXkyjs1hHavxUCFY,3894
+restx-0.1.12.dist-info/LICENSE,sha256=jBFnchJYVS1WstX9GyoKLW6Jjy8ja9xZK_9_NugQO78,1071
+restx-0.1.12.dist-info/METADATA,sha256=_lzm2H9HKZj70fv6-NmBDOfVB4X_5ML0zOqNvZeTz7Q,3270
+restx-0.1.12.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+restx-0.1.12.dist-info/entry_points.txt,sha256=2xj1KE4MTdmI9nEn6Sg0U2UEHPODdqI3q5ncOXTEy6A,39
+restx-0.1.12.dist-info/RECORD,,
