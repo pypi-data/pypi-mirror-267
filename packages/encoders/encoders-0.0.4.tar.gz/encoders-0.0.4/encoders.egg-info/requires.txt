@@ -1,0 +1,9 @@
+
+[bench]
+genutility
+numpy
+pandas
+scikit-learn
+
+[test]
+numpy
