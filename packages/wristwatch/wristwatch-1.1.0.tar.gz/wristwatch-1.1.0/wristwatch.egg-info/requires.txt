@@ -1,0 +1,4 @@
+beautifulsoup4>=4.11.0
+chime>=0.7.0
+rookiepy>=0.4.0
+selenium>=4.19.0
