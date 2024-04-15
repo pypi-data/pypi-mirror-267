@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pylayout
+Version: 0.1.0
+Summary: Module to get and set keyboard layout
+Author-email: Roman Smolnyk <poma23324@gmail.com>
+Project-URL: Homepage, https://gitlab.com/roman-smolnyk/pylayout
+Keywords: keyboard,layout
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: pywin32 ; platform_system == "Windows"
+
+# pylayout
+
+Python module to get/set keyboard layout
