@@ -1,0 +1,16 @@
+include README.rst
+include CHANGES.rst
+
+include setup.cfg
+include cygrid/tests/coveragerc
+include cygrid/tests/data/*
+
+recursive-include cygrid  *.py *.pyx *.c *.cpp *.pxd *.h
+recursive-include docs *
+recursive-include licenses *
+
+prune build
+prune docs/_build
+prune docs/api
+
+global-exclude *.pyc *.o
