@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: test-option-deps-new
+Version: 0.1.1
+Summary: Testing optional dependencies
+Author: Saipraneeth
+Author-email: 2506664+msaipraneeth@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: smart-open
+Requires-Dist: smart-open[all] (>=7.0.4,<8.0.0) ; extra == "smart-open"
+Description-Content-Type: text/markdown
+
+
