@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+qrcode/QRCode.py
+qrcode/__init__.py
+robotframework_parrot_qrcodescanner.egg-info/PKG-INFO
+robotframework_parrot_qrcodescanner.egg-info/SOURCES.txt
+robotframework_parrot_qrcodescanner.egg-info/dependency_links.txt
+robotframework_parrot_qrcodescanner.egg-info/requires.txt
+robotframework_parrot_qrcodescanner.egg-info/top_level.txt
