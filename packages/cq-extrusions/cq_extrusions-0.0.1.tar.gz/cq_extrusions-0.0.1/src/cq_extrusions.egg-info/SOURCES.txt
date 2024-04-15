@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/cq_extrusions/__init__.py
+src/cq_extrusions/vslot.py
+src/cq_extrusions.egg-info/PKG-INFO
+src/cq_extrusions.egg-info/SOURCES.txt
+src/cq_extrusions.egg-info/dependency_links.txt
+src/cq_extrusions.egg-info/requires.txt
+src/cq_extrusions.egg-info/top_level.txt
