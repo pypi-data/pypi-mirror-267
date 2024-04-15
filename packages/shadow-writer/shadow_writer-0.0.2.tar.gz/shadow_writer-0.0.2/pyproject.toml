@@ -1,0 +1,25 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "shadow-writer"
+version = "0.0.2"
+description = ""
+authors = ["IANTHEREAL <argregoryian@gmail.com>"]
+license = "Apache-2.0 license"
+readme = "README.md"
+packages = [{include = "shadow_writer"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+pydantic = "^2.7.0"
+fastapi = "^0.110.1"
+uvicorn = "^0.29.0"
+python-dotenv = "^1.0.1"
+google-generativeai = "^0.5.0"
+openai = "^1.17.1"
+tiktoken = "^0.6.0"
+pymysql = "^1.1.0"
+sqlalchemy = "^2.0.29"
+pandas = "^2.2.2"
