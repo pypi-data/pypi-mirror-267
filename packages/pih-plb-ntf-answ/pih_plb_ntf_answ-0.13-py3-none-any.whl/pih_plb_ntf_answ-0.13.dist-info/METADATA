@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pih-plb_ntf_answ
+Version: 0.13
+Summary: PIH Polibase Person Notification Answer service package
+Home-page: https://pacifichosp.com/
+Author: Nikita Karachentsev
+Author-email: it@pacifichosp.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: ipih
+
