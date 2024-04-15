@@ -1,0 +1,12 @@
+gptscript/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gptscript/command.py,sha256=oISkwAU0_J33YfY32jqz5PJOPtd6fmlcqqBpAZI3p7g,2901
+gptscript/exec_utils.py,sha256=C7wtJ-zuR2MmYwLP8S4rHFhd5iQ1lP9kr2h3kdprj_Q,927
+gptscript/install.py,sha256=nr_hLMuwMbSDUDzvYvtoEoDRBNN4-s6x_yEYA4Yn20k,5452
+gptscript/tool.py,sha256=Tz7A7A_9U2SlQVBsrHbHukkV1hIOLQ3907_XcnBoo1Y,1867
+gptscript-0.5.0.data/scripts/gptscript,sha256=LwLie8wkahyQqrgxk-iacsZkGPR-8tCzsjGNtoXA1ns,17367192
+gptscript-0.5.0.dist-info/LICENSE,sha256=gJ-h7SFFD1mCfR6a7HILvEtodDT6Iig8bLXdgqR6ucA,10175
+gptscript-0.5.0.dist-info/METADATA,sha256=UDdZ74D6Esy0MSBdBIM6G79y1GPeB6zj2m0HBMoF44E,19249
+gptscript-0.5.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gptscript-0.5.0.dist-info/entry_points.txt,sha256=XtiBRSBZ2JUp71yxnVfw4KBWC3OY5n0Y9LMY0KBtKaY,64
+gptscript-0.5.0.dist-info/top_level.txt,sha256=CYV9mIfCYTkkk6FELxRtpxFH7LcHYoMCiPvwY2E9vGE,10
+gptscript-0.5.0.dist-info/RECORD,,
