@@ -1,0 +1,15 @@
+CMakeLists.txt
+LICENSE
+README.md
+pyproject.toml
+setup.py
+csrc/mqueue.cpp
+csrc/semaphore.cpp
+datamana/__init__.py
+datamana/numpy.py
+datamana/torch.py
+datamana.egg-info/PKG-INFO
+datamana.egg-info/SOURCES.txt
+datamana.egg-info/dependency_links.txt
+datamana.egg-info/requires.txt
+datamana.egg-info/top_level.txt
