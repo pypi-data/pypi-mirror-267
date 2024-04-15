@@ -1,0 +1,9 @@
+edgefirst/schemas/__init__.py,sha256=jJuQw-jc3NqMgiEKnH5YpUlzQJbscL5XuNgrQZmu3EM,125
+edgefirst/schemas/buildin_interfaces.py,sha256=jCCnMRIjXBO9iixleY_9CdqnpKz1901qS68hwz2C47U,302
+edgefirst/schemas/sensor_msgs.py,sha256=eJoVHxCtvcNVnf3NcxyllyoMxLhggnMk-KnMtPhCCQo,1008
+edgefirst/schemas/std_msgs.py,sha256=5v-LhWsQpMgdAzE4XqKir4k4TgfyJf7KYRUMUJpvZOI,703
+edgefirst_schemas-1.0.4.dist-info/LICENSE,sha256=v7_EEjQYfzSxiIGPKuWQTfIjbbMnbz0QpYRJu74OKDU,34675
+edgefirst_schemas-1.0.4.dist-info/METADATA,sha256=NsewJ_UW3ADFJmy7iuf22nyfALH_QBdlVbAaJ29-8K4,3974
+edgefirst_schemas-1.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+edgefirst_schemas-1.0.4.dist-info/top_level.txt,sha256=b5x5X2Ya5STL_Pz7QT3RwVy5Lo7EnZRwP-PqwTW61FM,10
+edgefirst_schemas-1.0.4.dist-info/RECORD,,
