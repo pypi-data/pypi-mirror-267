@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+pylazypdf.egg-info/PKG-INFO
+pylazypdf.egg-info/SOURCES.txt
+pylazypdf.egg-info/dependency_links.txt
+pylazypdf.egg-info/requires.txt
+pylazypdf.egg-info/top_level.txt
