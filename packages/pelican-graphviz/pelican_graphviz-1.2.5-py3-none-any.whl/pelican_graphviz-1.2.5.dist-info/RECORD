@@ -1,0 +1,8 @@
+pelican/plugins/graphviz/__init__.py,sha256=phgkLUqXJUt2NrPhT20_alZRqECK7AvLL-lSMFdK9j8,38
+pelican/plugins/graphviz/graphviz.py,sha256=3s1tkzjJNXZDwx0B1J-gZC0a4ANbEuuBYedHWscqu2k,2282
+pelican/plugins/graphviz/mdx_graphviz.py,sha256=SqgFwapNcPnp4fdp1bzPP3T4iWfxsoKuZOeWhLkiAow,6621
+pelican/plugins/graphviz/test_graphviz.py,sha256=YpQlti6yfbwSzr_I_WjbAde3fX-8cqVe3iuboCD0rKc,6519
+pelican_graphviz-1.2.5.dist-info/METADATA,sha256=vr_eBb9K0o4WOf3GJlEHc3-nG98NxNZ6_J5YT1wXn_0,8081
+pelican_graphviz-1.2.5.dist-info/WHEEL,sha256=gZRWN_1fGFDwBnXrZ9N3dgvbKlKgo5AUcDIMajlGpKM,90
+pelican_graphviz-1.2.5.dist-info/licenses/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+pelican_graphviz-1.2.5.dist-info/RECORD,,
