@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: HiveWebCrawler
+Version: 0.0.1
+Summary: Simple Python 3.x Web Crawler, Images, Urls, Emails, Phone numbers
+Home-page: https://github.com/MehmetYukselSekeroglu/HiveWebCrawler
+Author: MehmetYukselSekeroglu
+Author-email: dijital_evren@protonmail.com
+Requires-Python: >=3.8
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
