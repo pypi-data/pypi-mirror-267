@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: scatter-append
+Version: 0.3
+Summary: A utility for scatter appending to mutable sequences.
+Author: Rhys Newbury, Bryce Ferenczi
+Author-email: rhys.newbury@monash.edu, bryce.ferenczi@monash.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
