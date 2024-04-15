@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pdf-compression
+Version: 0.1.1
+Summary: A PDF compression library
+Author: Nishtha
+Author-email: nishthachitalia0309@gmail.com
+License: MIT
+Keywords: python,pdf,compression,pdf_compression
+Requires-Dist: pillow
+Requires-Dist: pymupdf
+
+A PDF compression library built upon PyMuPDF and Pillow. Quick, free of cost and open source.
