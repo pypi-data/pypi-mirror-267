@@ -1,0 +1,4 @@
+regex
+
+[docs]
+Sphinx~=5.3
