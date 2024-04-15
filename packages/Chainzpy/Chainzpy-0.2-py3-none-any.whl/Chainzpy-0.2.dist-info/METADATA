@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: Chainzpy
+Version: 0.2
+Summary: API wrapper for https://chainz.cryptoid.info/
+Requires-Dist: requests
+Requires-Dist: bs4
+
