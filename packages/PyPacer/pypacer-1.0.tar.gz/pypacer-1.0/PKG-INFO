@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: PyPacer
+Version: 1.0
+Summary: measure the time python Callables, like functions, use
+Project-URL: Homepage, https://github.com/Nooberieno/PyPacer
+Project-URL: Issues, https://github.com/Nooberieno/PyPacer/issues
+Author-email: Nooberieno <nooberieno.dev@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# PyPacer, measure the time python Callables use with ease
+
+# What is PyPacer?
+PyPacer is a python library that allows you to measure the time that it takes for Callables, such as functions, to execute
