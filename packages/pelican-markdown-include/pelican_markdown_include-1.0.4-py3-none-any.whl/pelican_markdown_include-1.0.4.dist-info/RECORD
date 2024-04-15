@@ -1,0 +1,6 @@
+pelican/plugins/md_include/__init__.py,sha256=NJ6KsHdl3wYzjqUBR1mH4yeQsqWzyMGGhgKBclvzQVE,40
+pelican/plugins/md_include/md_include.py,sha256=NaHiWzptGSSbKPNWAtIr3VT-MqsGQcCAbwsRL_KBmtw,2583
+pelican/plugins/md_include/test_md_include.py,sha256=1xGzyjB0gJp4C-o2jJVjAk9eU7j9_iOPQLA58poMnZA,5126
+pelican_markdown_include-1.0.4.dist-info/METADATA,sha256=znrwiK4iDAZlJmj5ijvkaB--1UuqnNuOcak_yKxHJkQ,5626
+pelican_markdown_include-1.0.4.dist-info/WHEEL,sha256=gZRWN_1fGFDwBnXrZ9N3dgvbKlKgo5AUcDIMajlGpKM,90
+pelican_markdown_include-1.0.4.dist-info/RECORD,,
