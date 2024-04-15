@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: proma
+Version: 0.0.1
+Summary: Project manager that can create Gantt diagrams as SVGs.
+License: MIT
+Author: Ansgar Kellner
+Author-email: keans@gmx.de
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cerberus (>=1.3.5,<2.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: python-dateutil (>=2.9.0.post0,<3.0.0)
+Requires-Dist: pytimeparse (>=1.1.8,<2.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: svgwrite (>=1.4.3,<2.0.0)
+Description-Content-Type: text/x-rst
+
+ReadMe
+######
+
+The python module `proma` provides a simple interface to a project manager
+that allows the generation of Gantt charts as SVG from YAML files.
+
+DISCLAIMER: this project is at early stage, thus has limited functionality
+and still might have bugs.
+
+
+Setup
+=====
+
+Install required modules:
+
+.. code-block::
+
+    poetry install
+
+
+Usage
+=====
+
+Render Gantt diagram based on example YAML file:
+
+.. code-block::
+
+    poetry run python proma.py --debug gantt examples/example.yml --view day
+    poetry run python proma.py --debug gantt examples/example.yml --view week
+
