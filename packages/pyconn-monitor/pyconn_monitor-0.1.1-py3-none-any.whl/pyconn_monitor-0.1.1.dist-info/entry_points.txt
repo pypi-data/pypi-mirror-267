@@ -1,0 +1,2 @@
+[console_scripts]
+pyconn-monitor = pyconn_monitor.cli:main
