@@ -1,0 +1,9 @@
+yourapp/__init__.py,sha256=17Ag10g2EuXj37dTuhtOQwbOy1GSPtWppHBd49R1CkM,71
+yourapp/__main__.py,sha256=bOiKCiL4PNP71x-8kSeiqP3ENj2K-18l_mXC83TT9vA,148
+yourapp/main.py,sha256=9mo1Mk4xxOXyG4Tu-pjyyr77DCg40pkQP-glHL0ZB5E,1234
+yourapp/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_distribution_example-1.0.0.dist-info/LICENSE,sha256=QRjkirZ5OpXw8Ui5bWitBbluaBIW2pjesAxcVHgwBvs,11363
+python_distribution_example-1.0.0.dist-info/METADATA,sha256=cBE3LH6NwNF0th9TOX7iy0aCHVOj8BSdOncd48X_WtQ,3407
+python_distribution_example-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+python_distribution_example-1.0.0.dist-info/entry_points.txt,sha256=4P1iZI53g-5b5vwWvPaR6xKmBPTCLThdkQ7XMCPmsqc,44
+python_distribution_example-1.0.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+yourapp=yourapp.main:app
+
