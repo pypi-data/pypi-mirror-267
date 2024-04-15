@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+whiterose.py
+whiterose.egg-info/PKG-INFO
+whiterose.egg-info/SOURCES.txt
+whiterose.egg-info/dependency_links.txt
+whiterose.egg-info/top_level.txt
