@@ -1,0 +1,5 @@
+dill
+fastapi
+schedule
+uvicorn
+pandas
