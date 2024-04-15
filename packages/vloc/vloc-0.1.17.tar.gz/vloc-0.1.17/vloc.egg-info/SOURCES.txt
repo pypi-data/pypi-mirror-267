@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+vloc/__init__.py
+vloc.egg-info/PKG-INFO
+vloc.egg-info/SOURCES.txt
+vloc.egg-info/dependency_links.txt
+vloc.egg-info/requires.txt
+vloc.egg-info/top_level.txt
+vloc/__detect__/__detect__.py
+vloc/__detect__/__info__.py
+vloc/exception/__exception__.py
+vloc/exception/__init__.py
+vloc/module/__config__.py
+vloc/module/__init__.py
+vloc/module/__module__.py
