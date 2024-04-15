@@ -1,0 +1,5 @@
+odoo12-addon-auth_api_key
+odoo12-addon-base_rest
+odoo12-addon-cooperator
+odoo12-addon-cooperator_api_logs
+odoo<12.1dev,>=12.0a
