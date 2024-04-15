@@ -1,0 +1,218 @@
+Metadata-Version: 2.1
+Name: jsonrpyc
+Version: 1.3.0
+Summary: Minimal python RPC implementation in a single file based on the JSON-RPC 2.0 specs from http://www.jsonrpc.org/specification.
+Author-email: Marcel Rieger <github.riga@icloud.com>
+License: Copyright (c) 2016-2024, Marcel Rieger
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        * Redistributions of source code must retain the above copyright notice, this
+          list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright notice,
+          this list of conditions and the following disclaimer in the documentation
+          and/or other materials provided with the distribution.
+        
+        * Neither the name of the copyright holder nor the names of its contributors
+          may be used to endorse or promote products derived from this software without
+          specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Homepage, https://github.com/riga/jsonrpyc
+Project-URL: Documentation, https://jsonrpyc.readthedocs.io
+Project-URL: Repository, https://github.com/riga/jsonrpyc.git
+Keywords: rpc,json,json-rpc,jsonrpc,2.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typing-extensions ~=4.8
+Provides-Extra: dev
+Requires-Dist: mypy ~=1.9.0 ; extra == 'dev'
+Requires-Dist: flake8 ~=7.0.0 ; extra == 'dev'
+Requires-Dist: flake8-commas ~=2.1.0 ; extra == 'dev'
+Requires-Dist: flake8-quotes ~=3.3.2 ; extra == 'dev'
+Requires-Dist: pytest ~=7.4.4 ; extra == 'dev'
+Requires-Dist: pytest-cov ~=4.1.0 ; extra == 'dev'
+Requires-Dist: types-docutils ~=0.20.0 ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ~=6.2.1 ; extra == 'docs'
+Requires-Dist: sphinx-book-theme ~=1.0.1 ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints <1.23,~=1.22 ; extra == 'docs'
+Requires-Dist: sphinx-lfs-content ~=1.1.7 ; extra == 'docs'
+Requires-Dist: myst-parser ~=2.0.0 ; extra == 'docs'
+
+<!-- marker-before-logo -->
+
+<p align="center">
+  <img src="https://media.githubusercontent.com/media/riga/jsonrpyc/master/assets/logo.png" width="400" />
+</p>
+
+<!-- marker-after-logo -->
+
+<!-- marker-before-badges -->
+
+<p align="center">
+  <a href="http://jsonrpyc.readthedocs.io">
+    <img alt="Documentation status" src="https://readthedocs.org/projects/jsonrpyc/badge/?version=latest" />
+  </a>
+  <img alt="Python version" src="https://img.shields.io/badge/Python-%E2%89%A53.8-blue" />
+  <a href="https://pypi.python.org/pypi/jsonrpyc">
+    <img alt="Package version" src="https://img.shields.io/pypi/v/jsonrpyc.svg?style=flat" />
+  </a>
+  <a href="https://codecov.io/gh/riga/jsonrpyc">
+    <img alt="Code coverge" src="https://codecov.io/gh/riga/jsonrpyc/branch/master/graph/badge.svg?token=R8SY3O6KB9" />
+  </a>
+  <a href="https://github.com/riga/jsonrpyc/actions/workflows/lint_and_test.yml">
+    <img alt="Build status" src="https://github.com/riga/jsonrpyc/actions/workflows/lint_and_test.yml/badge.svg" />
+  </a>
+  <a href="https://github.com/riga/jsonrpyc/blob/master/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/riga/jsonrpyc.svg" />
+  </a>
+</p>
+
+<!-- marker-after-badges -->
+
+<!-- marker-before-header -->
+
+Minimal python RPC implementation based on the [JSON-RPC 2.0 specs](http://www.jsonrpc.org/specification).
+
+Original source hosted at [GitHub](https://github.com/riga/jsonrpyc).
+
+<!-- marker-after-header -->
+
+<!-- marker-before-body -->
+
+<!-- marker-before-usage -->
+
+## Usage
+
+``jsonrpyc.RPC`` instances basically wrap an input stream and an output stream in order to communicate with other *services*.
+A service is not even forced to be written in Python as long as it strictly implements the JSON-RPC 2.0 specs.
+A suitable implementation for NodeJs is [node-json-rpc](https://github.com/riga/node-json-rpc).
+A ``jsonrpyc.RPC`` instance may wrap a *target* object.
+Incomming requests will be routed to methods of this object whose result might be sent back as a response. Example implementation:
+
+
+### ``server.py``
+
+```python
+import jsonrpyc
+
+class MyTarget(object):
+
+    def greet(self: MyTarget, name: str) -> str:
+        return f"Hi, {name}!"
+
+jsonrpyc.RPC(MyTarget())
+```
+
+
+### ``client.py``
+
+```python
+import jsonrpyc
+from subprocess import Popen, PIPE
+
+p = Popen(["python", "server.py"], stdin=PIPE, stdout=PIPE)
+rpc = jsonrpyc.RPC(stdout=p.stdin, stdin=p.stdout)
+
+
+#
+# sync usage
+#
+
+print(rpc("greet", args=("John",), block=0.1))
+# => "Hi, John!"
+
+
+#
+# async usage
+#
+
+def cb(err: Exception | None, res: str | None = None) -> None:
+    if err:
+        raise err
+    print(f"callback got: {res}")
+
+rpc("greet", args=("John",), callback=cb)
+
+# cb is called asynchronously which prints
+# => "callback got: Hi, John!"
+
+
+#
+# shutdown
+#
+
+p.stdin.close()
+p.stdout.close()
+p.terminate()
+p.wait()
+```
+
+<!-- marker-after-usage -->
+
+<!-- marker-before-info -->
+
+## Installation
+
+Install simply via [pip](https://pypi.python.org/pypi/jsonrpyc).
+
+```bash
+pip install jsonrpyc
+
+# or with optional dev dependencies
+pip install jsonrpyc[dev]
+```
+
+
+## Contributing
+
+If you like to contribute to jsonrpyc, I'm happy to receive pull requests.
+Just make sure to add new test cases, run them via
+
+```bash
+> pytest tests
+```
+
+and check for linting and typing errors with
+
+```bash
+> mypy jsonrpyc
+> flake8 jsonrpyc
+```
+
+
+## Development
+
+- Source hosted at [GitHub](https://github.com/riga/jsonrpyc)
+- Report issues, questions, feature requests on [GitHub Issues](https://github.com/riga/jsonrpyc/issues)
+
+<!-- marker-after-info -->
+
+<!-- marker-after-body -->
