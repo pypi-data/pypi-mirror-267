@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+fast_gmail/fast_gmail.egg-info/PKG-INFO
+fast_gmail/fast_gmail.egg-info/SOURCES.txt
+fast_gmail/fast_gmail.egg-info/dependency_links.txt
+fast_gmail/fast_gmail.egg-info/requires.txt
+fast_gmail/fast_gmail.egg-info/top_level.txt
