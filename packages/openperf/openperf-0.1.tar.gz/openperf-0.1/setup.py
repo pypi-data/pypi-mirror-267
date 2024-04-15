@@ -1,0 +1,52 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='openperf',
+    version='0.1',
+    description='OpenPerf is a benchmarking suite tailored for the sustainable management of open-source projects. It assesses key metrics and standards vital for the successful development of open-source ecosystems.',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    author='Fenglin Bi',
+    author_email='fenglin@stu.ecnu.edu.cn',
+    url='https://github.com/X-lab2017/open-perf',
+    packages=find_packages(),
+    package_data={
+        'openperf': ['openperf/benchmarks/data_science/bot_detection/data/*.csv'],
+    },
+    include_package_data=True,
+    install_requires=[
+        'certifi==2024.2.2',
+        'charset-normalizer==3.3.2',
+        'click==8.1.7',
+        'idna==3.7',
+        'imbalanced-learn==0.12.2',
+        'joblib==1.4.0',
+        'numpy==1.26.4',
+        'pandas==2.2.2',
+        'python-dateutil==2.9.0.post0',
+        'pytz==2024.1',
+        'requests==2.31.0',
+        'scikit-learn==1.1.1',
+        'scipy==1.13.0',
+        'six==1.16.0',
+        'threadpoolctl==3.4.0',
+        'tzdata==2024.1',
+        'urllib3==2.2.1',
+        'xgboost==2.0.3',
+    ],
+    entry_points={
+        'console_scripts': [
+            'openperf=openperf.main:main',
+        ],
+    },
+    classifiers=[
+        'Development Status :: 4 - Beta',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'License :: OSI Approved :: MIT License',
+    ],
+)
