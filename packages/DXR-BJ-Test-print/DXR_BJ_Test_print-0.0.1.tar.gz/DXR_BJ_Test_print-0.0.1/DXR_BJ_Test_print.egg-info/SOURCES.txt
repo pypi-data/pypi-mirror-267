@@ -1,0 +1,5 @@
+setup.py
+DXR_BJ_Test_print.egg-info/PKG-INFO
+DXR_BJ_Test_print.egg-info/SOURCES.txt
+DXR_BJ_Test_print.egg-info/dependency_links.txt
+DXR_BJ_Test_print.egg-info/top_level.txt
