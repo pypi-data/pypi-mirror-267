@@ -1,0 +1,11 @@
+shapepy/__init__.py,sha256=7v3W0dg_D5ISI_J2-n_ikePZj_SHin3xIhwUSrA2JwM,691
+shapepy/curve.py,sha256=pIIXIIRehCju_-iofZA5lAR1ScZ2M8FPDx7OhfloiW4,24691
+shapepy/jordancurve.py,sha256=hONZ40LuD8lA9ALeN85LfqarBEua51Ey8dJ54B-9P8g,27619
+shapepy/plot.py,sha256=xDXEPGLPsNlkxLBi4a1hqpxTh9ri7icD6xW52b1U5Fk,4677
+shapepy/polygon.py,sha256=V_eSQwuxaq0VUntGneifqv3IFvN_MC3-HAmxbUScLuw,7941
+shapepy/primitive.py,sha256=pesK7yAfGgYWrt3cv20j3dfpYVd5qu5obqqhGUJk5t4,7411
+shapepy/shape.py,sha256=1a0Q3UH3nFxL_ywawcWxs1Pf9Qf6VjTcLvqAbzF8X2k,37537
+shapepy-1.0.2.dist-info/LICENSE.md,sha256=eMgFzm8Pvz5bst1zicPqAuM2J4L-bUnzUFsn1mQpapU,1079
+shapepy-1.0.2.dist-info/METADATA,sha256=maf_iZBcUobOC6b4TI7D4MseOh8yXGJII-vWJD49HG0,2636
+shapepy-1.0.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+shapepy-1.0.2.dist-info/RECORD,,
