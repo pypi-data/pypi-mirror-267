@@ -1,0 +1,3 @@
+[console_scripts]
+gwml = wedomldump.main:main
+
