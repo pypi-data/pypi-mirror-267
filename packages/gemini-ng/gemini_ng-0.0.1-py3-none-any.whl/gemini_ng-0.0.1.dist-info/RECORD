@@ -1,0 +1,16 @@
+gemini_ng/__init__.py,sha256=ZKZRwi1t2t2fSSRpRgi4aJfN7adOGT80QWwg6EvCjOY,56
+gemini_ng/chat.py,sha256=jQPjdWd34YWNPTrOa-Wt6E6_DHO21Ud2AQTakmyHxeY,1598
+gemini_ng/client.py,sha256=x6o5e8y8_Npw-oaQLDR0YAoZ5NzSZQmbu-msr1orJZ0,5226
+gemini_ng/schemas/__init__.py,sha256=NTAHJWqHEX6Qe4DPhMOcIf1SmTgNIYTiwD3asfiBz0Y,386
+gemini_ng/schemas/base.py,sha256=LlIDNYg90bmXSiClY4CCPNwIYK_yd8FgwkqExfWh16Y,140
+gemini_ng/schemas/harm.py,sha256=MR2v5AiDtzjJcCpnLzZ4sGCO2L4nzVVGaJEIoEdFXH0,1134
+gemini_ng/schemas/part.py,sha256=WZDp-Zcbs7mRDK_Q_2-q21sSQ1hfN4dHpkSC6R35vL8,922
+gemini_ng/schemas/request.py,sha256=ZYG9WtpxMpvRagqdPfss2hTR0c2oR3bRFeiZv8dVQXw,2838
+gemini_ng/schemas/response.py,sha256=Gv-qR7OVlaAdq-CkJVocRNA_tfVZpepHP1yVNeBp3m4,1209
+gemini_ng/schemas/upload.py,sha256=U8K5ND5BrcDqLDr9qC0h9kQSW-PSlUmFGEAPRruB-X0,1636
+gemini_ng/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gemini_ng-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gemini_ng-0.0.1.dist-info/METADATA,sha256=-mc85OYXpbEMZYe6SiHykovt7aezoX378QYkWGS_Rwo,1126
+gemini_ng-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gemini_ng-0.0.1.dist-info/top_level.txt,sha256=xvWKpzXHKB-bjwnQORajxBPynyYDG1VTs_7h1bklpDg,10
+gemini_ng-0.0.1.dist-info/RECORD,,

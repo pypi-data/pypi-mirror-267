@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: gemini-ng
+Version: 0.0.1
+Summary: Next-generation Gemini API Client
+Author-email: Ming Yang <ymviv@qq.com>
+Project-URL: Documentation, https://github.com/vivym/gemini-ng#readme
+Project-URL: Issues, https://github.com/vivym/gemini-ng/issues
+Project-URL: Source, https://github.com/vivym/gemini-ng
+Keywords: Gemini
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-api-python-client >=2.125.0
+Requires-Dist: requests >=2.31.0
+Requires-Dist: pydantic >=2.7.0
+
+# Next-generation Gemini API Client
+
+```python
+from gemini_ng import GeminiClient
+
+client = GeminiClient() # api key from environment variable `GEMINI_API_KEY`
+
+with client.start_chat(model="models/gemini-1.5-pro-latest") as chat:
+    image = client.upload_image("path/to/image.jpg")
+
+    rsp = chat.send_message([image, "Can you describe this image?"])
+
+    print(rsp)
+```
