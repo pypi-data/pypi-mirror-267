@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pythonOR1010
+Version: 0.1
+Summary: A package for outlier detection using the Interquartile Range (IQR) method
+Author: Adil Aziz
+Requires-Dist: pandas
+Requires-Dist: numpy
