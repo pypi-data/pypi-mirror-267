@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: librecell
+Version: 0.0.23
+Summary: DEPRECATED - use `lctime` and `lclayout` packages - CMOS layout generator and characterization.
+Author-email: "T. Kramer" <code@tkramer.ch>
+Project-URL: Homepage, https://codeberg.org/librecell/
+Project-URL: Repository, https://codeberg.org/librecell/
+Project-URL: Issue Tracker, https://codeberg.org/librecell/
+Keywords: cmos,cell,characterization,vlsi,asic,layout,generator
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: lctime>=0.0.23
+Requires-Dist: lclayout>=0.0.23
+
+# LibreCell Meta
+This is a meta-package containing no code but just references to sub-packages.
+
+Installing this package will install
+* librecell-layout
+* librecell-lib

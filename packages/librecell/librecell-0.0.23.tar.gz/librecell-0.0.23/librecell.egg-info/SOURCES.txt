@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+librecell.egg-info/PKG-INFO
+librecell.egg-info/SOURCES.txt
+librecell.egg-info/dependency_links.txt
+librecell.egg-info/requires.txt
+librecell.egg-info/top_level.txt

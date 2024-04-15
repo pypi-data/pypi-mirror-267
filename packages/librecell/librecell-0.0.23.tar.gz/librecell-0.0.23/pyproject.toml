@@ -1,0 +1,41 @@
+# SPDX-FileCopyrightText: 2023 Thomas Kramer
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+[project]
+name = "librecell"
+version = "0.0.23"
+description='DEPRECATED - use `lctime` and `lclayout` packages - CMOS layout generator and characterization.'
+readme = {file = "README.md", content-type="text/markdown"}
+
+requires-python = ">=3.7"
+
+keywords= ["cmos", "cell", "characterization", "vlsi", "asic", "layout", "generator"]
+
+authors = [ 
+  {name = "T. Kramer", email = "code@tkramer.ch"}
+]
+
+
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Topic :: Scientific/Engineering',
+    'Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)',
+    'Programming Language :: Python :: 3'
+]
+
+dependencies = [
+	'lctime>=0.0.23',
+	'lclayout>=0.0.23'
+]
+
+[project.urls]
+'Homepage' = 'https://codeberg.org/librecell/'
+'Repository' = 'https://codeberg.org/librecell/'
+'Issue Tracker' = 'https://codeberg.org/librecell/'
+
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=43.0.0"]
+build-backend = "setuptools.build_meta"
