@@ -1,0 +1,9 @@
+sparrowDB/__init__.py,sha256=3lCNeKDRAn0hLfYqwrg5wCK-LhCiMJNS2i6bB41qj_w,155
+sparrowDB/config.py,sha256=uuTV00AEjP53l-AT2sSzl5HDxYR7EFrQcXjWvhQEJqA,171
+sparrowDB/sparrow.py,sha256=gLJzHWzZyQeHUo2OEgRSPnXcfo8bi1AsLADpw4KxmxM,7208
+sparrowDB/sparrow_clint.py,sha256=3G6epUaeBEXcCiKH_VUQ15O4WAlcBbrZvxy7GFh3sbg,2897
+sparrowDB/sparrow_clint_service.py,sha256=th_CkJbF6MiC8NFsEO07GWvOADj5VOfO57H3BLgFLIk,8772
+sparrowDB-0.1.dist-info/METADATA,sha256=0StOfVxTxsMcTQOP346IEufVHQWkB5xHPR8mvVSo4Qs,155
+sparrowDB-0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+sparrowDB-0.1.dist-info/top_level.txt,sha256=WYwc3JZpgFjNpnGBKrE6X9M0DkFe-CFe2EuyHIJosG8,10
+sparrowDB-0.1.dist-info/RECORD,,
