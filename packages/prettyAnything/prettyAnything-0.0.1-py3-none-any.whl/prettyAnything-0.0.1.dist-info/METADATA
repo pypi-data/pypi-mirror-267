@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: prettyAnything
+Version: 0.0.1
+Summary: prettyAnything provides you the compatibility to prettify everything with Python
+Author-email: broData <niladridasgit@gmail.com>
+Project-URL: Homepage, https://github.com/niladridasgit/prettyAnything
+Project-URL: Issues, https://github.com/niladridasgit/prettyAnything/issues
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# prettyAnything
+**prettyAnything** (**still in the development phase**) gives you the compatibility to prettify everything with Python.
+
+Current Available Features -
+- `prettyDatabricks` (class)
+    Makes Databricks Cool
+    **Methods**
+     - `pretty_ls` (static-method)
+        Makes Databricks dbutils.fs.ls(path) Cool
+        **Arguments**
+        - `path` [**required**]
+        - `theme="light"`
+        - `sizeChecker=True`
+        - `timeChecker=True`
+     - `df_ls` (static-method)
+        Makes Databricks dbutils.fs.ls(path) Productive
+        **Arguments**
+        - `path` [**required**]
+        - `number_of_layers=30`
+        - `spark_session_object=spark`
+
+**`EVOLVING`** Follow on [GitHub](https://github.com/niladridasgit/prettyAnything)
