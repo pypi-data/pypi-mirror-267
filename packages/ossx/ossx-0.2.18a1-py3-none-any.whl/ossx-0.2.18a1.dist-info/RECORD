@@ -1,0 +1,8 @@
+ossx/__init__.py,sha256=wkjhMI32WEThvIU0VZi5gBnmGxf7tT028g_IvKp5Qig,113
+ossx/_http.py,sha256=teo4-8xzeXnnOycjeOsboT6mNapWaVFb7muMGsttbVg,6722
+ossx/bucket.py,sha256=iS208uv3BCgVHxwFa4i73YonRt9kzjjGKOrIvQ1VweI,8908
+ossx/patch.py,sha256=202EyzrMK78OS443IDyS1mn6avl0w8hPXNbgHvVbSh0,193
+ossx/utils.py,sha256=uoLWmTc1nih7rW0P57-pvws7BgIU8kgiSKFk1JIzGUE,5048
+ossx-0.2.18a1.dist-info/METADATA,sha256=EnctcgLZssU_qBRIwHny0MvkR1lMTnflSnjyscQ5RiU,778
+ossx-0.2.18a1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+ossx-0.2.18a1.dist-info/RECORD,,

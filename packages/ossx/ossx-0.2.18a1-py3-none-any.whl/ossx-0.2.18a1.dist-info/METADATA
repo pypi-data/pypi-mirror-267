@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ossx
+Version: 0.2.18a1
+Summary: aliyun oss sdk for python asyncio
+Author: sswest
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiofiles (>=0.7.0,<0.8.0)
+Requires-Dist: httpx (==0.27.0)
+Requires-Dist: oss2 (==2.18.4)
+Description-Content-Type: text/markdown
+
+# ossx
+
+ossx is an Aliyun OSS SDK for Python asyncio.
+
+This is an initial draft of the ossx project.
+
+You are free to extend this project, but it's recommended to always run the unit tests to ensure the existing functionality works as expected.
+
