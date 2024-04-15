@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: prep-flow
+Version: 0.1.1
+Summary: prep-flow: Data preprocessing framework with type validation for data scientists.
+Author-email: Tomohiko Kato <s.tk1619@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Tomohiko Kato
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.20.3
+Requires-Dist: pandas>=1.2.4
+Requires-Dist: openpyxl>=3.0.0
+Requires-Dist: pydantic>=2.0.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: jupyter; extra == "dev"
+
+# prep-flow
+
+Data preprocessing framework with type validation for data scientists.
+
+## What is it?
+
+`prep-flow` is a framework for declaratively describing data preprocessing, which is a common task in the field of data science. 
+Data preprocessing using pandas often leads to procedural code and tends to be low readability and maintainability.
+`prep-flow` solves this problem and provides declarative and highly readable code.
+
+
+## Install
+
+```shell
+$> pip install prep-flow
+```
+
+## A Simple Example
+
+```python
+from datetime import datetime
+
+import pandas as pd
+from prep_flow import BaseFlow, Column, String, Integer, DateTime, modifier, creator
+
+df_member = pd.DataFrame({
+    "name": ["Taro Yamada", "John Smith", "Li Wei", "Hanako Tanaka"],
+    "gender": ["man", "man", "man", "woman"],
+    "birthday": ["1995/10/19", "1990/03/20", "2003/02/01", "1985/11/18"],
+})
+
+class MemberFlow(BaseFlow):
+    name = Column(dtype=String, name="name", description='Add "Mr." or "Ms." depending on the gender.')
+    gender = Column(dtype=String, category=["man", "woman"])
+    birthday = Column(dtype=DateTime)
+    age = Column(dtype=Integer)
+    
+    @modifier("name")
+    def modify_name(self, data: pd.DataFrame) -> pd.Series:
+        data["prefix"] = data["gender"].apply(lambda x: "Mr." if x == "man" else "Ms.")
+        return data["prefix"] + data["name"]
+    
+    @creator("age")
+    def create_age(self, data: pd.DataFrame) -> pd.Series:
+        return data["birthday"].apply(lambda x: (datetime.now() - x).days // 365)
+
+member = MemberFlow(df_member)
+print(member.data)
+```
+| name             | gender | birthday   | age |
+|------------------|--------|------------|-----|
+| Mr.Taro Yamada   | man    | 1995/10/19 | 28  |
+| Mr.John Smith    | man    | 1990/03/20 | 34  |
+| Mr.Li Wei        | man    | 2003/02/01 | 21  |
+| Ms.Hanako Tanaka | woman  | 1985/11/18 | 38  |
