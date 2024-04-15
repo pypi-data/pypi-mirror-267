@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: ipgogogo
+Version: 1.1.1
+Summary: I(mage) to P(df) Go Go Go!
+Home-page: https://github.com/keyork/ipgogogo
+Author: Keyork
+Author-email: chengky18@icloud.com
+License: Apache Software License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pillow
+Requires-Dist: loguru
+
+
+# ipgogogo
+
+image to pdf, I(mage)P(DF)gogogo!
+
+## envs
+
+```text
+pillow
+loguru
+```
+
+run `pip install -r requirements.txt`
+
+## usage
+
+### for pypi
+
+command line:
+
+```python
+import ipgogogo as ig
+converter = ig.IPGoGoGo("input_dir", "output_dir")
+converter.run()
+```
+
+ui:
+
+```python
+import ipgogogo as ig
+ig.run_ui()
+```
+
+### for source code
+
+```shell
+python ipgogogo/run.py -i {input files dir path} -o {output files dir path} -l {log level}
+```
+
+## TODO
+
+- [x] ui
