@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: shiivalibrary
+Version: 1.0.0
+Summary: Python Module for fast AMV Leaks repacks
+Home-page: https://t.me/shiivastuff
+Author: shiivastuff
+Author-email: shiivastuff@gmail.com
+Project-URL: Documentation, https://shiivastuff.github.io/
+Keywords: Python Leaks Files
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
