@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ynlibpackages
+Version: 0.1.0
+Summary: a chart showing the average grade of the semester
+Home-page: https://github.com/simrok/ynlibpackages
+Download-URL: https://github.com/simrok/ynlibpackages
+Author: simrok
+Author-email: ynna3784@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
+oss-dev chart python module
