@@ -1,0 +1,17 @@
+ipgogogo/__init__.py,sha256=pOyi0WOtU-vMQR0RKds3ztFwYLHq--hDfqCSEgOgbRI,1445
+ipgogogo/run.py,sha256=NqIsEEkNjK8P8byzCGhBWY0N-0qD2a4ueqttUwJdJaE,1825
+ipgogogo/ui.py,sha256=N_BNGI78QBjSlcDFCRAWw2JMuz2ViTRkQZpQ_O-jNKQ,2500
+ipgogogo/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipgogogo/core/core.py,sha256=CBfcrEfOjuv-4QmSUr0U4WpT3kg5eHj1CwA0oe6jFEQ,975
+ipgogogo/core/rcore.py,sha256=PP8mudPAWzEljJGJY6E1tXvfM8PBbaF5Wz4IEj-H0GU,1088
+ipgogogo/core/wcore.py,sha256=hHhvoWyr3JsynyPcuIuCdNTCpoOUEPWqkO24kiuOaSc,933
+ipgogogo/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipgogogo/model/state.py,sha256=_IHpri8uUtJ2Y1CtrPl0cMJho8Vl6TQZXZe-DJ0dDVg,1614
+ipgogogo/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipgogogo/utils/checkdir.py,sha256=ZMvjTVcB0h6CXQj5NZHmzvWLdnR7qqFekXDDX3FiPvw,720
+ipgogogo/utils/logger.py,sha256=4I3HR7HmeekO0MkT7Rn4aJtGID9EMVNdyUsc2zE7neY,552
+ipgogogo-1.1.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+ipgogogo-1.1.0.dist-info/METADATA,sha256=HYzbGqAQYtfQRpile4ooCQK9NwyCM36Z9HfKT9kyVyo,1503
+ipgogogo-1.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ipgogogo-1.1.0.dist-info/top_level.txt,sha256=8ftT4N-4ajhG6IRWv4LCmlCs1t5Hn3vWT8D6pj6a6Wc,9
+ipgogogo-1.1.0.dist-info/RECORD,,
