@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: asapo
+Version: 23.12.0a0
+Summary: High performance distributed streaming platform.
+Home-page: https://gitlab.desy.de/asapo/asapo
+License: Apache License 2.0
+Description-Content-Type: text/markdown
+Requires-Dist: asapo-consumer (==23.12.0a0)
+Requires-Dist: asapo-producer (==23.12.0a0)
+
+High performance distributed streaming platform.
