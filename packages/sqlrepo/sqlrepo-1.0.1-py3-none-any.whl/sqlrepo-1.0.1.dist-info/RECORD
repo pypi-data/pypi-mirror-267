@@ -1,0 +1,14 @@
+sqlrepo-1.0.1.dist-info/METADATA,sha256=EqjrRjyKTlT7zNMkkQ69o3g0usJcfFcrX7GPuRbpNJ8,7890
+sqlrepo-1.0.1.dist-info/WHEEL,sha256=gZRWN_1fGFDwBnXrZ9N3dgvbKlKgo5AUcDIMajlGpKM,90
+sqlrepo/.pytest_cache/.gitignore,sha256=Ptcxtl0GFQwTji2tsL4Gl1UIiKa0frjEXsya26i46b0,37
+sqlrepo/.pytest_cache/CACHEDIR.TAG,sha256=N9yI75oKvt2-gQU6bdj9-xOvthMEXqHrSlyBWnSjveQ,191
+sqlrepo/.pytest_cache/README.md,sha256=c_1vzN2ALEGaay2YPWwxc7fal1WKxLWJ7ewt_kQ9ua0,302
+sqlrepo/.pytest_cache/v/cache/nodeids,sha256=EkjAk78S_kQy7SJIsiPUtVrdcR_DJ7seV5aGkeyyn04,130
+sqlrepo/.pytest_cache/v/cache/stepwise,sha256=T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU,2
+sqlrepo/__init__.py,sha256=6b6wBr-SiG0Uu1mqcBCAOUooy7xnit_XPjmQJq5BakM,463
+sqlrepo/exc.py,sha256=E04bxSLDGCESaKoChNWM6qdy66yB9fP4VIF8SPlTEh4,491
+sqlrepo/logging.py,sha256=FaHpVcXEl3jlvlo6jIfW-Gh_0k6ZH3lepxZvWQiP7AY,798
+sqlrepo/queries.py,sha256=y2WZIszE4V7PtB38fHx16FaXjNGFeZSISE3YEYt5Pz4,27442
+sqlrepo/repositories.py,sha256=U-EzziLl227gVmp2J5DWamKCElghX37MbkfSm8y5Fcc,22014
+sqlrepo/uow.py,sha256=icGhD3sEnA2KmpJ--scmarulV1HbsUhM8-EZ4KpT4AA,3556
+sqlrepo-1.0.1.dist-info/RECORD,,
