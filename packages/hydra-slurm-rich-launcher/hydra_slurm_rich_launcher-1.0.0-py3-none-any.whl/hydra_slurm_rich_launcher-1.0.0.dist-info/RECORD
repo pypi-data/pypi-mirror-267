@@ -1,0 +1,10 @@
+hydra_plugins/hydra_slurm_rich_launcher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hydra_plugins/hydra_slurm_rich_launcher/_progress_handler.py,sha256=sdeaVHhK3_80o1CapVDpnVAQJFteVbJpd8du9W_-Krg,12602
+hydra_plugins/hydra_slurm_rich_launcher/_slurm_watcher.py,sha256=6pcup4ZRvw74_3MtoyZCpH8D0NwIlrKY1msachM0-6k,1193
+hydra_plugins/hydra_slurm_rich_launcher/config.py,sha256=zy6VXwRZl5xRJM8qjDGCP237BDrdyeDq8ueaMqie8Vk,3652
+hydra_plugins/hydra_slurm_rich_launcher/slurm_rich_launcher.py,sha256=jOOk0YmfrLmeRINhvLD7fqE8_8eYHJOjIb8ZtJCkvOo,9918
+hydra_plugins/hydra_slurm_rich_launcher/utils.py,sha256=xcpEO15pkGdHt1OjDjjWK-og8-X2d-wmVwsBgPUonc0,573
+hydra_slurm_rich_launcher-1.0.0.dist-info/LICENSE,sha256=NHKjrqbMzaC-1Btcnb50VftvINR_yTrpHIV_1RR6aGM,1145
+hydra_slurm_rich_launcher-1.0.0.dist-info/METADATA,sha256=GJQDlYR6tLfGyiAgzoGyiTiDnwEA_eyTNI7JSgv8-QQ,4770
+hydra_slurm_rich_launcher-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+hydra_slurm_rich_launcher-1.0.0.dist-info/RECORD,,
