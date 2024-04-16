@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: TracMercurial
+Version: 1.0.0.11
+Summary: Mercurial plugin for Trac (1.0 branch)
+Home-page: https://trac.edgewall.org/wiki/TracMercurial
+Author: Christian Boos
+Author-email: cboos@edgewall.org
+License: GPL
+Keywords: trac scm plugin mercurial hg
+Classifier: Framework :: Trac
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+License-File: COPYING
+Requires-Dist: Trac>=1.0
+
+
+      This plugin for Trac 1.0 provides support for the Mercurial SCM.
+
+      See https://trac.edgewall.org/wiki/TracMercurial for more details.
+      
