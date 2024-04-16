@@ -1,0 +1,11 @@
+PyYAML
+ClusterShell
+pycairo
+PyGObject
+
+[dev]
+Flask-Cors
+
+[web]
+Flask
+requests-toolbelt
