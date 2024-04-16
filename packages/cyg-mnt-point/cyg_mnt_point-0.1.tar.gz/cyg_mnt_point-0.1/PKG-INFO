@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: cyg_mnt_point
+Version: 0.1
+Summary: Search for the mount point in Cygwin by UUID disk partition
+Home-page: https://github.com/Serhii5465/cyg_mnt_point
+Author: Serhii5465
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# cyg_mnt_point
+
+Search for the mount point in Cygwin by UUID disk partition
+
+## Installation
+
+```
+pip install cyg_mnt_point
+```
+
+As of now, the functionality has been tested in the CYGWIN_NT-10.0-19044 3.5.3-1.x86_64 environment on Windows 10 LTSC 21H2.
+
+Prerequisits:
+ - Python3 installation (>= 3.8)
+
+
+# Usage
+Input: UUID of the target disk partition
+
+Output: Mount point in UNIX style format  - /cygdrive/d/
+
+```
+from cyg_mnt_point import mnt 
+UUID="ABCD12345678"
+mnt = mnt.get_cygwin_mount_point(UUID)
+if mnt is not None:
+    print(mnt)
+else:
+    raise RuntimeError('The target disk was not found')
+
+--------------------------------------------------------
+print(mnt) --> /cygdrive/c/
+```
+
