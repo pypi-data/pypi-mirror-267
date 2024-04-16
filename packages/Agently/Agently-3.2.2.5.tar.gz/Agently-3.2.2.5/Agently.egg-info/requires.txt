@@ -1,0 +1,16 @@
+nest_asyncio
+httpx
+aiohttp
+websockets
+tornado
+openai
+erniebot
+zhipuai
+PyYAML
+json5
+duckduckgo_search
+beautifulsoup4
+requests
+numpy
+scipy
+sympy
