@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "comparable_pattern"
+description="A comparable string / regex object for flexible string comparisons."
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [ ]
+authors = [
+    {name = "Rudolf Byker", email = "rudolfbyker@gmail.com"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.11"  # TODO: Might work with earlier versions. Test it.
+
+[project.urls]
+repository = "https://github.com/AutoActuary/comparable_pattern"
+
+[tool.setuptools_scm]
+write_to = "src/version.py"
