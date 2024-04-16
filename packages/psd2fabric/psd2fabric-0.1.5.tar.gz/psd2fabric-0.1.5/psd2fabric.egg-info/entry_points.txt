@@ -1,0 +1,2 @@
+[console_scripts]
+psd2fabric = cli.psd2fabric:main
