@@ -1,0 +1,10 @@
+yfinance
+beautifulsoup4
+helium
+mysql-connector-python
+SQLAlchemy
+ib_insync
+nltk
+gensim
+nltk-downloader
+top2vec
