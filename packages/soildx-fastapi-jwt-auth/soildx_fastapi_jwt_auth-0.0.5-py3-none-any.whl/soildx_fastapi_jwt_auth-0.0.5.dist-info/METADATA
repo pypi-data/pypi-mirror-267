@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: soildx-fastapi-jwt-auth
+Version: 0.0.5
+Summary: fastapi-jwt-auth simple jwt token authentication
+Home-page: UNKNOWN
+Author: Akash
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
