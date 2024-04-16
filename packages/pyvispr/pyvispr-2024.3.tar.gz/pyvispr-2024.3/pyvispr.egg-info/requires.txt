@@ -1,0 +1,10 @@
+babelwidget
+conf_ini_g
+json_any
+logger_36
+numexpr
+numpy
+platformdirs
+PyQt6
+scikit-image
+str_to_obj
