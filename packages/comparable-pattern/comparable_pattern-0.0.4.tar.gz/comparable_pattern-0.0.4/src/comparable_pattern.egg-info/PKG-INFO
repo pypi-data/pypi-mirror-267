@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: comparable_pattern
+Version: 0.0.4
+Summary: A comparable string / regex object for flexible string comparisons.
+Author-email: Rudolf Byker <rudolfbyker@gmail.com>
+Project-URL: repository, https://github.com/AutoActuary/comparable_pattern
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# comparable_pattern
+
+A comparable string / regex object for flexible string comparisons.
+
+Useful for making unit tests less brittle without extensive mocking of things like timestamps and hashes which maybe change from one run to another.
+
+## Examples
+
+```doctest
+>>> p = compile("foo")
+>>> c = ComparablePattern(p)
+>>> p == "foo"
+False
+>>> c == "foo"
+True
+>>> c == "bar"
+False
+
+>>> c = "foo" + ComparablePattern(compile("\d{3}"))
+>>> c == "foo"
+False
+>>> c == "123"
+False
+>>> c == "foo123"
+True
+
+>>> c = ComparablePattern(compile("\d{3}")) + "bar"
+>>> c == "bar"
+False
+>>> c == "123"
+False
+>>> c == "123bar"
+True
+
+>>> c = ComparablePattern(compile("\d{3}")) + ComparablePattern(compile("\w{3}"))
+>>> c == "123"
+False
+>>> c == "abc"
+False
+>>> c == "123abc"
+True
+```
