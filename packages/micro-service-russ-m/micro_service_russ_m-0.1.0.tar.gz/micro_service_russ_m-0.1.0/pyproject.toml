@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "micro-service-russ-m"
+version = "0.1.0"
+description = "This is package is not meant to be used in prod"
+authors = ["Rustam Mustafoev"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+build = "^1.2.1"
+wheel = "^0.43.0"
+pip = "^24.0"
+fastapi = "^0.110.1"
+uvicorn = "^0.29.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
