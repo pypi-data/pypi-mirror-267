@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: testpack24
+Version: 0.0.2
+Summary: test package
+Author: me
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: astropy (>=6.0.1,<7.0.0)
+Requires-Dist: fast-histogram (>=0.12,<0.13)
+Requires-Dist: matplotlib (>=3.8.4,<4.0.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: scipy (>=1.13.0,<2.0.0)
