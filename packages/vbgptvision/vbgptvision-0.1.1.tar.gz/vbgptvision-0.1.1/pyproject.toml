@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "vbgptvision"
+version = "0.1.1"
+description = ""
+authors = ["vaibhavblayer <vaibhavblayer@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+vbgptvision = "vbgptvision.main:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
