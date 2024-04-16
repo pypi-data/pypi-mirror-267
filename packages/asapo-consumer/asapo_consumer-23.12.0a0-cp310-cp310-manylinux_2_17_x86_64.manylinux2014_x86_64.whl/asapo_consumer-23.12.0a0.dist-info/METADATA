@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: asapo-consumer
+Version: 23.12.0a0
+Requires-Dist: numpy (>=1.23.4)
+
