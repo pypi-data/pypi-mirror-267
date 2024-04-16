@@ -1,0 +1,13 @@
+gempy_engine
+
+[base]
+gempy_viewer
+pandas
+
+[opt]
+gempy_viewer
+pandas
+gempy_plugins
+pooch
+scipy
+scikit-image
