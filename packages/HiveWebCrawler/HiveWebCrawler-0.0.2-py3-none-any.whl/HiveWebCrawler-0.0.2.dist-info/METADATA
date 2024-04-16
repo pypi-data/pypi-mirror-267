@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: HiveWebCrawler
+Version: 0.0.2
+Summary: Simple Python 3.x Web Crawler, Images, Urls, Emails, Phone numbers
+Home-page: https://github.com/MehmetYukselSekeroglu/HiveWebCrawler
+Author: MehmetYukselSekeroglu
+Author-email: dijital_evren@protonmail.com
+Project-URL: Bug Reports, https://github.com/MehmetYukselSekeroglu/HiveWebCrawler/issues
+Project-URL: Source Code, https://github.com/MehmetYukselSekeroglu/HiveWebCrawler
+Keywords: PyPi,Web Crawler,Web Image Crawler,Web URL Crawler,Web Email Crawler,Web Phone Number Crawler
+Requires-Python: >=3.8
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+# How To Install
+
+```shell
+pip install PyWebCrawler
+```
+
+
