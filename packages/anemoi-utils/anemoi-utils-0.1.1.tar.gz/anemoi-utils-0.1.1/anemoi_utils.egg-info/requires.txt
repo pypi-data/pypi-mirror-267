@@ -1,0 +1,11 @@
+tomli
+
+[all]
+tomli
+
+[dev]
+sphinx
+sphinx_rtd_theme
+nbsphinx
+pandoc
+tomli
