@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: testpack24
+Version: 0.0.1
+Summary: test package
+Author: me
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11

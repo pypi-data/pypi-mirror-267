@@ -1,0 +1,6 @@
+testpack24/__init__.py,sha256=POi5yvb0J6EmMTTWbxseNu8xVPWY3Y7I5fvTiR2kO8I,908
+testpack24/test_module.py,sha256=M1_kXintClSVIQIcvswMVZd3HOoIeGwRzML_zkTRYjk,13
+testpack24/test_module.py~,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testpack24-0.0.1.dist-info/METADATA,sha256=Onzl5pJqBZzssAvyw7YLnaiWP3LZngLKQLzlc1ULeso,215
+testpack24-0.0.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+testpack24-0.0.1.dist-info/RECORD,,
