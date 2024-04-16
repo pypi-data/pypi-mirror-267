@@ -1,0 +1,62 @@
+Metadata-Version: 2.3
+Name: switchinglogfilehandlers
+Version: 0.0.5
+Summary: A collection of switching log file handlers
+Project-URL: Homepage, https://git.hjp.at:3000/hjp/switchinglogfilehandlers
+Project-URL: Bug Tracker, https://git.hjp.at:3000/hjp/switchinglogfilehandlers/issues
+Author-email: "Peter J. Holzer" <hjp@hjp.at>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+switchinglogfilehandlers
+========================
+
+A collection of switching log file handlers for the Python logging system.
+Unlike the *rotating* log file handlers in the Python core which always
+write to a file with a fixed name and peridically rename that, these
+handlers always open a new file with a unique name - old files will
+never be renamed.
+
+TimedSwitchingFileHandler
+-------------------------
+
+This file handler starts a new file at regular intervals, comparable to
+the TimedRotatingFileHandler. The switch always occurs at a “round”
+time, i.e. at the hour for hourly switches, at midnight for daily
+switches, etc. The old file stays open until just before the first log
+entry is written to the new file.
+
+### Parameters
+
+| Parameter | Default | Description |
+|-|-|-|
+| `filename` | (required) | Path to the log files. The timestamp and `.log` is appended |
+| `when` | `'h'` | When log files are switched: (every **s**econd, **m**inute, **h**our, **d**ay, **w**eek) |
+| `utc` | `False` | Timestamps are in UTC (otherwise local time) |
+| `create_directory` | `False` | Intermediate directories in `filename` are created if necessary |
+
+TimeoutSwitchingFileHandler
+---------------------------
+
+This file handler automatically closes the log file after a period of
+inactivity (or after the file has been open for some time whichever
+comes first) and then opens a new file at the next emit.
+
+This is useful for long-running processes where short periods of
+activity alternate with periods of inactivity. Log switchse will
+typically occur during inactivity, so each log file will include one
+complete active period. Also, since the log files are closed, they can
+be safely compressed or removed.
+
+### Parameters
+
+| Parameter | Default | Description |
+|-|-|-|
+| `filename` | (required) | Path to the log files. The timestamp is appended |
+| `min_timeout` | `60` | Logfile is closed if there hasn't been any activity for `min_timeout` seconds |
+| `max_timeout` | `3600` | Logfile is closed if is has been created `max_timeout` seconds ago |
+| `create_directory` | `False` | Intermediate directories in `filename` are created if necessary |
