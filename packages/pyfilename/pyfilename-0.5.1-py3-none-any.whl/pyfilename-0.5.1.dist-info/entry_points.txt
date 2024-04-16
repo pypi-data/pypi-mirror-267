@@ -1,0 +1,3 @@
+[console_scripts]
+pyfilename=WebtoonScraper:__main__.main
+
