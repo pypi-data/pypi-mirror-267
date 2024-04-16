@@ -1,0 +1,12 @@
+phosx/__init__.py,sha256=cID1jLnC_vj48GgMN6Yb1FA3JsQ95zNmCHmRYE8TFhY,22
+phosx/assets/logo.png,sha256=XrU8dCRA0rd6g3clhzBhyE1qKzJ7c4UXODCwXvNYKKQ,311166
+phosx/assets/workflow.png,sha256=rV4QxOI5BTblimK60DBb4Xcb0rlKbW_Zz0z348ehvCA,517168
+phosx/cli.py,sha256=fCFLU6zemT7nbyvFR9WOCpCUSr4hjoqJGaWu1rPIx_o,3874
+phosx/data/PSSMs.h5,sha256=Q3IWX2W2Dcj-8ceHRAX2n4m46ES-eH9C27UAXV_i0x0,672976
+phosx/data/pssm_score_quantiles.h5,sha256=02QZ2_jJm9taCg9hw-uwddfhBaxzkO7YM4-uUG6zRnk,24361562
+phosx/pssm_enrichments.py,sha256=Ngazle6gttLVsCqHUx7EGs1ljz0DhyxiujGG2QWv9fk,13830
+phosx-0.6.0.dist-info/LICENSE,sha256=TTqPFnrb08dUC6PPOvmOijswNDv9oQylCEdU1KKBWrU,11348
+phosx-0.6.0.dist-info/METADATA,sha256=3YlJScd3ZK2-MBwFSKOJW6dOVKouz8PR5hjjKgde1sw,4205
+phosx-0.6.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+phosx-0.6.0.dist-info/entry_points.txt,sha256=ng9RPifyob2sNsmK-nUYTldzbmGlDhwKeIYoMcKeqZ0,40
+phosx-0.6.0.dist-info/RECORD,,
