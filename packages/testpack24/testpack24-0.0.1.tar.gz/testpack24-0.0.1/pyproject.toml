@@ -1,0 +1,12 @@
+[tool.poetry]
+name = "testpack24"
+version = "0.0.1"
+description = "test package"
+authors = ["me"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
