@@ -1,0 +1,16 @@
+custom_horizontal_plot/__init__.py,sha256=86owaSr3-om3ik6c2irgiad8aDjghag8N4T9hIvbL30,986
+custom_horizontal_plot/example.py,sha256=5TY_uxM3P0yAj-j8p9xDJuQJoqYQ5paglT1z9v44Aaw,10589
+custom_horizontal_plot/frontend/build/asset-manifest.json,sha256=mhORpabukLOWqendaPvwNNBWANBWSaOn1yXhavxSU-Y,374
+custom_horizontal_plot/frontend/build/bootstrap.min.css,sha256=X9ITP3t3djkRs4SffIkA1Q2WMy-oYl6au5HFYTVShe0,206960
+custom_horizontal_plot/frontend/build/bootstrap.min.css.map,sha256=8SM4U2NQpCLGTQLW5D_x3qSTwxVq2CP-GXYc3V1WwFs,589892
+custom_horizontal_plot/frontend/build/index.html,sha256=5_dLbrXrL7_wFm37aJmgQl2wSwx7XomZWieWB-jm0js,553
+custom_horizontal_plot/frontend/build/static/css/main.982dfc3b.css,sha256=gDCdkqeurfG4_ypwk-6zTWKZJffgCvF0mKcan5dJ1SM,5597
+custom_horizontal_plot/frontend/build/static/css/main.982dfc3b.css.map,sha256=cyAH0fa2WB5VBJmDVJnrU9JWw0dtD3TsxSMVLu--Y4M,10426
+custom_horizontal_plot/frontend/build/static/js/main.5bec0b69.js,sha256=UrUMIjBB0UhnfdrVtPVf5CZ7if9oPc4TisH2lI0MZD0,383343
+custom_horizontal_plot/frontend/build/static/js/main.5bec0b69.js.LICENSE.txt,sha256=NVg_xX7uJeMONytZUcILJQX3fKCxxwdigyGjBfS0PCU,1540
+custom_horizontal_plot/frontend/build/static/js/main.5bec0b69.js.map,sha256=xtKD0GxUwvdRbqvjjUcLIJGgh7TVDLAWyW2mPlKqqXc,1522911
+custom_horizontal_plot-0.0.7.dist-info/LICENSE,sha256=SHkHX-qiNZt-ACArrZP67jppVYPvF8xuUDRjJw_E3L0,1082
+custom_horizontal_plot-0.0.7.dist-info/METADATA,sha256=Hs2kCUP1yPY171Aasmrxv9uCyf7aG37yH2hfrbilgmQ,529
+custom_horizontal_plot-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+custom_horizontal_plot-0.0.7.dist-info/top_level.txt,sha256=7MF3OgrjyODrUvZupDk_4err6dUbmBNR79lxanKE9Mg,23
+custom_horizontal_plot-0.0.7.dist-info/RECORD,,
