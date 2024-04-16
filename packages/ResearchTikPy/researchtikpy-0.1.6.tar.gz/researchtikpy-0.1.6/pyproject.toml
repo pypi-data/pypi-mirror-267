@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ResearchTikPy"
+version = "0.1.6"
+authors = [
+    {name = "Hohner Julian", email = "daswaeldchen@gmail.com"}
+]
+description = "Python API wrapper for the TikTok Research API"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "requests>=2.26.0",
+    "pandas"
+]
+keywords = ["TikTok API research", "tiktok", "python3", "api", "tiktok-api", "research"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11"
+]
+
+[project.urls]
+homepage = "https://github.com/HohnerJulian/ResearchTikPy"
+
+[tool.setuptools]
+packages = { find = { where = ["."], exclude = ["images*", "tests*"] } }
