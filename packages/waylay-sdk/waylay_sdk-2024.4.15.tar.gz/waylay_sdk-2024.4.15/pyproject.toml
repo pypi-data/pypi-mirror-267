@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "waylay-sdk"
+version = "2024.04.15"
+description = "Waylay Python SDK."
+requires-python = ">=3.9"
+keywords = ["waylay", "sdk"]
+readme = "README.md"
+authors = [{name = "Waylay", email = "info@waylay.io"}]
+license={file = "LICENSE.txt"}
+dependencies = [
+    "waylay-sdk-alarms", 
+    "waylay-sdk-data",
+    "waylay-sdk-registry",
+    "waylay-sdk-resources",
+    "waylay-sdk-rules",
+    "waylay-sdk-storage",
+]
+[project.optional-dependencies]
+types-alarms = [ "waylay-sdk-alarms-types" ]
+types-data = [ "waylay-sdk-data-types" ]
+types-registry = [ "waylay-sdk-registry-types" ]
+types-resources = [ "waylay-sdk-resources-types" ]
+types-rules = [ "waylay-sdk-rules-types" ]
+types-storage = [ "waylay-sdk-storage-types" ]
+types = [
+    "waylay-sdk-alarms-types",
+    "waylay-sdk-data-types",
+    "waylay-sdk-registry-types",
+    "waylay-sdk-resources-types",
+    "waylay-sdk-rules-types",
+    "waylay-sdk-storage-types",
+]
+
+[project.urls]
+Homepage = "https://www.waylay.io/"
+Documentation = "https://docs.waylay.io/#/api/sdk/python"
+Repository = "https://github.com/waylayio/waylay-py-services.git"
