@@ -1,0 +1,9 @@
+README.md
+setup.py
+soildx_fastapi_jwt_auth.egg-info/PKG-INFO
+soildx_fastapi_jwt_auth.egg-info/SOURCES.txt
+soildx_fastapi_jwt_auth.egg-info/dependency_links.txt
+soildx_fastapi_jwt_auth.egg-info/requires.txt
+soildx_fastapi_jwt_auth.egg-info/top_level.txt
+soildx_jwt_auth/__init__.py
+soildx_jwt_auth/jwt_auth.py
