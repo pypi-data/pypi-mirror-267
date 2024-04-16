@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: zodchy-identity
+Version: 0.1.1
+Summary: Collection of tools to work with identifiers in applications with zodchy architecture
+Home-page: https://github.com/smairon/zodchy-identity
+Author: Smairon
+Author-email: man@smairon.ru
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/smairon/zodchy-identity
+Description-Content-Type: text/markdown
+
+# Zodchy security
