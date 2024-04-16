@@ -1,0 +1,8 @@
+pretix_ldap/__init__.py,sha256=-rQfamUdNeA3apC6hyTG_aJcXMO9nNhrYXXZzR1GP24,660
+pretix_ldap/ldap_connector.py,sha256=myW2SGtPsrFOPO2PQK2cMsT2JjGv1Lfx9iIoiOysFZE,4421
+pretix_ldap-0.2.5.dist-info/LICENSE,sha256=hn6eEdULjVTSAan5AiUoGyKF2VVQSiO8_QznwTFOoNY,549
+pretix_ldap-0.2.5.dist-info/METADATA,sha256=VTQzwCksMKz50xAzeNghF_CA1lIsYDuUmR5kzl-cb8Y,3153
+pretix_ldap-0.2.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pretix_ldap-0.2.5.dist-info/entry_points.txt,sha256=8KgTRkyLo8uUZwaU2uyiqX-K9XSKYMJfJusJZIx1FQ4,59
+pretix_ldap-0.2.5.dist-info/top_level.txt,sha256=FSutpTXtPV8xAwitQkem2W2P6-DxomGWiA_9U1ckO6Q,12
+pretix_ldap-0.2.5.dist-info/RECORD,,
