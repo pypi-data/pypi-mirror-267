@@ -1,0 +1,6 @@
+dm_aioinfluxdb/__init__.py,sha256=pVe1BJ-r-25tYidW40DGDs5J6TTp8v2_svTmBJT5amM,59
+dm_aioinfluxdb/aioinfluxdb_client.py,sha256=Gf3u5zYIWMQqR20Lh8tHFLAAOt-tTWGt3H0nceFhuo0,5198
+dm_aioinfluxdb-0.2.5.dist-info/METADATA,sha256=0wQGwVL5C0qUyLtXlebdvTmpU9oI3xp4ZbQ4UBZSDw0,3331
+dm_aioinfluxdb-0.2.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dm_aioinfluxdb-0.2.5.dist-info/top_level.txt,sha256=GLk-tfMHnsmB6YereL4tV-3cjFGhO1k_vDwfPao81lk,15
+dm_aioinfluxdb-0.2.5.dist-info/RECORD,,
