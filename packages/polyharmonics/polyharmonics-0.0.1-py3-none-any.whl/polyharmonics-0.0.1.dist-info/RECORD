@@ -1,0 +1,8 @@
+polyharmonics/__init__.py,sha256=h4gDBIeWa-21yhs72wEaCqg-c1iBL1_HPT5ZYAxArSU,403
+polyharmonics/__main__.py,sha256=CxaubNgxPzUo1av1fqPfv-M-4aWH4u0CZM0CAFsZm28,2902
+polyharmonics/legendre_polynomials.py,sha256=xvxh3jppkl4EPPr1Yf1fn3pxyiQ4r40P08p9UyV4P54,5116
+polyharmonics-0.0.1.dist-info/LICENSE,sha256=0ElQUwUZZ-vnb7H6zSh9edHtgA2hvnXPUBpVa8OaBHI,32471
+polyharmonics-0.0.1.dist-info/METADATA,sha256=m4AiQqJlag8IAJhmwl23ZEVXaP64DtVJhL9C4Uj-uYo,7788
+polyharmonics-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+polyharmonics-0.0.1.dist-info/entry_points.txt,sha256=OH3V8aGZDxG7iH7W2hSJfo_tp8rExSVstkrGwXPN-80,60
+polyharmonics-0.0.1.dist-info/RECORD,,
