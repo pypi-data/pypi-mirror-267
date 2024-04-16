@@ -1,0 +1,9 @@
+djazz/__init__.py,sha256=R72vjY7u5lqYwiAmisUQImoFnfvwGZAt8K5tSWXTr-Q,364
+djazz/asgi.py,sha256=kMXP9JM2rZQ7TY93ujRoQHLvsYGlfMduaHgNyCOXOGI,387
+djazz/settings.py,sha256=eRqpa-pM7VSLkBuZ3gIgrfcKRThr6iLYqk9thxtYQ_g,3218
+djazz/urls.py,sha256=2OI_HQFDxg3iAnm8T5XRLyb1PxoNpxd1G2Vhb3h58lE,761
+djazz/wsgi.py,sha256=QMLnZ_pzKNXfviVBqy8e-VnTuQTAdv_qzglnGzWuHQU,387
+django_djazz-0.1.0rc1.dist-info/LICENSE,sha256=ddRo97iKETAo8pALRYz-_YuonkkjNwy_KuftnqMXNMI,1556
+django_djazz-0.1.0rc1.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+django_djazz-0.1.0rc1.dist-info/METADATA,sha256=9-dju_yZ8iISgmTersaPDfGbSbVKOW8gmMFfX3Yxmz0,914
+django_djazz-0.1.0rc1.dist-info/RECORD,,
